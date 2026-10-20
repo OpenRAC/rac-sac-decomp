@@ -14,7 +14,7 @@ placement. The three counts are always reported separately.
 `work/E0/harness.py`, driven by the wave agents.
 
 ```
-wsl -d Ubuntu -- python3 /mnt/d/RAC-SAC/work/E0/harness.py FE.REL 0x1388 source.c
+python3 <private workspace>/E0/harness.py FE.REL 0x1388 source.c
 ```
 
 It compiles one authored source with the pinned chain (`cpp`, `cc1`, `as`),
