@@ -69,10 +69,15 @@ from its **published source**, writes the linked bytes at their measured
 offsets in a copy of the retail module, and requires the result to equal
 the retail module, SHA-256 included.
 
+With `--image`, the gate writes the rebuilt modules back into a copy of the
+disc image, at their recorded extents, and requires the image to hash to
+the pinned retail hash.  That is the program-level half of the evidence
+standard, applied to the whole disc.
+
 - It proves: the bodies belong where they are placed, they do not disturb
-  their surroundings, and the module that contains them is the retail
-  module.
-- It does **not** prove: that the parts of the module that have no
+  their surroundings, and the module -- and the image that carries it --
+  that contains them is the retail one.
+- It does **not** prove: that the parts of the program that have no
   accepted source yet are rebuilt from source.  Those are still the retail
   bytes here.  This gate is the last step before the full rebuild, not the
   full rebuild.

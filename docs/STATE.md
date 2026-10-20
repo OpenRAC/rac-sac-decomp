@@ -62,11 +62,15 @@ command written next to it.
       compiles to the retail bytes. The **module gate** exists
       (`tools/module_gate.py`): it rebuilds every module that carries proved
       bodies from its published sources and requires the result to equal the
-      retail module, hash included. The **assembly baseline** is qualified
+      retail module, hash included; with `--image` it writes the rebuilt
+      modules back into a copy of the disc, at their recorded extents, and
+      requires the image to hash to the pinned retail hash -- it does, for
+      the four modules that carry proved bodies. The **assembly baseline**
+      is qualified
       for all 31 modules (`tools/assembly_baseline.py`): every candidate
       code interval rebuilds byte for byte, 69 483 520 bytes in total. The
       **complete-program gate** -- rebuild every body of a module from
-      source, then the disc, and compare the hashes -- does not exist yet:
+      source, not only the proved ones -- does not exist yet:
       it is the next root task, and no body is promoted until it does.
 - [ ] **The tests.** The repository guard exists
       (`python3 tools/check_repository.py`). The unit tests of the tools are
