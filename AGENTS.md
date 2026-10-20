@@ -80,9 +80,10 @@ intent and original behavior still require evidence and review.
 ```
 python3 tools/check_repository.py
 python3 -m unittest discover -s tests
+python3 tools/progress.py
 python3 tools/placement_gate.py --modules <private dir> --bounds <private dir> \
                                 --harness <private harness.py>
 ```
 
-The first two need nothing but the repository. The third needs the private
-workspace, and it is the only check that measures a body again.
+The first three need nothing but the repository. The fourth needs the
+private workspace, and it is the only check that measures a body again.
