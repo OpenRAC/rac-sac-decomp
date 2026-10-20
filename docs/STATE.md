@@ -55,9 +55,13 @@ command written next to it.
 - [ ] **The gates.** The **body gate** exists and is strict
       (`work/E0/harness.py`): it compiles one source, links it at the
       measured offset, resolves the fixups from the retail tables and
-      compares every byte. The **complete-program gate** does not exist yet:
-      rebuilding a whole module and comparing its hash is the next root
-      task, and no body is promoted until it does.
+      compares every byte. The **placement gate** exists
+      (`tools/placement_gate.py`): it checks that every proved body lies in
+      the code interval, that its extent is the measured one, that no two
+      placements of a module overlap, and that the published source still
+      compiles to the retail bytes. The **complete-program gate** does not
+      exist yet: rebuilding a whole module and comparing its hash is the
+      next root task, and no body is promoted until it does.
 - [ ] **The tests.** The repository guard exists
       (`python3 tools/check_repository.py`). The unit tests of the tools are
       still missing.
@@ -69,9 +73,10 @@ command written next to it.
   (930 targets, 453 of them shared with another placement), 62 lot tables,
   the harness, and its negative control (a body with the wrong value is
   refused at the exact byte that differs).
-- **Wave 1** (lots L01, L03, L05, L07) is running: 26 placements of 20
-  distinct bodies are proved and published in `src/levels/bodies/`, with the
-  placement table `config/levels/bodies.tsv`.
+- **Wave 1** (lots L01, L03, L05, L07) is running: 26 placements of 22
+  distinct sources are proved and published in `src/levels/bodies/`, with the
+  placement table `config/levels/bodies.tsv` (976 bytes by placement).
+  The placement gate passes on them.
 - The proofs are **body-level**. The program-level gate is pending, so the
   published numbers are not promoted and no percentage is published.
 
