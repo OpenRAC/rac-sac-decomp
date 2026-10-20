@@ -83,7 +83,8 @@ python3 -m unittest discover -s tests
 python3 tools/progress.py
 python3 tools/placement_gate.py --modules <private dir> --bounds <private dir> \
                                 --harness <private harness.py>
+python3 tools/module_gate.py --modules <private dir> --harness <private harness.py>
 ```
 
-The first three need nothing but the repository. The fourth needs the
-private workspace, and it is the only check that measures a body again.
+The first three need nothing but the repository. The last two need the
+private workspace, and they are the only checks that measure a body again.

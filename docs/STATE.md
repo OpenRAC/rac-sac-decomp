@@ -59,12 +59,15 @@ command written next to it.
       (`tools/placement_gate.py`): it checks that every proved body lies in
       the code interval, that its extent is the measured one, that no two
       placements of a module overlap, and that the published source still
-      compiles to the retail bytes. The **assembly baseline** is qualified
+      compiles to the retail bytes. The **module gate** exists
+      (`tools/module_gate.py`): it rebuilds every module that carries proved
+      bodies from its published sources and requires the result to equal the
+      retail module, hash included. The **assembly baseline** is qualified
       for all 31 modules (`tools/assembly_baseline.py`): every candidate
       code interval rebuilds byte for byte, 69 483 520 bytes in total. The
-      **complete-program gate** -- rebuild the module, then the disc, and
-      compare the hashes -- does not exist yet: it is the next root task,
-      and no body is promoted until it does.
+      **complete-program gate** -- rebuild every body of a module from
+      source, then the disc, and compare the hashes -- does not exist yet:
+      it is the next root task, and no body is promoted until it does.
 - [ ] **The tests.** The repository guard exists
       (`python3 tools/check_repository.py`). The unit tests of the tools are
       still missing.
@@ -102,6 +105,14 @@ Four classes of difference showed up, and they are worth keeping:
 A candidate profile change needs a measured cause, a known provenance and a
 regression control before it is used. The `-mdebugc` route has the first
 two; the control run over the 49 proved placements is the next step.
+
+**The `-mdebugc` control is measured.** Recompiling the 49 proved bodies
+with `-O2 -G0 -mdebugc` keeps **49/49** of them exact: the option breaks
+nothing that is proved. It does **not** unlock the parked bodies either:
+on the two `sltiu` bodies the first difference moves *earlier* (body byte
+48 to body byte 4), because the option also changes the frame. The verdict
+is therefore: a candidate route, not a profile. Reproduce it with
+`work/E0/trial_mdebugc.py` and `work/E0/trial_mdebugc_bodies.sh`.
 
 ## 4. What is next
 

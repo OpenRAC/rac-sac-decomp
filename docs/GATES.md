@@ -56,7 +56,28 @@ never a percentage.
   still match the retail bodies.
 - It does not prove: anything about the program that contains them.
 
-## 3. The complete-program gate (missing -- the next root task)
+## 3. The module gate (public, tracked)
+
+`tools/module_gate.py`, run by the root before a commit.
+
+```
+python3 tools/module_gate.py --modules <private dir> --harness <private harness.py>
+```
+
+For every module that carries proved bodies, the gate rebuilds each body
+from its **published source**, writes the linked bytes at their measured
+offsets in a copy of the retail module, and requires the result to equal
+the retail module, SHA-256 included.
+
+- It proves: the bodies belong where they are placed, they do not disturb
+  their surroundings, and the module that contains them is the retail
+  module.
+- It does **not** prove: that the parts of the module that have no
+  accepted source yet are rebuilt from source.  Those are still the retail
+  bytes here.  This gate is the last step before the full rebuild, not the
+  full rebuild.
+
+## 4. The complete-program gate (missing -- the next root task)
 
 This is the gate the evidence standard requires before a body is *promoted*:
 rebuild the complete program, and require its hash to equal the pinned
@@ -77,6 +98,9 @@ modules**, so the gate has to treat both:
    source is compiled and linked at its placement; the module is rebuilt
    from the link of the whole set, and the rebuilt module must equal the
    retail module -- including the bytes outside the rebuilt bodies.
+   *The module gate of section 3 already checks the placements and the
+   surroundings; what is missing is the rebuild of the bodies that have no
+   accepted source yet.*
 3. **The disc rebuild.** The boot executable and the 31 modules are put back
    at their recorded extents, and the rebuilt image must hash to the pinned
    retail hash.
