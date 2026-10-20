@@ -11,12 +11,15 @@ Last update: **2026-10-20** (project opened, nothing measured yet).
 | Element | Path | Role |
 | --- | --- | --- |
 | Public repository | this repository | authored sources, tools, documentation |
+| Working clone | `LOCAL.md` (git-ignored) | the checkout the root integrates from |
 | Local target | `LOCAL.md` (git-ignored) | the game image, the pinned hashes, the toolchain |
-| Private workspace | `work/` (git-ignored except the templates) | extracted modules, bounds, lots, agent dossiers |
+| Private workspace | `LOCAL.md` (git-ignored) | extracted modules, bounds, lots, agent dossiers |
 | Anchor | `docs/STATE.md` | this file |
 
 The private workspace is local-only on purpose: the project publishes written
-source, tools and metadata, never retail bytes, listings or raw reports.
+source, tools and metadata, never retail bytes, listings or raw reports. Its
+layout is described in `work/README.md`; the repository holds only the
+templates of that layout.
 
 ## 2. Configuration to do before the first wave
 
