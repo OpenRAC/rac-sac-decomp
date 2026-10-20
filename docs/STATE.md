@@ -4,7 +4,8 @@
 > milestone. Everything else in the private workspace is disposable; this file
 > is not.
 
-Last update: **2026-10-20** (project opened, nothing measured yet).
+Last update: **2026-10-20** (foundation lot delivered, wave 1 running, 26
+placements proved at body level).
 
 ## 1. Where things are
 
@@ -21,61 +22,86 @@ source, tools and metadata, never retail bytes, listings or raw reports. Its
 layout is described in `work/README.md`; the repository holds only the
 templates of that layout.
 
-## 2. Configuration to do before the first wave
+## 2. What is pinned
 
-Nothing has been measured yet. The following must be pinned first, and the
-result written in this section:
+Every value below is measured, and every measurement is repeatable with the
+command written next to it.
 
-- [ ] **The target.** Which exact release and region is the reference (build
-      id, language, revision)? Its size and SHA-1/SHA-256 go into a pinned
-      config file, never into a commit as the image itself.
-- [ ] **The identity check.** A tool that refuses an image whose size or
-      hashes do not match the pinned values, so a wrong revision cannot enter
-      the campaign by accident.
-- [ ] **The extraction.** Which modules or segments the program is made of,
-      how they are named, and where they are written locally.
-- [ ] **The symbol and boundary sources.** Which tables give the candidate
-      entries, and which give their extents.
-- [ ] **The toolchain.** The compiler, the assembler, the linker, the flags,
-      and the hashes of each binary. Until they are pinned, no body can be
-      proved.
-- [ ] **The gates.** The complete-program gate (rebuild and compare hashes)
-      and the C gate (recompile the bodies, place them, rebuild, compare).
-- [ ] **The tests.** The repository guard and the unit tests.
+- [x] **The target.** `SCUS_976.23`, *Ratchet & Clank: Secret Agent Clank*
+      (USA, NTSC, `SYSTEM.CNF` version 1.00). ISO of 4 268 916 736 bytes,
+      SHA-1 `6f4a37c8157e3e1214abed01406cbfce42e22cc6`, SHA-256
+      `128abfa2fb8eb4dc253513d3beb9029dfb8698966ecc7b8266230e8739b8e908`.
+      Pinned in `config/target.json`; the boot executable `SCUS_976.23` is
+      1 104 076 bytes, SHA-256 `1341f13c…`.
+      Verify with `python3 tools/disc.py inspect <image>`.
+- [x] **The identity check.** `tools/disc.py` refuses an image whose boot
+      file, size, boot hash or extents differ from `config/target.json`;
+      `tools/rel.py` calls it before reading any module.
+- [x] **The extraction.** The disc holds 31 SNR2 modules under `BIN/`:
+      `FE.REL` (the frontend) and `LEVEL1.REL` … `LEVEL32.REL` (no 6, no 12),
+      plus the boot ELF, the Bink videos, the FSB banks and `IMAGE.ZIP`.
+      `tools/rel.py` reads the module tables; the modules themselves stay in
+      the private workspace.
+- [x] **The symbol and boundary sources.** The module symbol tables give the
+      named entries; the relocation tables give the code boundary and the
+      call targets. `tools/code_intervals.py` derives the code interval of
+      every module from the jump relocations; `tools/function_inventory.py`
+      turns the candidate entries into bounded bodies.
+- [x] **The toolchain.** The GNU EE chain pinned by the sibling project
+      (`gnu-ee-20261015`, `cpp`/`cc1`/`as`) with the SN ProDG linker, flags
+      `-quiet -O2 -G0`. It is a **candidate** profile for this game: it
+      reproduces retail bodies byte for byte, and it is not yet qualified on
+      the complete program.
+- [ ] **The gates.** The **body gate** exists and is strict
+      (`work/E0/harness.py`): it compiles one source, links it at the
+      measured offset, resolves the fixups from the retail tables and
+      compares every byte. The **complete-program gate** does not exist yet:
+      rebuilding a whole module and comparing its hash is the next root
+      task, and no body is promoted until it does.
+- [ ] **The tests.** The repository guard exists
+      (`python3 tools/check_repository.py`). The unit tests of the tools are
+      still missing.
 
-Record here, as soon as each is done: the paths, the hashes, and the exact
-command that reproduces the measurement.
+## 3. State of the campaign
 
-## 3. State at the opening of the project
+- **Foundation (E0) is delivered**: 31 modules read, 409 233 candidate entry
+  intervals, 64 714 676 bytes of bounded bodies by placement, the shortlist
+  (930 targets, 453 of them shared with another placement), 62 lot tables,
+  the harness, and its negative control (a body with the wrong value is
+  refused at the exact byte that differs).
+- **Wave 1** (lots L01, L03, L05, L07) is running: 26 placements of 20
+  distinct bodies are proved and published in `src/levels/bodies/`, with the
+  placement table `config/levels/bodies.tsv`.
+- The proofs are **body-level**. The program-level gate is pending, so the
+  published numbers are not promoted and no percentage is published.
 
-- The public repository holds the method, the rules, the templates and the
-  starter prompt. **No function has been measured yet.**
-- The sibling projects (see `docs/REUSE.md`) hold the reusable method and,
-  for some of their routines, the authentic source form that this project
-  will need.
+## 4. What is next
 
-## 4. The first wave — plan
-
-1. **E0 (foundation)**: extract, pin, bound, shortlist. Deliver
-   `work/E0/` with the manifest, the bounds and the shortlist.
-2. **Lots**: cut the shortlist by region and by size band.
-3. **Translation**: one agent per lot, harness-proved bodies only.
-4. **Integration**: the root gates, catalogs, documents and opens the pull
-   request.
+1. **Complete-program gate.** Rebuild a module from the placed bodies and
+   compare its bytes with the retail module; then the same for the disc.
+   Until it exists, the campaign measures instruction sequences, not
+   programs.
+2. **Compiler qualification.** The pinned chain reproduces bodies; it must
+   still be shown to be the retail compiler on the whole program.
+3. **Wave 2 and further.** 58 lot tables are cut and ready.
+4. **The boot executable.** `SCUS_976.23` is a linked ELF without a symbol
+   table; its own campaign needs its own bounds.
 
 ## 5. Resume checklist
 
 If a session is interrupted:
 
-1. `ls work/*/RAPPORT.md` and read the reports.
-2. `cat work/*/resultats.tsv` for the measured table.
+1. `ls work/w1/*/RAPPORT.md` and read the reports.
+2. `cat work/w1/*/resultats.tsv` for the measured table.
 3. A body proved but not integrated: re-prove it with the harness, then hand
    it to the root. Do not re-run the foundation lot.
 4. Update this file before stopping.
 
 ## 6. Open decisions
 
-- Which release is the reference, and is a European or a later revision
-  acceptable as a second target?
-- Is the reference program a single executable, a set of modules, or both?
-- Which sibling project's boundary tools fit this target's format?
+- The reference is the USA disc; a European revision could be a second
+  target, but the pins of `config/target.json` are per-image.
+- The program is one boot executable plus 31 relocatable modules; the
+  complete-program gate has to treat both.
+- The retail compiler identity is still unknown: the pinned chain reproduces
+  the bodies it was measured on, and nothing more.

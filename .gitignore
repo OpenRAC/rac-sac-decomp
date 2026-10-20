@@ -14,6 +14,7 @@ baserom/
 work/E0/modules/
 work/E0/bounds/
 work/E0/preuves/
+work/E0/disc/
 work/*/bodies/
 work/*/abandonnes/
 work/*/work/
@@ -24,6 +25,11 @@ work/lots/*.tsv
 !work/templates/
 !work/lots/.gitkeep
 !work/E0/.gitkeep
+
+# Generated catalogues that are too large to publish: every named symbol of
+# every module (more than 350 000 rows).  Regenerate with
+# "python3 tools/rel.py catalogue <image> --write".
+config/levels/exports.tsv
 
 # Build output and receipts
 build/
