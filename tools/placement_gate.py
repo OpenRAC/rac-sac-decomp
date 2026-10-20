@@ -23,16 +23,22 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 TABLE = ROOT / "config/levels/bodies.tsv"
+BOOT_TABLE = ROOT / "config/boot/bodies.tsv"
 INTERVALS = ROOT / "config/levels/code_intervals.tsv"
+BOOT_SUMMARY = ROOT / "config/boot/summary.json"
+BOOT_NAME = "SCUS_976.23"
 
 
 def records(path: Path) -> list[dict[str, str]]:
+    if not path.is_file():
+        return []
     with path.open(encoding="utf-8", newline="") as handle:
         return list(csv.DictReader((line for line in handle
                                     if not line.startswith("#")), delimiter="\t"))
@@ -44,35 +50,47 @@ def main() -> int:
     parser.add_argument("--modules", type=Path, required=True)
     parser.add_argument("--bounds", type=Path, required=True)
     parser.add_argument("--harness", type=Path, required=True)
+    parser.add_argument("--boot-harness", type=Path, default=None,
+                        help="harness of the boot executable (its addresses "
+                             "are virtual, not module relative)")
     parser.add_argument("--quiet", action="store_true")
     args = parser.parse_args()
 
     rows = records(TABLE)
+    boot_rows = records(BOOT_TABLE)
     intervals = {row["module"]: row for row in records(INTERVALS)}
+    boot_summary = json.loads(BOOT_SUMMARY.read_text(encoding="utf-8")) \
+        if BOOT_SUMMARY.is_file() else {}
     problems: list[str] = []
     placements = 0
     bytes_covered = 0
     sources: set[str] = set()
     occupied: dict[str, list[tuple[int, int, str]]] = {}
 
-    for row in rows:
+    for row in rows + boot_rows:
         module = row["module"]
+        is_boot = module == BOOT_NAME
         offset = int(row["offset"], 0)
         size = int(row["size"])
         placements += 1
         bytes_covered += size
         sources.add(row["source"])
 
-        interval = intervals.get(module)
-        if interval is None:
-            problems.append(f"{module} {row['offset']}: no code interval")
-            continue
-        start = int(interval["start"], 0)
-        end = int(interval["end_exclusive"], 0)
+        if is_boot:
+            start = int(boot_summary.get("text_address", "0x00100000"), 16)
+            end = start + int(boot_summary.get("text_bytes", 0))
+        else:
+            interval = intervals.get(module)
+            if interval is None:
+                problems.append(f"{module} {row['offset']}: no code interval")
+                continue
+            start = int(interval["start"], 0)
+            end = int(interval["end_exclusive"], 0)
         if not start <= offset or offset + size > end:
             problems.append(f"{module} {row['offset']}: outside the code interval")
 
-        bounds = args.bounds / (module.replace(".REL", "") + ".tsv")
+        bounds = args.bounds / ("boot.tsv" if is_boot
+                                else module.replace(".REL", "") + ".tsv")
         if bounds.is_file():
             lines = [line for line in bounds.read_text(encoding="utf-8").splitlines()
                      if line and not line.startswith("#")]
@@ -99,8 +117,12 @@ def main() -> int:
         if not source.is_file():
             problems.append(f"{module} {row['offset']}: missing source {row['source']}")
             continue
+        harness = args.boot_harness if is_boot else args.harness
+        if harness is None:
+            problems.append(f"{module} {row['offset']}: no boot harness given")
+            continue
         result = subprocess.run(
-            [sys.executable, str(args.harness), module, row["offset"], str(source),
+            [sys.executable, str(harness), module, row["offset"], str(source),
              "--one-line"], capture_output=True, text=True)
         if "\tEXACT\t" not in result.stdout:
             problems.append(f"{module} {row['offset']}: the harness refuses the body"

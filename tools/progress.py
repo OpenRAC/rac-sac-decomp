@@ -22,9 +22,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 BODIES = ROOT / "config/levels/bodies.tsv"
+BOOT_BODIES = ROOT / "config/boot/bodies.tsv"
 BASELINE = ROOT / "config/levels/assembly_baseline.tsv"
 INTERVALS = ROOT / "config/levels/code_intervals.tsv"
 MODULES = ROOT / "config/levels/modules.tsv"
+BOOT_SUMMARY = ROOT / "config/boot/summary.json"
 
 
 def records(path: Path) -> list[dict[str, str]]:
@@ -38,15 +40,19 @@ def records(path: Path) -> list[dict[str, str]]:
 def snapshot() -> dict:
     """Build the snapshot from the catalogues."""
     bodies = records(BODIES)
+    boot_bodies = records(BOOT_BODIES)
     baseline = records(BASELINE)
     intervals = records(INTERVALS)
+    boot_summary = json.loads(BOOT_SUMMARY.read_text(encoding="utf-8")) \
+        if BOOT_SUMMARY.is_file() else {}
 
-    placements = len(bodies)
-    sources = len({row["source"] for row in bodies})
-    bytes_by_placement = sum(int(row["size"]) for row in bodies)
+    placements = len(bodies) + len(boot_bodies)
+    sources = len({row["source"] for row in bodies}
+                  | {row["source"] for row in boot_bodies})
+    bytes_by_placement = sum(int(row["size"]) for row in bodies + boot_bodies)
     bytes_distinct = 0
     seen: dict[tuple[str, str], int] = {}
-    for row in bodies:
+    for row in bodies + boot_bodies:
         key = (row["source"], row["module"])
         if key in seen:
             continue
@@ -54,7 +60,7 @@ def snapshot() -> dict:
         bytes_distinct += int(row["size"])
 
     per_module: dict[str, dict[str, int]] = {}
-    for row in bodies:
+    for row in bodies + boot_bodies:
         entry = per_module.setdefault(row["module"], {"placements": 0, "bytes": 0})
         entry["placements"] += 1
         entry["bytes"] += int(row["size"])
@@ -62,6 +68,8 @@ def snapshot() -> dict:
     return {
         "status": "body_proved_program_gate_pending",
         "module_count": len(records(MODULES)),
+        "boot_candidate_bytes": int(boot_summary.get("bounded_candidate_body_bytes", 0)),
+        "boot_candidates": int(boot_summary.get("entry_intervals", 0)),
         "assembly_baseline_modules": sum(1 for row in baseline if row.get("exact") == "yes"),
         "assembly_baseline_bytes": sum(int(row["interval_bytes"]) for row in baseline),
         "candidate_code_bytes_by_placement": sum(int(row["interval_bytes"])
@@ -89,6 +97,8 @@ def main() -> int:
         print(json.dumps(report, indent=2))
         return 0
     print(f"modules                : {report['module_count']}")
+    print(f"boot candidates        : {report['boot_candidates']} intervals, "
+          f"{report['boot_candidate_bytes']} bounded body bytes")
     print(f"assembly baseline      : {report['assembly_baseline_modules']} module(s), "
           f"{report['assembly_baseline_bytes']} bytes rebuilt exactly")
     print(f"candidate code bytes   : {report['candidate_code_bytes_by_placement']} "

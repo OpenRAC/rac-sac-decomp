@@ -33,6 +33,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 from c_source_policy import require_c_source  # noqa: E402
 
 TABLE = ROOT / "config/levels/bodies.tsv"
+BOOT_TABLE = ROOT / "config/boot/bodies.tsv"
 PROFILE = ROOT / "config/toolchain.json"
 
 
@@ -56,7 +57,7 @@ def main() -> int:
 
     profile = json.loads(PROFILE.read_text(encoding="utf-8"))
     flags = profile["flags"]["cc1"]
-    rows = records(TABLE)
+    rows = records(TABLE) + records(BOOT_TABLE)
     sources: dict[str, str] = {}
     for row in rows:
         sources.setdefault(row["source"], row["object_sha256"])

@@ -44,10 +44,14 @@ sys.path.insert(0, str(ROOT / "tools"))
 from disc import IsoDisc  # noqa: E402
 
 TABLE = ROOT / "config/levels/bodies.tsv"
+BOOT_TABLE = ROOT / "config/boot/bodies.tsv"
 TARGET = ROOT / "config/target.json"
+BOOT_NAME = "SCUS_976.23"
 
 
 def records(path: Path) -> list[dict[str, str]]:
+    if not path.is_file():
+        return []
     with path.open(encoding="utf-8", newline="") as handle:
         return list(csv.DictReader((line for line in handle
                                     if not line.startswith("#")), delimiter="\t"))
@@ -58,6 +62,10 @@ def main() -> int:
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--modules", type=Path, required=True)
     parser.add_argument("--harness", type=Path, required=True)
+    parser.add_argument("--boot-harness", type=Path, default=None)
+    parser.add_argument("--boot", type=Path, default=None,
+                        help="the boot executable; it is rebuilt with its proved "
+                             "bodies and its hash is compared with the pinned one")
     parser.add_argument("--image", type=Path, default=None,
                         help="disc image; the rebuilt modules are written back "
                              "into it and the image hash is compared with the "
@@ -114,6 +122,26 @@ def main() -> int:
     print(f"{rebuilt_bytes} byte(s) rebuilt from published sources, "
           f"{len(rows)} placement(s)")
 
+    boot_rows = records(BOOT_TABLE)
+    if boot_rows:
+        if args.boot is None or args.boot_harness is None:
+            problems.append("the boot has proved bodies but no boot executable "
+                            "or boot harness was given")
+        else:
+            rebuilt_boot = rebuild_boot(args.boot, args.boot_harness, boot_rows,
+                                        problems)
+            if rebuilt_boot is not None:
+                target = json.loads(TARGET.read_text(encoding="utf-8"))
+                digest = hashlib.sha256(rebuilt_boot).hexdigest()
+                if digest != target["boot_sha256"]:
+                    problems.append("the rebuilt boot does not hash to the pinned "
+                                    "retail hash")
+                print(f"  boot             {len(boot_rows):3d} placement(s), "
+                      f"{sum(int(row['size']) for row in boot_rows):6d} rebuilt "
+                      f"byte(s)  sha256 {digest[:16]} "
+                      f"({'matches' if digest == target['boot_sha256'] else 'DIFFERS'}"
+                      " the pinned hash)")
+
     if args.image:
         rebuilt_image = rebuild_image(args.image, rebuilt_modules, problems)
         if rebuilt_image is not None:
@@ -134,6 +162,38 @@ def main() -> int:
         return 1
     print("module gate: every rebuilt module is the retail module")
     return 0
+
+
+def rebuild_boot(boot: Path, harness: Path, rows: list[dict],
+                 problems: list[str]) -> bytes | None:
+    """Rebuild the boot executable with its proved bodies."""
+    from elf import inspect_elf
+    report = inspect_elf(boot)
+    section = next(item for item in report["sections"] if item["name"] == ".text")
+    base = int(str(section["virtual_address"]), 16)
+    file_offset = int(section["file_offset"])
+    data = bytearray(boot.read_bytes())
+    for row in rows:
+        address = int(row["offset"], 0)
+        size = int(row["size"])
+        source = ROOT / row["source"]
+        with tempfile.TemporaryDirectory() as directory:
+            emit = Path(directory) / "body.bin"
+            result = subprocess.run(
+                [sys.executable, str(harness), row["offset"], str(source),
+                 "--one-line", "--emit", str(emit)], capture_output=True, text=True)
+            if "\tEXACT\t" not in result.stdout:
+                problems.append(f"boot {row['offset']}: the harness refuses the body "
+                                f"({result.stdout.strip()})")
+                continue
+            body = emit.read_bytes()
+        if len(body) != size:
+            problems.append(f"boot {row['offset']}: linked body is {len(body)} "
+                            f"bytes, the table says {size}")
+            continue
+        at = file_offset + (address - base)
+        data[at:at + size] = body
+    return bytes(data)
 
 
 def rebuild_image(image: Path, modules: dict[str, bytes],
