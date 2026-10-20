@@ -35,9 +35,9 @@ for what is next.
 | `nonmatching/` | useful but nonmatching attempts, indexed by function |
 | `tools/` | reusable tools, with tests |
 | `tests/` | the unit tests of the tools, on synthetic data only |
-| `config/` | pinned metadata: target identity, compiler profiles, placement tables |
+| `config/` | pinned metadata: target identity, toolchain profile, placement tables |
 | `config/levels/` | the module catalogues, the code intervals, the placement table of the proved bodies |
-| `docs/` | the method, the evidence standard, the anchor |
+| `docs/` | the method, the evidence standard, the gates, the anchor |
 | `work/` | the private workspace: modules, bounds, lots, agent dossiers (git-ignored except the templates) |
 
 ## The method in one paragraph

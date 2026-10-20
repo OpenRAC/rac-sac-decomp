@@ -88,3 +88,10 @@ python3 tools/module_gate.py --modules <private dir> --harness <private harness.
 
 The first three need nothing but the repository. The last two need the
 private workspace, and they are the only checks that measure a body again.
+
+The published sources have their own build, which also checks that they are
+pure C and that their objects are the ones the placement table records:
+
+```
+python3 tools/build.py --cpp <cpp> --cc1 <cc1> --as <as> --check
+```

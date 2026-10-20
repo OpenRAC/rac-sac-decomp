@@ -1,0 +1,28 @@
+{
+  "id": "gnu-ee-20261015",
+  "status": "candidate_profile",
+  "scope": "bodies of the SNR2 level modules of the pinned USA disc",
+  "provenance": "The GNU EE chain of the sibling OpenRAC project (a reconstructed EE compiler tree, the 'compiler-no-pad' build of 2026-10-15), used here as a candidate.  The driver reports a patched GCC for the 'ee' target.  External binary: it is pinned by hash, never rebuilt here and never committed.",
+  "toolchain": {
+    "cpp_sha256": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
+    "cc1_sha256": "9614eceecbcb1f7a64cf3a4ad3c827b3e257ab6b1f934e42fcbc4ded0f0584d6",
+    "as_sha256": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
+    "linker_sha256": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
+  },
+  "flags": {
+    "cpp": [],
+    "cc1": ["-quiet", "-O2", "-G0"],
+    "as": []
+  },
+  "trials": [
+    {
+      "id": "gnu-ee-20261015-debugc",
+      "flags": {"cc1": ["-quiet", "-O2", "-G0", "-mdebugc"]},
+      "measured_cause": "The retail idiom 'sltiu $v1,$v1,1' (an equality test) comes from TARGET_DEBUG_C_MODE in the pinned compiler; the cause was read in its mips.md and mips.cxx.",
+      "regression_control": "49 of the 49 proved bodies stay byte-exact with the option added.",
+      "verdict": "candidate route, not a profile: the option also changes the frame, so on the two 'sltiu' bodies the first difference moves from body byte 48 to body byte 4.  It unlocks nothing that is parked.",
+      "reproduce": "python3 work/E0/trial_mdebugc.py and work/E0/trial_mdebugc_bodies.sh"
+    }
+  ],
+  "retail_compiler_identity": "unknown: the chain reproduces the bodies it was measured on, and the complete-program gate has not run."
+}

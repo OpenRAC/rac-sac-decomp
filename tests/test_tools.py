@@ -22,6 +22,7 @@ import disc  # noqa: E402
 import function_inventory as inventory  # noqa: E402
 import lot_table  # noqa: E402
 import mangle  # noqa: E402
+from c_source_policy import policy_errors  # noqa: E402
 
 
 class DiscTest(unittest.TestCase):
@@ -97,6 +98,38 @@ class BranchTest(unittest.TestCase):
 
     def test_vector_opcode_is_not_a_branch(self) -> None:
         self.assertFalse(inventory.is_branch_word(0x4BE52108))
+
+
+class PolicyTest(unittest.TestCase):
+    """The evidence of the project is the instruction the compiler produced."""
+
+    def test_plain_c_is_accepted(self) -> None:
+        source = "int f(int a) { return a + 1; }\n"
+        self.assertEqual(policy_errors(source), [])
+
+    def test_inline_assembly_is_refused(self) -> None:
+        source = "int f(void) { asm(\"nop\"); return 0; }\n"
+        self.assertTrue(policy_errors(source))
+
+    def test_global_assembly_is_refused(self) -> None:
+        source = "asm(\".word 0x00000000\");\nint f(void) { return 0; }\n"
+        self.assertTrue(policy_errors(source))
+
+    def test_register_variable_is_refused(self) -> None:
+        source = "int f(void) { register int a = 0; return a; }\n"
+        self.assertTrue(policy_errors(source))
+
+    def test_assembler_directive_is_refused(self) -> None:
+        source = "int f(void) { .word 0x00000000\n return 0; }\n"
+        self.assertTrue(policy_errors(source))
+
+    def test_assembler_name_label_is_allowed(self) -> None:
+        source = 'extern int f(void) __asm__("f_00001000");\nint f(void) { return 0; }\n'
+        self.assertEqual(policy_errors(source), [])
+
+    def test_comment_does_not_hide_a_verdict(self) -> None:
+        source = "/* asm(\"nop\"); */\nint f(void) { return 0; }\n"
+        self.assertEqual(policy_errors(source), [])
 
 
 class LotTableTest(unittest.TestCase):
