@@ -72,11 +72,13 @@ def candidates(text: bytes, base: int) -> tuple[set[int], set[int], set[int]]:
     return calls, returns, branches
 
 
-def rows(base: int, text: bytes, calls: set[int], returns: set[int]) -> list[dict]:
+def rows(base: int, text: bytes, calls: set[int], returns: set[int],
+         pointers: set[int] | None = None) -> list[dict]:
     """Bound the body of every candidate entry."""
     start = base
     end = base + len(text)
-    starts = sorted({start, *calls})
+    pointers = pointers or set()
+    starts = sorted({start, *calls, *pointers})
     ordered = sorted(returns)
     result: list[dict] = []
     for entry, limit in zip(starts, starts[1:] + [end]):
@@ -91,11 +93,35 @@ def rows(base: int, text: bytes, calls: set[int], returns: set[int]) -> list[dic
         body = text[entry - base:body_end - base] if body_end else b""
         result.append({
             "start": entry, "limit": limit, "body_end": body_end,
-            "evidence": "call" if entry in calls else "interval_start",
+            "evidence": "+".join(label for label, pool in
+                                  (("call", calls), ("pointer", pointers))
+                                  if entry in pool) or "interval_start",
             "status": status, "body_bytes": len(body),
             "raw_sha256": hashlib.sha256(body).hexdigest() if body else "",
         })
     return result
+
+
+def pointers(sections: list[dict], data: bytes, base: int, text_end: int) -> set[int]:
+    """Return the code addresses the data sections point to.
+
+    A function that is only reached through a pointer is a candidate too:
+    the pointer itself is the evidence.
+    """
+    found: set[int] = set()
+    for section in sections:
+        name = section["name"]
+        if name in (".text", ".bss", ".sbss") or name.startswith("DVP"):
+            continue
+        offset = int(section["file_offset"])
+        size = int(section["size"])
+        if size <= 0 or offset + size > len(data):
+            continue
+        for at in range(offset, offset + size - 3, 4):
+            value = int.from_bytes(data[at:at + 4], "little")
+            if base <= value < text_end and value % 4 == 0:
+                found.add(value)
+    return found
 
 
 def main() -> int:
@@ -108,13 +134,18 @@ def main() -> int:
                         help="write the tracked summary")
     args = parser.parse_args()
 
+    from elf import inspect_elf
+    report = inspect_elf(args.executable)
     base, text = text_section(args.executable)
     calls, returns, _branches = candidates(text, base)
     # The entry point is a candidate of its own.
     entry = entry_point(args.executable)
     if base <= entry < base + len(text):
         calls.add(entry)
-    table = rows(base, text, calls, returns)
+    # A function that is only reached through a pointer is a candidate too.
+    data = args.executable.read_bytes()
+    data_pointers = pointers(report["sections"], data, base, base + len(text))
+    table = rows(base, text, calls | data_pointers, returns, data_pointers)
     bounded = [row for row in table if row["status"] == "bounded_candidate"]
 
     args.out.mkdir(parents=True, exist_ok=True)
@@ -138,6 +169,7 @@ def main() -> int:
         "text_bytes": len(text),
         "entry_intervals": len(table),
         "call_targets": len(calls),
+        "data_pointers": len(data_pointers),
         "returns": len(returns),
         "boundary_status_counts": dict(sorted(Counter(
             row["status"] for row in table).items())),

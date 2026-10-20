@@ -93,11 +93,12 @@ command written next to it.
   placement). The root re-measured every claim before publishing it, and
   the placement gate passes on the result.
 - **The boot scope is open.** The boot is a linked ELF without a symbol
-  table, so its candidates are measured, not named: 1 666 intervals, 1 638
-  bounded, 632 164 bounded body bytes (`config/boot/summary.json`). The
-  first two boot lots proved 30 placements of 9 distinct bodies, published
-  in `src/boot/bodies/` with the table `config/boot/bodies.tsv`. The boot
-  rebuilt with those bodies has the pinned retail hash.
+  table, so its candidates are measured, not named: 3 821 intervals (1 665
+  call targets and 3 620 code pointers in the data), 3 214 of them bounded
+  (`config/boot/summary.json`). The first two boot lots proved 30
+  placements of 9 distinct bodies, published in `src/boot/bodies/` with the
+  table `config/boot/bodies.tsv`. The boot rebuilt with those bodies has
+  the pinned retail hash.
 - Wave 2 continues on six module lots (L09, L15, L21, L29, L35, L45).
 - The proofs are **body-level**. The program-level gate is pending, so the
   published numbers are not promoted and no percentage is published.
