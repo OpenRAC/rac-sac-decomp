@@ -20,6 +20,7 @@ complete-program gate is still missing, so nothing here is *promoted*: see
 | [AGENTS.md](AGENTS.md) | the ten working rules, and what must never be committed |
 | [docs/METHOD.md](docs/METHOD.md) | the wave protocol, from the foundation lot to the pull request |
 | [docs/EVIDENCE.md](docs/EVIDENCE.md) | what counts as a proof, and what does not |
+| [docs/GATES.md](docs/GATES.md) | the three gates: the body gate, the placement gate, the complete-program gate |
 | [docs/STATE.md](docs/STATE.md) | the anchor: where the project stands, and what to do next |
 | [docs/REUSE.md](docs/REUSE.md) | what to take from the sibling OpenRAC projects |
 
