@@ -22,6 +22,14 @@
       "regression_control": "49 of the 49 proved bodies stay byte-exact with the option added.",
       "verdict": "candidate route, not a profile: the option also changes the frame, so on the two 'sltiu' bodies the first difference moves from body byte 48 to body byte 4.  It unlocks nothing that is parked.",
       "reproduce": "python3 work/E0/trial_mdebugc.py and work/E0/trial_mdebugc_bodies.sh"
+    },
+    {
+      "id": "gnu-ee-20261015-mips1",
+      "flags": {"cc1": ["-quiet", "-O2", "-G0", "-mips1"]},
+      "measured_cause": "The retail pads most of its divisions with a nop, the padding MIPS-I floating-point hazard rules would demand; the pinned chain does not pad, because the EE target schedules for a CPU with hardware interlocks.",
+      "regression_control": "not applicable: the route cannot be built.  The EE target refuses it -- 'Only MIPS-III or MIPS-IV CPUs can support 64 bit gp registers' -- because the R5900 has 64-bit general purpose registers.  -mips2 fails the same way, and -mips3 / -mfp32 change nothing in the body.",
+      "verdict": "refuted: the MIPS level is not a lever on this target.  The nop belongs to the scheduler of the retail compiler, and it is context dependent (49 616 padded divisions out of 63 443, 11 590 bare), so a blanket patch is refuted too.",
+      "reproduce": "python3 tools/div_survey.py --modules <private dir>"
     }
   ],
   "retail_compiler_identity": "unknown: the chain reproduces the bodies it was measured on, and the complete-program gate has not run."

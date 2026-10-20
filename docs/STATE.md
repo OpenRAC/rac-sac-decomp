@@ -128,6 +128,14 @@ misses only this `nop` is therefore a compiler-route question, not a
 source-form question, and it stays parked until a route with a measured
 cause, a known provenance and a regression control exists.
 
+**The MIPS level is not that route.** The EE target refuses `-mips1` and
+`-mips2` outright ("Only MIPS-III or MIPS-IV CPUs can support 64 bit gp
+registers", the R5900 has 64-bit general purpose registers), and `-mips3`
+and `-mfp32` change nothing in the body. The hazard nop belongs to the
+scheduler of the retail compiler, and it is not reachable by a flag on
+this target. Both measurements are in `config/toolchain.json`, under
+`trials`.
+
 ### What the first wave measured about the compiler
 
 Four classes of difference showed up, and they are worth keeping:
