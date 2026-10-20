@@ -80,12 +80,28 @@ command written next to it.
   31 modules rebuilds byte for byte (69 483 520 bytes). Every C body is
   therefore measured against a code region that is known to be the retail
   code.
-- **Wave 1** (lots L01, L03, L05, L07) is running: 26 placements of 22
-  distinct sources are proved and published in `src/levels/bodies/`, with the
-  placement table `config/levels/bodies.tsv` (976 bytes by placement).
-  The placement gate passes on them.
+- **Wave 1 is done** (lots L01, L03, L05, L07): 49 placements of 28
+  distinct sources are proved and published in `src/levels/bodies/`, with
+  the placement table `config/levels/bodies.tsv` (1 760 bytes by
+  placement). The root re-measured every claim before publishing it, and
+  the placement gate passes on the result.
 - The proofs are **body-level**. The program-level gate is pending, so the
   published numbers are not promoted and no percentage is published.
+
+### What the first wave measured about the compiler
+
+Four classes of difference showed up, and they are worth keeping:
+
+| Class | Example | Reading |
+| --- | --- | --- |
+| one bit of a branch | `LEVEL10.REL:0x0490C0`, 255/256 bytes: the retail uses the *likely* form of the COP1 branch | the same routine is exact in `LEVEL1.REL:0x0490C8`; the modules are near-copies, not copies |
+| `sltiu $v1,$v1,1` | `LEVEL11.REL:0x033B10`, 127/128 bytes | the retail form comes from `TARGET_DEBUG_C_MODE` (`-mdebugc`) in the pinned compiler; the cause is measured in its `mips.md`/`mips.cxx`, but the option also moves the register assignment, so it is **not** a profile change yet |
+| register and scheduling | `LEVEL10.REL:0x033B10` | the retail keeps the comparison result in the register of the comparison, and puts the address computation in the delay slot of a call: a difference of source *form*, not of option |
+| early return | `LEVEL11.REL:0x0337E8`, 255/256 bytes | the retail skips the restore of `$ra` on one path: a *sibling call* shape |
+
+A candidate profile change needs a measured cause, a known provenance and a
+regression control before it is used. The `-mdebugc` route has the first
+two; the control run over the 49 proved placements is the next step.
 
 ## 4. What is next
 
@@ -94,9 +110,11 @@ command written next to it.
    module -- the bytes outside the rebuilt bodies included. Then the disc
    rebuild and the pinned hash. Until that exists, the campaign measures
    instruction sequences, not programs.
-2. **Compiler qualification.** The pinned chain reproduces bodies; it must
-   still be shown to be the retail compiler on the whole program.
-3. **Wave 2 and further.** 58 lot tables are cut and ready.
+2. **The `-mdebugc` route.** The measured cause is known; the regression
+   control over the 49 proved placements is not. A profile change is only
+   accepted with its control.
+3. **Wave 2.** 58 lot tables are cut and ready; the four lots of wave 1
+   proved 49 of their 60 targets.
 4. **The boot executable.** `SCUS_976.23` is a linked ELF without a symbol
    table; its own campaign needs its own bounds.
 

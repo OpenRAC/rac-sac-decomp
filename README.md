@@ -8,9 +8,11 @@ still hash to the pinned retail hash.
 
 This repository holds the **method, the rules, the templates and the tooling**,
 and the first measured results. The target is pinned; the foundation lot is
-delivered; the first wave has proved bodies at body level. The
-complete-program gate is still missing, so nothing here is *promoted*: see
-`docs/STATE.md` for the exact state and for what is next.
+delivered; the first wave has proved 49 placements of 28 distinct bodies at
+body level, published in `src/levels/bodies/` with the placement table
+`config/levels/bodies.tsv`. The **complete-program gate is still missing**,
+so nothing here is *promoted*: see `docs/STATE.md` for the exact state and
+for what is next.
 
 ## Start here
 
