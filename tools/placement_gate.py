@@ -121,9 +121,13 @@ def main() -> int:
         if harness is None:
             problems.append(f"{module} {row['offset']}: no boot harness given")
             continue
-        result = subprocess.run(
-            [sys.executable, str(harness), module, row["offset"], str(source),
-             "--one-line"], capture_output=True, text=True)
+        if is_boot:
+            command = [sys.executable, str(harness), row["offset"], str(source),
+                       "--one-line"]
+        else:
+            command = [sys.executable, str(harness), module, row["offset"],
+                       str(source), "--one-line"]
+        result = subprocess.run(command, capture_output=True, text=True)
         if "\tEXACT\t" not in result.stdout:
             problems.append(f"{module} {row['offset']}: the harness refuses the body"
                             f" ({result.stdout.strip() or result.stderr.strip()})")
