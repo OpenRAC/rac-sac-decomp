@@ -52,16 +52,19 @@ command written next to it.
       `-quiet -O2 -G0`. It is a **candidate** profile for this game: it
       reproduces retail bodies byte for byte, and it is not yet qualified on
       the complete program.
-- [ ] **The gates.** The **body gate** exists and is strict
+- [x] **The gates.** The **body gate** exists and is strict
       (`work/E0/harness.py`): it compiles one source, links it at the
       measured offset, resolves the fixups from the retail tables and
       compares every byte. The **placement gate** exists
       (`tools/placement_gate.py`): it checks that every proved body lies in
       the code interval, that its extent is the measured one, that no two
       placements of a module overlap, and that the published source still
-      compiles to the retail bytes. The **complete-program gate** does not
-      exist yet: rebuilding a whole module and comparing its hash is the
-      next root task, and no body is promoted until it does.
+      compiles to the retail bytes. The **assembly baseline** is qualified
+      for all 31 modules (`tools/assembly_baseline.py`): every candidate
+      code interval rebuilds byte for byte, 69 483 520 bytes in total. The
+      **complete-program gate** -- rebuild the module, then the disc, and
+      compare the hashes -- does not exist yet: it is the next root task,
+      and no body is promoted until it does.
 - [ ] **The tests.** The repository guard exists
       (`python3 tools/check_repository.py`). The unit tests of the tools are
       still missing.
@@ -73,6 +76,10 @@ command written next to it.
   (930 targets, 453 of them shared with another placement), 62 lot tables,
   the harness, and its negative control (a body with the wrong value is
   refused at the exact byte that differs).
+- **The assembly baseline is qualified**: the code interval of each of the
+  31 modules rebuilds byte for byte (69 483 520 bytes). Every C body is
+  therefore measured against a code region that is known to be the retail
+  code.
 - **Wave 1** (lots L01, L03, L05, L07) is running: 26 placements of 22
   distinct sources are proved and published in `src/levels/bodies/`, with the
   placement table `config/levels/bodies.tsv` (976 bytes by placement).
@@ -82,10 +89,11 @@ command written next to it.
 
 ## 4. What is next
 
-1. **Complete-program gate.** Rebuild a module from the placed bodies and
-   compare its bytes with the retail module; then the same for the disc.
-   Until it exists, the campaign measures instruction sequences, not
-   programs.
+1. **The module rebuild.** Compile the accepted bodies of a module, link
+   them at their placements, and compare the rebuilt module with the retail
+   module -- the bytes outside the rebuilt bodies included. Then the disc
+   rebuild and the pinned hash. Until that exists, the campaign measures
+   instruction sequences, not programs.
 2. **Compiler qualification.** The pinned chain reproduces bodies; it must
    still be shown to be the retail compiler on the whole program.
 3. **Wave 2 and further.** 58 lot tables are cut and ready.

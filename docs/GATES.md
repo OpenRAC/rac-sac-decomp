@@ -70,6 +70,9 @@ modules**, so the gate has to treat both:
    linked; the result must equal the retail code interval byte for byte.
    This proves that the module's code is the code the interval holds, and
    it is the baseline every later C gate stands on.
+   **This stage is qualified**: `tools/assembly_baseline.py` rebuilds the
+   code interval of all 31 modules exactly -- 69 483 520 bytes -- and
+   `config/levels/assembly_baseline.tsv` records the result.
 2. **The module rebuild.** Every body of the module that has an accepted C
    source is compiled and linked at its placement; the module is rebuilt
    from the link of the whole set, and the rebuilt module must equal the
