@@ -537,6 +537,10 @@ LEVEL13.REL	0x1BBC18	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
 LEVEL13.REL	0x1C5110	32	src/levels/bodies/AddMesh__14AglIRenderListR22AglSubMeshRenderParamsG20AglRenderListSortKey.c
 LEVEL13.REL	0x1C6A28	8	src/levels/bodies/SetProjectionType__19AglRenderTargetBase24AglRenderTargetEProjType.c
 LEVEL13.REL	0x1D1220	8	src/levels/bodies/GetPalette__10AgxTexture.c
+LEVEL13.REL	0x1DFEA0	132	src/levels/bodies/GetKeyProcRotate__16ApeAnimKeyStreamP16ApeAnimKeyStreamUifPf.c
+LEVEL13.REL	0x1E15F8	236	src/levels/bodies/Evaluate__21ApeAnimProceduralNodef.c
+LEVEL13.REL	0x1E18F8	144	src/levels/bodies/Evaluate__15ApeAnimTreeNodef.c
+LEVEL13.REL	0x1E1988	144	src/levels/bodies/QuickEvaluate__15ApeAnimTreeNodef.c
 LEVEL13.REL	0x1E59A8	8	src/levels/bodies/SetChunkGrowSize__11ApeFreeListUi.c
 LEVEL13.REL	0x1E5C48	8	src/levels/bodies/GetNumFree__C11ApeFreeList.c
 LEVEL13.REL	0x1E5C50	8	src/levels/bodies/GetAllocSize__C11ApeFreeList.c
@@ -700,6 +704,7 @@ LEVEL15.REL	0x04D7D0	8	src/levels/bodies/CONTROLLER_GetWorldButtonLeft__FUi.c
 LEVEL15.REL	0x04F710	32	src/levels/bodies/DRAW_AddStageRenderCallback__F10DRAW_LayerPF10DRAW_LayerPv_vPv.c
 LEVEL15.REL	0x067640	8	src/levels/bodies/TEXMGR_GetWidth__FP10AglTexture.c
 LEVEL15.REL	0x067648	8	src/levels/bodies/TEXMGR_GetHeight__FP10AglTexture.c
+LEVEL15.REL	0x0676A0	76	src/levels/bodies/LEVEL15_000676A0.c
 LEVEL15.REL	0x07C6A0	8	src/levels/bodies/GetTotalOfClusterUseForSave__14MemCardManager.c
 LEVEL15.REL	0x082CD8	32	src/levels/bodies/HUD_FontPrintWindowInitAutoScroll__FP20tFontPrintWindowData.c
 LEVEL15.REL	0x082D70	8	src/levels/bodies/HUD_FontPrintWindowAreaSetText__FP20tFontPrintWindowDataPc.c
@@ -707,8 +712,10 @@ LEVEL15.REL	0x08E300	8	src/levels/bodies/HUDFXCYCLE_Reset__FP11tHUDCYCLEFX.c
 LEVEL15.REL	0x094E90	64	src/levels/bodies/PAUSEMENU_SetTextUseSubnodeColor__FP10tPAUSEMENUUiUib.c
 LEVEL15.REL	0x098230	8	src/levels/bodies/PAUSEMODE_GetReusableTextBufferSize__Fv.c
 LEVEL15.REL	0x09ED10	32	src/levels/bodies/LEVEL20_0261B0.c
+LEVEL15.REL	0x09FAE8	192	src/levels/bodies/LEVEL15_0009FAE8.c
 LEVEL15.REL	0x0B1058	8	src/levels/bodies/ICONMENU_SetIconScrollSpeed__FP9tICONMENUf.c
 LEVEL15.REL	0x0B12E0	8	src/levels/bodies/ICONMENU_SetNumberVisibleIconSlots__FP9tICONMENUUi.c
+LEVEL15.REL	0x0B1C88	524	src/levels/bodies/LEVEL15_000B1C88.c
 LEVEL15.REL	0x0B1EE0	8	src/levels/bodies/ICONHORMENU_SetIconScrollSpeed__FP12tICONHORMENUf.c
 LEVEL15.REL	0x0B2070	400	src/levels/bodies/ICONHORMENU_AddItem__FP12tICONHORMENUUiUiUiUiUiUiUiUiUiUiUiUiUiUiUi.c
 LEVEL15.REL	0x0B22F8	8	src/levels/bodies/ICONMENU_SetNumberVisibleIconSlots__FP9tICONMENUUi.c
