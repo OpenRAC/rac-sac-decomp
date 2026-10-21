@@ -148,7 +148,10 @@ becomes a compiler route, it has to be measured across the whole program --
   usually bare;
 - but the rule is **not** a function of the preceding instruction alone:
   11 590 divisions carry no padding at all, and `lwc1` and `cvt.s.w` appear
-  on both sides.
+  on both sides;
+- and it is **not** an alignment rule either: only 48.6 % of the divisions
+  of the program are 8-byte aligned, and 24.6 % are 16-byte aligned --
+  the distribution any placement would give.
 
 The conclusion is a negative one, and it is useful: a blanket "insert a
 nop before every division" patch is refuted by the 11 590 bare divisions.

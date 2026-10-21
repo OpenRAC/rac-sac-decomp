@@ -61,6 +61,7 @@ def survey(data: bytes, end: int) -> dict:
     in_delay = 0
     padding = Counter()
     kinds = Counter()
+    alignment = Counter()
     hazard_padded: Counter[str] = Counter()
     hazard_bare: Counter[str] = Counter()
     for site in range(CODE_START, end, 4):
@@ -71,6 +72,7 @@ def survey(data: bytes, end: int) -> dict:
             continue
         total += 1
         kinds[name] += 1
+        alignment[site % 16] += 1
         # Walk back over the nops: the instruction the padding follows is
         # the hazard source.
         back = site
@@ -95,6 +97,8 @@ def survey(data: bytes, end: int) -> dict:
             in_delay += 1
     return {"divisions": total, "padded": padded, "in_delay_slot": in_delay,
             "padding": dict(sorted(padding.items())), "kinds": dict(sorted(kinds.items())),
+            "address_modulo_16": dict(sorted(alignment.items())),
+            "eight_byte_aligned": alignment[0] + alignment[8],
             "hazard_source_of_a_padded_division": dict(hazard_padded.most_common(12)),
             "instruction_before_a_bare_division": dict(hazard_bare.most_common(12))}
 
