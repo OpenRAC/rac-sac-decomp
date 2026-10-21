@@ -95,19 +95,19 @@ command written next to it.
 - **The boot scope is open.** The boot is a linked ELF without a symbol
   table, so its candidates are measured, not named: 3 821 intervals (1 665
   call targets and 3 620 code pointers in the data), 3 214 of them bounded
-  (`config/boot/summary.json`). The first two boot lots proved 30
-  placements of 9 distinct bodies, published in `src/boot/bodies/` with the
-  table `config/boot/bodies.tsv`. The boot rebuilt with those bodies has
-  the pinned retail hash.
-- **Wave 2** continues: 317 placements of 55 distinct sources are proved
-  and published (the level modules and the boot), 7 900 bytes by placement.
-  The root re-measured every claim before publishing it, and the placement
-  gate passes on the result.
+  (`config/boot/summary.json`). The boot lots proved 91 placements of 20
+  distinct bodies, published in `src/boot/bodies/` with the table
+  `config/boot/bodies.tsv`. The boot rebuilt with those bodies has the
+  pinned retail hash.
+- **Wave 2 and wave 3** (twenty lots, sixteen done): 469 placements of 79
+  distinct sources are proved and published (the level modules and the
+  boot), 26 628 bytes by placement. The root re-measured every claim
+  before publishing it, and the placement gate passes on the result.
 - **The families were expanded.** A body that is proved once is carried by
   many placements of the disc; every one of them is **re-measured on its
   own bytes** with the published source, and a placement whose relocation
-  context differs is simply refused. The expansion added 167 placements
-  from the 54 sources already proved.
+  context differs is simply refused. The expansion added more than 200
+  placements from the sources already proved.
 - The proofs are **body-level**. The program-level gate is pending, so the
   published numbers are not promoted and no percentage is published.
 
