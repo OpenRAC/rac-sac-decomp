@@ -247,13 +247,27 @@ becomes a compiler route, it has to be *measured* across the whole program --
   is uniformly distributed modulo 8 whatever the padding, and only 48.6 %
   of them are 8-byte aligned.
 
-The conclusion is a negative one, and it is useful: a blanket "insert two
-nops before every division" patch -- the route the sibling project built for
-its own game -- is refuted twice over, by the 21 % of divisions that carry
-one or no `nop` and by the fact that the count is a decision of the
-scheduler rather than a function of the code around it.  A body that misses
-only this `nop` is a **compiler-identity** question, not a source-form one,
-and it stays parked until a chain with the retail's scheduler is found.
+The conclusion about the *rule* is a negative one, and it is useful: a
+blanket "insert two nops before every division" patch -- the route the
+sibling project built for its own game -- cannot be right for every body,
+because 21 % of the retail's divisions carry one nop or none, and the count
+is a decision of the scheduler rather than a function of the code around it.
+
+**The blanket route is a route nonetheless**, and the campaign uses it where
+it holds.  Two things were measured on it:
+
+- it is a **superset** of the pinned chain on the level modules: every one
+  of the 158 sources the pinned chain proves is still exact with it
+  (158/158, no break);
+- it **completes** the bodies whose divisions all take the two-nop form --
+  `MobyUtil_IsShotClear__FPC4VEC3T0b` (256 bytes) is exact with it, and
+  stays parked with the pinned chain, whose compiler emits no `nop` at all.
+
+The route is therefore recorded as a profile with its cause, its provenance
+and its control (`config/toolchain.json`, id `divpad`), and it is used per
+source, the way the sibling project does.  The bodies whose divisions take
+one nop or none stay parked: the blanket rule is wrong for them, and that
+is a fact, not a guess.
 
 **The MIPS level is not that route.** The EE target refuses `-mips1` and
 `-mips2` outright ("Only MIPS-III or MIPS-IV CPUs can support 64 bit gp
