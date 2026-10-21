@@ -1,12 +1,13 @@
-/* GADGET_IsModToBeInstalledAtSlot__FUiUiUi -- LEVEL25.REL 0x033AD0, 128 bytes.
+/* GADGET_IsModToBeInstalledAtSlot__FUiUiUi_LEVEL13_033B10 -- LEVEL13.REL 0x033B10, 128 bytes.
  *
  * Body translated from the retail module.
  *
  * Evidence:
- *   Le gadget (identifiant "gadgetId") porte une table de 16 identifiants de modules
- *   a l'offset 0x30. La fonction renvoie vrai si l'entree "slot" de cette table
- *   porte l'identifiant de module "modId" ; une table vide renvoie faux.
- *   Deux appels distincts a GADGET_GetData__FUi (le second dans la branche).
+ *   Le gadget (identifiant "gadgetId") porte une table de 16 identifiants de
+ *   modules a l'offset 0x30. La fonction renvoie vrai si l'entree "slot" de
+ *   cette table porte l'identifiant de module "modId" ; une table vide renvoie
+ *   faux. Deux appels distincts a GADGET_GetData__FUi (le second dans la
+ *   branche).
  *
  * Placement: module-relative offset of the disc module; the other
  * placements of the same body are listed in config/levels/bodies.tsv.

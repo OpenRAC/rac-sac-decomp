@@ -1,6 +1,10 @@
-/* GADGET_GetGadgetNameInfo__FUiUi_LEVEL2_0343C0 -- LEVEL2.REL 0x0343C0, 32 bytes.
+/* CONTROLLER_GetWorldButtonLeft__FUi -- LEVEL13.REL 0x04D8D8, 8 bytes.
  *
  * Body translated from the retail module.
+ *
+ * Evidence:
+ *   L'etat des boutons du monde tient dans un mot : le bouton gauche est le
+ *   bit de poids faible. La valeur est posee dans le slot de delai du jr.
  *
  * Placement: module-relative offset of the disc module; the other
  * placements of the same body are listed in config/levels/bodies.tsv.
@@ -11,9 +15,7 @@
  * confirmed by the data of the disc yet.
  */
 
-extern char *GADGET_GetDefAtLevel__FUiUi(unsigned int gadget, unsigned int level);
-
-char *GADGET_GetGadgetNameInfo__FUiUi(unsigned int gadget, unsigned int level)
+unsigned int CONTROLLER_GetWorldButtonLeft__FUi(unsigned int buttons)
 {
-    return GADGET_GetDefAtLevel__FUiUi(gadget, level) + 0x10;
+    return buttons & 1;
 }
