@@ -101,10 +101,13 @@ FE.REL	0x0EA5F8	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
 FE.REL	0x0EA860	8	src/levels/bodies/GetNumFree__C11ApeFreeList.c
 FE.REL	0x0EB980	8	src/levels/bodies/ICONHORMENU_GetCurrentState__FP12tICONHORMENU.c
 FE.REL	0x0ECF70	8	src/levels/bodies/GetPalette__10AgxTexture.c
+LEVEL1.REL	0x0022F0	268	src/levels/bodies/WarpScreenCB__11ApeLevelDefP12TiXmlElement_LEVEL1_000022F0.c
 LEVEL1.REL	0x003750	64	src/levels/bodies/Update__12ApeLevelInstfP15AglRenderTarget_LEVEL1_003750.c
 LEVEL1.REL	0x003CB8	64	src/levels/bodies/Close__12AglMovieBase.c
 LEVEL1.REL	0x003D18	8	src/levels/bodies/Play__12AglMovieBase.c
 LEVEL1.REL	0x003FD8	8	src/levels/bodies/Ps2BinkBufferLock__8AglMovieP13PS2BINKBUFFER.c
+LEVEL1.REL	0x0053D0	208	src/levels/bodies/QueryFloatAttribute__C12TiXmlElementPCcPff.c
+LEVEL1.REL	0x007E38	216	src/levels/bodies/Navigate_IsValidPosInt__FPC8NavigatePC4VEC4bf.c
 LEVEL1.REL	0x00A078	64	src/levels/bodies/CAMERA_PushSystemUpdate__F14CameraSystemIDPFPfPf14CameraSystemIDPv_P7MATRIX4Pv_LEVEL1_00A078.c
 LEVEL1.REL	0x00B0A0	128	src/levels/bodies/LEVEL1_00B0A0.c
 LEVEL1.REL	0x00B120	128	src/levels/bodies/LEVEL1_00B120.c
@@ -158,7 +161,10 @@ LEVEL1.REL	0x0B2600	8	src/levels/bodies/ICONMENU_SetNumberVisibleIconSlots__FP9t
 LEVEL1.REL	0x0B3738	8	src/levels/bodies/ICONHORMENU_GetCurrentState__FP12tICONHORMENU.c
 LEVEL1.REL	0x0C2280	8	src/levels/bodies/GetTransientDataSize__10DoubleJump.c
 LEVEL1.REL	0x0C25D8	8	src/levels/bodies/GetTransientDataSize__5Glide.c
+LEVEL1.REL	0x0C4BB8	164	src/levels/bodies/Update__14ClankSuperKickf.c
+LEVEL1.REL	0x0C4CF8	224	src/levels/bodies/DamageSphere__19ClankSuperKickBlastPC4VEC3f.c
 LEVEL1.REL	0x0C5228	8	src/levels/bodies/GetTransientDataSize__5Glide.c
+LEVEL1.REL	0x0C5EB8	272	src/levels/bodies/Update__9ClankPortf.c
 LEVEL1.REL	0x0D3028	36	src/levels/bodies/EnemyController_FixLinks__FP4Moby.c
 LEVEL1.REL	0x0F0908	8	src/levels/bodies/KillEffect__4MaskP4Moby.c
 LEVEL1.REL	0x1303B0	8	src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP17ApeAnimCompositor.c
