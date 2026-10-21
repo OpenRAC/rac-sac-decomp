@@ -144,6 +144,27 @@ The tree carries a single machine description, with no floating-point
 hazard model: the reconstructed chain has no way to emit the retail's
 division padding at all.
 
+### A class that had never been measured
+
+The retail's prologue saves the **general purpose registers before the
+floating-point ones** -- `sd $s0, 0x10($sp)`, `sd $s2, 0x20`, `sd $s4,
+0x30`, `sd $ra, 0x38`, then `swc1 $f23, 0x58`, `swc1 $f22, 0x50`, `swc1
+$f21, 0x48`, `swc1 $f20, 0x40` (measured on LEVEL11.REL 0x07F620).  The
+pinned chain does the opposite: its `mips.c` carries a fix made for
+another game ("RAC2: FPR saves precede GPR saves").
+
+None of the bodies proved so far saved a floating-point register, so the
+class had never been measured -- the HUD and DRAW family was out of reach
+without anyone noticing.  The route that opens it is **one line** of the
+compiler (the condition of the save pass); the root measured its control
+over the whole table, 206 of the 206 sources of the level modules stay
+exact, the four that differ being the bodies that need another route.
+
+The class holds **30 125 bounded bodies** -- nearly ten per cent of the
+program, and the largest class left.  It is registered as a profile
+(`config/toolchain.json`, id `gnu-ee-20261015-gprfirst`) and the wave 6
+works it (lots `w6c/F*`).
+
 ### The vector bodies are not reproducible in pure C
 
 A research agent closed the class of the bodies written in the vector unit's
