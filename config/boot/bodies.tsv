@@ -47,6 +47,8 @@ SCUS_976.23	0x00121FF0	8	src/boot/bodies/func_00100328.c
 SCUS_976.23	0x00121FF8	8	src/boot/bodies/func_00121FB8.c
 SCUS_976.23	0x00122000	8	src/boot/bodies/func_00100328.c
 SCUS_976.23	0x00122008	8	src/boot/bodies/func_00100328.c
+SCUS_976.23	0x00131B18	424	src/boot/bodies/func_00131B18.c
+SCUS_976.23	0x00131CC0	424	src/boot/bodies/func_00131CC0.c
 SCUS_976.23	0x00137D40	8	src/boot/bodies/func_001450D8.c
 SCUS_976.23	0x00137D48	8	src/boot/bodies/func_001450D8.c
 SCUS_976.23	0x00137D50	8	src/boot/bodies/func_001450D8.c
