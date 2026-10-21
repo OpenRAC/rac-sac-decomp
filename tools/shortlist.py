@@ -47,6 +47,7 @@ def read_bounds(path: Path) -> list[dict]:
             "status": values["status"],
             "name": values.get("name", ""),
             "body_bytes": int(values["body_bytes"]),
+            "raw_sha256": values.get("raw_sha256", ""),
         })
     return rows
 
@@ -84,7 +85,20 @@ def main() -> int:
     parser.add_argument("--per-module", type=int, default=40)
     parser.add_argument("--evidence", default="call",
                         help="evidence the entry must carry (default: call)")
+    parser.add_argument("--exclude", type=Path, nargs="*", default=None,
+                        help="placement tables: the candidates whose raw body "
+                             "is already proved are left out of the queue")
     args = parser.parse_args()
+
+    proved: set[str] = set()
+    for table in args.exclude or []:
+        if not table.is_file():
+            continue
+        with table.open(encoding="utf-8", newline="") as handle:
+            for row in csv.DictReader((line for line in handle
+                                       if not line.startswith("#")), delimiter="\t"):
+                if row.get("body_sha256"):
+                    proved.add(row["body_sha256"])
 
     modules = sorted(path.name for path in args.modules.glob("*.REL"))
     if not modules:
@@ -99,6 +113,8 @@ def main() -> int:
         pool = []
         for row in read_bounds(table):
             if row["status"] != "bounded_candidate":
+                continue
+            if row.get("raw_sha256") and row["raw_sha256"] in proved:
                 continue
             if args.evidence not in row["evidence"]:
                 continue
@@ -157,6 +173,8 @@ def main() -> int:
     for row in selected:
         counts[row["module"]] += 1
     print(f"{len(selected)} targets over {len(counts)} modules -> {args.out}")
+    if proved:
+        print(f"  {len(proved)} raw bodies are already proved and were left out")
     shared = sum(1 for row in selected if placements[row["sha256"]] > 1)
     print(f"  {shared} of {len(selected)} selected bodies also occur at "
           "another placement")

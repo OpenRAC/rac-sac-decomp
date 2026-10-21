@@ -69,9 +69,12 @@ command written next to it.
       is qualified
       for all 31 modules (`tools/assembly_baseline.py`): every candidate
       code interval rebuilds byte for byte, 69 483 520 bytes in total. The
-      **complete-program gate** -- rebuild every body of a module from
-      source, not only the proved ones -- does not exist yet:
-      it is the next root task, and no body is promoted until it does.
+      **complete-program gate** exists (`tools/complete_gate.py`) and it
+      **refuses**: it requires that every bounded candidate body of every
+      module come from a C source, and 299 311 of them still come from the
+      assembly baseline.  Its coverage report (`tools/coverage.py`) is the
+      number the campaign drives down, and no body is promoted until the
+      gate passes.
 - [ ] **The tests.** The repository guard exists
       (`python3 tools/check_repository.py`). The unit tests of the tools are
       still missing.
@@ -241,18 +244,23 @@ first, and this is what that means.
 
 ## 4. What is next
 
-1. **The module rebuild.** Compile the accepted bodies of a module, link
-   them at their placements, and compare the rebuilt module with the retail
-   module -- the bytes outside the rebuilt bodies included. Then the disc
-   rebuild and the pinned hash. Until that exists, the campaign measures
-   instruction sequences, not programs.
-2. **The `-mdebugc` route.** The measured cause is known; the regression
-   control over the 49 proved placements is not. A profile change is only
-   accepted with its control.
-3. **Wave 2.** 58 lot tables are cut and ready; the four lots of wave 1
-   proved 49 of their 60 targets.
-4. **The boot executable.** `SCUS_976.23` is a linked ELF without a symbol
-   table; its own campaign needs its own bounds.
+1. **Close the coverage.**  The complete-program gate now measures what it
+   needs: 26 797 of the 323 138 bounded candidate bodies come from a proved
+   C source (238 032 of 64 714 676 bytes by placement), and **180 809
+   distinct bodies** are still to translate -- a family counts once, because
+   one source serves every placement that carries it.  The gate passes when
+   that number is zero.
+2. **The `-mdebugc` route.** The measured cause is known, the regression
+   control over the proved placements is done (49/49), and the route is
+   refuted by the source form that lot L35 found.
+3. **The remaining classes.** The `div.s` hazard pad is a scheduler
+   question; the switch tree of `GADGET_IsGadgetOfChar` is not a toolchain
+   question (nine chains agree); the vector bodies need a machine
+   description that the pinned compiler does not have.
+4. **The boot executable.** Its own scope is open: 244 of 3 214 bounded
+   bodies are covered, and the two slot widths mean two chains.
+5. **The queue is fresh.** `tools/shortlist.py --exclude` leaves out the
+   bodies that are already proved, so the next wave works on fresh targets.
 
 ## 5. Resume checklist
 
