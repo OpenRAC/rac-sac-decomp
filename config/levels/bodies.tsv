@@ -223,6 +223,10 @@ LEVEL10.REL	0x00B0A0	128	src/levels/bodies/LEVEL1_00B0A0.c
 LEVEL10.REL	0x00B120	128	src/levels/bodies/LEVEL1_00B120.c
 LEVEL10.REL	0x017370	8	src/levels/bodies/GLOBALVARS_AddQuickSelect__FUi.c
 LEVEL10.REL	0x017B00	64	src/levels/bodies/LEVEL10_017B00.c
+LEVEL10.REL	0x01B5E8	172	src/levels/bodies/GU_FadeOut__FPUiPfff.c
+LEVEL10.REL	0x01B698	172	src/levels/bodies/GU_FadeIn__FPUiPfff.c
+LEVEL10.REL	0x01D818	244	src/levels/bodies/GU_IsOnScreen__FPC4VEC3.c
+LEVEL10.REL	0x01DB40	200	src/levels/bodies/GU_CameraHint__FPC4VEC3PifP6PLAYER.c
 LEVEL10.REL	0x01E618	64	src/levels/bodies/LEVEL10_01E618.c
 LEVEL10.REL	0x01EF78	32	src/levels/bodies/LEVEL_RequestRestart__Fv_LEVEL10_01EF78.c
 LEVEL10.REL	0x0251A0	64	src/levels/bodies/TARGET_Init__Fv_LEVEL1_0251A8.c
@@ -398,6 +402,7 @@ LEVEL11.REL	0x0C0FA0	8	src/levels/bodies/GetTransientDataSize__5Glide.c
 LEVEL11.REL	0x0C3BF0	8	src/levels/bodies/GetTransientDataSize__5Glide.c
 LEVEL11.REL	0x0D05D8	36	src/levels/bodies/EnemyController_FixLinks__FP4Moby.c
 LEVEL11.REL	0x102818	8	src/levels/bodies/KillEffect__4MaskP4Moby.c
+LEVEL11.REL	0x10BC48	264	src/levels/bodies/PowerupAmmo_DestroyInSphere__FPC4VEC3fb.c
 LEVEL11.REL	0x141498	8	src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP17ApeAnimCompositor.c
 LEVEL11.REL	0x1460A8	8	src/levels/bodies/HUD_FontPrintWindowAreaSetText__FP20tFontPrintWindowDataPc.c
 LEVEL11.REL	0x18C5B8	8	src/levels/bodies/ICONMENU_SetIconScrollSpeed__FP9tICONMENUf.c
@@ -666,6 +671,8 @@ LEVEL14.REL	0x270DD0	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
 LEVEL14.REL	0x271038	8	src/levels/bodies/GetNumFree__C11ApeFreeList.c
 LEVEL14.REL	0x272158	8	src/levels/bodies/ICONHORMENU_GetCurrentState__FP12tICONHORMENU.c
 LEVEL14.REL	0x273748	8	src/levels/bodies/GetPalette__10AgxTexture.c
+LEVEL15.REL	0x0053D0	208	src/levels/bodies/LEVEL15_0053D0.c
+LEVEL15.REL	0x007E38	216	src/levels/bodies/LEVEL15_007E38.c
 LEVEL15.REL	0x01EF78	32	src/levels/bodies/LEVEL_RequestRestart__Fv_LEVEL20_01EF78.c
 LEVEL15.REL	0x025D18	32	src/levels/bodies/UPDATE_GameModeInit__Fv_LEVEL20_025D18.c
 LEVEL15.REL	0x0261B0	32	src/levels/bodies/LEVEL20_0261B0.c

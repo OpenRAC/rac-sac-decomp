@@ -192,6 +192,22 @@ visible in C for MIPS **and** the machine description carries the COP2
 patterns **and** the "pure C, no asm, no `.word`" rule is lifted.  Until
 then it is a closed class, not a pending one.
 
+### The boot's long tail
+
+The boot holds 3 821 bounded candidate intervals -- 563 872 bytes of
+bodies, more than every level module together -- and 111 of its bodies
+are proved.  Measured over the 2 166 prologues of the boot, the frames
+are distributed as:
+
+- **1 374** in 16-byte slots with `sq`/`lq` -- the route `prodg2953` (63 %);
+- **373** in 16-byte slots with `sd`/`ld` -- the route `sdk991111`;
+- **351** in 8-byte slots with `sd`/`ld` -- the pinned chain;
+- **68** without a frame -- exact on every route.
+
+The first lot of that tail proved **15 of its 15** targets, which makes
+the boot the most productive seam of the campaign: 208 lots of it are
+waiting (the private kit holds them).
+
 ### The boot and the modules are not the same build
 
 The boot keeps its frames in **16-byte slots** (`sq`/`lq`, `$ra` on top),
