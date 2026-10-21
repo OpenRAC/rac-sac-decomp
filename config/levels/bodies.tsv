@@ -336,6 +336,7 @@ LEVEL11.REL	0x003750	64	src/levels/bodies/Update__12ApeLevelInstfP15AglRenderTar
 LEVEL11.REL	0x003CB8	64	src/levels/bodies/Close__12AglMovieBase.c
 LEVEL11.REL	0x003D18	8	src/levels/bodies/Play__12AglMovieBase.c
 LEVEL11.REL	0x003FD8	8	src/levels/bodies/Ps2BinkBufferLock__8AglMovieP13PS2BINKBUFFER.c
+LEVEL11.REL	0x007E38	216	src/levels/bodies/Navigate_IsValidPosInt__FPC8NavigatePC4VEC4bf_LEVEL11_00007E38.c
 LEVEL11.REL	0x00B0A0	128	src/levels/bodies/LEVEL1_00B0A0.c
 LEVEL11.REL	0x00B120	128	src/levels/bodies/LEVEL1_00B120.c
 LEVEL11.REL	0x017370	8	src/levels/bodies/GLOBALVARS_AddQuickSelect__FUi.c
