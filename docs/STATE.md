@@ -183,19 +183,25 @@ compilers keep it.
 spacing of the stack slots (`tools/slot_spacing.py`) reads every function
 prologue of the 31 modules and finds two families:
 
-- **103 283 prologues** reserve their slots **8 bytes apart** -- the
+- **129 856 prologues** reserve their slots **8 bytes apart** -- the
   family the pinned chain reproduces;
-- **6 766 prologues** reserve them **16 bytes apart** -- 5.6 % of the
-  functions, spread over every module (182 to 234 per module).
+- **7 208 prologues** reserve them **16 bytes apart** or more -- 5 % of
+  the functions, spread over every module.
 
 Both families save with `sd`, which stores eight bytes: it is the *spacing*
 of the slots that differs, not the width of the store. The wide family
-holds **5 512 bounded bodies** -- the largest class left in the campaign --
+holds **5 822 bounded bodies** -- the largest class left in the campaign --
 and the route that reproduces it is the one the boot already uses,
 **`sdk991111`** (Sony EE-GCC 2.9): the wave-5 lot `w5/L02` measured 84 of
 the 400 bytes of FE.REL 0x0C5EA8 identical with it, the first difference
 being a branch distance and not the frame. The wave 6 works that family
-(lots `w6/W*`).
+(lots `w6b/V*`).
+
+Reading the spacing takes care, and the survey was wrong three times
+before it was right: only the *stores* of the prologue count (the loads of
+the epilogue do not), the window has to stop at the first call and at the
+second frame adjustment (or the next function leaks in), and the argument
+registers the frame saves (`sd $a0,0x60($sp)`) count as well.
 
 | profile | chain | what it reproduces |
 | --- | --- | --- |
