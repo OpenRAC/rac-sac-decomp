@@ -10,6 +10,12 @@ For every module that carries proved bodies, the gate
   3. compares the rebuilt module with the retail module, byte for byte, and
      compares their SHA-256.
 
+With ``--baseline``, the code interval of the module is not copied from the
+retail image but **rebuilt from the assembly baseline**: the interval is
+rendered as R5900, assembled and linked, and the proved bodies are written
+over it.  The module that comes out is a rebuild -- of its code -- and not a
+copy; its data, which no C source covers yet, is still the retail's.
+
 With ``--image``, the gate goes one step further: it writes the rebuilt
 modules back into a copy of the disc image, at their recorded extents, and
 requires the image to hash to the pinned retail hash.
@@ -18,11 +24,14 @@ What it proves: the bodies belong where they are placed, they do not
 disturb their surroundings, and the module -- and the image that carries
 it -- that contains them is the retail one.  What it does **not** prove:
 that the parts of the program that have no accepted source yet are rebuilt
-from source -- they are still the retail bytes here.  The full rebuild of
+from source -- with ``--baseline`` they are rebuilt from the *assembly*
+baseline, and without it they are still the retail bytes.  The full rebuild of
 a module, and then of the disc, is the stage that remains.
 
 Usage:
     python3 tools/module_gate.py --modules <private dir> --harness <private harness.py>
+    python3 tools/module_gate.py --modules <private dir> --harness <private harness.py> \
+                                 --baseline --assembler <Ps2EeAs.exe> --linker <ld.exe>
     python3 tools/module_gate.py --modules <private dir> --harness <private harness.py> \
                                  --image <private image>
 """
@@ -33,6 +42,7 @@ import argparse
 import csv
 import hashlib
 import json
+import struct
 import subprocess
 import sys
 import tempfile
@@ -42,11 +52,14 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
 from disc import IsoDisc  # noqa: E402
+from code_intervals import code_end_from_relocations  # noqa: E402
+from r5900_assembly import render_assembly, run_tool  # noqa: E402
 
 TABLE = ROOT / "config/levels/bodies.tsv"
 BOOT_TABLE = ROOT / "config/boot/bodies.tsv"
 TARGET = ROOT / "config/target.json"
 BOOT_NAME = "SCUS_976.23"
+CODE_START = 0x80
 
 
 def records(path: Path) -> list[dict[str, str]]:
@@ -68,6 +81,12 @@ def main() -> int:
     parser.add_argument("--boot", type=Path, default=None,
                         help="the boot executable; it is rebuilt with its proved "
                              "bodies and its hash is compared with the pinned one")
+    parser.add_argument("--baseline", action="store_true",
+                        help="rebuild the code interval from the assembly "
+                             "baseline instead of copying the retail bytes")
+    parser.add_argument("--assembler", type=Path, default=None)
+    parser.add_argument("--linker", type=Path, default=None)
+    parser.add_argument("--baseline-work", type=Path, default=Path("/tmp/rac-sac-baseline"))
     parser.add_argument("--image", type=Path, default=None,
                         help="disc image; the rebuilt modules are written back "
                              "into it and the image hash is compared with the "
@@ -92,6 +111,15 @@ def main() -> int:
             continue
         retail = path.read_bytes()
         rebuilt = bytearray(retail)
+        if args.baseline:
+            if not args.assembler or not args.linker:
+                problems.append(f"{module}: --baseline needs --assembler and --linker")
+                continue
+            interval = baseline_interval(module, retail, args.assembler, args.linker,
+                                         args.baseline_work, problems)
+            if interval is None:
+                continue
+            rebuilt[CODE_START:CODE_START + len(interval)] = interval
         for row in entries:
             offset = int(row["offset"], 0)
             size = int(row["size"])
@@ -170,6 +198,42 @@ def main() -> int:
         return 1
     print("module gate: every rebuilt module is the retail module")
     return 0
+
+
+
+def baseline_interval(module: str, data: bytes, assembler: Path, linker: Path,
+                      work: Path, problems: list[str]) -> bytes | None:
+    """Rebuild the code interval of a module from the assembly baseline."""
+    from elf import inspect_elf
+
+    end = code_end_from_relocations(data)
+    size = end - CODE_START
+    words = struct.unpack_from("<" + "I" * (size // 4), data, CODE_START)
+    assembly, _stats = render_assembly(words, CODE_START, end)
+    folder = work / module.replace(".REL", "").lower()
+    folder.mkdir(parents=True, exist_ok=True)
+    (folder / "module.s").write_text(assembly, encoding="ascii", newline="\n")
+    (folder / "module.ld").write_text(
+        f"T_ZERO = 0;\nSECTIONS {{ . = 0x{CODE_START:08X}; .text : {{ *(.text) }} }}\n",
+        encoding="ascii", newline="\n")
+    try:
+        run_tool([str(assembler), "-o", "module.o", "module.s"], folder,
+                 folder / "as.log")
+        run_tool([str(linker), "-T", "module.ld", "-o", "module.elf", "module.o"],
+                 folder, folder / "ld.log")
+    except ValueError as error:
+        problems.append(f"{module}: the assembly baseline failed ({error})")
+        return None
+    linked = (folder / "module.elf").read_bytes()
+    section = next(item for item in inspect_elf(folder / "module.elf")["sections"]
+                   if item["name"] == ".text")
+    actual = linked[int(section["file_offset"]):
+                   int(section["file_offset"]) + int(section["size"])]
+    if actual != data[CODE_START:end]:
+        problems.append(f"{module}: the assembly baseline differs from the retail "
+                        "code interval")
+        return None
+    return actual
 
 
 def rebuild_boot(boot: Path, harness: Path, rows: list[dict],

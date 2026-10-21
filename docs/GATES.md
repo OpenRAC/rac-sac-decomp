@@ -69,6 +69,12 @@ from its **published source**, writes the linked bytes at their measured
 offsets in a copy of the retail module, and requires the result to equal
 the retail module, SHA-256 included.
 
+With `--baseline`, the code interval of the module is not copied from the
+retail image but **rebuilt from the assembly baseline**: the interval is
+rendered as R5900, assembled and linked, and the proved bodies are written
+over it. The module that comes out is a rebuild -- of its code -- and not a
+copy; its data, which no C source covers yet, is still the retail's.
+
 With `--image`, the gate writes the rebuilt modules back into a copy of the
 disc image, at their recorded extents, and requires the image to hash to
 the pinned retail hash.  That is the program-level half of the evidence
@@ -78,9 +84,10 @@ standard, applied to the whole disc.
   their surroundings, and the module -- and the image that carries it --
   that contains them is the retail one.
 - It does **not** prove: that the parts of the program that have no
-  accepted source yet are rebuilt from source.  Those are still the retail
-  bytes here.  This gate is the last step before the full rebuild, not the
-  full rebuild.
+  accepted source yet are rebuilt from source.  With `--baseline` they are
+  rebuilt from the *assembly* baseline, and without it they are still the
+  retail bytes.  This gate is the last step before the full rebuild, not
+  the full rebuild.
 
 ## 4. The complete-program gate (missing -- the next root task)
 
@@ -103,9 +110,12 @@ modules**, so the gate has to treat both:
    source is compiled and linked at its placement; the module is rebuilt
    from the link of the whole set, and the rebuilt module must equal the
    retail module -- including the bytes outside the rebuilt bodies.
-   *The module gate of section 3 already checks the placements and the
-   surroundings; what is missing is the rebuild of the bodies that have no
-   accepted source yet.*
+   *The module gate of section 3 already does the two halves of this: with
+   `--baseline` it rebuilds the code interval from the **assembly
+   baseline** and writes the proved C bodies over it, and the result is
+   byte-identical to the retail module.  What is missing is the rebuild of
+   the bodies that have no accepted source yet: today they come from the
+   assembly baseline, and they must come from C.*
 3. **The disc rebuild.** The boot executable and the 31 modules are put back
    at their recorded extents, and the rebuilt image must hash to the pinned
    retail hash.
