@@ -167,6 +167,9 @@ LEVEL1.REL	0x0C5228	8	src/levels/bodies/GetTransientDataSize__5Glide.c
 LEVEL1.REL	0x0C5EB8	272	src/levels/bodies/Update__9ClankPortf.c
 LEVEL1.REL	0x0D3028	36	src/levels/bodies/EnemyController_FixLinks__FP4Moby.c
 LEVEL1.REL	0x0F0908	8	src/levels/bodies/KillEffect__4MaskP4Moby.c
+LEVEL1.REL	0x10F978	256	src/levels/bodies/ThrowTieTether_GetClosestOnScreen__FPC4VEC3f.c
+LEVEL1.REL	0x10FA78	272	src/levels/bodies/ThrowTieTether_GetClosestHighPriorityOnScreen__FPC4VEC3f.c
+LEVEL1.REL	0x116318	152	src/levels/bodies/Spotlight_RayCheck__FPC4VEC3T0fP4Moby.c
 LEVEL1.REL	0x1303B0	8	src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP17ApeAnimCompositor.c
 LEVEL1.REL	0x134FC0	8	src/levels/bodies/HUD_FontPrintWindowAreaSetText__FP20tFontPrintWindowDataPc.c
 LEVEL1.REL	0x173268	8	src/levels/bodies/ICONMENU_SetIconScrollSpeed__FP9tICONMENUf.c
