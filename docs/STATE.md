@@ -115,6 +115,35 @@ command written next to it.
 - The proofs are **body-level**. The program-level gate is pending, so the
   published numbers are not promoted and no percentage is published.
 
+### The pinned chain is a neutralised build
+
+The chain the campaign uses is the *no-pad* build of a reconstructed EE
+compiler tree.  The tree it comes from carries an `ASTRA` patch series that
+reproduces the SN retail behaviour of the R5900; the no-pad build
+neutralised one of its anchors:
+
+```
+  /* the ASTRA P1 anchor, in the tree the chain comes from */
+  if (TARGET_MIPS5900)
+    for (regno = GP_REG_FIRST; regno <= GP_REG_LAST; regno++)
+      mips_reg_mode[regno] = TImode;      /* 16-byte stack slots */
+
+  /* the same anchor, neutralised in the pinned build */
+  if (0 && TARGET_MIPS5900)
+    mips_reg_mode[0] = TImode;            /* 8-byte stack slots */
+```
+
+That is the whole story of the two scopes: the level modules were built
+with 8-byte slots and the boot with 16-byte ones, and the *same tree* holds
+both configurations.  The un-neutralised build (with the blanket two-nop
+division rule of the sibling project) is a candidate route for the boot; it
+is registered in the private profile table as `astra-divpad`, and it is not
+a profile until it is measured.
+
+The tree carries a single machine description, with no floating-point
+hazard model: the reconstructed chain has no way to emit the retail's
+division padding at all.
+
 ### The boot and the modules are not the same build
 
 The boot keeps its frames in **16-byte slots** (`sq`/`lq`, `$ra` on top),
