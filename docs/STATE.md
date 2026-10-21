@@ -289,9 +289,29 @@ it holds.  Two things were measured on it:
 
 The route is therefore recorded as a profile with its cause, its provenance
 and its control (`config/toolchain.json`, id `divpad`), and it is used per
-source, the way the sibling project does.  The bodies whose divisions take
-one nop or none stay parked: the blanket rule is wrong for them, and that
-is a fact, not a guess.
+source, the way the sibling project does.
+
+**And the contextual rule exists.**  A second route (`divpad-contextuel`)
+was built on a copy of the pinned tree, with a 226-line patch that gives
+the division family the retail's two instruction slots (`dslot` in
+`mips.md`, a `MACHINE_DEPENDENT_REORG_AFTER_DBR` hook) and fills them
+from the context: three nops when the producer is a branch, one when it
+is a floating-point operation the division reads, none when it is a
+conversion, two otherwise.  The retail's `rsqrt.s` family always takes
+the two slots.
+
+- it is a **superset** of the pinned chain on the level modules: 191 of
+  the 191 sources stay exact, no break;
+- it **proves the class the blanket rule misses** -- the bodies whose
+  division carries a *single* nop -- `GADGET_GetParametricXPToNextLevel`
+  among them, now published with its six placements.
+
+Its rule is a *model* of the retail's behaviour rather than a
+reproduction of it: over the 51 719 divisions of the program it agrees
+with the retail on 78.2 per cent, 93 per cent of the single-nop class and
+99 per cent of the three-nop class.  The class it serves worst is the
+one with no nop at all (30 per cent), where the division sits right
+against its producer.
 
 **The MIPS level is not that route.** The EE target refuses `-mips1` and
 `-mips2` outright ("Only MIPS-III or MIPS-IV CPUs can support 64 bit gp

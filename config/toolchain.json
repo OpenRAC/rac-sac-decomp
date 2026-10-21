@@ -93,6 +93,27 @@
       "regression_control": "Every one of the 158 sources of the level modules that the pinned chain proves is still exact with the route: 158/158, no break.",
       "verdict": "route accepted for the bodies that need it: it is a superset of the pinned chain on the level modules.  It is not a global profile: the retail's padding is contextual, and the blanket rule is wrong for the 21 per cent of divisions that carry one nop or none -- the bodies of that family stay parked.",
       "reproduce": "python3 work/E0/trial_mdebugc.py, and the placement gate with the private profile table"
+    },
+    {
+      "id": "divpad-contextuel",
+      "scope": "the bodies of the level modules whose divisions carry one hazard nop",
+      "provenance": "The pinned chain's own tree, copied, plus a 226-line patch (mips.md, mips.h, mips.c, toplev.c) that gives the division family the retail's two instruction slots and fills them from the context.  The tree is copied in /tmp and rebuilt; the pinned tree is never modified.  External binary: pinned by hash, never rebuilt here and never committed.",
+      "toolchain": {
+        "cpp_sha256": "",
+        "cc1_sha256": "a122ebac4089777d7b1522a7f4f2b045de9318df583e929e59b7f6acfacfd529",
+        "as_sha256": ""
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "The retail reserves two instruction slots before every single-precision division, and the scheduler fills them with useful instructions when it can; the rest stays a nop.  The pinned chain's divsf3 carries no delay attribute, so it reserves nothing.  The route reserves the slots and fills them from the context: three nops when the producer is a branch, one when it is a floating-point operation the division reads, none when it is a conversion, two otherwise.",
+      "regression_control": "Every one of the 191 sources of the level modules that the pinned chain proves is still exact with the route: 191/191, no break.  The route also proves the bodies whose divisions carry a single nop, which the blanket two-nop rule misses.",
+      "verdict": "route accepted: it is a superset of the pinned chain on the level modules, and it opens the class of the single-nop divisions.  Its rule is a model of the retail's behaviour, not a reproduction of it: it agrees with the retail on 78.2 per cent of the 51 719 divisions of the program, 93 per cent of the single-nop class and 99 per cent of the three-nop class.",
+      "reproduce": "the patch and the build script are in the private kit, work/w3/research-div-contextuel"
     }
   ],
   "trials": [
