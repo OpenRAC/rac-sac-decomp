@@ -33,7 +33,9 @@ sys.path.insert(0, str(ROOT / "tools"))
 from c_source_policy import require_c_source  # noqa: E402
 
 TABLE = ROOT / "config/levels/bodies.tsv"
+SOURCES = ROOT / "config/levels/body_sources.tsv"
 BOOT_TABLE = ROOT / "config/boot/bodies.tsv"
+BOOT_SOURCES = ROOT / "config/boot/body_sources.tsv"
 PROFILE = ROOT / "config/toolchain.json"
 
 
@@ -63,7 +65,7 @@ def main() -> int:
     profiles: dict[str, dict] = {}
     if args.profiles and args.profiles.is_file():
         profiles = json.loads(args.profiles.read_text(encoding="utf-8"))
-    rows = records(TABLE) + records(BOOT_TABLE)
+    rows = records(SOURCES) + records(BOOT_SOURCES)
     sources: dict[str, str] = {}
     source_profile: dict[str, str] = {}
     for row in rows:

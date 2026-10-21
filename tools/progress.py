@@ -18,11 +18,17 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "tools"))
+
+from placement_table import join  # noqa: E402
 BODIES = ROOT / "config/levels/bodies.tsv"
+BODY_SOURCES = ROOT / "config/levels/body_sources.tsv"
 BOOT_BODIES = ROOT / "config/boot/bodies.tsv"
+BOOT_BODY_SOURCES = ROOT / "config/boot/body_sources.tsv"
 BASELINE = ROOT / "config/levels/assembly_baseline.tsv"
 INTERVALS = ROOT / "config/levels/code_intervals.tsv"
 MODULES = ROOT / "config/levels/modules.tsv"
@@ -39,8 +45,8 @@ def records(path: Path) -> list[dict[str, str]]:
 
 def snapshot() -> dict:
     """Build the snapshot from the catalogues."""
-    bodies = records(BODIES)
-    boot_bodies = records(BOOT_BODIES)
+    bodies = join(BODIES, BODY_SOURCES)
+    boot_bodies = join(BOOT_BODIES, BOOT_BODY_SOURCES)
     baseline = records(BASELINE)
     intervals = records(INTERVALS)
     boot_summary = json.loads(BOOT_SUMMARY.read_text(encoding="utf-8")) \

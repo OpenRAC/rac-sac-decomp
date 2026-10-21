@@ -42,6 +42,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
 from coverage import bounds_rows, records  # noqa: E402
+from placement_table import join, sources  # noqa: E402
 from module_gate import baseline_interval, rebuild_boot, rebuild_image  # noqa: E402
 
 CODE_START = 0x80
@@ -65,16 +66,20 @@ def main() -> int:
     args = parser.parse_args()
 
     tables = [ROOT / "config/levels/bodies.tsv", ROOT / "config/boot/bodies.tsv"]
+    source_tables = [ROOT / "config/levels/body_sources.tsv",
+                     ROOT / "config/boot/body_sources.tsv"]
     profiles: dict[str, dict] = {}
     if args.profiles and args.profiles.is_file():
         profiles = json.loads(args.profiles.read_text(encoding="utf-8"))
 
     # 1. Coverage.
     proved: dict[str, set[str]] = {}
-    for table in tables:
-        for row in records(table):
-            if row.get("body_sha256"):
-                proved.setdefault(row["module"], set()).add(row["body_sha256"])
+    for placement, source in zip(tables, source_tables):
+        known = sources(source)
+        for row in records(placement):
+            facts = known.get(row.get("source", ""), {})
+            if facts.get("body_sha256"):
+                proved.setdefault(row["module"], set()).add(facts["body_sha256"])
 
     coverage: dict[str, dict] = {}
     missing_total = 0
@@ -112,7 +117,7 @@ def main() -> int:
 
     # 2. Rebuild.
     problems: list[str] = []
-    rows = records(tables[0])
+    rows = join(tables[0], source_tables[0])
     per_module: dict[str, list[dict]] = {}
     for row in rows:
         per_module.setdefault(row["module"], []).append(row)

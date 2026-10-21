@@ -52,11 +52,14 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
 from disc import IsoDisc  # noqa: E402
+from placement_table import join  # noqa: E402
 from code_intervals import code_end_from_relocations  # noqa: E402
 from r5900_assembly import render_assembly, run_tool  # noqa: E402
 
 TABLE = ROOT / "config/levels/bodies.tsv"
+SOURCES = ROOT / "config/levels/body_sources.tsv"
 BOOT_TABLE = ROOT / "config/boot/bodies.tsv"
+BOOT_SOURCES = ROOT / "config/boot/body_sources.tsv"
 TARGET = ROOT / "config/target.json"
 BOOT_NAME = "SCUS_976.23"
 CODE_START = 0x80
@@ -93,7 +96,7 @@ def main() -> int:
                              "pinned retail hash")
     args = parser.parse_args()
 
-    rows = records(TABLE)
+    rows = join(TABLE, SOURCES)
     profiles: dict[str, dict] = {}
     if args.profiles and args.profiles.is_file():
         profiles = json.loads(args.profiles.read_text(encoding="utf-8"))
@@ -158,7 +161,7 @@ def main() -> int:
     print(f"{rebuilt_bytes} byte(s) rebuilt from published sources, "
           f"{len(rows)} placement(s)")
 
-    boot_rows = records(BOOT_TABLE)
+    boot_rows = join(BOOT_TABLE, BOOT_SOURCES)
     if boot_rows and args.boot is None:
         print("  boot             not measured: give --boot and --boot-harness")
     elif boot_rows:

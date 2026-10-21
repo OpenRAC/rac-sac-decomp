@@ -30,8 +30,19 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "tools"))
+
+from placement_table import SOURCE_FIELDS, join  # noqa: E402
+
+SOURCE_HEADER = [
+    "# The proved sources, one row each; the placements that carry them",
+    "# are in bodies.tsv.",
+]
+
 TABLE = ROOT / "config/levels/bodies.tsv"
+SOURCES = ROOT / "config/levels/body_sources.tsv"
 BOOT_TABLE = ROOT / "config/boot/bodies.tsv"
+BOOT_SOURCES = ROOT / "config/boot/body_sources.tsv"
 INTERVALS = ROOT / "config/levels/code_intervals.tsv"
 BOOT_SUMMARY = ROOT / "config/boot/summary.json"
 BOOT_NAME = "SCUS_976.23"
@@ -61,16 +72,18 @@ def main() -> int:
                              "binaries of the harness.")
     parser.add_argument("--quiet", action="store_true")
     parser.add_argument("--refresh", action="store_true",
-                        help="rewrite the object and source hashes of the "
-                             "placement table from the measurement")
+                        help="rewrite the hashes of the source table from the "
+                             "measurement")
+    parser.add_argument("--full", action="store_true",
+                        help="measure every placement, not one per source")
     args = parser.parse_args()
 
     profiles: dict[str, dict] = {}
     if args.profiles and args.profiles.is_file():
         profiles = json.loads(args.profiles.read_text(encoding="utf-8"))
 
-    rows = records(TABLE)
-    boot_rows = records(BOOT_TABLE)
+    rows = join(TABLE, SOURCES)
+    boot_rows = join(BOOT_TABLE, BOOT_SOURCES)
     intervals = {row["module"]: row for row in records(INTERVALS)}
     boot_summary = json.loads(BOOT_SUMMARY.read_text(encoding="utf-8")) \
         if BOOT_SUMMARY.is_file() else {}
@@ -78,6 +91,7 @@ def main() -> int:
     placements = 0
     bytes_covered = 0
     sources: set[str] = set()
+    hashed: dict[str, str] = {}
     occupied: dict[str, list[tuple[int, int, str]]] = {}
 
     for row in rows + boot_rows:
@@ -130,6 +144,15 @@ def main() -> int:
         if not source.is_file():
             problems.append(f"{module} {row['offset']}: missing source {row['source']}")
             continue
+        name = row["source"]
+        if not args.full and name in hashed:
+            # The body of a family is the same bytes everywhere and the object
+            # hash depends on the source: one measurement per source is enough.
+            if args.refresh:
+                row["object_sha256"] = hashed[name]
+                row["source_sha256_lf"] = hashlib.sha256(
+                    source.read_bytes()).hexdigest()
+            continue
         harness = args.boot_harness if is_boot else args.harness
         if harness is None:
             problems.append(f"{module} {row['offset']}: no boot harness given")
@@ -150,8 +173,9 @@ def main() -> int:
                             f" ({result.stdout.strip() or result.stderr.strip()})")
         else:
             parts = result.stdout.strip().split("\t")
+            hashed[name] = parts[4] if len(parts) > 4 else ""
             if args.refresh:
-                row["object_sha256"] = parts[4] if len(parts) > 4 else ""
+                row["object_sha256"] = hashed[name]
                 row["source_sha256_lf"] = hashlib.sha256(
                     source.read_bytes()).hexdigest()
             if not args.quiet:
@@ -164,27 +188,33 @@ def main() -> int:
                 problems.append(f"{module}: {name} and {next_name} overlap")
 
     if args.refresh:
-        for table, rows in ((TABLE, rows), (BOOT_TABLE, boot_rows)):
+        for table, source_table, rows in ((TABLE, SOURCES, rows),
+                                           (BOOT_TABLE, BOOT_SOURCES, boot_rows)):
             if not table.is_file():
                 continue
-            with table.open(encoding="utf-8", newline="") as handle:
-                lines = [line for line in handle.read().splitlines()
-                         if line and not line.startswith("#")]
-            header = lines[0].split("\t")
-            known = {row["module"] + "|" + row["offset"]: row for row in rows}
-            out = [line for line in lines
-                   if line.split("\t")[0] == "module"
-                   or known.get(line.split("\t")[0] + "|" + line.split("\t")[1])
-                   is None]
-            for line in lines[1:]:
-                values = line.split("\t")
-                row = known.get(values[0] + "|" + values[1])
-                if row is None:
+            facts: dict[str, dict[str, str]] = {}
+            for row in rows:
+                facts.setdefault(row["source"], dict(row))
+            for name, row in facts.items():
+                source = ROOT / name
+                if not source.is_file():
                     continue
-                values = [row.get(field, "") for field in header]
-                out.append("\t".join(values))
-            table.write_text("\n".join(out) + "\n", encoding="utf-8", newline="\n")
-            print(f"  refreshed {table.relative_to(ROOT)}")
+                row["source_sha256_lf"] = hashlib.sha256(
+                    source.read_bytes()).hexdigest()
+                module = args.modules / row["module"]
+                if module.is_file():
+                    data = module.read_bytes()
+                    offset = int(row["offset"], 0)
+                    size = int(row["size"])
+                    row["body_sha256"] = hashlib.sha256(
+                        data[offset:offset + size]).hexdigest()
+            lines = SOURCE_HEADER + ["\t".join(SOURCE_FIELDS)]
+            for name in sorted(facts):
+                row = facts[name]
+                lines.append("\t".join(str(row.get(field, "")) for field in SOURCE_FIELDS))
+            source_table.write_text("\n".join(lines) + "\n", encoding="utf-8",
+                                    newline="\n")
+            print(f"  refreshed {source_table.relative_to(ROOT)}")
 
     print(f"{placements} placement(s), {len(sources)} source(s), {bytes_covered} "
           "byte(s) by placement")
