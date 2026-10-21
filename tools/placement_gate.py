@@ -53,8 +53,17 @@ def main() -> int:
     parser.add_argument("--boot-harness", type=Path, default=None,
                         help="harness of the boot executable (its addresses "
                              "are virtual, not module relative)")
+    parser.add_argument("--profiles", type=Path, default=None,
+                        help="private table of the compiler profiles: name -> "
+                             "{cpp, cc1, flags, work}.  A row whose profile is "
+                             "not in the table is measured with the default "
+                             "binaries of the harness.")
     parser.add_argument("--quiet", action="store_true")
     args = parser.parse_args()
+
+    profiles: dict[str, dict] = {}
+    if args.profiles and args.profiles.is_file():
+        profiles = json.loads(args.profiles.read_text(encoding="utf-8"))
 
     rows = records(TABLE)
     boot_rows = records(BOOT_TABLE)
@@ -127,6 +136,10 @@ def main() -> int:
         else:
             command = [sys.executable, str(harness), module, row["offset"],
                        str(source), "--one-line"]
+        profile = profiles.get((row.get("profile") or "").split(":")[0])
+        if profile:
+            command += ["--cpp", profile["cpp"], "--cc1", profile["cc1"],
+                        "--flags", profile["flags"], "--work", profile["work"]]
         result = subprocess.run(command, capture_output=True, text=True)
         if "\tEXACT\t" not in result.stdout:
             problems.append(f"{module} {row['offset']}: the harness refuses the body"

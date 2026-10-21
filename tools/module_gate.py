@@ -63,6 +63,8 @@ def main() -> int:
     parser.add_argument("--modules", type=Path, required=True)
     parser.add_argument("--harness", type=Path, required=True)
     parser.add_argument("--boot-harness", type=Path, default=None)
+    parser.add_argument("--profiles", type=Path, default=None,
+                        help="private table of the compiler profiles")
     parser.add_argument("--boot", type=Path, default=None,
                         help="the boot executable; it is rebuilt with its proved "
                              "bodies and its hash is compared with the pinned one")
@@ -73,6 +75,9 @@ def main() -> int:
     args = parser.parse_args()
 
     rows = records(TABLE)
+    profiles: dict[str, dict] = {}
+    if args.profiles and args.profiles.is_file():
+        profiles = json.loads(args.profiles.read_text(encoding="utf-8"))
     per_module: dict[str, list[dict]] = {}
     for row in rows:
         per_module.setdefault(row["module"], []).append(row)
@@ -93,10 +98,13 @@ def main() -> int:
             source = ROOT / row["source"]
             with tempfile.TemporaryDirectory() as directory:
                 emit = Path(directory) / "body.bin"
-                result = subprocess.run(
-                    [sys.executable, str(args.harness), module, row["offset"],
-                     str(source), "--one-line", "--emit", str(emit)],
-                    capture_output=True, text=True)
+                command = [sys.executable, str(args.harness), module, row["offset"],
+                           str(source), "--one-line", "--emit", str(emit)]
+                profile = profiles.get((row.get("profile") or "").split(":")[0])
+                if profile:
+                    command += ["--cpp", profile["cpp"], "--cc1", profile["cc1"],
+                                "--flags", profile["flags"], "--work", profile["work"]]
+                result = subprocess.run(command, capture_output=True, text=True)
                 if "\tEXACT\t" not in result.stdout:
                     problems.append(f"{module} {row['offset']}: the harness refuses "
                                     f"the body ({result.stdout.strip()})")
@@ -129,7 +137,7 @@ def main() -> int:
                             "or boot harness was given")
         else:
             rebuilt_boot = rebuild_boot(args.boot, args.boot_harness, boot_rows,
-                                        problems)
+                                        problems, profiles)
             if rebuilt_boot is not None:
                 target = json.loads(TARGET.read_text(encoding="utf-8"))
                 digest = hashlib.sha256(rebuilt_boot).hexdigest()
@@ -165,8 +173,10 @@ def main() -> int:
 
 
 def rebuild_boot(boot: Path, harness: Path, rows: list[dict],
-                 problems: list[str]) -> bytes | None:
+                 problems: list[str],
+                 profiles: dict[str, dict] | None = None) -> bytes | None:
     """Rebuild the boot executable with its proved bodies."""
+    profiles = profiles or {}
     from elf import inspect_elf
     report = inspect_elf(boot)
     section = next(item for item in report["sections"] if item["name"] == ".text")
@@ -179,9 +189,13 @@ def rebuild_boot(boot: Path, harness: Path, rows: list[dict],
         source = ROOT / row["source"]
         with tempfile.TemporaryDirectory() as directory:
             emit = Path(directory) / "body.bin"
-            result = subprocess.run(
-                [sys.executable, str(harness), row["offset"], str(source),
-                 "--one-line", "--emit", str(emit)], capture_output=True, text=True)
+            command = [sys.executable, str(harness), row["offset"], str(source),
+                       "--one-line", "--emit", str(emit)]
+            profile = profiles.get((row.get("profile") or "").split(":")[0])
+            if profile:
+                command += ["--cpp", profile["cpp"], "--cc1", profile["cc1"],
+                            "--flags", profile["flags"], "--work", profile["work"]]
+            result = subprocess.run(command, capture_output=True, text=True)
             if "\tEXACT\t" not in result.stdout:
                 problems.append(f"boot {row['offset']}: the harness refuses the body "
                                 f"({result.stdout.strip()})")
