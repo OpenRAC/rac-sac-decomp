@@ -22,10 +22,14 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import sys
 from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "tools"))
+
+from placement_table import records, sources  # noqa: E402
 
 
 def records(path: Path) -> list[dict[str, str]]:
@@ -49,7 +53,10 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--bounds", type=Path, required=True)
-    parser.add_argument("--tables", type=Path, nargs="+", required=True)
+    parser.add_argument("--tables", type=Path, nargs="+", required=True,
+                        help="the placement tables")
+    parser.add_argument("--sources", type=Path, nargs="+", required=True,
+                        help="the source tables that go with them")
     parser.add_argument("--complete", action="store_true",
                         help="exit non-zero when a module is not fully covered")
     parser.add_argument("--json", action="store_true")
@@ -62,11 +69,13 @@ def main() -> int:
     # placements that carry it, so the *work* left is counted globally.
     proved: dict[str, set[str]] = defaultdict(set)
     global_proved: set[str] = set()
-    for table in args.tables:
-        for row in records(table):
-            if row.get("body_sha256"):
-                proved[row["module"]].add(row["body_sha256"])
-                global_proved.add(row["body_sha256"])
+    for placement, source in zip(args.tables, args.sources):
+        known = sources(source)
+        for row in records(placement):
+            facts = known.get(row.get("source", ""), {})
+            if facts.get("body_sha256"):
+                proved[row["module"]].add(facts["body_sha256"])
+                global_proved.add(facts["body_sha256"])
 
     report: dict[str, object] = {"modules": {}, "complete": True}
     total_bodies = total_covered = total_bytes = total_covered_bytes = 0

@@ -1,0 +1,135 @@
+# The proved sources, one row each; the placements that carry them
+# are in bodies.tsv.
+source	source_sha256_lf	object_sha256	profile	proof	body_sha256
+src/levels/bodies/ACTOR_Update__Fv.c					
+src/levels/bodies/ACTOR_Update__Fv_LEVEL14_049D10.c					
+src/levels/bodies/ANIM_SetInstanceAnimation__FP13GDE_AnimationP13ANIM_Instance.c					
+src/levels/bodies/AddMesh__14AglIRenderListR22AglSubMeshRenderParamsG20AglRenderListSortKey.c					
+src/levels/bodies/Add__21EffectCallbackManagerP14EffectCallback.c	b27ae01245c654a4f45cbcdea199cef2397f5f58219469c7e46e8aa62333ed52	bff79545429d939a3019903717b4145cc897571432223886c5a27061d45d0d07	gnu-ee-20261015:-O2 -G0	body	341379abfbc9f7bdf809966f1d329f045a2bcc473a12860aae005f280441429a
+src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c					
+src/levels/bodies/AnimTranslator_GetFrameTrans__FP14AnimTranslator.c					
+src/levels/bodies/ApePtrAdd__H1Zv_PX01Ui_PX01.c					
+src/levels/bodies/CAMERA_PushSystemUpdate__F14CameraSystemIDPFPfPf14CameraSystemIDPv_P7MATRIX4Pv.c					
+src/levels/bodies/CB_ARRAY_Init__FP14tCB_ARRAY_DATA.c					
+src/levels/bodies/CHEAT_IsActive__FUi.c	822b351680e695e6e167abbcb5a0def32a4746d5bd9b616447973cee1340ef74	8f916d638b56ea1daed3f5bd4dd10a73beae926208744db162668999fd072410	gnu-ee-20261015:-O2 -G0	body	cb9985de1e4f14865f6a56c3188f4fc7fc51c58bef3daad88808b3a013071c43
+src/levels/bodies/CONTROLLER_GetButtonsPressedWithAnalog__FUi.c					
+src/levels/bodies/CONTROLLER_GetWorldButtonLeft__FUi.c					
+src/levels/bodies/Close__12AglMovieBase.c					
+src/levels/bodies/CreateFileNameWithCurrentPath__14MemCardManagerPCcT1Pci.c					
+src/levels/bodies/DDSLittleLong__Fi.c					
+src/levels/bodies/DRAW_AddStageRenderCallback__F10DRAW_LayerPF10DRAW_LayerPv_vPv.c	fb798e415a7e088a248879b6af991c06686a7e3f4bacc84b202d8cd0d286365f	f7031cb5ebd4702c85f61c363689838f62090006c21b06e6988a0c11e4570568	gnu-ee-20261015:-O2 -G0	body	2bf92be347dc18b54503dea81d902f500f4de89da65c84701d0aede543b47840
+src/levels/bodies/FADEOVERLAY_IsAtFinalUpAlpha__Fv.c					
+src/levels/bodies/FADEOVERLAY_IsIdle__Fv.c					
+src/levels/bodies/FADEOVERLAY_Pause_Update__Fv.c					
+src/levels/bodies/FADEOVERLAY_Refresh__FUiUcUcUcb.c					
+src/levels/bodies/FADEOVERLAY_Render__Fv.c					
+src/levels/bodies/FADEOVERLAY_Update__Fv.c					
+src/levels/bodies/FE_007BA8.c					
+src/levels/bodies/FE_008090.c					
+src/levels/bodies/FastMemZero__FPvUi.c					
+src/levels/bodies/GADGET_FillAmmo__FUi.c					
+src/levels/bodies/GADGET_FillAmmo__FUi_LEVEL13_034080.c					
+src/levels/bodies/GADGET_FillAmmo__FUi_LEVEL14_034040.c					
+src/levels/bodies/GADGET_GetDataDef__FUi.c					
+src/levels/bodies/GADGET_GetDataDef__FUi_LEVEL13_033580.c	60618072661ae922c09ec9c387b26779928deb703e5f2393350dde24d58d6999	6f1ac20450a2c2edffa9bb79118b7cb4718dce024f16b96dabbb3601646c88ea	gnu-ee-20261015:-O2 -G0	body	d3440b124ee9aba44e9b654d0afdb4e351d00b6b2b74e8d8c673992e1e60636f
+src/levels/bodies/GADGET_GetGadgetNameInfo__FUiUi.c					
+src/levels/bodies/GADGET_GetGadgetNameInfo__FUiUi_LEVEL14_0344B0.c					
+src/levels/bodies/GADGET_GetGadgetNameInfo__FUiUi_LEVEL1_0344F8.c					
+src/levels/bodies/GADGET_GetGadgetNameInfo__FUiUi_LEVEL20_0343F8.c					
+src/levels/bodies/GADGET_IsModToBeInstalledAtSlot__FUiUiUi.c					
+src/levels/bodies/GAMETARGET_CheckInsideTrigger__FPC7Trigger.c					
+src/levels/bodies/GAMETARGET_CheckInsideTrigger__FPC7Trigger_LEVEL10_025B58.c					
+src/levels/bodies/GAMETARGET_CheckInsideTrigger__FPC7Trigger_LEVEL11_025B58.c					
+src/levels/bodies/GAMETARGET_CheckInsideTrigger__FPC7Trigger_LEVEL18_025A70.c					
+src/levels/bodies/GAMETARGET_CheckInsideTrigger__FPC7Trigger_LEVEL22_025B58.c					
+src/levels/bodies/GLOBALVARS_AddQuickSelect__FUi.c					
+src/levels/bodies/GLOBALVARS_GetPlayerTitaniumBoltCount__Fv.c					
+src/levels/bodies/GLOBALVARS_ReducePlayerDeaths__Fv.c					
+src/levels/bodies/GLOBALVARS_ReducePlayerDeaths__Fv_LEVEL14_036E68.c					
+src/levels/bodies/GLOBAL_GetFlagBitU16__FUiUc.c					
+src/levels/bodies/GLOBAL_GetFlagBitU16__FUiUc_LEVEL10_035D18.c					
+src/levels/bodies/GLOBAL_GetFlagBitU16__FUiUc_LEVEL11_035D18.c					
+src/levels/bodies/GLOBAL_GetFlagBitU16__FUiUc_LEVEL1_035D20.c					
+src/levels/bodies/GLOBAL_GetFlagBitU32__FUiUi.c					
+src/levels/bodies/GLOBAL_GetFlagBitU32__FUiUi_LEVEL10_035D80.c					
+src/levels/bodies/GLOBAL_GetFlagBitU32__FUiUi_LEVEL11_035D80.c					
+src/levels/bodies/GLOBAL_GetFlagBitU32__FUiUi_LEVEL1_035D88.c					
+src/levels/bodies/GLOBAL_GetFlagBit__FUiUc.c					
+src/levels/bodies/GLOBAL_GetFlagBit__FUiUc_LEVEL10_035CA0.c					
+src/levels/bodies/GLOBAL_GetFlagBit__FUiUc_LEVEL11_035CA0.c					
+src/levels/bodies/GLOBAL_GetFlagBit__FUiUc_LEVEL13_035CA0.c					
+src/levels/bodies/GLOBAL_GetFlagBit__FUiUc_LEVEL14_035C60.c					
+src/levels/bodies/GLOBAL_GetFlagBit__FUiUc_LEVEL1_035CA8.c					
+src/levels/bodies/GetAllocSize__C11ApeFreeList.c					
+src/levels/bodies/GetNumFree__C11ApeFreeList.c					
+src/levels/bodies/GetPalette__10AgxTexture.c					
+src/levels/bodies/GetTotalOfClusterUseForSave__14MemCardManager.c					
+src/levels/bodies/GetTransientDataSize__10DoubleJump.c	076ad0dc2fe5d96557f028ff4621bf06de4ed9841aed9972d4e0a35f60c2aa24	882d13be5591f5137c2b8123ab46a0e57c5b4d4dea4d0670f8d78aaf009b12b2	gnu-ee-20261015:-O2 -G0	body	f841656ad032ecdf16d8891d330545de2155f73fde75f712b5b56417288e9c4f
+src/levels/bodies/GetTransientDataSize__5Glide.c	4799f478e927782d6e66ae9f20edcf7863eedfe399a9429727acd4624a9b0eff	bced8d807eae8ca4a008760011e0bd8ab6505e5555477b67b48a7774df270d5a	gnu-ee-20261015:-O2 -G0	body	c554974faf7d399f7b02e818641f15ed836627147d77d5f7347371b2894ce082
+src/levels/bodies/HUDDIAG_FadeOverlayUpdate__Fv.c					
+src/levels/bodies/HUDFXCYCLE_Reset__FP11tHUDCYCLEFX.c					
+src/levels/bodies/HUD_DrawIconSimple__FUiP17HUD_BoundingBox16Ui.c					
+src/levels/bodies/HUD_FontPrintWindowAreaSetText__FP20tFontPrintWindowDataPc.c					
+src/levels/bodies/HUD_FontPrintWindowInitAutoScroll__FP20tFontPrintWindowData.c					
+src/levels/bodies/ICONHORMENU_AddItem__FP12tICONHORMENUUiUiUiUiUiUiUiUiUiUiUiUiUiUiUi.c					
+src/levels/bodies/ICONHORMENU_GetCurrentState__FP12tICONHORMENU.c	e06582c228ee2ed74354b369e28d05c7a4fa1d7f5db6ff97e005adca35f52129	f7db905698ab76ea0e92ffe0df1fc06fb572dc3ded18712f6a3a70f2d05c416b	gnu-ee-20261015:-O2 -G0	body	975d53546231c17117ef8ae055a5a966b629b52207dc0080b2e02e4206b12590
+src/levels/bodies/ICONHORMENU_SetIconScrollSpeed__FP12tICONHORMENUf.c	ece21825d71100b7fece3b3057edb078fe32bdf83a95095e5af9b890d239547f	b48779d828a0ef6d42d124c63900f90f6e46e825a32ffe3af3bfcdd606616ad9	gnu-ee-20261015:-O2 -G0	body	7a2526c04373b1af07996a32549bca15ae86e8824604913dc55f8c8d8625b9f6
+src/levels/bodies/ICONMENU_SetIconScrollSpeed__FP9tICONMENUf.c					
+src/levels/bodies/ICONMENU_SetNumberVisibleIconSlots__FP9tICONMENUUi.c	b71a58f6dd852f17fa34f33611e4239436e422362a39467fdf567cde4c717880	687d6a002f18bed145ce2bc2687eca8963ecbc15f3f5f5b49b54eed8aa094b00	gnu-ee-20261015:-O2 -G0	body	6b5d5f1a0f2b7c721b6d3106c6530c0974e5b76ba7599b0e84edc41c452f5385
+src/levels/bodies/LEVEL10_0262A8.c					
+src/levels/bodies/LEVEL13_00B0A0.c					
+src/levels/bodies/LEVEL13_00B120.c					
+src/levels/bodies/LEVEL13_017B00.c					
+src/levels/bodies/LEVEL13_01E618.c					
+src/levels/bodies/LEVEL13_042980.c	430f4e69a65775a16078edeac8d7e991715b2a039a4e8655766e4a9a85a9ee44	56cce636a535de2ce81b4426b560ac186b74f37ab0a47b0b89ddeb95e6c71248	gnu-ee-20261015:-O2 -G0	body	89047bc13da5d203362c8f7e54b540a09f0aee89f5f2537bd7556221230df2cc
+src/levels/bodies/LEVEL14_00B0A0.c					
+src/levels/bodies/LEVEL14_00B120.c					
+src/levels/bodies/LEVEL14_017B00.c					
+src/levels/bodies/LEVEL14_01E618.c					
+src/levels/bodies/LEVEL14_026E00.c					
+src/levels/bodies/LEVEL18_0261C0.c					
+src/levels/bodies/LEVEL1_0262B0.c					
+src/levels/bodies/LEVEL1_0398E0.c					
+src/levels/bodies/LEVEL1_0490C8.c					
+src/levels/bodies/LEVEL20_0261B0.c					
+src/levels/bodies/LEVEL2_026178.c					
+src/levels/bodies/LEVEL3_026268.c					
+src/levels/bodies/LEVEL_RequestRestart__Fv.c					
+src/levels/bodies/LEVEL_RequestRestart__Fv_LEVEL10_01EF78.c					
+src/levels/bodies/LEVEL_RequestRestart__Fv_LEVEL20_01EF78.c					
+src/levels/bodies/LEVEL_RequestRestart__Fv_LEVEL2_01EF40.c					
+src/levels/bodies/LEVEL_RequestRestart__Fv_LEVEL3_01EF78.c					
+src/levels/bodies/LevelUpBolt_RegisterSystem__F10DRAW_Layeri15DRAW_ZWriteMode17DRAW_ColorKeyMode14DRAW_BloomMode14DRAW_BlendMode.c	dde9d84ddd79a331d0ad71914dad9ee56cfcd0bb3226deb1fbbfed779950c398	6999bc41c8ba62848285402eaf7eb09866139bb84a6c1cd13e4aa8d3a587c810	gnu-ee-20261015:-O2 -G0	body	eb659f37c97be89dadc7e2bd85c16d568a5ce18969843e62e69e56f550a7be6d
+src/levels/bodies/MEMCARDCLIENT_ClearAbortedStatus__Fv.c					
+src/levels/bodies/MEMCARDCLIENT_ClearError__Fv.c					
+src/levels/bodies/MEMCARDCLIENT_RequestListSave__FiUi.c					
+src/levels/bodies/PAR_Reset__Fv.c					
+src/levels/bodies/PAUSEMENU_SetTextUseSubnodeColor__FP10tPAUSEMENUUiUib.c					
+src/levels/bodies/PAUSEMODE_GetReusableTextBufferSize__Fv.c					
+src/levels/bodies/Play__12AglMovieBase.c					
+src/levels/bodies/Ps2BinkBufferLock__8AglMovieP13PS2BINKBUFFER.c					
+src/levels/bodies/SetChunkGrowSize__11ApeFreeListUi.c					
+src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP17ApeAnimCompositor.c					
+src/levels/bodies/SetProjectionType__19AglRenderTargetBase24AglRenderTargetEProjType.c					
+src/levels/bodies/SetRegionID__12ApePVSRegionUc.c					
+src/levels/bodies/TARGET_Init__Fv.c					
+src/levels/bodies/TARGET_Init__Fv_LEVEL13_0251A0.c	bb004b020db0151d5cfa9efa9b4d4f0f8409be25c4b91481dc046b86b1218cb4	d674ac3b1075037ec5eaf37475017aab988e92cd6eba4a1e847e8fd9c679d742	gnu-ee-20261015:-O2 -G0	body	ddf260bf4de4ce4298c5864f39e54f697c4efdef871d2f3f196a30265b297746
+src/levels/bodies/TEXMGR_GetHeight__FP10AglTexture.c					
+src/levels/bodies/TEXMGR_GetPtrToBitmapData__FUi.c					
+src/levels/bodies/TEXMGR_GetWidth__FP10AglTexture.c					
+src/levels/bodies/UPDATE_GameModeInit__Fv.c					
+src/levels/bodies/UPDATE_GameModeInit__Fv_LEVEL10_025E10.c					
+src/levels/bodies/UPDATE_GameModeInit__Fv_LEVEL20_025D18.c					
+src/levels/bodies/UPDATE_GameModeInit__Fv_LEVEL2_025CE0.c					
+src/levels/bodies/UPDATE_GameModeInit__Fv_LEVEL3_025DD0.c					
+src/levels/bodies/Update__12ApeLevelInstfP15AglRenderTarget.c					
+src/levels/bodies/Update__12ApeLevelInstfP15AglRenderTarget_LEVEL11_003750.c					
+src/levels/bodies/Update__12ApeLevelInstfP15AglRenderTarget_LEVEL13_003750.c					
+src/levels/bodies/Update__12ApeLevelInstfP15AglRenderTarget_LEVEL14_003750.c					
+src/levels/bodies/Update__12ApeLevelInstfP15AglRenderTarget_LEVEL1_003750.c					
+src/levels/bodies/WEAPON_AutoswitchToHypershot__FP6PLAYER.c					
+src/levels/bodies/WEAPON_GetCurrWeapAmmo__FPC6PLAYER.c					
+src/levels/bodies/WEAPON_GetCurrWeapAmmo__FPC6PLAYER_LEVEL10_0329A0.c					
+src/levels/bodies/WEAPON_GetCurrWeapAmmo__FPC6PLAYER_LEVEL18_0328B8.c					
+src/levels/bodies/WEAPON_GetCurrWeapAmmo__FPC6PLAYER_LEVEL2_032870.c					
+src/levels/bodies/WEAPON_GetCurrWeapAmmo__FPC6PLAYER_LEVEL3_032960.c					

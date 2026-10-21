@@ -30,8 +30,14 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "tools"))
+
+from placement_table import join  # noqa: E402
+
 TABLE = ROOT / "config/levels/bodies.tsv"
+SOURCES = ROOT / "config/levels/body_sources.tsv"
 BOOT_TABLE = ROOT / "config/boot/bodies.tsv"
+BOOT_SOURCES = ROOT / "config/boot/body_sources.tsv"
 INTERVALS = ROOT / "config/levels/code_intervals.tsv"
 BOOT_SUMMARY = ROOT / "config/boot/summary.json"
 BOOT_NAME = "SCUS_976.23"
@@ -69,8 +75,8 @@ def main() -> int:
     if args.profiles and args.profiles.is_file():
         profiles = json.loads(args.profiles.read_text(encoding="utf-8"))
 
-    rows = records(TABLE)
-    boot_rows = records(BOOT_TABLE)
+    rows = join(TABLE, SOURCES)
+    boot_rows = join(BOOT_TABLE, BOOT_SOURCES)
     intervals = {row["module"]: row for row in records(INTERVALS)}
     boot_summary = json.loads(BOOT_SUMMARY.read_text(encoding="utf-8")) \
         if BOOT_SUMMARY.is_file() else {}
