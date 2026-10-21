@@ -102,10 +102,11 @@ command written next to it.
   distinct bodies, published in `src/boot/bodies/` with the table
   `config/boot/bodies.tsv`. The boot rebuilt with those bodies has the
   pinned retail hash.
-- **Wave 2 and wave 3 are done** (twenty lots): 478 placements of 88
-  distinct sources are proved and published (the level modules and the
-  boot), 27 844 bytes by placement. The root re-measured every claim
-  before publishing it, and the placement gate passes on the result.
+- **Wave 2, wave 3 and wave 4 are done** (twenty-eight lots): 1 583
+  placements of 137 distinct sources are proved and published (the level
+  modules and the boot), 43 196 bytes by placement. The root re-measured
+  every claim before publishing it, and the placement gate passes on the
+  result.
 - **The families were expanded.** A body that is proved once is carried by
   many placements of the disc; every one of them is **re-measured on its
   own bytes** with the published source, and a placement whose relocation

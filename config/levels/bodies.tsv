@@ -1,7 +1,3 @@
-# Placement table of the proved bodies; one row per placement.
-# proof=body: the compiled body equals the retail body at that
-# placement.  Promotion to a program-level match waits for the
-# complete-program gate.
 module	offset	size	source	source_sha256_lf	object_sha256	profile	proof	body_sha256
 FE.REL	0x003CB8	64	src/levels/bodies/Close__12AglMovieBase.c	b9c3f900f14e9196567858ebf99c93c7a7354435fce79da737b53ab165739d5d	d00ac3bf4d92c201a0f142a8f6af4bdf9b29abcaad92ecd3b3e4aa2732e2df69	gnu-ee-20261015:-O2 -G0	body	e2324c5f870754120c879a4ef374a10e51ae10b1081e6d765d76bdb5064f80b2
 FE.REL	0x003D18	8	src/levels/bodies/Play__12AglMovieBase.c	28192172ac9e14907f13b50dffb12f3e06bcdbb094689c61450d27fed4a2bfb1	8bc3de4b6540a97a28a996d11c98c59cfb6ab7208cec1607a2200a2a359f89bb	gnu-ee-20261015:-O2 -G0	body	6d64edf91449c1b17746c1ef18afa2eb25c70bdf1322ab3df5a2630993b7e2f1
