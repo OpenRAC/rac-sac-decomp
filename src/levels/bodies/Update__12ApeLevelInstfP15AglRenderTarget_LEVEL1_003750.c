@@ -1,11 +1,9 @@
-/* Update__12ApeLevelInstfP15AglRenderTarget -- LEVEL18.REL 0x003750, 64 bytes.
+/* Update__12ApeLevelInstfP15AglRenderTarget_LEVEL1_003750 -- LEVEL1.REL 0x003750, 64 bytes.
  *
  * Body translated from the retail module.
  *
  * Evidence:
- *   Mise a jour : si la cible de rendu est presente, la camera (champ 0x8) est
- *   mise a jour puis le monde (champ 0x0) l'est aussi.
- *   (float dt est passe dans $f12 : $a1 porte la cible de rendu.)
+ *   `self` doit survivre aux deux appels : il est donc recopie dans $s0.
  *
  * Placement: module-relative offset of the disc module; the other
  * placements of the same body are listed in config/levels/bodies.tsv.
@@ -17,30 +15,30 @@
  */
 
 typedef struct ApeLevelInst ApeLevelInst;
-typedef struct ApeWorld ApeWorld;
-typedef struct ApeCameraInstance ApeCameraInstance;
 typedef struct AglRenderTarget AglRenderTarget;
+typedef struct ApeCameraInstance ApeCameraInstance;
+typedef struct ApeWorld ApeWorld;
 
 struct ApeLevelInst {
-    ApeWorld *world;
-    unsigned int unknown_004;
-    ApeCameraInstance *camera;
+    ApeWorld *m_world;
+    unsigned int m_unknown_004;
+    ApeCameraInstance *m_camera;
 };
 
 extern void SetParamsToRenderTarget__17ApeCameraInstanceP15AglRenderTarget(
-    ApeCameraInstance *self, AglRenderTarget *target);
-extern void Update__8ApeWorld(ApeWorld *self);
+    ApeCameraInstance *camera, AglRenderTarget *target);
+extern void Update__8ApeWorld(ApeWorld *world);
 
-void Update__12ApeLevelInstfP15AglRenderTarget(ApeLevelInst *self, float dt,
+void Update__12ApeLevelInstfP15AglRenderTarget(ApeLevelInst *self, float delta,
                                                AglRenderTarget *target)
 {
-    (void)dt;
+    (void)delta;
 
     if (target != 0) {
-        if (self->camera != 0) {
+        if (self->m_camera != 0) {
             SetParamsToRenderTarget__17ApeCameraInstanceP15AglRenderTarget(
-                self->camera, target);
+                self->m_camera, target);
         }
     }
-    Update__8ApeWorld(self->world);
+    Update__8ApeWorld(self->m_world);
 }
