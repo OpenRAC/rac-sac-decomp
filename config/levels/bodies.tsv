@@ -172,6 +172,7 @@ LEVEL1.REL	0x10FA78	272	src/levels/bodies/ThrowTieTether_GetClosestHighPriorityO
 LEVEL1.REL	0x116318	152	src/levels/bodies/Spotlight_RayCheck__FPC4VEC3T0fP4Moby.c
 LEVEL1.REL	0x1303B0	8	src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP17ApeAnimCompositor.c
 LEVEL1.REL	0x134FC0	8	src/levels/bodies/HUD_FontPrintWindowAreaSetText__FP20tFontPrintWindowDataPc.c
+LEVEL1.REL	0x162718	176	src/levels/bodies/ENEMYSTATS_DamageInSphere__FUiUiP4VEC3fP4MobyUiUiUi.c
 LEVEL1.REL	0x173268	8	src/levels/bodies/ICONMENU_SetIconScrollSpeed__FP9tICONMENUf.c
 LEVEL1.REL	0x1BAB18	32	src/levels/bodies/CB_ARRAY_Init__FP14tCB_ARRAY_DATA.c
 LEVEL1.REL	0x1BAD50	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
@@ -1604,6 +1605,8 @@ LEVEL24.REL	0x0B2590	8	src/levels/bodies/ICONMENU_SetNumberVisibleIconSlots__FP9
 LEVEL24.REL	0x0B36C8	8	src/levels/bodies/ICONHORMENU_GetCurrentState__FP12tICONHORMENU.c
 LEVEL24.REL	0x103360	8	src/levels/bodies/KillEffect__4MaskP4Moby.c
 LEVEL24.REL	0x12CB18	8	src/levels/bodies/ICONMENU_SetIconScrollSpeed__FP9tICONMENUf.c
+LEVEL24.REL	0x134F80	76	src/levels/bodies/PLAYER_SetFlags__FP6PLAYERG9PLR_FLAGS_LEVEL24_00134F80.c
+LEVEL24.REL	0x162260	200	src/levels/bodies/Quat_Pack__FPC4QUAT.c
 LEVEL24.REL	0x1743D0	32	src/levels/bodies/CB_ARRAY_Init__FP14tCB_ARRAY_DATA.c
 LEVEL24.REL	0x174608	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
 LEVEL24.REL	0x1818D8	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
@@ -1648,6 +1651,7 @@ LEVEL25.REL	0x033AD0	128	src/levels/bodies/GADGET_IsModToBeInstalledAtSlot__FUiU
 LEVEL25.REL	0x034040	64	src/levels/bodies/GADGET_FillAmmo__FUi_LEVEL14_034040.c
 LEVEL25.REL	0x0344B0	32	src/levels/bodies/GADGET_GetGadgetNameInfo__FUiUi_LEVEL14_0344B0.c
 LEVEL25.REL	0x035848	32	src/levels/bodies/FastMemZero__FPvUi.c
+LEVEL25.REL	0x0371C8	48	src/levels/bodies/GLOBALVARS_GetReplayCount__Fv.c
 LEVEL25.REL	0x037358	32	src/levels/bodies/GLOBALVARS_GetPlayerTitaniumBoltCount__Fv_LEVEL14_037358.c
 LEVEL25.REL	0x039898	8	src/levels/bodies/LEVEL1_0398E0.c
 LEVEL25.REL	0x03F0A0	32	src/levels/bodies/Add__21EffectCallbackManagerP14EffectCallback.c
@@ -1661,6 +1665,7 @@ LEVEL25.REL	0x04D898	8	src/levels/bodies/CONTROLLER_GetWorldButtonLeft__FUi.c
 LEVEL25.REL	0x04F7D8	32	src/levels/bodies/DRAW_AddStageRenderCallback__F10DRAW_LayerPF10DRAW_LayerPv_vPv.c
 LEVEL25.REL	0x067858	8	src/levels/bodies/TEXMGR_GetWidth__FP10AglTexture.c
 LEVEL25.REL	0x067860	8	src/levels/bodies/TEXMGR_GetHeight__FP10AglTexture.c
+LEVEL25.REL	0x0678B8	76	src/levels/bodies/LEVEL15_000676A0.c
 LEVEL25.REL	0x076A40	44	src/levels/bodies/MemCardMgrUpdate__14MemCardManager.c
 LEVEL25.REL	0x07DAE8	8	src/levels/bodies/GetTotalOfClusterUseForSave__14MemCardManager.c
 LEVEL25.REL	0x084130	32	src/levels/bodies/HUD_FontPrintWindowInitAutoScroll__FP20tFontPrintWindowData.c
