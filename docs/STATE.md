@@ -127,6 +127,12 @@ This is the strongest toolchain evidence of the campaign so far: the retail
 build used at least two compiler configurations, and the campaign can
 now name them.
 
+The converse is measured too: the boot's two chains do **not** apply to the
+level modules. Tried on a parked module body, both differ from the retail
+at the very first byte -- the prologue -- because the modules keep 8-byte
+slots where those chains keep 16-byte ones. The division padding of the
+modules therefore belongs to a third configuration, still unnamed.
+
 ### The divisions of the retail code
 
 A wave-2 lot measured a body that was one instruction short: the retail
