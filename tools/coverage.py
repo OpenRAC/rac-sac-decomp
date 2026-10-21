@@ -32,6 +32,52 @@ sys.path.insert(0, str(ROOT / "tools"))
 from placement_table import records, sources  # noqa: E402
 
 
+
+def body_hasher(modules: Path, bounds: Path):
+    """Return a function that hashes the retail bytes of a candidate body.
+
+    The level modules are read at a file offset; the boot's offsets are
+    virtual addresses, resolved through the section table of the
+    executable.  The bounds catalogue records a hash of its own, but the
+    boot's rows were hashed at the wrong place, so the tools hash the
+    bodies themselves.
+    """
+    import hashlib
+
+    from elf import inspect_elf
+
+    cache: dict[str, bytes] = {}
+    boot_path = modules / "modules/SCUS_976.23"
+    boot_data = b""
+    boot_virtual = 0
+    boot_file = 0
+    if boot_path.is_file():
+        boot_data = boot_path.read_bytes()
+        info = inspect_elf(boot_path)
+        text = next(item for item in info["sections"] if item["name"] == ".text")
+        boot_virtual = int(text["virtual_address"], 16)
+        boot_file = int(text["file_offset"])
+
+    def data_of(module: str) -> bytes:
+        if module not in cache:
+            path = modules / module
+            cache[module] = path.read_bytes() if path.is_file() else b""
+        return cache[module]
+
+    def hash_of(module: str, row: dict[str, str]) -> str:
+        data = data_of(module)
+        if not data:
+            return row.get("raw_sha256", "")
+        start = int(row["start"], 16)
+        size = int(row.get("body_bytes") or 0)
+        if module.startswith("SCUS"):
+            at = boot_file + (start - boot_virtual)
+        else:
+            at = start
+        return hashlib.sha256(data[at:at + size]).hexdigest()
+
+    return hash_of
+
 def records(path: Path) -> list[dict[str, str]]:
     if not path.is_file():
         return []
@@ -77,6 +123,7 @@ def main() -> int:
                 proved[row["module"]].add(facts["body_sha256"])
                 global_proved.add(facts["body_sha256"])
 
+    hash_of = body_hasher(args.bounds.parent / "modules", args.bounds)
     report: dict[str, object] = {"modules": {}, "complete": True}
     total_bodies = total_covered = total_bytes = total_covered_bytes = 0
     remaining_families: dict[str, int] = defaultdict(int)
@@ -90,11 +137,11 @@ def main() -> int:
         if not rows:
             continue
         covered = [row for row in rows
-                   if row.get("raw_sha256") in proved.get(module, set())]
+                   if hash_of(module, row) in proved.get(module, set())]
         missing = [row for row in rows
-                   if row.get("raw_sha256") not in proved.get(module, set())]
+                   if hash_of(module, row) not in proved.get(module, set())]
         for row in missing:
-            digest = row.get("raw_sha256") or f"{module}:{row['start']}"
+            digest = hash_of(module, row) or f"{module}:{row['start']}"
             if digest not in global_proved:
                 remaining_families[digest] += 1
                 remaining_bytes[digest] += int(row["body_bytes"])
