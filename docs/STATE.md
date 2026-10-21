@@ -144,6 +144,33 @@ The tree carries a single machine description, with no floating-point
 hazard model: the reconstructed chain has no way to emit the retail's
 division padding at all.
 
+### The vector bodies are not reproducible in pure C
+
+A research agent closed the class of the bodies written in the vector unit's
+instructions (`lqc2`, `sqc2`, `vmulax`, `vdiv`, `vwaitq`).  The evidence:
+
+- the machine description of the pinned chain holds 341 instruction
+  patterns and **zero** occurrence of `lqc2`, `sqc2`, `vmulax`, `vdiv`,
+  `vwaitq` or of the word "vector"; the same is true of `mips.h`, `mips.c`
+  and of the whole compiler tree;
+- there is no legal way in: `TARGET_SWITCHES` and `TARGET_OPTIONS` carry no
+  vector option, the ISA ceiling is MIPS IV, there is no target `pragma`,
+  and the only wide mode the target accepts is `mode(TI)`, which gives the
+  integer quadword `lq`/`sq` and not COP2;
+- the four compilers of the workstation leave no vector trace in their
+  binaries (`strings` finds none), while `mul.s`, `div.s` and `cvt.s.w` are
+  there;
+- the source the sibling project actually built has a machine description
+  whose hash is identical to the pinned one: the COP2 instructions are known
+  to the *assembler* only, never to the compiler.
+
+The class is therefore **not** a source-form question: 64 bytes of COP2
+appear at the same address of the boot and in thirty levels, and a scalar C
+body compiles to pure FPU.  It can only reopen if a vector mode becomes
+visible in C for MIPS **and** the machine description carries the COP2
+patterns **and** the "pure C, no asm, no `.word`" rule is lifted.  Until
+then it is a closed class, not a pending one.
+
 ### The boot and the modules are not the same build
 
 The boot keeps its frames in **16-byte slots** (`sq`/`lq`, `$ra` on top),

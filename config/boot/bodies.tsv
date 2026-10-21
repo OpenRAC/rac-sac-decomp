@@ -1,3 +1,8 @@
+# Placement table of the proved bodies; one row per placement.
+# The facts of the source are in body_sources.tsv.
+# proof=body: the compiled body equals the retail body at that
+# placement.  Promotion to a program-level match waits for the
+# complete-program gate.
 module	offset	size	source
 SCUS_976.23	0x00100328	8	src/boot/bodies/func_00100328.c
 SCUS_976.23	0x00100330	8	src/boot/bodies/func_00100328.c
@@ -19,6 +24,9 @@ SCUS_976.23	0x00116820	8	src/boot/bodies/func_00100328.c
 SCUS_976.23	0x00117008	32	src/boot/bodies/func_00117008.c
 SCUS_976.23	0x00117698	64	src/boot/bodies/func_00117698.c
 SCUS_976.23	0x00118C48	32	src/boot/bodies/func_00118C48.c
+SCUS_976.23	0x0011DC00	32	src/boot/bodies/func_0011DC00.c
+SCUS_976.23	0x0011DC20	32	src/boot/bodies/func_0011DC20.c
+SCUS_976.23	0x0011DC40	32	src/boot/bodies/func_0011DC40.c
 SCUS_976.23	0x00121FB8	8	src/boot/bodies/func_00121FB8.c
 SCUS_976.23	0x00121FF0	8	src/boot/bodies/func_00100328.c
 SCUS_976.23	0x00121FF8	8	src/boot/bodies/func_00121FB8.c
@@ -58,10 +66,13 @@ SCUS_976.23	0x00137E30	8	src/boot/bodies/func_001450D8.c
 SCUS_976.23	0x0013A8E0	64	src/boot/bodies/func_0013A8E0.c
 SCUS_976.23	0x0013B200	64	src/boot/bodies/func_0013B200.c
 SCUS_976.23	0x0013B310	64	src/boot/bodies/func_0013B310.c
+SCUS_976.23	0x0013C8E0	64	src/boot/bodies/func_0013C8E0.c
+SCUS_976.23	0x0013C960	64	src/boot/bodies/func_0013C960.c
 SCUS_976.23	0x0013E6B0	8	src/boot/bodies/func_0013E6B0.c
 SCUS_976.23	0x0013E6B8	8	src/boot/bodies/func_0013E6B0.c
 SCUS_976.23	0x00144E08	32	src/boot/bodies/func_00144E08.c
 SCUS_976.23	0x001450D8	8	src/boot/bodies/func_001450D8.c
+SCUS_976.23	0x001455A8	64	src/boot/bodies/func_001455A8.c
 SCUS_976.23	0x00148738	8	src/boot/bodies/func_0013E6B0.c
 SCUS_976.23	0x00148A00	8	src/boot/bodies/func_0013E6B0.c
 SCUS_976.23	0x00148A38	8	src/boot/bodies/func_0013E6B0.c
@@ -95,6 +106,7 @@ SCUS_976.23	0x0015C768	8	src/boot/bodies/func_001450D8.c
 SCUS_976.23	0x0015C770	8	src/boot/bodies/func_001450D8.c
 SCUS_976.23	0x0015C778	8	src/boot/bodies/func_001450D8.c
 SCUS_976.23	0x0015C780	8	src/boot/bodies/func_001450D8.c
+SCUS_976.23	0x0015D488	128	src/boot/bodies/func_0015D488.c
 SCUS_976.23	0x0016AB20	32	src/boot/bodies/func_0016AB20.c
 SCUS_976.23	0x0016D530	12	src/boot/bodies/func_0016D530.c
 SCUS_976.23	0x00181E88	128	src/boot/bodies/func_00181E88.c
