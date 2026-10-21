@@ -36,7 +36,7 @@
       }
     },
     {
-      "id": "prodg2953",
+      "id": "prodg2952+gnu-as",
       "scope": "the boot executable",
       "provenance": "SN ProDG 'ProDG for PlayStation 2' ee-gcc 2.95.2, from the compiler depot of the sibling workspace (D:/RAC1/work/lombyte-depot/tools/compilers/ee-gcc-2.95.2).  External binary: pinned by hash, never rebuilt here and never committed.",
       "toolchain": {
@@ -52,7 +52,7 @@
       },
       "measured_cause": "The boot keeps its frames in 16-byte slots (sq/lq) with $ra on top, where the pinned chain keeps 8-byte slots (sd/ld).  The cause is the register mode of the target: the GNU EE 2.9 tree neutralises the R5900 anchor mips_reg_mode[0] = TImode, and this ee-gcc 2.95.2 keeps it.",
       "regression_control": "The four frame-less bodies of the lot are exact on the three chains alike, so they do not discriminate; the four that carry a frame are exact only on their own chain.",
-      "verdict": "route measured per source; it is the chain of the boot, not of the level modules."
+      "verdict": "route accepted for the boot bodies with a sq/lq frame; the two variants below differ only by their assembler."
     },
     {
       "id": "sdk991111",
@@ -224,6 +224,23 @@
       "regression_control": "Every body of the boot that the recorded profiles prove stays exact with the route (134/134).",
       "verdict": "route accepted: it proves the boot bodies that save a callee-saved float register, a class no other route reached.",
       "reproduce": "the private kit, work/w3/research-boot-astragf"
+    },
+    {
+      "id": "prodg2952+ps2eeas",
+      "scope": "the bodies of the boot with a sq/lq frame whose extent is a multiple of 8",
+      "provenance": "SN ProDG ee-gcc 2.95.2 with the assembler of the PS2.  External binaries: pinned by hash, never rebuilt here and never committed.",
+      "toolchain": {},
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "The assembler of the PS2 pads the body to 8 bytes like the retail, where the recent GNU assembler inserts a hazard nop after mfc1 that the retail does not have.",
+      "regression_control": "the bodies of the lot that use it are exact; the bodies whose extent is not a multiple of 8 keep the GNU assembler.",
+      "verdict": "route accepted for that band.",
+      "reproduce": "the private profile table, work/E0/profiles.json"
     }
   ],
   "trials": [

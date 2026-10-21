@@ -155,4 +155,15 @@ SCUS_976.23	0x0015C780	8	src/boot/bodies/func_001450D8.c
 SCUS_976.23	0x0015D488	128	src/boot/bodies/func_0015D488.c
 SCUS_976.23	0x0016AB20	32	src/boot/bodies/func_0016AB20.c
 SCUS_976.23	0x0016D530	12	src/boot/bodies/func_0016D530.c
+SCUS_976.23	0x001711A0	48	src/boot/bodies/func_001711A0.c
+SCUS_976.23	0x001711D0	52	src/boot/bodies/func_001711D0.c
+SCUS_976.23	0x00171208	60	src/boot/bodies/func_00171208.c
+SCUS_976.23	0x00171248	180	src/boot/bodies/func_00171248.c
+SCUS_976.23	0x00171300	144	src/boot/bodies/func_00171300.c
+SCUS_976.23	0x00171390	84	src/boot/bodies/func_00171390.c
+SCUS_976.23	0x001713E8	272	src/boot/bodies/func_001713E8.c
+SCUS_976.23	0x001714F8	96	src/boot/bodies/func_001714F8.c
+SCUS_976.23	0x00171558	152	src/boot/bodies/func_00171558.c
+SCUS_976.23	0x00171720	40	src/boot/bodies/func_00171720.c
+SCUS_976.23	0x00171748	168	src/boot/bodies/func_00171748.c
 SCUS_976.23	0x00181E88	128	src/boot/bodies/func_00181E88.c
