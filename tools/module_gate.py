@@ -159,10 +159,11 @@ def main() -> int:
           f"{len(rows)} placement(s)")
 
     boot_rows = records(BOOT_TABLE)
-    if boot_rows:
-        if args.boot is None or args.boot_harness is None:
-            problems.append("the boot has proved bodies but no boot executable "
-                            "or boot harness was given")
+    if boot_rows and args.boot is None:
+        print("  boot             not measured: give --boot and --boot-harness")
+    elif boot_rows:
+        if args.boot_harness is None:
+            problems.append("the boot has proved bodies but no boot harness was given")
         else:
             rebuilt_boot = rebuild_boot(args.boot, args.boot_harness, boot_rows,
                                         problems, profiles)

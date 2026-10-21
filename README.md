@@ -8,9 +8,11 @@ still hash to the pinned retail hash.
 
 This repository holds the **method, the rules, the templates and the tooling**,
 and the first measured results. The target is pinned; the foundation lot is
-delivered; the first wave has proved 49 placements of 28 distinct bodies at
-body level, published in `src/levels/bodies/` with the placement table
-`config/levels/bodies.tsv`. The **complete-program gate is still missing**,
+delivered; the assembly baseline of the 31 level modules and of the boot is
+qualified; the waves have proved hundreds of placements of a few dozen
+distinct bodies at body level, published in `src/levels/bodies/` and
+`src/boot/bodies/` with the placement tables `config/levels/bodies.tsv` and
+`config/boot/bodies.tsv`. The **complete-program gate is still missing**,
 so nothing here is *promoted*: see `docs/STATE.md` for the exact state and
 for what is next.
 
@@ -32,11 +34,13 @@ for what is next.
 | --- | --- |
 | `src/` | accepted authored C/C++ definitions, one per function |
 | `src/levels/bodies/` | the proved bodies of the level modules, one file per distinct body |
+| `src/boot/bodies/` | the proved bodies of the boot executable |
 | `nonmatching/` | useful but nonmatching attempts, indexed by function |
 | `tools/` | reusable tools, with tests |
 | `tests/` | the unit tests of the tools, on synthetic data only |
 | `config/` | pinned metadata: target identity, toolchain profile, placement tables |
-| `config/levels/` | the module catalogues, the code intervals, the placement table of the proved bodies |
+| `config/levels/` | the module catalogues, the code intervals, the assembly baseline, the placement table of the proved bodies |
+| `config/boot/` | the boot inventory, its slot-width survey, its placement table |
 | `docs/` | the method, the evidence standard, the gates, the anchor |
 | `work/` | the private workspace: modules, bounds, lots, agent dossiers (git-ignored except the templates) |
 
