@@ -60,12 +60,13 @@ class MangleTest(unittest.TestCase):
     def test_free_function(self) -> None:
         parts = mangle.demangle("GLOBAL_GetFlagBit__FUiUc")
         self.assertEqual(parts["kind"], "free function")
-        self.assertEqual(str(parts["returns"]), "unsigned int")
-        self.assertEqual([str(a) for a in parts["arguments"]], ["unsigned char"])
+        # The encoding carries the parameter list, not the return type.
+        self.assertEqual([str(a) for a in parts["arguments"]],
+                         ["unsigned int", "unsigned char"])
 
     def test_void_function(self) -> None:
         self.assertEqual(mangle.prototype("FADEOVERLAY_IsAtFinalUpAlpha__Fv"),
-                         "void FADEOVERLAY_IsAtFinalUpAlpha(void)")
+                         "? FADEOVERLAY_IsAtFinalUpAlpha(void)")
 
     def test_member_function(self) -> None:
         parts = mangle.demangle("LevelDataCB__11ApeLevelDefP12TiXmlElement")

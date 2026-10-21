@@ -5,14 +5,16 @@ The modules of this game carry the compiler's own mangled names, in the
 SCO-style encoding the PS2 toolchains use: a readable function name, a
 double underscore, then the encoded signature.
 
-    GLOBALVARS_AddQuickSelect__FUi      free function, unsigned int (unsigned int)
-    HUDFXCYCLE_Reset__FP11tHUDCYCLEFX   free function, void (tHUDCYCLEFX*)
+    GLOBALVARS_AddQuickSelect__FUi      free function, one unsigned int argument
+    HUDFXCYCLE_Reset__FP11tHUDCYCLEFX   free function, one tHUDCYCLEFX* argument
     LevelDataCB__11ApeLevelDefP12TiXmlElement
                                           member of ApeLevelDef, (TiXmlElement*)
 
-The tool only *reads* the names: it proposes a prototype, it does not decide
-the types of a body.  A type that the encoding does not settle is reported as
-``?`` and must be fixed by the evidence of the body itself.
+The encoding carries the **parameter list**, not the return type: five
+bodies proved by the campaign read the argument registers and establish
+it.  The tool therefore only proposes a prototype, and it does not decide
+the types of a body.  A type that the encoding does not settle is
+reported as ``?`` and must be fixed by the evidence of the body itself.
 
 Usage:
     python3 tools/mangle.py GLOBALVARS_AddQuickSelect__FUi
@@ -127,9 +129,10 @@ def demangle(name: str) -> dict[str, object]:
     if not suffix:
         return result
     if suffix.startswith("F"):
+        # The 'F' introduces the parameter list.  The return type is *not*
+        # encoded: five proved bodies of the campaign establish it, by the
+        # way the retail code reads the argument registers.
         index = 1
-        returns, index = parse_type(suffix, index)
-        result["returns"] = returns
         while index < len(suffix):
             argument, index = parse_type(suffix, index)
             result["arguments"].append(argument)
@@ -149,7 +152,11 @@ def demangle(name: str) -> dict[str, object]:
 
 
 def prototype(name: str) -> str:
-    """Return the C prototype a mangled name suggests."""
+    """Return the C prototype a mangled name suggests.
+
+    The return type is not encoded: the name only carries the parameter
+    list.  The prototype therefore shows it as ``?``.
+    """
     parts = demangle(name)
     arguments = [str(argument) for argument in parts["arguments"]]
     returns = str(parts["returns"])

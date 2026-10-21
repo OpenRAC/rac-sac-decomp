@@ -14,6 +14,44 @@
     "cc1": ["-quiet", "-O2", "-G0"],
     "as": []
   },
+  "profiles": [
+    {
+      "id": "gnu-ee-20261015",
+      "scope": "the SNR2 level modules",
+      "provenance": "The reconstructed GNU EE chain of the sibling OpenRAC project, the 'compiler-no-pad' build of 2026-10-15.  It emits 8-byte stack slots (sd/ld), which is what the level modules use.",
+      "toolchain": {
+        "cpp_sha256": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
+        "cc1_sha256": "9614eceecbcb1f7a64cf3a4ad3c827b3e257ab6b1f934e42fcbc4ded0f0584d6"
+      },
+      "flags": {"cc1": ["-quiet", "-O2", "-G0"]}
+    },
+    {
+      "id": "prodg2953",
+      "scope": "the boot executable",
+      "provenance": "SN ProDG 'ProDG for PlayStation 2' ee-gcc 2.95.2, from the compiler depot of the sibling workspace (D:/RAC1/work/lombyte-depot/tools/compilers/ee-gcc-2.95.2).  External binary: pinned by hash, never rebuilt here and never committed.",
+      "toolchain": {
+        "cpp_sha256": "f7db993de8745339ec71cf10d5fe9e7772d75e79a037e97809ed5e34ea3150c3",
+        "cc1_sha256": "2aaf3d22ce5c3508ecba15f16b06737713263e6aee289ca1e43d3ff9c17d964f"
+      },
+      "flags": {"cc1": ["-quiet", "-O2", "-G0"]},
+      "measured_cause": "The boot keeps its frames in 16-byte slots (sq/lq) with $ra on top, where the pinned chain keeps 8-byte slots (sd/ld).  The cause is the register mode of the target: the GNU EE 2.9 tree neutralises the R5900 anchor mips_reg_mode[0] = TImode, and this ee-gcc 2.95.2 keeps it.",
+      "regression_control": "The four frame-less bodies of the lot are exact on the three chains alike, so they do not discriminate; the four that carry a frame are exact only on their own chain.",
+      "verdict": "route measured per source; it is the chain of the boot, not of the level modules."
+    },
+    {
+      "id": "sdk991111",
+      "scope": "the boot executable",
+      "provenance": "Sony EE-GCC 2.9-ee-991111-01, from the compiler depot of the sibling workspace (D:/RAC1/work/lombyte-depot/tools/compilers/ee-gcc2.9-991111-01).  External binary: pinned by hash, never rebuilt here and never committed.",
+      "toolchain": {
+        "cpp_sha256": "e0ea7124f31ef407e73417ce545bec8d1ab961bdae61ae41e9483de5a52585f4",
+        "cc1_sha256": "425aebdd48ba66227672ee8e520b826164ff26b26f10eefbaeeb523f68afa9bc"
+      },
+      "flags": {"cc1": ["-quiet", "-O2", "-G0"]},
+      "measured_cause": "The same frame shape as the boot, reached through the 16-byte slot mode of the Sony EE compiler.",
+      "regression_control": "The four frame-less bodies of the lot are exact on the three chains alike; the four that carry a frame are exact only on their own chain.",
+      "verdict": "route measured per source."
+    }
+  ],
   "trials": [
     {
       "id": "gnu-ee-20261015-debugc",

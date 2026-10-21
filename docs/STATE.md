@@ -103,6 +103,30 @@ command written next to it.
 - The proofs are **body-level**. The program-level gate is pending, so the
   published numbers are not promoted and no percentage is published.
 
+### The boot and the modules are not the same build
+
+The boot keeps its frames in **16-byte slots** (`sq`/`lq`, `$ra` on top),
+where the level modules keep **8-byte slots** (`sd`/`ld`). The cause is the
+register mode of the target: the GNU EE 2.9 tree of the pinned chain
+neutralises the R5900 anchor `mips_reg_mode[0] = TImode`, and two other EE
+compilers keep it.
+
+| profile | chain | what it reproduces |
+| --- | --- | --- |
+| `gnu-ee-20261015` | the reconstructed GNU EE chain of the sibling project | the level modules (8-byte slots) |
+| `prodg2953` | SN ProDG ee-gcc 2.95.2, from the compiler depot of the sibling workspace | the boot (`sq`/`lq` frames) |
+| `sdk991111` | Sony EE-GCC 2.9-ee-991111-01, from the same depot | the boot (16-byte `sd` frames) |
+
+The control is clean: the four frame-less bodies of the boot lot are exact
+on the three chains alike -- they do not discriminate -- and the four that
+carry a frame are exact only on their own chain. The profile is therefore
+chosen **per source**, and the placement table records it per row. The
+three profiles are pinned by hash in `config/toolchain.json`.
+
+This is the strongest toolchain evidence of the campaign so far: the retail
+build used at least two compiler configurations, and the campaign can
+now name them.
+
 ### The divisions of the retail code
 
 A wave-2 lot measured a body that was one instruction short: the retail
