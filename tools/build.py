@@ -51,16 +51,24 @@ def main() -> int:
     parser.add_argument("--as", dest="assembler", type=Path, required=True)
     parser.add_argument("--out", type=Path, default=None,
                         help="keep the objects in this directory")
+    parser.add_argument("--profiles", type=Path, default=None,
+                        help="private table of the compiler profiles: a source "
+                             "proved with another chain is built with it")
     parser.add_argument("--check", action="store_true",
                         help="compare the object hashes with the placement table")
     args = parser.parse_args()
 
     profile = json.loads(PROFILE.read_text(encoding="utf-8"))
     flags = profile["flags"]["cc1"]
+    profiles: dict[str, dict] = {}
+    if args.profiles and args.profiles.is_file():
+        profiles = json.loads(args.profiles.read_text(encoding="utf-8"))
     rows = records(TABLE) + records(BOOT_TABLE)
     sources: dict[str, str] = {}
+    source_profile: dict[str, str] = {}
     for row in rows:
         sources.setdefault(row["source"], row["object_sha256"])
+        source_profile.setdefault(row["source"], row.get("profile", ""))
 
     problems: list[str] = []
     built = 0
@@ -81,8 +89,15 @@ def main() -> int:
         with tempfile.TemporaryDirectory() as directory:
             work = Path(directory)
             (work / source.name).write_bytes(source.read_bytes())
+            tools = {"cpp": str(args.cpp), "cc1": str(args.cc1),
+                     "assembler": str(args.assembler), "flags": " ".join(flags)}
+            chosen = profiles.get((source_profile.get(name) or "").split(":")[0])
+            if chosen:
+                tools = {"cpp": chosen["cpp"], "cc1": chosen["cc1"],
+                         "assembler": chosen.get("as", str(args.assembler)),
+                         "flags": chosen["flags"]}
             with (work / f"{source.stem}.i").open("wb") as handle:
-                result = subprocess.run([str(args.cpp), source.name], cwd=work,
+                result = subprocess.run([tools["cpp"], source.name], cwd=work,
                                         stdout=handle, stderr=subprocess.PIPE,
                                         timeout=300)
             if result.returncode:
@@ -96,9 +111,9 @@ def main() -> int:
                 problems.append(str(error))
                 continue
             for command, what in (
-                    ([str(args.cc1), *flags, f"{source.stem}.i", "-o", f"{source.stem}.s"],
-                     "cc1"),
-                    ([str(args.assembler), "-o", f"{source.stem}.o", f"{source.stem}.s"],
+                    ([tools["cc1"], *tools["flags"].split(), f"{source.stem}.i",
+                      "-o", f"{source.stem}.s"], "cc1"),
+                    ([tools["assembler"], "-o", f"{source.stem}.o", f"{source.stem}.s"],
                      "as")):
                 done = subprocess.run([str(item) for item in command], cwd=work,
                                       capture_output=True, text=True, timeout=300)
