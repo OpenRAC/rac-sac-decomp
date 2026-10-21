@@ -1,3 +1,8 @@
+# Placement table of the proved bodies; one row per placement.
+# The facts of the source are in body_sources.tsv.
+# proof=body: the compiled body equals the retail body at that
+# placement.  Promotion to a program-level match waits for the
+# complete-program gate.
 module	offset	size	source
 FE.REL	0x003CB8	64	src/levels/bodies/Close__12AglMovieBase.c
 FE.REL	0x003D18	8	src/levels/bodies/Play__12AglMovieBase.c
@@ -70,7 +75,9 @@ LEVEL1.REL	0x003750	64	src/levels/bodies/Update__12ApeLevelInstfP15AglRenderTarg
 LEVEL1.REL	0x003CB8	64	src/levels/bodies/Close__12AglMovieBase.c
 LEVEL1.REL	0x003D18	8	src/levels/bodies/Play__12AglMovieBase.c
 LEVEL1.REL	0x003FD8	8	src/levels/bodies/Ps2BinkBufferLock__8AglMovieP13PS2BINKBUFFER.c
+LEVEL1.REL	0x00A078	64	src/levels/bodies/CAMERA_PushSystemUpdate__F14CameraSystemIDPFPfPf14CameraSystemIDPv_P7MATRIX4Pv_LEVEL1_00A078.c
 LEVEL1.REL	0x017370	8	src/levels/bodies/GLOBALVARS_AddQuickSelect__FUi.c
+LEVEL1.REL	0x017B00	64	src/levels/bodies/LEVEL1_017B00.c
 LEVEL1.REL	0x01EF78	32	src/levels/bodies/LEVEL_RequestRestart__Fv.c
 LEVEL1.REL	0x025B60	32	src/levels/bodies/GAMETARGET_CheckInsideTrigger__FPC7Trigger.c
 LEVEL1.REL	0x025E18	32	src/levels/bodies/UPDATE_GameModeInit__Fv.c
@@ -83,10 +90,13 @@ LEVEL1.REL	0x035890	32	src/levels/bodies/FastMemZero__FPvUi.c
 LEVEL1.REL	0x035CA8	32	src/levels/bodies/GLOBAL_GetFlagBit__FUiUc_LEVEL1_035CA8.c
 LEVEL1.REL	0x035D20	32	src/levels/bodies/GLOBAL_GetFlagBitU16__FUiUc_LEVEL1_035D20.c
 LEVEL1.REL	0x035D88	32	src/levels/bodies/GLOBAL_GetFlagBitU32__FUiUi_LEVEL1_035D88.c
+LEVEL1.REL	0x0373A0	32	src/levels/bodies/GLOBALVARS_GetPlayerTitaniumBoltCount__Fv_LEVEL1_0373A0.c
+LEVEL1.REL	0x038C88	32	src/levels/bodies/CHEAT_IsActive__FUi_LEVEL1_038C88.c
 LEVEL1.REL	0x0398E0	8	src/levels/bodies/LEVEL1_0398E0.c
 LEVEL1.REL	0x03F0E8	32	src/levels/bodies/Add__21EffectCallbackManagerP14EffectCallback.c
 LEVEL1.REL	0x042988	32	src/levels/bodies/LEVEL13_042980.c
 LEVEL1.REL	0x0490C8	256	src/levels/bodies/LEVEL1_0490C8.c
+LEVEL1.REL	0x049218	32	src/levels/bodies/LevelUpBolt_RegisterSystem__F10DRAW_Layeri15DRAW_ZWriteMode17DRAW_ColorKeyMode14DRAW_BloomMode14DRAW_BlendMode_LEVEL1_049218.c
 LEVEL1.REL	0x04A258	8	src/levels/bodies/ANIM_SetInstanceAnimation__FP13GDE_AnimationP13ANIM_Instance.c
 LEVEL1.REL	0x04B990	8	src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP17ApeAnimCompositor.c
 LEVEL1.REL	0x04C348	8	src/levels/bodies/AnimTranslator_GetFrameTrans__FP14AnimTranslator.c
@@ -163,6 +173,7 @@ LEVEL10.REL	0x003CB8	64	src/levels/bodies/Close__12AglMovieBase.c
 LEVEL10.REL	0x003D18	8	src/levels/bodies/Play__12AglMovieBase.c
 LEVEL10.REL	0x003FD8	8	src/levels/bodies/Ps2BinkBufferLock__8AglMovieP13PS2BINKBUFFER.c
 LEVEL10.REL	0x017370	8	src/levels/bodies/GLOBALVARS_AddQuickSelect__FUi.c
+LEVEL10.REL	0x017B00	64	src/levels/bodies/LEVEL10_017B00.c
 LEVEL10.REL	0x01EF78	32	src/levels/bodies/LEVEL_RequestRestart__Fv_LEVEL10_01EF78.c
 LEVEL10.REL	0x025B58	32	src/levels/bodies/GAMETARGET_CheckInsideTrigger__FPC7Trigger_LEVEL10_025B58.c
 LEVEL10.REL	0x025E10	32	src/levels/bodies/UPDATE_GameModeInit__Fv_LEVEL10_025E10.c
@@ -176,9 +187,11 @@ LEVEL10.REL	0x035CA0	32	src/levels/bodies/GLOBAL_GetFlagBit__FUiUc_LEVEL10_035CA
 LEVEL10.REL	0x035D18	32	src/levels/bodies/GLOBAL_GetFlagBitU16__FUiUc_LEVEL10_035D18.c
 LEVEL10.REL	0x035D80	32	src/levels/bodies/GLOBAL_GetFlagBitU32__FUiUi_LEVEL10_035D80.c
 LEVEL10.REL	0x037398	32	src/levels/bodies/GLOBALVARS_GetPlayerTitaniumBoltCount__Fv.c
+LEVEL10.REL	0x038C80	32	src/levels/bodies/CHEAT_IsActive__FUi_LEVEL10_038C80.c
 LEVEL10.REL	0x0398D8	8	src/levels/bodies/LEVEL1_0398E0.c
 LEVEL10.REL	0x03F0E0	32	src/levels/bodies/Add__21EffectCallbackManagerP14EffectCallback.c
 LEVEL10.REL	0x042980	32	src/levels/bodies/LEVEL13_042980.c
+LEVEL10.REL	0x049210	32	src/levels/bodies/LevelUpBolt_RegisterSystem__F10DRAW_Layeri15DRAW_ZWriteMode17DRAW_ColorKeyMode14DRAW_BloomMode14DRAW_BlendMode_LEVEL10_049210.c
 LEVEL10.REL	0x04A250	8	src/levels/bodies/ANIM_SetInstanceAnimation__FP13GDE_AnimationP13ANIM_Instance.c
 LEVEL10.REL	0x04B988	8	src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP17ApeAnimCompositor.c
 LEVEL10.REL	0x04C340	8	src/levels/bodies/AnimTranslator_GetFrameTrans__FP14AnimTranslator.c

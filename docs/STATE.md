@@ -102,11 +102,11 @@ command written next to it.
   distinct bodies, published in `src/boot/bodies/` with the table
   `config/boot/bodies.tsv`. The boot rebuilt with those bodies has the
   pinned retail hash.
-- **Wave 2, wave 3 and wave 4 are done** (twenty-eight lots): 1 583
-  placements of 137 distinct sources are proved and published (the level
-  modules and the boot), 43 196 bytes by placement. The root re-measured
-  every claim before publishing it, and the placement gate passes on the
-  result.
+- **Wave 2, wave 3, wave 4 and wave 5 are running** (thirty-two lots):
+  2 470 placements of 168 distinct sources are proved and published (the
+  level modules and the boot), 54 564 bytes by placement. The root
+  re-measured every claim before publishing it, and the placement gate
+  passes on the result.
 - **The families were expanded.** A body that is proved once is carried by
   many placements of the disc; every one of them is **re-measured on its
   own bytes** with the published source, and a placement whose relocation
@@ -246,8 +246,8 @@ first, and this is what that means.
 ## 4. What is next
 
 1. **Close the coverage.**  The complete-program gate now measures what it
-   needs: 26 797 of the 323 138 bounded candidate bodies come from a proved
-   C source (238 032 of 64 714 676 bytes by placement), and **180 809
+   needs: 28 776 of the 323 138 bounded candidate bodies come from a proved
+   C source (261 480 of 64 714 676 bytes by placement), and **180 743
    distinct bodies** are still to translate -- a family counts once, because
    one source serves every placement that carries it.  The gate passes when
    that number is zero.
