@@ -1,4 +1,4 @@
-/* LEVEL11_026E40 -- LEVEL11.REL 0x026E40, 128 bytes.
+/* LEVEL10_026E40 -- LEVEL10.REL 0x026E40, 128 bytes.
  *
  * Body translated from the retail module.
  *

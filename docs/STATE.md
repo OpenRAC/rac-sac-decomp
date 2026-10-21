@@ -174,10 +174,28 @@ then it is a closed class, not a pending one.
 ### The boot and the modules are not the same build
 
 The boot keeps its frames in **16-byte slots** (`sq`/`lq`, `$ra` on top),
-where the level modules keep **8-byte slots** (`sd`/`ld`). The cause is the
-register mode of the target: the GNU EE 2.9 tree of the pinned chain
+where most of the level modules keep **8-byte slots** (`sd`/`ld`). The cause
+is the register mode of the target: the GNU EE 2.9 tree of the pinned chain
 neutralises the R5900 anchor `mips_reg_mode[0] = TImode`, and two other EE
 compilers keep it.
+
+**But the level modules are not homogeneous either.** A survey of the
+spacing of the stack slots (`tools/slot_spacing.py`) reads every function
+prologue of the 31 modules and finds two families:
+
+- **103 283 prologues** reserve their slots **8 bytes apart** -- the
+  family the pinned chain reproduces;
+- **6 766 prologues** reserve them **16 bytes apart** -- 5.6 % of the
+  functions, spread over every module (182 to 234 per module).
+
+Both families save with `sd`, which stores eight bytes: it is the *spacing*
+of the slots that differs, not the width of the store. The wide family
+holds **5 512 bounded bodies** -- the largest class left in the campaign --
+and the route that reproduces it is the one the boot already uses,
+**`sdk991111`** (Sony EE-GCC 2.9): the wave-5 lot `w5/L02` measured 84 of
+the 400 bytes of FE.REL 0x0C5EA8 identical with it, the first difference
+being a branch distance and not the frame. The wave 6 works that family
+(lots `w6/W*`).
 
 | profile | chain | what it reproduces |
 | --- | --- | --- |
