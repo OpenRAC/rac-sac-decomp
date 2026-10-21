@@ -1,11 +1,12 @@
-/* TARGET_Init__Fv_LEVEL13_0251A0 -- LEVEL13.REL 0x0251A0, 64 bytes.
+/* TARGET_Init__Fv_LEVEL1_0251A8 -- LEVEL1.REL 0x0251A8, 64 bytes.
  *
  * Body translated from the retail module.
  *
  * Evidence:
  *   64 octets.
- *   Le pointeur de boucle est une variable d'induction : il vit dans $a1 et
- *   avance de 0x64 (taille d'une entree) par tour.
+ *   Le curseur de boucle est une variable d'induction : il vit dans $a1 et
+ *   avance de 0x64 (taille d'une entree) par tour ; l'ecriture du zero se
+ *   fait a table + 0x5C + i * 0x64.
  *
  * Placement: module-relative offset of the disc module; the other
  * placements of the same body are listed in config/levels/bodies.tsv.

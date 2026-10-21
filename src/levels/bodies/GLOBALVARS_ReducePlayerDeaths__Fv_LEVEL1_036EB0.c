@@ -1,6 +1,13 @@
-/* GLOBALVARS_ReducePlayerDeaths__Fv -- LEVEL13.REL 0x036EA8, 256 bytes.
+/* GLOBALVARS_ReducePlayerDeaths__Fv_LEVEL1_036EB0 -- LEVEL1.REL 0x036EB0, 256 bytes.
  *
  * Body translated from the retail module.
+ *
+ * Evidence:
+ *   256 octets.
+ *   puis, pour chaque mode, le compteur de morts lu en unsigned char :
+ *   et, si le compteur est < 5, il est mis a zero, sinon il est diminue de 4.
+ *   L'ordre des cas du retail est 0, 1, 3, 2 : c'est l'ordre du switch qui
+ *   donne la table de branchement (mode 2 -> deaths[3], mode 3 -> deaths[2]).
  *
  * Placement: module-relative offset of the disc module; the other
  * placements of the same body are listed in config/levels/bodies.tsv.
