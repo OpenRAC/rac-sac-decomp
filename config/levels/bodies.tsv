@@ -4,6 +4,10 @@
 # placement.  Promotion to a program-level match waits for the
 # complete-program gate.
 module	offset	size	source
+FE.REL	0x001598	260	src/levels/bodies/CameraCB__11ApeLevelDefP12TiXmlElement_FE_00001598.c
+FE.REL	0x0016A0	288	src/levels/bodies/FogCB__11ApeLevelDefP12TiXmlElement_FE_000016A0.c
+FE.REL	0x001A88	184	src/levels/bodies/RadialBlurCB__11ApeLevelDefP12TiXmlElement_FE_00001A88.c
+FE.REL	0x0022F0	268	src/levels/bodies/WarpScreenCB__11ApeLevelDefP12TiXmlElement_FE_000022F0.c
 FE.REL	0x002870	44	src/levels/bodies/BeginLoad__12ApeLevelInst.c
 FE.REL	0x003CB8	64	src/levels/bodies/Close__12AglMovieBase.c
 FE.REL	0x003D18	8	src/levels/bodies/Play__12AglMovieBase.c
@@ -14,9 +18,13 @@ FE.REL	0x0080D8	32	src/levels/bodies/FE_008090.c
 FE.REL	0x008B50	32	src/levels/bodies/FastMemZero__FPvUi.c
 FE.REL	0x008F00	32	src/levels/bodies/GLOBAL_GetFlagBit__FUiUc.c
 FE.REL	0x009360	8	src/levels/bodies/GLOBALVARS_AddQuickSelect__FUi.c
+FE.REL	0x009400	124	src/levels/bodies/GLOBALVARS_TemporarilyOverrideGlobalGameVolume__Ff_FE_00009400.c
+FE.REL	0x009598	96	src/levels/bodies/GLOBALVARS_UpdateGameVolumeFromTempSettings__Fv.c
 FE.REL	0x00B978	64	src/levels/bodies/GADGET_GetDataDef__FUi.c
 FE.REL	0x00BE30	128	src/levels/bodies/GADGET_IsModToBeInstalledAtSlot__FUiUiUi_FE_00BE30.c
 FE.REL	0x00C3A0	64	src/levels/bodies/GADGET_FillAmmo__FUi.c
+FE.REL	0x00D650	168	src/levels/bodies/FE_0000D650.c
+FE.REL	0x00E408	148	src/levels/bodies/DISPLAY_IsSphereVisible__FPC4VEC3f_FE_0000E408.c
 FE.REL	0x00EE40	64	src/levels/bodies/CONTROLLER_GetButtonsPressedWithAnalog__FUi.c
 FE.REL	0x00EF68	8	src/levels/bodies/CONTROLLER_GetWorldButtonLeft__FUi.c
 FE.REL	0x00F068	32	src/levels/bodies/DRAW_AddStageRenderCallback__F10DRAW_LayerPF10DRAW_LayerPv_vPv.c
@@ -547,6 +555,8 @@ LEVEL13.REL	0x23A870	8	src/levels/bodies/GetNumFree__C11ApeFreeList.c
 LEVEL13.REL	0x23B990	8	src/levels/bodies/ICONHORMENU_GetCurrentState__FP12tICONHORMENU.c
 LEVEL13.REL	0x23CF80	8	src/levels/bodies/GetPalette__10AgxTexture.c
 LEVEL14.REL	0x003750	64	src/levels/bodies/Update__12ApeLevelInstfP15AglRenderTarget_LEVEL14_003750.c
+LEVEL14.REL	0x00AA20	360	src/levels/bodies/LEVEL14_0000AA20.c
+LEVEL14.REL	0x00AB88	380	src/levels/bodies/CAMDRIVER_PolarToCart__FP4VEC3ffff.c
 LEVEL14.REL	0x00B0A0	128	src/levels/bodies/LEVEL14_00B0A0.c
 LEVEL14.REL	0x00B120	128	src/levels/bodies/LEVEL14_00B120.c
 LEVEL14.REL	0x017B00	64	src/levels/bodies/LEVEL14_017B00.c
@@ -1052,8 +1062,23 @@ LEVEL19.REL	0x1125D8	8	src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP1
 LEVEL19.REL	0x13D648	8	src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP17ApeAnimCompositor.c
 LEVEL19.REL	0x142258	8	src/levels/bodies/HUD_FontPrintWindowAreaSetText__FP20tFontPrintWindowDataPc.c
 LEVEL19.REL	0x17F370	8	src/levels/bodies/ICONMENU_SetIconScrollSpeed__FP9tICONMENUf.c
+LEVEL19.REL	0x19DB00	88	src/levels/bodies/COL_IntersectCapsuleWithMesh__FPfT0P4VEC3PC4VEC3T3ffPC13CollisionMeshPC7MATRIX4T2_LEVEL19_0019DB00.c
+LEVEL19.REL	0x19DE88	88	src/levels/bodies/COL_IntersectCapsuleWithMesh__FPfT0P4VEC3PC4VEC3T3ffPC13CollisionMeshPC8MATRIX43T2_LEVEL19_0019DE88.c
+LEVEL19.REL	0x19E2C0	88	src/levels/bodies/COL_IntersectSweptSphereWithMesh__FPfP4VEC3P17PackedSurfaceInfoPC4VEC3T3ffPC13CollisionMeshPC7MATRIX4T1_LEVEL19_0019E2C0.c
+LEVEL19.REL	0x19E628	88	src/levels/bodies/COL_IntersectSweptSphereWithMesh__FPfP4VEC3P17PackedSurfaceInfoPC4VEC3T3ffPC13CollisionMeshPC8MATRIX43T1_LEVEL19_0019E628.c
 LEVEL19.REL	0x1C6C20	32	src/levels/bodies/CB_ARRAY_Init__FP14tCB_ARRAY_DATA.c
 LEVEL19.REL	0x1C6E58	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
+LEVEL19.REL	0x1CABE8	84	src/levels/bodies/__do_global_dtors_LEVEL19_001CABE8.c
+LEVEL19.REL	0x1CAD10	224	src/levels/bodies/__floatdisf.c
+LEVEL19.REL	0x1CB8F8	148	src/levels/bodies/dptoli_LEVEL19_001CB8F8.c
+LEVEL19.REL	0x1CB990	160	src/levels/bodies/dptoul.c
+LEVEL19.REL	0x1CBA30	56	src/levels/bodies/__negdf2_LEVEL19_001CBA30.c
+LEVEL19.REL	0x1CBA98	84	src/levels/bodies/dptofp.c
+LEVEL19.REL	0x1CBEC8	88	src/levels/bodies/fpadd_LEVEL19_001CBEC8.c
+LEVEL19.REL	0x1CBF20	100	src/levels/bodies/fpsub_LEVEL19_001CBF20.c
+LEVEL19.REL	0x1CBF88	500	src/levels/bodies/fpmul.c
+LEVEL19.REL	0x1CC180	352	src/levels/bodies/fpdiv.c
+LEVEL19.REL	0x1CC3F8	76	src/levels/bodies/fpcmp_LEVEL19_001CC3F8.c
 LEVEL19.REL	0x1D4128	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
 LEVEL19.REL	0x1DD620	32	src/levels/bodies/AddMesh__14AglIRenderListR22AglSubMeshRenderParamsG20AglRenderListSortKey.c
 LEVEL19.REL	0x1DEF38	8	src/levels/bodies/SetProjectionType__19AglRenderTargetBase24AglRenderTargetEProjType.c

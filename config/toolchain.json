@@ -133,6 +133,59 @@
       "regression_control": "Every one of the 206 sources of the level modules that the pinned chain proves is still exact with the route: 206/206.  The four that differ are the bodies that need another route (the three that carry a division, and the one of the wide family).",
       "verdict": "route accepted: it is a superset of the pinned chain on the level modules, and it opens the class of the bodies that save a callee-saved floating-point register -- the HUD and DRAW family, which no proved body had reached before.",
       "reproduce": "the recipe is in the private kit, work/w6/W35/work/NOTE-chaine.md"
+    },
+    {
+      "id": "sdk991111-sdkas",
+      "scope": "the bodies of the wide family of the level modules",
+      "provenance": "The Sony EE-GCC 2.9 chain, with the assembler of the SDK instead of the recent GNU one.  External binaries: pinned by hash, never rebuilt here and never committed.",
+      "toolchain": {},
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "In the 64-bit mode the assembler of the SDK expands `move` into `daddu`, where the recent GNU assembler emits `addu`; the bytes differ from the nineteenth one.  The boot's bodies, proved with the recent GNU assembler, break with the SDK's one: the two routes need two profiles.",
+      "regression_control": "The wide family's bodies are measured with this profile; the boot's bodies keep the recent GNU assembler and are measured with it.",
+      "verdict": "route accepted for the wide family of the level modules.",
+      "reproduce": "the private profile table, work/E0/profiles.json"
+    },
+    {
+      "id": "gprfirst-divctx",
+      "scope": "the bodies of the level modules that save a floating-point register and carry a division",
+      "provenance": "The GPR-first tree, copied, plus the contextual division patch of the divpad-contextuel route.  External binary: pinned by hash, never rebuilt here and never committed.",
+      "toolchain": {
+        "cc1_sha256": "c8fb88092ef30961ad332328d3a9b0d1d0c9f617ae06210ccb9d5ae61f38acfa"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "The retail saves the general purpose registers before the floating-point ones, and reserves two instruction slots before every single-precision division.  The two rules are independent; the bodies that have both need the two together.",
+      "regression_control": "233 of the 246 sources of the level modules stay exact with the route; the ones that differ are the bodies that need another route.",
+      "verdict": "route accepted for the bodies that have both rules.",
+      "reproduce": "the build script is in the private kit, work/w6c/F01/work/build_combined.sh"
+    },
+    {
+      "id": "astra-divpad",
+      "scope": "the bodies of the level modules that save a floating-point register and carry a division, whose divisions all take the two nops",
+      "provenance": "The same reconstructed tree as the pinned chain, with its R5900 anchor restored (every general purpose register in the 16-byte mode) and the blanket division padding of the sibling project.  External binary: pinned by hash, never rebuilt here and never committed.",
+      "toolchain": {},
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "The retail saves the general purpose registers before the floating-point ones, and pads most of its single-precision divisions with two nops.  The astra build has the first rule and the blanket form of the second; the bodies whose divisions all take the two nops are reproduced by it.",
+      "regression_control": "The nine bodies of the class proved with the GPR-first route stay exact with the astra route (9/9).",
+      "verdict": "route accepted for the bodies of that class whose divisions all take the two nops; the contextual route serves the ones whose division takes a single nop.",
+      "reproduce": "the private profile table, work/E0/profiles.json"
     }
   ],
   "trials": [
