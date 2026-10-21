@@ -147,6 +147,18 @@ The two families live in **contiguous bands**, which is the signature of
 two compilations inside the same executable. The route is therefore chosen
 per body, and the survey is what tells which family a body belongs to.
 
+### The bugs of the retail are part of the program
+
+The boot's `memmove` is **buggy**: the forward copy adds the length to the
+source, the backward copy adds it to the destination. A matching body has
+to reproduce the bug, not fix it -- the original behaviour is the
+behaviour of the retail program. The same goes for the `break`
+instructions the division survey counted (854 of them): they are the
+retail's own, not ours.
+
+This is the one place where the campaign must be careful not to "improve"
+the game: a fixed bug is a different program, and the hash would say so.
+
 ### The divisions of the retail code
 
 A wave-2 lot measured a body that was one instruction short: the retail
