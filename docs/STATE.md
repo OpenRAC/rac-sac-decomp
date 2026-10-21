@@ -183,19 +183,25 @@ compilers keep it.
 spacing of the stack slots (`tools/slot_spacing.py`) reads every function
 prologue of the 31 modules and finds two families:
 
-- **103 283 prologues** reserve their slots **8 bytes apart** -- the
+- **129 856 prologues** reserve their slots **8 bytes apart** -- the
   family the pinned chain reproduces;
-- **6 766 prologues** reserve them **16 bytes apart** -- 5.6 % of the
-  functions, spread over every module (182 to 234 per module).
+- **7 208 prologues** reserve them **16 bytes apart** or more -- 5 % of
+  the functions, spread over every module.
 
 Both families save with `sd`, which stores eight bytes: it is the *spacing*
 of the slots that differs, not the width of the store. The wide family
-holds **5 512 bounded bodies** -- the largest class left in the campaign --
+holds **5 822 bounded bodies** -- the largest class left in the campaign --
 and the route that reproduces it is the one the boot already uses,
 **`sdk991111`** (Sony EE-GCC 2.9): the wave-5 lot `w5/L02` measured 84 of
 the 400 bytes of FE.REL 0x0C5EA8 identical with it, the first difference
 being a branch distance and not the frame. The wave 6 works that family
-(lots `w6/W*`).
+(lots `w6b/V*`).
+
+Reading the spacing takes care, and the survey was wrong three times
+before it was right: only the *stores* of the prologue count (the loads of
+the epilogue do not), the window has to stop at the first call and at the
+second frame adjustment (or the next function leaks in), and the argument
+registers the frame saves (`sd $a0,0x60($sp)`) count as well.
 
 | profile | chain | what it reproduces |
 | --- | --- | --- |
@@ -283,9 +289,29 @@ it holds.  Two things were measured on it:
 
 The route is therefore recorded as a profile with its cause, its provenance
 and its control (`config/toolchain.json`, id `divpad`), and it is used per
-source, the way the sibling project does.  The bodies whose divisions take
-one nop or none stay parked: the blanket rule is wrong for them, and that
-is a fact, not a guess.
+source, the way the sibling project does.
+
+**And the contextual rule exists.**  A second route (`divpad-contextuel`)
+was built on a copy of the pinned tree, with a 226-line patch that gives
+the division family the retail's two instruction slots (`dslot` in
+`mips.md`, a `MACHINE_DEPENDENT_REORG_AFTER_DBR` hook) and fills them
+from the context: three nops when the producer is a branch, one when it
+is a floating-point operation the division reads, none when it is a
+conversion, two otherwise.  The retail's `rsqrt.s` family always takes
+the two slots.
+
+- it is a **superset** of the pinned chain on the level modules: 191 of
+  the 191 sources stay exact, no break;
+- it **proves the class the blanket rule misses** -- the bodies whose
+  division carries a *single* nop -- `GADGET_GetParametricXPToNextLevel`
+  among them, now published with its six placements.
+
+Its rule is a *model* of the retail's behaviour rather than a
+reproduction of it: over the 51 719 divisions of the program it agrees
+with the retail on 78.2 per cent, 93 per cent of the single-nop class and
+99 per cent of the three-nop class.  The class it serves worst is the
+one with no nop at all (30 per cent), where the division sits right
+against its producer.
 
 **The MIPS level is not that route.** The EE target refuses `-mips1` and
 `-mips2` outright ("Only MIPS-III or MIPS-IV CPUs can support 64 bit gp
