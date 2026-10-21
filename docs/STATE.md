@@ -99,7 +99,15 @@ command written next to it.
   placements of 9 distinct bodies, published in `src/boot/bodies/` with the
   table `config/boot/bodies.tsv`. The boot rebuilt with those bodies has
   the pinned retail hash.
-- Wave 2 continues on six module lots (L09, L15, L21, L29, L35, L45).
+- **Wave 2** continues: 317 placements of 55 distinct sources are proved
+  and published (the level modules and the boot), 7 900 bytes by placement.
+  The root re-measured every claim before publishing it, and the placement
+  gate passes on the result.
+- **The families were expanded.** A body that is proved once is carried by
+  many placements of the disc; every one of them is **re-measured on its
+  own bytes** with the published source, and a placement whose relocation
+  context differs is simply refused. The expansion added 167 placements
+  from the 54 sources already proved.
 - The proofs are **body-level**. The program-level gate is pending, so the
   published numbers are not promoted and no percentage is published.
 
