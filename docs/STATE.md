@@ -133,6 +133,20 @@ at the very first byte -- the prologue -- because the modules keep 8-byte
 slots where those chains keep 16-byte ones. The division padding of the
 modules therefore belongs to a third configuration, still unnamed.
 
+**And the boot is not homogeneous either.** `tools/slot_survey.py` measures
+the slot width of every bounded body of the boot:
+
+| slot width | bodies | where |
+| --- | --- | --- |
+| 16 bytes (`sq`/`lq`) | 1 146 | contiguous runs, the largest 0x00133518..0x00137D10 |
+| 8 bytes (`sd`/`ld`) | 651 | contiguous runs, the largest around 0x0019B658 |
+| both | 267 | mixed bodies |
+| neither | 1 150 | bodies without a frame |
+
+The two families live in **contiguous bands**, which is the signature of
+two compilations inside the same executable. The route is therefore chosen
+per body, and the survey is what tells which family a body belongs to.
+
 ### The divisions of the retail code
 
 A wave-2 lot measured a body that was one instruction short: the retail
