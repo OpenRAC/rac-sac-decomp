@@ -58,8 +58,10 @@ def survey(data: bytes, end: int) -> dict:
     """
     total = 0
     padded = 0
+    delay = 0
     in_delay = 0
     padding = Counter()
+    delay_padding = Counter()
     kinds = Counter()
     alignment = Counter()
     hazard_padded: Counter[str] = Counter()
@@ -74,7 +76,8 @@ def survey(data: bytes, end: int) -> dict:
         kinds[name] += 1
         alignment[site % 16] += 1
         # Walk back over the nops: the instruction the padding follows is
-        # the hazard source.
+        # the hazard source.  A nop that fills the delay slot of a branch is
+        # not a hazard pad, and the two are counted apart.
         back = site
         nops = 0
         while back - 4 >= CODE_START:
@@ -83,20 +86,29 @@ def survey(data: bytes, end: int) -> dict:
                 back -= 4
                 continue
             break
-        if nops:
+        source_name = "none"
+        source_word = 0
+        if back - 4 >= CODE_START:
+            source_word = WORD.unpack_from(data, back - 4)[0]
+            source_name = rabbitizer.Instruction(
+                source_word, back - 4, rabbitizer.InstrCategory.R5900).getOpcodeName()
+        if nops and is_branch(source_word):
+            delay += 1
+            delay_padding[nops] += 1
+        elif nops:
             padded += 1
             padding[nops] += 1
-        source_name = "none"
-        if back - 4 >= CODE_START:
-            source = WORD.unpack_from(data, back - 4)[0]
-            source_name = rabbitizer.Instruction(
-                source, back - 4, rabbitizer.InstrCategory.R5900).getOpcodeName()
-        (hazard_padded if nops else hazard_bare)[source_name] += 1
+            (hazard_padded)[source_name] += 1
+        else:
+            hazard_bare[source_name] += 1
         if site >= CODE_START + 4 and is_branch(
                 WORD.unpack_from(data, site - 4)[0]):
             in_delay += 1
-    return {"divisions": total, "padded": padded, "in_delay_slot": in_delay,
-            "padding": dict(sorted(padding.items())), "kinds": dict(sorted(kinds.items())),
+    return {"divisions": total, "padded": padded, "delay_slot_nop": delay,
+            "in_delay_slot": in_delay,
+            "padding": dict(sorted(padding.items())),
+            "delay_slot_padding": dict(sorted(delay_padding.items())),
+            "kinds": dict(sorted(kinds.items())),
             "address_modulo_16": dict(sorted(alignment.items())),
             "eight_byte_aligned": alignment[0] + alignment[8],
             "hazard_source_of_a_padded_division": dict(hazard_padded.most_common(12)),
@@ -111,7 +123,7 @@ def main() -> int:
     args = parser.parse_args()
 
     report = {"modules": {}, "totals": {"divisions": 0, "padded": 0,
-                                        "in_delay_slot": 0}}
+                                        "delay_slot_nop": 0, "in_delay_slot": 0}}
     for path in sorted(args.modules.glob("*.REL")):
         data = path.read_bytes()
         end = code_end_from_relocations(data)
@@ -120,10 +132,12 @@ def main() -> int:
         for key in report["totals"]:
             report["totals"][key] += result[key]
         print(f"  {path.name:16s} {result['divisions']:6d} division(s), "
-              f"{result['padded']:6d} padded, {result['in_delay_slot']:4d} in a "
-              f"delay slot, padding {result['padding']}")
+              f"{result['padded']:6d} hazard pad, "
+              f"{result['delay_slot_nop']:6d} delay-slot nop, "
+              f"{result['in_delay_slot']:4d} in a delay slot")
     print(f"  {'TOTAL':16s} {report['totals']['divisions']:6d} division(s), "
-          f"{report['totals']['padded']:6d} padded, "
+          f"{report['totals']['padded']:6d} hazard pad, "
+          f"{report['totals']['delay_slot_nop']:6d} delay-slot nop, "
           f"{report['totals']['in_delay_slot']:4d} in a delay slot")
     if args.json:
         print(json.dumps(report, indent=2))

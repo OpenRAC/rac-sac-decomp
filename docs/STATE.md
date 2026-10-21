@@ -171,27 +171,29 @@ the game: a fixed bug is a different program, and the hash would say so.
 
 A wave-2 lot measured a body that was one instruction short: the retail
 puts a `nop` between the setup of the divisor and the `div.s`. Before that
-becomes a compiler route, it has to be measured across the whole program --
+becomes a compiler route, it has to be *measured* across the whole program --
 `tools/div_survey.py` does it:
 
-- the retail code holds **63 443 divisions**, of which **49 616 (78 %)** are
-  preceded by one or two `nop`, and only 89 sit in a delay slot;
+- the 31 modules hold **63 443 divisions**, of which 51 719 are `div.s`;
+- of those `div.s`, **78.4 % carry a hazard pad** (one or two `nop` that do
+  not fill a branch delay slot), 7.8 % carry a delay-slot `nop` that has
+  nothing to do with the division, and 13.8 % carry no `nop` at all;
 - the padding follows a multi-cycle floating-point operation in almost
-  every case (`mtc1`, `mul.s`, `swc1`, `madd.s`, `mov.s`, `div.s` itself:
-  padded every time), while an integer operation such as `addiu` is
-  usually bare;
-- but the rule is **not** a function of the preceding instruction alone:
-  11 590 divisions carry no padding at all, and `lwc1` and `cvt.s.w` appear
-  on both sides;
-- and it is **not** an alignment rule either: only 48.6 % of the divisions
-  of the program are 8-byte aligned, and 24.6 % are 16-byte aligned --
-  the distribution any placement would give.
+  every case (`mtc1`, `mul.s`, `swc1`, `madd.s`, `mov.s`: padded every
+  time), while an integer operation such as `addiu` is usually bare;
+- but the rule is **not** a function of the preceding instruction alone
+  (`addiu` and `cvt.s.w` appear on both sides), **not** of the encoding of
+  the division (the same `div.s` is 80 % padded in one module and bare in
+  another), and **not** an alignment rule either: only 48.6 % of the
+  divisions of the program are 8-byte aligned, and 24.6 % are 16-byte
+  aligned -- the distribution any placement would give.
 
 The conclusion is a negative one, and it is useful: a blanket "insert a
-nop before every division" patch is refuted by the 11 590 bare divisions.
-The retail build had a *scheduler* that inserts the padding when it judges
-it necessary, and the pinned chain does not have that rule. A body that
-misses only this `nop` is therefore a compiler-route question, not a
+nop before every division" patch is refuted by the 13.8 % of divisions
+that carry no `nop` at all, and by the 89 divisions that sit in a delay
+slot. The retail build had a *scheduler* that inserts the padding when it
+judges it necessary, and the pinned chain does not have that rule. A body
+that misses only this `nop` is therefore a compiler-route question, not a
 source-form question, and it stays parked until a route with a measured
 cause, a known provenance and a regression control exists.
 
