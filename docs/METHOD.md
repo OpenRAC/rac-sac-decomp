@@ -76,6 +76,12 @@ This is where the bulk of the measurable progress comes from, and it is also
 where the temptation to cheat lives: a placement counts only if its own
 linked bytes match its own retail bytes.
 
+The bounds carry the raw hash of every bounded body, so the family of a
+proved source is known without reading the code again. The root expands a
+family by re-measuring every one of its placements with the published
+source; a placement whose relocation context differs is refused and stays
+out. The expansion never infers a placement from a sibling: it measures it.
+
 ## 5. The root integration
 
 The root is the only writer in the clone. It:
