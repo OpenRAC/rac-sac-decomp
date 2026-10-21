@@ -1,7 +1,3 @@
-# Placement table of the proved bodies; one row per placement.
-# proof=body: the compiled body equals the retail body at that
-# placement.  Promotion to a program-level match waits for the
-# complete-program gate.
 module	offset	size	source	source_sha256_lf	object_sha256	profile	proof	body_sha256
 SCUS_976.23	0x00100328	8	src/boot/bodies/func_00100328.c	7aaa59d554983a8d8a47c39752fbf3ae62a55b795790ce99b75dd565036aec87	b3fd30ef0342b0908621025bd23d8be785d3c66863e718951ee382bb5f98b928	gnu-ee-20261015:-O2 -G0	body	6d64edf91449c1b17746c1ef18afa2eb25c70bdf1322ab3df5a2630993b7e2f1
 SCUS_976.23	0x00100330	8	src/boot/bodies/func_00100328.c	7aaa59d554983a8d8a47c39752fbf3ae62a55b795790ce99b75dd565036aec87	b3fd30ef0342b0908621025bd23d8be785d3c66863e718951ee382bb5f98b928	gnu-ee-20261015:-O2 -G0	body	6d64edf91449c1b17746c1ef18afa2eb25c70bdf1322ab3df5a2630993b7e2f1

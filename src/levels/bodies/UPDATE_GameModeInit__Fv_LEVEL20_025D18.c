@@ -1,10 +1,10 @@
-/* UPDATE_GameModeInit__Fv_LEVEL18_025D28 -- LEVEL18.REL 0x025D28, 32 bytes.
+/* UPDATE_GameModeInit__Fv_LEVEL20_025D18 -- LEVEL20.REL 0x025D18, 32 bytes.
  *
  * Body translated from the retail module.
  *
  * Evidence:
  *   Initialisation du mode de jeu : cas numero 1 du commutateur
- *   UPDATE_SetGameMode__F14GAME_MODE_LISTUi (0x025D70).
+ *   UPDATE_SetGameMode__F14GAME_MODE_LISTUi (0x025D60).
  *
  * Placement: module-relative offset of the disc module; the other
  * placements of the same body are listed in config/levels/bodies.tsv.

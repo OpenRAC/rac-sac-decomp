@@ -1,10 +1,10 @@
-/* LEVEL_RequestRestart__Fv_LEVEL18_01EF78 -- LEVEL18.REL 0x01EF78, 32 bytes.
+/* LEVEL_RequestRestart__Fv_LEVEL20_01EF78 -- LEVEL20.REL 0x01EF78, 32 bytes.
  *
  * Body translated from the retail module.
  *
  * Evidence:
  *   Demande de redemarrage : cas numero 8 du commutateur de mode de jeu
- *   (UPDATE_SetGameMode__F14GAME_MODE_LISTUi, 0x025D70).
+ *   (UPDATE_SetGameMode__F14GAME_MODE_LISTUi, 0x025D60).
  *
  * Placement: module-relative offset of the disc module; the other
  * placements of the same body are listed in config/levels/bodies.tsv.
