@@ -165,6 +165,28 @@ program, and the largest class left.  It is registered as a profile
 (`config/toolchain.json`, id `gnu-ee-20261015-gprfirst`) and the wave 6
 works it (lots `w6c/F*`).
 
+### The program rebuilds byte for byte
+
+The complete-program gate rebuilds every module -- its code interval
+rendered as R5900 assembly, assembled with the assembler of the SN,
+linked, with the proved C bodies written over it -- and writes the result
+back into a copy of the disc image.  The rebuilt image hashes to
+
+```
+128abfa2fb8eb4dc253513d3beb9029dfb8698966ecc7b8266230e8739b8e908
+```
+
+which is the hash of the retail disc, pinned at the start of the
+campaign.  **The program is reconstructed byte for byte**: the proved
+bodies sit exactly where the retail has them, and the rest of each
+module is what the retail has.
+
+The gate still refuses, and it must.  What it measures is *where the
+program comes from*, not whether it is right: 297 318 bodies still come
+from the assembly baseline rather than from a C source.  The
+reconstruction proves the first half of the question -- the bytes are
+exact -- and the coverage is the second.
+
 ### The vector bodies are not reproducible in pure C
 
 A research agent closed the class of the bodies written in the vector unit's

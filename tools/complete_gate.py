@@ -148,6 +148,8 @@ def main() -> int:
                 if profile:
                     command += ["--cpp", profile["cpp"], "--cc1", profile["cc1"],
                                 "--flags", profile["flags"], "--work", profile["work"]]
+                    if profile.get("as"):
+                        command += ["--as", profile["as"]]
                 result = subprocess.run(command, capture_output=True, text=True)
                 if "\tEXACT\t" not in result.stdout:
                     problems.append(f"{module} {entry['offset']}: the body is refused")
