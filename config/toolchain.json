@@ -114,6 +114,25 @@
       "regression_control": "Every one of the 191 sources of the level modules that the pinned chain proves is still exact with the route: 191/191, no break.  The route also proves the bodies whose divisions carry a single nop, which the blanket two-nop rule misses.",
       "verdict": "route accepted: it is a superset of the pinned chain on the level modules, and it opens the class of the single-nop divisions.  Its rule is a model of the retail's behaviour, not a reproduction of it: it agrees with the retail on 78.2 per cent of the 51 719 divisions of the program, 93 per cent of the single-nop class and 99 per cent of the three-nop class.",
       "reproduce": "the patch and the build script are in the private kit, work/w3/research-div-contextuel"
+    },
+    {
+      "id": "gnu-ee-20261015-gprfirst",
+      "scope": "the bodies of the level modules whose frame saves a callee-saved floating-point register",
+      "provenance": "The pinned chain's own tree, copied, with one line of config/mips/mips.c changed: the condition of the save pass, so that the general purpose registers are saved before the floating-point ones.  The tree is copied outside the shared one, which is never modified.  External binary: pinned by hash, never rebuilt here and never committed.",
+      "toolchain": {
+        "cc1_sha256": "d398bf01bc3dccfa1ebfca7cc82b031173117bdaac1e0b9ab3c9e9fd99e6d885"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "The retail's prologue saves the general purpose registers before the floating-point ones (measured on LEVEL11.REL 0x07F620: sd $s0, sd $s2, sd $s4, sd $ra, then swc1 $f23, $f22, $f21, $f20).  The pinned chain carries a fix made for another game that inverted that order, and none of the bodies proved so far saved a floating-point register -- so the class had never been measured.",
+      "regression_control": "Every one of the 206 sources of the level modules that the pinned chain proves is still exact with the route: 206/206.  The four that differ are the bodies that need another route (the three that carry a division, and the one of the wide family).",
+      "verdict": "route accepted: it is a superset of the pinned chain on the level modules, and it opens the class of the bodies that save a callee-saved floating-point register -- the HUD and DRAW family, which no proved body had reached before.",
+      "reproduce": "the recipe is in the private kit, work/w6/W35/work/NOTE-chaine.md"
     }
   ],
   "trials": [
