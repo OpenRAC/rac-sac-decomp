@@ -496,6 +496,12 @@ LEVEL13.REL	0x04A250	8	src/levels/bodies/ANIM_SetInstanceAnimation__FP13GDE_Anim
 LEVEL13.REL	0x04B988	8	src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP17ApeAnimCompositor.c
 LEVEL13.REL	0x04C340	8	src/levels/bodies/AnimTranslator_GetFrameTrans__FP14AnimTranslator.c
 LEVEL13.REL	0x04D8D8	8	src/levels/bodies/CONTROLLER_GetWorldButtonLeft__FUi.c
+LEVEL13.REL	0x04D998	116	src/levels/bodies/DEBUGDRAW_DrawPoint__FPC4VEC3fUi.c
+LEVEL13.REL	0x04DA10	116	src/levels/bodies/DEBUGDRAW_DrawPoint__FPC4VEC3fUi.c
+LEVEL13.REL	0x04DA88	116	src/levels/bodies/DEBUGDRAW_DrawPoint__FPC4VEC3fUi.c
+LEVEL13.REL	0x04DB00	116	src/levels/bodies/DEBUGDRAW_DrawPoint__FPC4VEC3fUi.c
+LEVEL13.REL	0x04DB78	116	src/levels/bodies/DEBUGDRAW_DrawSphere__FPC6SphereUi.c
+LEVEL13.REL	0x04E6C8	168	src/levels/bodies/LEVEL13_0004E6C8.c
 LEVEL13.REL	0x04F818	32	src/levels/bodies/DRAW_AddStageRenderCallback__F10DRAW_LayerPF10DRAW_LayerPv_vPv.c
 LEVEL13.REL	0x05BE60	48	src/levels/bodies/MOBY_GetMobyTargetPos__FPC4MobyP4VEC4bT2.c
 LEVEL13.REL	0x0630E0	32	src/levels/bodies/DrawVLINE__FP6VLINES.c
