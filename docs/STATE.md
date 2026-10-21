@@ -379,8 +379,8 @@ first, and this is what that means.
 ## 4. What is next
 
 1. **Close the coverage.**  The complete-program gate now measures what it
-   needs: 28 776 of the 323 138 bounded candidate bodies come from a proved
-   C source (261 480 of 64 714 676 bytes by placement), and **180 743
+   needs: 29 015 of the 323 138 bounded candidate bodies come from a proved
+   C source (277 864 of 64 714 676 bytes by placement), and **180 620
    distinct bodies** are still to translate -- a family counts once, because
    one source serves every placement that carries it.  The gate passes when
    that number is zero.
