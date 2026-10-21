@@ -186,6 +186,25 @@
       "regression_control": "The nine bodies of the class proved with the GPR-first route stay exact with the astra route (9/9).",
       "verdict": "route accepted for the bodies of that class whose divisions all take the two nops; the contextual route serves the ones whose division takes a single nop.",
       "reproduce": "the private profile table, work/E0/profiles.json"
+    },
+    {
+      "id": "gprfirst-divctx-sqrt",
+      "scope": "the bodies of the level modules that save a floating-point register and carry a division or a square root",
+      "provenance": "The GPR-first tree, copied, plus the contextual division patch, refined so that a square root always takes the two slots.  External binary: pinned by hash, never rebuilt here and never committed.",
+      "toolchain": {
+        "cc1_sha256": "758d30dfc345965ca33a3849dc7866a22005e5b93e6a1c0fa2d10e5d81c729ae"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "Three rules of the retail: the frame saves the general purpose registers before the floating-point ones; two instruction slots are reserved before every single-precision division and filled from the context; a square root always takes the two slots (measured over ten bodies of the level modules, whatever the producer).",
+      "regression_control": "257 of the 270 sources of the level modules stay exact with the route.",
+      "verdict": "route accepted for the bodies that have those rules.",
+      "reproduce": "the private kit, work/E0/preuves/divpad-contextuel-sqrt"
     }
   ],
   "trials": [
