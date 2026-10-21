@@ -179,27 +179,25 @@ becomes a compiler route, it has to be *measured* across the whole program --
 `tools/div_survey.py` does it:
 
 - the 31 modules hold **63 443 divisions**, of which 51 719 are `div.s`;
-- of those `div.s`, **78.4 % carry a hazard pad** (one or two `nop` that do
-  not fill a branch delay slot), 7.8 % carry a delay-slot `nop` that has
-  nothing to do with the division, and 13.8 % carry no `nop` at all;
+- of those `div.s`, **71.2 % carry two `nop`, 7.7 % three** (a branch delay
+  slot plus two), 7.2 % one, and **13.8 % none**;
 - the padding follows a multi-cycle floating-point operation in almost
   every case (`mtc1`, `mul.s`, `swc1`, `madd.s`, `mov.s`: padded every
   time), while an integer operation such as `addiu` is usually bare;
 - but the rule is **not** a function of the preceding instruction alone
   (`addiu` and `cvt.s.w` appear on both sides), **not** of the encoding of
   the division (the same `div.s` is 80 % padded in one module and bare in
-  another), and **not** an alignment rule either: only 48.6 % of the
-  divisions of the program are 8-byte aligned, and 24.6 % are 16-byte
-  aligned -- the distribution any placement would give.
+  another), and **not** an alignment rule either: the address of a division
+  is uniformly distributed modulo 8 whatever the padding, and only 48.6 %
+  of them are 8-byte aligned.
 
-The conclusion is a negative one, and it is useful: a blanket "insert a
-nop before every division" patch is refuted by the 13.8 % of divisions
-that carry no `nop` at all, and by the 89 divisions that sit in a delay
-slot. The retail build had a *scheduler* that inserts the padding when it
-judges it necessary, and the pinned chain does not have that rule. A body
-that misses only this `nop` is therefore a compiler-route question, not a
-source-form question, and it stays parked until a route with a measured
-cause, a known provenance and a regression control exists.
+The conclusion is a negative one, and it is useful: a blanket "insert two
+nops before every division" patch -- the route the sibling project built for
+its own game -- is refuted twice over, by the 21 % of divisions that carry
+one or no `nop` and by the fact that the count is a decision of the
+scheduler rather than a function of the code around it.  A body that misses
+only this `nop` is a **compiler-identity** question, not a source-form one,
+and it stays parked until a chain with the retail's scheduler is found.
 
 **The MIPS level is not that route.** The EE target refuses `-mips1` and
 `-mips2` outright ("Only MIPS-III or MIPS-IV CPUs can support 64 bit gp
