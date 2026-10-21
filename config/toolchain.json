@@ -1,0 +1,74 @@
+{
+  "id": "gnu-ee-20261015",
+  "status": "candidate_profile",
+  "scope": "bodies of the SNR2 level modules of the pinned USA disc",
+  "provenance": "The GNU EE chain of the sibling OpenRAC project (a reconstructed EE compiler tree, the 'compiler-no-pad' build of 2026-10-15), used here as a candidate.  The driver reports a patched GCC for the 'ee' target.  External binary: it is pinned by hash, never rebuilt here and never committed.",
+  "toolchain": {
+    "cpp_sha256": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
+    "cc1_sha256": "9614eceecbcb1f7a64cf3a4ad3c827b3e257ab6b1f934e42fcbc4ded0f0584d6",
+    "as_sha256": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902",
+    "linker_sha256": "80f3724a63ce3c77c8b00d075f5c49448636518700ae251e5d6a6c809bbf5f48"
+  },
+  "flags": {
+    "cpp": [],
+    "cc1": ["-quiet", "-O2", "-G0"],
+    "as": []
+  },
+  "profiles": [
+    {
+      "id": "gnu-ee-20261015",
+      "scope": "the SNR2 level modules",
+      "provenance": "The reconstructed GNU EE chain of the sibling OpenRAC project, the 'compiler-no-pad' build of 2026-10-15.  It emits 8-byte stack slots (sd/ld), which is what the level modules use.",
+      "toolchain": {
+        "cpp_sha256": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
+        "cc1_sha256": "9614eceecbcb1f7a64cf3a4ad3c827b3e257ab6b1f934e42fcbc4ded0f0584d6"
+      },
+      "flags": {"cc1": ["-quiet", "-O2", "-G0"]}
+    },
+    {
+      "id": "prodg2953",
+      "scope": "the boot executable",
+      "provenance": "SN ProDG 'ProDG for PlayStation 2' ee-gcc 2.95.2, from the compiler depot of the sibling workspace (D:/RAC1/work/lombyte-depot/tools/compilers/ee-gcc-2.95.2).  External binary: pinned by hash, never rebuilt here and never committed.",
+      "toolchain": {
+        "cpp_sha256": "f7db993de8745339ec71cf10d5fe9e7772d75e79a037e97809ed5e34ea3150c3",
+        "cc1_sha256": "2aaf3d22ce5c3508ecba15f16b06737713263e6aee289ca1e43d3ff9c17d964f"
+      },
+      "flags": {"cc1": ["-quiet", "-O2", "-G0"]},
+      "measured_cause": "The boot keeps its frames in 16-byte slots (sq/lq) with $ra on top, where the pinned chain keeps 8-byte slots (sd/ld).  The cause is the register mode of the target: the GNU EE 2.9 tree neutralises the R5900 anchor mips_reg_mode[0] = TImode, and this ee-gcc 2.95.2 keeps it.",
+      "regression_control": "The four frame-less bodies of the lot are exact on the three chains alike, so they do not discriminate; the four that carry a frame are exact only on their own chain.",
+      "verdict": "route measured per source; it is the chain of the boot, not of the level modules."
+    },
+    {
+      "id": "sdk991111",
+      "scope": "the boot executable",
+      "provenance": "Sony EE-GCC 2.9-ee-991111-01, from the compiler depot of the sibling workspace (D:/RAC1/work/lombyte-depot/tools/compilers/ee-gcc2.9-991111-01).  External binary: pinned by hash, never rebuilt here and never committed.",
+      "toolchain": {
+        "cpp_sha256": "e0ea7124f31ef407e73417ce545bec8d1ab961bdae61ae41e9483de5a52585f4",
+        "cc1_sha256": "425aebdd48ba66227672ee8e520b826164ff26b26f10eefbaeeb523f68afa9bc"
+      },
+      "flags": {"cc1": ["-quiet", "-O2", "-G0"]},
+      "measured_cause": "The same frame shape as the boot, reached through the 16-byte slot mode of the Sony EE compiler.",
+      "regression_control": "The four frame-less bodies of the lot are exact on the three chains alike; the four that carry a frame are exact only on their own chain.",
+      "verdict": "route measured per source."
+    }
+  ],
+  "trials": [
+    {
+      "id": "gnu-ee-20261015-debugc",
+      "flags": {"cc1": ["-quiet", "-O2", "-G0", "-mdebugc"]},
+      "measured_cause": "The retail idiom 'sltiu $v1,$v1,1' (an equality test) comes from TARGET_DEBUG_C_MODE in the pinned compiler; the cause was read in its mips.md and mips.cxx.",
+      "regression_control": "49 of the 49 proved bodies stay byte-exact with the option added.",
+      "verdict": "candidate route, not a profile: the option also changes the frame, so on the two 'sltiu' bodies the first difference moves from body byte 48 to body byte 4.  It unlocks nothing that is parked.",
+      "reproduce": "python3 work/E0/trial_mdebugc.py and work/E0/trial_mdebugc_bodies.sh"
+    },
+    {
+      "id": "gnu-ee-20261015-mips1",
+      "flags": {"cc1": ["-quiet", "-O2", "-G0", "-mips1"]},
+      "measured_cause": "The retail pads most of its divisions with a nop, the padding MIPS-I floating-point hazard rules would demand; the pinned chain does not pad, because the EE target schedules for a CPU with hardware interlocks.",
+      "regression_control": "not applicable: the route cannot be built.  The EE target refuses it -- 'Only MIPS-III or MIPS-IV CPUs can support 64 bit gp registers' -- because the R5900 has 64-bit general purpose registers.  -mips2 fails the same way, and -mips3 / -mfp32 change nothing in the body.",
+      "verdict": "refuted: the MIPS level is not a lever on this target.  The nop belongs to the scheduler of the retail compiler, and it is context dependent (49 616 padded divisions out of 63 443, 11 590 bare), so a blanket patch is refuted too.",
+      "reproduce": "python3 tools/div_survey.py --modules <private dir>"
+    }
+  ],
+  "retail_compiler_identity": "unknown: the chain reproduces the bodies it was measured on, and the complete-program gate has not run."
+}

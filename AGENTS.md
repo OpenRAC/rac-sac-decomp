@@ -76,3 +76,22 @@ Run the repository's own checks before a commit, and describe in the pull
 request what was verified and what remains provisional. Checks enforce
 structural invariants, not semantic truth: names, types, patch justification,
 intent and original behavior still require evidence and review.
+
+```
+python3 tools/check_repository.py
+python3 -m unittest discover -s tests
+python3 tools/progress.py
+python3 tools/placement_gate.py --modules <private dir> --bounds <private dir> \
+                                --harness <private harness.py>
+python3 tools/module_gate.py --modules <private dir> --harness <private harness.py>
+```
+
+The first three need nothing but the repository. The last two need the
+private workspace, and they are the only checks that measure a body again.
+
+The published sources have their own build, which also checks that they are
+pure C and that their objects are the ones the placement table records:
+
+```
+python3 tools/build.py --cpp <cpp> --cc1 <cc1> --as <as> --check
+```

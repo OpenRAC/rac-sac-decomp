@@ -4,13 +4,14 @@
 A lot table is a TSV with one row per target, cut from the shortlist by the
 root and given to one agent.  The schema is:
 
-    module  offset  size  bound_source  evidence  body_sha256  shared_modules  shared_placements
+    module  offset  size  bound_source  evidence  name  body_sha256  shared_modules  shared_placements
 
     module           text, the module the target belongs to
     offset           hexadecimal, module relative
     size             decimal bytes, a multiple of four
     bound_source     where the bound comes from ("<tool>:<kind>")
     evidence         why the entry is a candidate ("call", "pointer", "export")
+    name             the retail symbol at that offset, when the module names it
     body_sha256      64 hex digits, the raw body bytes
     shared_modules   decimal, modules carrying the same body
     shared_placements decimal, placements carrying the same body
@@ -29,8 +30,8 @@ import re
 import sys
 from pathlib import Path
 
-HEADER = ["module", "offset", "size", "bound_source", "evidence", "body_sha256",
-          "shared_modules", "shared_placements"]
+HEADER = ["module", "offset", "size", "bound_source", "evidence", "name",
+          "body_sha256", "shared_modules", "shared_placements"]
 SHA = re.compile(r"[0-9a-f]{64}")
 
 
@@ -102,7 +103,8 @@ def merge(args: argparse.Namespace) -> int:
                 writer.writerow(HEADER)
                 writer.writerows([[row["module"], row["offset"], row["size"],
                                    row["bound_source"], row["evidence"],
-                                   row["body_sha256"], row["shared_modules"],
+                                   row.get("name", ""), row["body_sha256"],
+                                   row["shared_modules"],
                                    row["shared_placements"]] for row in chunk])
             print(f"{path.name}: {len(chunk)} targets ({module})")
             index += 1
