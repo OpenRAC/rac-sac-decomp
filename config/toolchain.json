@@ -205,6 +205,25 @@
       "regression_control": "257 of the 270 sources of the level modules stay exact with the route.",
       "verdict": "route accepted for the bodies that have those rules.",
       "reproduce": "the private kit, work/E0/preuves/divpad-contextuel-sqrt"
+    },
+    {
+      "id": "boot-astragf",
+      "scope": "the bodies of the boot whose frame saves a callee-saved floating-point register",
+      "provenance": "The ASTRA tree, copied, with the three deviations of the RAC2 patch undone.  External binary: pinned by hash, never rebuilt here and never committed.",
+      "toolchain": {
+        "cc1_sha256": "269e63110b56849873dfd2a49f148a5dfb7598e67f5b84770272e08f2744c6f1"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "The retail's boot saves the general purpose registers before the floating-point ones, reserves its frame in 16-byte slots (sq/lq) and descends the slots of the saved registers ($ra in the low slot, $s0 in the 16-byte slot above).",
+      "regression_control": "Every body of the boot that the recorded profiles prove stays exact with the route (134/134).",
+      "verdict": "route accepted: it proves the boot bodies that save a callee-saved float register, a class no other route reached.",
+      "reproduce": "the private kit, work/w3/research-boot-astragf"
     }
   ],
   "trials": [

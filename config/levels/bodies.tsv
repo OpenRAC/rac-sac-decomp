@@ -451,10 +451,13 @@ LEVEL11.REL	0x260150	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
 LEVEL11.REL	0x2603B8	8	src/levels/bodies/GetNumFree__C11ApeFreeList.c
 LEVEL11.REL	0x2614D8	8	src/levels/bodies/ICONHORMENU_GetCurrentState__FP12tICONHORMENU.c
 LEVEL11.REL	0x262AC8	8	src/levels/bodies/GetPalette__10AgxTexture.c
+LEVEL13.REL	0x001A88	184	src/levels/bodies/RadialBlurCB__11ApeLevelDefP12TiXmlElement_LEVEL13_00001A88.c
+LEVEL13.REL	0x0022F0	268	src/levels/bodies/WarpScreenCB__11ApeLevelDefP12TiXmlElement_LEVEL13_000022F0.c
 LEVEL13.REL	0x003750	64	src/levels/bodies/Update__12ApeLevelInstfP15AglRenderTarget_LEVEL13_003750.c
 LEVEL13.REL	0x003CB8	64	src/levels/bodies/Close__12AglMovieBase.c
 LEVEL13.REL	0x003D18	8	src/levels/bodies/Play__12AglMovieBase.c
 LEVEL13.REL	0x003FD8	8	src/levels/bodies/Ps2BinkBufferLock__8AglMovieP13PS2BINKBUFFER.c
+LEVEL13.REL	0x0053D0	208	src/levels/bodies/QueryFloatAttribute__C12TiXmlElementPCcPff_LEVEL13_000053D0.c
 LEVEL13.REL	0x00A078	64	src/levels/bodies/CAMERA_PushSystemUpdate__F14CameraSystemIDPFPfPf14CameraSystemIDPv_P7MATRIX4Pv.c
 LEVEL13.REL	0x00B0A0	128	src/levels/bodies/LEVEL1_00B0A0.c
 LEVEL13.REL	0x00B120	128	src/levels/bodies/LEVEL1_00B120.c
