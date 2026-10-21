@@ -41,7 +41,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
-from coverage import bounds_rows, records  # noqa: E402
+from coverage import body_hasher, bounds_rows, records  # noqa: E402
 from placement_table import join, sources  # noqa: E402
 from module_gate import baseline_interval, rebuild_boot, rebuild_image  # noqa: E402
 
@@ -81,6 +81,7 @@ def main() -> int:
             if facts.get("body_sha256"):
                 proved.setdefault(row["module"], set()).add(facts["body_sha256"])
 
+    hash_of = body_hasher(args.modules, args.bounds)
     coverage: dict[str, dict] = {}
     missing_total = 0
     for path in sorted(args.bounds.glob("*.tsv")):
@@ -92,9 +93,9 @@ def main() -> int:
         if not rows:
             continue
         covered = [row for row in rows
-                   if row.get("raw_sha256") in proved.get(module, set())]
+                   if hash_of(module, row) in proved.get(module, set())]
         missing = [row for row in rows
-                   if row.get("raw_sha256") not in proved.get(module, set())]
+                   if hash_of(module, row) not in proved.get(module, set())]
         coverage[module] = {
             "bodies": len(rows), "covered": len(covered), "missing": len(missing),
             "bytes": sum(int(row["body_bytes"]) for row in rows),
@@ -106,7 +107,7 @@ def main() -> int:
                  if row.get("status") == "bounded_candidate"]
     if boot_rows:
         covered = [row for row in boot_rows
-                   if row.get("raw_sha256") in proved.get("SCUS_976.23", set())]
+                   if hash_of("SCUS_976.23", row) in proved.get("SCUS_976.23", set())]
         coverage["SCUS_976.23"] = {
             "bodies": len(boot_rows), "covered": len(covered),
             "missing": len(boot_rows) - len(covered),
