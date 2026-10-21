@@ -209,9 +209,9 @@ Four classes of difference showed up, and they are worth keeping:
 
 | Class | Example | Reading |
 | --- | --- | --- |
-| one bit of a branch | `LEVEL10.REL:0x0490C0`, 255/256 bytes: the retail uses the *likely* form of the COP1 branch | the same routine is exact in `LEVEL1.REL:0x0490C8`; the modules are near-copies, not copies |
-| `sltiu $v1,$v1,1` | `LEVEL11.REL:0x033B10`, 127/128 bytes | the retail form comes from `TARGET_DEBUG_C_MODE` (`-mdebugc`) in the pinned compiler; the cause is measured in its `mips.md`/`mips.cxx`, but the option also moves the register assignment, so it is **not** a profile change yet |
-| register and scheduling | `LEVEL10.REL:0x033B10` | the retail keeps the comparison result in the register of the comparison, and puts the address computation in the delay slot of a call: a difference of source *form*, not of option |
+| one bit of a branch | `LEVEL10.REL:0x0490C0`, 255/256 bytes: the retail uses the *likely* form of the COP1 branch | the same routine is exact in `LEVEL1.REL:0x0490C8` and in `LEVEL19.REL:0x0490C0`; the modules are near-copies, not copies |
+| a copy in a distinct register | `GADGET_IsModToBeInstalledAtSlot__FUiUiUi`, 128 bytes | **solved by lot L35**: the retail keeps the result of the comparison in `$v1` and copies it into `$s2`. The source form is a local pointer to the array, an `int` temporary, and an `unsigned long long` return. The compiler then produces the copy and the single-instruction return. It was parked in eight lots before that form was found -- it was a *form* question, not a toolchain one |
+| register and scheduling | `LEVEL10.REL:0x033B10` (now proved) | the retail computes the address in two steps (`data+0x30` then `+slot*4`) and keeps the comparison result in the register of the comparison: a difference of source *form*, not of option |
 | early return | `LEVEL11.REL:0x0337E8`, 255/256 bytes | the retail skips the restore of `$ra` on one path: a *sibling call* shape |
 
 A candidate profile change needs a measured cause, a known provenance and a
@@ -225,6 +225,15 @@ on the two `sltiu` bodies the first difference moves *earlier* (body byte
 48 to body byte 4), because the option also changes the frame. The verdict
 is therefore: a candidate route, not a profile. Reproduce it with
 `work/E0/trial_mdebugc.py` and `work/E0/trial_mdebugc_bodies.sh`.
+
+**And the route was the wrong question.** Lot L35 later found the *source
+form* of the same body, and the body is now exact at every placement of its
+family, with the pinned chain and without any option. The `sltiu` idiom
+was never a toolchain question: the retail keeps the result of the
+comparison in `$v1` and copies it into `$s2`, and the copy is what the
+source form has to ask for. The option was a red herring that cost eight
+lots their best candidate -- the method says to recover the authentic form
+first, and this is what that means.
 
 ## 4. What is next
 
