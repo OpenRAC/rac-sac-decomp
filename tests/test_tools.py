@@ -215,6 +215,9 @@ class VersionsTest(unittest.TestCase):
         self.assertEqual(data["measures"]["matched_functions"], 395)
         self.assertEqual(data["measures"]["matched_code"], "31104")
         self.assertEqual(data["measures"]["total_code"], "7279840")
+        self.assertEqual(data["measures"]["total_units"], 32)
+        self.assertEqual(len(data["units"]), 32)
+        self.assertGreaterEqual(len(data["categories"]), 33)
 
 
 if __name__ == "__main__":
