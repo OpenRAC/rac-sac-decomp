@@ -1,0 +1,18 @@
+{
+  "game": "Ratchet & Clank: Secret Agent Clank",
+  "platform": "PlayStation 2",
+  "region": "Europe",
+  "serial": "SCES_554.96",
+  "system_cnf_version": "1.00",
+  "video_mode": "PAL",
+  "boot_file": "SCES_554.96",
+  "iso_size": 4005429248,
+  "iso_sha1": "ba1ca463f0900b61eaedf875f1791672979ae0d3",
+  "iso_sha256": "c7ee9dbf93fc0f09db612167598ba8052494bf0f2ab7528241973b4625dca817",
+  "iso9660_declared_size": 4005429248,
+  "boot_size": 1104076,
+  "boot_sha1": "3e0aa1e8690afc96e3edd695285ac870fc045446",
+  "boot_sha256": "b45ccafe2281878f4ce7b7b04aa0007e7b2227645254678c6ecf1602c8181cbf",
+  "module_count": 31,
+  "matching_compiler": null
+}

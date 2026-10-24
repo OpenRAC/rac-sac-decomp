@@ -9,6 +9,7 @@ check the behaviour the tools promise.  Run them with:
 
 from __future__ import annotations
 
+import json
 import struct
 import sys
 import tempfile
@@ -22,6 +23,9 @@ import disc  # noqa: E402
 import function_inventory as inventory  # noqa: E402
 import lot_table  # noqa: E402
 import mangle  # noqa: E402
+import versions  # noqa: E402
+import version_check  # noqa: E402
+import gen_progress_report  # noqa: E402
 from c_source_policy import policy_errors  # noqa: E402
 
 
@@ -153,6 +157,67 @@ class LotTableTest(unittest.TestCase):
     def test_sha_must_be_hex(self) -> None:
         self.assertIsNone(lot_table.SHA.fullmatch("z" * 64))
         self.assertIsNotNone(lot_table.SHA.fullmatch("a" * 64))
+
+
+class VersionsTest(unittest.TestCase):
+    def test_get_version(self) -> None:
+        us = versions.get("us")
+        self.assertEqual(us.key, "us")
+        self.assertEqual(us.id, "SCUS_976.23")
+        self.assertTrue(us.primary)
+
+        pal = versions.get("pal")
+        self.assertEqual(pal.key, "pal")
+        self.assertEqual(pal.id, "SCES_554.96")
+        self.assertFalse(pal.primary)
+
+        # Aliases
+        self.assertEqual(versions.get("usa").key, "us")
+        self.assertEqual(versions.get("europe").key, "pal")
+        self.assertEqual(versions.get("SCES_554.96").key, "pal")
+
+        with self.assertRaises(SystemExit):
+            versions.get("nonexistent_version")
+
+    def test_committed_programs(self) -> None:
+        us = versions.get("us")
+        pal = versions.get("pal")
+        us_progs = versions.read_programs(us)
+        pal_progs = versions.read_programs(pal)
+        self.assertEqual(len(us_progs), 214)
+        self.assertEqual(len(pal_progs), 214)
+        self.assertEqual(us_progs[0][0], "boot")
+        self.assertEqual(pal_progs[0][0], "boot")
+
+    def test_compare_code_spans(self) -> None:
+        # Exact match
+        code1 = b"\x27\xbd\xff\xf0\xff\xb0\x00\x00"
+        self.assertEqual(version_check.compare_code_spans(code1, code1), "exact")
+
+        # JAL target differs (refs)
+        jal1 = struct.pack("<I", 0x0C000001)
+        jal2 = struct.pack("<I", 0x0C000002)
+        self.assertEqual(version_check.compare_code_spans(jal1, jal2), "refs")
+
+        # Instruction differs
+        nop = struct.pack("<I", 0x00000000)
+        add = struct.pack("<I", 0x00851020)
+        self.assertEqual(version_check.compare_code_spans(nop, add), "differs")
+
+    def test_bytematch_progress_report(self) -> None:
+        self.assertTrue(gen_progress_report.check_reports())
+        report_path = ROOT / "progress" / "report.json"
+        self.assertTrue(report_path.is_file())
+        with report_path.open(encoding="utf-8") as f:
+            data = json.load(f)
+        self.assertEqual(data.get("version"), 2)
+        self.assertIn("measures", data)
+        self.assertEqual(data["measures"]["matched_functions"], 395)
+        self.assertEqual(data["measures"]["matched_code"], "31104")
+        self.assertEqual(data["measures"]["total_code"], "7279840")
+        self.assertEqual(data["measures"]["total_units"], 32)
+        self.assertEqual(len(data["units"]), 32)
+        self.assertGreaterEqual(len(data["categories"]), 33)
 
 
 if __name__ == "__main__":

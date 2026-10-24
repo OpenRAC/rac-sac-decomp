@@ -20,6 +20,8 @@ are GPL-3.0. The copyright and licence of those projects are retained.
 | `tools/r5900_assembly.py` | `OpenRAC/rac5-sm-decomp`, `tools/r5900_assembly.py` | adapted: the rendering of a code interval as R5900 assembly, with the two forms the SN assembler does not encode like the retail code (the accumulator vector instructions and the COP1 branches) written as raw words |
 | `tools/assembly_baseline.py` | `OpenRAC/rac5-sm-decomp`, `tools/snr2_assembly.py` | adapted: the assembly baseline of the SNR2 modules -- render, assemble, link, compare with the retail interval -- and the metadata catalogue of the result |
 | `tools/c_source_policy.py` | `OpenRAC/rac5-sm-decomp`, `tools/c_source_policy.py` | adapted: the rejection of inline assembly, of global assembly blocks, of register variables and of assembler directives, with the symbol-label exception of the upstream |
+| `tools/versions.py`, `tools/version_check.py` | `OpenRAC/rac1-decomp`, `tools/versions.py`, `tools/version_check.py` | adapted: multi-version tracking table, dump, config extraction, check gates and cross-version comparison |
+| `tools/gen_progress_report.py` | `OpenRAC/rac1-decomp`, `tools/gen_progress_report.py` | adapted: objdiff v2 progress report generation and validation for ByteMatch |
 | `AGENTS.md` | `OpenRAC/rac5-sm-decomp`, `AGENTS.md` | the seven upstream rules, plus three rules added here (pure C evidence, authored form, one writer) and the rewritten wording |
 | `docs/METHOD.md`, `docs/EVIDENCE.md` | the method of `OpenRAC/rac2-gc-decomp` and `OpenRAC/rac5-sm-decomp` | rewritten for a platform-independent protocol |
 | `PROMPT.md` | the wave briefs of `OpenRAC/rac5-sm-decomp` | rewritten as a platform-independent starter prompt |

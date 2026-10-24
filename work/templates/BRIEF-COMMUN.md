@@ -1,60 +1,60 @@
-# BRIEF COMMUN — vague N, <chantier> (<date>)
+# COMMON BRIEF — Wave N, <campaign> (<date>)
 
-À lire en entier avant toute action. Commun à tous les agents de la vague.
+To be read in full before any action. Common to all agents in the wave.
 
-## 1. Contexte
+## 1. Context
 
-Ce que la vague doit produire, en une phrase. Ce qui est déjà apparié, et
-ce qui reste ouvert.
+What the wave must produce, in one sentence. What is already matched, and
+what remains open.
 
-## 2. Où est quoi
+## 2. Where is what
 
-| Élément | Chemin | Rôle |
+| Element | Path | Role |
 |---|---|---|
-| Dépôt | ce dépôt | **LECTURE SEULE** pour un agent de lot |
-| Cible locale | `LOCAL.md` | l'image, les empreintes, la chaîne |
-| Modules retail | `work/E0/modules/` | la cible extraite |
-| Bornes | `work/E0/bounds/` | les candidats bornés |
-| Harnais | `work/E0/harness.py` | compile, lie, compare au retail |
-| Ta liste | `work/lots/<LOT>.tsv` | tes cibles |
-| **Ton dossier** | `work/<LOT>/` | **tu n'écris que là** |
+| Repository | this repository | **READ-ONLY** for a lot agent |
+| Local target | `LOCAL.md` | disc image, hashes, toolchain |
+| Retail modules | `work/E0/modules/` | extracted target |
+| Boundaries | `work/E0/bounds/` | bounded candidates |
+| Harness | `work/E0/harness.py` | compile, link, compare to retail |
+| Your list | `work/lots/<LOT>.tsv` | your targets |
+| **Your folder** | `work/<LOT>/` | **write only here** |
 
-## 3. Harnais
+## 3. Harness
 
 ```
 python3 work/E0/harness.py <MODULE> <OFFSET> <src.c> [--size N]
 ```
 
-La comparaison octet pour octet du corps compilé avec les octets retail est
-la **seule preuve**. Sinon, le harnais affiche la première différence (offset
-+ octets) et le profil essayé. Codes de retour : 0 = exact, 1 = mismatch
-mesuré, 2 = refus. **Un refus n'est pas un essai.**
+The byte-for-byte comparison of the compiled body with the retail bytes is
+the **only proof**. Otherwise, the harness displays the first difference (offset
++ bytes) and the attempted profile. Exit codes: 0 = exact match, 1 = measured
+mismatch, 2 = refusal. **A refusal is not an attempt.**
 
-## 4. Règles dures
+## 4. Hard rules
 
-1. **N'écris jamais dans le dépôt** hors de `work/<LOT>/`.
-2. **C pur** : pas d'asm inline/global, pas de `.word`, pas de registre
-   imposé, pas de barrière.
-3. **Pas de pilotage du codegen** : si l'octet ne sort pas, cherche la forme
-   authentique de la routine, pas une construction qui déplace un registre.
-4. **Ne lance jamais** la porte globale ni un build complet — le ROOT intègre.
-5. **Borne ta cible** : l'extent vient de ta liste ; vérifie le retour réel
-   avant de conclure.
-6. Après trois essais de la même classe d'écart : gare le corps dans
-   `abandonnes/` avec la première différence et une condition de réouverture.
-7. Aucune promesse : seulement ce que le harnais a imprimé.
+1. **Never write to the repository** outside of `work/<LOT>/`.
+2. **Pure C**: no inline/global asm, no `.word`, no fixed registers,
+   no artificial barriers.
+3. **No codegen steering**: if the byte does not match, look for the authentic
+   form of the routine, not a construct that shifts register allocation.
+4. **Never run** the global gates or a full build — ROOT integrates.
+5. **Bound your target**: the extent comes from your list; verify the actual
+   return before concluding.
+6. After three attempts within the same mismatch class: park the body in
+   `abandonnes/` with the first difference and a reopening condition.
+7. No assumptions: only what the harness has printed.
 
-## 5. Livrable du lot
+## 5. Lot deliverables
 
 ```
 bodies/<MODULE>_<OFFSET>.c
-resultats.tsv        module<TAB>offset<TAB>taille<TAB>profil<TAB>as<TAB>statut
-abandonnes/          corps garés + NOTE (1re diff, condition de réouverture)
+resultats.tsv        module<TAB>offset<TAB>size<TAB>profile<TAB>as<TAB>status
+abandonnes/          parked bodies + NOTE (1st diff, reopening condition)
 RAPPORT.md
 ```
 
-## 6. Rapport final au ROOT
+## 6. Final report to ROOT
 
-**Français, 20 lignes maximum** : nombre d'exacts, liste
-`module:offset taille profil`, quasi-exacts marquants (n/total), blocages,
-chemins.
+**English, 20 lines maximum**: number of exacts, list of
+`module:offset size profile`, notable near-matches (n/total), blockers,
+leads.

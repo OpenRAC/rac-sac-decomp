@@ -64,6 +64,8 @@ def snapshot() -> dict:
             continue
         seen[key] = int(row["size"])
         bytes_distinct += int(row["size"])
+    bytes_by_source = sum({row["source"]: int(row["size"])
+                           for row in bodies + boot_bodies}.values())
 
     per_module: dict[str, dict[str, int]] = {}
     for row in bodies + boot_bodies:
@@ -84,6 +86,7 @@ def snapshot() -> dict:
         "sources": sources,
         "bytes_by_placement": bytes_by_placement,
         "bytes_by_source_and_module": bytes_distinct,
+        "bytes_by_source": bytes_by_source,
         "per_module": per_module,
         "overall_percent": None,
         "percent_note": ("No percentage is published: the denominator would be "
@@ -112,7 +115,8 @@ def main() -> int:
     print(f"proved placements      : {report['placements']}")
     print(f"proved sources         : {report['sources']}")
     print(f"proved bytes           : {report['bytes_by_placement']} by placement, "
-          f"{report['bytes_by_source_and_module']} by source and module")
+          f"{report['bytes_by_source_and_module']} by source and module, "
+          f"{report['bytes_by_source']} by unique source")
     for module, entry in sorted(report["per_module"].items()):
         print(f"  {module:16s} {entry['placements']:4d} placement(s), "
               f"{entry['bytes']:6d} byte(s)")
