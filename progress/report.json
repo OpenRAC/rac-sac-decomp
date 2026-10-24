@@ -1667,7 +1667,7 @@
    }
   },
   {
-   "name": "levels/FE",
+   "name": "levels/fe_frontend",
    "measures": {
     "fuzzy_match_percent": 0.4813639322916667,
     "total_code": "983040",
@@ -2559,12 +2559,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "fe"
+     "fe_frontend"
     ]
    }
   },
   {
-   "name": "levels/LEVEL1",
+   "name": "levels/level1_museum",
    "measures": {
     "fuzzy_match_percent": 0.24255265531327921,
     "total_code": "2412672",
@@ -3645,12 +3645,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level1"
+     "level1_museum"
     ]
    }
   },
   {
-   "name": "levels/LEVEL10",
+   "name": "levels/level10_carnival",
    "measures": {
     "fuzzy_match_percent": 0.20550074066236376,
     "total_code": "2419456",
@@ -4758,12 +4758,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level10"
+     "level10_carnival"
     ]
    }
   },
   {
-   "name": "levels/LEVEL11",
+   "name": "levels/level11_gondola",
    "measures": {
     "fuzzy_match_percent": 0.19142395233973217,
     "total_code": "2513792",
@@ -5817,12 +5817,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level11"
+     "level11_gondola"
     ]
    }
   },
   {
-   "name": "levels/LEVEL13",
+   "name": "levels/level13_casino",
    "measures": {
     "fuzzy_match_percent": 0.2448187934027778,
     "total_code": "2359296",
@@ -6993,12 +6993,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level13"
+     "level13_casino"
     ]
    }
   },
   {
-   "name": "levels/LEVEL14",
+   "name": "levels/level14_yard",
    "measures": {
     "fuzzy_match_percent": 0.18028846153846154,
     "total_code": "2582528",
@@ -7962,12 +7962,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level14"
+     "level14_yard"
     ]
    }
   },
   {
-   "name": "levels/LEVEL15",
+   "name": "levels/level15_highstakes",
    "measures": {
     "fuzzy_match_percent": 0.11890260593452316,
     "total_code": "2338048",
@@ -8769,12 +8769,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level15"
+     "level15_highstakes"
     ]
    }
   },
   {
-   "name": "levels/LEVEL16",
+   "name": "levels/level16_lab",
    "measures": {
     "fuzzy_match_percent": 0.08957421304982281,
     "total_code": "2456064",
@@ -9684,12 +9684,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level16"
+     "level16_lab"
     ]
    }
   },
   {
-   "name": "levels/LEVEL17",
+   "name": "levels/level17_race",
    "measures": {
     "fuzzy_match_percent": 0.0900948972220398,
     "total_code": "1949056",
@@ -10320,12 +10320,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level17"
+     "level17_race"
     ]
    }
   },
   {
-   "name": "levels/LEVEL18",
+   "name": "levels/level18_qwark",
    "measures": {
     "fuzzy_match_percent": 0.10766463148713476,
     "total_code": "2054528",
@@ -11190,12 +11190,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level18"
+     "level18_qwark"
     ]
    }
   },
   {
-   "name": "levels/LEVEL19",
+   "name": "levels/level19_foundry",
    "measures": {
     "fuzzy_match_percent": 0.2018330733229329,
     "total_code": "2461440",
@@ -12339,12 +12339,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level19"
+     "level19_foundry"
     ]
    }
   },
   {
-   "name": "levels/LEVEL2",
+   "name": "levels/level2_timing",
    "measures": {
     "fuzzy_match_percent": 0.08718566245464782,
     "total_code": "2046208",
@@ -13083,12 +13083,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level2"
+     "level2_timing"
     ]
    }
   },
   {
-   "name": "levels/LEVEL20",
+   "name": "levels/level20_gadgebot",
    "measures": {
     "fuzzy_match_percent": 0.1038,
     "total_code": "2000000",
@@ -13800,12 +13800,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level20"
+     "level20_gadgebot"
     ]
    }
   },
   {
-   "name": "levels/LEVEL21",
+   "name": "levels/level21_shower",
    "measures": {
     "fuzzy_match_percent": 0.0790107354269088,
     "total_code": "2551552",
@@ -14526,12 +14526,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level21"
+     "level21_shower"
     ]
    }
   },
   {
-   "name": "levels/LEVEL22",
+   "name": "levels/level22_graveyard",
    "measures": {
     "fuzzy_match_percent": 0.09287446468190495,
     "total_code": "2480768",
@@ -15477,12 +15477,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level22"
+     "level22_graveyard"
     ]
    }
   },
   {
-   "name": "levels/LEVEL23",
+   "name": "levels/level23_qwark",
    "measures": {
     "fuzzy_match_percent": 0.07490829169565492,
     "total_code": "2023808",
@@ -16185,12 +16185,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level23"
+     "level23_qwark"
     ]
    }
   },
   {
-   "name": "levels/LEVEL24",
+   "name": "levels/level24_giantclank",
    "measures": {
     "fuzzy_match_percent": 0.07754201298307346,
     "total_code": "2109824",
@@ -16767,12 +16767,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level24"
+     "level24_giantclank"
     ]
    }
   },
   {
-   "name": "levels/LEVEL25",
+   "name": "levels/level25_escapeyard",
    "measures": {
     "fuzzy_match_percent": 0.10037506148548943,
     "total_code": "2602240",
@@ -17583,12 +17583,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level25"
+     "level25_escapeyard"
     ]
    }
   },
   {
-   "name": "levels/LEVEL26",
+   "name": "levels/level26_damrace",
    "measures": {
     "fuzzy_match_percent": 0.06842478104070067,
     "total_code": "1987584",
@@ -18147,12 +18147,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level26"
+     "level26_damrace"
     ]
    }
   },
   {
-   "name": "levels/LEVEL27",
+   "name": "levels/level27_qwarkdam",
    "measures": {
     "fuzzy_match_percent": 0.06040082382762991,
     "total_code": "2019840",
@@ -18792,12 +18792,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level27"
+     "level27_qwarkdam"
     ]
    }
   },
   {
-   "name": "levels/LEVEL28",
+   "name": "levels/level28_gadgebot",
    "measures": {
     "fuzzy_match_percent": 0.07326727903391572,
     "total_code": "1992704",
@@ -19437,12 +19437,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level28"
+     "level28_gadgebot"
     ]
    }
   },
   {
-   "name": "levels/LEVEL29",
+   "name": "levels/level29_base",
    "measures": {
     "fuzzy_match_percent": 0.06541893838082502,
     "total_code": "2488576",
@@ -20217,12 +20217,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level29"
+     "level29_base"
     ]
    }
   },
   {
-   "name": "levels/LEVEL3",
+   "name": "levels/level3_prison",
    "measures": {
     "fuzzy_match_percent": 0.09511947253618877,
     "total_code": "2582016",
@@ -21006,12 +21006,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level3"
+     "level3_prison"
     ]
    }
   },
   {
-   "name": "levels/LEVEL30",
+   "name": "levels/level30_boss",
    "measures": {
     "fuzzy_match_percent": 0.05489313682836633,
     "total_code": "2353664",
@@ -21732,12 +21732,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level30"
+     "level30_boss"
     ]
    }
   },
   {
-   "name": "levels/LEVEL31",
+   "name": "levels/level31_treehouse",
    "measures": {
     "fuzzy_match_percent": 0.0666544408080352,
     "total_code": "2268416",
@@ -22467,12 +22467,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level31"
+     "level31_treehouse"
     ]
    }
   },
   {
-   "name": "levels/LEVEL32",
+   "name": "levels/level32_credits",
    "measures": {
     "fuzzy_match_percent": 0.050701433363830435,
     "total_code": "2098560",
@@ -22968,12 +22968,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level32"
+     "level32_credits"
     ]
    }
   },
   {
-   "name": "levels/LEVEL4",
+   "name": "levels/level4_skyscrapers",
    "measures": {
     "fuzzy_match_percent": 0.06376262626262626,
     "total_code": "2534400",
@@ -23739,12 +23739,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level4"
+     "level4_skyscrapers"
     ]
    }
   },
   {
-   "name": "levels/LEVEL5",
+   "name": "levels/level5_giant",
    "measures": {
     "fuzzy_match_percent": 0.05941830486625846,
     "total_code": "1985920",
@@ -24339,12 +24339,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level5"
+     "level5_giant"
     ]
    }
   },
   {
-   "name": "levels/LEVEL7",
+   "name": "levels/level7_countess",
    "measures": {
     "fuzzy_match_percent": 0.06447519240216146,
     "total_code": "2345088",
@@ -25074,12 +25074,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level7"
+     "level7_countess"
     ]
    }
   },
   {
-   "name": "levels/LEVEL8",
+   "name": "levels/level8_snowboard",
    "measures": {
     "fuzzy_match_percent": 0.07128480375712848,
     "total_code": "1907840",
@@ -25638,12 +25638,12 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level8"
+     "level8_snowboard"
     ]
    }
   },
   {
-   "name": "levels/LEVEL9",
+   "name": "levels/level9_cafeteria",
    "measures": {
     "fuzzy_match_percent": 0.07131227006065427,
     "total_code": "2574592",
@@ -26310,7 +26310,7 @@
     "source_path": "src/levels/bodies/",
     "progress_categories": [
      "level_code",
-     "level9"
+     "level9_cafeteria"
     ]
    }
   }
@@ -26347,7 +26347,7 @@
    }
   },
   {
-   "id": "fe",
+   "id": "fe_frontend",
    "name": "Frontend (FE.REL)",
    "measures": {
     "fuzzy_match_percent": 0.4813639322916667,
@@ -26362,8 +26362,8 @@
    }
   },
   {
-   "id": "level1",
-   "name": "Level 1 (LEVEL1.REL)",
+   "id": "level1_museum",
+   "name": "Level 1: Boltaire Museum (LEVEL1.REL)",
    "measures": {
     "fuzzy_match_percent": 0.24255265531327921,
     "total_code": "2412672",
@@ -26377,8 +26377,8 @@
    }
   },
   {
-   "id": "level10",
-   "name": "Level 10 (LEVEL10.REL)",
+   "id": "level10_carnival",
+   "name": "Level 10: Rionosis Carnival (LEVEL10.REL)",
    "measures": {
     "fuzzy_match_percent": 0.20550074066236376,
     "total_code": "2419456",
@@ -26392,8 +26392,8 @@
    }
   },
   {
-   "id": "level11",
-   "name": "Level 11 (LEVEL11.REL)",
+   "id": "level11_gondola",
+   "name": "Level 11: Rionosis Gondola (LEVEL11.REL)",
    "measures": {
     "fuzzy_match_percent": 0.19142395233973217,
     "total_code": "2513792",
@@ -26407,8 +26407,8 @@
    }
   },
   {
-   "id": "level13",
-   "name": "Level 13 (LEVEL13.REL)",
+   "id": "level13_casino",
+   "name": "Level 13: Le Paradis Casino (LEVEL13.REL)",
    "measures": {
     "fuzzy_match_percent": 0.2448187934027778,
     "total_code": "2359296",
@@ -26422,8 +26422,8 @@
    }
   },
   {
-   "id": "level14",
-   "name": "Level 14 (LEVEL14.REL)",
+   "id": "level14_yard",
+   "name": "Level 14: Prison Exercise Yard (LEVEL14.REL)",
    "measures": {
     "fuzzy_match_percent": 0.18028846153846154,
     "total_code": "2582528",
@@ -26437,8 +26437,8 @@
    }
   },
   {
-   "id": "level15",
-   "name": "Level 15 (LEVEL15.REL)",
+   "id": "level15_highstakes",
+   "name": "Level 15: Casino High Stakes (LEVEL15.REL)",
    "measures": {
     "fuzzy_match_percent": 0.11890260593452316,
     "total_code": "2338048",
@@ -26452,8 +26452,8 @@
    }
   },
   {
-   "id": "level16",
-   "name": "Level 16 (LEVEL16.REL)",
+   "id": "level16_lab",
+   "name": "Level 16: Venantonio Labs (LEVEL16.REL)",
    "measures": {
     "fuzzy_match_percent": 0.08957421304982281,
     "total_code": "2456064",
@@ -26467,8 +26467,8 @@
    }
   },
   {
-   "id": "level17",
-   "name": "Level 17 (LEVEL17.REL)",
+   "id": "level17_race",
+   "name": "Level 17: Venantonio Canals (LEVEL17.REL)",
    "measures": {
     "fuzzy_match_percent": 0.0900948972220398,
     "total_code": "1949056",
@@ -26482,8 +26482,8 @@
    }
   },
   {
-   "id": "level18",
-   "name": "Level 18 (LEVEL18.REL)",
+   "id": "level18_qwark",
+   "name": "Level 18: Madam Butterqwark (LEVEL18.REL)",
    "measures": {
     "fuzzy_match_percent": 0.10766463148713476,
     "total_code": "2054528",
@@ -26497,8 +26497,8 @@
    }
   },
   {
-   "id": "level19",
-   "name": "Level 19 (LEVEL19.REL)",
+   "id": "level19_foundry",
+   "name": "Level 19: Fort Sprocket Foundry (LEVEL19.REL)",
    "measures": {
     "fuzzy_match_percent": 0.2018330733229329,
     "total_code": "2461440",
@@ -26512,8 +26512,8 @@
    }
   },
   {
-   "id": "level2",
-   "name": "Level 2 (LEVEL2.REL)",
+   "id": "level2_timing",
+   "name": "Level 2: Museum Security (LEVEL2.REL)",
    "measures": {
     "fuzzy_match_percent": 0.08718566245464782,
     "total_code": "2046208",
@@ -26527,8 +26527,8 @@
    }
   },
   {
-   "id": "level20",
-   "name": "Level 20 (LEVEL20.REL)",
+   "id": "level20_gadgebot",
+   "name": "Level 20: Fort Sprocket A-Eye (LEVEL20.REL)",
    "measures": {
     "fuzzy_match_percent": 0.1038,
     "total_code": "2000000",
@@ -26542,8 +26542,8 @@
    }
   },
   {
-   "id": "level21",
-   "name": "Level 21 (LEVEL21.REL)",
+   "id": "level21_shower",
+   "name": "Level 21: Prison Showers (LEVEL21.REL)",
    "measures": {
     "fuzzy_match_percent": 0.0790107354269088,
     "total_code": "2551552",
@@ -26557,8 +26557,8 @@
    }
   },
   {
-   "id": "level22",
-   "name": "Level 22 (LEVEL22.REL)",
+   "id": "level22_graveyard",
+   "name": "Level 22: Spaceship Graveyard (LEVEL22.REL)",
    "measures": {
     "fuzzy_match_percent": 0.09287446468190495,
     "total_code": "2480768",
@@ -26572,8 +26572,8 @@
    }
   },
   {
-   "id": "level23",
-   "name": "Level 23 (LEVEL23.REL)",
+   "id": "level23_qwark",
+   "name": "Level 23: Saint Qwark (LEVEL23.REL)",
    "measures": {
     "fuzzy_match_percent": 0.07490829169565492,
     "total_code": "2023808",
@@ -26587,8 +26587,8 @@
    }
   },
   {
-   "id": "level24",
-   "name": "Level 24 (LEVEL24.REL)",
+   "id": "level24_giantclank",
+   "name": "Level 24: Giant Clank (LEVEL24.REL)",
    "measures": {
     "fuzzy_match_percent": 0.07754201298307346,
     "total_code": "2109824",
@@ -26602,8 +26602,8 @@
    }
   },
   {
-   "id": "level25",
-   "name": "Level 25 (LEVEL25.REL)",
+   "id": "level25_escapeyard",
+   "name": "Level 25: Prison Breakout (LEVEL25.REL)",
    "measures": {
     "fuzzy_match_percent": 0.10037506148548943,
     "total_code": "2602240",
@@ -26617,8 +26617,8 @@
    }
   },
   {
-   "id": "level26",
-   "name": "Level 26 (LEVEL26.REL)",
+   "id": "level26_damrace",
+   "name": "Level 26: Hydrano Dam (LEVEL26.REL)",
    "measures": {
     "fuzzy_match_percent": 0.06842478104070067,
     "total_code": "1987584",
@@ -26632,8 +26632,8 @@
    }
   },
   {
-   "id": "level27",
-   "name": "Level 27 (LEVEL27.REL)",
+   "id": "level27_qwarkdam",
+   "name": "Level 27: Hydrano Qwark (LEVEL27.REL)",
    "measures": {
     "fuzzy_match_percent": 0.06040082382762991,
     "total_code": "2019840",
@@ -26647,8 +26647,8 @@
    }
   },
   {
-   "id": "level28",
-   "name": "Level 28 (LEVEL28.REL)",
+   "id": "level28_gadgebot",
+   "name": "Level 28: Hydrano Lock (LEVEL28.REL)",
    "measures": {
     "fuzzy_match_percent": 0.07326727903391572,
     "total_code": "1992704",
@@ -26662,8 +26662,8 @@
    }
   },
   {
-   "id": "level29",
-   "name": "Level 29 (LEVEL29.REL)",
+   "id": "level29_base",
+   "name": "Level 29: Hydrano Bunker (LEVEL29.REL)",
    "measures": {
     "fuzzy_match_percent": 0.06541893838082502,
     "total_code": "2488576",
@@ -26677,8 +26677,8 @@
    }
   },
   {
-   "id": "level3",
-   "name": "Level 3 (LEVEL3.REL)",
+   "id": "level3_prison",
+   "name": "Level 3: Prison Cells (LEVEL3.REL)",
    "measures": {
     "fuzzy_match_percent": 0.09511947253618877,
     "total_code": "2582016",
@@ -26692,8 +26692,8 @@
    }
   },
   {
-   "id": "level30",
-   "name": "Level 30 (LEVEL30.REL)",
+   "id": "level30_boss",
+   "name": "Level 30: Klunk's Lair (LEVEL30.REL)",
    "measures": {
     "fuzzy_match_percent": 0.05489313682836633,
     "total_code": "2353664",
@@ -26707,8 +26707,8 @@
    }
   },
   {
-   "id": "level31",
-   "name": "Level 31 (LEVEL31.REL)",
+   "id": "level31_treehouse",
+   "name": "Level 31: HIG Treehouse (LEVEL31.REL)",
    "measures": {
     "fuzzy_match_percent": 0.0666544408080352,
     "total_code": "2268416",
@@ -26722,8 +26722,8 @@
    }
   },
   {
-   "id": "level32",
-   "name": "Level 32 (LEVEL32.REL)",
+   "id": "level32_credits",
+   "name": "Level 32: HIG Credits (LEVEL32.REL)",
    "measures": {
     "fuzzy_match_percent": 0.050701433363830435,
     "total_code": "2098560",
@@ -26737,8 +26737,8 @@
    }
   },
   {
-   "id": "level4",
-   "name": "Level 4 (LEVEL4.REL)",
+   "id": "level4_skyscrapers",
+   "name": "Level 4: Asyanica Rooftops (LEVEL4.REL)",
    "measures": {
     "fuzzy_match_percent": 0.06376262626262626,
     "total_code": "2534400",
@@ -26752,8 +26752,8 @@
    }
   },
   {
-   "id": "level5",
-   "name": "Level 5 (LEVEL5.REL)",
+   "id": "level5_giant",
+   "name": "Level 5: Asyanica Jack (LEVEL5.REL)",
    "measures": {
     "fuzzy_match_percent": 0.05941830486625846,
     "total_code": "1985920",
@@ -26767,8 +26767,8 @@
    }
   },
   {
-   "id": "level7",
-   "name": "Level 7 (LEVEL7.REL)",
+   "id": "level7_countess",
+   "name": "Level 7: Glaciara Villa (LEVEL7.REL)",
    "measures": {
     "fuzzy_match_percent": 0.06447519240216146,
     "total_code": "2345088",
@@ -26782,8 +26782,8 @@
    }
   },
   {
-   "id": "level8",
-   "name": "Level 8 (LEVEL8.REL)",
+   "id": "level8_snowboard",
+   "name": "Level 8: Glaciara Slopes (LEVEL8.REL)",
    "measures": {
     "fuzzy_match_percent": 0.07128480375712848,
     "total_code": "1907840",
@@ -26797,8 +26797,8 @@
    }
   },
   {
-   "id": "level9",
-   "name": "Level 9 (LEVEL9.REL)",
+   "id": "level9_cafeteria",
+   "name": "Level 9: Prison Mess Hall (LEVEL9.REL)",
    "measures": {
     "fuzzy_match_percent": 0.07131227006065427,
     "total_code": "2574592",

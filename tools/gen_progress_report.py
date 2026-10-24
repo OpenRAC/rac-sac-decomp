@@ -7,7 +7,8 @@ ByteMatch reads a `report.json` uploaded by GitHub Actions as an artifact named
 
 Following OpenRAC methodology:
   - Each level and the boot executable is tracked individually as its own unit
-    and category, with its placed functions.
+    and category named after the level in the game (e.g. levels/level1_museum),
+    carrying its placed functions.
   - Overall headline project measures are deduplicated across shared sources,
     preventing 31x static linking duplication from falsely reporting ~70 MiB
     of code for a spin-off title whose true deduplicated code is ~7.28 MB.
@@ -38,6 +39,40 @@ BOOT_BODIES = ROOT / "config/boot/bodies.tsv"
 INTERVALS = ROOT / "config/levels/code_intervals.tsv"
 BOOT_SUMMARY = ROOT / "config/boot/summary.json"
 FUNCTION_INVENTORY_SUMMARY = ROOT / "config/levels/function_inventory_summary.json"
+
+LEVEL_NAMES: dict[str, tuple[str, str]] = {
+    "FE": ("fe_frontend", "Frontend (FE.REL)"),
+    "LEVEL1": ("level1_museum", "Level 1: Boltaire Museum"),
+    "LEVEL2": ("level2_timing", "Level 2: Museum Security"),
+    "LEVEL3": ("level3_prison", "Level 3: Prison Cells"),
+    "LEVEL4": ("level4_skyscrapers", "Level 4: Asyanica Rooftops"),
+    "LEVEL5": ("level5_giant", "Level 5: Asyanica Jack"),
+    "LEVEL7": ("level7_countess", "Level 7: Glaciara Villa"),
+    "LEVEL8": ("level8_snowboard", "Level 8: Glaciara Slopes"),
+    "LEVEL9": ("level9_cafeteria", "Level 9: Prison Mess Hall"),
+    "LEVEL10": ("level10_carnival", "Level 10: Rionosis Carnival"),
+    "LEVEL11": ("level11_gondola", "Level 11: Rionosis Gondola"),
+    "LEVEL13": ("level13_casino", "Level 13: Le Paradis Casino"),
+    "LEVEL14": ("level14_yard", "Level 14: Prison Exercise Yard"),
+    "LEVEL15": ("level15_highstakes", "Level 15: Casino High Stakes"),
+    "LEVEL16": ("level16_lab", "Level 16: Venantonio Labs"),
+    "LEVEL17": ("level17_race", "Level 17: Venantonio Canals"),
+    "LEVEL18": ("level18_qwark", "Level 18: Madam Butterqwark"),
+    "LEVEL19": ("level19_foundry", "Level 19: Fort Sprocket Foundry"),
+    "LEVEL20": ("level20_gadgebot", "Level 20: Fort Sprocket A-Eye"),
+    "LEVEL21": ("level21_shower", "Level 21: Prison Showers"),
+    "LEVEL22": ("level22_graveyard", "Level 22: Spaceship Graveyard"),
+    "LEVEL23": ("level23_qwark", "Level 23: Saint Qwark"),
+    "LEVEL24": ("level24_giantclank", "Level 24: Giant Clank"),
+    "LEVEL25": ("level25_escapeyard", "Level 25: Prison Breakout"),
+    "LEVEL26": ("level26_damrace", "Level 26: Hydrano Dam"),
+    "LEVEL27": ("level27_qwarkdam", "Level 27: Hydrano Qwark"),
+    "LEVEL28": ("level28_gadgebot", "Level 28: Hydrano Lock"),
+    "LEVEL29": ("level29_base", "Level 29: Hydrano Bunker"),
+    "LEVEL30": ("level30_boss", "Level 30: Klunk's Lair"),
+    "LEVEL31": ("level31_treehouse", "Level 31: HIG Treehouse"),
+    "LEVEL32": ("level32_credits", "Level 32: HIG Credits"),
+}
 
 
 def read_tsv(path: Path) -> list[dict[str, str]]:
@@ -126,7 +161,7 @@ def generate_report(v: versions.Version) -> dict[str, object]:
         "measures": boot_unit_m,
     })
 
-    # 2. Level Modules tracked individually
+    # 2. Level Modules tracked individually (with friendly in-game level names)
     by_module: dict[str, list[dict[str, str]]] = {}
     for lb in level_bodies:
         by_module.setdefault(lb["module"], []).append(lb)
@@ -137,6 +172,7 @@ def generate_report(v: versions.Version) -> dict[str, object]:
         mod_key = Path(mod_name).stem
         mod_total_code = int(inv["interval_bytes"])
         placed = by_module.get(mod_name, [])
+        slug, friendly_title = LEVEL_NAMES.get(mod_key, (mod_key.lower(), f"Module {mod_name}"))
 
         mod_items: list[tuple[int, float, bool]] = []
         mod_funcs: list[dict[str, object]] = []
@@ -160,27 +196,21 @@ def generate_report(v: versions.Version) -> dict[str, object]:
 
         mod_m = make_measures(mod_items)
         units_list.append({
-            "name": f"levels/{mod_key}",
+            "name": f"levels/{slug}",
             "measures": mod_m,
             "functions": mod_funcs,
             "metadata": {
                 "complete": False,
                 "source_path": "src/levels/bodies/",
-                "progress_categories": ["level_code", mod_key.lower()],
+                "progress_categories": ["level_code", slug],
             },
         })
         level_cat_items.extend(mod_items)
 
-        if mod_key == "FE":
-            cat_name = "Frontend (FE.REL)"
-        elif mod_key.startswith("LEVEL"):
-            cat_name = f"Level {mod_key[5:]} ({mod_name})"
-        else:
-            cat_name = f"Module {mod_name}"
-
+        category_name = f"{friendly_title} ({mod_name})" if not friendly_title.endswith(")") else friendly_title
         categories_list.append({
-            "id": mod_key.lower(),
-            "name": cat_name,
+            "id": slug,
+            "name": category_name,
             "measures": mod_m,
         })
 
