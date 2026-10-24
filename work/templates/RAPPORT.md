@@ -1,42 +1,42 @@
-# RAPPORT — lot <LOT> (<date>)
+# REPORT — Lot <LOT> (<date>)
 
-> 20 lignes maximum. Uniquement ce que le harnais a imprimé.
+> 20 lines maximum. Only what the harness printed.
 
-| statut | nombre | octets de corps |
+| status | count | body bytes |
 |---|---|---|
 | exact | | |
-| quasi (même taille, 1re différence localisée) | | |
-| refus / non tenté | | |
+| near (same size, 1st difference isolated) | | |
+| refused / unattempted | | |
 
 ## 1. Exacts
 
 ```
-module   offset   taille   profil   as
+module   offset   size   profile   as
 ```
 
-## 2. Commandes
+## 2. Commands
 
 ```
 ```
 
-## 3. Ce que la reconstruction a appris
+## 3. Findings from reconstruction
 
-Les idiomes, les types, les ordres de source qui ont fait la différence.
-Réutilisable par les lots suivants.
+Idioms, types, and source orderings that made the difference.
+Reusable by subsequent lots.
 
-## 4. Quasi-exacts
+## 4. Near-matches
 
-| cible | taille | 1re diff | cause identifiée |
+| target | size | 1st diff | identified cause |
 |---|---|---|---|
 | | | | |
 
-Condition de réouverture :
+Reopening condition:
 
-## 5. Non tentées
+## 5. Unattempted
 
 ```
 ```
 
-## 6. Contrôles négatifs
+## 6. Negative controls
 
-- <un corps qui doit être refusé, et le refus observé>
+- <a body that must be rejected, and the observed rejection>

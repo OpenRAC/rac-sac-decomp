@@ -1,39 +1,39 @@
-# Vague N — <chantier> (ROOT, <date>)
+# Wave N Instructions — <campaign> (ROOT, <date>)
 
-> Ancre de la vague. État général : `docs/STATE.md`. Départ de la vague :
-> `master` = `<commit>`.
+> Wave anchor. General state: `docs/STATE.md`. Wave baseline:
+> `master`/`main` = `<commit>`.
 
-## Départ
+## Departure
 
-- Ce qui est déjà apparié, avec ses chiffres exacts.
-- Ce qui reste ouvert, et d'où vient la file de la vague.
+- What is already matched, with exact figures.
+- What remains open, and origin of the wave queue.
 
-## Lot fondateur E0 — livré
+## Foundation lot E0 — delivered
 
-- Modules extraits, empreintes, manifestes.
-- Bornes : une entrée bornée par une borne, avec la preuve de la borne.
-- Shortlist : `module, offset, taille, source de la borne, sha du corps
-  brut, modules partagés, placements partagés`, **classée par rendement**
-  (nombre de placements qui portent le même corps brut).
-- Outillage : le harnais par fonction, et sa preuve qu'il sait dire non.
+- Extracted modules, hashes, manifests.
+- Boundaries: one bounded candidate per boundary, with boundary evidence.
+- Shortlist: `module, offset, size, boundary source, raw body sha,
+  shared modules, shared placements`, **sorted by yield**
+  (number of placements carrying the identical raw body).
+- Tooling: the per-function harness, and proof that it refuses invalid inputs.
 
-## Lots de traduction (N)
+## Translation lots (N)
 
-| lot | modules | cibles |
+| lot | modules | targets |
 |---|---|---|
 | L01 | | |
 
-Brief : `work/templates/BRIEF-COMMUN.md`. Listes : `work/lots/L*.tsv`.
+Brief: `work/templates/BRIEF-COMMUN.md`. Lists: `work/lots/L*.tsv`.
 
-## Intégration (ROOT)
+## Integration (ROOT)
 
-1. Recopier les corps exacts de `work/<LOT>/bodies/` vers `src/`.
-2. Recalculer les empreintes, écrire la table des placements.
-3. Lancer la porte du programme complet, puis les tests et le garde du dépôt.
-4. Un seul écrivain dans le clone : le ROOT seul.
+1. Copy exact bodies from `work/<LOT>/bodies/` to `src/`.
+2. Recompute hashes, update the placement table.
+3. Run the complete program gate, tests, and repository guard.
+4. Single writer in the clone: ROOT only.
 
-## Reprise immédiate si interruption
+## Immediate recovery if interrupted
 
 1. `ls work/*/RAPPORT.md`, `cat work/*/resultats.tsv`.
-2. Un corps exact → `work/<LOT>/bodies/` ; le revérifier avant d'intégrer.
-3. Ne pas relancer E0 : modules, bornes et harnais sont livrés.
+2. Exact body -> `work/<LOT>/bodies/`; reverify before integrating.
+3. Do not rerun E0: modules, bounds, and harness are delivered.

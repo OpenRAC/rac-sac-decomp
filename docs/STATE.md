@@ -27,16 +27,16 @@ templates of that layout.
 Every value below is measured, and every measurement is repeatable with the
 command written next to it.
 
-- [x] **The target.** `SCUS_976.23`, *Ratchet & Clank: Secret Agent Clank*
-      (USA, NTSC, `SYSTEM.CNF` version 1.00). ISO of 4 268 916 736 bytes,
-      SHA-1 `6f4a37c8157e3e1214abed01406cbfce42e22cc6`, SHA-256
-      `128abfa2fb8eb4dc253513d3beb9029dfb8698966ecc7b8266230e8739b8e908`.
-      Pinned in `config/target.json`; the boot executable `SCUS_976.23` is
-      1 104 076 bytes, SHA-256 `1341f13c…`.
-      Verify with `python3 tools/disc.py inspect <image>`.
-- [x] **The identity check.** `tools/disc.py` refuses an image whose boot
-      file, size, boot hash or extents differ from `config/target.json`;
-      `tools/rel.py` calls it before reading any module.
+- [x] **The target and versions.** The primary target is `SCUS_976.23`,
+      *Ratchet & Clank: Secret Agent Clank* (USA, NTSC, `SYSTEM.CNF` version 1.00).
+      ISO of 4 268 916 736 bytes, SHA-1 `6f4a37c8157e3e1214abed01406cbfce42e22cc6`.
+      The European release `SCES_554.96` (PAL, 50 Hz, 4 005 429 248 bytes,
+      SHA-1 `ba1ca463f0900b61eaedf875f1791672979ae0d3`) is also tracked. Both are
+      managed via `tools/versions.py`, `tools/version_check.py`, and `config/versions/`
+      (see `docs/VERSIONS.md`). Pinned in `config/target.json` and `config/versions/`.
+- [x] **The identity check.** `tools/disc.py` and `tools/versions.py check`
+      verify images against the pinned targets; `tools/rel.py` validates
+      module headers and tables.
 - [x] **The extraction.** The disc holds 31 SNR2 modules under `BIN/`:
       `FE.REL` (the frontend) and `LEVEL1.REL` … `LEVEL32.REL` (no 6, no 12),
       plus the boot ELF, the Bink videos, the FSB banks and `IMAGE.ZIP`.
