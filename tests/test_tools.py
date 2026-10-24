@@ -212,8 +212,9 @@ class VersionsTest(unittest.TestCase):
             data = json.load(f)
         self.assertEqual(data.get("version"), 2)
         self.assertIn("measures", data)
-        self.assertEqual(data["measures"]["matched_functions"], 2837)
-        self.assertEqual(data["measures"]["matched_code"], "85204")
+        self.assertEqual(data["measures"]["matched_functions"], 395)
+        self.assertEqual(data["measures"]["matched_code"], "31104")
+        self.assertEqual(data["measures"]["total_code"], "7279840")
 
 
 if __name__ == "__main__":

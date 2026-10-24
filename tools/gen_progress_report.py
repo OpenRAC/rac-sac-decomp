@@ -5,7 +5,17 @@ Progress report for ByteMatch (bytematch.dev), in objdiff's report format (versi
 ByteMatch reads a `report.json` uploaded by GitHub Actions as an artifact named
 `<SERIAL>_report` (e.g. `SCUS_976.23_report` and `SCES_554.96_report`).
 
-This tool generates the progress reports and validates them:
+Following the OpenRAC methodology for relocatable multi-module games
+(such as OpenRAC/rac5-sm-decomp for Size Matters), progress is measured
+against an optimistically deduplicated code denominator:
+  1. Boot .text (measured scope)
+  2. Frontend (FE.REL candidate code interval)
+  3. Level modules (optimistically deduplicated candidate estimate)
+
+This prevents 31x static linking duplication from falsely reporting ~70 MiB
+of code for a spin-off title whose true deduplicated code is ~7.28 MB.
+
+Usage:
   python3 tools/gen_progress_report.py            # write progress/report.json and progress/pal/report.json
   python3 tools/gen_progress_report.py --check    # CI: fail if the committed reports are out of date
   python3 tools/gen_progress_report.py --version pal
@@ -30,6 +40,7 @@ BODIES = ROOT / "config/levels/bodies.tsv"
 BOOT_BODIES = ROOT / "config/boot/bodies.tsv"
 INTERVALS = ROOT / "config/levels/code_intervals.tsv"
 BOOT_SUMMARY = ROOT / "config/boot/summary.json"
+FUNCTION_INVENTORY_SUMMARY = ROOT / "config/levels/function_inventory_summary.json"
 
 
 def read_tsv(path: Path) -> list[dict[str, str]]:
@@ -73,20 +84,24 @@ def generate_report(v: versions.Version) -> dict[str, object]:
     level_bodies = read_tsv(BODIES)
     intervals = read_tsv(INTERVALS)
     boot_summary = json.loads(BOOT_SUMMARY.read_text(encoding="utf-8")) if BOOT_SUMMARY.is_file() else {}
+    inv_summary = (json.loads(FUNCTION_INVENTORY_SUMMARY.read_text(encoding="utf-8"))
+                   if FUNCTION_INVENTORY_SUMMARY.is_file() else {})
 
     all_items: list[tuple[int, float, bool]] = []
     units_list: list[dict[str, object]] = []
     categories_list: list[dict[str, object]] = []
 
-    # 1. Boot Executable
+    # 1. Boot Executable (measured scope)
+    boot_unique: dict[str, dict[str, str]] = {}
+    for b in boot_bodies:
+        boot_unique.setdefault(b["source"], b)
+
     boot_items: list[tuple[int, float, bool]] = []
     boot_funcs: list[dict[str, object]] = []
-    for b in boot_bodies:
+    for src, b in sorted(boot_unique.items(), key=lambda kv: int(kv[1]["offset"], 16)):
         sz = int(b["size"])
         off = int(b["offset"], 16)
-        name = Path(b["source"]).stem
-        # For primary (us), all accepted bodies are exact
-        # For pal, if offset/size matches it's counted
+        name = Path(src).stem
         boot_items.append((sz, 100.0, True))
         boot_funcs.append({
             "name": name,
@@ -99,9 +114,7 @@ def generate_report(v: versions.Version) -> dict[str, object]:
     boot_total_code = int(boot_summary.get("text_bytes", 650932))
     boot_matched_code = sum(s for s, _, _ in boot_items)
     boot_unmatched_code = max(0, boot_total_code - boot_matched_code)
-    boot_total_candidates = int(boot_summary.get("entry_intervals", 3821))
-    boot_unmatched_candidates = max(0, boot_total_candidates - len(boot_funcs))
-    if boot_unmatched_candidates > 0 and boot_unmatched_code > 0:
+    if boot_unmatched_code > 0:
         boot_items.append((boot_unmatched_code, 0.0, False))
 
     boot_unit_m = make_measures(boot_items)
@@ -111,67 +124,109 @@ def generate_report(v: versions.Version) -> dict[str, object]:
         "functions": boot_funcs,
         "metadata": {
             "complete": False,
-            "source_path": "src/boot/",
-            "progress_categories": ["boot"],
+            "source_path": "src/boot/bodies/",
+            "progress_categories": ["boot_measured"],
         },
     })
     all_items.extend(boot_items)
     categories_list.append({
-        "id": "boot",
-        "name": "Boot Executable",
+        "id": "boot_measured",
+        "name": "Boot .text (measured scope)",
         "measures": boot_unit_m,
     })
 
-    # 2. Level Modules
-    by_module: dict[str, list[dict[str, str]]] = {}
-    for lb in level_bodies:
-        by_module.setdefault(lb["module"], []).append(lb)
+    # 2. Frontend (FE.REL candidate code interval)
+    fe_bodies = [b for b in level_bodies if b["module"] == "FE.REL"]
+    fe_unique: dict[str, dict[str, str]] = {}
+    for b in fe_bodies:
+        fe_unique.setdefault(b["source"], b)
 
-    level_cat_items: list[tuple[int, float, bool]] = []
-    for inv in intervals:
-        mod_name = inv["module"]
-        mod_key = Path(mod_name).stem
-        mod_total_code = int(inv["interval_bytes"])
-        placed = by_module.get(mod_name, [])
-
-        mod_items: list[tuple[int, float, bool]] = []
-        mod_funcs: list[dict[str, object]] = []
-        for pb in placed:
-            sz = int(pb["size"])
-            off = int(pb["offset"], 16)
-            fname = Path(pb["source"]).stem
-            mod_items.append((sz, 100.0, True))
-            mod_funcs.append({
-                "name": fname,
-                "size": str(sz),
-                "fuzzy_match_percent": 100.0,
-                "address": str(off),
-                "metadata": {"virtual_address": str(off)},
-            })
-
-        mod_matched_code = sum(s for s, _, _ in mod_items)
-        mod_rem = max(0, mod_total_code - mod_matched_code)
-        if mod_rem > 0:
-            mod_items.append((mod_rem, 0.0, False))
-
-        mod_m = make_measures(mod_items)
-        units_list.append({
-            "name": f"levels/{mod_key}",
-            "measures": mod_m,
-            "functions": mod_funcs,
-            "metadata": {
-                "complete": False,
-                "source_path": "src/levels/bodies/",
-                "progress_categories": ["level_code", mod_key.lower()],
-            },
+    fe_items: list[tuple[int, float, bool]] = []
+    fe_funcs: list[dict[str, object]] = []
+    for src, b in sorted(fe_unique.items(), key=lambda kv: int(kv[1]["offset"], 16)):
+        sz = int(b["size"])
+        off = int(b["offset"], 16)
+        name = Path(src).stem
+        fe_items.append((sz, 100.0, True))
+        fe_funcs.append({
+            "name": name,
+            "size": str(sz),
+            "fuzzy_match_percent": 100.0,
+            "address": str(off),
+            "metadata": {"virtual_address": str(off)},
         })
-        level_cat_items.extend(mod_items)
-        all_items.extend(mod_items)
 
+    fe_interval = next((int(inv["interval_bytes"]) for inv in intervals if inv["module"] == "FE.REL"), 983040)
+    fe_total_code = fe_interval
+    fe_matched_code = sum(s for s, _, _ in fe_items)
+    fe_unmatched_code = max(0, fe_total_code - fe_matched_code)
+    if fe_unmatched_code > 0:
+        fe_items.append((fe_unmatched_code, 0.0, False))
+
+    fe_unit_m = make_measures(fe_items)
+    units_list.append({
+        "name": "levels/FE",
+        "measures": fe_unit_m,
+        "functions": fe_funcs,
+        "metadata": {
+            "complete": False,
+            "source_path": "src/levels/bodies/",
+            "progress_categories": ["frontend_candidate"],
+        },
+    })
+    all_items.extend(fe_items)
     categories_list.append({
-        "id": "level_code",
-        "name": "Level Modules",
-        "measures": make_measures(level_cat_items),
+        "id": "frontend_candidate",
+        "name": "Frontend (candidate code interval)",
+        "measures": fe_unit_m,
+    })
+
+    # 3. Level Modules (optimistically deduplicated estimate)
+    masked_total = int(inv_summary.get("relocation_masked_candidate_bytes", 6628908))
+    levels_total_code = max(0, masked_total - fe_total_code)
+
+    other_level_bodies = [b for b in level_bodies if b["module"] != "FE.REL"]
+    levels_unique: dict[str, dict[str, str]] = {}
+    for b in other_level_bodies:
+        if b["source"] not in fe_unique:
+            levels_unique.setdefault(b["source"], b)
+
+    levels_items: list[tuple[int, float, bool]] = []
+    levels_funcs: list[dict[str, object]] = []
+    for src, b in sorted(levels_unique.items(), key=lambda kv: int(kv[1]["offset"], 16)):
+        sz = int(b["size"])
+        off = int(b["offset"], 16)
+        name = Path(src).stem
+        levels_items.append((sz, 100.0, True))
+        levels_funcs.append({
+            "name": name,
+            "size": str(sz),
+            "fuzzy_match_percent": 100.0,
+            "address": str(off),
+            "metadata": {"virtual_address": str(off)},
+        })
+
+    levels_matched_code = sum(s for s, _, _ in levels_items)
+    levels_unmatched_code = max(0, levels_total_code - levels_matched_code)
+    if levels_unmatched_code > 0:
+        levels_items.append((levels_unmatched_code, 0.0, False))
+
+    levels_unit_m = make_measures(levels_items)
+    units_list.append({
+        "name": "levels/common",
+        "measures": levels_unit_m,
+        "functions": levels_funcs,
+        "metadata": {
+            "complete": False,
+            "source_path": "src/levels/bodies/",
+            "progress_categories": ["levels_optimistic"],
+        },
+    })
+    all_items.extend(levels_items)
+    categories_list.append({
+        "id": "levels_optimistic",
+        "name": "Levels (optimistic masked-shape estimate)",
+        "measures": levels_unit_m,
     })
 
     return {
