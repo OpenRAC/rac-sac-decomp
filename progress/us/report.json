@@ -1,13 +1,13 @@
 {
  "version": 2,
  "measures": {
-  "fuzzy_match_percent": 0.42726213762939846,
+  "fuzzy_match_percent": 0.46512011252994573,
   "total_code": "7279840",
-  "matched_code": "31104",
-  "matched_code_percent": 0.42726213762939846,
-  "total_functions": 427,
-  "matched_functions": 395,
-  "matched_functions_percent": 92.50585480093677,
+  "matched_code": "33860",
+  "matched_code_percent": 0.46512011252994573,
+  "total_functions": 441,
+  "matched_functions": 409,
+  "matched_functions_percent": 92.7437641723356,
   "complete_code": "0",
   "complete_code_percent": 0.0,
   "total_units": 32,
@@ -17,13 +17,13 @@
   {
    "name": "boot/executable",
    "measures": {
-    "fuzzy_match_percent": 1.0827551879458992,
+    "fuzzy_match_percent": 1.517823674362299,
     "total_code": "650932",
-    "matched_code": "7048",
-    "matched_code_percent": 1.0827551879458992,
-    "total_functions": 182,
-    "matched_functions": 181,
-    "matched_functions_percent": 99.45054945054945,
+    "matched_code": "9880",
+    "matched_code_percent": 1.517823674362299,
+    "total_functions": 197,
+    "matched_functions": 196,
+    "matched_functions_percent": 99.49238578680203,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -269,6 +269,141 @@
      "address": "13840",
      "metadata": {
       "virtual_address": "1062416"
+     }
+    },
+    {
+     "name": "func_0010B220",
+     "size": "76",
+     "fuzzy_match_percent": 100.0,
+     "address": "45600",
+     "metadata": {
+      "virtual_address": "1094176"
+     }
+    },
+    {
+     "name": "func_0010B270",
+     "size": "260",
+     "fuzzy_match_percent": 100.0,
+     "address": "45680",
+     "metadata": {
+      "virtual_address": "1094256"
+     }
+    },
+    {
+     "name": "func_0010B378",
+     "size": "216",
+     "fuzzy_match_percent": 100.0,
+     "address": "45944",
+     "metadata": {
+      "virtual_address": "1094520"
+     }
+    },
+    {
+     "name": "func_0010B450",
+     "size": "152",
+     "fuzzy_match_percent": 100.0,
+     "address": "46160",
+     "metadata": {
+      "virtual_address": "1094736"
+     }
+    },
+    {
+     "name": "func_0010B4E8",
+     "size": "112",
+     "fuzzy_match_percent": 100.0,
+     "address": "46312",
+     "metadata": {
+      "virtual_address": "1094888"
+     }
+    },
+    {
+     "name": "func_0010B220",
+     "size": "76",
+     "fuzzy_match_percent": 100.0,
+     "address": "46424",
+     "metadata": {
+      "virtual_address": "1095000"
+     }
+    },
+    {
+     "name": "func_0010B5A8",
+     "size": "260",
+     "fuzzy_match_percent": 100.0,
+     "address": "46504",
+     "metadata": {
+      "virtual_address": "1095080"
+     }
+    },
+    {
+     "name": "func_0010B6B0",
+     "size": "216",
+     "fuzzy_match_percent": 100.0,
+     "address": "46768",
+     "metadata": {
+      "virtual_address": "1095344"
+     }
+    },
+    {
+     "name": "func_0010B788",
+     "size": "152",
+     "fuzzy_match_percent": 100.0,
+     "address": "46984",
+     "metadata": {
+      "virtual_address": "1095560"
+     }
+    },
+    {
+     "name": "func_0010B820",
+     "size": "112",
+     "fuzzy_match_percent": 100.0,
+     "address": "47136",
+     "metadata": {
+      "virtual_address": "1095712"
+     }
+    },
+    {
+     "name": "func_0010B890",
+     "size": "76",
+     "fuzzy_match_percent": 100.0,
+     "address": "47248",
+     "metadata": {
+      "virtual_address": "1095824"
+     }
+    },
+    {
+     "name": "func_0010B8E0",
+     "size": "356",
+     "fuzzy_match_percent": 100.0,
+     "address": "47328",
+     "metadata": {
+      "virtual_address": "1095904"
+     }
+    },
+    {
+     "name": "func_0010BA48",
+     "size": "312",
+     "fuzzy_match_percent": 100.0,
+     "address": "47688",
+     "metadata": {
+      "virtual_address": "1096264"
+     }
+    },
+    {
+     "name": "func_0010BB80",
+     "size": "248",
+     "fuzzy_match_percent": 100.0,
+     "address": "48000",
+     "metadata": {
+      "virtual_address": "1096576"
+     }
+    },
+    {
+     "name": "func_0010BC78",
+     "size": "208",
+     "fuzzy_match_percent": 100.0,
+     "address": "48248",
+     "metadata": {
+      "virtual_address": "1096824"
      }
     },
     {
@@ -26320,13 +26455,13 @@
    "id": "boot",
    "name": "Boot Executable",
    "measures": {
-    "fuzzy_match_percent": 1.0827551879458992,
+    "fuzzy_match_percent": 1.517823674362299,
     "total_code": "650932",
-    "matched_code": "7048",
-    "matched_code_percent": 1.0827551879458992,
-    "total_functions": 182,
-    "matched_functions": 181,
-    "matched_functions_percent": 99.45054945054945,
+    "matched_code": "9880",
+    "matched_code_percent": 1.517823674362299,
+    "total_functions": 197,
+    "matched_functions": 196,
+    "matched_functions_percent": 99.49238578680203,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
