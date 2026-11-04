@@ -1,13 +1,13 @@
 {
  "version": 2,
  "measures": {
-  "fuzzy_match_percent": 0.46512011252994573,
+  "fuzzy_match_percent": 0.5002307743027319,
   "total_code": "7279840",
-  "matched_code": "33860",
-  "matched_code_percent": 0.46512011252994573,
-  "total_functions": 441,
-  "matched_functions": 409,
-  "matched_functions_percent": 92.7437641723356,
+  "matched_code": "36416",
+  "matched_code_percent": 0.5002307743027319,
+  "total_functions": 451,
+  "matched_functions": 419,
+  "matched_functions_percent": 92.90465631929047,
   "complete_code": "0",
   "complete_code_percent": 0.0,
   "total_units": 32,
@@ -17,13 +17,13 @@
   {
    "name": "boot/executable",
    "measures": {
-    "fuzzy_match_percent": 1.517823674362299,
+    "fuzzy_match_percent": 1.9104914184584565,
     "total_code": "650932",
-    "matched_code": "9880",
-    "matched_code_percent": 1.517823674362299,
-    "total_functions": 197,
-    "matched_functions": 196,
-    "matched_functions_percent": 99.49238578680203,
+    "matched_code": "12436",
+    "matched_code_percent": 1.9104914184584565,
+    "total_functions": 207,
+    "matched_functions": 206,
+    "matched_functions_percent": 99.51690821256038,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -404,6 +404,96 @@
      "address": "48248",
      "metadata": {
       "virtual_address": "1096824"
+     }
+    },
+    {
+     "name": "func_0010BD48",
+     "size": "172",
+     "fuzzy_match_percent": 100.0,
+     "address": "48456",
+     "metadata": {
+      "virtual_address": "1097032"
+     }
+    },
+    {
+     "name": "func_0010BDF8",
+     "size": "356",
+     "fuzzy_match_percent": 100.0,
+     "address": "48632",
+     "metadata": {
+      "virtual_address": "1097208"
+     }
+    },
+    {
+     "name": "func_0010BF60",
+     "size": "312",
+     "fuzzy_match_percent": 100.0,
+     "address": "48992",
+     "metadata": {
+      "virtual_address": "1097568"
+     }
+    },
+    {
+     "name": "func_0010C098",
+     "size": "248",
+     "fuzzy_match_percent": 100.0,
+     "address": "49304",
+     "metadata": {
+      "virtual_address": "1097880"
+     }
+    },
+    {
+     "name": "func_0010C260",
+     "size": "172",
+     "fuzzy_match_percent": 100.0,
+     "address": "49760",
+     "metadata": {
+      "virtual_address": "1098336"
+     }
+    },
+    {
+     "name": "func_0010C310",
+     "size": "356",
+     "fuzzy_match_percent": 100.0,
+     "address": "49936",
+     "metadata": {
+      "virtual_address": "1098512"
+     }
+    },
+    {
+     "name": "func_0010C478",
+     "size": "312",
+     "fuzzy_match_percent": 100.0,
+     "address": "50296",
+     "metadata": {
+      "virtual_address": "1098872"
+     }
+    },
+    {
+     "name": "func_0010C5B0",
+     "size": "248",
+     "fuzzy_match_percent": 100.0,
+     "address": "50608",
+     "metadata": {
+      "virtual_address": "1099184"
+     }
+    },
+    {
+     "name": "func_0010C6A8",
+     "size": "208",
+     "fuzzy_match_percent": 100.0,
+     "address": "50856",
+     "metadata": {
+      "virtual_address": "1099432"
+     }
+    },
+    {
+     "name": "func_0010C778",
+     "size": "172",
+     "fuzzy_match_percent": 100.0,
+     "address": "51064",
+     "metadata": {
+      "virtual_address": "1099640"
      }
     },
     {
@@ -26455,13 +26545,13 @@
    "id": "boot",
    "name": "Boot Executable",
    "measures": {
-    "fuzzy_match_percent": 1.517823674362299,
+    "fuzzy_match_percent": 1.9104914184584565,
     "total_code": "650932",
-    "matched_code": "9880",
-    "matched_code_percent": 1.517823674362299,
-    "total_functions": 197,
-    "matched_functions": 196,
-    "matched_functions_percent": 99.49238578680203,
+    "matched_code": "12436",
+    "matched_code_percent": 1.9104914184584565,
+    "total_functions": 207,
+    "matched_functions": 206,
+    "matched_functions_percent": 99.51690821256038,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
