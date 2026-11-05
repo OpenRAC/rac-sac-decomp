@@ -1,13 +1,13 @@
 {
  "version": 2,
  "measures": {
-  "fuzzy_match_percent": 0.5211103540737159,
+  "fuzzy_match_percent": 0.5331435855733093,
   "total_code": "7279840",
-  "matched_code": "37936",
-  "matched_code_percent": 0.5211103540737159,
-  "total_functions": 467,
-  "matched_functions": 435,
-  "matched_functions_percent": 93.14775160599572,
+  "matched_code": "38812",
+  "matched_code_percent": 0.5331435855733093,
+  "total_functions": 471,
+  "matched_functions": 439,
+  "matched_functions_percent": 93.20594479830149,
   "complete_code": "0",
   "complete_code_percent": 0.0,
   "total_units": 32,
@@ -1921,13 +1921,13 @@
   {
    "name": "levels/fe_frontend",
    "measures": {
-    "fuzzy_match_percent": 0.506591796875,
+    "fuzzy_match_percent": 0.5220540364583334,
     "total_code": "983040",
-    "matched_code": "4980",
-    "matched_code_percent": 0.506591796875,
-    "total_functions": 100,
-    "matched_functions": 99,
-    "matched_functions_percent": 99.0,
+    "matched_code": "5132",
+    "matched_code_percent": 0.5220540364583334,
+    "total_functions": 101,
+    "matched_functions": 100,
+    "matched_functions_percent": 99.00990099009901,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -2074,6 +2074,15 @@
      "address": "38296",
      "metadata": {
       "virtual_address": "38296"
+     }
+    },
+    {
+     "name": "GLOBALVARS_EnforceValidOnTempGameSettings__Fv",
+     "size": "152",
+     "fuzzy_match_percent": 100.0,
+     "address": "38392",
+     "metadata": {
+      "virtual_address": "38392"
      }
     },
     {
@@ -2836,13 +2845,13 @@
   {
    "name": "levels/level1_museum",
    "measures": {
-    "fuzzy_match_percent": 0.24454215077722957,
+    "fuzzy_match_percent": 0.2745503740251472,
     "total_code": "2412672",
-    "matched_code": "5900",
-    "matched_code_percent": 0.24454215077722957,
-    "total_functions": 120,
-    "matched_functions": 119,
-    "matched_functions_percent": 99.16666666666667,
+    "matched_code": "6624",
+    "matched_code_percent": 0.2745503740251472,
+    "total_functions": 123,
+    "matched_functions": 122,
+    "matched_functions_percent": 99.1869918699187,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -3088,6 +3097,15 @@
      "address": "220552",
      "metadata": {
       "virtual_address": "220552"
+     }
+    },
+    {
+     "name": "GLOBALVARS_EnforceValidOnTempGameSettings__Fv_LEVEL1_000367F0",
+     "size": "152",
+     "fuzzy_match_percent": 100.0,
+     "address": "223216",
+     "metadata": {
+      "virtual_address": "223216"
      }
     },
     {
@@ -3511,6 +3529,24 @@
      "address": "1520232",
      "metadata": {
       "virtual_address": "1520232"
+     }
+    },
+    {
+     "name": "MU_OscillatorResetRandom__FP19MU_OscillatorVectori",
+     "size": "276",
+     "fuzzy_match_percent": 100.0,
+     "address": "1725936",
+     "metadata": {
+      "virtual_address": "1725936"
+     }
+    },
+    {
+     "name": "MU_OscillatorResetRandom__FP19MU_OscillatorVectorif",
+     "size": "296",
+     "fuzzy_match_percent": 100.0,
+     "address": "1726216",
+     "metadata": {
+      "virtual_address": "1726216"
      }
     },
     {
@@ -26713,13 +26749,13 @@
    "id": "level_code",
    "name": "Level Modules (Combined Placements)",
    "measures": {
-    "fuzzy_match_percent": 0.11441561970378011,
+    "fuzzy_match_percent": 0.11567635030579913,
     "total_code": "69483520",
-    "matched_code": "79500",
-    "matched_code_percent": 0.11441561970378011,
-    "total_functions": 2701,
-    "matched_functions": 2670,
-    "matched_functions_percent": 98.85227693446872,
+    "matched_code": "80376",
+    "matched_code_percent": 0.11567635030579913,
+    "total_functions": 2705,
+    "matched_functions": 2674,
+    "matched_functions_percent": 98.8539741219963,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -26728,13 +26764,13 @@
    "id": "fe_frontend",
    "name": "Frontend (FE.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.506591796875,
+    "fuzzy_match_percent": 0.5220540364583334,
     "total_code": "983040",
-    "matched_code": "4980",
-    "matched_code_percent": 0.506591796875,
-    "total_functions": 100,
-    "matched_functions": 99,
-    "matched_functions_percent": 99.0,
+    "matched_code": "5132",
+    "matched_code_percent": 0.5220540364583334,
+    "total_functions": 101,
+    "matched_functions": 100,
+    "matched_functions_percent": 99.00990099009901,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -26743,13 +26779,13 @@
    "id": "level1_museum",
    "name": "Level 1: Boltaire Museum (LEVEL1.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.24454215077722957,
+    "fuzzy_match_percent": 0.2745503740251472,
     "total_code": "2412672",
-    "matched_code": "5900",
-    "matched_code_percent": 0.24454215077722957,
-    "total_functions": 120,
-    "matched_functions": 119,
-    "matched_functions_percent": 99.16666666666667,
+    "matched_code": "6624",
+    "matched_code_percent": 0.2745503740251472,
+    "total_functions": 123,
+    "matched_functions": 122,
+    "matched_functions_percent": 99.1869918699187,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }

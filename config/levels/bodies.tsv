@@ -20,6 +20,7 @@ FE.REL	0x008F00	32	src/levels/bodies/GLOBAL_GetFlagBit__FUiUc.c
 FE.REL	0x009360	8	src/levels/bodies/GLOBALVARS_AddQuickSelect__FUi.c
 FE.REL	0x009400	124	src/levels/bodies/GLOBALVARS_TemporarilyOverrideGlobalGameVolume__Ff_FE_00009400.c
 FE.REL	0x009598	96	src/levels/bodies/GLOBALVARS_UpdateGameVolumeFromTempSettings__Fv.c
+FE.REL	0x0095F8	152	src/levels/bodies/GLOBALVARS_EnforceValidOnTempGameSettings__Fv.c
 FE.REL	0x009960	48	src/levels/bodies/GLOBALVARS_GetReplayCount__Fv_FE_00009960.c
 FE.REL	0x00B978	64	src/levels/bodies/GADGET_GetDataDef__FUi.c
 FE.REL	0x00BE30	128	src/levels/bodies/GADGET_IsModToBeInstalledAtSlot__FUiUiUi_FE_00BE30.c
@@ -130,6 +131,7 @@ LEVEL1.REL	0x035890	32	src/levels/bodies/FastMemZero__FPvUi.c
 LEVEL1.REL	0x035CA8	32	src/levels/bodies/GLOBAL_GetFlagBit__FUiUc_LEVEL1_035CA8.c
 LEVEL1.REL	0x035D20	32	src/levels/bodies/GLOBAL_GetFlagBitU16__FUiUc_LEVEL1_035D20.c
 LEVEL1.REL	0x035D88	32	src/levels/bodies/GLOBAL_GetFlagBitU32__FUiUi_LEVEL1_035D88.c
+LEVEL1.REL	0x0367F0	152	src/levels/bodies/GLOBALVARS_EnforceValidOnTempGameSettings__Fv_LEVEL1_000367F0.c
 LEVEL1.REL	0x036EB0	256	src/levels/bodies/GLOBALVARS_ReducePlayerDeaths__Fv_LEVEL1_036EB0.c
 LEVEL1.REL	0x037210	48	src/levels/bodies/GLOBALVARS_GetReplayCount__Fv_LEVEL1_00037210.c
 LEVEL1.REL	0x0373A0	32	src/levels/bodies/GLOBALVARS_GetPlayerTitaniumBoltCount__Fv_LEVEL1_0373A0.c
@@ -177,6 +179,8 @@ LEVEL1.REL	0x1303B0	8	src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP17
 LEVEL1.REL	0x134FC0	8	src/levels/bodies/HUD_FontPrintWindowAreaSetText__FP20tFontPrintWindowDataPc.c
 LEVEL1.REL	0x162718	176	src/levels/bodies/ENEMYSTATS_DamageInSphere__FUiUiP4VEC3fP4MobyUiUiUi.c
 LEVEL1.REL	0x173268	8	src/levels/bodies/ICONMENU_SetIconScrollSpeed__FP9tICONMENUf.c
+LEVEL1.REL	0x1A55F0	276	src/levels/bodies/MU_OscillatorResetRandom__FP19MU_OscillatorVectori.c
+LEVEL1.REL	0x1A5708	296	src/levels/bodies/MU_OscillatorResetRandom__FP19MU_OscillatorVectorif.c
 LEVEL1.REL	0x1BAB18	32	src/levels/bodies/CB_ARRAY_Init__FP14tCB_ARRAY_DATA.c
 LEVEL1.REL	0x1BAD50	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
 LEVEL1.REL	0x1C8020	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
