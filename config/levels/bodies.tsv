@@ -20,6 +20,7 @@ FE.REL	0x008F00	32	src/levels/bodies/GLOBAL_GetFlagBit__FUiUc.c
 FE.REL	0x009360	8	src/levels/bodies/GLOBALVARS_AddQuickSelect__FUi.c
 FE.REL	0x009400	124	src/levels/bodies/GLOBALVARS_TemporarilyOverrideGlobalGameVolume__Ff_FE_00009400.c
 FE.REL	0x009598	96	src/levels/bodies/GLOBALVARS_UpdateGameVolumeFromTempSettings__Fv.c
+FE.REL	0x009960	48	src/levels/bodies/GLOBALVARS_GetReplayCount__Fv_FE_00009960.c
 FE.REL	0x00B978	64	src/levels/bodies/GADGET_GetDataDef__FUi.c
 FE.REL	0x00BE30	128	src/levels/bodies/GADGET_IsModToBeInstalledAtSlot__FUiUiUi_FE_00BE30.c
 FE.REL	0x00C3A0	64	src/levels/bodies/GADGET_FillAmmo__FUi.c
@@ -51,6 +52,7 @@ FE.REL	0x0352D0	64	src/levels/bodies/PAUSEMENU_SetTextUseSubnodeColor__FP10tPAUS
 FE.REL	0x037AF8	8	src/levels/bodies/PAUSEMODE_GetReusableTextBufferSize__Fv.c
 FE.REL	0x037BD8	32	src/levels/bodies/HUDDIAG_FadeOverlayUpdate__Fv.c
 FE.REL	0x0413B0	128	src/levels/bodies/FE_0413B0.c
+FE.REL	0x054FB8	200	src/levels/bodies/Quat_Pack__FPC4QUAT.c
 FE.REL	0x0650F0	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
 FE.REL	0x066550	32	src/levels/bodies/MEMCARDCLIENT_ClearError__Fv.c
 FE.REL	0x066570	32	src/levels/bodies/MEMCARDCLIENT_ClearAbortedStatus__Fv.c
@@ -129,6 +131,7 @@ LEVEL1.REL	0x035CA8	32	src/levels/bodies/GLOBAL_GetFlagBit__FUiUc_LEVEL1_035CA8.
 LEVEL1.REL	0x035D20	32	src/levels/bodies/GLOBAL_GetFlagBitU16__FUiUc_LEVEL1_035D20.c
 LEVEL1.REL	0x035D88	32	src/levels/bodies/GLOBAL_GetFlagBitU32__FUiUi_LEVEL1_035D88.c
 LEVEL1.REL	0x036EB0	256	src/levels/bodies/GLOBALVARS_ReducePlayerDeaths__Fv_LEVEL1_036EB0.c
+LEVEL1.REL	0x037210	48	src/levels/bodies/GLOBALVARS_GetReplayCount__Fv_LEVEL1_00037210.c
 LEVEL1.REL	0x0373A0	32	src/levels/bodies/GLOBALVARS_GetPlayerTitaniumBoltCount__Fv_LEVEL1_0373A0.c
 LEVEL1.REL	0x038C88	32	src/levels/bodies/CHEAT_IsActive__FUi_LEVEL1_038C88.c
 LEVEL1.REL	0x0398E0	8	src/levels/bodies/LEVEL1_0398E0.c
@@ -446,8 +449,10 @@ LEVEL11.REL	0x2576C8	8	src/levels/bodies/HUD_FontPrintWindowAreaSetText__FP20tFo
 LEVEL11.REL	0x257718	8	src/levels/bodies/GetNumFree__C11ApeFreeList.c
 LEVEL11.REL	0x2579B8	8	src/levels/bodies/TEXMGR_GetWidth__FP10AglTexture.c
 LEVEL11.REL	0x2579C0	8	src/levels/bodies/TEXMGR_GetHeight__FP10AglTexture.c
+LEVEL11.REL	0x25D0B8	36	src/levels/bodies/AddSibling__14ApeAnimChannelP14ApeAnimChannel.c
 LEVEL11.REL	0x25D160	8	src/levels/bodies/ICONMENU_SetNumberVisibleIconSlots__FP9tICONMENUUi.c
 LEVEL11.REL	0x25D450	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
+LEVEL11.REL	0x25DD68	36	src/levels/bodies/AddModifierNode__17ApeAnimCompositorP15ApeAnimTreeNode.c
 LEVEL11.REL	0x25F728	8	src/levels/bodies/ApePtrAdd__H1Zv_PX01Ui_PX01.c
 LEVEL11.REL	0x25FFB8	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
 LEVEL11.REL	0x260128	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
@@ -493,6 +498,7 @@ LEVEL13.REL	0x042980	32	src/levels/bodies/LEVEL13_042980.c
 LEVEL13.REL	0x0490C0	256	src/levels/bodies/LEVEL1_0490C8.c
 LEVEL13.REL	0x049210	32	src/levels/bodies/LevelUpBolt_RegisterSystem__F10DRAW_Layeri15DRAW_ZWriteMode17DRAW_ColorKeyMode14DRAW_BloomMode14DRAW_BlendMode.c
 LEVEL13.REL	0x049D50	128	src/levels/bodies/ACTOR_Update__Fv.c
+LEVEL13.REL	0x04A1C8	48	src/levels/bodies/ALPHASORT_AddBatch__FPC7MATRIX4P19GDE_PSP_ALPHA_CHUNK.c
 LEVEL13.REL	0x04A250	8	src/levels/bodies/ANIM_SetInstanceAnimation__FP13GDE_AnimationP13ANIM_Instance.c
 LEVEL13.REL	0x04B988	8	src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP17ApeAnimCompositor.c
 LEVEL13.REL	0x04C340	8	src/levels/bodies/AnimTranslator_GetFrameTrans__FP14AnimTranslator.c
@@ -508,6 +514,7 @@ LEVEL13.REL	0x05BE60	48	src/levels/bodies/MOBY_GetMobyTargetPos__FPC4MobyP4VEC4b
 LEVEL13.REL	0x0630E0	32	src/levels/bodies/DrawVLINE__FP6VLINES.c
 LEVEL13.REL	0x067770	8	src/levels/bodies/TEXMGR_GetWidth__FP10AglTexture.c
 LEVEL13.REL	0x067778	8	src/levels/bodies/TEXMGR_GetHeight__FP10AglTexture.c
+LEVEL13.REL	0x071570	32	src/levels/bodies/CorrectEndianVoid__FPv.c
 LEVEL13.REL	0x0751F0	36	src/levels/bodies/SanzHotSpotRenderCB__FPv.c
 LEVEL13.REL	0x075858	44	src/levels/bodies/MemCardMgrUpdate__14MemCardManager_LEVEL10_00075858.c
 LEVEL13.REL	0x07C900	8	src/levels/bodies/GetTotalOfClusterUseForSave__14MemCardManager.c
@@ -529,11 +536,17 @@ LEVEL13.REL	0x0C7F70	8	src/levels/bodies/GetTransientDataSize__5Glide.c
 LEVEL13.REL	0x0CABC0	8	src/levels/bodies/GetTransientDataSize__5Glide.c
 LEVEL13.REL	0x0D7398	36	src/levels/bodies/EnemyController_FixLinks__FP4Moby.c
 LEVEL13.REL	0x0EBAA8	8	src/levels/bodies/KillEffect__4MaskP4Moby.c
+LEVEL13.REL	0x10B458	92	src/levels/bodies/Waitress_GetExtraContentSize__Fv.c
 LEVEL13.REL	0x1277F0	8	src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP17ApeAnimCompositor.c
 LEVEL13.REL	0x12C400	8	src/levels/bodies/HUD_FontPrintWindowAreaSetText__FP20tFontPrintWindowDataPc.c
 LEVEL13.REL	0x166E60	8	src/levels/bodies/ICONMENU_SetIconScrollSpeed__FP9tICONMENUf.c
+LEVEL13.REL	0x1855F0	88	src/levels/bodies/COL_IntersectCapsuleWithMesh__FPfT0P4VEC3PC4VEC3T3ffPC13CollisionMeshPC7MATRIX4T2_LEVEL13_001855F0.c
+LEVEL13.REL	0x185978	88	src/levels/bodies/COL_IntersectCapsuleWithMesh__FPfT0P4VEC3PC4VEC3T3ffPC13CollisionMeshPC8MATRIX43T2_LEVEL13_00185978.c
+LEVEL13.REL	0x185DB0	88	src/levels/bodies/COL_IntersectSweptSphereWithMesh__FPfP4VEC3P17PackedSurfaceInfoPC4VEC3T3ffPC13CollisionMeshPC7MATRIX4T1_LEVEL13_00185DB0.c
+LEVEL13.REL	0x186118	88	src/levels/bodies/COL_IntersectSweptSphereWithMesh__FPfP4VEC3P17PackedSurfaceInfoPC4VEC3T3ffPC13CollisionMeshPC8MATRIX43T1_LEVEL13_00186118.c
 LEVEL13.REL	0x1AE710	32	src/levels/bodies/CB_ARRAY_Init__FP14tCB_ARRAY_DATA.c
 LEVEL13.REL	0x1AE948	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
+LEVEL13.REL	0x1B26D8	84	src/levels/bodies/__do_global_dtors_LEVEL13_001B26D8.c
 LEVEL13.REL	0x1BBC18	8	src/levels/bodies/AglSubMeshMgr_DXtoPS3Color__FRUi.c
 LEVEL13.REL	0x1C5110	32	src/levels/bodies/AddMesh__14AglIRenderListR22AglSubMeshRenderParamsG20AglRenderListSortKey.c
 LEVEL13.REL	0x1C6A28	8	src/levels/bodies/SetProjectionType__19AglRenderTargetBase24AglRenderTargetEProjType.c
