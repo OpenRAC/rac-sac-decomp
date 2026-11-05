@@ -1,13 +1,13 @@
 {
  "version": 2,
  "measures": {
-  "fuzzy_match_percent": 0.5420448801072552,
+  "fuzzy_match_percent": 0.5501769269654279,
   "total_code": "7279840",
-  "matched_code": "39460",
-  "matched_code_percent": 0.5420448801072552,
-  "total_functions": 524,
-  "matched_functions": 492,
-  "matched_functions_percent": 93.89312977099236,
+  "matched_code": "40052",
+  "matched_code_percent": 0.5501769269654279,
+  "total_functions": 582,
+  "matched_functions": 550,
+  "matched_functions_percent": 94.50171821305842,
   "complete_code": "0",
   "complete_code_percent": 0.0,
   "total_units": 32,
@@ -17,13 +17,13 @@
   {
    "name": "boot/executable",
    "measures": {
-    "fuzzy_match_percent": 2.0094264838723555,
+    "fuzzy_match_percent": 2.0266325822052074,
     "total_code": "650932",
-    "matched_code": "13080",
-    "matched_code_percent": 2.0094264838723555,
-    "total_functions": 223,
-    "matched_functions": 222,
-    "matched_functions_percent": 99.55156950672645,
+    "matched_code": "13192",
+    "matched_code_percent": 2.0266325822052074,
+    "total_functions": 236,
+    "matched_functions": 235,
+    "matched_functions_percent": 99.57627118644068,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -620,6 +620,24 @@
      "address": "80384",
      "metadata": {
       "virtual_address": "1128960"
+     }
+    },
+    {
+     "name": "func_00113AF8",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "80632",
+     "metadata": {
+      "virtual_address": "1129208"
+     }
+    },
+    {
+     "name": "func_00113DC8",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "81352",
+     "metadata": {
+      "virtual_address": "1129928"
      }
     },
     {
@@ -1442,6 +1460,24 @@
      }
     },
     {
+     "name": "func_00148740",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "296768",
+     "metadata": {
+      "virtual_address": "1345344"
+     }
+    },
+    {
+     "name": "func_00148748",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "296776",
+     "metadata": {
+      "virtual_address": "1345352"
+     }
+    },
+    {
      "name": "func_0013E6B0",
      "size": "8",
      "fuzzy_match_percent": 100.0,
@@ -1640,6 +1676,33 @@
      }
     },
     {
+     "name": "func_0014B4F8",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "308472",
+     "metadata": {
+      "virtual_address": "1357048"
+     }
+    },
+    {
+     "name": "func_0014B510",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "308496",
+     "metadata": {
+      "virtual_address": "1357072"
+     }
+    },
+    {
+     "name": "func_0014B518",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "308504",
+     "metadata": {
+      "virtual_address": "1357080"
+     }
+    },
+    {
      "name": "func_0014DD08",
      "size": "60",
      "fuzzy_match_percent": 100.0,
@@ -1664,6 +1727,15 @@
      "address": "336064",
      "metadata": {
       "virtual_address": "1384640"
+     }
+    },
+    {
+     "name": "func_00152658",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "337496",
+     "metadata": {
+      "virtual_address": "1386072"
      }
     },
     {
@@ -1874,6 +1946,33 @@
      }
     },
     {
+     "name": "func_0015FF88",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "393096",
+     "metadata": {
+      "virtual_address": "1441672"
+     }
+    },
+    {
+     "name": "func_0015FF90",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "393104",
+     "metadata": {
+      "virtual_address": "1441680"
+     }
+    },
+    {
+     "name": "func_00168D80",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "429440",
+     "metadata": {
+      "virtual_address": "1478016"
+     }
+    },
+    {
      "name": "func_0016AB20",
      "size": "32",
      "fuzzy_match_percent": 100.0,
@@ -1883,12 +1982,30 @@
      }
     },
     {
+     "name": "func_0016C1D8",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "442840",
+     "metadata": {
+      "virtual_address": "1491416"
+     }
+    },
+    {
      "name": "func_0016D530",
      "size": "12",
      "fuzzy_match_percent": 100.0,
      "address": "447792",
      "metadata": {
       "virtual_address": "1496368"
+     }
+    },
+    {
+     "name": "func_0016F250",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "455248",
+     "metadata": {
+      "virtual_address": "1503824"
      }
     },
     {
@@ -2038,13 +2155,13 @@
   {
    "name": "levels/fe_frontend",
    "measures": {
-    "fuzzy_match_percent": 0.5525716145833334,
+    "fuzzy_match_percent": 0.5830891927083334,
     "total_code": "983040",
-    "matched_code": "5432",
-    "matched_code_percent": 0.5525716145833334,
-    "total_functions": 131,
-    "matched_functions": 130,
-    "matched_functions_percent": 99.23664122137404,
+    "matched_code": "5732",
+    "matched_code_percent": 0.5830891927083334,
+    "total_functions": 161,
+    "matched_functions": 160,
+    "matched_functions_percent": 99.37888198757764,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -2383,6 +2500,105 @@
      }
     },
     {
+     "name": "MCPI_SetMcpId__Fi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "45448",
+     "metadata": {
+      "virtual_address": "45448"
+     }
+    },
+    {
+     "name": "MCPI_GetMcpId__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "45464",
+     "metadata": {
+      "virtual_address": "45464"
+     }
+    },
+    {
+     "name": "MCPI_SetGameId__Fi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "45480",
+     "metadata": {
+      "virtual_address": "45480"
+     }
+    },
+    {
+     "name": "MCPI_GetGameId__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "45496",
+     "metadata": {
+      "virtual_address": "45496"
+     }
+    },
+    {
+     "name": "MCPI_GetLoadProgress__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "45544",
+     "metadata": {
+      "virtual_address": "45544"
+     }
+    },
+    {
+     "name": "MCPI_SetMyMsgBoxId__Fi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "45632",
+     "metadata": {
+      "virtual_address": "45632"
+     }
+    },
+    {
+     "name": "MCPI_SetTheirMsgBoxId__Fi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "45648",
+     "metadata": {
+      "virtual_address": "45648"
+     }
+    },
+    {
+     "name": "MCPI_SetMcpGlobals__Fi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "45664",
+     "metadata": {
+      "virtual_address": "45664"
+     }
+    },
+    {
+     "name": "MCPI_GetMyMsgBoxId__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "45688",
+     "metadata": {
+      "virtual_address": "45688"
+     }
+    },
+    {
+     "name": "MCPI_GetTheirMsgBoxId__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "45704",
+     "metadata": {
+      "virtual_address": "45704"
+     }
+    },
+    {
+     "name": "GADGET_IsDbaseInitedForThisLevel__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "46816",
+     "metadata": {
+      "virtual_address": "46816"
+     }
+    },
+    {
      "name": "GADGET_GetDataDef__FUi",
      "size": "64",
      "fuzzy_match_percent": 100.0,
@@ -2410,12 +2626,48 @@
      }
     },
     {
+     "name": "HEROSKIN_GetWorld__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "53304",
+     "metadata": {
+      "virtual_address": "53304"
+     }
+    },
+    {
+     "name": "HEROSKIN_SetSkinID__F12SPHeroSkinId",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "54384",
+     "metadata": {
+      "virtual_address": "54384"
+     }
+    },
+    {
      "name": "FE_0000D650",
      "size": "168",
      "fuzzy_match_percent": 100.0,
      "address": "54864",
      "metadata": {
       "virtual_address": "54864"
+     }
+    },
+    {
+     "name": "DISPLAY_GetProjectionMatrix__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "55176",
+     "metadata": {
+      "virtual_address": "55176"
+     }
+    },
+    {
+     "name": "DISPLAY_GetClipMatrix__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "55192",
+     "metadata": {
+      "virtual_address": "55192"
      }
     },
     {
@@ -3040,6 +3292,78 @@
      }
     },
     {
+     "name": "GetFileName__C13TiXmlDocument",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "889128",
+     "metadata": {
+      "virtual_address": "889128"
+     }
+    },
+    {
+     "name": "GetMovieStatus__12AglMovieBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "889256",
+     "metadata": {
+      "virtual_address": "889256"
+     }
+    },
+    {
+     "name": "GetKey__19ApeAnimChannelFloat",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "893224",
+     "metadata": {
+      "virtual_address": "893224"
+     }
+    },
+    {
+     "name": "WeightedAverageInitialize__19ApeAnimChannelFloatPf",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "893304",
+     "metadata": {
+      "virtual_address": "893304"
+     }
+    },
+    {
+     "name": "SetMatrix__20ApeAnimChannelMatrixP4AMtx",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "896680",
+     "metadata": {
+      "virtual_address": "896680"
+     }
+    },
+    {
+     "name": "SetRadius__9ApeSpheref",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "908928",
+     "metadata": {
+      "virtual_address": "908928"
+     }
+    },
+    {
+     "name": "SetPass2ALPHA__14AglRenderStateUi",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "908968",
+     "metadata": {
+      "virtual_address": "908968"
+     }
+    },
+    {
+     "name": "GetPass2ALPHA__C14AglRenderState",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "908976",
+     "metadata": {
+      "virtual_address": "908976"
+     }
+    },
+    {
      "name": "ApePtrAdd__H1Zv_PX01Ui_PX01",
      "size": "8",
      "fuzzy_match_percent": 100.0,
@@ -3112,12 +3436,66 @@
      }
     },
     {
+     "name": "GetSortID__C14AglSubMeshBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "924568",
+     "metadata": {
+      "virtual_address": "924568"
+     }
+    },
+    {
      "name": "GetNumFree__C11ApeFreeList",
      "size": "8",
      "fuzzy_match_percent": 100.0,
      "address": "924576",
      "metadata": {
       "virtual_address": "924576"
+     }
+    },
+    {
+     "name": "GetVtxDecl__C14AglSubMeshBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "924616",
+     "metadata": {
+      "virtual_address": "924616"
+     }
+    },
+    {
+     "name": "GetBonePalette__C14AglSubMeshBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "924624",
+     "metadata": {
+      "virtual_address": "924624"
+     }
+    },
+    {
+     "name": "GetVertexWeights__C14AglSubMeshBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "924632",
+     "metadata": {
+      "virtual_address": "924632"
+     }
+    },
+    {
+     "name": "GetPrimType__C14AglSubMeshBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "924640",
+     "metadata": {
+      "virtual_address": "924640"
+     }
+    },
+    {
+     "name": "GetScale__C14AglSubMeshBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "924648",
+     "metadata": {
+      "virtual_address": "924648"
      }
     },
     {
@@ -3136,6 +3514,15 @@
      "address": "925256",
      "metadata": {
       "virtual_address": "925256"
+     }
+    },
+    {
+     "name": "GetName__C14AglTextureBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "925272",
+     "metadata": {
+      "virtual_address": "925272"
      }
     },
     {
@@ -13282,13 +13669,13 @@
   {
    "name": "levels/level2_timing",
    "measures": {
-    "fuzzy_match_percent": 0.08718566245464782,
+    "fuzzy_match_percent": 0.09598242211935444,
     "total_code": "2046208",
-    "matched_code": "1784",
-    "matched_code_percent": 0.08718566245464782,
-    "total_functions": 81,
-    "matched_functions": 80,
-    "matched_functions_percent": 98.76543209876543,
+    "matched_code": "1964",
+    "matched_code_percent": 0.09598242211935444,
+    "total_functions": 96,
+    "matched_functions": 95,
+    "matched_functions_percent": 98.95833333333333,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -13327,6 +13714,141 @@
      "address": "16344",
      "metadata": {
       "virtual_address": "16344"
+     }
+    },
+    {
+     "name": "SetLogging__13TiXmlDocumentb_LEVEL2_00005918",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "22808",
+     "metadata": {
+      "virtual_address": "22808"
+     }
+    },
+    {
+     "name": "GetLogging__13TiXmlDocument_LEVEL2_00005928",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "22824",
+     "metadata": {
+      "virtual_address": "22824"
+     }
+    },
+    {
+     "name": "CAMERA_SetDisplaySystem__F14CameraSystemID_LEVEL2_0000A0E0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41184",
+     "metadata": {
+      "virtual_address": "41184"
+     }
+    },
+    {
+     "name": "CAMERA_GetNearDepth__Fv_LEVEL2_0000A140",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41280",
+     "metadata": {
+      "virtual_address": "41280"
+     }
+    },
+    {
+     "name": "CAMERA_GetFarDepth__Fv_LEVEL2_0000A150",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41296",
+     "metadata": {
+      "virtual_address": "41296"
+     }
+    },
+    {
+     "name": "CAMERA_GetFov__Fv_LEVEL2_0000A2E0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41696",
+     "metadata": {
+      "virtual_address": "41696"
+     }
+    },
+    {
+     "name": "CAMERA_GetThisFrameLastUpdatedFov__Fv_LEVEL2_0000A308",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41736",
+     "metadata": {
+      "virtual_address": "41736"
+     }
+    },
+    {
+     "name": "CAMERA_GetFovX__Fv_LEVEL2_0000A360",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41824",
+     "metadata": {
+      "virtual_address": "41824"
+     }
+    },
+    {
+     "name": "CAMERA_SetFovY__Ff_LEVEL2_0000A490",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "42128",
+     "metadata": {
+      "virtual_address": "42128"
+     }
+    },
+    {
+     "name": "CAMERA_GetCosHalfFovX__Fv_LEVEL2_0000A4A0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "42144",
+     "metadata": {
+      "virtual_address": "42144"
+     }
+    },
+    {
+     "name": "CAMERA_GetSinHalfFovX__Fv_LEVEL2_0000A4B0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "42160",
+     "metadata": {
+      "virtual_address": "42160"
+     }
+    },
+    {
+     "name": "CAMDRIVER_GetTargetPos__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "49656",
+     "metadata": {
+      "virtual_address": "49656"
+     }
+    },
+    {
+     "name": "CAMDRIVER_GetWorldMatrix__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "49920",
+     "metadata": {
+      "virtual_address": "49920"
+     }
+    },
+    {
+     "name": "CAMDRIVER_GetBasisMatrix__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "49936",
+     "metadata": {
+      "virtual_address": "49936"
+     }
+    },
+    {
+     "name": "CAMDRIVER_GetHeight__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "51528",
+     "metadata": {
+      "virtual_address": "51528"
      }
     },
     {
@@ -27256,13 +27778,13 @@
    "id": "boot",
    "name": "Boot Executable",
    "measures": {
-    "fuzzy_match_percent": 2.0094264838723555,
+    "fuzzy_match_percent": 2.0266325822052074,
     "total_code": "650932",
-    "matched_code": "13080",
-    "matched_code_percent": 2.0094264838723555,
-    "total_functions": 223,
-    "matched_functions": 222,
-    "matched_functions_percent": 99.55156950672645,
+    "matched_code": "13192",
+    "matched_code_percent": 2.0266325822052074,
+    "total_functions": 236,
+    "matched_functions": 235,
+    "matched_functions_percent": 99.57627118644068,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -27271,13 +27793,13 @@
    "id": "level_code",
    "name": "Level Modules (Combined Placements)",
    "measures": {
-    "fuzzy_match_percent": 0.11628081018347948,
+    "fuzzy_match_percent": 0.11697162147225702,
     "total_code": "69483520",
-    "matched_code": "80796",
-    "matched_code_percent": 0.11628081018347948,
-    "total_functions": 2750,
-    "matched_functions": 2719,
-    "matched_functions_percent": 98.87272727272727,
+    "matched_code": "81276",
+    "matched_code_percent": 0.11697162147225702,
+    "total_functions": 2795,
+    "matched_functions": 2764,
+    "matched_functions_percent": 98.89087656529517,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -27286,13 +27808,13 @@
    "id": "fe_frontend",
    "name": "Frontend (FE.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.5525716145833334,
+    "fuzzy_match_percent": 0.5830891927083334,
     "total_code": "983040",
-    "matched_code": "5432",
-    "matched_code_percent": 0.5525716145833334,
-    "total_functions": 131,
-    "matched_functions": 130,
-    "matched_functions_percent": 99.23664122137404,
+    "matched_code": "5732",
+    "matched_code_percent": 0.5830891927083334,
+    "total_functions": 161,
+    "matched_functions": 160,
+    "matched_functions_percent": 99.37888198757764,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -27451,13 +27973,13 @@
    "id": "level2_timing",
    "name": "Level 2: Museum Security (LEVEL2.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.08718566245464782,
+    "fuzzy_match_percent": 0.09598242211935444,
     "total_code": "2046208",
-    "matched_code": "1784",
-    "matched_code_percent": 0.08718566245464782,
-    "total_functions": 81,
-    "matched_functions": 80,
-    "matched_functions_percent": 98.76543209876543,
+    "matched_code": "1964",
+    "matched_code_percent": 0.09598242211935444,
+    "total_functions": 96,
+    "matched_functions": 95,
+    "matched_functions_percent": 98.95833333333333,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
