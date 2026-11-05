@@ -1,13 +1,13 @@
 {
  "version": 2,
  "measures": {
-  "fuzzy_match_percent": 0.5108903492384448,
+  "fuzzy_match_percent": 0.5159454053935252,
   "total_code": "7279840",
-  "matched_code": "37192",
-  "matched_code_percent": 0.5108903492384448,
-  "total_functions": 463,
-  "matched_functions": 431,
-  "matched_functions_percent": 93.08855291576674,
+  "matched_code": "37560",
+  "matched_code_percent": 0.5159454053935252,
+  "total_functions": 464,
+  "matched_functions": 432,
+  "matched_functions_percent": 93.10344827586206,
   "complete_code": "0",
   "complete_code_percent": 0.0,
   "total_units": 32,
@@ -6094,13 +6094,13 @@
   {
    "name": "levels/level13_casino",
    "measures": {
-    "fuzzy_match_percent": 0.2705891927083333,
+    "fuzzy_match_percent": 0.2861870659722222,
     "total_code": "2359296",
-    "matched_code": "6384",
-    "matched_code_percent": 0.2705891927083333,
-    "total_functions": 137,
-    "matched_functions": 136,
-    "matched_functions_percent": 99.27007299270073,
+    "matched_code": "6752",
+    "matched_code_percent": 0.2861870659722222,
+    "total_functions": 138,
+    "matched_functions": 137,
+    "matched_functions_percent": 99.27536231884058,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -6814,6 +6814,15 @@
      "address": "1229824",
      "metadata": {
       "virtual_address": "1229824"
+     }
+    },
+    {
+     "name": "PROJECTILE_FindClosestProjectileInSphere__FPC4VEC3fP4Moby",
+     "size": "368",
+     "fuzzy_match_percent": 100.0,
+     "address": "1236392",
+     "metadata": {
+      "virtual_address": "1236392"
      }
     },
     {
@@ -26677,13 +26686,13 @@
    "id": "level_code",
    "name": "Level Modules (Combined Placements)",
    "measures": {
-    "fuzzy_match_percent": 0.11388599771571734,
+    "fuzzy_match_percent": 0.11441561970378011,
     "total_code": "69483520",
-    "matched_code": "79132",
-    "matched_code_percent": 0.11388599771571734,
-    "total_functions": 2700,
-    "matched_functions": 2669,
-    "matched_functions_percent": 98.85185185185185,
+    "matched_code": "79500",
+    "matched_code_percent": 0.11441561970378011,
+    "total_functions": 2701,
+    "matched_functions": 2670,
+    "matched_functions_percent": 98.85227693446872,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -26752,13 +26761,13 @@
    "id": "level13_casino",
    "name": "Level 13: Le Paradis Casino (LEVEL13.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.2705891927083333,
+    "fuzzy_match_percent": 0.2861870659722222,
     "total_code": "2359296",
-    "matched_code": "6384",
-    "matched_code_percent": 0.2705891927083333,
-    "total_functions": 137,
-    "matched_functions": 136,
-    "matched_functions_percent": 99.27007299270073,
+    "matched_code": "6752",
+    "matched_code_percent": 0.2861870659722222,
+    "total_functions": 138,
+    "matched_functions": 137,
+    "matched_functions_percent": 99.27536231884058,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }

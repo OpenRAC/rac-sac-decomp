@@ -539,6 +539,7 @@ LEVEL13.REL	0x0EBAA8	8	src/levels/bodies/KillEffect__4MaskP4Moby.c
 LEVEL13.REL	0x10B458	92	src/levels/bodies/Waitress_GetExtraContentSize__Fv.c
 LEVEL13.REL	0x1277F0	8	src/levels/bodies/SetCompositor__20APEGDE_BoneComponentP17ApeAnimCompositor.c
 LEVEL13.REL	0x12C400	8	src/levels/bodies/HUD_FontPrintWindowAreaSetText__FP20tFontPrintWindowDataPc.c
+LEVEL13.REL	0x12DDA8	368	src/levels/bodies/PROJECTILE_FindClosestProjectileInSphere__FPC4VEC3fP4Moby.c
 LEVEL13.REL	0x166E60	8	src/levels/bodies/ICONMENU_SetIconScrollSpeed__FP9tICONMENUf.c
 LEVEL13.REL	0x1855F0	88	src/levels/bodies/COL_IntersectCapsuleWithMesh__FPfT0P4VEC3PC4VEC3T3ffPC13CollisionMeshPC7MATRIX4T2_LEVEL13_001855F0.c
 LEVEL13.REL	0x185978	88	src/levels/bodies/COL_IntersectCapsuleWithMesh__FPfT0P4VEC3PC4VEC3T3ffPC13CollisionMeshPC8MATRIX43T2_LEVEL13_00185978.c
