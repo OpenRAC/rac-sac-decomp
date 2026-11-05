@@ -1,13 +1,13 @@
 {
  "version": 2,
  "measures": {
-  "fuzzy_match_percent": 0.5501769269654279,
+  "fuzzy_match_percent": 0.5591331677619288,
   "total_code": "7279840",
-  "matched_code": "40052",
-  "matched_code_percent": 0.5501769269654279,
-  "total_functions": 582,
-  "matched_functions": 550,
-  "matched_functions_percent": 94.50171821305842,
+  "matched_code": "40704",
+  "matched_code_percent": 0.5591331677619288,
+  "total_functions": 642,
+  "matched_functions": 610,
+  "matched_functions_percent": 95.01557632398755,
   "complete_code": "0",
   "complete_code_percent": 0.0,
   "total_units": 32,
@@ -17,13 +17,13 @@
   {
    "name": "boot/executable",
    "measures": {
-    "fuzzy_match_percent": 2.0266325822052074,
+    "fuzzy_match_percent": 2.0530562332163727,
     "total_code": "650932",
-    "matched_code": "13192",
-    "matched_code_percent": 2.0266325822052074,
-    "total_functions": 236,
-    "matched_functions": 235,
-    "matched_functions_percent": 99.57627118644068,
+    "matched_code": "13364",
+    "matched_code_percent": 2.0530562332163727,
+    "total_functions": 251,
+    "matched_functions": 250,
+    "matched_functions_percent": 99.60159362549801,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -641,6 +641,15 @@
      }
     },
     {
+     "name": "func_00113DD8",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "81368",
+     "metadata": {
+      "virtual_address": "1129944"
+     }
+    },
+    {
      "name": "func_001157B0",
      "size": "56",
      "fuzzy_match_percent": 100.0,
@@ -767,6 +776,24 @@
      }
     },
     {
+     "name": "func_00116458",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "91224",
+     "metadata": {
+      "virtual_address": "1139800"
+     }
+    },
+    {
+     "name": "func_00116460",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "91232",
+     "metadata": {
+      "virtual_address": "1139808"
+     }
+    },
+    {
      "name": "func_00100328",
      "size": "8",
      "fuzzy_match_percent": 100.0,
@@ -803,6 +830,24 @@
      }
     },
     {
+     "name": "func_0011D680",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "120448",
+     "metadata": {
+      "virtual_address": "1169024"
+     }
+    },
+    {
+     "name": "func_0011D6D8",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "120536",
+     "metadata": {
+      "virtual_address": "1169112"
+     }
+    },
+    {
      "name": "func_0011DC00",
      "size": "32",
      "fuzzy_match_percent": 100.0,
@@ -827,6 +872,42 @@
      "address": "121920",
      "metadata": {
       "virtual_address": "1170496"
+     }
+    },
+    {
+     "name": "func_0011DCB0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "122032",
+     "metadata": {
+      "virtual_address": "1170608"
+     }
+    },
+    {
+     "name": "func_0011DCD8",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "122072",
+     "metadata": {
+      "virtual_address": "1170648"
+     }
+    },
+    {
+     "name": "func_0011DCE8",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "122088",
+     "metadata": {
+      "virtual_address": "1170664"
+     }
+    },
+    {
+     "name": "func_00121E88",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "138888",
+     "metadata": {
+      "virtual_address": "1187464"
      }
     },
     {
@@ -1424,6 +1505,15 @@
      }
     },
     {
+     "name": "func_0013E6C0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "255680",
+     "metadata": {
+      "virtual_address": "1304256"
+     }
+    },
+    {
      "name": "func_00144E08",
      "size": "32",
      "fuzzy_match_percent": 100.0,
@@ -1439,6 +1529,15 @@
      "address": "282840",
      "metadata": {
       "virtual_address": "1331416"
+     }
+    },
+    {
+     "name": "func_001453C0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "283584",
+     "metadata": {
+      "virtual_address": "1332160"
      }
     },
     {
@@ -1658,6 +1757,15 @@
      }
     },
     {
+     "name": "func_00149110",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "299280",
+     "metadata": {
+      "virtual_address": "1347856"
+     }
+    },
+    {
      "name": "func_00121FB8",
      "size": "8",
      "fuzzy_match_percent": 100.0,
@@ -1685,6 +1793,15 @@
      }
     },
     {
+     "name": "func_0014B500",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "308480",
+     "metadata": {
+      "virtual_address": "1357056"
+     }
+    },
+    {
      "name": "func_0014B510",
      "size": "8",
      "fuzzy_match_percent": 100.0,
@@ -1700,6 +1817,24 @@
      "address": "308504",
      "metadata": {
       "virtual_address": "1357080"
+     }
+    },
+    {
+     "name": "func_0014BF10",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "311056",
+     "metadata": {
+      "virtual_address": "1359632"
+     }
+    },
+    {
+     "name": "func_0014BF40",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "311104",
+     "metadata": {
+      "virtual_address": "1359680"
      }
     },
     {
@@ -2155,13 +2290,13 @@
   {
    "name": "levels/fe_frontend",
    "measures": {
-    "fuzzy_match_percent": 0.5830891927083334,
+    "fuzzy_match_percent": 0.6136067708333334,
     "total_code": "983040",
-    "matched_code": "5732",
-    "matched_code_percent": 0.5830891927083334,
-    "total_functions": 161,
-    "matched_functions": 160,
-    "matched_functions_percent": 99.37888198757764,
+    "matched_code": "6032",
+    "matched_code_percent": 0.6136067708333334,
+    "total_functions": 191,
+    "matched_functions": 190,
+    "matched_functions_percent": 99.47643979057591,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -2671,12 +2806,66 @@
      }
     },
     {
+     "name": "DISPLAY_GetViewMatrix__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "55208",
+     "metadata": {
+      "virtual_address": "55208"
+     }
+    },
+    {
      "name": "DISPLAY_IsSphereVisible__FPC4VEC3f_FE_0000E408",
      "size": "148",
      "fuzzy_match_percent": 100.0,
      "address": "58376",
      "metadata": {
       "virtual_address": "58376"
+     }
+    },
+    {
+     "name": "DISPLAY_GetVisibilityPlanes__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "59176",
+     "metadata": {
+      "virtual_address": "59176"
+     }
+    },
+    {
+     "name": "CONTROLLER_GetApeInputDevice__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "59320",
+     "metadata": {
+      "virtual_address": "59320"
+     }
+    },
+    {
+     "name": "CONTROLLER_GetActiveContext__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "60632",
+     "metadata": {
+      "virtual_address": "60632"
+     }
+    },
+    {
+     "name": "CONTROLLER_SetActiveContext__FUi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "60648",
+     "metadata": {
+      "virtual_address": "60648"
+     }
+    },
+    {
+     "name": "CONTROLLER_GetButtonsDown__FUi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "60664",
+     "metadata": {
+      "virtual_address": "60664"
      }
     },
     {
@@ -2698,6 +2887,33 @@
      }
     },
     {
+     "name": "CONTROLLER_GetWorldButtonRight__FUi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "61296",
+     "metadata": {
+      "virtual_address": "61296"
+     }
+    },
+    {
+     "name": "CONTROLLER_GetWorldButtonL__FUi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "61312",
+     "metadata": {
+      "virtual_address": "61312"
+     }
+    },
+    {
+     "name": "CONTROLLER_GetWorldButtonR__FUi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "61328",
+     "metadata": {
+      "virtual_address": "61328"
+     }
+    },
+    {
      "name": "DRAW_AddStageRenderCallback__F10DRAW_LayerPF10DRAW_LayerPv_vPv",
      "size": "32",
      "fuzzy_match_percent": 100.0,
@@ -2707,12 +2923,66 @@
      }
     },
     {
+     "name": "SOUND_GetMemBlockSize__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "67192",
+     "metadata": {
+      "virtual_address": "67192"
+     }
+    },
+    {
+     "name": "SOUND_IsUp__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "68648",
+     "metadata": {
+      "virtual_address": "68648"
+     }
+    },
+    {
      "name": "SOUND_PauseAll__Fb",
      "size": "128",
      "fuzzy_match_percent": 100.0,
      "address": "71736",
      "metadata": {
       "virtual_address": "71736"
+     }
+    },
+    {
+     "name": "SOUND_IsSoundAssetValid__FG18SOUND_ASSET_HANDLE",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "72336",
+     "metadata": {
+      "virtual_address": "72336"
+     }
+    },
+    {
+     "name": "SOUND_GetMaximumDistance__FG18SOUND_ASSET_HANDLE",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "72352",
+     "metadata": {
+      "virtual_address": "72352"
+     }
+    },
+    {
+     "name": "SOUND_IsHandleValid__FUi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "73648",
+     "metadata": {
+      "virtual_address": "73648"
+     }
+    },
+    {
+     "name": "SNDSTREAM_SetMaxMusicVolume__Ff",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "75448",
+     "metadata": {
+      "virtual_address": "75448"
      }
     },
     {
@@ -3499,6 +3769,33 @@
      }
     },
     {
+     "name": "GetNumMesh__C11AglTopology",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "925120",
+     "metadata": {
+      "virtual_address": "925120"
+     }
+    },
+    {
+     "name": "GetNameHash__C11AglTopology",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "925128",
+     "metadata": {
+      "virtual_address": "925128"
+     }
+    },
+    {
+     "name": "GetBSphere__C11AglTopology",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "925136",
+     "metadata": {
+      "virtual_address": "925136"
+     }
+    },
+    {
      "name": "TEXMGR_GetWidth__FP10AglTexture",
      "size": "8",
      "fuzzy_match_percent": 100.0,
@@ -3523,6 +3820,114 @@
      "address": "925272",
      "metadata": {
       "virtual_address": "925272"
+     }
+    },
+    {
+     "name": "GetSortID__C14AglTextureBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "925280",
+     "metadata": {
+      "virtual_address": "925280"
+     }
+    },
+    {
+     "name": "GetWrapModeU__C14AglTextureBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "925288",
+     "metadata": {
+      "virtual_address": "925288"
+     }
+    },
+    {
+     "name": "GetWrapModeV__C14AglTextureBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "925296",
+     "metadata": {
+      "virtual_address": "925296"
+     }
+    },
+    {
+     "name": "GetAgxTexture__14AglTextureBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "925304",
+     "metadata": {
+      "virtual_address": "925304"
+     }
+    },
+    {
+     "name": "GetSurface__C14AglTextureBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "925312",
+     "metadata": {
+      "virtual_address": "925312"
+     }
+    },
+    {
+     "name": "SetShader__15AglMaterialBaseP16AglShaderProfile",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "926432",
+     "metadata": {
+      "virtual_address": "926432"
+     }
+    },
+    {
+     "name": "GetRenderState__15AglMaterialBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "926440",
+     "metadata": {
+      "virtual_address": "926440"
+     }
+    },
+    {
+     "name": "GetAnimData__15AglMaterialBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "926456",
+     "metadata": {
+      "virtual_address": "926456"
+     }
+    },
+    {
+     "name": "GetNameHash__15AglMaterialBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "926464",
+     "metadata": {
+      "virtual_address": "926464"
+     }
+    },
+    {
+     "name": "GetNumTexture__C15AglMaterialBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "926576",
+     "metadata": {
+      "virtual_address": "926576"
+     }
+    },
+    {
+     "name": "GetSpecularColor__C15AglMaterialBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "926672",
+     "metadata": {
+      "virtual_address": "926672"
+     }
+    },
+    {
+     "name": "SetSpecularPower__15AglMaterialBasef",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "926680",
+     "metadata": {
+      "virtual_address": "926680"
      }
     },
     {
@@ -21682,13 +22087,13 @@
   {
    "name": "levels/level3_prison",
    "measures": {
-    "fuzzy_match_percent": 0.09511947253618877,
+    "fuzzy_match_percent": 0.1020907693833036,
     "total_code": "2582016",
-    "matched_code": "2456",
-    "matched_code_percent": 0.09511947253618877,
-    "total_functions": 86,
-    "matched_functions": 85,
-    "matched_functions_percent": 98.83720930232558,
+    "matched_code": "2636",
+    "matched_code_percent": 0.1020907693833036,
+    "total_functions": 101,
+    "matched_functions": 100,
+    "matched_functions_percent": 99.00990099009901,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -21718,6 +22123,141 @@
      "address": "16344",
      "metadata": {
       "virtual_address": "16344"
+     }
+    },
+    {
+     "name": "SetLogging__13TiXmlDocumentb_LEVEL3_00005918",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "22808",
+     "metadata": {
+      "virtual_address": "22808"
+     }
+    },
+    {
+     "name": "GetLogging__13TiXmlDocument_LEVEL3_00005928",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "22824",
+     "metadata": {
+      "virtual_address": "22824"
+     }
+    },
+    {
+     "name": "CAMERA_SetDisplaySystem__F14CameraSystemID_LEVEL3_0000A0E0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41184",
+     "metadata": {
+      "virtual_address": "41184"
+     }
+    },
+    {
+     "name": "CAMERA_GetNearDepth__Fv_LEVEL3_0000A140",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41280",
+     "metadata": {
+      "virtual_address": "41280"
+     }
+    },
+    {
+     "name": "CAMERA_GetFarDepth__Fv_LEVEL3_0000A150",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41296",
+     "metadata": {
+      "virtual_address": "41296"
+     }
+    },
+    {
+     "name": "CAMERA_GetFov__Fv_LEVEL3_0000A2E0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41696",
+     "metadata": {
+      "virtual_address": "41696"
+     }
+    },
+    {
+     "name": "CAMERA_GetThisFrameLastUpdatedFov__Fv_LEVEL3_0000A308",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41736",
+     "metadata": {
+      "virtual_address": "41736"
+     }
+    },
+    {
+     "name": "CAMERA_GetFovX__Fv_LEVEL3_0000A360",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41824",
+     "metadata": {
+      "virtual_address": "41824"
+     }
+    },
+    {
+     "name": "CAMERA_SetFovY__Ff_LEVEL3_0000A490",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "42128",
+     "metadata": {
+      "virtual_address": "42128"
+     }
+    },
+    {
+     "name": "CAMERA_GetCosHalfFovX__Fv_LEVEL3_0000A4A0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "42144",
+     "metadata": {
+      "virtual_address": "42144"
+     }
+    },
+    {
+     "name": "CAMERA_GetSinHalfFovX__Fv_LEVEL3_0000A4B0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "42160",
+     "metadata": {
+      "virtual_address": "42160"
+     }
+    },
+    {
+     "name": "CAMDRIVER_GetTargetPos__Fv_LEVEL3_0000C230",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "49712",
+     "metadata": {
+      "virtual_address": "49712"
+     }
+    },
+    {
+     "name": "CAMDRIVER_GetWorldMatrix__Fv_LEVEL3_0000C338",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "49976",
+     "metadata": {
+      "virtual_address": "49976"
+     }
+    },
+    {
+     "name": "CAMDRIVER_GetBasisMatrix__Fv_LEVEL3_0000C348",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "49992",
+     "metadata": {
+      "virtual_address": "49992"
+     }
+    },
+    {
+     "name": "CAMDRIVER_GetHeight__Fv_LEVEL3_0000C980",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "51584",
+     "metadata": {
+      "virtual_address": "51584"
      }
     },
     {
@@ -27778,13 +28318,13 @@
    "id": "boot",
    "name": "Boot Executable",
    "measures": {
-    "fuzzy_match_percent": 2.0266325822052074,
+    "fuzzy_match_percent": 2.0530562332163727,
     "total_code": "650932",
-    "matched_code": "13192",
-    "matched_code_percent": 2.0266325822052074,
-    "total_functions": 236,
-    "matched_functions": 235,
-    "matched_functions_percent": 99.57627118644068,
+    "matched_code": "13364",
+    "matched_code_percent": 2.0530562332163727,
+    "total_functions": 251,
+    "matched_functions": 250,
+    "matched_functions_percent": 99.60159362549801,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -27793,13 +28333,13 @@
    "id": "level_code",
    "name": "Level Modules (Combined Placements)",
    "measures": {
-    "fuzzy_match_percent": 0.11697162147225702,
+    "fuzzy_match_percent": 0.11766243276103455,
     "total_code": "69483520",
-    "matched_code": "81276",
-    "matched_code_percent": 0.11697162147225702,
-    "total_functions": 2795,
-    "matched_functions": 2764,
-    "matched_functions_percent": 98.89087656529517,
+    "matched_code": "81756",
+    "matched_code_percent": 0.11766243276103455,
+    "total_functions": 2840,
+    "matched_functions": 2809,
+    "matched_functions_percent": 98.90845070422536,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -27808,13 +28348,13 @@
    "id": "fe_frontend",
    "name": "Frontend (FE.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.5830891927083334,
+    "fuzzy_match_percent": 0.6136067708333334,
     "total_code": "983040",
-    "matched_code": "5732",
-    "matched_code_percent": 0.5830891927083334,
-    "total_functions": 161,
-    "matched_functions": 160,
-    "matched_functions_percent": 99.37888198757764,
+    "matched_code": "6032",
+    "matched_code_percent": 0.6136067708333334,
+    "total_functions": 191,
+    "matched_functions": 190,
+    "matched_functions_percent": 99.47643979057591,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -28138,13 +28678,13 @@
    "id": "level3_prison",
    "name": "Level 3: Prison Cells (LEVEL3.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.09511947253618877,
+    "fuzzy_match_percent": 0.1020907693833036,
     "total_code": "2582016",
-    "matched_code": "2456",
-    "matched_code_percent": 0.09511947253618877,
-    "total_functions": 86,
-    "matched_functions": 85,
-    "matched_functions_percent": 98.83720930232558,
+    "matched_code": "2636",
+    "matched_code_percent": 0.1020907693833036,
+    "total_functions": 101,
+    "matched_functions": 100,
+    "matched_functions_percent": 99.00990099009901,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
