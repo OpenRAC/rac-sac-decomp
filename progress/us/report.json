@@ -1,13 +1,13 @@
 {
  "version": 2,
  "measures": {
-  "fuzzy_match_percent": 0.5002307743027319,
+  "fuzzy_match_percent": 0.5108903492384448,
   "total_code": "7279840",
-  "matched_code": "36416",
-  "matched_code_percent": 0.5002307743027319,
-  "total_functions": 451,
-  "matched_functions": 419,
-  "matched_functions_percent": 92.90465631929047,
+  "matched_code": "37192",
+  "matched_code_percent": 0.5108903492384448,
+  "total_functions": 463,
+  "matched_functions": 431,
+  "matched_functions_percent": 93.08855291576674,
   "complete_code": "0",
   "complete_code_percent": 0.0,
   "total_units": 32,
@@ -1894,13 +1894,13 @@
   {
    "name": "levels/fe_frontend",
    "measures": {
-    "fuzzy_match_percent": 0.4813639322916667,
+    "fuzzy_match_percent": 0.506591796875,
     "total_code": "983040",
-    "matched_code": "4732",
-    "matched_code_percent": 0.4813639322916667,
-    "total_functions": 98,
-    "matched_functions": 97,
-    "matched_functions_percent": 98.9795918367347,
+    "matched_code": "4980",
+    "matched_code_percent": 0.506591796875,
+    "total_functions": 100,
+    "matched_functions": 99,
+    "matched_functions_percent": 99.0,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -2047,6 +2047,15 @@
      "address": "38296",
      "metadata": {
       "virtual_address": "38296"
+     }
+    },
+    {
+     "name": "GLOBALVARS_GetReplayCount__Fv_FE_00009960",
+     "size": "48",
+     "fuzzy_match_percent": 100.0,
+     "address": "39264",
+     "metadata": {
+      "virtual_address": "39264"
      }
     },
     {
@@ -2326,6 +2335,15 @@
      "address": "267184",
      "metadata": {
       "virtual_address": "267184"
+     }
+    },
+    {
+     "name": "Quat_Pack__FPC4QUAT",
+     "size": "200",
+     "fuzzy_match_percent": 100.0,
+     "address": "348088",
+     "metadata": {
+      "virtual_address": "348088"
      }
     },
     {
@@ -2791,13 +2809,13 @@
   {
    "name": "levels/level1_museum",
    "measures": {
-    "fuzzy_match_percent": 0.24255265531327921,
+    "fuzzy_match_percent": 0.24454215077722957,
     "total_code": "2412672",
-    "matched_code": "5852",
-    "matched_code_percent": 0.24255265531327921,
-    "total_functions": 119,
-    "matched_functions": 118,
-    "matched_functions_percent": 99.15966386554622,
+    "matched_code": "5900",
+    "matched_code_percent": 0.24454215077722957,
+    "total_functions": 120,
+    "matched_functions": 119,
+    "matched_functions_percent": 99.16666666666667,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -3052,6 +3070,15 @@
      "address": "224944",
      "metadata": {
       "virtual_address": "224944"
+     }
+    },
+    {
+     "name": "GLOBALVARS_GetReplayCount__Fv_LEVEL1_00037210",
+     "size": "48",
+     "fuzzy_match_percent": 100.0,
+     "address": "225808",
+     "metadata": {
+      "virtual_address": "225808"
      }
     },
     {
@@ -4990,13 +5017,13 @@
   {
    "name": "levels/level11_gondola",
    "measures": {
-    "fuzzy_match_percent": 0.19142395233973217,
+    "fuzzy_match_percent": 0.19428815112785783,
     "total_code": "2513792",
-    "matched_code": "4812",
-    "matched_code_percent": 0.19142395233973217,
-    "total_functions": 116,
-    "matched_functions": 115,
-    "matched_functions_percent": 99.13793103448276,
+    "matched_code": "4884",
+    "matched_code_percent": 0.19428815112785783,
+    "total_functions": 118,
+    "matched_functions": 117,
+    "matched_functions_percent": 99.15254237288136,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -5956,6 +5983,15 @@
      }
     },
     {
+     "name": "AddSibling__14ApeAnimChannelP14ApeAnimChannel",
+     "size": "36",
+     "fuzzy_match_percent": 100.0,
+     "address": "2478264",
+     "metadata": {
+      "virtual_address": "2478264"
+     }
+    },
+    {
      "name": "ICONMENU_SetNumberVisibleIconSlots__FP9tICONMENUUi",
      "size": "8",
      "fuzzy_match_percent": 100.0,
@@ -5971,6 +6007,15 @@
      "address": "2479184",
      "metadata": {
       "virtual_address": "2479184"
+     }
+    },
+    {
+     "name": "AddModifierNode__17ApeAnimCompositorP15ApeAnimTreeNode",
+     "size": "36",
+     "fuzzy_match_percent": 100.0,
+     "address": "2481512",
+     "metadata": {
+      "virtual_address": "2481512"
      }
     },
     {
@@ -6049,13 +6094,13 @@
   {
    "name": "levels/level13_casino",
    "measures": {
-    "fuzzy_match_percent": 0.2448187934027778,
+    "fuzzy_match_percent": 0.2705891927083333,
     "total_code": "2359296",
-    "matched_code": "5776",
-    "matched_code_percent": 0.2448187934027778,
-    "total_functions": 129,
-    "matched_functions": 128,
-    "matched_functions_percent": 99.2248062015504,
+    "matched_code": "6384",
+    "matched_code_percent": 0.2705891927083333,
+    "total_functions": 137,
+    "matched_functions": 136,
+    "matched_functions_percent": 99.27007299270073,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -6403,6 +6448,15 @@
      }
     },
     {
+     "name": "ALPHASORT_AddBatch__FPC7MATRIX4P19GDE_PSP_ALPHA_CHUNK",
+     "size": "48",
+     "fuzzy_match_percent": 100.0,
+     "address": "303560",
+     "metadata": {
+      "virtual_address": "303560"
+     }
+    },
+    {
      "name": "ANIM_SetInstanceAnimation__FP13GDE_AnimationP13ANIM_Instance",
      "size": "8",
      "fuzzy_match_percent": 100.0,
@@ -6535,6 +6589,15 @@
      "address": "423800",
      "metadata": {
       "virtual_address": "423800"
+     }
+    },
+    {
+     "name": "CorrectEndianVoid__FPv",
+     "size": "32",
+     "fuzzy_match_percent": 100.0,
+     "address": "464240",
+     "metadata": {
+      "virtual_address": "464240"
      }
     },
     {
@@ -6727,6 +6790,15 @@
      }
     },
     {
+     "name": "Waitress_GetExtraContentSize__Fv",
+     "size": "92",
+     "fuzzy_match_percent": 100.0,
+     "address": "1094744",
+     "metadata": {
+      "virtual_address": "1094744"
+     }
+    },
+    {
      "name": "SetCompositor__20APEGDE_BoneComponentP17ApeAnimCompositor",
      "size": "8",
      "fuzzy_match_percent": 100.0,
@@ -6754,6 +6826,42 @@
      }
     },
     {
+     "name": "COL_IntersectCapsuleWithMesh__FPfT0P4VEC3PC4VEC3T3ffPC13CollisionMeshPC7MATRIX4T2_LEVEL13_001855F0",
+     "size": "88",
+     "fuzzy_match_percent": 100.0,
+     "address": "1594864",
+     "metadata": {
+      "virtual_address": "1594864"
+     }
+    },
+    {
+     "name": "COL_IntersectCapsuleWithMesh__FPfT0P4VEC3PC4VEC3T3ffPC13CollisionMeshPC8MATRIX43T2_LEVEL13_00185978",
+     "size": "88",
+     "fuzzy_match_percent": 100.0,
+     "address": "1595768",
+     "metadata": {
+      "virtual_address": "1595768"
+     }
+    },
+    {
+     "name": "COL_IntersectSweptSphereWithMesh__FPfP4VEC3P17PackedSurfaceInfoPC4VEC3T3ffPC13CollisionMeshPC7MATRIX4T1_LEVEL13_00185DB0",
+     "size": "88",
+     "fuzzy_match_percent": 100.0,
+     "address": "1596848",
+     "metadata": {
+      "virtual_address": "1596848"
+     }
+    },
+    {
+     "name": "COL_IntersectSweptSphereWithMesh__FPfP4VEC3P17PackedSurfaceInfoPC4VEC3T3ffPC13CollisionMeshPC8MATRIX43T1_LEVEL13_00186118",
+     "size": "88",
+     "fuzzy_match_percent": 100.0,
+     "address": "1597720",
+     "metadata": {
+      "virtual_address": "1597720"
+     }
+    },
+    {
      "name": "CB_ARRAY_Init__FP14tCB_ARRAY_DATA",
      "size": "32",
      "fuzzy_match_percent": 100.0,
@@ -6769,6 +6877,15 @@
      "address": "1763656",
      "metadata": {
       "virtual_address": "1763656"
+     }
+    },
+    {
+     "name": "__do_global_dtors_LEVEL13_001B26D8",
+     "size": "84",
+     "fuzzy_match_percent": 100.0,
+     "address": "1779416",
+     "metadata": {
+      "virtual_address": "1779416"
      }
     },
     {
@@ -26560,13 +26677,13 @@
    "id": "level_code",
    "name": "Level Modules (Combined Placements)",
    "measures": {
-    "fuzzy_match_percent": 0.11248134809520301,
+    "fuzzy_match_percent": 0.11388599771571734,
     "total_code": "69483520",
-    "matched_code": "78156",
-    "matched_code_percent": 0.11248134809520301,
-    "total_functions": 2687,
-    "matched_functions": 2656,
-    "matched_functions_percent": 98.84629698548567,
+    "matched_code": "79132",
+    "matched_code_percent": 0.11388599771571734,
+    "total_functions": 2700,
+    "matched_functions": 2669,
+    "matched_functions_percent": 98.85185185185185,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -26575,13 +26692,13 @@
    "id": "fe_frontend",
    "name": "Frontend (FE.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.4813639322916667,
+    "fuzzy_match_percent": 0.506591796875,
     "total_code": "983040",
-    "matched_code": "4732",
-    "matched_code_percent": 0.4813639322916667,
-    "total_functions": 98,
-    "matched_functions": 97,
-    "matched_functions_percent": 98.9795918367347,
+    "matched_code": "4980",
+    "matched_code_percent": 0.506591796875,
+    "total_functions": 100,
+    "matched_functions": 99,
+    "matched_functions_percent": 99.0,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -26590,13 +26707,13 @@
    "id": "level1_museum",
    "name": "Level 1: Boltaire Museum (LEVEL1.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.24255265531327921,
+    "fuzzy_match_percent": 0.24454215077722957,
     "total_code": "2412672",
-    "matched_code": "5852",
-    "matched_code_percent": 0.24255265531327921,
-    "total_functions": 119,
-    "matched_functions": 118,
-    "matched_functions_percent": 99.15966386554622,
+    "matched_code": "5900",
+    "matched_code_percent": 0.24454215077722957,
+    "total_functions": 120,
+    "matched_functions": 119,
+    "matched_functions_percent": 99.16666666666667,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -26620,13 +26737,13 @@
    "id": "level11_gondola",
    "name": "Level 11: Rionosis Gondola (LEVEL11.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.19142395233973217,
+    "fuzzy_match_percent": 0.19428815112785783,
     "total_code": "2513792",
-    "matched_code": "4812",
-    "matched_code_percent": 0.19142395233973217,
-    "total_functions": 116,
-    "matched_functions": 115,
-    "matched_functions_percent": 99.13793103448276,
+    "matched_code": "4884",
+    "matched_code_percent": 0.19428815112785783,
+    "total_functions": 118,
+    "matched_functions": 117,
+    "matched_functions_percent": 99.15254237288136,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -26635,13 +26752,13 @@
    "id": "level13_casino",
    "name": "Level 13: Le Paradis Casino (LEVEL13.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.2448187934027778,
+    "fuzzy_match_percent": 0.2705891927083333,
     "total_code": "2359296",
-    "matched_code": "5776",
-    "matched_code_percent": 0.2448187934027778,
-    "total_functions": 129,
-    "matched_functions": 128,
-    "matched_functions_percent": 99.2248062015504,
+    "matched_code": "6384",
+    "matched_code_percent": 0.2705891927083333,
+    "total_functions": 137,
+    "matched_functions": 136,
+    "matched_functions_percent": 99.27007299270073,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
