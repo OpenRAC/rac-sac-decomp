@@ -1,13 +1,13 @@
 {
  "version": 2,
  "measures": {
-  "fuzzy_match_percent": 0.567869623508209,
+  "fuzzy_match_percent": 0.5681993010835403,
   "total_code": "7279840",
-  "matched_code": "41340",
-  "matched_code_percent": 0.567869623508209,
-  "total_functions": 700,
-  "matched_functions": 668,
-  "matched_functions_percent": 95.42857142857143,
+  "matched_code": "41364",
+  "matched_code_percent": 0.5681993010835403,
+  "total_functions": 702,
+  "matched_functions": 670,
+  "matched_functions_percent": 95.44159544159544,
   "complete_code": "0",
   "complete_code_percent": 0.0,
   "total_units": 32,
@@ -2425,13 +2425,13 @@
   {
    "name": "levels/fe_frontend",
    "measures": {
-    "fuzzy_match_percent": 0.6416829427083334,
+    "fuzzy_match_percent": 0.6441243489583334,
     "total_code": "983040",
-    "matched_code": "6308",
-    "matched_code_percent": 0.6416829427083334,
-    "total_functions": 219,
-    "matched_functions": 218,
-    "matched_functions_percent": 99.54337899543378,
+    "matched_code": "6332",
+    "matched_code_percent": 0.6441243489583334,
+    "total_functions": 221,
+    "matched_functions": 220,
+    "matched_functions_percent": 99.5475113122172,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -3202,6 +3202,15 @@
      }
     },
     {
+     "name": "SetLogicsError__14MemCardManagerPCc",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "157896",
+     "metadata": {
+      "virtual_address": "157896"
+     }
+    },
+    {
      "name": "CreateFileNameWithCurrentPath__14MemCardManagerPCcT1Pci",
      "size": "64",
      "fuzzy_match_percent": 100.0,
@@ -3280,6 +3289,15 @@
      "address": "161752",
      "metadata": {
       "virtual_address": "161752"
+     }
+    },
+    {
+     "name": "FADEOVERLAYOBJ_HideNow__FP12tFADEOVERLAY",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "161768",
+     "metadata": {
+      "virtual_address": "161768"
      }
     },
     {
@@ -28855,13 +28873,13 @@
    "id": "level_code",
    "name": "Level Modules (Combined Placements)",
    "measures": {
-    "fuzzy_match_percent": 0.11831870348537323,
+    "fuzzy_match_percent": 0.1183532440498121,
     "total_code": "69483520",
-    "matched_code": "82212",
-    "matched_code_percent": 0.11831870348537323,
-    "total_functions": 2883,
-    "matched_functions": 2852,
-    "matched_functions_percent": 98.9247311827957,
+    "matched_code": "82236",
+    "matched_code_percent": 0.1183532440498121,
+    "total_functions": 2885,
+    "matched_functions": 2854,
+    "matched_functions_percent": 98.92547660311958,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -28870,13 +28888,13 @@
    "id": "fe_frontend",
    "name": "Frontend (FE.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.6416829427083334,
+    "fuzzy_match_percent": 0.6441243489583334,
     "total_code": "983040",
-    "matched_code": "6308",
-    "matched_code_percent": 0.6416829427083334,
-    "total_functions": 219,
-    "matched_functions": 218,
-    "matched_functions_percent": 99.54337899543378,
+    "matched_code": "6332",
+    "matched_code_percent": 0.6441243489583334,
+    "total_functions": 221,
+    "matched_functions": 220,
+    "matched_functions_percent": 99.5475113122172,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }

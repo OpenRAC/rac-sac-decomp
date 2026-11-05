@@ -89,6 +89,7 @@ FE.REL	0x01F3C8	8	src/levels/bodies/TEXMGR_GetWidth__FP10AglTexture.c
 FE.REL	0x01F3D0	8	src/levels/bodies/TEXMGR_GetHeight__FP10AglTexture.c
 FE.REL	0x01F3D8	64	src/levels/bodies/TEXMGR_GetPtrToBitmapData__FUi.c
 FE.REL	0x01FEB8	44	src/levels/bodies/MemCardMgrUpdate__14MemCardManager_FE_0001FEB8.c
+FE.REL	0x0268C8	12	src/levels/bodies/SetLogicsError__14MemCardManagerPCc.c
 FE.REL	0x026F18	64	src/levels/bodies/CreateFileNameWithCurrentPath__14MemCardManagerPCcT1Pci.c
 FE.REL	0x026F58	8	src/levels/bodies/GetTotalOfClusterUseForSave__14MemCardManager.c
 FE.REL	0x0274B0	64	src/levels/bodies/FADEOVERLAY_Refresh__FUiUcUcUcb.c
@@ -98,6 +99,7 @@ FE.REL	0x027608	32	src/levels/bodies/FADEOVERLAY_Update__Fv.c
 FE.REL	0x027628	32	src/levels/bodies/FADEOVERLAY_Render__Fv.c
 FE.REL	0x027708	32	src/levels/bodies/FADEOVERLAY_Pause_Update__Fv.c
 FE.REL	0x0277D8	12	src/levels/bodies/FADEOVERLAYOBJ_IsIdle__FP12tFADEOVERLAY.c
+FE.REL	0x0277E8	12	src/levels/bodies/FADEOVERLAYOBJ_HideNow__FP12tFADEOVERLAY.c
 FE.REL	0x027960	12	src/levels/bodies/HUD_DefaultTextScales__Fv.c
 FE.REL	0x028A78	12	src/levels/bodies/HUD_SetColorTargetColor__FUi.c
 FE.REL	0x028AA8	12	src/levels/bodies/HUD_SetUseEncodedTextColorTo__Fb.c
