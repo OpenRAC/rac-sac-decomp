@@ -1,13 +1,13 @@
 {
  "version": 2,
  "measures": {
-  "fuzzy_match_percent": 0.5591331677619288,
+  "fuzzy_match_percent": 0.567869623508209,
   "total_code": "7279840",
-  "matched_code": "40704",
-  "matched_code_percent": 0.5591331677619288,
-  "total_functions": 642,
-  "matched_functions": 610,
-  "matched_functions_percent": 95.01557632398755,
+  "matched_code": "41340",
+  "matched_code_percent": 0.567869623508209,
+  "total_functions": 700,
+  "matched_functions": 668,
+  "matched_functions_percent": 95.42857142857143,
   "complete_code": "0",
   "complete_code_percent": 0.0,
   "total_units": 32,
@@ -17,13 +17,13 @@
   {
    "name": "boot/executable",
    "measures": {
-    "fuzzy_match_percent": 2.0530562332163727,
+    "fuzzy_match_percent": 2.0807088912513136,
     "total_code": "650932",
-    "matched_code": "13364",
-    "matched_code_percent": 2.0530562332163727,
-    "total_functions": 251,
-    "matched_functions": 250,
-    "matched_functions_percent": 99.60159362549801,
+    "matched_code": "13544",
+    "matched_code_percent": 2.0807088912513136,
+    "total_functions": 266,
+    "matched_functions": 265,
+    "matched_functions_percent": 99.62406015037594,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -1874,6 +1874,33 @@
      }
     },
     {
+     "name": "func_00152F60",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "339808",
+     "metadata": {
+      "virtual_address": "1388384"
+     }
+    },
+    {
+     "name": "func_00153050",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "340048",
+     "metadata": {
+      "virtual_address": "1388624"
+     }
+    },
+    {
+     "name": "func_00153080",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "340096",
+     "metadata": {
+      "virtual_address": "1388672"
+     }
+    },
+    {
      "name": "func_0015BB80",
      "size": "128",
      "fuzzy_match_percent": 100.0,
@@ -1898,6 +1925,15 @@
      "address": "376256",
      "metadata": {
       "virtual_address": "1424832"
+     }
+    },
+    {
+     "name": "func_0015BDE0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "376288",
+     "metadata": {
+      "virtual_address": "1424864"
      }
     },
     {
@@ -2072,6 +2108,24 @@
      }
     },
     {
+     "name": "func_0015C7F0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "378864",
+     "metadata": {
+      "virtual_address": "1427440"
+     }
+    },
+    {
+     "name": "func_0015CDC0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "380352",
+     "metadata": {
+      "virtual_address": "1428928"
+     }
+    },
+    {
      "name": "func_0015D488",
      "size": "128",
      "fuzzy_match_percent": 100.0,
@@ -2099,6 +2153,33 @@
      }
     },
     {
+     "name": "func_001624D0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "402640",
+     "metadata": {
+      "virtual_address": "1451216"
+     }
+    },
+    {
+     "name": "func_001670E0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "422112",
+     "metadata": {
+      "virtual_address": "1470688"
+     }
+    },
+    {
+     "name": "func_00168CE8",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "429288",
+     "metadata": {
+      "virtual_address": "1477864"
+     }
+    },
+    {
      "name": "func_00168D80",
      "size": "8",
      "fuzzy_match_percent": 100.0,
@@ -2114,6 +2195,15 @@
      "address": "437024",
      "metadata": {
       "virtual_address": "1485600"
+     }
+    },
+    {
+     "name": "func_0016C1B0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "442800",
+     "metadata": {
+      "virtual_address": "1491376"
      }
     },
     {
@@ -2141,6 +2231,15 @@
      "address": "455248",
      "metadata": {
       "virtual_address": "1503824"
+     }
+    },
+    {
+     "name": "func_00170E48",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "462408",
+     "metadata": {
+      "virtual_address": "1510984"
      }
     },
     {
@@ -2243,6 +2342,42 @@
      }
     },
     {
+     "name": "func_00172A00",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "469504",
+     "metadata": {
+      "virtual_address": "1518080"
+     }
+    },
+    {
+     "name": "func_00172C40",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "470080",
+     "metadata": {
+      "virtual_address": "1518656"
+     }
+    },
+    {
+     "name": "func_001761A0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "483744",
+     "metadata": {
+      "virtual_address": "1532320"
+     }
+    },
+    {
+     "name": "func_00176348",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "484168",
+     "metadata": {
+      "virtual_address": "1532744"
+     }
+    },
+    {
      "name": "func_00181E88",
      "size": "128",
      "fuzzy_match_percent": 100.0,
@@ -2290,13 +2425,13 @@
   {
    "name": "levels/fe_frontend",
    "measures": {
-    "fuzzy_match_percent": 0.6136067708333334,
+    "fuzzy_match_percent": 0.6416829427083334,
     "total_code": "983040",
-    "matched_code": "6032",
-    "matched_code_percent": 0.6136067708333334,
-    "total_functions": 191,
-    "matched_functions": 190,
-    "matched_functions_percent": 99.47643979057591,
+    "matched_code": "6308",
+    "matched_code_percent": 0.6416829427083334,
+    "total_functions": 219,
+    "matched_functions": 218,
+    "matched_functions_percent": 99.54337899543378,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
@@ -2986,12 +3121,48 @@
      }
     },
     {
+     "name": "SNDSTREAM_Open__FPCc",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "75528",
+     "metadata": {
+      "virtual_address": "75528"
+     }
+    },
+    {
      "name": "LLSOUND_SetSoundAssetInvalid__FR18SOUND_ASSET_HANDLE",
      "size": "8",
      "fuzzy_match_percent": 100.0,
      "address": "77256",
      "metadata": {
       "virtual_address": "77256"
+     }
+    },
+    {
+     "name": "IsTextureHandleValid__14DrawObjManagerUi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "118576",
+     "metadata": {
+      "virtual_address": "118576"
+     }
+    },
+    {
+     "name": "TEXMGR_SetCurrent__FUi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "127728",
+     "metadata": {
+      "virtual_address": "127728"
+     }
+    },
+    {
+     "name": "TEXMGR_GetCurrent__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "127744",
+     "metadata": {
+      "virtual_address": "127744"
      }
     },
     {
@@ -3103,6 +3274,51 @@
      }
     },
     {
+     "name": "FADEOVERLAYOBJ_IsIdle__FP12tFADEOVERLAY",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "161752",
+     "metadata": {
+      "virtual_address": "161752"
+     }
+    },
+    {
+     "name": "HUD_DefaultTextScales__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "162144",
+     "metadata": {
+      "virtual_address": "162144"
+     }
+    },
+    {
+     "name": "HUD_SetColorTargetColor__FUi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "166520",
+     "metadata": {
+      "virtual_address": "166520"
+     }
+    },
+    {
+     "name": "HUD_SetUseEncodedTextColorTo__Fb",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "166568",
+     "metadata": {
+      "virtual_address": "166568"
+     }
+    },
+    {
+     "name": "HUD_GetUseEncodedTextColorStatus__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "166584",
+     "metadata": {
+      "virtual_address": "166584"
+     }
+    },
+    {
      "name": "HUD_FontPrintWindowInitAutoScroll__FP20tFontPrintWindowData",
      "size": "32",
      "fuzzy_match_percent": 100.0,
@@ -3181,6 +3397,42 @@
      "address": "217808",
      "metadata": {
       "virtual_address": "217808"
+     }
+    },
+    {
+     "name": "PAUSEMENU_SetCurrentWidgetId__FP10tPAUSEMENUUi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "218752",
+     "metadata": {
+      "virtual_address": "218752"
+     }
+    },
+    {
+     "name": "PAUSEMENU_IndividualItemHeight__FP10tPAUSEMENU",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "219408",
+     "metadata": {
+      "virtual_address": "219408"
+     }
+    },
+    {
+     "name": "PAUSEMENU_SetSelectedOverlayItemColor__FP10tPAUSEMENUUi",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "219792",
+     "metadata": {
+      "virtual_address": "219792"
+     }
+    },
+    {
+     "name": "PAUSEMODE_InStackMode__Fv",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "225480",
+     "metadata": {
+      "virtual_address": "225480"
      }
     },
     {
@@ -3928,6 +4180,141 @@
      "address": "926680",
      "metadata": {
       "virtual_address": "926680"
+     }
+    },
+    {
+     "name": "GetSpecularPower__C15AglMaterialBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "926688",
+     "metadata": {
+      "virtual_address": "926688"
+     }
+    },
+    {
+     "name": "SetSortID__15AglMaterialBaseUi",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "926912",
+     "metadata": {
+      "virtual_address": "926912"
+     }
+    },
+    {
+     "name": "SetSortLayer__15AglMaterialBase13AglESortLayer",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "926968",
+     "metadata": {
+      "virtual_address": "926968"
+     }
+    },
+    {
+     "name": "GetName__C14AglIRenderList",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "928000",
+     "metadata": {
+      "virtual_address": "928000"
+     }
+    },
+    {
+     "name": "SetIntensity__21AglStencilShadowsBasef",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "928816",
+     "metadata": {
+      "virtual_address": "928816"
+     }
+    },
+    {
+     "name": "SetUseZPass__21AglStencilShadowsBaseb",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "928944",
+     "metadata": {
+      "virtual_address": "928944"
+     }
+    },
+    {
+     "name": "GetUseZPass__C21AglStencilShadowsBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "928952",
+     "metadata": {
+      "virtual_address": "928952"
+     }
+    },
+    {
+     "name": "BlendOnFrameBufferLast__19AglPostProcMaskBaseb",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "936208",
+     "metadata": {
+      "virtual_address": "936208"
+     }
+    },
+    {
+     "name": "Resume__25AglPostProcScreenWarpBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "936312",
+     "metadata": {
+      "virtual_address": "936312"
+     }
+    },
+    {
+     "name": "GetPause__C25AglPostProcScreenWarpBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "936320",
+     "metadata": {
+      "virtual_address": "936320"
+     }
+    },
+    {
+     "name": "UseIndirectTexturing__25AglPostProcScreenWarpBaseb",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "936328",
+     "metadata": {
+      "virtual_address": "936328"
+     }
+    },
+    {
+     "name": "GetSurface__19AglRenderTargetBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "936888",
+     "metadata": {
+      "virtual_address": "936888"
+     }
+    },
+    {
+     "name": "GetOverrideShader__19AglRenderTargetBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "936936",
+     "metadata": {
+      "virtual_address": "936936"
+     }
+    },
+    {
+     "name": "SetOverrideShader__19AglRenderTargetBaseP9AglShader",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "936944",
+     "metadata": {
+      "virtual_address": "936944"
+     }
+    },
+    {
+     "name": "GetType__C19AglRenderTargetBase",
+     "size": "8",
+     "fuzzy_match_percent": 100.0,
+     "address": "936992",
+     "metadata": {
+      "virtual_address": "936992"
      }
     },
     {
@@ -24973,17 +25360,152 @@
   {
    "name": "levels/level4_skyscrapers",
    "measures": {
-    "fuzzy_match_percent": 0.06376262626262626,
+    "fuzzy_match_percent": 0.07086489898989899,
     "total_code": "2534400",
-    "matched_code": "1616",
-    "matched_code_percent": 0.06376262626262626,
-    "total_functions": 84,
-    "matched_functions": 83,
-    "matched_functions_percent": 98.80952380952381,
+    "matched_code": "1796",
+    "matched_code_percent": 0.07086489898989899,
+    "total_functions": 99,
+    "matched_functions": 98,
+    "matched_functions_percent": 98.98989898989899,
     "complete_code": "0",
     "complete_code_percent": 0.0
    },
    "functions": [
+    {
+     "name": "SetLogging__13TiXmlDocumentb_LEVEL4_00005918",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "22808",
+     "metadata": {
+      "virtual_address": "22808"
+     }
+    },
+    {
+     "name": "GetLogging__13TiXmlDocument_LEVEL4_00005928",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "22824",
+     "metadata": {
+      "virtual_address": "22824"
+     }
+    },
+    {
+     "name": "CAMERA_SetDisplaySystem__F14CameraSystemID_LEVEL4_0000A0E0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41184",
+     "metadata": {
+      "virtual_address": "41184"
+     }
+    },
+    {
+     "name": "CAMERA_GetNearDepth__Fv_LEVEL4_0000A140",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41280",
+     "metadata": {
+      "virtual_address": "41280"
+     }
+    },
+    {
+     "name": "CAMERA_GetFarDepth__Fv_LEVEL4_0000A150",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41296",
+     "metadata": {
+      "virtual_address": "41296"
+     }
+    },
+    {
+     "name": "CAMERA_GetFov__Fv_LEVEL4_0000A2E0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41696",
+     "metadata": {
+      "virtual_address": "41696"
+     }
+    },
+    {
+     "name": "CAMERA_GetThisFrameLastUpdatedFov__Fv_LEVEL4_0000A308",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41736",
+     "metadata": {
+      "virtual_address": "41736"
+     }
+    },
+    {
+     "name": "CAMERA_GetFovX__Fv_LEVEL4_0000A360",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "41824",
+     "metadata": {
+      "virtual_address": "41824"
+     }
+    },
+    {
+     "name": "CAMERA_SetFovY__Ff_LEVEL4_0000A490",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "42128",
+     "metadata": {
+      "virtual_address": "42128"
+     }
+    },
+    {
+     "name": "CAMERA_GetCosHalfFovX__Fv_LEVEL4_0000A4A0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "42144",
+     "metadata": {
+      "virtual_address": "42144"
+     }
+    },
+    {
+     "name": "CAMERA_GetSinHalfFovX__Fv_LEVEL4_0000A4B0",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "42160",
+     "metadata": {
+      "virtual_address": "42160"
+     }
+    },
+    {
+     "name": "CAMDRIVER_GetTargetPos__Fv_LEVEL4_0000C230",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "49712",
+     "metadata": {
+      "virtual_address": "49712"
+     }
+    },
+    {
+     "name": "CAMDRIVER_GetWorldMatrix__Fv_LEVEL4_0000C338",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "49976",
+     "metadata": {
+      "virtual_address": "49976"
+     }
+    },
+    {
+     "name": "CAMDRIVER_GetBasisMatrix__Fv_LEVEL4_0000C348",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "49992",
+     "metadata": {
+      "virtual_address": "49992"
+     }
+    },
+    {
+     "name": "CAMDRIVER_GetHeight__Fv_LEVEL4_0000C980",
+     "size": "12",
+     "fuzzy_match_percent": 100.0,
+     "address": "51584",
+     "metadata": {
+      "virtual_address": "51584"
+     }
+    },
     {
      "name": "MISSION_Init__Fv",
      "size": "28",
@@ -28318,13 +28840,13 @@
    "id": "boot",
    "name": "Boot Executable",
    "measures": {
-    "fuzzy_match_percent": 2.0530562332163727,
+    "fuzzy_match_percent": 2.0807088912513136,
     "total_code": "650932",
-    "matched_code": "13364",
-    "matched_code_percent": 2.0530562332163727,
-    "total_functions": 251,
-    "matched_functions": 250,
-    "matched_functions_percent": 99.60159362549801,
+    "matched_code": "13544",
+    "matched_code_percent": 2.0807088912513136,
+    "total_functions": 266,
+    "matched_functions": 265,
+    "matched_functions_percent": 99.62406015037594,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -28333,13 +28855,13 @@
    "id": "level_code",
    "name": "Level Modules (Combined Placements)",
    "measures": {
-    "fuzzy_match_percent": 0.11766243276103455,
+    "fuzzy_match_percent": 0.11831870348537323,
     "total_code": "69483520",
-    "matched_code": "81756",
-    "matched_code_percent": 0.11766243276103455,
-    "total_functions": 2840,
-    "matched_functions": 2809,
-    "matched_functions_percent": 98.90845070422536,
+    "matched_code": "82212",
+    "matched_code_percent": 0.11831870348537323,
+    "total_functions": 2883,
+    "matched_functions": 2852,
+    "matched_functions_percent": 98.9247311827957,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -28348,13 +28870,13 @@
    "id": "fe_frontend",
    "name": "Frontend (FE.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.6136067708333334,
+    "fuzzy_match_percent": 0.6416829427083334,
     "total_code": "983040",
-    "matched_code": "6032",
-    "matched_code_percent": 0.6136067708333334,
-    "total_functions": 191,
-    "matched_functions": 190,
-    "matched_functions_percent": 99.47643979057591,
+    "matched_code": "6308",
+    "matched_code_percent": 0.6416829427083334,
+    "total_functions": 219,
+    "matched_functions": 218,
+    "matched_functions_percent": 99.54337899543378,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
@@ -28738,13 +29260,13 @@
    "id": "level4_skyscrapers",
    "name": "Level 4: Asyanica Rooftops (LEVEL4.REL)",
    "measures": {
-    "fuzzy_match_percent": 0.06376262626262626,
+    "fuzzy_match_percent": 0.07086489898989899,
     "total_code": "2534400",
-    "matched_code": "1616",
-    "matched_code_percent": 0.06376262626262626,
-    "total_functions": 84,
-    "matched_functions": 83,
-    "matched_functions_percent": 98.80952380952381,
+    "matched_code": "1796",
+    "matched_code_percent": 0.07086489898989899,
+    "total_functions": 99,
+    "matched_functions": 98,
+    "matched_functions_percent": 98.98989898989899,
     "complete_code": "0",
     "complete_code_percent": 0.0
    }
