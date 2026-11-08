@@ -35,6 +35,20 @@ This program is distributed in the hope that it will be useful, but WITHOUT
 ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
+## GCC runtime library (libgcc)
+
+These bodies of `src/levels/bodies/` reproduce routines of GCC's runtime
+library that the EE-GCC 2.9 toolchain linked into the game, and follow the
+form of GCC's own sources: `fp-bit.c` (`dptofp.c`, `dptoli.c`, `dptoul.c`,
+`fpadd.c`, `fpcmp.c`, `fpdiv.c`, `fpmul.c`, `fpsub.c` and `__negdf2.c`, with
+their LEVEL19 copies `dptoli_LEVEL19_001CB8F8.c`, `fpadd_LEVEL19_001CBEC8.c`,
+`fpcmp_LEVEL19_001CC3F8.c`, `fpsub_LEVEL19_001CBF20.c` and
+`__negdf2_LEVEL19_001CBA30.c`) and `libgcc2.c` (`__floatdisf.c`). Those
+GCC files are Copyright Free Software Foundation, Inc., licensed under the
+GNU General Public License version 2 or later with the libgcc linking
+exception; that licence and its copyright are retained for the parts that
+come from them.
+
 ## Not included
 
 No source, header, sample or tool from any proprietary SDK is included here,
