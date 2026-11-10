@@ -7,7 +7,7 @@
   </a>
 </p>
 
-<h3 align="center">Ratchet &amp; Clank: Secret Agent Clank decompilation project</h3>
+<h3 align="center">Secret Agent Clank decompilation project</h3>
 
 <p align="center">
   <a href="https://bytematch.dev/OpenRAC/rac-sac-decomp"><img src="https://bytematch.dev/OpenRAC/rac-sac-decomp.svg?mode=shield&label=Code&measure=matched_code_percent" alt="Code matched"></a>
@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  A work-in-progress, matching decompilation of <i>Ratchet &amp; Clank: Secret Agent Clank</i> (2008) for PlayStation 2.<br>
+  A work-in-progress, matching decompilation of <i>Secret Agent Clank</i> (2008) for PlayStation 2.<br>
   The executable and its relocatable modules, rebuilt as C that compiles back to the same bytes as retail at every placement.
 </p>
 
