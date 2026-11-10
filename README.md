@@ -16,8 +16,8 @@
 </p>
 
 <p align="center">
-  A work-in-progress, matching decompilation of <i>Secret Agent Clank</i> (2008) for PlayStation 2.<br>
-  The executable and its relocatable modules, rebuilt as C that compiles back to the same bytes as retail at every placement.
+  A matching decompilation of <i>Secret Agent Clank</i> (2008) for PlayStation 2.<br>
+  The executable and its modules, rebuilt as C that matches retail byte for byte.
 </p>
 
 > [!WARNING]
