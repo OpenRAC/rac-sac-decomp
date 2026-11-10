@@ -7,7 +7,7 @@
   </a>
 </p>
 
-<h3 align="center">Secret Agent Clank decompilation project</h3>
+<h3 align="center">Ratchet &amp; Clank: Secret Agent Clank decompilation project</h3>
 
 <p align="center">
   <a href="https://bytematch.dev/OpenRAC/rac-sac-decomp"><img src="https://bytematch.dev/OpenRAC/rac-sac-decomp.svg?mode=shield&label=Code&measure=matched_code_percent" alt="Code matched"></a>
