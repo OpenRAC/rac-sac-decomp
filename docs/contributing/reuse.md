@@ -16,9 +16,9 @@ see `LICENSE` and `THIRD_PARTY_NOTICES.md`.
 
 ## Method: reusable as is
 
-- the **evidence standard** (`docs/EVIDENCE.md` here) and the ten working
+- the **evidence standard** (`docs/contributing/evidence.md` here) and the ten working
   rules (`AGENTS.md` here);
-- the **wave protocol** (`docs/METHOD.md` here): foundation lot, shortlist
+- the **wave protocol** (`docs/contributing/method.md` here): foundation lot, shortlist
   ranked by leverage, one agent per lot, proof by byte comparison, root
   integration with complete-program gates;
 - the **promotion protocol**: a body becomes a match only when it is linked at

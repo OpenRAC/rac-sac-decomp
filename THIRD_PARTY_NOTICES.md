@@ -23,8 +23,8 @@ are GPL-3.0. The copyright and licence of those projects are retained.
 | `tools/versions.py`, `tools/version_check.py` | `OpenRAC/rac1-decomp`, `tools/versions.py`, `tools/version_check.py` | adapted: multi-version tracking table, dump, config extraction, check gates and cross-version comparison |
 | `tools/gen_progress_report.py` | `OpenRAC/rac1-decomp`, `tools/gen_progress_report.py` | adapted: objdiff v2 progress report generation and validation for ByteMatch |
 | `AGENTS.md` | `OpenRAC/rac5-sm-decomp`, `AGENTS.md` | the seven upstream rules, plus three rules added here (pure C evidence, authored form, one writer) and the rewritten wording |
-| `docs/METHOD.md`, `docs/EVIDENCE.md` | the method of `OpenRAC/rac2-gc-decomp` and `OpenRAC/rac5-sm-decomp` | rewritten for a platform-independent protocol |
-| `PROMPT.md` | the wave briefs of `OpenRAC/rac5-sm-decomp` | rewritten as a platform-independent starter prompt |
+| `docs/contributing/method.md`, `docs/contributing/evidence.md` | the method of `OpenRAC/rac2-gc-decomp` and `OpenRAC/rac5-sm-decomp` | rewritten for a platform-independent protocol |
+| `docs/agents/prompt.md` | the wave briefs of `OpenRAC/rac5-sm-decomp` | rewritten as a platform-independent starter prompt |
 
 Copyright (C) the OpenRAC contributors. This program is free software: you can
 redistribute it and/or modify it under the terms of the GNU General Public

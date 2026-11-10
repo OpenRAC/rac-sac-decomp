@@ -5,7 +5,7 @@ retail bytes. There are three of them, and each one proves something the
 others do not. This page says what each gate measures, what it does not
 measure, and how to run it.
 
-The vocabulary is in `docs/EVIDENCE.md`: a **placement** is one address in
+The vocabulary is in `docs/contributing/evidence.md`: a **placement** is one address in
 one module, a **source** is one authored file, and **bytes** are counted by
 placement. The three counts are always reported separately.
 

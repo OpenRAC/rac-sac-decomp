@@ -5,9 +5,9 @@ review procedure.
 
 ## Before you start
 
-1. Read `PROMPT.md`, `docs/METHOD.md` and `docs/EVIDENCE.md`.
-2. Check `docs/STATE.md` for the current state and the next open task.
-3. Check the sibling projects (see `docs/REUSE.md`) for an authentic source
+1. Read `docs/agents/prompt.md`, `docs/contributing/method.md` and `docs/contributing/evidence.md`.
+2. Check `docs/state.md` for the current state and the next open task.
+3. Check the sibling projects (see `docs/contributing/reuse.md`) for an authentic source
    form before reconstructing a routine by hand.
 
 ## Where to work

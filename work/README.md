@@ -19,7 +19,7 @@ work/                        (private, local, never published)
                  RAPPORT.md     what was measured
   briefs/      CONSIGNE-VAGUE-N.md and BRIEF-COMMUN.md of the wave
   tools/       the kit's scripts (never published)
-  STATE.md     the anchor of the workspace
+  state.md     the anchor of the workspace
 ```
 
 `CONSIGNE-VAGUE-N.md` is the root's plan for a wave: the departure state, the
