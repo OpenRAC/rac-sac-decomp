@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Check the functions and modules of one version against another (docs/VERSIONS.md).
+Check the functions and modules of one version against another (docs/setup/versions.md).
 
   python3 tools/version_check.py --version pal              # compare US against PAL
   python3 tools/version_check.py --version pal --module FE  # filter to FE.REL

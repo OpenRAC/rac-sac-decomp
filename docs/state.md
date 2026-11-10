@@ -15,7 +15,7 @@ placements proved at body level).
 | Working clone | `LOCAL.md` (git-ignored) | the checkout the root integrates from |
 | Local target | `LOCAL.md` (git-ignored) | the game image, the pinned hashes, the toolchain |
 | Private workspace | `LOCAL.md` (git-ignored) | extracted modules, bounds, lots, agent dossiers |
-| Anchor | `docs/STATE.md` | this file |
+| Anchor | `docs/state.md` | this file |
 
 The private workspace is local-only on purpose: the project publishes written
 source, tools and metadata, never retail bytes, listings or raw reports. Its
@@ -33,7 +33,7 @@ command written next to it.
       The European release `SCES_554.96` (PAL, 50 Hz, 4 005 429 248 bytes,
       SHA-1 `ba1ca463f0900b61eaedf875f1791672979ae0d3`) is also tracked. Both are
       managed via `tools/versions.py`, `tools/version_check.py`, and `config/versions/`
-      (see `docs/VERSIONS.md`). Pinned in `config/target.json` and `config/versions/`.
+      (see `docs/setup/versions.md`). Pinned in `config/target.json` and `config/versions/`.
 - [x] **The identity check.** `tools/disc.py` and `tools/versions.py check`
       verify images against the pinned targets; `tools/rel.py` validates
       module headers and tables.

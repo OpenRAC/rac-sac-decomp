@@ -1,7 +1,7 @@
 # Instructions for contributors and AI agents
 
-Read `README.md`, `PROMPT.md`, `docs/METHOD.md`, `docs/EVIDENCE.md` and
-`docs/STATE.md` before changing this project.
+Read `README.md`, `docs/agents/prompt.md`, `docs/contributing/method.md`, `docs/contributing/evidence.md` and
+`docs/state.md` before changing this project.
 
 This repository adopts the **evidence standard and source layout** of the
 sibling OpenRAC projects (rac1-decomp, rac2-gc-decomp, rac5-sm-decomp). It

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-The releases of the game this repository builds, and their programs (docs/VERSIONS.md).
+The releases of the game this repository builds, and their programs (docs/setup/versions.md).
 
   python3 tools/versions.py                         # the table of versions
   python3 tools/versions.py dump [--version K]      # programs from the disc image into baserom/
@@ -9,7 +9,7 @@ The releases of the game this repository builds, and their programs (docs/VERSIO
 
 Every version is one disc image in baserom/ (named as in VERSIONS; hard-link it from wherever
 your discs live, never commit it). Its programs are the boot executable and the 31 SNR2
-relocatable modules under BIN/ (docs/VERSIONS.md):
+relocatable modules under BIN/ (docs/setup/versions.md):
 
   baserom/<K>/<EXE>                          the boot executable as the disc stores it
   baserom/<K>/BIN/<name>.REL                 each SNR2 module on the disc
@@ -157,7 +157,7 @@ def read_disc(v: Version, image_path: Path | None = None) -> tuple[bytes, dict[s
     """Return (boot_bytes, {rel_path: rel_bytes}) from V's disc."""
     disc_path = find_disc(v, image_path)
     if not disc_path:
-        sys.exit(f"missing disc image for {v.label} (looked in baserom/{v.iso}; see docs/VERSIONS.md)")
+        sys.exit(f"missing disc image for {v.label} (looked in baserom/{v.iso}; see docs/setup/versions.md)")
     with IsoDisc(disc_path) as disc:
         info = disc.inspect()
         if info["boot_file"] != v.exe:

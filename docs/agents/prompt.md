@@ -22,11 +22,11 @@ must be pinned before any campaign.
 
 1. `README.md` — the project, the method, the legal boundary.
 2. `AGENTS.md` — the ten working rules, non-negotiable.
-3. `docs/METHOD.md` — the wave protocol, end to end.
-4. `docs/EVIDENCE.md` — what counts as evidence, and what does not.
-5. `docs/STATE.md` — the anchor of the project: current status, what to do next.
-6. `docs/REUSE.md` — what we borrow from sibling projects (RAC1, RAC2, RAC5).
-7. `docs/VERSIONS.md` — the releases of the game (USA and Europe), how they are tracked and checked.
+3. `docs/contributing/method.md` — the wave protocol, end to end.
+4. `docs/contributing/evidence.md` — what counts as evidence, and what does not.
+5. `docs/state.md` — the anchor of the project: current status, what to do next.
+6. `docs/contributing/reuse.md` — what we borrow from sibling projects (RAC1, RAC2, RAC5).
+7. `docs/setup/versions.md` — the releases of the game (USA and Europe), how they are tracked and checked.
 
 ## 3. Hard rules (summary; `AGENTS.md` is authoritative)
 
@@ -62,7 +62,7 @@ must be pinned before any campaign.
 | Repository | this directory, `main` branch | public code: written source, tools, docs |
 | Local target | `LOCAL.md` (git-ignored) | game image, hashes, toolchain |
 | Workspace | `work/` (git-ignored, except templates) | extracted modules, bounds, lots, agent folders |
-| Anchor | `docs/STATE.md` | project state, to be read and updated |
+| Anchor | `docs/state.md` | project state, to be read and updated |
 
 `work/` is **private by design**: `.gitignore` excludes content extracted from
 the game, raw reports, and intermediate results. Only what is authored and
@@ -70,7 +70,7 @@ reusable lives in the repository.
 
 ## 5. How to start a wave
 
-The complete protocol is in `docs/METHOD.md`. In summary:
+The complete protocol is in `docs/contributing/method.md`. In summary:
 
 1. **Foundation (E0)** — an agent extracts the local target, computes hashes,
    and produces the **shortlist** of bounded candidates: a table of
@@ -83,7 +83,7 @@ The complete protocol is in `docs/METHOD.md`. In summary:
 4. **Integration (root)** — root recompiles, places each body at every one of
    its placements, requires the complete-program digest, regenerates catalogues
    and progress, runs tests, then commits.
-5. **Resumption** — `docs/STATE.md` and `work/*/RAPPORT.md` always state what to
+5. **Resumption** — `docs/state.md` and `work/*/RAPPORT.md` always state what to
    do next.
 
 ## 6. Prompt to launch for a lot agent
@@ -94,11 +94,11 @@ Ratchet & Clank: Secret Agent Clank decompilation.
 
 READ IN FULL FIRST, in this order:
   1. AGENTS.md
-  2. docs/METHOD.md
-  3. docs/EVIDENCE.md
-  4. docs/STATE.md
-  5. docs/REUSE.md
-  6. docs/VERSIONS.md
+  2. docs/contributing/method.md
+  3. docs/contributing/evidence.md
+  4. docs/state.md
+  5. docs/contributing/reuse.md
+  6. docs/setup/versions.md
 
 YOUR LOT: <LOT>
 YOUR LIST: work/lots/<LOT>.tsv
@@ -112,7 +112,7 @@ compiled body and the retail bytes at the target placement. Nothing else counts.
 METHOD: read the retail disassembly of the target, reconstruct the C (types,
 boundaries, calls, global data), write the body, test, correct. If the byte
 does not match, do not steer the compiler: seek the AUTHENTIC FORM of the
-routine in the references listed in docs/REUSE.md and docs/STATE.md, and replay
+routine in the references listed in docs/contributing/reuse.md and docs/state.md, and replay
 the original structure (where values live, how many are live at once, in what
 order they are produced).
 

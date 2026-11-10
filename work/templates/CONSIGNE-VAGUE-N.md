@@ -1,6 +1,6 @@
 # Wave N Instructions — <campaign> (ROOT, <date>)
 
-> Wave anchor. General state: `docs/STATE.md`. Wave baseline:
+> Wave anchor. General state: `docs/state.md`. Wave baseline:
 > `master`/`main` = `<commit>`.
 
 ## Departure
