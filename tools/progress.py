@@ -33,6 +33,7 @@ BASELINE = ROOT / "config/levels/assembly_baseline.tsv"
 INTERVALS = ROOT / "config/levels/code_intervals.tsv"
 MODULES = ROOT / "config/levels/modules.tsv"
 BOOT_SUMMARY = ROOT / "config/boot/summary.json"
+UNITS_SUMMARY = ROOT / "config/units_summary.json"
 
 
 def records(path: Path) -> list[dict[str, str]]:
@@ -73,8 +74,13 @@ def snapshot() -> dict:
         entry["placements"] += 1
         entry["bytes"] += int(row["size"])
 
+    units = json.loads(UNITS_SUMMARY.read_text(encoding="utf-8")) \
+        if UNITS_SUMMARY.is_file() else {}
     return {
         "status": "body_proved_program_gate_pending",
+        "functions_counted_once": {scope: {key: units[scope][key] for key in (
+            "functions", "matched_functions", "code_bytes", "matched_bytes")}
+            for scope in ("levels", "boot") if scope in units},
         "module_count": len(records(MODULES)),
         "boot_candidate_bytes": int(boot_summary.get("bounded_candidate_body_bytes", 0)),
         "boot_candidates": int(boot_summary.get("entry_intervals", 0)),
@@ -117,6 +123,10 @@ def main() -> int:
     print(f"proved bytes           : {report['bytes_by_placement']} by placement, "
           f"{report['bytes_by_source_and_module']} by source and module, "
           f"{report['bytes_by_source']} by unique source")
+    for scope, entry in report["functions_counted_once"].items():
+        print(f"{scope + ' (counted once)':23s}: {entry['matched_functions']}/{entry['functions']} "
+              f"functions, {entry['matched_bytes']}/{entry['code_bytes']} bytes "
+              "(tools/function_units.py)")
     for module, entry in sorted(report["per_module"].items()):
         print(f"  {module:16s} {entry['placements']:4d} placement(s), "
               f"{entry['bytes']:6d} byte(s)")

@@ -1,0 +1,16 @@
+/* MemCardMgrUpdate__14MemCardManager -- 44 bytes.
+ *
+ * One source for every placement of this function in the level modules;
+ * the placements are listed in config/levels/bodies.tsv.
+ */
+
+typedef struct MemCardManager MemCardManager;
+
+extern void UpdateLogicsState__14MemCardManager(MemCardManager *self);
+extern void UpdateSync__14MemCardManager(MemCardManager *self);
+
+void MemCardMgrUpdate__14MemCardManager(MemCardManager *self)
+{
+    UpdateLogicsState__14MemCardManager(self);
+    UpdateSync__14MemCardManager(self);
+}

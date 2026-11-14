@@ -1,0 +1,26 @@
+/* TARGET_Init__Fv -- 64 bytes.
+ *
+ * One source for every placement of this function in the level modules;
+ * the placements are listed in config/levels/bodies.tsv.
+ */
+
+typedef struct TARGET_ENTRY TARGET_ENTRY;
+
+struct TARGET_ENTRY {
+    unsigned char reserved_000[0x5C];
+    unsigned int field_05C;
+    unsigned int field_060;
+};
+
+extern TARGET_ENTRY TARGET_entries[];
+extern unsigned int TARGET_count;
+extern void *TARGET_current;
+
+void TARGET_Init__Fv(void)
+{
+    unsigned int i;
+
+    TARGET_current = TARGET_entries;
+    TARGET_count = 0;
+    for (i = 0; i < 16; i++)
+        TARGET_entries[i].field_05C = 0;}

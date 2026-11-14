@@ -110,20 +110,25 @@ def main() -> int:
                         help="remaining bodies printed per module")
     args = parser.parse_args()
 
-    # The raw body hashes that a C source has proved, per module, and the
-    # global set: a body proved somewhere can be re-proved at the other
-    # placements that carry it, so the *work* left is counted globally.
-    proved: dict[str, set[str]] = defaultdict(set)
-    global_proved: set[str] = set()
-    for placement, source in zip(args.tables, args.sources):
-        known = sources(source)
+    # A candidate body is covered when a placement row links a source at its
+    # start: one source serves every placement of its function.  The raw
+    # hashes of the covered bodies make the global set, so that the *work*
+    # left is counted once per distinct body.
+    placed: dict[str, set[int]] = defaultdict(set)
+    for placement in args.tables:
         for row in records(placement):
-            facts = known.get(row.get("source", ""), {})
-            if facts.get("body_sha256"):
-                proved[row["module"]].add(facts["body_sha256"])
-                global_proved.add(facts["body_sha256"])
+            placed[row["module"]].add(int(row["offset"], 0))
 
     hash_of = body_hasher(args.bounds.parent / "modules", args.bounds)
+    proved: dict[str, set[str]] = defaultdict(set)
+    global_proved: set[str] = set()
+    for path in sorted(args.bounds.glob("*.tsv")):
+        module = "SCUS_976.23" if path.name == "boot.tsv" else path.stem + ".REL"
+        for row in bounds_rows(path):
+            if int(row["start"], 16) in placed.get(module, set()):
+                digest = row.get("raw_sha256") if module == "SCUS_976.23" else hash_of(module, row)
+                if digest:
+                    global_proved.add(digest)
     report: dict[str, object] = {"modules": {}, "complete": True}
     total_bodies = total_covered = total_bytes = total_covered_bytes = 0
     remaining_families: dict[str, int] = defaultdict(int)
@@ -136,10 +141,8 @@ def main() -> int:
                 if row.get("status") == "bounded_candidate"]
         if not rows:
             continue
-        covered = [row for row in rows
-                   if hash_of(module, row) in proved.get(module, set())]
-        missing = [row for row in rows
-                   if hash_of(module, row) not in proved.get(module, set())]
+        covered = [row for row in rows if int(row["start"], 16) in placed.get(module, set())]
+        missing = [row for row in rows if int(row["start"], 16) not in placed.get(module, set())]
         for row in missing:
             digest = hash_of(module, row) or f"{module}:{row['start']}"
             if digest not in global_proved:
@@ -184,8 +187,10 @@ def main() -> int:
                  if row.get("status") == "bounded_candidate"]
     if boot_rows:
         covered = [row for row in boot_rows
-                   if row.get("raw_sha256") in proved.get("SCUS_976.23", set())]
+                   if int(row["start"], 16) in placed.get("SCUS_976.23", set())]
         for row in boot_rows:
+            if int(row["start"], 16) in placed.get("SCUS_976.23", set()):
+                continue
             digest = row.get("raw_sha256") or f"boot:{row['start']}"
             if digest not in global_proved:
                 remaining_families[digest] += 1

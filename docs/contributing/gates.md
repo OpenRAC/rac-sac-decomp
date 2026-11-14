@@ -28,6 +28,15 @@ relocation tables, and compares **every byte** with the retail body.
   source is the original one.
 - `*** EXACT ***` is the only accepted result. A refusal (exit code 2) is
   not an attempt. A near miss is not a match.
+- **One source, every placement.** A level function is found in up to 31
+  modules, at a different offset in each. As in the sibling projects, it has
+  one source, linked at every placement. A local name carries the tag of the
+  module it was read in (`func_L13_049CA0`, `D_FE_0031F560`; tags `FE` and
+  `L01`..`L32`), and its address holds in that module only. At the other
+  placements the gate takes its value from the retail relocation of the same
+  site. Imported and exported names resolve by name everywhere. An untagged
+  address name (`func_049CA0`) holds in every module, so it only suits a
+  function that sits at the same offset everywhere.
 - The negative control lives in `work/E0/preuves/neg/`: a body that differs
   by one constant is refused, and the report names the exact byte.
 

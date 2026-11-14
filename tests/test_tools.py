@@ -212,11 +212,18 @@ class VersionsTest(unittest.TestCase):
             data = json.load(f)
         self.assertEqual(data.get("version"), 2)
         self.assertIn("measures", data)
-        self.assertEqual(data["measures"]["matched_functions"], 670)
-        self.assertEqual(data["measures"]["matched_code"], "41364")
-        self.assertEqual(data["measures"]["total_code"], "7279840")
-        self.assertEqual(data["measures"]["total_units"], 32)
-        self.assertEqual(len(data["units"]), 32)
+        # The headline is the sum of the units of tools/function_units.py.
+        summary = json.loads((ROOT / "config/units_summary.json").read_text(encoding="utf-8"))
+        levels, boot = summary["levels"], summary["boot"]
+        measures = data["measures"]
+        self.assertEqual(measures["total_code"], str(levels["code_bytes"] + boot["code_bytes"]))
+        self.assertEqual(measures["matched_code"],
+                         str(levels["matched_bytes"] + boot["matched_bytes"]))
+        self.assertEqual(measures["total_functions"], levels["functions"] + boot["functions"])
+        self.assertEqual(measures["matched_functions"],
+                         levels["matched_functions"] + boot["matched_functions"])
+        self.assertEqual(measures["total_units"], levels["units"] + boot["units"])
+        self.assertEqual(len(data["units"]), levels["units"] + boot["units"])
         self.assertGreaterEqual(len(data["categories"]), 33)
 
 
