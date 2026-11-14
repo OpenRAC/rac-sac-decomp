@@ -32,6 +32,14 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Check the repository and run the tests
+        run: |
+          python3 tools/check_repository.py
+          python3 -m unittest discover -s tests
+
+      - name: Check the unit tables (one definition per function, counted once)
+        run: python3 tools/function_units.py --check
+
       - name: Check the committed report is current
         run: python3 tools/gen_progress_report.py --check
 

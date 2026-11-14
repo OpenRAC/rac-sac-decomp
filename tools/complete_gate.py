@@ -41,8 +41,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
-from coverage import body_hasher, bounds_rows, records  # noqa: E402
-from placement_table import join, sources  # noqa: E402
+from coverage import bounds_rows, records  # noqa: E402
+from placement_table import join  # noqa: E402
 from module_gate import baseline_interval, rebuild_boot, rebuild_image  # noqa: E402
 
 CODE_START = 0x80
@@ -72,16 +72,13 @@ def main() -> int:
     if args.profiles and args.profiles.is_file():
         profiles = json.loads(args.profiles.read_text(encoding="utf-8"))
 
-    # 1. Coverage.
-    proved: dict[str, set[str]] = {}
-    for placement, source in zip(tables, source_tables):
-        known = sources(source)
+    # 1. Coverage: a candidate body comes from C when a placement row links a
+    # source at its start (one source serves every placement of its function).
+    placed: dict[str, set[int]] = {}
+    for placement in tables:
         for row in records(placement):
-            facts = known.get(row.get("source", ""), {})
-            if facts.get("body_sha256"):
-                proved.setdefault(row["module"], set()).add(facts["body_sha256"])
+            placed.setdefault(row["module"], set()).add(int(row["offset"], 0))
 
-    hash_of = body_hasher(args.modules, args.bounds)
     coverage: dict[str, dict] = {}
     missing_total = 0
     for path in sorted(args.bounds.glob("*.tsv")):
@@ -93,9 +90,9 @@ def main() -> int:
         if not rows:
             continue
         covered = [row for row in rows
-                   if hash_of(module, row) in proved.get(module, set())]
+                   if int(row["start"], 16) in placed.get(module, set())]
         missing = [row for row in rows
-                   if hash_of(module, row) not in proved.get(module, set())]
+                   if int(row["start"], 16) not in placed.get(module, set())]
         coverage[module] = {
             "bodies": len(rows), "covered": len(covered), "missing": len(missing),
             "bytes": sum(int(row["body_bytes"]) for row in rows),
@@ -107,7 +104,7 @@ def main() -> int:
                  if row.get("status") == "bounded_candidate"]
     if boot_rows:
         covered = [row for row in boot_rows
-                   if hash_of("SCUS_976.23", row) in proved.get("SCUS_976.23", set())]
+                   if int(row["start"], 16) in placed.get("SCUS_976.23", set())]
         coverage["SCUS_976.23"] = {
             "bodies": len(boot_rows), "covered": len(covered),
             "missing": len(boot_rows) - len(covered),

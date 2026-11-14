@@ -4,8 +4,8 @@
 > milestone. Everything else in the private workspace is disposable; this file
 > is not.
 
-Last update: **2026-10-20** (foundation lot delivered, wave 1 running, 26
-placements proved at body level).
+Last update: **2026-11-14** (one source per function, linked at every
+placement; every function counted once in the progress report).
 
 ## 1. Where things are
 
@@ -80,6 +80,51 @@ command written next to it.
       still missing.
 
 ## 3. State of the campaign
+
+### One source per function (2026-11-14)
+
+The sources now follow the rules of the sibling projects: one definition per
+function, linked at every placement (`AGENTS.md`, "One definition per
+function").
+
+- **Before.** The level tables held 482 sources for 2 854 placements. Many
+  of them were per-level copies of one function that differed only in their
+  local address names (`ACTOR_Update__Fv.c` and four `ACTOR_Update__Fv_LEVELnn_*`
+  copies). At the same time, 1 090 placements were credited to a source named
+  after *another* function with the same bytes (`Play__12AglMovieBase.c`
+  covered `Ps2BinkBufferUnlock__8AglMovieP13PS2BINKBUFFER`). In the boot,
+  8 sources covered 85 addresses.
+- **The function units.** `tools/function_units.py` cuts every module's
+  candidate code into functions, fragments and zero padding. It identifies
+  each level function across the modules by symbol, size and
+  relocation-masked shape, and writes one row per function
+  (`config/levels/units.tsv`, `config/boot/units.tsv`). The candidate code
+  holds 25 377 level functions (7 358 732 bytes, 17 853 of them shared by
+  several modules) and 3 819 boot functions (644 004 bytes). Zero padding
+  is left out: 538 928 bytes in the levels, 6 928 in the boot.
+- **One source each.** Each of the 410 level functions with accepted C now
+  has one source, named after its own symbol, in `src/levels/shared/` (380)
+  or in its module's directory (30). Local names carry the tag of the module
+  they were read in (`func_L13_049CA0`). At the other placements the gate
+  takes their value from the relocation of the same site. The 265 boot
+  functions have one file per address, `src/boot/func_<address>.c`.
+- **Every placement.** Each source was proved at **every** placement of its
+  function in the 31 modules: 10 365 level placements, all exact. That is
+  the 2 854 already accepted plus 7 511 copies that no source covered
+  before. The boot's 265 placements are exact too. A second, independent
+  run with the final file names (10 630 placements) and `tools/build.py
+  --check` confirm the published objects.
+- **Counted once.** The progress report has one unit per function. A
+  function counts when its source is linked at every placement: 675 of
+  29 196 functions, 33 560 of 8 002 736 bytes (0.42 %). The earlier figure,
+  41 364 bytes (0.57 %), counted each per-level copy as a separate source,
+  against a denominator that counted it once. The PAL report keeps the
+  denominator and no matched C, because no PAL gate exists yet.
+- **Hygiene.** The source headers no longer carry instruction listings or
+  French notes. The GCC and newlib forms are credited in
+  `THIRD_PARTY_NOTICES.md`. The profile table no longer records private
+  paths. Two boot sources lost a `register` keyword that the C policy
+  refuses (still exact).
 
 - **Foundation (E0) is delivered**: 31 modules read, 409 233 candidate entry
   intervals, 64 714 676 bytes of bounded bodies by placement, the shortlist
@@ -416,12 +461,11 @@ first, and this is what that means.
 
 ## 4. What is next
 
-1. **Close the coverage.**  The complete-program gate now measures what it
-   needs: 29 046 of the 323 138 bounded candidate bodies come from a proved
-   C source (283 452 of 64 714 676 bytes by placement), and **180 593
-   distinct bodies** are still to translate -- a family counts once, because
-   one source serves every placement that carries it.  The gate passes when
-   that number is zero.
+1. **Close the coverage.**  The unit tables say what is left: 24 967 level
+   functions and 3 554 boot functions have no accepted C yet
+   (`tools/function_units.py`).  One source serves every placement of its
+   function, so a new match covers all of its copies at once.  The
+   complete-program gate passes when that number is zero.
 2. **The `-mdebugc` route.** The measured cause is known, the regression
    control over the proved placements is done (49/49), and the route is
    refuted by the source form that lot L35 found.

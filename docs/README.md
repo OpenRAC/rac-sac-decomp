@@ -19,13 +19,15 @@ Every doc of this repository. New here? Read [state.md](state.md), then [buildin
 | Path | Description |
 |---|---|
 | `src/` | Accepted authored C/C++ definitions, one per function |
-| `src/levels/bodies/` | Proved bodies of the SNR2 level modules, one file per distinct body |
-| `src/boot/bodies/` | Proved bodies of the boot executable |
+| `src/levels/shared/` | Level functions found in several modules: one source each, linked at every placement |
+| `src/levels/<NN_name>/` | Level functions of one module only (`frontend/`, `01_museum/` ... `32_credits/`) |
+| `src/boot/` | Functions of the boot executable, one file per address (`func_<address>.c`) |
 | `nonmatching/` | Useful but nonmatching attempts, indexed by function |
 | `config/` | Pinned metadata: target identities, toolchain profile, placement tables |
 | `config/versions/` | Multi-version configurations (`us/`, `pal/`): `programs.tsv`, `modules.tsv`, `target.json` |
-| `config/levels/` | Level module catalogues, code intervals, baseline, and placement tables |
-| `config/boot/` | Boot executable inventory, slot surveys, and placement tables |
+| `config/levels/` | Level module catalogues, code intervals, baseline, placement tables and the function units (`units.tsv`) |
+| `config/boot/` | Boot executable inventory, slot surveys, placement tables and the function units (`units.tsv`) |
+| `config/units_summary.json` | The counted totals of `tools/function_units.py`, behind the progress report |
 | `tools/` | Reusable tools (versions, rel, elf, disc, inspection, baseline, gates) with tests |
 | `tests/` | Unit tests for repository tools (synthetic test data only) |
 | `docs/` | Method, gates, evidence standards, reuse, and version documentation |

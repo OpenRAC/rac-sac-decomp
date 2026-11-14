@@ -33,6 +33,12 @@ FORBIDDEN_PARTS = {
 }
 # A file larger than this is a red flag for a repository of written source.
 SIZE_LIMIT = 4 * 1024 * 1024
+# Generated tables that hold one row per candidate function (names, sizes and
+# percentages, no retail bytes) may be larger, up to their own limit.
+LARGE_TRACKED = {
+    "progress/report.json": 8 * 1024 * 1024,
+    "config/levels/units.tsv": 6 * 1024 * 1024,
+}
 # Instruction listings and raw dumps, by name.
 FORBIDDEN_NAMES = {"disasm.txt", "disassembly.txt", "dump.txt", "listing.txt"}
 
@@ -65,8 +71,9 @@ def main() -> int:
             problems.append(f"{name}: forbidden directory")
         if path.name.lower() in FORBIDDEN_NAMES:
             problems.append(f"{name}: instruction listing")
-        if path.is_file() and path.stat().st_size > SIZE_LIMIT:
-            problems.append(f"{name}: file larger than {SIZE_LIMIT} bytes")
+        limit = LARGE_TRACKED.get(name, SIZE_LIMIT)
+        if path.is_file() and path.stat().st_size > limit:
+            problems.append(f"{name}: file larger than {limit} bytes")
 
     if problems:
         print("repository check failed:")

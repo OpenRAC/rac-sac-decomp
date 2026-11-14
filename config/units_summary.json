@@ -1,0 +1,30 @@
+{
+  "rule": "One unit per function: the level functions are identified across the modules (symbol or rank, size and relocation-masked shape) and counted once; a unit is matched when one source is linked at every placement. Zero alignment padding is not code.",
+  "levels": {
+    "units": 25383,
+    "functions": 25377,
+    "code_bytes": 7358732,
+    "matched_functions": 410,
+    "matched_bytes": 20016,
+    "partial_functions": 0,
+    "placements": 366340,
+    "matched_placements": 10365,
+    "shared_functions": 17853,
+    "code_bytes_by_placement": 68944592,
+    "zero_padding_bytes": 538928
+  },
+  "boot": {
+    "units": 3833,
+    "functions": 3819,
+    "code_bytes": 644004,
+    "matched_functions": 265,
+    "matched_bytes": 13544,
+    "zero_padding_bytes": 6928
+  },
+  "tables": {
+    "config/levels/bodies.tsv": "d33208e72c2ed372306615b26b0ffb034efb0b1741d30900f9a51ffe3e0046ff",
+    "config/boot/bodies.tsv": "374dff78653ea21d91eabcfabc7ab05208502e00ec99c0b06d0187acec3897a8",
+    "config/levels/units.tsv": "9bf2b8ea8457b294dd5b230046ec3148e7f3e46b50d250c39e4b32fdfeafd5b3",
+    "config/boot/units.tsv": "ee76e463b1113349537d57e580ae32673fac99b72b614719fbabfda53016800c"
+  }
+}

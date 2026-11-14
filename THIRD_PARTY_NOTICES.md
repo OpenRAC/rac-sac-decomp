@@ -21,7 +21,9 @@ are GPL-3.0. The copyright and licence of those projects are retained.
 | `tools/assembly_baseline.py` | `OpenRAC/rac5-sm-decomp`, `tools/snr2_assembly.py` | adapted: the assembly baseline of the SNR2 modules -- render, assemble, link, compare with the retail interval -- and the metadata catalogue of the result |
 | `tools/c_source_policy.py` | `OpenRAC/rac5-sm-decomp`, `tools/c_source_policy.py` | adapted: the rejection of inline assembly, of global assembly blocks, of register variables and of assembler directives, with the symbol-label exception of the upstream |
 | `tools/versions.py`, `tools/version_check.py` | `OpenRAC/rac1-decomp`, `tools/versions.py`, `tools/version_check.py` | adapted: multi-version tracking table, dump, config extraction, check gates and cross-version comparison |
-| `tools/gen_progress_report.py` | `OpenRAC/rac1-decomp`, `tools/gen_progress_report.py` | adapted: objdiff v2 progress report generation and validation for ByteMatch |
+| `tools/gen_progress_report.py` | `OpenRAC/rac1-decomp` and `OpenRAC/rac5-sm-decomp`, `tools/gen_progress_report.py` | adapted: objdiff v2 progress report for ByteMatch, one unit per candidate function as in the rac5 report |
+| `tools/function_units.py` | `OpenRAC/rac5-sm-decomp`, `tools/level_accepted_shapes.py`, `tools/zero_padding.py`; the function catalogue rules of `OpenRAC/rac1-decomp` and `OpenRAC/rac2-gc-decomp` | new tool: the candidate code cut into functions, fragments and zero padding, each level function identified across the modules by symbol and relocation-masked shape and counted once |
+| `tools/level_names.py` | `OpenRAC/rac5-sm-decomp`, `tools/level_names.py` and `tools/level_source_layout.py` | adapted: the level names, source directories and module tags of this disc |
 | `AGENTS.md` | `OpenRAC/rac5-sm-decomp`, `AGENTS.md` | the seven upstream rules, plus three rules added here (pure C evidence, authored form, one writer) and the rewritten wording |
 | `docs/contributing/method.md`, `docs/contributing/evidence.md` | the method of `OpenRAC/rac2-gc-decomp` and `OpenRAC/rac5-sm-decomp` | rewritten for a platform-independent protocol |
 | `docs/agents/prompt.md` | the wave briefs of `OpenRAC/rac5-sm-decomp` | rewritten as a platform-independent starter prompt |
@@ -37,17 +39,24 @@ FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 ## GCC runtime library (libgcc)
 
-These bodies of `src/levels/bodies/` reproduce routines of GCC's runtime
+These bodies of `src/levels/shared/` reproduce routines of GCC's runtime
 library that the EE-GCC 2.9 toolchain linked into the game, and follow the
 form of GCC's own sources: `fp-bit.c` (`dptofp.c`, `dptoli.c`, `dptoul.c`,
-`fpadd.c`, `fpcmp.c`, `fpdiv.c`, `fpmul.c`, `fpsub.c` and `__negdf2.c`, with
-their LEVEL19 copies `dptoli_LEVEL19_001CB8F8.c`, `fpadd_LEVEL19_001CBEC8.c`,
-`fpcmp_LEVEL19_001CC3F8.c`, `fpsub_LEVEL19_001CBF20.c` and
-`__negdf2_LEVEL19_001CBA30.c`) and `libgcc2.c` (`__floatdisf.c`). Those
-GCC files are Copyright Free Software Foundation, Inc., licensed under the
-GNU General Public License version 2 or later with the libgcc linking
-exception; that licence and its copyright are retained for the parts that
-come from them.
+`fpadd.c`, `fpcmp.c`, `fpdiv.c`, `fpmul.c`, `fpsub.c` and `__negdf2.c`),
+`libgcc2.c` (`__floatdisf.c`) and `crtstuff.c` (`__do_global_dtors.c`).
+Each source serves every module that links the routine. Those GCC files are
+Copyright Free Software Foundation, Inc., licensed under the GNU General
+Public License version 2 or later with the libgcc linking exception; that
+licence and its copyright are retained for the parts that come from them.
+
+## newlib
+
+These bodies of `src/boot/` follow the form of newlib's
+`libc/stdlib/mprec.c`, which the boot executable links: `func_0018F920.c`
+(`Bfree`), `func_0018FB98.c` (`hi0bits`) and `func_0018FC20.c` (`lo0bits`).
+That file was written by David M. Gay (Copyright (c) 1991 by AT&T) and is
+distributed with newlib under its permission notice, which applies to the
+parts that come from it.
 
 ## Not included
 
