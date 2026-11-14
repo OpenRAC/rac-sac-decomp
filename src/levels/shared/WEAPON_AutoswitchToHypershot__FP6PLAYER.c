@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * If the current weapon is not already the hypershot (0x16), the hypershot
+ * becomes the next weapon (offset 0x364) and the current weapon is remembered
+ * (offset 0x358).
  */
 
 typedef struct PLAYER PLAYER;

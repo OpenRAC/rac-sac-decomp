@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Asks the game-mode layer for a restart (mode 8, case 8 of the
+ * UPDATE_SetGameMode switch).
  */
 
 extern void func_L01_025E60(int mode, void *arg);

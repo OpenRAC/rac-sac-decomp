@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x0015BDC0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Stores a small code in the object, else returns 0x25.
  */
 
 int func_0015BDC0(void *self, unsigned int code)

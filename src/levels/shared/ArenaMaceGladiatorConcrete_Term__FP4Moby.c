@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Two PAR groups of the moby are destroyed: the ones at 0x68 and 0x84 of the
+ * object the moby points to at 0x58.
  */
 
 typedef struct Moby Moby;

@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Computes the target position of the Moby into a VEC4: the three coordinates
+ * are produced by the VEC3 variant of MOBY_GetMobyTargetPos and the fourth
+ * component (offset 0xC) is set to 1.0f. The retail name has four arguments
+ * (Moby*, VEC4*, bool, T2), but only the first two are initialised, so the
+ * last two are unused.
  */
 
 typedef struct Moby Moby;

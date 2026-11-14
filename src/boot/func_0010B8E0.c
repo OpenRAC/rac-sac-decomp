@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x0010B8E0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Inverts a 3x3 with 16-byte rows and transforms the translation.
  */
 
 void func_0010B8E0(float *a0, float *a1)

@@ -4,6 +4,11 @@
  * the placements are listed in config/levels/bodies.tsv.
  *
  * It follows the form of GCC's libgcc fp-bit.c; see THIRD_PARTY_NOTICES.md.
+ *
+ * EE-GCC 2.9 libgcc routine (fp-bit.c, DOUBLE configuration,
+ * US_SOFTWARE_GOFAST): negate() = __negdf2. __unpack_d fills a 24-byte
+ * descriptor (kind, sign, exponent, fraction), the sign is flipped and
+ * __pack_d rebuilds the double.
  */
 
 typedef struct {

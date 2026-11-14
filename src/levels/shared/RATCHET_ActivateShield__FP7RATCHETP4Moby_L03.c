@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The write sits in the delay slot of the return: the value of the parameter
+ * is the last operation produced.
  */
 
 typedef struct RATCHET RATCHET;

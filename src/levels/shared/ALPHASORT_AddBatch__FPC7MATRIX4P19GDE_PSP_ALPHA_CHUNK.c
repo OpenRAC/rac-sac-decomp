@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Fills a DrawObjFXCreateParams on the stack ({chunk, mtx}) and passes it to
+ * AllocateFXObj of the module's DrawObjManager instance.
  */
 
 typedef struct MATRIX4 MATRIX4;

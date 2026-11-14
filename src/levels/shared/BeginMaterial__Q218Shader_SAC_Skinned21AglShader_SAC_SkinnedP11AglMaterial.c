@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Sets the material state with microcode 7, then sets the global "material
+ * begun" byte flag to 1.
  */
 
 typedef struct AglMaterial AglMaterial;

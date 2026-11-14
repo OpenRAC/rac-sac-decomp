@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Creates a rotation matrix around the constant Z axis (UNIT_Z, a module-local
+ * datum). The angle is passed on as the float argument and the object is
+ * returned.
  */
 
 typedef struct AMtx AMtx;

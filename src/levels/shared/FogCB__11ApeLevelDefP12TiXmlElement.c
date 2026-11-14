@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Reads the fog settings of the most recently loaded level definition from the
+ * XML element (int, bool, two floats, an RGBA colour and a second int) and
+ * returns 1. The index read from the element selects the slot. The zero float
+ * default lives across the calls, so it is kept in a callee-saved float
+ * register.
  */
 
 typedef struct TiXmlElement TiXmlElement;

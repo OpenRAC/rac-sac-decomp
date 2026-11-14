@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x00144E08; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Forwards to the boot routine at 0x001420F0.
  */
 
 int func_1420F0(int, int, int, int);

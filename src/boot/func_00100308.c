@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x00100308; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Returns the value of a global word.
  */
 
 extern int g_boot_0019EF08;

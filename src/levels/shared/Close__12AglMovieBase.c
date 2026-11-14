@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Closes the Bink stream of a movie object and puts the object in state 2.
  */
 
 typedef struct AglMovieBase AglMovieBase;

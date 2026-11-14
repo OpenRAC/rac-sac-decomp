@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Stores the sibling pointer on the stack, then appends it to the ApeTArray
+ * that lives at this+0x10.
  */
 
 typedef struct ApeAnimChannel ApeAnimChannel;

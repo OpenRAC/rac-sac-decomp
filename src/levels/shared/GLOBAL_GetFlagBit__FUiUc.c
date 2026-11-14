@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Reads one bit of the global flag array. The flags are one byte each, in a
+ * table at offset 0x4E0 of the GLOBALVARS structure pointed to by the global
+ * pGV. The index is a byte offset from the start of that table and the tested
+ * bit is the requested bit of that byte. The address is formed in two steps:
+ * pGV plus the index first, with the 0x4E0 offset left in the load offset.
  */
 
 typedef struct GLOBALVARS_s GLOBALVARS_s;

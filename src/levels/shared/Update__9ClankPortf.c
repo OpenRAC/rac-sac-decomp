@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The port state has two steps: the first pulls the player back to the port
+ * when the state timer (offset 0x10 of the state) expires, the second
+ * teleports him away (Teleport_Spawn, controller context 2, player shown
+ * again). The float zero used by the state lives across the calls, so it is
+ * kept in a callee-saved float register.
  */
 
 typedef struct ClankPort ClankPort;

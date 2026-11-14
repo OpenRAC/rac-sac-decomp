@@ -2,6 +2,11 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Queries the memory card manager singleton. A flag is computed as (field
+ * 0x3C0 < 3) when field 0x704 is zero, and as zero otherwise; a nonzero flag
+ * skips the three HUD update calls. The flag is an unsigned long long: that
+ * type keeps the compiler from folding `v & 0xFF` into `v != 0`.
  */
 
 typedef struct MCM MCM;

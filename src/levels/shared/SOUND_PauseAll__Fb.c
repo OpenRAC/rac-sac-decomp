@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The FMOD system exposes 64 channels; the function pauses all 64 existing
+ * channels and then records the global flag.
  */
 
 typedef struct FMOD_System FMOD_System;

@@ -2,6 +2,13 @@
  *
  * A function of the boot executable at 0x00148CA0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * The original span covers three small functions placed back to back, rendered
+ * here in order: this one, func_00148D38 and func_00148D48. This function adds
+ * self->f_0CC to element 14 of the array pointed to by arg2. If self->f_04C is
+ * set, it also adds self->f_010->f_518 * max(f_508, f_504) * 4 + 0x10. It then
+ * calls the virtual function self->f_0E0(self+0x1C, arg2) and returns its
+ * result if non-zero, else 0.
  */
 
 typedef struct Obj_00148CA0_sub Obj_00148CA0_sub;

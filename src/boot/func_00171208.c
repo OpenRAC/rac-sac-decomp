@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x00171208; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Calls func_172718; if it returns 0, stores the fourth argument in field
+ * +0x50 and returns 0.
  */
 
 struct BootObj

@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Reads an unsigned integer from a string and clamps the value between min and
+ * max; the upper bound is ignored when max is 0.
  */
 
 extern int sscanf(const char *str, const char *format, ...);

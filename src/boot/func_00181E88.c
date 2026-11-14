@@ -2,6 +2,11 @@
  *
  * A function of the boot executable at 0x00181E88; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Authenticator: a local record is filled with the addresses of four globals
+ * (0x181E20, 0x28E3D0, 0x20E0F0, 0x2044E0), the constant 0x800 and a zero,
+ * then handed to func_190B60. A non-negative answer is passed to func_191EA0
+ * (with a zero second argument) and returned; a negative one becomes -1.
  */
 
 extern int g_boot_00181E20;

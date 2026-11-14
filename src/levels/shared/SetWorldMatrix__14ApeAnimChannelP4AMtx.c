@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Stores the matrix argument in a field of the animation channel.
  */
 
 typedef struct tICONMENU tICONMENU;

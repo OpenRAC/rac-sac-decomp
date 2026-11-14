@@ -2,6 +2,10 @@
  *
  * A function of the boot executable at 0x0013BBD0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Asks func_143A10 for an object (written through the second argument); when
+ * the call fails (returns 0), the object is handed to func_141E00 together
+ * with the incoming floats.
  */
 
 int func_143A10(int self, int *out);

@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Answers 1 without touching the buffer or its other arguments.
  */
 
 typedef struct AglMovie AglMovie;

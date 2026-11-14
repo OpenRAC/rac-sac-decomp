@@ -2,6 +2,14 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Converts polar coordinates to a Cartesian vector. ang1 = a1 - floorf(a1 / (2
+ * pi) + 0.5f) * (2 pi); c1 = cosf(ang1), s1 = +/- sqrtf(1 - c1*c1) (sign of
+ * ang1); c2 = cosf(ang2), s2 = +/- sqrtf(1 - c2*c2) (sign of ang2); t =
+ * rad2*s2 + rad1*c2; out->x = t*c1; out->y = rad2*c2 - rad1*s2; out->z = t*s1.
+ *
+ * The retail places two nops before the inline square root (the compiler's
+ * division/sqrt rule), which needs the division-padding compiler variant.
  */
 
 typedef struct VEC3 { float x, y, z; } VEC3;

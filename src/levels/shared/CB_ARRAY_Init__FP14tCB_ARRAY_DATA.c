@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Clears the callback array structure: memset(data, 0, 0x84).
  */
 
 typedef struct tCB_ARRAY_DATA tCB_ARRAY_DATA;

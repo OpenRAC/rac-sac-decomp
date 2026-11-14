@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x00117698; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Lazily initializes the global at 0x00206120 and returns it.
  */
 
 extern int g_boot_00206120;

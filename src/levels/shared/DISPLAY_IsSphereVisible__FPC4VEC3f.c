@@ -2,6 +2,11 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Tests a sphere against the five visibility planes returned by
+ * DISPLAY_GetVisibilityPlanes. The sphere is hidden as soon as it lies
+ * entirely behind one of them, that is when the signed distance of its centre
+ * is below the negated radius.
  */
 
 typedef struct VEC3 {

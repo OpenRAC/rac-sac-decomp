@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x0010B4E8; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Scales a packed 3x3 and transposes it.
  */
 
 void func_0010B4E8(float *a0, float *a1, float s)

@@ -2,6 +2,11 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Same body as func_L01_00B0A0, with the 4x4 matrix transform
+ * VEC_MulMat4Vec3ZeroW instead of the 3x3 VEC_MulMat3Vec3. The three trailing
+ * floats are passed unchanged to func_00AF38 and the sum of the transformed
+ * components is written to the output vector.
  */
 
 typedef struct VEC3 {

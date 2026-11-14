@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x00148DE8; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Same shape as func_00148D68, but the second call takes a float argument,
+ * which is kept in a callee-saved register across the first call.
  */
 
 extern int func_149098(int a, int *out);

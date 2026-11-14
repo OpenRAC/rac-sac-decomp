@@ -2,6 +2,10 @@
  *
  * A function of the boot executable at 0x001711A0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Stores the pointer 0x00202E70 in field +0x4C of the object, then calls
+ * func_115858 if the flag is odd. The stored value is an address (a symbolic
+ * address), not a plain constant.
  */
 
 extern void func_115858(void);

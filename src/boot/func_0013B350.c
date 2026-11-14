@@ -2,6 +2,10 @@
  *
  * A function of the boot executable at 0x0013B350; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Same shape as func_0013B240: the call to func_143A10 returns an integer; the
+ * caller's second argument is cleared if non-null, otherwise func_144188 is
+ * called with the local value and that argument.
  */
 
 extern int func_143A10(unsigned int packed, int *out);

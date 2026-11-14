@@ -2,6 +2,14 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Packs a quaternion into one 32-bit word. The retail copies the sixteen bytes
+ * of the quaternion (four floats) to the frame with unaligned accesses, so the
+ * structure is packed. It tests the sign of the fourth component and negates
+ * the three first ones in the frame copy if it is negative. It then scales the
+ * three components by 1023.9f (the second one by half of it, 0.5), converts
+ * them to integers and packs them on eleven bits each, with the biases 0x400,
+ * 0x200 and 0x400.
  */
 
 typedef struct __attribute__((packed)) {

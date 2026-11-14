@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Sets the animation of an animation instance: it is stored in the first field
+ * of the instance.
  */
 
 typedef struct GDE_Animation GDE_Animation;

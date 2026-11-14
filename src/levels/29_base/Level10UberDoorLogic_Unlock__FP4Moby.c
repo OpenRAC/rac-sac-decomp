@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Clears the byte at offset 0x45 of the object (the "intro movie finished"
+ * flag).
  */
 
 typedef struct OperaController {

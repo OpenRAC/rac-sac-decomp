@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Returns the ammunition of the weapon the player holds: the gadget slot index
+ * at offset 0x344 of the player selects the gadget record, and its word at
+ * offset 0x60 is returned unchanged.
  */
 
 typedef struct WEAPON WEAPON;

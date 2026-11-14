@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Walks every tracked MobyType instance array (stride 0x80) and keeps the
+ * projectile inside the sphere whose squared distance to `pos` is smallest.
+ * The initial best distance is the sentinel 1e30f.
  */
 
 typedef struct {

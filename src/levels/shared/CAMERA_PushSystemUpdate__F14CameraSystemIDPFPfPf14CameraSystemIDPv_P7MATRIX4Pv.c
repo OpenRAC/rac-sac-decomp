@@ -2,6 +2,13 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Appends a pair of pointers to the sample list of the given camera system id
+ * and increments its counter. The samples of one camera system live in a 0x30
+ * byte slot of a global array, with the counter at offset 0x20 of the slot.
+ * The slot is reached twice through the global array, which is what produces
+ * the retail address arithmetic (base + 0x20 + id*0x30 for the counter, base +
+ * id*0x30 + 8*count for the samples).
  */
 
 typedef struct CameraUpdate {

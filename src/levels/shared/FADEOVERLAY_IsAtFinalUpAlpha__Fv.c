@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Forwards the question to the global fade overlay object (the global
+ * tFADEOVERLAY instance).
  */
 
 typedef struct tFADEOVERLAY tFADEOVERLAY;

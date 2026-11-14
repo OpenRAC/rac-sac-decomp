@@ -4,6 +4,11 @@
  * the placements are listed in config/levels/bodies.tsv.
  *
  * It follows the form of GCC's libgcc2.c; see THIRD_PARTY_NOTICES.md.
+ *
+ * Compiler library routine from EE-GCC 2.9 (libgcc2.c): converts a 64-bit
+ * integer to a float. The R5900 has no hardware double, so all double
+ * arithmetic goes through the software routines litodp, dpmul and dpadd. The
+ * double result is returned in v0/v1, as in the retail.
  */
 
 typedef float SFtype __attribute__ ((mode (SF)));

@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x0010C260; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Transposes a packed 3x3 and transforms the translation. The translation is
+ * at index 9.
  */
 
 /* packed src/dest transpose + translation, t at [9] */

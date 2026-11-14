@@ -2,6 +2,12 @@
  *
  * A function of the boot executable at 0x00171248; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * If the object has a sub-object at +0x14, stores its field +0x148 in field
+ * +0x0C of the node and sets field +0x24 to 0. If field +0x1C lacks bits 1 and
+ * 2 and field +0x30 is non-zero, calls func_152170 on node+0x20. Then clears
+ * the slot at table + index*4 + 0x2C4. Finally sets field +0x54 of the object
+ * to 1.0 and field +0x58 to 0.5.
  */
 
 struct __attribute__((packed)) BootNode

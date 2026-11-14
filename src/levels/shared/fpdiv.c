@@ -4,6 +4,11 @@
  * the placements are listed in config/levels/bodies.tsv.
  *
  * It follows the form of GCC's libgcc fp-bit.c; see THIRD_PARTY_NOTICES.md.
+ *
+ * Compiler library routine from EE-GCC 2.9 (libgcc fp-bit.c), FLOAT (single
+ * precision) configuration with US_SOFTWARE_GOFAST. It is divide():
+ * _fpdiv_parts is "static INLINE", so the bit-by-bit division is expanded in
+ * the body.
  */
 
 typedef float SFtype __attribute__ ((mode (SF)));

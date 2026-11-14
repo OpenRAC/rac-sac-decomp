@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x00171390; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Stores -1 in the slot at table + index*4 + 0x2C4, sets the node flags (table
+ * + index*0x30 + 0x3C4 + 4) to 2 and then sets bit 31 of them. Returns 0.
  */
 
 struct __attribute__((packed)) BootNode

@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Walks the linked list of actors and calls the method at offset 0x10 of each
+ * actor definition. The end of the list is marked by the address (array +
+ * 0x1C).
  */
 
 typedef struct Actor Actor;

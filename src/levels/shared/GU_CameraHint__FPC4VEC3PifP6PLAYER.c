@@ -2,6 +2,16 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The hint is only given when the camera has not been moved for five frames;
+ * the hint counter is decremented at each call. When no player is given, the
+ * game's global player is used. If that player is in first-person mode, first
+ * person is exited and camera control is disabled, then the secondary camera
+ * target is set to the point with the hint value and the negated field of
+ * view.
+ *
+ * The hint value lives across the calls, so it is kept in a callee-saved float
+ * register.
  */
 
 typedef struct VEC3 {

@@ -2,6 +2,11 @@
  *
  * A function of the boot executable at 0x001455A8; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Calls func_148778(self, &local) and returns if the result is non-zero.
+ * Otherwise it makes a virtual call through the object's sub-table at +0x18,
+ * passing the adjusted object pointer and 1. The callee returns an int, so the
+ * return register is reserved by the caller.
  */
 
 typedef struct {

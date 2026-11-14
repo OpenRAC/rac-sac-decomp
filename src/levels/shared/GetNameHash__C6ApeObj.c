@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Returns the name hash field of the object.
  */
 
 typedef struct tICONHORMENU tICONHORMENU;

@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x001520C0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Dispatches through the object's function table, then flags the state.
  */
 
 typedef int (*Boot_001520C0_Fn)(void *self, int arg);

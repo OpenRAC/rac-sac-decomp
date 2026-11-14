@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x00171300; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * The node is at table + index*0x30 + 0x3C4. Its 32-bit fields are accessed
+ * unaligned: the node is a packed struct, so its members have alignment 1.
  */
 
 struct __attribute__((packed)) BootNode

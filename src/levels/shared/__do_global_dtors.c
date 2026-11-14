@@ -4,6 +4,13 @@
  * the placements are listed in config/levels/bodies.tsv.
  *
  * It follows the form of GCC's crtstuff.c; see THIRD_PARTY_NOTICES.md.
+ *
+ * EE-GCC 2.9 crt linkage routine: walks the list of global destructors. The
+ * list cursor is a module-local data word of type char *; each entry is a
+ * destructor pointer and the list ends on a null entry. The cursor is
+ * incremented before the call, so the entry is loaded through the new cursor
+ * address (offset -4); the char * type is what makes the retail code do this.
+ * The cursor is declared extern so that it is placed at its retail address.
  */
 
 typedef void (*dtor_entry)(void);

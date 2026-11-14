@@ -2,6 +2,11 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Returns 0 when the pause menu has no current element (field 0x04 is null).
+ * Otherwise it repositions the selection and, if bit 1 of the flag at 0x14 is
+ * set, accumulates the displacement returned by a helper into the counter at
+ * 0x68.
  */
 
 typedef struct tPAUSEMENU {

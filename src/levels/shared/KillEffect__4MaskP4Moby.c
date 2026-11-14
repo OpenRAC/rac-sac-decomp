@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Clears the "effect killed" flag, an int at offset 0x54 of Mask. The second
+ * argument (Moby *) is unused.
  */
 
 typedef struct Mask {

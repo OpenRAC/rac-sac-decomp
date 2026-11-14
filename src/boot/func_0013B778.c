@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x0013B778; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Calls func_143A10; if it returns non-zero the function returns, otherwise it
+ * calls func_141B40 with the local value and the second argument.
  */
 
 extern int func_143A10(unsigned int packed, int *out);

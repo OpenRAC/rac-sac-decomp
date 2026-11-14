@@ -4,6 +4,10 @@
  * the placements are listed in config/levels/bodies.tsv.
  *
  * It follows the form of GCC's libgcc fp-bit.c; see THIRD_PARTY_NOTICES.md.
+ *
+ * Compiler library routine from EE-GCC 2.9 (libgcc fp-bit.c), DOUBLE
+ * configuration with US_SOFTWARE_GOFAST. It is df_to_sf(): unpacks a double,
+ * reduces the mantissa to single precision and repacks it through __make_fp.
  */
 
 typedef float SFtype __attribute__ ((mode (SF)));

@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Stores the color in the field at offset 0x74 of the flashlight.
  */
 
 typedef struct Flashlight {

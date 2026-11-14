@@ -2,6 +2,12 @@
  *
  * A function of the boot executable at 0x001714F8; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * The second parameter is a float used as an accumulator. If the object has a
+ * sub-object at +0x0C, the float is multiplied by its field +0x144 and then by
+ * field +0x58 of the sub-object's field +0x90. The result is converted to an
+ * integer and stored in field +0x18 of the node, whose flags also get bit 3
+ * set.
  */
 
 struct BootInner

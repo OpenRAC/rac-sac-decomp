@@ -2,6 +2,10 @@
  *
  * A function of the boot executable at 0x00131CC0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * The 5th and 6th arguments are passed in $t0 and $t1 (boot ABI). The large
+ * path is the fall-through path, which is what produces the retail branch
+ * layout. Sibling of func_00131B18: same shape, slightly different calls.
  */
 
 extern void func_12F028(int a0, int a1, int a2);

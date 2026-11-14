@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Depending on the game type of the current level, one of the byte death
+ * counters of pGV is decreased by 4, or cleared if it is already below 5. The
+ * cases are laid out in the retail order 0, 1, 3, 2, which is the switch order
+ * that yields the retail branch table (case 0 uses field EE5, case 1 EE4, case
+ * 3 EE6, case 2 EE7).
  */
 
 typedef struct GlobalVars {

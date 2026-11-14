@@ -4,6 +4,10 @@
  * the placements are listed in config/levels/bodies.tsv.
  *
  * It follows the form of GCC's libgcc fp-bit.c; see THIRD_PARTY_NOTICES.md.
+ *
+ * EE-GCC 2.9 libgcc routine (fp-bit.c, DOUBLE configuration,
+ * US_SOFTWARE_GOFAST): float_to_si() = dptoli, which unpacks a double and
+ * converts it to a signed integer.
  */
 
 typedef struct {

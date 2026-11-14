@@ -2,6 +2,10 @@
  *
  * A function of the boot executable at 0x00103578; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Stores 0 at offsets 0x54, 0x4C and 0x48 of the object, stores the address of
+ * a global at offset 0x64, and returns the object. The address goes through a
+ * local int, otherwise it would be allocated to the return register.
  */
 
 extern int g_boot_001FB570;

@@ -2,6 +2,11 @@
  *
  * A function of the boot executable at 0x0015D488; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * If flag is non-zero: when self->field_00 is already set, returns 0;
+ * otherwise calls the virtual function with the flag and, if it returns 0,
+ * sets field_00 to 1. If flag is zero: calls the virtual function with 0 and,
+ * if it returns 0, clears field_00. Both branches share the final return of 0.
  */
 
 typedef struct {

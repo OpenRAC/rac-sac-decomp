@@ -2,6 +2,13 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The GS context holds two words: the vertical-sync callback (offset 0x08) and
+ * the interrupt handler identifier (offset 0x0C). A null callback removes the
+ * handler; a non-null callback registers the new handler (interrupt 2,
+ * priority -1). If a handler already existed it is removed before the
+ * registration, otherwise the removal is skipped. The returned value is the
+ * previous callback.
  */
 
 typedef struct GS_CONTEXT {

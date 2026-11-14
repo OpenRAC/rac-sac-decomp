@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The key stream owns a table of floats at +0x14. For three steps (the counter
+ * starts at 2) the destination receives cos(angle) * table[3] + table[0], and
+ * both the table cursor and the destination advance by one float. The cosine
+ * is recomputed by the three library calls at each step (they are external:
+ * the retail keeps the double in the integer registers).
  */
 
 typedef struct ApeAnimKeyStream ApeAnimKeyStream;

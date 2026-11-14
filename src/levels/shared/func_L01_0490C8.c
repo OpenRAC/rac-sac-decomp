@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Folds two angles back into ]-PI, PI]; the second one only when the flag at
+ * offset 0x20 of the object is set. The first angle is f4 - angles->a and the
+ * second is f8 + angles->b, each folded back into the range.
  */
 
 typedef struct Angles Angles;

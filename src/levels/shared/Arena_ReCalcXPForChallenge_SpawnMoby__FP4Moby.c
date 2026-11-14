@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The signature table is indexed by a byte; the multiplication by 0x34 (the
+ * entry size) is done by the three-operand mult of the EE.
  */
 
 typedef struct Moby Moby;

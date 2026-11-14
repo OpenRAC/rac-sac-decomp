@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x00115940; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Initializes the first four fields of the object (one of them is the address
+ * 0x001FB9A0); a null object is ignored.
  */
 
 extern char g_boot_001FB9A0[];

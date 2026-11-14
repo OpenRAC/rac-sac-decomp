@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x0010C6A8; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Scales a 3x3 matrix stored with 16-byte rows, transposes it into a packed
+ * destination and transforms the translation.
  */
 
 void func_0010C6A8(float *a0, float *a1, float s)

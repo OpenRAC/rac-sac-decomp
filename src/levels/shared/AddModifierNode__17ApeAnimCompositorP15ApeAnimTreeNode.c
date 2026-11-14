@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Same append form as AddSibling, with the ApeTArray at this+0xAC.
  */
 
 typedef struct ApeAnimCompositor ApeAnimCompositor;

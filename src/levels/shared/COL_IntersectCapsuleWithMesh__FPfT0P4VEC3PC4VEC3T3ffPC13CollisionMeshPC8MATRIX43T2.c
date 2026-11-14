@@ -2,6 +2,14 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Same wrapper as the MATRIX4 overload, but it calls the "MATRIX43" variant of
+ * the internal function.
+ *
+ * The two trailing register arguments of the retail name (the "ff") are passed
+ * through raw into the last two argument registers of the internal function,
+ * so they are opaque 32-bit values declared as unsigned int here: the EE GCC
+ * 2.9 compiler drops a float placed past the first four argument registers.
  */
 
 typedef struct {

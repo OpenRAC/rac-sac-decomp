@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Returns the current state field of the menu.
  */
 
 typedef struct tICONHORMENU tICONHORMENU;

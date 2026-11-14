@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The procedural node accumulates the time (+0x2C) and then walks two lists.
+ * The first is at +0x34 (items at +0x34, count at +0x38); its items carry a
+ * key stream at +0x38 (phase +0x18, procedure +0x1C). The second is at +0x48
+ * (items at +0x48, count at +0x4C); its items carry a key stream at +0x20
+ * (phase +0x10, procedure +0x14).
  */
 
 typedef struct ApeAnimProceduralNode ApeAnimProceduralNode;

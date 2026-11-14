@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x0010C098; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Inverts a uniformly scaled orthogonal packed 3x3 and transforms the
+ * translation.
  */
 
 void func_0010C098(float *a0, float *a1)

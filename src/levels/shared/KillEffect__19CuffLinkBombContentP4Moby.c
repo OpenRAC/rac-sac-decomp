@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The bomb content makes the Moby held at offset 0x0C explode, at the position
+ * stored at offset 0x30 of the Moby passed as the second argument.
  */
 
 typedef struct Moby Moby;

@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x00171720; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Reads the integer at base + index*4 + 0x2C4 and writes its inverted sign bit
+ * to *out. Returns 0.
  */
 
 struct BootObj

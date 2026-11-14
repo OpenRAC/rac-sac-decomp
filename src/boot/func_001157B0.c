@@ -2,6 +2,10 @@
  *
  * A function of the boot executable at 0x001157B0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Splits the float into four words (type, sign, exponent, mantissa) with
+ * func_114D88, inverts the stored sign, then passes the structure to
+ * func_114C78.
  */
 
 extern void func_114D88(void *source, void *parts);

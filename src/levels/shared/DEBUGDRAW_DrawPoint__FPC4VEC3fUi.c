@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Draws a debug point as a small sphere. The debug sphere is described on the
+ * stack: the centre is built in a 16-byte aligned vector (a quadword copy on
+ * the R5900), the radius is a float that survives the calls, and the colour is
+ * a four-byte RGBA that shares the stack slot of the dead vector. The function
+ * calls SetCenter, SetRadius and SetARGB on it.
  */
 
 typedef unsigned int quad __attribute__((mode(TI)));

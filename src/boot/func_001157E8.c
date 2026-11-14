@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x001157E8; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Stores four words (type, sign, exponent, mantissa) in a structure and passes
+ * it to func_114C78.
  */
 
 extern void func_114C78(void *parts);

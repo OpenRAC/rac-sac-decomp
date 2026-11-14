@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Returns the parametric experience the next level gives for a gadget: the
+ * value of the gadget over the value of its definition, with the ratio bounded
+ * to one.
  */
 
 typedef struct GADGET_DATA {

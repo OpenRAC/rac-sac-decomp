@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Same linked list as ACTOR_Update, but the method called is the one at offset
+ * 0x14 of the actor definition (the second method pointer).
  */
 
 typedef struct Actor Actor;

@@ -2,6 +2,15 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The Hangul glyph is drawn with HUD_DrawTextureSimpleArea. The texture comes
+ * from GetFontTextureID(1), the four sizes are the float arguments of the
+ * call, and the four coordinates are four "unsigned short" values (the "short"
+ * types of the retail name are the first four). The fourth coordinate is
+ * 0xFFFFFFFF.
+ *
+ * The jamo table has 4 bytes per character: byte b3 gives the height, b0 and
+ * b2 the horizontal position, and b1 the width.
  */
 
 typedef unsigned char Uc;

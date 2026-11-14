@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x00148DA8; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * If func_149098(self, &local) fails (returns non-zero), returns. Otherwise
+ * calls func_1490D0(local, arg2).
  */
 
 extern int func_149098(int a, int *out);

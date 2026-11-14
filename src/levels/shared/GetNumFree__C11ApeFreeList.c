@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Returns the number of free entries, the word at offset 0x14.
  */
 
 typedef struct ApeFreeList ApeFreeList;

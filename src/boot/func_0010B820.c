@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x0010B820; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Scales a 3x3 with 16-byte rows and transposes it into a packed 3x3.
  */
 
 void func_0010B820(float *a0, float *a1, float s)

@@ -2,6 +2,13 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Calls MU_UnderdampedSpringSetup with the address of a module-local spring
+ * coefficient object (not exported by the symbol table) and three float
+ * constants: 0x427B53D1 = 62.831853 (20*pi), 0x41A00000 = 20.0 and 0x3D088889
+ * = 0.0333333351 (1/30). The constants are written as the exact decimal values
+ * the retail holds, because the compiler's own folding of 20*pi is one ulp
+ * off.
  */
 
 typedef struct SpringCoeffs SpringCoeffs;

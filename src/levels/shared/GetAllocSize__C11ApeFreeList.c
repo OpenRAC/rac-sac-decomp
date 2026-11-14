@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Returns the allocation size, the word at offset 0x28.
  */
 
 typedef struct ApeFreeList ApeFreeList;

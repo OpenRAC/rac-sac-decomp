@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x0011DC40; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Returns table[index] if self is non-null, otherwise 0. The table pointer is
+ * stored at self+0x250.
  */
 
 typedef struct {

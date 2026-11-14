@@ -2,6 +2,11 @@
  *
  * A function of the boot executable at 0x00171558; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * The second parameter is a float v. It is turned into (v + 1) * 0.5 and
+ * stored in field +0x58 of the object. Two integers are then stored in the
+ * node: field +0x54 multiplied by (1 - v) and by 10000, and field +0x54
+ * multiplied by field +0x58 and by 10000. Bit 2 of the flags is set.
  */
 
 struct __attribute__((packed)) BootNode

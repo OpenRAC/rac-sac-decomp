@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Stores the region ID as a byte at offset 0.
  */
 
 typedef struct ApePVSRegion ApePVSRegion;

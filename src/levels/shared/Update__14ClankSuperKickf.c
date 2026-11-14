@@ -2,6 +2,14 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Calls the base Punch update first, then restores the animation scale it read
+ * before the call (the float at offset 0x1D8 of the player, kept in a
+ * callee-saved float register across the call) and clears bit 1 of the flags
+ * at offset 0x264. When a global flag byte is set it also adds the second
+ * component of the animator's frame translation to the float at offset 0x34 of
+ * the player, copies 16 bytes from offset 0x30 of the player to the object at
+ * offset 0x260, and clears the frame translation.
  */
 
 typedef struct ClankSuperKick ClankSuperKick;

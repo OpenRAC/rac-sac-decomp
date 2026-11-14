@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Same walk as Evaluate for the same node type, but the key stream of an item
+ * holds its phase at +0x30 and its procedure at +0x34.
  */
 
 typedef struct ApeAnimTreeNode ApeAnimTreeNode;

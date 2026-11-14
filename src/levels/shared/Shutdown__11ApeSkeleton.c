@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The shutdown of the skeleton is that of its definition class; the pointer
+ * passed in is not modified.
  */
 
 typedef struct ApeSkeleton ApeSkeleton;

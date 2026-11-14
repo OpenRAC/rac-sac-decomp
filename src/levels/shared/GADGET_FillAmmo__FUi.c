@@ -2,6 +2,11 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Fills the ammunition of a gadget instance with the ammunition of its
+ * definition: the amount in the definition (field 0x40) is copied into the
+ * gadget state (field 0x60). The data pointer and gadgetId are live during the
+ * second call, so they live in callee-saved registers.
  */
 
 typedef struct GADGETDATA_s GADGETDATA_s;

@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Returns the address of the transform block at offset 0x18 of the translator.
  */
 
 typedef struct AnimTranslator AnimTranslator;

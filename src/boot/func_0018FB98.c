@@ -5,6 +5,8 @@
  *
  * It follows the form of newlib's libc/stdlib/mprec.c; see
  * THIRD_PARTY_NOTICES.md.
+ *
+ * hi0bits, from newlib libc/stdlib/mprec.c.
  */
 
 int

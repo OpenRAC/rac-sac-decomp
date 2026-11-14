@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Calls a helper and returns 0.
  */
 
 extern void func_FE_0096E0(void);

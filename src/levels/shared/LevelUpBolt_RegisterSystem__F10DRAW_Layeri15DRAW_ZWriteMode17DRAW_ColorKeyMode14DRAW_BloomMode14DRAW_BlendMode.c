@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Forwards its six arguments to Line_RegisterSystem and passes as a seventh
+ * argument the address of a static PAR_Group object local to the module.
  */
 
 typedef struct DRAW_Layer DRAW_Layer;
