@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x0013A8E0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Queries func_15B460, then hands the result to func_15C610.
  */
 
 extern int func_15B460(void *self, void *out);

@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The thief state machine is the object at offset 0x58 of the moby; the flag
+ * at its offset 0xC4 is raised and the state machine embedded at its offset
+ * 0xD0 is updated with the elapsed time.
  */
 
 typedef struct StateMachine StateMachine;

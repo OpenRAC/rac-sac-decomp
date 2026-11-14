@@ -2,6 +2,15 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Public wrapper of COL_IntersectSweptSphereWithMeshInternal: it prepares a
+ * 16-byte local block, shifts the arguments by one and returns the result as a
+ * boolean.
+ *
+ * The two trailing register arguments of the retail name (the "ff") are passed
+ * through raw into the last two argument registers of the internal function,
+ * so they are opaque 32-bit values declared as unsigned int here: the EE GCC
+ * 2.9 compiler drops a float placed past the first four argument registers.
  */
 
 typedef struct {

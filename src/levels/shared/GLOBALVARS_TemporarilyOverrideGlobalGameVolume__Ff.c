@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The two volumes of the GLOBALVARS structure (integers, 0..255) are divided
+ * by 255 and multiplied by the given factor, then passed to
+ * SOUND_SetGlobalVolume and SNDSTREAM_SetGlobalVolume (stream type 0). A
+ * global state word is then set to 5. The multiplier lives across the two
+ * calls, so it is kept in a callee-saved float register.
  */
 
 typedef struct GLOBALVARS GLOBALVARS;

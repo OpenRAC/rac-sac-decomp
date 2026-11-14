@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x001035C8; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Getter: returns the word at offset 0x50 of the object given as first
+ * argument.
  */
 
 typedef struct Boot_001035C8_Object

@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Level update. The float argument is the time step and the second argument is
+ * the render target. If a render target is supplied and the camera (field 0x8
+ * of the instance) exists, the camera is updated; the world (field 0x0) is
+ * then updated in every case. The instance pointer must survive both calls, so
+ * it is kept in a callee-saved register.
  */
 
 typedef struct ApeLevelInst ApeLevelInst;

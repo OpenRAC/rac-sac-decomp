@@ -2,6 +2,10 @@
  *
  * A function of the boot executable at 0x00171748; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Switches a flag bit of the node according to the sign of field +8 of the
+ * second argument: if that field is below -9999 the flag goes from 0x100 to
+ * 0x200, otherwise the reverse. Then calls func_172A70(object, argument).
  */
 
 struct __attribute__((packed)) BootNode

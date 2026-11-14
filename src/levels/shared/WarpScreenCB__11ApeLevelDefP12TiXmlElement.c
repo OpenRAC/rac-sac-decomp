@@ -2,6 +2,13 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Reads the warp screen settings of the most recently loaded level definition
+ * from the XML element and returns 1, or returns 0 if no level object is
+ * loaded. It reads a bool, the amplitudeX/amplitudeY/frequencyX/frequencyY
+ * floats, the gridDimX/gridDimY ints and an RGBA colour. The 0.0f constant
+ * lives in a callee-saved float register because it must survive the eight
+ * calls.
  */
 
 typedef struct TiXmlElement TiXmlElement;

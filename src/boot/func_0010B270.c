@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x0010B270; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Inverts a packed 3x3 matrix.
  */
 
 void func_0010B270(float *a0, float *a1)

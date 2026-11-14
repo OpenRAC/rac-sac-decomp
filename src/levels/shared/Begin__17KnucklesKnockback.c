@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Clears the byte at offset 0x38 of the state.
  */
 
 typedef struct KnucklesKnockback {

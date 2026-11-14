@@ -2,6 +2,11 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * A gadget (gadgetId) carries a table of 16 module identifiers at offset 0x30.
+ * The function returns true if the entry slot of that table holds the module
+ * identifier modId, and false for an empty table. It makes two distinct calls
+ * to GADGET_GetData__FUi, the second inside the branch.
  */
 
 typedef struct GADGET_DATA {

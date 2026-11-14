@@ -4,6 +4,10 @@
  * the placements are listed in config/levels/bodies.tsv.
  *
  * It follows the form of GCC's libgcc fp-bit.c; see THIRD_PARTY_NOTICES.md.
+ *
+ * Compiler library routine from EE-GCC 2.9 (libgcc fp-bit.c), DOUBLE
+ * configuration with US_SOFTWARE_GOFAST. It is float_to_usi(): unpacks a
+ * double and converts it to an unsigned integer.
  */
 
 typedef float DFtype __attribute__ ((mode (DF)));

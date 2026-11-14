@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Appends a render entry to the render list: the sort key is stored at the
+ * current write pointer, the submesh render parameters pointer at the
+ * following word, and the write pointer then advances by 8.
  */
 
 typedef struct AglRenderListSortKey AglRenderListSortKey;

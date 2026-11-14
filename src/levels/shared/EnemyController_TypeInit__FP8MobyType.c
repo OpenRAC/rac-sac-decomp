@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The type of the enemy moby (0xC0078B95) is stored in a module global.
  */
 
 typedef struct MobyType MobyType;

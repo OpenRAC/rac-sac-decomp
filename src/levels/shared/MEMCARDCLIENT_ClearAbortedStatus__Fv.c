@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Calls the shared memory card status helper with the argument pair (0x8000,
+ * 0).
  */
 
 extern int func_FE_066548(int mask, void *param);

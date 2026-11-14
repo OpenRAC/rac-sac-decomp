@@ -2,6 +2,14 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Clamps the two volumes of the temporary game settings to [0, 255]. Each
+ * block tests the value against zero and against 255 (the reversed form 255 <
+ * value) and selects the address of the old value or of a frame constant
+ * before a single load. The two bounds of each block are frame locals written
+ * through their pointers. The first store is done through a char pointer
+ * derived from pGV so that the global pointer is reloaded afterwards, as in
+ * the retail.
  */
 
 typedef struct GLOBALVARS GLOBALVARS;

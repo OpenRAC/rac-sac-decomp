@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x00103608; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Setter: stores the second argument in the word at offset 0x60 of the object
+ * given as first argument.
  */
 
 typedef struct Boot_00103608_Object

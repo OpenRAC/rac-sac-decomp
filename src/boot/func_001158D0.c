@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x001158D0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Stores the address 0x001FBA18 in field +0x4 of the object, then calls
+ * func_115858 if the flag is odd.
  */
 
 extern void func_115858(void);

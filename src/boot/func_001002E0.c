@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x001002E0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Empty body.
  */
 
 void func_001002E0(void)

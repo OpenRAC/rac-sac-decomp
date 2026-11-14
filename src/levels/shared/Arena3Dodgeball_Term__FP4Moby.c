@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The PAR group of the moby lives 0x14 bytes into the object the moby points
+ * to at 0x58; the arithmetic is a byte offset, so the load is a single word
+ * and the displacement an add of the constant.
  */
 
 typedef struct Moby Moby;

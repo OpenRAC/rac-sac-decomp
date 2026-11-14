@@ -2,6 +2,11 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * A VLINES block holds two vertices and a parameter at offset 0x0C. It is
+ * drawn by DrawLines: the same vertex block is the first argument, the mode is
+ * the constant 2, and the segment count comes from the field at offset 0xC of
+ * the block.
  */
 
 typedef struct UBE_VERT UBE_VERT;

@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The text write is placed in the delay slot of the return.
  */
 
 typedef struct tFontPrintWindowData {

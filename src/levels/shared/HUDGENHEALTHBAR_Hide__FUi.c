@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Terminates the head-up health bar; the bar identifier is forwarded untouched
+ * to HUDGENHEALTHBAR_Terminate.
  */
 
 typedef unsigned int uint;

@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Stores the number of visible icon slots in the menu.
  */
 
 typedef struct tICONMENU tICONMENU;

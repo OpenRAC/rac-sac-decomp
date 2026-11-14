@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Appends the manager itself (not the profile) to the static list through
+ * ApeTArray Append; the profile reference argument is not read by the body.
  */
 
 typedef void AglShaderProfile;

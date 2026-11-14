@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Walks the global element array (0x2C bytes per element, element count at
+ * +0x2C00). For each element the linked list starting there is reset: every
+ * node points to itself and the head field is replaced by the sentinel
+ * (element + 0x14). The block of slots is then relinked (nodes of 0x10 bytes),
+ * and three final calls are made (two helper functions and memset).
  */
 
 typedef struct ParNode ParNode;

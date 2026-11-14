@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x00103818; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Stores the float argument at offset 0x40 of the object given as first
+ * argument.
  */
 
 typedef struct {

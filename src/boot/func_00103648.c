@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x00103648; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Computes self->y = self->y + scale * self->x and returns self. The scale is
+ * the float parameter, not a constant 1.0f.
  */
 
 typedef struct {

@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x0010B450; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Inverts a uniformly scaled orthogonal packed 3x3.
  */
 
 void func_0010B450(float *a0, float *a1)

@@ -2,6 +2,15 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Tells whether the shot is clear: the vector p1 - p0 is normalised and the
+ * normalised length is passed as the fourth argument to the
+ * MobyUtil_IsShotClear overload that takes a float and a bool.
+ *
+ * The square root is a variable distinct from `len`, so that the division
+ * divides by the root and not by the copy passed as the argument. The retail
+ * compiler's division rule inserts two nops before the div.s, which needs the
+ * division-padding compiler variant.
  */
 
 /* Profile: this body needs the divpad route (the division padding patch).

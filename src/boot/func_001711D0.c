@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x001711D0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Calls func_174150 on the object, stores the pointer 0x00202C80 in field
+ * +0x4C and returns the object.
  */
 
 extern char g_boot_00202C80[];

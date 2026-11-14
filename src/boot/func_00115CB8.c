@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x00115CB8; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Forwards directly to func_1158D0.
  */
 
 extern void func_1158D0(void *object, int flags);

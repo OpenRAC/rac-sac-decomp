@@ -2,6 +2,11 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Casts a ray of length f from pos with MOBYCOLL_CollideRayWithWorld and
+ * inspects the surface it meets. The collision answer is written in a local
+ * surface block and the hit distance in a local float on the stack. The float
+ * length argument is kept in a callee-saved float register across the call.
  */
 
 typedef struct VEC3 {

@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x0010C778; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Transposes a 3x3 matrix stored with 16-byte rows into a packed destination
+ * and transforms the translation (source word 12, destination word 9).
  */
 
 /* 16-byte src, packed dest, t src[12] dest[9] */

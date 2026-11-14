@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Stores the compositor in the field at offset 0x0C of the component; no stack
+ * frame is needed.
  */
 
 typedef struct APEGDE_BoneComponent APEGDE_BoneComponent;

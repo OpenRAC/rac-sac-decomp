@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x001029C8; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Clears the first byte of the object given as first argument; nothing else is
+ * touched.
  */
 
 typedef struct Boot_001029C8_Object

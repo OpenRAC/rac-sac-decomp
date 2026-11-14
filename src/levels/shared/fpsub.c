@@ -4,6 +4,10 @@
  * the placements are listed in config/levels/bodies.tsv.
  *
  * It follows the form of GCC's libgcc fp-bit.c; see THIRD_PARTY_NOTICES.md.
+ *
+ * EE-GCC 2.9 libgcc routine (fp-bit.c, FLOAT single-precision configuration,
+ * US_SOFTWARE_GOFAST): sub() = fpsub. Like fpadd, but the sign of the second
+ * operand is flipped before the soft-float addition.
  */
 
 typedef struct {

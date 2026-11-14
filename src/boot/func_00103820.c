@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x00103820; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Returns the word at offset 0x54 of the object given as first argument.
  */
 
 typedef struct {

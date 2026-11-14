@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The line group of the moby is stopped (offset 0x10C of the object at 0x58)
+ * and its sound is stopped (offset 0x2C4 of the same object).
  */
 
 typedef struct Moby Moby;

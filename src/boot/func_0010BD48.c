@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x0010BD48; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Transposes a 3x3 with 16-byte rows and transforms the translation. The
+ * translation is at index 12.
  */
 
 /* 16-byte src/dest transpose + translation, t at [12] */

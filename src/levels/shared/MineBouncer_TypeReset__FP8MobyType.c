@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The mine bouncer resets its ball physics dispatcher.
  */
 
 typedef struct BALLPHYSICS_Dispatcher BALLPHYSICS_Dispatcher;

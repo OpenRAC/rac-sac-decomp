@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Reads the camera settings of the most recently loaded level definition from
+ * the XML element (three float attributes, one RGBA attribute and two vec3
+ * attributes) and returns 1. It returns early if no level definition is
+ * loaded. The zero float default lives across the calls, so it is kept in a
+ * callee-saved float register.
  */
 
 typedef struct TiXmlElement TiXmlElement;

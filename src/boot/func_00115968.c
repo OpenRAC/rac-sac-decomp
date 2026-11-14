@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x00115968; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Fills a three-word object (id, default, value).
  */
 
 extern int g_boot_001FB9B8;

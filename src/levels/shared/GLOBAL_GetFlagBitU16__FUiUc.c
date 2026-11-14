@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * 16-bit variant of GLOBAL_GetFlagBit: the flag table of the pGV block is read
+ * as a halfword at the byte offset given by the index, and the result is
+ * masked with 1 << bit.
  */
 
 typedef struct GLOBALVARS GLOBALVARS;

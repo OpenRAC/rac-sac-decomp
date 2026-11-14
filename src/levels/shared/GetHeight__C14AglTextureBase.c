@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The texture height is a halfword at offset 0x36.
  */
 
 typedef struct AglTexture AglTexture;

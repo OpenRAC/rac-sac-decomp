@@ -2,6 +2,13 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Takes an input vector, an output vector, a matrix and three floats. The
+ * three floats arrive in the float argument registers and are passed unchanged
+ * to func_00AF38; that six-parameter form is what gives the retail register
+ * assignment (in, out and matrix kept in callee-saved registers). The result
+ * of the transform chain (a 3x3 matrix times vector product, VEC_MulMat3Vec3)
+ * is added component by component to the source vector.
  */
 
 typedef struct VEC3 {

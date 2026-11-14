@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The group is not used: the function asks the render context for the screen
+ * depth of the given centre and stores the result in a global word of the
+ * module (an anonymous object).
  */
 
 typedef struct PAR_Group PAR_Group;

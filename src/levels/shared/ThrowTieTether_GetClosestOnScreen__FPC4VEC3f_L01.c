@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Walks the list of tether cables (two global words: the cursor and its limit;
+ * entries are 0x80 bytes), keeps those that are flagged and on screen
+ * (GU_IsOnScreen), and compares the squared distance to the position with the
+ * squared radius, the last matching cable being returned. The squared radius
+ * is kept in a callee-saved float register across the calls.
  */
 
 typedef struct VEC3 {

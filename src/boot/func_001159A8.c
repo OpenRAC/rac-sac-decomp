@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x001159A8; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Returns the fourth argument if func_115900 succeeds, zero otherwise.
  */
 
 extern int func_115900(void *a, int b, int c, int d);

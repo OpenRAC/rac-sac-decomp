@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x00115CD8; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Initializes the object (field +4 = address 0x001FB9B8) and returns it.
  */
 
 extern char g_boot_001FB9B8[];

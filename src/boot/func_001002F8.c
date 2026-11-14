@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x001002F8; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Stores its argument in a global word.
  */
 
 extern int g_boot_0019EF0C;

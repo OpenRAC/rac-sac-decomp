@@ -2,6 +2,10 @@
  *
  * A function of the boot executable at 0x00115900; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Tests whether two objects are identical. The same pointer means yes;
+ * otherwise the integers they point to are compared and the result is true
+ * when func_184C34 returns zero.
  */
 
 extern int func_184C34(int left, int right);

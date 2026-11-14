@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Fills a 6-word descriptor, calls GetTransientDataExtraSize, then stores the
+ * 4-byte-aligned (field0 + extra) into a word of the module and returns it.
  */
 
 extern int GetTransientDataExtraSize__12StateMachine(void);

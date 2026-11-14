@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x0010C310; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Inverts a 3x3 matrix stored with 16-byte rows into a packed destination (9
+ * floats) and transforms the translation (source word 12, destination word 9).
  */
 
 void func_0010C310(float *a0, float *a1)

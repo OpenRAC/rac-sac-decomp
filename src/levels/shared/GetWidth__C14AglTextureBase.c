@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The texture width is a halfword at offset 0x34.
  */
 
 typedef struct AglTexture AglTexture;

@@ -2,6 +2,13 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Returns the replay counter of the global variables, capped at three. The
+ * counter lives in the structure pointed to by pGV. The two candidates (the
+ * counter and the constant three) live in memory, and the retail selects the
+ * address of the one it keeps before the final load, so the source selects the
+ * address, not the value. The constant three is a frame local written through
+ * its pointer before the counter is read.
  */
 
 typedef struct GLOBALVARS GLOBALVARS;

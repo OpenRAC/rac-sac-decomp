@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Draws a debug sphere from a Sphere structure and a colour. The centre is
+ * copied into a 16-byte aligned vector on the stack (a quadword copy on the
+ * R5900) and the radius is read after the centre, so it survives the call to
+ * SetCenter in a callee-saved float register. The colour is a four-byte RGBA
+ * that shares the slot of the dead vector.
  */
 
 typedef unsigned int quad __attribute__((mode(TI)));

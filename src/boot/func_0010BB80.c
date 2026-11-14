@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x0010BB80; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Inverts a uniformly scaled orthogonal 3x3 with 16-byte rows and transforms
+ * the translation.
  */
 
 void func_0010BB80(float *a0, float *a1)

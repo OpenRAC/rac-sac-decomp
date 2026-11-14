@@ -2,6 +2,11 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The index is computed in a local variable, which keeps the -1 in the
+ * arithmetic instead of folding it into the load offset; the order of the
+ * stores fixes the register assignment. The module's symbol table has no entry
+ * for this function, so its name is descriptive only.
  */
 
 typedef struct ITEM_TABLE ITEM_TABLE;

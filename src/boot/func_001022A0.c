@@ -2,6 +2,8 @@
  *
  * A function of the boot executable at 0x001022A0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Stores three float arguments into three consecutive global floats.
  */
 
 extern float g_boot_001AAC10;

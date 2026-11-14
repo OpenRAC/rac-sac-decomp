@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The IFF reader supplies three fields (one 32-bit word and two halfwords)
+ * that are copied into the texture. The name (a string at offset 11 of the
+ * block) is then passed to SetName with the flag false.
  */
 
 typedef struct AglTextureBase {

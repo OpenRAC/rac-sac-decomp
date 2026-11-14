@@ -4,6 +4,10 @@
  * the placements are listed in config/levels/bodies.tsv.
  *
  * It follows the form of GCC's libgcc fp-bit.c; see THIRD_PARTY_NOTICES.md.
+ *
+ * EE-GCC 2.9 libgcc routine (fp-bit.c, FLOAT single-precision configuration,
+ * US_SOFTWARE_GOFAST): add() = fpadd. The two floats are unpacked into 16-byte
+ * descriptors, added by _fpadd_parts and packed back.
  */
 
 typedef struct {

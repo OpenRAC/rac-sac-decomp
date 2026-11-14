@@ -2,6 +2,17 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The point is put in camera space: the difference with the camera position is
+ * squared into a distance, and the dot product with the camera axis says
+ * whether the point is in front of the camera. The half field of view is read
+ * twice (the retail calls the same getter twice) and the two results are
+ * multiplied. The function returns 1 when the point is visible.
+ *
+ * Two rows of the camera matrix are reached through pointers: the address of
+ * the third row and of the second row are each computed once, then indexed
+ * with the small displacements of the three components. That form gives the
+ * base-plus-displacement loads of the retail.
  */
 
 typedef struct VEC3 {

@@ -2,6 +2,12 @@
  *
  * A function of the boot executable at 0x0015BB80; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Authenticator: a null item gives 37, and so does an item whose unsigned
+ * counter at 0x14 is not below three. Otherwise the three words at 0x00, 0x1C
+ * and 0x3C are saved, func_184704 is called with the item, the field of the
+ * owner at 0x81C and the word at 0x00, and the three saved words are written
+ * back. Returns 0 on success.
  */
 
 typedef struct Boot_0015BB80_Item

@@ -2,6 +2,9 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Asks a trigger whether a fixed global point lies inside it; the result of
+ * TRIGGER_CheckPointInside is returned unchanged.
  */
 
 typedef struct Trigger Trigger;

@@ -2,6 +2,8 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The moby is put back in its flippy-floor shape, then reset.
  */
 
 typedef struct Moby Moby;

@@ -2,6 +2,13 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The blast sphere damages every moby of the collision category around the
+ * given point (MOBYCOLL_FindMobysWithSphere, up to 0x20 mobys) by calling the
+ * damage method of each one. The damage multiplier is 2, or 3 when the player
+ * carries gadget 0x27, and it scales the player's base melee damage. The
+ * multiplier and the radius live across the calls, so they are kept in
+ * callee-saved float registers.
  */
 
 typedef struct ClankSuperKickBlast ClankSuperKickBlast;

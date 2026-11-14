@@ -2,6 +2,14 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Looks up the attack data of the moby type with ENEMYSTATS_GetAttackData. The
+ * data is a table of four-byte words: the float used as damage is taken at
+ * index 0, or at index 1 when the game is in replay mode, and the damage type
+ * and damage strength are the third and fourth words of the table. These are
+ * passed to GU_DamageInSphere together with the sphere and the remaining
+ * arguments. The radius float is kept in a callee-saved float register across
+ * the calls.
  */
 
 typedef struct VEC3 {

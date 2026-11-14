@@ -2,6 +2,14 @@
  *
  * A function of the boot executable at 0x00100350; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Builds a 32-byte request block on the stack, issues system call 0x40, stores
+ * the result in a global word and returns it. The stack frame uses 16-byte
+ * slots, so this is built with the sdk991111 route.
+ *
+ * The field order matters: the scheduler emits the two writes of 1 in reverse
+ * offset order, while the retail writes offset 0x4 then 0x8, so the C writes
+ * the field at 0x8 first.
  */
 
 struct BootRequest

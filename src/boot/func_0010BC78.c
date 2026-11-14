@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x0010BC78; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Scales a 3x3 with 16-byte rows, transposes it, and transforms the
+ * translation.
  */
 
 void func_0010BC78(float *a0, float *a1, float s)

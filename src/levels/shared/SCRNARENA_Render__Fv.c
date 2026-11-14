@@ -2,6 +2,10 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The arena screen renders the pause menu: the single instance of that menu is
+ * a global of the module (an anonymous object with no known retail name) and
+ * its address is passed to PAUSEMENU_Render.
  */
 
 typedef struct PAUSEMENU tPAUSEMENU;

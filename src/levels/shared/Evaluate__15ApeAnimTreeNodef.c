@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * The node owns the list header at +0x0C (item table at +0x0C, item count at
+ * +0x10). The count is read through the address of that header, and the item
+ * table is re-read from the node on every pass because the callee may change
+ * it. Each item carries a key stream at +0x24 whose phase (+0x38) is added to
+ * the item and whose procedure (+0x3C) is called with the time.
  */
 
 typedef struct ApeAnimTreeNode ApeAnimTreeNode;

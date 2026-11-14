@@ -2,6 +2,11 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Fills the radial blur settings of the most recently loaded level definition
+ * from the XML element (a bool, an int and two floats) and returns 1. The zero
+ * float default lives across the two float queries, so it is kept in a
+ * callee-saved float register.
  */
 
 typedef struct TiXmlElement TiXmlElement;

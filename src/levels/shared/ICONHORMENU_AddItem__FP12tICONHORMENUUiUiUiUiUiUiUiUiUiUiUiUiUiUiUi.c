@@ -2,6 +2,12 @@
  *
  * One source for every placement of this function in the level modules;
  * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Fills a new menu entry from its sixteen arguments and returns 1. The
+ * function calls nothing, so it has no stack frame; arguments 8 to 15 are
+ * passed on the stack at a stride of 8 bytes (the o32 convention of this
+ * compiler). The stores follow the retail order: the state byte at 0x00, then
+ * fields 0x24 to 0x3C, then 0x04 to 0x1C, and finally 0x20.
  */
 
 typedef struct tICONHORMENU tICONHORMENU;

@@ -2,6 +2,9 @@
  *
  * A function of the boot executable at 0x0010C5B0; its placement is
  * listed in config/boot/bodies.tsv.
+ *
+ * Inverts a uniformly scaled orthogonal 3x3 matrix stored with 16-byte rows
+ * into a packed destination and transforms the translation.
  */
 
 void func_0010C5B0(float *a0, float *a1)
