@@ -80,13 +80,19 @@ The rules of `OpenRAC/rac1-decomp`, `OpenRAC/rac2-gc-decomp` and
   (`src/levels/frontend/`, `src/levels/01_museum/` ... `src/levels/32_credits/`).
   The file and the definition carry the function's name: its symbol, or
   `func_<tag>_<offset>` at its first placement (FE.REL first, then the levels
-  by number).
+  by number). A symbol C refuses (the static constructors
+  `_GLOBAL_$I$...cpp...`) is defined under its name with those characters
+  turned into `_`, and its declaration names the symbol with
+  `__asm__("<symbol>")`. A file name is cut to 120 characters (an 8-digit
+  hash of the symbol ends it), so that checkouts stay under the Windows path
+  limit. The `file` column of `config/levels/units.tsv` gives the name.
 - Local address names carry the tag of the module they were read in
   (`func_L13_049CA0`). `docs/contributing/gates.md` explains how the gates
   resolve them at the other placements.
 - Two places in one program are two functions, each with its own definition.
   This holds for the boot executable too: one file per address,
-  `src/boot/func_<address>.c`.
+  `src/boot/func_<address>.c`, whose definition keeps a proven library name
+  when it has one (newlib's `Bfree`).
 - Each function is counted once, and only when its source is linked at every
   placement. Zero alignment padding is not code. `tools/function_units.py
   --check` enforces this layout and these counts.

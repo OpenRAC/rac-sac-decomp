@@ -24,7 +24,7 @@
   "tables": {
     "config/levels/bodies.tsv": "d33208e72c2ed372306615b26b0ffb034efb0b1741d30900f9a51ffe3e0046ff",
     "config/boot/bodies.tsv": "374dff78653ea21d91eabcfabc7ab05208502e00ec99c0b06d0187acec3897a8",
-    "config/levels/units.tsv": "9bf2b8ea8457b294dd5b230046ec3148e7f3e46b50d250c39e4b32fdfeafd5b3",
-    "config/boot/units.tsv": "ee76e463b1113349537d57e580ae32673fac99b72b614719fbabfda53016800c"
+    "config/levels/units.tsv": "19a07cfd595183eaf2a8e6090989542777fef45d019e5b9ae70ee18ec7105af7",
+    "config/boot/units.tsv": "db8b0aaa0ce54b39e128ffdd29f6cf0449df189b59f20049dd97558e45d852a0"
   }
 }

@@ -1,4 +1,4 @@
-/* func_0018F920 -- 52 bytes.
+/* Bfree -- 52 bytes.
  *
  * A function of the boot executable at 0x0018F920; its placement is
  * listed in config/boot/bodies.tsv.
@@ -21,7 +21,7 @@ struct _reent {
 };
 
 void
-func_0018F920(ptr, v)
+Bfree(ptr, v)
     struct _reent *ptr;
     struct _Bigint *v;
 {

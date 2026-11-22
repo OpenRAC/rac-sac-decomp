@@ -189,6 +189,33 @@ def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else ""
 
 
+FILE_STEM_LIMIT = 120
+NOT_IDENTIFIER = re.compile(r"[^A-Za-z0-9_$]")
+
+
+def c_identifier(name: str) -> str:
+    """The C name of a symbol: itself, or with every character C refuses turned into `_`.
+
+    The static constructors (`_GLOBAL_$I$c__dev_..._All_Core.cppHbbaaa`) carry
+    a `.`; their source defines the C name and labels its declaration with the
+    symbol (`__asm__("<symbol>")`, rule 8).
+    """
+    return NOT_IDENTIFIER.sub("_", name)
+
+
+def file_stem(name: str) -> str:
+    """The file name of a unit's source, without `.c`.
+
+    It is the C name, cut to 120 characters (the end replaced by `_` and 8
+    digits of the symbol's SHA-1) so that a checkout path stays under the
+    260 characters of Windows.
+    """
+    stem = c_identifier(name)
+    if len(stem) > FILE_STEM_LIMIT:
+        stem = f"{stem[:FILE_STEM_LIMIT - 9]}_{hashlib.sha1(name.encode()).hexdigest()[:8]}"
+    return stem
+
+
 def level_units(rows: list[dict], accepted: list[dict[str, str]]) -> list[dict]:
     """One unit per function identity, with the accepted C that covers it."""
     groups: dict[str, list[dict]] = defaultdict(list)
@@ -217,16 +244,16 @@ def level_units(rows: list[dict], accepted: list[dict[str, str]]) -> list[dict]:
         source, matched = next(iter(sources.items()), ("", 0))
         units.append({
             "home": SHARED if len(modules) > 1 else module_dir(modules[0]),
-            "file": name, "name": name, "kind": first["kind"], "size": first["size"],
+            "file": file_stem(name), "name": name, "kind": first["kind"], "size": first["size"],
             "placements": len(members), "matched_placements": matched,
             "modules": len(modules), "canonical": f"{first['module']}:0x{first['start']:06X}",
             "source": source, "order": (module_order(first["module"]), first["start"]),
         })
     # File names: unique without regard to case (the gates compile by file name).
-    counts = Counter(unit["name"].lower() for unit in units)
+    counts = Counter(unit["file"].lower() for unit in units)
     for unit in units:
-        if counts[unit["name"].lower()] > 1:
-            unit["file"] = f"{unit['name']}_{module_tag(unit['canonical'].split(':')[0])}"
+        if counts[unit["file"].lower()] > 1:
+            unit["file"] = f"{unit['file']}_{module_tag(unit['canonical'].split(':')[0])}"
     counts = Counter(unit["file"].lower() for unit in units)
     for unit in units:
         if counts[unit["file"].lower()] > 1:
@@ -255,7 +282,15 @@ def boot_units(pieces: list[dict], accepted: list[dict[str, str]]) -> list[dict]
             continue
         prefix = "func" if piece["kind"] == "function" else "frag"
         source = sources.get(piece["start"], "") if piece["kind"] == "function" else ""
-        units.append({"name": f"{prefix}_{piece['start']:08X}", "kind": piece["kind"],
+        name = f"{prefix}_{piece['start']:08X}"
+        if source and (ROOT / source).is_file():
+            # A boot source may carry the proven name of a library function
+            # (newlib's Bfree); the file keeps the address.
+            found = [item for static, item in definitions((ROOT / source).read_text(
+                encoding="utf-8")) if not static]
+            if found and name not in found:
+                name = found[0]
+        units.append({"name": name, "kind": piece["kind"],
                       "address": f"0x{piece['start']:08X}", "size": piece["size"],
                       "matched": int(bool(source)), "source": source})
     return units
@@ -387,8 +422,14 @@ def invariants() -> list[str]:
         if source != expected:
             problems.append(f"{source}: should be {expected}")
         path = ROOT / source
-        if path.is_file() and unit["name"] not in defined_names(path.read_text(encoding="utf-8")):
-            problems.append(f"{source}: should define {unit['name']}")
+        if path.is_file():
+            text = path.read_text(encoding="utf-8")
+            name = c_identifier(unit["name"])
+            if name not in defined_names(text):
+                problems.append(f"{source}: should define {name}")
+            elif name != unit["name"] and f'__asm__("{unit["name"]}")' not in text:
+                problems.append(f"{source}: should label {name} with "
+                                f'__asm__("{unit["name"]}")')
     for source in by_source:
         if source not in placed:
             problems.append(f"{source}: in the unit table, not in config/levels/bodies.tsv")
@@ -402,8 +443,9 @@ def invariants() -> list[str]:
         source = unit["source"]
         if not source:
             continue
-        if source != f"src/boot/{unit['name']}.c":
-            problems.append(f"{source}: should be src/boot/{unit['name']}.c")
+        expected = f"src/boot/func_{int(unit['address'], 16):08X}.c"
+        if source != expected:
+            problems.append(f"{source}: should be {expected}")
         path = ROOT / source
         if path.is_file() and unit["name"] not in defined_names(path.read_text(encoding="utf-8")):
             problems.append(f"{source}: should define {unit['name']}")

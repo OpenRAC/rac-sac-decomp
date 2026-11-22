@@ -95,6 +95,15 @@ class PiecesTest(unittest.TestCase):
             fu.level_units(rows, [{"module": "LEVEL1.REL", "offset": "0x100", "size": "4",
                                    "source": "x.c"}])
 
+    def test_file_stems(self) -> None:
+        self.assertEqual(fu.file_stem("ACTOR_Update__Fv"), "ACTOR_Update__Fv")
+        ctor = "_GLOBAL_$I$c__dev_projects_SAC_Src_Core__All_Core.cppHbbaaa"
+        self.assertEqual(fu.c_identifier(ctor), "_GLOBAL_$I$c__dev_projects_SAC_Src_Core__All_Core_cppHbbaaa")
+        long_name = "X" * 197
+        stem = fu.file_stem(long_name)
+        self.assertEqual(len(stem), fu.FILE_STEM_LIMIT)
+        self.assertNotEqual(stem, fu.file_stem("X" * 196))
+
     def test_file_names_ignore_case(self) -> None:
         rows = [piece("LEVEL1.REL", 0x100, 8, "Foo", "a"), piece("LEVEL1.REL", 0x200, 8, "foo", "b"),
                 piece("LEVEL2.REL", 0x300, 8, "Foo", "c")]
