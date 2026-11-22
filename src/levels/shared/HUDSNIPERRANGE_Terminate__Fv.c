@@ -1,0 +1,15 @@
+/* HUDSNIPERRANGE_Terminate__Fv -- 20 bytes.
+ *
+ * One source for every placement of this function in the level modules;
+ * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Ported from OpenRAC/rac5-sm-decomp src/levels/01_pokitaru/LEVEL_01_01AFF8.c.
+ */
+
+extern unsigned int D_L01_0025CC4C;
+extern unsigned int D_L01_0025CC50;
+
+void HUDSNIPERRANGE_Terminate__Fv(void) {
+    D_L01_0025CC4C = 0;
+    D_L01_0025CC50 = 0;
+}
