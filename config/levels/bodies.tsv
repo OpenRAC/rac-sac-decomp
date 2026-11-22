@@ -668,6 +668,7 @@ FE.REL	0x069048	84	src/levels/shared/__do_global_dtors.c
 FE.REL	0x0692A0	156	src/levels/shared/__unpack_d.c
 FE.REL	0x069580	88	src/levels/shared/dpadd.c
 FE.REL	0x0695D8	100	src/levels/shared/dpsub.c
+FE.REL	0x069640	680	src/levels/shared/dpmul.c
 FE.REL	0x069A50	276	src/levels/shared/__fpcmp_parts_d.c
 FE.REL	0x069B68	76	src/levels/shared/dpcmp.c
 FE.REL	0x069C70	148	src/levels/shared/dptoli.c
@@ -4208,6 +4209,7 @@ LEVEL1.REL	0x1BEC08	224	src/levels/shared/__floatdisf.c
 LEVEL1.REL	0x1BEE20	156	src/levels/shared/__unpack_d.c
 LEVEL1.REL	0x1BF100	88	src/levels/shared/dpadd.c
 LEVEL1.REL	0x1BF158	100	src/levels/shared/dpsub.c
+LEVEL1.REL	0x1BF1C0	680	src/levels/shared/dpmul.c
 LEVEL1.REL	0x1BF5D0	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL1.REL	0x1BF6E8	76	src/levels/shared/dpcmp.c
 LEVEL1.REL	0x1BF7F0	148	src/levels/shared/dptoli.c
@@ -7893,6 +7895,7 @@ LEVEL2.REL	0x1674A0	224	src/levels/shared/__floatdisf.c
 LEVEL2.REL	0x1676B8	156	src/levels/shared/__unpack_d.c
 LEVEL2.REL	0x167998	88	src/levels/shared/dpadd.c
 LEVEL2.REL	0x1679F0	100	src/levels/shared/dpsub.c
+LEVEL2.REL	0x167A58	680	src/levels/shared/dpmul.c
 LEVEL2.REL	0x167E68	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL2.REL	0x167F80	76	src/levels/shared/dpcmp.c
 LEVEL2.REL	0x168088	148	src/levels/shared/dptoli.c
@@ -11485,6 +11488,7 @@ LEVEL3.REL	0x1E9888	224	src/levels/shared/__floatdisf.c
 LEVEL3.REL	0x1E9AA0	156	src/levels/shared/__unpack_d.c
 LEVEL3.REL	0x1E9D80	88	src/levels/shared/dpadd.c
 LEVEL3.REL	0x1E9DD8	100	src/levels/shared/dpsub.c
+LEVEL3.REL	0x1E9E40	680	src/levels/shared/dpmul.c
 LEVEL3.REL	0x1EA250	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL3.REL	0x1EA368	76	src/levels/shared/dpcmp.c
 LEVEL3.REL	0x1EA470	148	src/levels/shared/dptoli.c
@@ -15120,6 +15124,7 @@ LEVEL4.REL	0x1DC4A0	224	src/levels/shared/__floatdisf.c
 LEVEL4.REL	0x1DC6B8	156	src/levels/shared/__unpack_d.c
 LEVEL4.REL	0x1DC998	88	src/levels/shared/dpadd.c
 LEVEL4.REL	0x1DC9F0	100	src/levels/shared/dpsub.c
+LEVEL4.REL	0x1DCA58	680	src/levels/shared/dpmul.c
 LEVEL4.REL	0x1DCE68	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL4.REL	0x1DCF80	76	src/levels/shared/dpcmp.c
 LEVEL4.REL	0x1DD088	148	src/levels/shared/dptoli.c
@@ -18791,6 +18796,7 @@ LEVEL5.REL	0x158298	224	src/levels/shared/__floatdisf.c
 LEVEL5.REL	0x1584B0	156	src/levels/shared/__unpack_d.c
 LEVEL5.REL	0x158790	88	src/levels/shared/dpadd.c
 LEVEL5.REL	0x1587E8	100	src/levels/shared/dpsub.c
+LEVEL5.REL	0x158850	680	src/levels/shared/dpmul.c
 LEVEL5.REL	0x158C60	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL5.REL	0x158D78	76	src/levels/shared/dpcmp.c
 LEVEL5.REL	0x158E80	148	src/levels/shared/dptoli.c
@@ -22407,6 +22413,7 @@ LEVEL7.REL	0x1AF188	224	src/levels/shared/__floatdisf.c
 LEVEL7.REL	0x1AF3A0	156	src/levels/shared/__unpack_d.c
 LEVEL7.REL	0x1AF680	88	src/levels/shared/dpadd.c
 LEVEL7.REL	0x1AF6D8	100	src/levels/shared/dpsub.c
+LEVEL7.REL	0x1AF740	680	src/levels/shared/dpmul.c
 LEVEL7.REL	0x1AFB50	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL7.REL	0x1AFC68	76	src/levels/shared/dpcmp.c
 LEVEL7.REL	0x1AFD70	148	src/levels/shared/dptoli.c
@@ -25990,6 +25997,7 @@ LEVEL8.REL	0x147F08	224	src/levels/shared/__floatdisf.c
 LEVEL8.REL	0x148120	156	src/levels/shared/__unpack_d.c
 LEVEL8.REL	0x148400	88	src/levels/shared/dpadd.c
 LEVEL8.REL	0x148458	100	src/levels/shared/dpsub.c
+LEVEL8.REL	0x1484C0	680	src/levels/shared/dpmul.c
 LEVEL8.REL	0x1488D0	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL8.REL	0x1489E8	76	src/levels/shared/dpcmp.c
 LEVEL8.REL	0x148AF0	148	src/levels/shared/dptoli.c
@@ -29524,6 +29532,7 @@ LEVEL9.REL	0x1E7900	224	src/levels/shared/__floatdisf.c
 LEVEL9.REL	0x1E7B18	156	src/levels/shared/__unpack_d.c
 LEVEL9.REL	0x1E7DF8	88	src/levels/shared/dpadd.c
 LEVEL9.REL	0x1E7E50	100	src/levels/shared/dpsub.c
+LEVEL9.REL	0x1E7EB8	680	src/levels/shared/dpmul.c
 LEVEL9.REL	0x1E82C8	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL9.REL	0x1E83E0	76	src/levels/shared/dpcmp.c
 LEVEL9.REL	0x1E84E8	148	src/levels/shared/dptoli.c
@@ -33250,6 +33259,7 @@ LEVEL10.REL	0x1BF918	224	src/levels/shared/__floatdisf.c
 LEVEL10.REL	0x1BFB30	156	src/levels/shared/__unpack_d.c
 LEVEL10.REL	0x1BFE10	88	src/levels/shared/dpadd.c
 LEVEL10.REL	0x1BFE68	100	src/levels/shared/dpsub.c
+LEVEL10.REL	0x1BFED0	680	src/levels/shared/dpmul.c
 LEVEL10.REL	0x1C02E0	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL10.REL	0x1C03F8	76	src/levels/shared/dpcmp.c
 LEVEL10.REL	0x1C0500	148	src/levels/shared/dptoli.c
@@ -37022,6 +37032,7 @@ LEVEL11.REL	0x1D7F58	224	src/levels/shared/__floatdisf.c
 LEVEL11.REL	0x1D8170	156	src/levels/shared/__unpack_d.c
 LEVEL11.REL	0x1D8450	88	src/levels/shared/dpadd.c
 LEVEL11.REL	0x1D84A8	100	src/levels/shared/dpsub.c
+LEVEL11.REL	0x1D8510	680	src/levels/shared/dpmul.c
 LEVEL11.REL	0x1D8920	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL11.REL	0x1D8A38	76	src/levels/shared/dpcmp.c
 LEVEL11.REL	0x1D8B40	148	src/levels/shared/dptoli.c
@@ -40777,6 +40788,7 @@ LEVEL13.REL	0x1B2800	224	src/levels/shared/__floatdisf.c
 LEVEL13.REL	0x1B2A18	156	src/levels/shared/__unpack_d.c
 LEVEL13.REL	0x1B2CF8	88	src/levels/shared/dpadd.c
 LEVEL13.REL	0x1B2D50	100	src/levels/shared/dpsub.c
+LEVEL13.REL	0x1B2DB8	680	src/levels/shared/dpmul.c
 LEVEL13.REL	0x1B31C8	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL13.REL	0x1B32E0	76	src/levels/shared/dpcmp.c
 LEVEL13.REL	0x1B33E8	148	src/levels/shared/dptoli.c
@@ -44438,6 +44450,7 @@ LEVEL14.REL	0x1E9078	224	src/levels/shared/__floatdisf.c
 LEVEL14.REL	0x1E9290	156	src/levels/shared/__unpack_d.c
 LEVEL14.REL	0x1E9570	88	src/levels/shared/dpadd.c
 LEVEL14.REL	0x1E95C8	100	src/levels/shared/dpsub.c
+LEVEL14.REL	0x1E9630	680	src/levels/shared/dpmul.c
 LEVEL14.REL	0x1E9A40	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL14.REL	0x1E9B58	76	src/levels/shared/dpcmp.c
 LEVEL14.REL	0x1E9C60	148	src/levels/shared/dptoli.c
@@ -47999,6 +48012,7 @@ LEVEL15.REL	0x1AC6E0	224	src/levels/shared/__floatdisf.c
 LEVEL15.REL	0x1AC8F8	156	src/levels/shared/__unpack_d.c
 LEVEL15.REL	0x1ACBD8	88	src/levels/shared/dpadd.c
 LEVEL15.REL	0x1ACC30	100	src/levels/shared/dpsub.c
+LEVEL15.REL	0x1ACC98	680	src/levels/shared/dpmul.c
 LEVEL15.REL	0x1AD0A8	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL15.REL	0x1AD1C0	76	src/levels/shared/dpcmp.c
 LEVEL15.REL	0x1AD2C8	148	src/levels/shared/dptoli.c
@@ -51739,6 +51753,7 @@ LEVEL16.REL	0x1C9B70	224	src/levels/shared/__floatdisf.c
 LEVEL16.REL	0x1C9D88	156	src/levels/shared/__unpack_d.c
 LEVEL16.REL	0x1CA068	88	src/levels/shared/dpadd.c
 LEVEL16.REL	0x1CA0C0	100	src/levels/shared/dpsub.c
+LEVEL16.REL	0x1CA128	680	src/levels/shared/dpmul.c
 LEVEL16.REL	0x1CA538	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL16.REL	0x1CA650	76	src/levels/shared/dpcmp.c
 LEVEL16.REL	0x1CA758	148	src/levels/shared/dptoli.c
@@ -55395,6 +55410,7 @@ LEVEL17.REL	0x150D20	224	src/levels/shared/__floatdisf.c
 LEVEL17.REL	0x150F38	156	src/levels/shared/__unpack_d.c
 LEVEL17.REL	0x151218	88	src/levels/shared/dpadd.c
 LEVEL17.REL	0x151270	100	src/levels/shared/dpsub.c
+LEVEL17.REL	0x1512D8	680	src/levels/shared/dpmul.c
 LEVEL17.REL	0x1516E8	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL17.REL	0x151800	76	src/levels/shared/dpcmp.c
 LEVEL17.REL	0x151908	148	src/levels/shared/dptoli.c
@@ -58915,6 +58931,7 @@ LEVEL18.REL	0x169E60	224	src/levels/shared/__floatdisf.c
 LEVEL18.REL	0x16A078	156	src/levels/shared/__unpack_d.c
 LEVEL18.REL	0x16A358	88	src/levels/shared/dpadd.c
 LEVEL18.REL	0x16A3B0	100	src/levels/shared/dpsub.c
+LEVEL18.REL	0x16A418	680	src/levels/shared/dpmul.c
 LEVEL18.REL	0x16A828	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL18.REL	0x16A940	76	src/levels/shared/dpcmp.c
 LEVEL18.REL	0x16AA48	148	src/levels/shared/dptoli.c
@@ -62593,6 +62610,7 @@ LEVEL19.REL	0x1CAD10	224	src/levels/shared/__floatdisf.c
 LEVEL19.REL	0x1CAF28	156	src/levels/shared/__unpack_d.c
 LEVEL19.REL	0x1CB208	88	src/levels/shared/dpadd.c
 LEVEL19.REL	0x1CB260	100	src/levels/shared/dpsub.c
+LEVEL19.REL	0x1CB2C8	680	src/levels/shared/dpmul.c
 LEVEL19.REL	0x1CB6D8	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL19.REL	0x1CB7F0	76	src/levels/shared/dpcmp.c
 LEVEL19.REL	0x1CB8F8	148	src/levels/shared/dptoli.c
@@ -66237,6 +66255,7 @@ LEVEL20.REL	0x15D0D0	224	src/levels/shared/__floatdisf.c
 LEVEL20.REL	0x15D2E8	156	src/levels/shared/__unpack_d.c
 LEVEL20.REL	0x15D5C8	88	src/levels/shared/dpadd.c
 LEVEL20.REL	0x15D620	100	src/levels/shared/dpsub.c
+LEVEL20.REL	0x15D688	680	src/levels/shared/dpmul.c
 LEVEL20.REL	0x15DA98	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL20.REL	0x15DBB0	76	src/levels/shared/dpcmp.c
 LEVEL20.REL	0x15DCB8	148	src/levels/shared/dptoli.c
@@ -69866,6 +69885,7 @@ LEVEL21.REL	0x1E1FF0	224	src/levels/shared/__floatdisf.c
 LEVEL21.REL	0x1E2208	156	src/levels/shared/__unpack_d.c
 LEVEL21.REL	0x1E24E8	88	src/levels/shared/dpadd.c
 LEVEL21.REL	0x1E2540	100	src/levels/shared/dpsub.c
+LEVEL21.REL	0x1E25A8	680	src/levels/shared/dpmul.c
 LEVEL21.REL	0x1E29B8	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL21.REL	0x1E2AD0	76	src/levels/shared/dpcmp.c
 LEVEL21.REL	0x1E2BD8	148	src/levels/shared/dptoli.c
@@ -73514,6 +73534,7 @@ LEVEL22.REL	0x1CFBB0	224	src/levels/shared/__floatdisf.c
 LEVEL22.REL	0x1CFDC8	156	src/levels/shared/__unpack_d.c
 LEVEL22.REL	0x1D00A8	88	src/levels/shared/dpadd.c
 LEVEL22.REL	0x1D0100	100	src/levels/shared/dpsub.c
+LEVEL22.REL	0x1D0168	680	src/levels/shared/dpmul.c
 LEVEL22.REL	0x1D0578	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL22.REL	0x1D0690	76	src/levels/shared/dpcmp.c
 LEVEL22.REL	0x1D0798	148	src/levels/shared/dptoli.c
@@ -77192,6 +77213,7 @@ LEVEL23.REL	0x1632B8	224	src/levels/shared/__floatdisf.c
 LEVEL23.REL	0x1634D0	156	src/levels/shared/__unpack_d.c
 LEVEL23.REL	0x1637B0	88	src/levels/shared/dpadd.c
 LEVEL23.REL	0x163808	100	src/levels/shared/dpsub.c
+LEVEL23.REL	0x163870	680	src/levels/shared/dpmul.c
 LEVEL23.REL	0x163C80	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL23.REL	0x163D98	76	src/levels/shared/dpcmp.c
 LEVEL23.REL	0x163EA0	148	src/levels/shared/dptoli.c
@@ -81105,6 +81127,7 @@ LEVEL24.REL	0x1784C0	224	src/levels/shared/__floatdisf.c
 LEVEL24.REL	0x1786D8	156	src/levels/shared/__unpack_d.c
 LEVEL24.REL	0x1789B8	88	src/levels/shared/dpadd.c
 LEVEL24.REL	0x178A10	100	src/levels/shared/dpsub.c
+LEVEL24.REL	0x178A78	680	src/levels/shared/dpmul.c
 LEVEL24.REL	0x178E88	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL24.REL	0x178FA0	76	src/levels/shared/dpcmp.c
 LEVEL24.REL	0x1790A8	148	src/levels/shared/dptoli.c
@@ -84647,6 +84670,7 @@ LEVEL25.REL	0x1ED878	224	src/levels/shared/__floatdisf.c
 LEVEL25.REL	0x1EDA90	156	src/levels/shared/__unpack_d.c
 LEVEL25.REL	0x1EDD70	88	src/levels/shared/dpadd.c
 LEVEL25.REL	0x1EDDC8	100	src/levels/shared/dpsub.c
+LEVEL25.REL	0x1EDE30	680	src/levels/shared/dpmul.c
 LEVEL25.REL	0x1EE240	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL25.REL	0x1EE358	76	src/levels/shared/dpcmp.c
 LEVEL25.REL	0x1EE460	148	src/levels/shared/dptoli.c
@@ -88199,6 +88223,7 @@ LEVEL26.REL	0x159EB8	224	src/levels/shared/__floatdisf.c
 LEVEL26.REL	0x15A0D0	156	src/levels/shared/__unpack_d.c
 LEVEL26.REL	0x15A3B0	88	src/levels/shared/dpadd.c
 LEVEL26.REL	0x15A408	100	src/levels/shared/dpsub.c
+LEVEL26.REL	0x15A470	680	src/levels/shared/dpmul.c
 LEVEL26.REL	0x15A880	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL26.REL	0x15A998	76	src/levels/shared/dpcmp.c
 LEVEL26.REL	0x15AAA0	148	src/levels/shared/dptoli.c
@@ -91671,6 +91696,7 @@ LEVEL27.REL	0x160500	224	src/levels/shared/__floatdisf.c
 LEVEL27.REL	0x160718	156	src/levels/shared/__unpack_d.c
 LEVEL27.REL	0x1609F8	88	src/levels/shared/dpadd.c
 LEVEL27.REL	0x160A50	100	src/levels/shared/dpsub.c
+LEVEL27.REL	0x160AB8	680	src/levels/shared/dpmul.c
 LEVEL27.REL	0x160EC8	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL27.REL	0x160FE0	76	src/levels/shared/dpcmp.c
 LEVEL27.REL	0x1610E8	148	src/levels/shared/dptoli.c
@@ -95236,6 +95262,7 @@ LEVEL28.REL	0x15B660	224	src/levels/shared/__floatdisf.c
 LEVEL28.REL	0x15B878	156	src/levels/shared/__unpack_d.c
 LEVEL28.REL	0x15BB58	88	src/levels/shared/dpadd.c
 LEVEL28.REL	0x15BBB0	100	src/levels/shared/dpsub.c
+LEVEL28.REL	0x15BC18	680	src/levels/shared/dpmul.c
 LEVEL28.REL	0x15C028	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL28.REL	0x15C140	76	src/levels/shared/dpcmp.c
 LEVEL28.REL	0x15C248	148	src/levels/shared/dptoli.c
@@ -98940,6 +98967,7 @@ LEVEL29.REL	0x1D12F0	224	src/levels/shared/__floatdisf.c
 LEVEL29.REL	0x1D1508	156	src/levels/shared/__unpack_d.c
 LEVEL29.REL	0x1D17E8	88	src/levels/shared/dpadd.c
 LEVEL29.REL	0x1D1840	100	src/levels/shared/dpsub.c
+LEVEL29.REL	0x1D18A8	680	src/levels/shared/dpmul.c
 LEVEL29.REL	0x1D1CB8	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL29.REL	0x1D1DD0	76	src/levels/shared/dpcmp.c
 LEVEL29.REL	0x1D1ED8	148	src/levels/shared/dptoli.c
@@ -102645,6 +102673,7 @@ LEVEL30.REL	0x1B1420	224	src/levels/shared/__floatdisf.c
 LEVEL30.REL	0x1B1638	156	src/levels/shared/__unpack_d.c
 LEVEL30.REL	0x1B1918	88	src/levels/shared/dpadd.c
 LEVEL30.REL	0x1B1970	100	src/levels/shared/dpsub.c
+LEVEL30.REL	0x1B19D8	680	src/levels/shared/dpmul.c
 LEVEL30.REL	0x1B1DE8	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL30.REL	0x1B1F00	76	src/levels/shared/dpcmp.c
 LEVEL30.REL	0x1B2008	148	src/levels/shared/dptoli.c
@@ -106397,6 +106426,7 @@ LEVEL31.REL	0x19CAB8	224	src/levels/shared/__floatdisf.c
 LEVEL31.REL	0x19CCD0	156	src/levels/shared/__unpack_d.c
 LEVEL31.REL	0x19CFB0	88	src/levels/shared/dpadd.c
 LEVEL31.REL	0x19D008	100	src/levels/shared/dpsub.c
+LEVEL31.REL	0x19D070	680	src/levels/shared/dpmul.c
 LEVEL31.REL	0x19D480	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL31.REL	0x19D598	76	src/levels/shared/dpcmp.c
 LEVEL31.REL	0x19D6A0	148	src/levels/shared/dptoli.c
@@ -110320,6 +110350,7 @@ LEVEL32.REL	0x1759D0	224	src/levels/shared/__floatdisf.c
 LEVEL32.REL	0x175BE8	156	src/levels/shared/__unpack_d.c
 LEVEL32.REL	0x175EC8	88	src/levels/shared/dpadd.c
 LEVEL32.REL	0x175F20	100	src/levels/shared/dpsub.c
+LEVEL32.REL	0x175F88	680	src/levels/shared/dpmul.c
 LEVEL32.REL	0x176398	276	src/levels/shared/__fpcmp_parts_d.c
 LEVEL32.REL	0x1764B0	76	src/levels/shared/dpcmp.c
 LEVEL32.REL	0x1765B8	148	src/levels/shared/dptoli.c

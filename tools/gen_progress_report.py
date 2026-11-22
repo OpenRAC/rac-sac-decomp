@@ -34,7 +34,7 @@ import argparse
 import csv
 import json
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -101,10 +101,15 @@ def unit(name: str, size: int, fraction: float, is_function: bool, category: str
 
 
 def boot_units() -> list[dict[str, object]]:
+    rows = read_tsv(BOOT_UNITS)
+    # Map tiles need unique names: a library routine linked several times (the
+    # copies of one inline destructor) adds its address.
+    counts = Counter(row["name"] for row in rows)
     units = []
-    for row in read_tsv(BOOT_UNITS):
+    for row in rows:
         matched = row["matched"] == "1"
-        units.append(unit(f"boot/{row['name']}", int(row["size"]), 1.0 if matched else 0.0,
+        leaf = row["name"] if counts[row["name"]] == 1 else f"{row['name']}.{row['address']}"
+        units.append(unit(f"boot/{leaf}", int(row["size"]), 1.0 if matched else 0.0,
                           row["kind"] == "function", "boot", row["source"], row["name"]))
     return units
 

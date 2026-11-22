@@ -163,6 +163,10 @@ class RepositoryTest(unittest.TestCase):
     def test_tables_and_sources_follow_the_units(self) -> None:
         self.assertEqual(fu.invariants(), [])
 
+    def test_report_tiles_are_unique(self) -> None:
+        names = [item["name"] for item in report.boot_units() + report.level_units()]
+        self.assertEqual(len(names), len(set(names)))
+
 
 if __name__ == "__main__":
     unittest.main()
