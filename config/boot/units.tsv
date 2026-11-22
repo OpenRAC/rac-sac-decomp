@@ -445,7 +445,7 @@ func_00113E10	function	0x00113E10	8	1	src/boot/func_00113E10.c
 func_00113E18	function	0x00113E18	8	1	src/boot/func_00113E18.c
 func_00113E20	function	0x00113E20	8	1	src/boot/func_00113E20.c
 func_00113E28	function	0x00113E28	84	0	
-func_00113E80	function	0x00113E80	176	0	
+__do_global_ctors	function	0x00113E80	176	1	src/boot/func_00113E80.c
 __main	function	0x00113F30	32	1	src/boot/func_00113F30.c
 func_00113F50	function	0x00113F50	48	0	
 func_00113F80	function	0x00113F80	128	0	
@@ -2906,7 +2906,7 @@ func_00177688	function	0x00177688	220	0
 func_00177768	function	0x00177768	472	0	
 func_00177940	function	0x00177940	56	0	
 func_00177978	function	0x00177978	20	0	
-func_00177990	function	0x00177990	104	0	
+sceDmaSend	function	0x00177990	104	1	src/boot/func_00177990.c
 func_001779F8	function	0x001779F8	116	0	
 func_00177A70	function	0x00177A70	116	0	
 func_00177AE8	function	0x00177AE8	72	0	
@@ -3137,7 +3137,7 @@ func_00184170	function	0x00184170	480	0
 func_00184350	function	0x00184350	152	0	
 func_001843E8	function	0x001843E8	36	0	
 func_00184410	function	0x00184410	152	0	
-func_001844A8	function	0x001844A8	208	0	
+sceCdMmode	function	0x001844A8	208	1	src/boot/func_001844A8.c
 func_00184578	function	0x00184578	36	0	
 func_001845A0	function	0x001845A0	188	0	
 func_00184660	function	0x00184660	12	0	
@@ -3175,7 +3175,7 @@ func_00186318	function	0x00186318	76	0
 func_00186368	function	0x00186368	100	0	
 func_001863D0	function	0x001863D0	132	0	
 func_00186458	function	0x00186458	68	0	
-func_001864A0	function	0x001864A0	360	0	
+__srefill	function	0x001864A0	360	1	src/boot/func_001864A0.c
 func_00186608	function	0x00186608	164	0	
 func_001866B0	function	0x001866B0	120	0	
 func_00186728	function	0x00186728	136	0	
@@ -3256,7 +3256,7 @@ func_00188768	function	0x00188768	540	0
 func_00188984	function	0x00188984	3140	0	
 func_001895C8	function	0x001895C8	44	0	
 func_001895F8	function	0x001895F8	36	0	
-func_00189620	function	0x00189620	528	0	
+_strtoul_r	function	0x00189620	528	1	src/boot/func_00189620.c
 func_00189830	function	0x00189830	52	0	
 func_00189868	function	0x00189868	124	0	
 func_001898E8	function	0x001898E8	196	0	
