@@ -241,6 +241,69 @@
       "regression_control": "the bodies of the lot that use it are exact; the bodies whose extent is not a multiple of 8 keep the GNU assembler.",
       "verdict": "route accepted for that band.",
       "reproduce": "the private profile table, work/E0/profiles.json"
+    },
+    {
+      "id": "rac5-gnu-ee-trial",
+      "scope": "level bodies ported from rac5-sm-decomp sources accepted on its gnu-ee-trial route",
+      "provenance": "The gnu-ee-trial cc1 of rac5-sm-decomp, with the cpp and as of gnu-ee-20261015 (the same binaries as rac5's pinned route). OpenRAC/rac5-sm-decomp builds it from public sources with tools/compiler/build_gnu_ee.sh (selector gnu-ee-trial); external binary, pinned by hash, never committed here.",
+      "toolchain": {
+        "cpp_sha256": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
+        "cc1_sha256": "37704f483fba7269791576879b3573445cd455ce0473e6d58a3bcceb45105f95",
+        "as_sha256": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "32 SAC functions whose rac5 twins are accepted on this route compile to the retail bytes at every placement with it.",
+      "regression_control": "The same 32 sources differ from the retail bytes under gnu-ee-20261015 (first difference within the body). Three other twins were exact under both routes; they stay on gnu-ee-20261015. The profile is chosen per source, so no accepted body changes.",
+      "verdict": "route accepted for the ported sources that need it.",
+      "reproduce": "the private profile table, work/E0/profiles.json"
+    },
+    {
+      "id": "rac5-pinned-frozen",
+      "scope": "level bodies ported from rac5-sm-decomp sources accepted on its pinned/ee-frozen route",
+      "provenance": "The cpp and cc1 of gnu-ee-20261015 with the unpatched archive assembler that rac5-sm-decomp calls ee-frozen; it is the assembler of sdk991111-sdkas. OpenRAC/rac5-sm-decomp builds it from public sources with tools/compiler/build_gnu_ee.sh (selector ee-frozen); external binary, pinned by hash, never committed here.",
+      "toolchain": {
+        "cpp_sha256": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
+        "cc1_sha256": "9614eceecbcb1f7a64cf3a4ad3c827b3e257ab6b1f934e42fcbc4ded0f0584d6",
+        "as_sha256": "d2f76ccfa6a7efcbe8605a6f52fe602354370b4d8dce55650c281dc95ebab9de"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "One SAC function whose rac5 twin is accepted on this route is exact at every placement with it.",
+      "regression_control": "The same source differs under gnu-ee-20261015 (the recent assembler encodes it differently). The profile is chosen per source.",
+      "verdict": "route accepted for the ported source that needs it.",
+      "reproduce": "the private profile table, work/E0/profiles.json"
+    },
+    {
+      "id": "rac5-pinned-mfc1",
+      "scope": "level bodies ported from rac5-sm-decomp sources accepted on its pinned/r5900-mfc1 route",
+      "provenance": "The cpp and cc1 of gnu-ee-20261015 with the r5900-mfc1 assembler of rac5-sm-decomp (RAC2's build.sh at e07c4844). OpenRAC/rac5-sm-decomp builds it from public sources with tools/compiler/build_gnu_ee.sh (selector r5900-mfc1); external binary, pinned by hash, never committed here.",
+      "toolchain": {
+        "cpp_sha256": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
+        "cc1_sha256": "9614eceecbcb1f7a64cf3a4ad3c827b3e257ab6b1f934e42fcbc4ded0f0584d6",
+        "as_sha256": "b0bb487958caa611e8cc88a5675135035ea21e79fc5659323bff5bfd81b890f3"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "One SAC function whose rac5 twin is accepted on this route is exact at every placement with it.",
+      "regression_control": "The same source differs under gnu-ee-20261015. The profile is chosen per source.",
+      "verdict": "route accepted for the ported source that needs it.",
+      "reproduce": "the private profile table, work/E0/profiles.json"
     }
   ],
   "trials": [
