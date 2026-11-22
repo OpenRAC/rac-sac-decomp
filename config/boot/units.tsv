@@ -465,7 +465,7 @@ func_00114BB8	function	0x00114BB8	56	0
 func_00114BF0	function	0x00114BF0	44	0	
 func_00114C20	function	0x00114C20	84	0	
 func_00114C78	function	0x00114C78	268	0	
-__truncxfsf2	function	0x00114D88	144	1	src/boot/func_00114D88.c
+__unpack_f	function	0x00114D88	144	1	src/boot/func_00114D88.c
 func_00114E18	function	0x00114E18	564	0	
 func_00115050	function	0x00115050	88	0	
 func_001150A8	function	0x001150A8	100	0	

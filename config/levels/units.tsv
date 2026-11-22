@@ -2295,7 +2295,7 @@ shared	__unpack_d	__unpack_d	function	156	31	31	31	FE.REL:0x0692A0	src/levels/sh
 shared	func_FE_069340	func_FE_069340	function	576	31	0	31	FE.REL:0x069340	
 shared	dpadd	dpadd	function	88	31	31	31	FE.REL:0x069580	src/levels/shared/dpadd.c
 shared	dpsub	dpsub	function	100	31	31	31	FE.REL:0x0695D8	src/levels/shared/dpsub.c
-shared	dpmul	dpmul	function	680	31	0	31	FE.REL:0x069640	
+shared	dpmul	dpmul	function	680	31	31	31	FE.REL:0x069640	src/levels/shared/dpmul.c
 shared	dpdiv	dpdiv	function	360	31	0	31	FE.REL:0x0698E8	
 shared	__fpcmp_parts_d	__fpcmp_parts_d	function	276	31	31	31	FE.REL:0x069A50	src/levels/shared/__fpcmp_parts_d.c
 shared	dpcmp	dpcmp	function	76	31	31	31	FE.REL:0x069B68	src/levels/shared/dpcmp.c

@@ -285,10 +285,16 @@ def boot_units(pieces: list[dict], accepted: list[dict[str, str]]) -> list[dict]
         name = f"{prefix}_{piece['start']:08X}"
         if source and (ROOT / source).is_file():
             # A boot source may carry the proven name of a library function
-            # (newlib's Bfree); the file keeps the address.
-            found = [item for static, item in definitions((ROOT / source).read_text(
-                encoding="utf-8")) if not static]
-            if found and name not in found:
+            # (newlib's Bfree); the file keeps the address.  The title line of
+            # the source (`/* <name> -- <size> bytes.`) says which definition
+            # is the placed one: an upstream file such as fp-bit.c defines
+            # every routine of the file under its own #if.
+            text = (ROOT / source).read_text(encoding="utf-8")
+            found = [item for static, item in definitions(text) if not static]
+            title = TITLE.match(text)
+            if title and title.group(1) in found:
+                name = title.group(1)
+            elif found and name not in found:
                 name = found[0]
         units.append({"name": name, "kind": piece["kind"],
                       "address": f"0x{piece['start']:08X}", "size": piece["size"],
@@ -343,6 +349,7 @@ def totals(level: list[dict], boot: list[dict], level_padding: int, boot_padding
 # Invariants
 # --------------------------------------------------------------------------
 
+TITLE = re.compile(r"\s*/\*\s*([A-Za-z_$][\w$]*)\s+--")
 KR_DECLARATIONS = re.compile(r"\)\s*(?:[^;{}()]+;\s*)+$")
 ATTRIBUTE = re.compile(r"__attribute__\s*\(\(.*?\)\)", re.S)
 PREPROCESSOR = re.compile(r"^[ \t]*#(?:[^\n]*\\\n)*[^\n]*$", re.M)

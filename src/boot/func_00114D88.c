@@ -400,7 +400,7 @@ extern void unpack_d (FLO_union_type *, fp_number_type *);
 
 #if defined(L_unpack_df) || defined(L_unpack_sf)
 void
-unpack_d (FLO_union_type * src, fp_number_type * dst)
+__unpack_f (FLO_union_type * src, fp_number_type * dst)
 {
   /* We previously used bitfields to store the number, but this doesn't
  handle little/big endian systems conveniently, so use shifts and
