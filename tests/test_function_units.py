@@ -119,6 +119,15 @@ class DefinitionsTest(unittest.TestCase):
         self.assertEqual(fu.definitions(text), [(True, "helper"), (False, "g")])
         self.assertEqual(fu.defined_function(text), "g")
 
+    def test_newlib_and_pointer_definitions(self) -> None:
+        newlib = ("#ifdef __STDC__\n\tfloat scalbnf (float x, int n)\n#else\n"
+                  "\tfloat scalbnf (x,n)\n\tfloat x; int n;\n#endif\n{\n\treturn x;\n}\n")
+        self.assertEqual(fu.defined_names(newlib), {"scalbnf"})
+        pointer = "void (*func_00116FA8(void (*handler)(void)))(void) {\n    return 0;\n}\n"
+        self.assertEqual(fu.defined_names(pointer), {"func_00116FA8"})
+        macro = "#define SQ(x) \\\n  ((x) * (x))\nint f(int a)\n{\n    return SQ(a);\n}\n"
+        self.assertEqual(fu.defined_names(macro), {"f"})
+
     def test_old_style_definition(self) -> None:
         text = "void\nBfree(ptr, v)\n    struct _reent *ptr;\n    struct _Bigint *v;\n{\n}\n"
         self.assertEqual(fu.defined_names(text), {"Bfree"})

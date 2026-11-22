@@ -345,6 +345,7 @@ def totals(level: list[dict], boot: list[dict], level_padding: int, boot_padding
 
 KR_DECLARATIONS = re.compile(r"\)\s*(?:[^;{}()]+;\s*)+$")
 ATTRIBUTE = re.compile(r"__attribute__\s*\(\(.*?\)\)", re.S)
+PREPROCESSOR = re.compile(r"^[ \t]*#(?:[^\n]*\\\n)*[^\n]*$", re.M)
 
 
 def definitions(text: str) -> list[tuple[bool, str]]:
@@ -353,7 +354,9 @@ def definitions(text: str) -> list[tuple[bool, str]]:
     Old-style (K&R) definitions count too: their parameter declarations sit
     between the closing parenthesis and the body.
     """
-    text = ATTRIBUTE.sub(" ", COMMENT.sub(" ", text))
+    # Preprocessor lines go first: newlib writes `#ifdef __STDC__ ... #else
+    # <old-style head> #endif` between a definition's head and its body.
+    text = PREPROCESSOR.sub("", ATTRIBUTE.sub(" ", COMMENT.sub(" ", text)))
     found, depth = [], 0
     for brace in re.finditer(r"[{}]", text):
         if brace.group() == "}":
@@ -375,6 +378,16 @@ def definitions(text: str) -> list[tuple[bool, str]]:
                         level -= 1
                         if level == 0:
                             match = re.search(r"[A-Za-z_$][\w$]*\s*$", head[:index])
+                            if not match and head[:index].rstrip().endswith(")"):
+                                # A function that returns a pointer to a function:
+                                # void (*name(parameters))(void).
+                                statement = re.split(r"[;}]", head[:index])[-1]
+                                pointer = re.search(r"\(\s*\*\s*([A-Za-z_$][\w$]*)\s*\(",
+                                                    statement)
+                                if pointer:
+                                    found.append((re.search(r"\bstatic\b", statement)
+                                                  is not None, pointer.group(1)))
+                                break
                             if match:
                                 statement = re.split(r"[;}]", head[:match.start()])[-1]
                                 found.append((re.search(r"\bstatic\b", statement) is not None,
