@@ -243,7 +243,7 @@ shared	UPDATE_GetSavedGameModeParameter__Fv	UPDATE_GetSavedGameModeParameter__Fv
 shared	FastMemZero__FPvUi	FastMemZero__FPvUi	function	32	31	31	31	FE.REL:0x008B50	src/levels/shared/FastMemZero__FPvUi.c
 shared	FastMemCopy__FPvPCvUi	FastMemCopy__FPvPCvUi	function	28	31	0	31	FE.REL:0x008B70	
 shared	FastMemSet__FPvPCvUi	FastMemSet__FPvPCvUi	function	32	31	0	31	FE.REL:0x008B90	
-shared	GLOBALVARS_IsWholeGameLifetimeInitialized__Fv	GLOBALVARS_IsWholeGameLifetimeInitialized__Fv	function	40	31	0	31	FE.REL:0x008BB0	
+shared	GLOBALVARS_IsWholeGameLifetimeInitialized__Fv	GLOBALVARS_IsWholeGameLifetimeInitialized__Fv	function	40	31	31	31	FE.REL:0x008BB0	src/levels/shared/GLOBALVARS_IsWholeGameLifetimeInitialized__Fv.c
 shared	GLOBALVARS_GetTranslatedSystemLanguageSetting__Fv	GLOBALVARS_GetTranslatedSystemLanguageSetting__Fv	function	36	31	31	31	FE.REL:0x008BD8	src/levels/shared/GLOBALVARS_GetTranslatedSystemLanguageSetting__Fv.c
 shared	GLOBALVARS_Init__FP15tGLOBALVARS_ALLb	GLOBALVARS_Init__FP15tGLOBALVARS_ALLb	function	608	31	0	31	FE.REL:0x008C00	
 shared	GLOBAL_GetFlag__FUiUc	GLOBAL_GetFlag__FUiUc	function	28	31	0	31	FE.REL:0x008E60	
@@ -428,7 +428,7 @@ shared	GADGET_GetCharOfGadget__F7eGADGET	GADGET_GetCharOfGadget__F7eGADGET	funct
 shared	GADGET_GetGadgetNameInfo__FUiUi	GADGET_GetGadgetNameInfo__FUiUi	function	32	31	31	31	FE.REL:0x00C810	src/levels/shared/GADGET_GetGadgetNameInfo__FUiUi.c
 shared	HEROSKIN_Init__Fv	HEROSKIN_Init__Fv	function	20	31	31	31	FE.REL:0x00C830	src/levels/shared/HEROSKIN_Init__Fv.c
 shared	HEROSKIN_InitSinglePlayer__Fv	HEROSKIN_InitSinglePlayer__Fv	function	16	31	31	31	FE.REL:0x00C848	src/levels/shared/HEROSKIN_InitSinglePlayer__Fv.c
-shared	HEROSKIN_TermSinglePlayer__Fv	HEROSKIN_TermSinglePlayer__Fv	function	56	31	0	31	FE.REL:0x00C858	
+shared	HEROSKIN_TermSinglePlayer__Fv	HEROSKIN_TermSinglePlayer__Fv	function	56	31	31	31	FE.REL:0x00C858	src/levels/shared/HEROSKIN_TermSinglePlayer__Fv.c
 shared	HEROSKIN_BeginLoadSinglePlayerSkin__F12SPHeroSkinIdb	HEROSKIN_BeginLoadSinglePlayerSkin__F12SPHeroSkinIdb	function	612	31	0	31	FE.REL:0x00C890	
 shared	HEROSKIN_EndLoadSinglePlayerSkin__Fv	HEROSKIN_EndLoadSinglePlayerSkin__Fv	function	24	31	0	31	FE.REL:0x00CAF8	
 shared	HEROSKIN_GetSinglePlayerSkinMesh__Fv	HEROSKIN_GetSinglePlayerSkinMesh__Fv	function	376	31	0	31	FE.REL:0x00CB10	
@@ -480,7 +480,7 @@ shared	DISPLAY_SetViewMatrixFromCameraMatrix__FPC7MATRIX4	DISPLAY_SetViewMatrixF
 shared	DISPLAY_SetupProjection__Fffff	DISPLAY_SetupProjection__Fffff	function	280	31	0	31	FE.REL:0x00D8D0	
 shared	DISPLAY_CommitView__Fv	DISPLAY_CommitView__Fv	function	8	31	31	31	FE.REL:0x00D9E8	src/levels/shared/DISPLAY_CommitView__Fv.c
 shared	DISPLAY_BuildFrustumPlanes__FP7MATRIX4N20P10ClipPlanes	DISPLAY_BuildFrustumPlanes__FP7MATRIX4N20P10ClipPlanes	function	2508	31	0	31	FE.REL:0x00D9F0	
-shared	DISPLAY_SetVisibilityPlanes__FP10ClipPlanes	DISPLAY_SetVisibilityPlanes__FP10ClipPlanes	function	36	31	0	31	FE.REL:0x00E3C0	
+shared	DISPLAY_SetVisibilityPlanes__FP10ClipPlanes	DISPLAY_SetVisibilityPlanes__FP10ClipPlanes	function	36	31	31	31	FE.REL:0x00E3C0	src/levels/shared/DISPLAY_SetVisibilityPlanes__FP10ClipPlanes.c
 shared	DISPLAY_IsSphereVisible__FPC6Sphere	DISPLAY_IsSphereVisible__FPC6Sphere	function	28	31	0	31	FE.REL:0x00E3E8	
 shared	DISPLAY_IsSphereVisible__FPC4VEC3f	DISPLAY_IsSphereVisible__FPC4VEC3f	function	148	31	31	31	FE.REL:0x00E408	src/levels/shared/DISPLAY_IsSphereVisible__FPC4VEC3f.c
 shared	DISPLAY_IsShellVisible__FPC4VEC3ff	DISPLAY_IsShellVisible__FPC4VEC3ff	function	208	31	0	31	FE.REL:0x00E4A0	
@@ -1092,7 +1092,7 @@ shared	func_FE_028030	func_FE_028030	function	16	31	0	31	FE.REL:0x028030
 shared	func_FE_028040	func_FE_028040	function	20	31	0	31	FE.REL:0x028040	
 shared	func_FE_028054	func_FE_028054	function	604	31	0	31	FE.REL:0x028054	
 shared	strncpynull__FPcPCcUi	strncpynull__FPcPCcUi	function	48	31	31	31	FE.REL:0x0282B0	src/levels/shared/strncpynull__FPcPCcUi.c
-shared	GetCenterX__17HUD_BoundingBox16	GetCenterX__17HUD_BoundingBox16	function	48	31	0	31	FE.REL:0x0282E0	
+shared	GetCenterX__17HUD_BoundingBox16	GetCenterX__17HUD_BoundingBox16	function	48	31	31	31	FE.REL:0x0282E0	src/levels/shared/GetCenterX__17HUD_BoundingBox16.c
 shared	GetCenterY__17HUD_BoundingBox16	GetCenterY__17HUD_BoundingBox16	function	48	31	31	31	FE.REL:0x028310	src/levels/shared/GetCenterY__17HUD_BoundingBox16.c
 shared	GetWidth__17HUD_BoundingBox16	GetWidth__17HUD_BoundingBox16	function	20	31	31	31	FE.REL:0x028340	src/levels/shared/GetWidth__17HUD_BoundingBox16.c
 shared	SetWidth__17HUD_BoundingBox16i	SetWidth__17HUD_BoundingBox16i	function	80	31	31	31	FE.REL:0x028358	src/levels/shared/SetWidth__17HUD_BoundingBox16i.c
@@ -1138,11 +1138,11 @@ shared	HUD_SetScissoring__FUi	HUD_SetScissoring__FUi	function	40	31	0	31	FE.REL:
 shared	_Internal_setScissoring__FUsUsUsUs_FE	_Internal_setScissoring__FUsUsUsUs	function	184	16	0	16	FE.REL:0x028EA8	
 shared	HUD_SetGuWidgetRenderState__Fv_FE	HUD_SetGuWidgetRenderState__Fv	function	124	16	0	16	FE.REL:0x028F60	
 shared	func_FE_028FE0	func_FE_028FE0	function	304	31	0	31	FE.REL:0x028FE0	
-shared	HUD_InitMaxCharDrop__Fv	HUD_InitMaxCharDrop__Fv	function	168	31	0	31	FE.REL:0x029110	
+shared	HUD_InitMaxCharDrop__Fv	HUD_InitMaxCharDrop__Fv	function	168	31	31	31	FE.REL:0x029110	src/levels/shared/HUD_InitMaxCharDrop__Fv.c
 shared	HUD_FontStringPixelLengthLimit__FPCcUiUi	HUD_FontStringPixelLengthLimit__FPCcUiUi	function	296	31	0	31	FE.REL:0x0291B8	
 shared	HUD_FontStringPixelLength__FPCcUi	HUD_FontStringPixelLength__FPCcUi	function	264	31	0	31	FE.REL:0x0292E0	
 shared	HUD_FontStringLength__FPCc	HUD_FontStringLength__FPCc	function	128	31	0	31	FE.REL:0x0293E8	
-shared	HUD_FontStringPixelLength__FPCc	HUD_FontStringPixelLength__FPCc	function	68	31	0	31	FE.REL:0x029468	
+shared	HUD_FontStringPixelLength__FPCc	HUD_FontStringPixelLength__FPCc	function	68	31	31	31	FE.REL:0x029468	src/levels/shared/HUD_FontStringPixelLength__FPCc.c
 shared	HUD_FontPrintLeft__FssPCc	HUD_FontPrintLeft__FssPCc	function	604	31	0	31	FE.REL:0x0294B0	
 shared	HUD_FontPrintLeftScaled__FssPCcff	HUD_FontPrintLeftScaled__FssPCcff	function	808	31	0	31	FE.REL:0x029710	
 shared	HUD_FontPrintLeftScaledBounded__FssPCciff	HUD_FontPrintLeftScaledBounded__FssPCciff	function	1212	31	0	31	FE.REL:0x029A38	
@@ -1236,7 +1236,7 @@ shared	HUD_PrintHelpLineLeft__FPPCcP17HUD_BoundingBox16Pf	HUD_PrintHelpLineLeft_
 shared	HUD_PrintHelpLineLeft__FPCUiUiPff	HUD_PrintHelpLineLeft__FPCUiUiPff	function	72	31	0	31	FE.REL:0x034EA0	
 shared	func_FE_034EE8	func_FE_034EE8	function	96	31	0	31	FE.REL:0x034EE8	
 shared	HUDFXCYCLE_SetToDefaults__FP11tHUDCYCLEFX	HUDFXCYCLE_SetToDefaults__FP11tHUDCYCLEFX	function	84	31	0	31	FE.REL:0x034F48	
-shared	HUDFXCYCLE_Update__FP11tHUDCYCLEFX	HUDFXCYCLE_Update__FP11tHUDCYCLEFX	function	148	31	0	31	FE.REL:0x034FA0	
+shared	HUDFXCYCLE_Update__FP11tHUDCYCLEFX	HUDFXCYCLE_Update__FP11tHUDCYCLEFX	function	148	31	31	31	FE.REL:0x034FA0	src/levels/shared/HUDFXCYCLE_Update__FP11tHUDCYCLEFX.c
 shared	HUDFXCYCLE_GetCurrentColor__FP11tHUDCYCLEFX	HUDFXCYCLE_GetCurrentColor__FP11tHUDCYCLEFX	function	296	31	0	31	FE.REL:0x035038	
 shared	HUDFXCYCLE_Reset__FP11tHUDCYCLEFX	HUDFXCYCLE_Reset__FP11tHUDCYCLEFX	function	8	31	31	31	FE.REL:0x035160	src/levels/shared/HUDFXCYCLE_Reset__FP11tHUDCYCLEFX.c
 shared	HUDFXCYCLE_RefreshStay__FP11tHUDCYCLEFXQ211tHUDCYCLEFX13eSTAYINONEDIRUi	HUDFXCYCLE_RefreshStay__FP11tHUDCYCLEFXQ211tHUDCYCLEFX13eSTAYINONEDIRUi	function	12	31	31	31	FE.REL:0x035168	src/levels/shared/HUDFXCYCLE_RefreshStay__FP11tHUDCYCLEFXQ211tHUDCYCLEFX13eSTAYINONEDIRUi.c
@@ -1245,7 +1245,7 @@ shared	PAUSEMENU_SeekSelection__FP10tPAUSEMENUUi	PAUSEMENU_SeekSelection__FP10tP
 shared	PAUSEMENU_SetTextUseSubnodeColor__FP10tPAUSEMENUUiUib	PAUSEMENU_SetTextUseSubnodeColor__FP10tPAUSEMENUUiUib	function	64	31	31	31	FE.REL:0x0352D0	src/levels/shared/PAUSEMENU_SetTextUseSubnodeColor__FP10tPAUSEMENUUiUib.c
 shared	PAUSEMENU_SetTextAndSubnodeColor__FP10tPAUSEMENUUiUiUiUiUiUib	PAUSEMENU_SetTextAndSubnodeColor__FP10tPAUSEMENUUiUiUiUiUiUib	function	208	31	0	31	FE.REL:0x035310	
 shared	PAUSEMENU_SetTextItemColor__FP10tPAUSEMENUUiUiUiUiUi	PAUSEMENU_SetTextItemColor__FP10tPAUSEMENUUiUiUiUiUi	function	92	31	31	31	FE.REL:0x0353E0	src/levels/shared/PAUSEMENU_SetTextItemColor__FP10tPAUSEMENUUiUiUiUiUi.c
-shared	PAUSEMENU_SetTextSubnodeColor__FP10tPAUSEMENUUiUiUiUiUib	PAUSEMENU_SetTextSubnodeColor__FP10tPAUSEMENUUiUiUiUiUib	function	156	31	0	31	FE.REL:0x035440	
+shared	PAUSEMENU_SetTextSubnodeColor__FP10tPAUSEMENUUiUiUiUiUib	PAUSEMENU_SetTextSubnodeColor__FP10tPAUSEMENUUiUiUiUiUib	function	156	31	31	31	FE.REL:0x035440	src/levels/shared/PAUSEMENU_SetTextSubnodeColor__FP10tPAUSEMENUUiUiUiUiUib.c
 shared	PAUSEMENU_SetText__FP10tPAUSEMENUUiUiUib	PAUSEMENU_SetText__FP10tPAUSEMENUUiUiUib	function	88	31	31	31	FE.REL:0x0354E0	src/levels/shared/PAUSEMENU_SetText__FP10tPAUSEMENUUiUiUib.c
 shared	PAUSEMENU_SetScrollingItemSeparatorColors__FP10tPAUSEMENUUiUi	PAUSEMENU_SetScrollingItemSeparatorColors__FP10tPAUSEMENUUiUi	function	16	31	31	31	FE.REL:0x035538	src/levels/shared/PAUSEMENU_SetScrollingItemSeparatorColors__FP10tPAUSEMENUUiUi.c
 shared	PAUSEMENU_SetCurrentSelectedItem__FP10tPAUSEMENUUi	PAUSEMENU_SetCurrentSelectedItem__FP10tPAUSEMENUUi	function	32	31	31	31	FE.REL:0x035548	src/levels/shared/PAUSEMENU_SetCurrentSelectedItem__FP10tPAUSEMENUUi.c
@@ -1289,7 +1289,7 @@ shared	PAUSEMODE_ResetPauseStack__Fv	PAUSEMODE_ResetPauseStack__Fv	function	56	3
 shared	PAUSEMODE_ResetPendingPopScreen__Fv	PAUSEMODE_ResetPendingPopScreen__Fv	function	8	31	31	31	FE.REL:0x037110	src/levels/shared/PAUSEMODE_ResetPendingPopScreen__Fv.c
 shared	PAUSEMODE_GetMenuBufferRam__Fv	PAUSEMODE_GetMenuBufferRam__Fv	function	12	31	31	31	FE.REL:0x037118	src/levels/shared/PAUSEMODE_GetMenuBufferRam__Fv.c
 shared	PAUSEMODE_ResetScaleFX__FUcff	PAUSEMODE_ResetScaleFX__FUcff	function	40	31	31	31	FE.REL:0x037128	src/levels/shared/PAUSEMODE_ResetScaleFX__FUcff.c
-shared	PAUSEMODE_UpdateScaleFX__Fv	PAUSEMODE_UpdateScaleFX__Fv	function	60	31	0	31	FE.REL:0x037150	
+shared	PAUSEMODE_UpdateScaleFX__Fv	PAUSEMODE_UpdateScaleFX__Fv	function	60	31	31	31	FE.REL:0x037150	src/levels/shared/PAUSEMODE_UpdateScaleFX__Fv.c
 shared	PAUSEMODE_GetScaleFX__Fv	PAUSEMODE_GetScaleFX__Fv	function	36	31	0	31	FE.REL:0x037190	
 shared	SCRNDEFAULT_Render__FPc	SCRNDEFAULT_Render__FPc	function	196	31	0	31	FE.REL:0x0371B8	
 shared	SCRNDEFAULT_Update__Fv	SCRNDEFAULT_Update__Fv	function	48	31	0	31	FE.REL:0x037280	
@@ -1310,7 +1310,7 @@ shared	PAUSEMODE_GetScreenWeEnteredByRoutedEntry__Fv	PAUSEMODE_GetScreenWeEntere
 frontend	PAUSEMODE_Update__Fv_FE	PAUSEMODE_Update__Fv	function	248	1	0	1	FE.REL:0x037480	
 shared	PAUSEMODE_GetCurrentPauseScreen__Fv	PAUSEMODE_GetCurrentPauseScreen__Fv	function	12	31	31	31	FE.REL:0x037578	src/levels/shared/PAUSEMODE_GetCurrentPauseScreen__Fv.c
 frontend	PAUSEMODE_Render__Fv_FE	PAUSEMODE_Render__Fv	function	368	1	0	1	FE.REL:0x037588	
-shared	PAUSEMODE_UpdateDebounce__Fv	PAUSEMODE_UpdateDebounce__Fv	function	28	31	0	31	FE.REL:0x0376F8	
+shared	PAUSEMODE_UpdateDebounce__Fv	PAUSEMODE_UpdateDebounce__Fv	function	28	31	31	31	FE.REL:0x0376F8	src/levels/shared/PAUSEMODE_UpdateDebounce__Fv.c
 shared	PAUSEMODE_IsPauselessMode__Fv	PAUSEMODE_IsPauselessMode__Fv	function	48	31	31	31	FE.REL:0x037718	src/levels/shared/PAUSEMODE_IsPauselessMode__Fv.c
 shared	PAUSEMODE_DoesScreenRunsInMultiplayer__F18ePAUSEMODE_SCREENS	PAUSEMODE_DoesScreenRunsInMultiplayer__F18ePAUSEMODE_SCREENS	function	52	31	0	31	FE.REL:0x037748	
 shared	PAUSEMODE_ChangeControlContextHackery__FUi	PAUSEMODE_ChangeControlContextHackery__FUi	function	60	31	0	31	FE.REL:0x037780	
@@ -1547,11 +1547,11 @@ shared	MCPFONT_RegisterFontTextures__Fv	MCPFONT_RegisterFontTextures__Fv	functio
 shared	func_FE_03ED28	func_FE_03ED28	function	248	31	0	31	FE.REL:0x03ED28	
 shared	MCPFONT_FontStringLength__FPCc	MCPFONT_FontStringLength__FPCc	function	64	31	0	31	FE.REL:0x03EE20	
 shared	MCPFONT_FontStringPixelLength__FPCcUi	MCPFONT_FontStringPixelLength__FPCcUi	function	216	31	0	31	FE.REL:0x03EE60	
-shared	MCPFONT_FontStringPixelLength__FPCc	MCPFONT_FontStringPixelLength__FPCc	function	68	31	0	31	FE.REL:0x03EF38	
+shared	MCPFONT_FontStringPixelLength__FPCc	MCPFONT_FontStringPixelLength__FPCc	function	68	31	31	31	FE.REL:0x03EF38	src/levels/shared/MCPFONT_FontStringPixelLength__FPCc.c
 shared	MCPFONT_SetColor__FUi	MCPFONT_SetColor__FUi	function	12	31	31	31	FE.REL:0x03EF80	src/levels/shared/MCPFONT_SetColor__FUi.c
 shared	MCPFONT_FontPrintCenterScaled__FssPCcff	MCPFONT_FontPrintCenterScaled__FssPCcff	function	620	31	0	31	FE.REL:0x03EF90	
 shared	func_FE_03F200	func_FE_03F200	function	248	31	0	31	FE.REL:0x03F200	
-shared	MCP_InitMaxCharDrop__Fv	MCP_InitMaxCharDrop__Fv	function	168	31	0	31	FE.REL:0x03F2F8	
+shared	MCP_InitMaxCharDrop__Fv	MCP_InitMaxCharDrop__Fv	function	168	31	31	31	FE.REL:0x03F2F8	src/levels/shared/MCP_InitMaxCharDrop__Fv.c
 shared	MCP_GetFontPage__FUc	MCP_GetFontPage__FUc	function	40	31	0	31	FE.REL:0x03F3A0	
 shared	MCP_FontStringPixelLengthLimit__FPCcUiUi	MCP_FontStringPixelLengthLimit__FPCcUiUi	function	236	31	0	31	FE.REL:0x03F3C8	
 shared	MCP_FontStringLength__FPCc	MCP_FontStringLength__FPCc	function	64	31	0	31	FE.REL:0x03F4B8	
@@ -1561,18 +1561,18 @@ shared	MCP_FontPrintWindowArea__FP20tFontPrintWindowData	MCP_FontPrintWindowArea
 shared	MCP_FontPrintWindowSetStructDefaults__FP20tFontPrintWindowDatassssUi	MCP_FontPrintWindowSetStructDefaults__FP20tFontPrintWindowDatassssUi	function	204	31	0	31	FE.REL:0x03FA18	
 shared	func_FE_03FAE8	func_FE_03FAE8	function	60	31	0	31	FE.REL:0x03FAE8	
 frontend	_GLOBAL_$I$c__dev_projects_SAC_Src_MCP__All_MCP_cppMgbaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_MCP__All_MCP.cppMgbaaa	function	32	1	1	1	FE.REL:0x03FB28	src/levels/frontend/_GLOBAL_$I$c__dev_projects_SAC_Src_MCP__All_MCP_cppMgbaaa.c
-shared	SIG_CalcSignature__FPCci	SIG_CalcSignature__FPCci	function	100	31	0	31	FE.REL:0x03FB48	
+shared	SIG_CalcSignature__FPCci	SIG_CalcSignature__FPCci	function	100	31	31	31	FE.REL:0x03FB48	src/levels/shared/SIG_CalcSignature__FPCci.c
 shared	SIG_CalcCaseSensitiveSignature__FPCc	SIG_CalcCaseSensitiveSignature__FPCc	function	200	31	0	31	FE.REL:0x03FBB0	
 shared	SIG_CalcCaseInsensitiveSignature__FPCc	SIG_CalcCaseInsensitiveSignature__FPCc	function	216	31	0	31	FE.REL:0x03FC78	
 shared	SIG_ConcatCI__FUiPCc	SIG_ConcatCI__FUiPCc	function	200	31	0	31	FE.REL:0x03FD50	
 shared	SIG_ConcatFormatCI__FUiPCce	SIG_ConcatFormatCI__FUiPCce	function	104	31	0	31	FE.REL:0x03FE18	
-shared	TJZIP_GetStats__FPiT0	TJZIP_GetStats__FPiT0	function	28	31	0	31	FE.REL:0x03FE80	
+shared	TJZIP_GetStats__FPiT0	TJZIP_GetStats__FPiT0	function	28	31	31	31	FE.REL:0x03FE80	src/levels/shared/TJZIP_GetStats__FPiT0.c
 shared	TJZIP_OutputRaw__FPPUcPUcUi	TJZIP_OutputRaw__FPPUcPUcUi	function	184	31	0	31	FE.REL:0x03FEA0	
 shared	TJZIP_OutputCode__FPPUcUiUi	TJZIP_OutputCode__FPPUcUiUi	function	432	31	0	31	FE.REL:0x03FF58	
 shared	TJZIP_TryDictionaryMatch__FUiPUcT1PPUcPUiT4	TJZIP_TryDictionaryMatch__FUiPUcT1PPUcPUiT4	function	284	31	0	31	FE.REL:0x040108	
 shared	TJZIP_Compress__FPUcT0UiPPUc	TJZIP_Compress__FPUcT0UiPPUc	function	392	31	0	31	FE.REL:0x040228	
 shared	TJZIP_ParseDictionaryCode__FPPUcT0PUi	TJZIP_ParseDictionaryCode__FPPUcT0PUi	function	940	31	0	31	FE.REL:0x0403B0	
-shared	TJZIP_ParseRawDataBlock__FPPUcT0PUi	TJZIP_ParseRawDataBlock__FPPUcT0PUi	function	444	31	0	31	FE.REL:0x040760	
+shared	TJZIP_ParseRawDataBlock__FPPUcT0PUi	TJZIP_ParseRawDataBlock__FPPUcT0PUi	function	444	31	31	31	FE.REL:0x040760	src/levels/shared/TJZIP_ParseRawDataBlock__FPPUcT0PUi.c
 shared	TJZIP_Decompress__FPUcT0UiPUiT0PFPUc_PUc	TJZIP_Decompress__FPUcT0UiPUiT0PFPUc_PUc	function	508	31	0	31	FE.REL:0x040920	
 shared	BOG_SignatureToName__FUi	BOG_SignatureToName__FUi	function	108	31	0	31	FE.REL:0x040B20	
 shared	BOG_LoadFile__FPcUiT0	BOG_LoadFile__FPcUiT0	function	1272	31	0	31	FE.REL:0x040B90	
@@ -1812,7 +1812,7 @@ shared	Quat_Multiply__FP4QUATPC4QUATT1	Quat_Multiply__FP4QUATPC4QUATT1	function	
 shared	Quat_MultiplyConjugate__FP4QUATPC4QUATT1	Quat_MultiplyConjugate__FP4QUATPC4QUATT1	function	164	31	0	31	FE.REL:0x054620	
 shared	Quat_Slerp__FP4QUATPC4QUATT1f	Quat_Slerp__FP4QUATPC4QUATT1f	function	440	31	0	31	FE.REL:0x0546C8	
 shared	Quat_ConvertToMatrixSavePos__FP7MATRIX4PC4QUAT	Quat_ConvertToMatrixSavePos__FP7MATRIX4PC4QUAT	function	60	31	0	31	FE.REL:0x054880	
-shared	Quat_ConvertToMatrix__FP7MATRIX4PC4QUAT	Quat_ConvertToMatrix__FP7MATRIX4PC4QUAT	function	76	31	0	31	FE.REL:0x0548C0	
+shared	Quat_ConvertToMatrix__FP7MATRIX4PC4QUAT	Quat_ConvertToMatrix__FP7MATRIX4PC4QUAT	function	76	31	31	31	FE.REL:0x0548C0	src/levels/shared/Quat_ConvertToMatrix__FP7MATRIX4PC4QUAT.c
 shared	Quat_ConvertToMatrix__FP8MATRIX43PC4QUAT	Quat_ConvertToMatrix__FP8MATRIX43PC4QUAT	function	52	31	31	31	FE.REL:0x054910	src/levels/shared/Quat_ConvertToMatrix__FP8MATRIX43PC4QUAT.c
 shared	Quat_ConvertToMatrix__FP7MATRIX3PC4QUAT	Quat_ConvertToMatrix__FP7MATRIX3PC4QUAT	function	28	31	31	31	FE.REL:0x054948	src/levels/shared/Quat_ConvertToMatrix__FP7MATRIX3PC4QUAT.c
 shared	Quat_ConvertToRotMatrix__FP7MATRIX4PC4QUAT	Quat_ConvertToRotMatrix__FP7MATRIX4PC4QUAT	function	200	31	31	31	FE.REL:0x054968	src/levels/shared/Quat_ConvertToRotMatrix__FP7MATRIX4PC4QUAT.c
@@ -1855,7 +1855,7 @@ shared	VEC_RotateVec3AroundY__FP4VEC3PC4VEC3f	VEC_RotateVec3AroundY__FP4VEC3PC4V
 shared	VEC_RotateVec3AroundZ__FP4VEC3PC4VEC3f	VEC_RotateVec3AroundZ__FP4VEC3PC4VEC3f	function	68	31	31	31	FE.REL:0x055E70	src/levels/shared/VEC_RotateVec3AroundZ__FP4VEC3PC4VEC3f.c
 shared	VEC_RotateVec3AroundAxis__FP4VEC3PC4VEC3T0f	VEC_RotateVec3AroundAxis__FP4VEC3PC4VEC3T0f	function	72	31	31	31	FE.REL:0x055EB8	src/levels/shared/VEC_RotateVec3AroundAxis__FP4VEC3PC4VEC3T0f.c
 shared	VEC_TransposeMat4__FP7MATRIX4PC7MATRIX4	VEC_TransposeMat4__FP7MATRIX4PC7MATRIX4	function	132	31	0	31	FE.REL:0x055F00	
-shared	VEC_InverseMat4__FP7MATRIX4PC7MATRIX4	VEC_InverseMat4__FP7MATRIX4PC7MATRIX4	function	2008	31	0	31	FE.REL:0x055F88	
+shared	VEC_InverseMat4__FP7MATRIX4PC7MATRIX4	VEC_InverseMat4__FP7MATRIX4PC7MATRIX4	function	2008	31	31	31	FE.REL:0x055F88	src/levels/shared/VEC_InverseMat4__FP7MATRIX4PC7MATRIX4.c
 shared	VEC_rotateMatrix4AroundX__FP7MATRIX4f	VEC_rotateMatrix4AroundX__FP7MATRIX4f	function	56	31	0	31	FE.REL:0x056760	
 shared	VEC_rotateMatrix4AroundY__FP7MATRIX4f	VEC_rotateMatrix4AroundY__FP7MATRIX4f	function	56	31	0	31	FE.REL:0x056798	
 shared	VEC_rotateMatrix4AroundZ__FP7MATRIX4f	VEC_rotateMatrix4AroundZ__FP7MATRIX4f	function	56	31	0	31	FE.REL:0x0567D0	
@@ -1864,7 +1864,7 @@ shared	VEC_rotateMatrix4AroundXNoTranslate__FP7MATRIX4f	VEC_rotateMatrix4AroundX
 shared	VEC_rotateMatrix4AroundYNoTranslate__FP7MATRIX4f	VEC_rotateMatrix4AroundYNoTranslate__FP7MATRIX4f	function	56	31	0	31	FE.REL:0x056878	
 shared	VEC_rotateMatrix4AroundZNoTranslate__FP7MATRIX4f	VEC_rotateMatrix4AroundZNoTranslate__FP7MATRIX4f	function	112	31	0	31	FE.REL:0x0568B0	
 shared	VEC_rotateMatrix4AroundAxisNoTranslate__FP7MATRIX4ffff	VEC_rotateMatrix4AroundAxisNoTranslate__FP7MATRIX4ffff	function	56	31	0	31	FE.REL:0x056920	
-shared	VEC_MultiplyMatrix3__FP7MATRIX3PC7MATRIX3T1	VEC_MultiplyMatrix3__FP7MATRIX3PC7MATRIX3T1	function	348	31	0	31	FE.REL:0x056958	
+shared	VEC_MultiplyMatrix3__FP7MATRIX3PC7MATRIX3T1	VEC_MultiplyMatrix3__FP7MATRIX3PC7MATRIX3T1	function	348	31	31	31	FE.REL:0x056958	src/levels/shared/VEC_MultiplyMatrix3__FP7MATRIX3PC7MATRIX3T1.c
 shared	VEC_MultiplyMatrix3__FP7MATRIX3PC7MATRIX3PC7MATRIX4	VEC_MultiplyMatrix3__FP7MATRIX3PC7MATRIX3PC7MATRIX4	function	348	31	0	31	FE.REL:0x056AB8	
 shared	VEC_MultiplyMatrix3__FP7MATRIX3PC7MATRIX4PC7MATRIX3	VEC_MultiplyMatrix3__FP7MATRIX3PC7MATRIX4PC7MATRIX3	function	348	31	31	31	FE.REL:0x056C18	src/levels/shared/VEC_MultiplyMatrix3__FP7MATRIX3PC7MATRIX4PC7MATRIX3.c
 shared	VEC_MultiplyMatrix3__FP7MATRIX3PC7MATRIX4T1	VEC_MultiplyMatrix3__FP7MATRIX3PC7MATRIX4T1	function	348	31	31	31	FE.REL:0x056D78	src/levels/shared/VEC_MultiplyMatrix3__FP7MATRIX3PC7MATRIX4T1.c
@@ -1872,7 +1872,7 @@ shared	VEC_MultiplyMatrix3__FP7MATRIX4PC7MATRIX3T1	VEC_MultiplyMatrix3__FP7MATRI
 shared	VEC_MultiplyMatrix3__FP7MATRIX4PC7MATRIX3PC7MATRIX4	VEC_MultiplyMatrix3__FP7MATRIX4PC7MATRIX3PC7MATRIX4	function	348	31	31	31	FE.REL:0x057038	src/levels/shared/VEC_MultiplyMatrix3__FP7MATRIX4PC7MATRIX3PC7MATRIX4.c
 shared	VEC_MultiplyMatrix3__FP7MATRIX4PC7MATRIX4PC7MATRIX3	VEC_MultiplyMatrix3__FP7MATRIX4PC7MATRIX4PC7MATRIX3	function	348	31	31	31	FE.REL:0x057198	src/levels/shared/VEC_MultiplyMatrix3__FP7MATRIX4PC7MATRIX4PC7MATRIX3.c
 shared	VEC_MultiplyMatrix3__FP7MATRIX4PC7MATRIX4T1	VEC_MultiplyMatrix3__FP7MATRIX4PC7MATRIX4T1	function	348	31	0	31	FE.REL:0x0572F8	
-shared	VEC_MultiplyMatrix3__FP8MATRIX43PC8MATRIX43PC7MATRIX3	VEC_MultiplyMatrix3__FP8MATRIX43PC8MATRIX43PC7MATRIX3	function	348	31	0	31	FE.REL:0x057458	
+shared	VEC_MultiplyMatrix3__FP8MATRIX43PC8MATRIX43PC7MATRIX3	VEC_MultiplyMatrix3__FP8MATRIX43PC8MATRIX43PC7MATRIX3	function	348	31	31	31	FE.REL:0x057458	src/levels/shared/VEC_MultiplyMatrix3__FP8MATRIX43PC8MATRIX43PC7MATRIX3.c
 shared	VEC_MultiplyMatrix4__FP7MATRIX4PC7MATRIX4T1	VEC_MultiplyMatrix4__FP7MATRIX4PC7MATRIX4T1	function	932	31	0	31	FE.REL:0x0575B8	
 shared	VEC_MultiplyMatrix4__FP7MATRIX4PC7MATRIX4PC8MATRIX43	VEC_MultiplyMatrix4__FP7MATRIX4PC7MATRIX4PC8MATRIX43	function	716	31	0	31	FE.REL:0x057960	
 shared	VEC_MultiplyMatrix4__FP7MATRIX4PC8MATRIX43PC7MATRIX4	VEC_MultiplyMatrix4__FP7MATRIX4PC8MATRIX43PC7MATRIX4	function	812	31	31	31	FE.REL:0x057C30	src/levels/shared/VEC_MultiplyMatrix4__FP7MATRIX4PC8MATRIX43PC7MATRIX4.c
@@ -1881,13 +1881,13 @@ shared	VEC_MultiplyMatrix4__FP8MATRIX43PC7MATRIX4T1	VEC_MultiplyMatrix4__FP8MATR
 shared	VEC_MultiplyMatrix4x3__FP7MATRIX4PC7MATRIX4T1	VEC_MultiplyMatrix4x3__FP7MATRIX4PC7MATRIX4T1	function	544	31	31	31	FE.REL:0x0583A0	src/levels/shared/VEC_MultiplyMatrix4x3__FP7MATRIX4PC7MATRIX4T1.c
 shared	VEC_MultiplyMatrix4By3__FP7MATRIX4PC7MATRIX4PC7MATRIX3	VEC_MultiplyMatrix4By3__FP7MATRIX4PC7MATRIX4PC7MATRIX3	function	432	31	0	31	FE.REL:0x0585C0	
 shared	VEC_MulMat3Vec2__FP4VEC3PC7MATRIX3PC4VEC2	VEC_MulMat3Vec2__FP4VEC3PC7MATRIX3PC4VEC2	function	100	31	31	31	FE.REL:0x058770	src/levels/shared/VEC_MulMat3Vec2__FP4VEC3PC7MATRIX3PC4VEC2.c
-shared	VEC_MulMat3Vec3__FP4VEC3PC7MATRIX3PC4VEC3	VEC_MulMat3Vec3__FP4VEC3PC7MATRIX3PC4VEC3	function	156	31	0	31	FE.REL:0x0587D8	
+shared	VEC_MulMat3Vec3__FP4VEC3PC7MATRIX3PC4VEC3	VEC_MulMat3Vec3__FP4VEC3PC7MATRIX3PC4VEC3	function	156	31	31	31	FE.REL:0x0587D8	src/levels/shared/VEC_MulMat3Vec3__FP4VEC3PC7MATRIX3PC4VEC3.c
 shared	VEC_MulMat3Vec3Array__FP4VEC3PC7MATRIX3PC4VEC3i	VEC_MulMat3Vec3Array__FP4VEC3PC7MATRIX3PC4VEC3i	function	148	31	31	31	FE.REL:0x058878	src/levels/shared/VEC_MulMat3Vec3Array__FP4VEC3PC7MATRIX3PC4VEC3i.c
-shared	VEC_MulMat4Vec3ZeroW__FP4VEC3PC7MATRIX4PC4VEC3	VEC_MulMat4Vec3ZeroW__FP4VEC3PC7MATRIX4PC4VEC3	function	156	31	0	31	FE.REL:0x058910	
+shared	VEC_MulMat4Vec3ZeroW__FP4VEC3PC7MATRIX4PC4VEC3	VEC_MulMat4Vec3ZeroW__FP4VEC3PC7MATRIX4PC4VEC3	function	156	31	31	31	FE.REL:0x058910	src/levels/shared/VEC_MulMat4Vec3ZeroW__FP4VEC3PC7MATRIX4PC4VEC3.c
 shared	VEC_MulMat4Vec3ZeroWArray__FP4VEC3PC7MATRIX4PC4VEC3i	VEC_MulMat4Vec3ZeroWArray__FP4VEC3PC7MATRIX4PC4VEC3i	function	148	31	31	31	FE.REL:0x0589B0	src/levels/shared/VEC_MulMat4Vec3ZeroWArray__FP4VEC3PC7MATRIX4PC4VEC3i.c
-shared	VEC_MulMat4Vec3__FP4VEC3PC7MATRIX4PC4VEC3	VEC_MulMat4Vec3__FP4VEC3PC7MATRIX4PC4VEC3	function	180	31	0	31	FE.REL:0x058A48	
+shared	VEC_MulMat4Vec3__FP4VEC3PC7MATRIX4PC4VEC3	VEC_MulMat4Vec3__FP4VEC3PC7MATRIX4PC4VEC3	function	180	31	31	31	FE.REL:0x058A48	src/levels/shared/VEC_MulMat4Vec3__FP4VEC3PC7MATRIX4PC4VEC3.c
 shared	VEC_MulMat4Vec3Array__FP4VEC3PC7MATRIX4PC4VEC3i	VEC_MulMat4Vec3Array__FP4VEC3PC7MATRIX4PC4VEC3i	function	176	31	31	31	FE.REL:0x058B00	src/levels/shared/VEC_MulMat4Vec3Array__FP4VEC3PC7MATRIX4PC4VEC3i.c
-shared	VEC_MulMat4Vec3__FP4VEC3PC8MATRIX43PC4VEC3	VEC_MulMat4Vec3__FP4VEC3PC8MATRIX43PC4VEC3	function	148	31	0	31	FE.REL:0x058BB0	
+shared	VEC_MulMat4Vec3__FP4VEC3PC8MATRIX43PC4VEC3	VEC_MulMat4Vec3__FP4VEC3PC8MATRIX43PC4VEC3	function	148	31	31	31	FE.REL:0x058BB0	src/levels/shared/VEC_MulMat4Vec3__FP4VEC3PC8MATRIX43PC4VEC3.c
 shared	VEC_MulMat4Vec3__FP4VEC3PC8MATRIX43fff	VEC_MulMat4Vec3__FP4VEC3PC8MATRIX43fff	function	136	31	31	31	FE.REL:0x058C48	src/levels/shared/VEC_MulMat4Vec3__FP4VEC3PC8MATRIX43fff.c
 shared	VEC_MulMat4Vec3Array__FP4VEC3PC8MATRIX43PC4VEC3i	VEC_MulMat4Vec3Array__FP4VEC3PC8MATRIX43PC4VEC3i	function	176	31	31	31	FE.REL:0x058CD0	src/levels/shared/VEC_MulMat4Vec3Array__FP4VEC3PC8MATRIX43PC4VEC3i.c
 shared	VEC_MulMat4Vec4__FP4VEC4PC7MATRIX4PC4VEC4	VEC_MulMat4Vec4__FP4VEC4PC7MATRIX4PC4VEC4	function	252	31	31	31	FE.REL:0x058D80	src/levels/shared/VEC_MulMat4Vec4__FP4VEC4PC7MATRIX4PC4VEC4.c
@@ -1902,8 +1902,8 @@ shared	VEC_Length__FP4VEC3	VEC_Length__FP4VEC3	function	88	31	0	31	FE.REL:0x0592
 shared	VEC_BBoxToBSphere__FP4VEC3T0P4VEC4	VEC_BBoxToBSphere__FP4VEC3T0P4VEC4	function	392	31	0	31	FE.REL:0x0592B8	
 shared	VEC_MakeMat3x4FromYawPitch__FP7MATRIX4ff	VEC_MakeMat3x4FromYawPitch__FP7MATRIX4ff	function	192	31	0	31	FE.REL:0x059440	
 shared	VEC_MakeMat3FromYawPitch__FP7MATRIX3ff	VEC_MakeMat3FromYawPitch__FP7MATRIX3ff	function	180	31	0	31	FE.REL:0x059500	
-shared	VEC_MakeMatFromYawPitchRoll__FP4VEC3N20fff	VEC_MakeMatFromYawPitchRoll__FP4VEC3N20fff	function	208	31	0	31	FE.REL:0x0595B8	
-shared	VEC_MakeScaleMat__FP4VEC3N20fff	VEC_MakeScaleMat__FP4VEC3N20fff	function	40	31	0	31	FE.REL:0x059688	
+shared	VEC_MakeMatFromYawPitchRoll__FP4VEC3N20fff	VEC_MakeMatFromYawPitchRoll__FP4VEC3N20fff	function	208	31	31	31	FE.REL:0x0595B8	src/levels/shared/VEC_MakeMatFromYawPitchRoll__FP4VEC3N20fff.c
+shared	VEC_MakeScaleMat__FP4VEC3N20fff	VEC_MakeScaleMat__FP4VEC3N20fff	function	40	31	31	31	FE.REL:0x059688	src/levels/shared/VEC_MakeScaleMat__FP4VEC3N20fff.c
 shared	VEC_MakeTranslateMat__FP7MATRIX4PC4VEC3	VEC_MakeTranslateMat__FP7MATRIX4PC4VEC3	function	100	31	0	31	FE.REL:0x0596B0	
 shared	VEC_DirToYawPitch__FPfT0PC4VEC3	VEC_DirToYawPitch__FPfT0PC4VEC3	function	88	31	0	31	FE.REL:0x059718	
 shared	VEC_MatToYawPitchRoll__FPfN20PC4VEC3N23	VEC_MatToYawPitchRoll__FPfN20PC4VEC3N23	function	160	31	0	31	FE.REL:0x059770	
@@ -2043,8 +2043,8 @@ shared	func_FE_062908	func_FE_062908	function	728	31	0	31	FE.REL:0x062908
 shared	WAD_Load__FPCcPP10WAD_HEADERPPUc	WAD_Load__FPCcPP10WAD_HEADERPPUc	function	120	31	0	31	FE.REL:0x062BE0	
 shared	WAD_Load__FPCcP10WAD_HEADER	WAD_Load__FPCcP10WAD_HEADER	function	96	31	0	31	FE.REL:0x062C58	
 shared	WAD_Load__FPCcP10WAD_HEADERPP10WAD_HEADER	WAD_Load__FPCcP10WAD_HEADERPP10WAD_HEADER	function	356	31	0	31	FE.REL:0x062CB8	
-shared	WAD_NextAssetByType__FP15WAD_FILE_HEADER	WAD_NextAssetByType__FP15WAD_FILE_HEADER	function	56	31	0	31	FE.REL:0x062E20	
-shared	WAD_FindAssetsByType__F14WAD_ASSET_TYPEP10WAD_HEADER	WAD_FindAssetsByType__F14WAD_ASSET_TYPEP10WAD_HEADER	function	72	31	0	31	FE.REL:0x062E58	
+shared	WAD_NextAssetByType__FP15WAD_FILE_HEADER	WAD_NextAssetByType__FP15WAD_FILE_HEADER	function	56	31	31	31	FE.REL:0x062E20	src/levels/shared/WAD_NextAssetByType__FP15WAD_FILE_HEADER.c
+shared	WAD_FindAssetsByType__F14WAD_ASSET_TYPEP10WAD_HEADER	WAD_FindAssetsByType__F14WAD_ASSET_TYPEP10WAD_HEADER	function	72	31	31	31	FE.REL:0x062E58	src/levels/shared/WAD_FindAssetsByType__F14WAD_ASSET_TYPEP10WAD_HEADER.c
 shared	WAD_FindAssetsBySignature__FUi14WAD_ASSET_TYPEP10WAD_HEADER	WAD_FindAssetsBySignature__FUi14WAD_ASSET_TYPEP10WAD_HEADER	function	192	31	0	31	FE.REL:0x062EA0	
 shared	WAD_FindAssetsByName__FPCc14WAD_ASSET_TYPEP10WAD_HEADER	WAD_FindAssetsByName__FPCc14WAD_ASSET_TYPEP10WAD_HEADER	function	84	31	0	31	FE.REL:0x062F60	
 shared	LOADER_Init__Fv	LOADER_Init__Fv	function	8	31	31	31	FE.REL:0x062FB8	src/levels/shared/LOADER_Init__Fv.c
@@ -2163,7 +2163,7 @@ shared	MEMCARDCLIENT_ClearError__Fv	MEMCARDCLIENT_ClearError__Fv	function	32	31	
 shared	MEMCARDCLIENT_ClearAbortedStatus__Fv	MEMCARDCLIENT_ClearAbortedStatus__Fv	function	32	31	31	31	FE.REL:0x066570	src/levels/shared/MEMCARDCLIENT_ClearAbortedStatus__Fv.c
 shared	MEMCARDCLIENT_IsAbortedStatus__Fb	MEMCARDCLIENT_IsAbortedStatus__Fb	function	8	31	31	31	FE.REL:0x066590	src/levels/shared/MEMCARDCLIENT_IsAbortedStatus__Fb.c
 shared	MEMCARDCLIENT_ClearSwapped__Fv	MEMCARDCLIENT_ClearSwapped__Fv	function	32	31	31	31	FE.REL:0x066598	src/levels/shared/MEMCARDCLIENT_ClearSwapped__Fv.c
-shared	MEMCARDCLIENT_ClearInserted__Fv	MEMCARDCLIENT_ClearInserted__Fv	function	32	31	0	31	FE.REL:0x0665B8	
+shared	MEMCARDCLIENT_ClearInserted__Fv	MEMCARDCLIENT_ClearInserted__Fv	function	32	31	31	31	FE.REL:0x0665B8	src/levels/shared/MEMCARDCLIENT_ClearInserted__Fv.c
 shared	MEMCARDCLIENT_ClearLastASFailedDueToSleep__Fv	MEMCARDCLIENT_ClearLastASFailedDueToSleep__Fv	function	64	31	0	31	FE.REL:0x0665D8	
 shared	MEMCARDCLIENT_IsASFailedDueToSleepLatchOn__Fb	MEMCARDCLIENT_IsASFailedDueToSleepLatchOn__Fb	function	84	31	0	31	FE.REL:0x066618	
 shared	MEMCARDCLIENT_SetSupressMemcardOperation__Fb	MEMCARDCLIENT_SetSupressMemcardOperation__Fb	function	80	31	0	31	FE.REL:0x066670	
@@ -2220,7 +2220,7 @@ shared	func_FE_067918	func_FE_067918	function	8	31	0	31	FE.REL:0x067918
 shared	func_FE_067920	func_FE_067920	function	8	31	0	31	FE.REL:0x067920	
 shared	func_FE_067928	func_FE_067928	function	36	31	0	31	FE.REL:0x067928	
 shared	func_FE_067950	func_FE_067950	function	24	31	0	31	FE.REL:0x067950	
-shared	BACKGSTREAMER_Init__FP18tBACKGSTREAMER_CMD	BACKGSTREAMER_Init__FP18tBACKGSTREAMER_CMD	function	80	31	0	31	FE.REL:0x067968	
+shared	BACKGSTREAMER_Init__FP18tBACKGSTREAMER_CMD	BACKGSTREAMER_Init__FP18tBACKGSTREAMER_CMD	function	80	31	31	31	FE.REL:0x067968	src/levels/shared/BACKGSTREAMER_Init__FP18tBACKGSTREAMER_CMD.c
 shared	BACKGSTREAMER_Loading__Fv	BACKGSTREAMER_Loading__Fv	function	400	31	0	31	FE.REL:0x0679B8	
 shared	BACKGSTREAMER_Update__Fv	BACKGSTREAMER_Update__Fv	function	260	31	0	31	FE.REL:0x067B48	
 shared	BACKGSTREAMER_UnInit__FP18tBACKGSTREAMER_CMD	BACKGSTREAMER_UnInit__FP18tBACKGSTREAMER_CMD	function	8	31	31	31	FE.REL:0x067C50	src/levels/shared/BACKGSTREAMER_UnInit__FP18tBACKGSTREAMER_CMD.c
@@ -2293,20 +2293,20 @@ shared	__main	__main	function	32	31	0	31	FE.REL:0x069150
 shared	__pack_d	__pack_d	function	300	31	0	31	FE.REL:0x069170	
 shared	__unpack_d	__unpack_d	function	156	31	31	31	FE.REL:0x0692A0	src/levels/shared/__unpack_d.c
 shared	func_FE_069340	func_FE_069340	function	576	31	0	31	FE.REL:0x069340	
-shared	dpadd	dpadd	function	88	31	0	31	FE.REL:0x069580	
-shared	dpsub	dpsub	function	100	31	0	31	FE.REL:0x0695D8	
+shared	dpadd	dpadd	function	88	31	31	31	FE.REL:0x069580	src/levels/shared/dpadd.c
+shared	dpsub	dpsub	function	100	31	31	31	FE.REL:0x0695D8	src/levels/shared/dpsub.c
 shared	dpmul	dpmul	function	680	31	0	31	FE.REL:0x069640	
 shared	dpdiv	dpdiv	function	360	31	0	31	FE.REL:0x0698E8	
-shared	__fpcmp_parts_d	__fpcmp_parts_d	function	276	31	0	31	FE.REL:0x069A50	
-shared	dpcmp	dpcmp	function	76	31	0	31	FE.REL:0x069B68	
+shared	__fpcmp_parts_d	__fpcmp_parts_d	function	276	31	31	31	FE.REL:0x069A50	src/levels/shared/__fpcmp_parts_d.c
+shared	dpcmp	dpcmp	function	76	31	31	31	FE.REL:0x069B68	src/levels/shared/dpcmp.c
 shared	litodp	litodp	function	184	31	0	31	FE.REL:0x069BB8	
 shared	dptoli	dptoli	function	148	31	31	31	FE.REL:0x069C70	src/levels/shared/dptoli.c
 shared	dptoul	dptoul	function	160	31	31	31	FE.REL:0x069D08	src/levels/shared/dptoul.c
 shared	__negdf2	__negdf2	function	56	31	31	31	FE.REL:0x069DA8	src/levels/shared/__negdf2.c
-shared	__make_dp	__make_dp	function	44	31	0	31	FE.REL:0x069DE0	
+shared	__make_dp	__make_dp	function	44	31	31	31	FE.REL:0x069DE0	src/levels/shared/__make_dp.c
 shared	dptofp	dptofp	function	84	31	31	31	FE.REL:0x069E10	src/levels/shared/dptofp.c
 shared	__pack_f	__pack_f	function	268	31	0	31	FE.REL:0x069E68	
-shared	__unpack_f	__unpack_f	function	144	31	0	31	FE.REL:0x069F78	
+shared	__unpack_f	__unpack_f	function	144	31	31	31	FE.REL:0x069F78	src/levels/shared/__unpack_f.c
 shared	func_FE_06A008	func_FE_06A008	function	564	31	0	31	FE.REL:0x06A008	
 shared	fpadd	fpadd	function	88	31	31	31	FE.REL:0x06A240	src/levels/shared/fpadd.c
 shared	fpsub	fpsub	function	100	31	31	31	FE.REL:0x06A298	src/levels/shared/fpsub.c
@@ -2316,9 +2316,9 @@ shared	__fpcmp_parts_f	__fpcmp_parts_f	function	276	31	0	31	FE.REL:0x06A658
 shared	fpcmp	fpcmp	function	76	31	31	31	FE.REL:0x06A770	src/levels/shared/fpcmp.c
 shared	sitofp	sitofp	function	184	31	0	31	FE.REL:0x06A7C0	
 shared	fptosi	fptosi	function	140	31	0	31	FE.REL:0x06A878	
-shared	fptoui	fptoui	function	152	31	0	31	FE.REL:0x06A908	
+shared	fptoui	fptoui	function	152	31	31	31	FE.REL:0x06A908	src/levels/shared/fptoui.c
 shared	__negsf2	__negsf2	function	56	31	0	31	FE.REL:0x06A9A0	
-shared	__make_fp	__make_fp	function	44	31	0	31	FE.REL:0x06A9D8	
+shared	__make_fp	__make_fp	function	44	31	31	31	FE.REL:0x06A9D8	src/levels/shared/__make_fp.c
 shared	fptodp	fptodp	function	64	31	0	31	FE.REL:0x06AA08	
 shared	__muldi3	__muldi3	function	96	31	0	31	FE.REL:0x06AA48	
 shared	Initialize__3Agl	Initialize__3Agl	function	180	31	0	31	FE.REL:0x06AAA8	
@@ -3375,23 +3375,23 @@ shared	Alloc__9ApeStringUi	Alloc__9ApeStringUi	function	32	31	0	31	FE.REL:0x09F8
 shared	Free__9ApeStringPCcUi	Free__9ApeStringPCcUi	function	32	31	0	31	FE.REL:0x09F918	
 shared	ToUpper__9ApeStringc	ToUpper__9ApeStringc	function	44	31	0	31	FE.REL:0x09F938	
 shared	ToLower__9ApeStringc	ToLower__9ApeStringc	function	44	31	0	31	FE.REL:0x09F968	
-shared	Vsnprintf__9ApeStringPciPCcT1	Vsnprintf__9ApeStringPciPCcT1	function	28	31	0	31	FE.REL:0x09F998	
+shared	Vsnprintf__9ApeStringPciPCcT1	Vsnprintf__9ApeStringPciPCcT1	function	28	31	31	31	FE.REL:0x09F998	src/levels/shared/Vsnprintf__9ApeStringPciPCcT1.c
 shared	Snprintf__9ApeStringPciPCce	Snprintf__9ApeStringPciPCce	function	64	31	0	31	FE.REL:0x09F9B8	
 shared	Sprintf__9ApeStringPcPCce	Sprintf__9ApeStringPcPCce	function	68	31	0	31	FE.REL:0x09F9F8	
-shared	Stricmp__9ApeStringPCcT1	Stricmp__9ApeStringPCcT1	function	28	31	0	31	FE.REL:0x09FA40	
-shared	Strcmp__9ApeStringPCcT1	Strcmp__9ApeStringPCcT1	function	28	31	0	31	FE.REL:0x09FA60	
-shared	Strncmp__9ApeStringPCcT1i	Strncmp__9ApeStringPCcT1i	function	28	31	0	31	FE.REL:0x09FA80	
-shared	Strnicmp__9ApeStringPCcT1i	Strnicmp__9ApeStringPCcT1i	function	28	31	0	31	FE.REL:0x09FAA0	
+shared	Stricmp__9ApeStringPCcT1	Stricmp__9ApeStringPCcT1	function	28	31	31	31	FE.REL:0x09FA40	src/levels/shared/Stricmp__9ApeStringPCcT1.c
+shared	Strcmp__9ApeStringPCcT1	Strcmp__9ApeStringPCcT1	function	28	31	31	31	FE.REL:0x09FA60	src/levels/shared/Strcmp__9ApeStringPCcT1.c
+shared	Strncmp__9ApeStringPCcT1i	Strncmp__9ApeStringPCcT1i	function	28	31	31	31	FE.REL:0x09FA80	src/levels/shared/Strncmp__9ApeStringPCcT1i.c
+shared	Strnicmp__9ApeStringPCcT1i	Strnicmp__9ApeStringPCcT1i	function	28	31	31	31	FE.REL:0x09FAA0	src/levels/shared/Strnicmp__9ApeStringPCcT1i.c
 shared	Strcasecmp__9ApeStringPCcT1	Strcasecmp__9ApeStringPCcT1	function	212	31	0	31	FE.REL:0x09FAC0	
 shared	Strncasecmp__9ApeStringPCcT1i	Strncasecmp__9ApeStringPCcT1i	function	192	31	0	31	FE.REL:0x09FB98	
-shared	Strcpy__9ApeStringPcPCc	Strcpy__9ApeStringPcPCc	function	28	31	0	31	FE.REL:0x09FC58	
+shared	Strcpy__9ApeStringPcPCc	Strcpy__9ApeStringPcPCc	function	28	31	31	31	FE.REL:0x09FC58	src/levels/shared/Strcpy__9ApeStringPcPCc.c
 shared	Strncpy__9ApeStringPcPCci	Strncpy__9ApeStringPcPCci	function	40	31	0	31	FE.REL:0x09FC78	
-shared	Strlen__9ApeStringPCc	Strlen__9ApeStringPCc	function	28	31	0	31	FE.REL:0x09FCA0	
-shared	Atoi__9ApeStringPCc	Atoi__9ApeStringPCc	function	28	31	0	31	FE.REL:0x09FCC0	
+shared	Strlen__9ApeStringPCc	Strlen__9ApeStringPCc	function	28	31	31	31	FE.REL:0x09FCA0	src/levels/shared/Strlen__9ApeStringPCc.c
+shared	Atoi__9ApeStringPCc	Atoi__9ApeStringPCc	function	28	31	31	31	FE.REL:0x09FCC0	src/levels/shared/Atoi__9ApeStringPCc.c
 shared	Atof__9ApeStringPCc	Atof__9ApeStringPCc	function	36	31	0	31	FE.REL:0x09FCE0	
-shared	Strstr__9ApeStringPCcT1	Strstr__9ApeStringPCcT1	function	28	31	0	31	FE.REL:0x09FD08	
-shared	Strchr__9ApeStringPCci	Strchr__9ApeStringPCci	function	28	31	0	31	FE.REL:0x09FD28	
-shared	Strrchr__9ApeStringPCci	Strrchr__9ApeStringPCci	function	28	31	0	31	FE.REL:0x09FD48	
+shared	Strstr__9ApeStringPCcT1	Strstr__9ApeStringPCcT1	function	28	31	31	31	FE.REL:0x09FD08	src/levels/shared/Strstr__9ApeStringPCcT1.c
+shared	Strchr__9ApeStringPCci	Strchr__9ApeStringPCci	function	28	31	31	31	FE.REL:0x09FD28	src/levels/shared/Strchr__9ApeStringPCci.c
+shared	Strrchr__9ApeStringPCci	Strrchr__9ApeStringPCci	function	28	31	31	31	FE.REL:0x09FD48	src/levels/shared/Strrchr__9ApeStringPCci.c
 shared	Strdup__9ApeStringPCc	Strdup__9ApeStringPCc	function	80	31	0	31	FE.REL:0x09FD68	
 shared	Strndup__9ApeStringPCci	Strndup__9ApeStringPCci	function	116	31	0	31	FE.REL:0x09FDB8	
 shared	Strlwr__9ApeStringPc	Strlwr__9ApeStringPc	function	84	31	0	31	FE.REL:0x09FE30	
@@ -3399,7 +3399,7 @@ shared	Strupr__9ApeStringPc	Strupr__9ApeStringPc	function	84	31	0	31	FE.REL:0x09
 shared	Strpbrk__9ApeStringPCcT1	Strpbrk__9ApeStringPCcT1	function	164	31	0	31	FE.REL:0x09FEE0	
 shared	Strspn__9ApeStringPCcT1	Strspn__9ApeStringPCcT1	function	28	31	31	31	FE.REL:0x09FF88	src/levels/shared/Strspn__9ApeStringPCcT1.c
 shared	Strcspn__9ApeStringPCcT1	Strcspn__9ApeStringPCcT1	function	168	31	0	31	FE.REL:0x09FFA8	
-shared	Strcat__9ApeStringPcPCc	Strcat__9ApeStringPcPCc	function	28	31	0	31	FE.REL:0x0A0050	
+shared	Strcat__9ApeStringPcPCc	Strcat__9ApeStringPcPCc	function	28	31	31	31	FE.REL:0x0A0050	src/levels/shared/Strcat__9ApeStringPcPCc.c
 shared	StrncpyTerm__9ApeStringPcPCci	StrncpyTerm__9ApeStringPcPCci	function	64	31	0	31	FE.REL:0x0A0070	
 shared	StrToInt__9ApeStringPCcUi	StrToInt__9ApeStringPCcUi	function	40	31	0	31	FE.REL:0x0A00B0	
 shared	Make__9ApeStringPCce	Make__9ApeStringPCce	function	140	31	0	31	FE.REL:0x0A00D8	
@@ -4525,24 +4525,24 @@ shared	func_FE_0D5040	func_FE_0D5040	function	36	31	0	31	FE.REL:0x0D5040
 shared	func_FE_0D5068	func_FE_0D5068	function	140	31	0	31	FE.REL:0x0D5068	
 shared	sceScfGetGMTfromRTC	sceScfGetGMTfromRTC	function	8	31	0	31	FE.REL:0x0D50F8	
 shared	sceScfGetLocalTimefromRTC	sceScfGetLocalTimefromRTC	function	72	31	0	31	FE.REL:0x0D5100	
-shared	__floatdidf	__floatdidf	function	152	31	0	31	FE.REL:0x0D5148	
+shared	__floatdidf	__floatdidf	function	152	31	31	31	FE.REL:0x0D5148	src/levels/shared/__floatdidf.c
 shared	__floatdisf	__floatdisf	function	224	31	31	31	FE.REL:0x0D51E0	src/levels/shared/__floatdisf.c
 shared	__pure_virtual	__pure_virtual	function	8	31	0	31	FE.REL:0x0D52C0	
 shared	__udivdi3	__udivdi3	function	1488	31	0	31	FE.REL:0x0D52C8	
 shared	__umoddi3	__umoddi3	function	1344	31	0	31	FE.REL:0x0D5898	
 shared	__default_terminate	__default_terminate	function	16	31	0	31	FE.REL:0x0D5DD8	
-shared	__terminate	__terminate	function	36	31	0	31	FE.REL:0x0D5DE8	
-shared	__throw_type_match	__throw_type_match	function	44	31	0	31	FE.REL:0x0D5E10	
+shared	__terminate	__terminate	function	36	31	31	31	FE.REL:0x0D5DE8	src/levels/shared/__terminate.c
+shared	__throw_type_match	__throw_type_match	function	44	31	31	31	FE.REL:0x0D5E10	src/levels/shared/__throw_type_match.c
 shared	__empty	__empty	function	8	31	31	31	FE.REL:0x0D5E40	src/levels/shared/__empty.c
 shared	func_FE_0D5E48	func_FE_0D5E48	function	84	31	31	31	FE.REL:0x0D5E48	src/levels/shared/func_FE_0D5E48.c
-shared	__get_eh_context	__get_eh_context	function	36	31	0	31	FE.REL:0x0D5EA0	
+shared	__get_eh_context	__get_eh_context	function	36	31	31	31	FE.REL:0x0D5EA0	src/levels/shared/__get_eh_context.c
 shared	__get_eh_info	__get_eh_info	function	40	31	31	31	FE.REL:0x0D5EC8	src/levels/shared/__get_eh_info.c
 shared	func_FE_0D5EF0	func_FE_0D5EF0	function	40	31	31	31	FE.REL:0x0D5EF0	src/levels/shared/func_FE_0D5EF0.c
 shared	func_FE_0D5F18	func_FE_0D5F18	function	104	31	0	31	FE.REL:0x0D5F18	
-shared	__get_dynamic_handler_chain	__get_dynamic_handler_chain	function	40	31	0	31	FE.REL:0x0D5F80	
+shared	__get_dynamic_handler_chain	__get_dynamic_handler_chain	function	40	31	31	31	FE.REL:0x0D5F80	src/levels/shared/__get_dynamic_handler_chain.c
 shared	__sjthrow	__sjthrow	function	376	31	0	31	FE.REL:0x0D5FA8	
 shared	__sjpopnthrow	__sjpopnthrow	function	280	31	0	31	FE.REL:0x0D6120	
-shared	__eh_rtime_match	__eh_rtime_match	function	72	31	0	31	FE.REL:0x0D6238	
+shared	__eh_rtime_match	__eh_rtime_match	function	72	31	31	31	FE.REL:0x0D6238	src/levels/shared/__eh_rtime_match.c
 shared	__get_eh_table_version	__get_eh_table_version	function	8	31	31	31	FE.REL:0x0D6280	src/levels/shared/__get_eh_table_version.c
 shared	__get_eh_table_language	__get_eh_table_language	function	8	31	31	31	FE.REL:0x0D6288	src/levels/shared/__get_eh_table_language.c
 shared	func_FE_0D6290	func_FE_0D6290	function	216	31	31	31	FE.REL:0x0D6290	src/levels/shared/func_FE_0D6290.c
@@ -4552,17 +4552,17 @@ shared	func_FE_0D6538	func_FE_0D6538	function	124	31	31	31	FE.REL:0x0D6538	src/l
 shared	func_FE_0D65B8	func_FE_0D65B8	function	140	31	31	31	FE.REL:0x0D65B8	src/levels/shared/func_FE_0D65B8.c
 shared	__unwinding_cleanup	__unwinding_cleanup	function	8	31	31	31	FE.REL:0x0D6648	src/levels/shared/__unwinding_cleanup.c
 shared	func_FE_0D6650	func_FE_0D6650	function	816	31	31	31	FE.REL:0x0D6650	src/levels/shared/func_FE_0D6650.c
-shared	__throw	__throw	function	476	31	0	31	FE.REL:0x0D6980	
-shared	__rethrow	__rethrow	function	484	31	0	31	FE.REL:0x0D6B60	
+shared	__throw	__throw	function	476	31	31	31	FE.REL:0x0D6980	src/levels/shared/__throw.c
+shared	__rethrow	__rethrow	function	484	31	31	31	FE.REL:0x0D6B60	src/levels/shared/__rethrow.c
 shared	func_FE_0D6D48	func_FE_0D6D48	function	68	31	31	31	FE.REL:0x0D6D48	src/levels/shared/func_FE_0D6D48.c
 shared	func_FE_0D6D90	func_FE_0D6D90	function	80	31	31	31	FE.REL:0x0D6D90	src/levels/shared/func_FE_0D6D90.c
 shared	func_FE_0D6DE0	func_FE_0D6DE0	function	252	31	31	31	FE.REL:0x0D6DE0	src/levels/shared/func_FE_0D6DE0.c
-shared	func_FE_0D6EE0	func_FE_0D6EE0	function	612	31	0	31	FE.REL:0x0D6EE0	
+shared	func_FE_0D6EE0	func_FE_0D6EE0	function	612	31	31	31	FE.REL:0x0D6EE0	src/levels/shared/func_FE_0D6EE0.c
 shared	func_FE_0D7148	func_FE_0D7148	function	72	31	31	31	FE.REL:0x0D7148	src/levels/shared/func_FE_0D7148.c
 shared	func_FE_0D7190	func_FE_0D7190	function	136	31	31	31	FE.REL:0x0D7190	src/levels/shared/func_FE_0D7190.c
 shared	func_FE_0D7218	func_FE_0D7218	function	316	31	31	31	FE.REL:0x0D7218	src/levels/shared/func_FE_0D7218.c
 shared	func_FE_0D7358	func_FE_0D7358	function	228	31	31	31	FE.REL:0x0D7358	src/levels/shared/func_FE_0D7358.c
-shared	func_FE_0D7440	func_FE_0D7440	function	260	31	0	31	FE.REL:0x0D7440	
+shared	func_FE_0D7440	func_FE_0D7440	function	260	31	31	31	FE.REL:0x0D7440	src/levels/shared/func_FE_0D7440.c
 shared	func_FE_0D7548	func_FE_0D7548	function	156	31	0	31	FE.REL:0x0D7548	
 shared	func_FE_0D75E4	func_FE_0D75E4	function	20	31	0	31	FE.REL:0x0D75E4	
 shared	func_FE_0D75F8	func_FE_0D75F8	function	16	31	0	31	FE.REL:0x0D75F8	
@@ -4954,14 +4954,14 @@ shared	SetBlendMode__18AglRenderStateBase12AgxBlendModeT110AgxBlendOp	SetBlendMo
 shared	Pop__t5Stack2Z18ePAUSEMODE_SCREENSUi8P18ePAUSEMODE_SCREENS	Pop__t5Stack2Z18ePAUSEMODE_SCREENSUi8P18ePAUSEMODE_SCREENS	function	60	31	0	31	FE.REL:0x0DE620	
 shared	PeekLast__t5Stack2Z18ePAUSEMODE_SCREENSUi8	PeekLast__t5Stack2Z18ePAUSEMODE_SCREENSUi8	function	32	31	31	31	FE.REL:0x0DE660	src/levels/shared/PeekLast__t5Stack2Z18ePAUSEMODE_SCREENSUi8.c
 shared	DiscardLast__t5Stack2Z18ePAUSEMODE_SCREENSUi8	DiscardLast__t5Stack2Z18ePAUSEMODE_SCREENSUi8	function	32	31	31	31	FE.REL:0x0DE680	src/levels/shared/DiscardLast__t5Stack2Z18ePAUSEMODE_SCREENSUi8.c
-shared	Push__t5Stack2Z18ePAUSEMODE_SCREENSUi818ePAUSEMODE_SCREENS	Push__t5Stack2Z18ePAUSEMODE_SCREENSUi818ePAUSEMODE_SCREENS	function	52	31	0	31	FE.REL:0x0DE6A0	
-shared	Reset__t5Stack2Z18ePAUSEMODE_SCREENSUi8	Reset__t5Stack2Z18ePAUSEMODE_SCREENSUi8	function	40	31	0	31	FE.REL:0x0DE6D8	
+shared	Push__t5Stack2Z18ePAUSEMODE_SCREENSUi818ePAUSEMODE_SCREENS	Push__t5Stack2Z18ePAUSEMODE_SCREENSUi818ePAUSEMODE_SCREENS	function	52	31	31	31	FE.REL:0x0DE6A0	src/levels/shared/Push__t5Stack2Z18ePAUSEMODE_SCREENSUi818ePAUSEMODE_SCREENS.c
+shared	Reset__t5Stack2Z18ePAUSEMODE_SCREENSUi8	Reset__t5Stack2Z18ePAUSEMODE_SCREENSUi8	function	40	31	31	31	FE.REL:0x0DE6D8	src/levels/shared/Reset__t5Stack2Z18ePAUSEMODE_SCREENSUi8.c
 shared	Peek__t5Queue2Z14tHUDPROMQ_NODEUi8Ui	Peek__t5Queue2Z14tHUDPROMQ_NODEUi8Ui	function	52	31	31	31	FE.REL:0x0DE700	src/levels/shared/Peek__t5Queue2Z14tHUDPROMQ_NODEUi8Ui.c
 shared	Que__t5Queue2Z14tHUDPROMQ_NODEUi8G14tHUDPROMQ_NODE	Que__t5Queue2Z14tHUDPROMQ_NODEUi8G14tHUDPROMQ_NODE	function	140	31	31	31	FE.REL:0x0DE738	src/levels/shared/Que__t5Queue2Z14tHUDPROMQ_NODEUi8G14tHUDPROMQ_NODE.c
 shared	PeekLast__t5Queue2Z14tHUDPROMQ_NODEUi8	PeekLast__t5Queue2Z14tHUDPROMQ_NODEUi8	function	36	31	31	31	FE.REL:0x0DE7C8	src/levels/shared/PeekLast__t5Queue2Z14tHUDPROMQ_NODEUi8.c
 shared	DiscardLastWithMemsetZero__t5Queue2Z14tHUDPROMQ_NODEUi8	DiscardLastWithMemsetZero__t5Queue2Z14tHUDPROMQ_NODEUi8	function	116	31	31	31	FE.REL:0x0DE7F0	src/levels/shared/DiscardLastWithMemsetZero__t5Queue2Z14tHUDPROMQ_NODEUi8.c
 shared	DeQueWithMemsetZero__t5Queue2Z14tHUDPROMQ_NODEUi8P14tHUDPROMQ_NODE	DeQueWithMemsetZero__t5Queue2Z14tHUDPROMQ_NODEUi8P14tHUDPROMQ_NODE	function	100	31	31	31	FE.REL:0x0DE868	src/levels/shared/DeQueWithMemsetZero__t5Queue2Z14tHUDPROMQ_NODEUi8P14tHUDPROMQ_NODE.c
-shared	Reset__t5Queue2Z14tHUDPROMQ_NODEUi8	Reset__t5Queue2Z14tHUDPROMQ_NODEUi8	function	48	31	0	31	FE.REL:0x0DE8D0	
+shared	Reset__t5Queue2Z14tHUDPROMQ_NODEUi8	Reset__t5Queue2Z14tHUDPROMQ_NODEUi8	function	48	31	31	31	FE.REL:0x0DE8D0	src/levels/shared/Reset__t5Queue2Z14tHUDPROMQ_NODEUi8.c
 shared	__t5Stack2Z18ePAUSEMODE_SCREENSUi8	__t5Stack2Z18ePAUSEMODE_SCREENSUi8	function	40	31	31	31	FE.REL:0x0DE900	src/levels/shared/__t5Stack2Z18ePAUSEMODE_SCREENSUi8.c
 shared	_$_t5Stack2Z18ePAUSEMODE_SCREENSUi8	_$_t5Stack2Z18ePAUSEMODE_SCREENSUi8	function	36	31	0	31	FE.REL:0x0DE928	
 shared	New__t12ApeTFreeList1Z21ApeAnimStreamInstance	New__t12ApeTFreeList1Z21ApeAnimStreamInstance	function	52	31	0	31	FE.REL:0x0DE950	
@@ -5000,8 +5000,8 @@ shared	Create__t12ApeTFreeList1Z24ApeAnimStreamInstanceTagUiUiP12ApeAllocatorb	C
 shared	_$_t12ApeTFreeList1Z21ApeAnimStreamInstance	_$_t12ApeTFreeList1Z21ApeAnimStreamInstance	function	100	31	0	31	FE.REL:0x0DF540	
 shared	Create__t12ApeTFreeList1Z21ApeAnimStreamInstanceUiUiP12ApeAllocatorb	Create__t12ApeTFreeList1Z21ApeAnimStreamInstanceUiUiP12ApeAllocatorb	function	8	31	31	31	FE.REL:0x0DF5A8	src/levels/shared/Create__t12ApeTFreeList1Z21ApeAnimStreamInstanceUiUiP12ApeAllocatorb.c
 shared	Quat_ConvertToMatrixInternal__H1Z7MATRIX4_PX01PC4QUAT_v	Quat_ConvertToMatrixInternal__H1Z7MATRIX4_PX01PC4QUAT_v	function	184	31	31	31	FE.REL:0x0DF5B0	src/levels/shared/Quat_ConvertToMatrixInternal__H1Z7MATRIX4_PX01PC4QUAT_v.c
-shared	Quat_ConvertToMatrixInternal__H1Z8MATRIX43_PX01PC4QUAT_v	Quat_ConvertToMatrixInternal__H1Z8MATRIX43_PX01PC4QUAT_v	function	184	31	0	31	FE.REL:0x0DF668	
-shared	Quat_ConvertToMatrixInternal__H1Z7MATRIX3_PX01PC4QUAT_v	Quat_ConvertToMatrixInternal__H1Z7MATRIX3_PX01PC4QUAT_v	function	184	31	0	31	FE.REL:0x0DF720	
+shared	Quat_ConvertToMatrixInternal__H1Z8MATRIX43_PX01PC4QUAT_v	Quat_ConvertToMatrixInternal__H1Z8MATRIX43_PX01PC4QUAT_v	function	184	31	31	31	FE.REL:0x0DF668	src/levels/shared/Quat_ConvertToMatrixInternal__H1Z8MATRIX43_PX01PC4QUAT_v.c
+shared	Quat_ConvertToMatrixInternal__H1Z7MATRIX3_PX01PC4QUAT_v	Quat_ConvertToMatrixInternal__H1Z7MATRIX3_PX01PC4QUAT_v	function	184	31	31	31	FE.REL:0x0DF720	src/levels/shared/Quat_ConvertToMatrixInternal__H1Z7MATRIX3_PX01PC4QUAT_v.c
 shared	Quat_ConvertFromMatrixInternal__H1Z7MATRIX4_P4QUATPCX01_v	Quat_ConvertFromMatrixInternal__H1Z7MATRIX4_P4QUATPCX01_v	function	560	31	0	31	FE.REL:0x0DF7D8	
 shared	Quat_ConvertFromMatrixInternal__H1Z8MATRIX43_P4QUATPCX01_v	Quat_ConvertFromMatrixInternal__H1Z8MATRIX43_P4QUATPCX01_v	function	560	31	0	31	FE.REL:0x0DFA08	
 shared	Quat_ConvertFromMatrixInternal__H1Z7MATRIX3_P4QUATPCX01_v	Quat_ConvertFromMatrixInternal__H1Z7MATRIX3_P4QUATPCX01_v	function	560	31	0	31	FE.REL:0x0DFC38	
@@ -6163,7 +6163,7 @@ shared	func_L01_00B0A0	func_L01_00B0A0	function	128	30	30	30	LEVEL1.REL:0x00B0A0
 shared	func_L01_00B120	func_L01_00B120	function	128	30	30	30	LEVEL1.REL:0x00B120	src/levels/shared/func_L01_00B120.c
 shared	func_L01_00B1A0	func_L01_00B1A0	function	268	30	0	30	LEVEL1.REL:0x00B1A0	
 shared	func_L01_00B2B0	func_L01_00B2B0	function	152	30	0	30	LEVEL1.REL:0x00B2B0	
-shared	func_L01_00B348	func_L01_00B348	function	164	30	0	30	LEVEL1.REL:0x00B348	
+shared	func_L01_00B348	func_L01_00B348	function	164	30	30	30	LEVEL1.REL:0x00B348	src/levels/shared/func_L01_00B348.c
 shared	func_L01_00B3F0	func_L01_00B3F0	function	104	30	0	30	LEVEL1.REL:0x00B3F0	
 shared	func_L01_00B458	func_L01_00B458	function	112	30	0	30	LEVEL1.REL:0x00B458	
 shared	func_L01_00B4C8	func_L01_00B4C8	function	60	30	0	30	LEVEL1.REL:0x00B4C8	
@@ -6178,7 +6178,7 @@ shared	CAMDRIVER_CollideWithCamera__FP4VEC3PC4VEC3f	CAMDRIVER_CollideWithCamera_
 shared	CAMDRIVER_SetTargetPos__FPC4VEC3bfP15ApeGeomInstance	CAMDRIVER_SetTargetPos__FPC4VEC3bfP15ApeGeomInstance	function	416	30	0	30	LEVEL1.REL:0x00C090	
 shared	CAMDRIVER_GetTargetPos__Fv	CAMDRIVER_GetTargetPos__Fv	function	12	30	30	30	LEVEL1.REL:0x00C230	src/levels/shared/CAMDRIVER_GetTargetPos__Fv.c
 shared	CAMDRIVER_AddTargetFrameMotion__FPC4VEC3	CAMDRIVER_AddTargetFrameMotion__FPC4VEC3	function	60	30	0	30	LEVEL1.REL:0x00C240	
-shared	CAMDRIVER_SetTargetFacing__FPC4VEC3	CAMDRIVER_SetTargetFacing__FPC4VEC3	function	40	30	0	30	LEVEL1.REL:0x00C280	
+shared	CAMDRIVER_SetTargetFacing__FPC4VEC3	CAMDRIVER_SetTargetFacing__FPC4VEC3	function	40	30	30	30	LEVEL1.REL:0x00C280	src/levels/shared/CAMDRIVER_SetTargetFacing__FPC4VEC3.c
 shared	CAMDRIVER_SetActiveCam__Fb	CAMDRIVER_SetActiveCam__Fb	function	40	30	0	30	LEVEL1.REL:0x00C2A8	
 shared	CAMDRIVER_SetTargetJoyInputs__Fff	CAMDRIVER_SetTargetJoyInputs__Fff	function	20	30	0	30	LEVEL1.REL:0x00C2D0	
 shared	CAMDRIVER_SetCollision__FbN20	CAMDRIVER_SetCollision__FbN20	function	76	30	0	30	LEVEL1.REL:0x00C2E8	
@@ -6290,7 +6290,7 @@ shared	CAMSHAKE_RandomImpulse__Fff	CAMSHAKE_RandomImpulse__Fff	function	212	30	0
 shared	CAMSHAKE_RadialImpulse__FPC4VEC3fffff	CAMSHAKE_RadialImpulse__FPC4VEC3fffff	function	588	30	0	30	LEVEL1.REL:0x018120	
 shared	CAMSHAKE_EmitRadialForce__FPC4VEC3ffffff	CAMSHAKE_EmitRadialForce__FPC4VEC3ffffff	function	608	30	0	30	LEVEL1.REL:0x018370	
 shared	func_L01_0188C8	func_L01_0188C8	function	464	30	0	30	LEVEL1.REL:0x0188C8	
-shared	func_L01_018A98	func_L01_018A98	function	412	30	0	30	LEVEL1.REL:0x018A98	
+shared	func_L01_018A98	func_L01_018A98	function	412	30	30	30	LEVEL1.REL:0x018A98	src/levels/shared/func_L01_018A98.c
 shared	DYNAGRID_Init__Ff	DYNAGRID_Init__Ff	function	664	30	0	30	LEVEL1.REL:0x018C38	
 shared	DYNAGRID_Reset__Fv	DYNAGRID_Reset__Fv	function	84	30	30	30	LEVEL1.REL:0x018ED0	src/levels/shared/DYNAGRID_Reset__Fv.c
 shared	DYNAGRID_Disable__Fv	DYNAGRID_Disable__Fv	function	16	30	30	30	LEVEL1.REL:0x018F28	src/levels/shared/DYNAGRID_Disable__Fv.c
@@ -6371,7 +6371,7 @@ shared	GU_DamageInSphere__FPC4VEC3ffP4MobyUiUiUi14MobyDamageType18MobyDamageStre
 shared	LEVEL_GetSkyLayerCount__Fv	LEVEL_GetSkyLayerCount__Fv	function	12	30	30	30	LEVEL1.REL:0x01E4E8	src/levels/shared/LEVEL_GetSkyLayerCount__Fv.c
 shared	LEVEL_SetSkyMatrix__FUiP7MATRIX4	LEVEL_SetSkyMatrix__FUiP7MATRIX4	function	160	30	30	30	LEVEL1.REL:0x01E4F8	src/levels/shared/LEVEL_SetSkyMatrix__FUiP7MATRIX4.c
 shared	LEVEL_SetSkyPos__FUiPC4VEC3	LEVEL_SetSkyPos__FUiPC4VEC3	function	68	30	30	30	LEVEL1.REL:0x01E598	src/levels/shared/LEVEL_SetSkyPos__FUiPC4VEC3.c
-shared	LEVEL_SetSkyVisibility__FUiUi	LEVEL_SetSkyVisibility__FUiUi	function	28	30	0	30	LEVEL1.REL:0x01E5E0	
+shared	LEVEL_SetSkyVisibility__FUiUi	LEVEL_SetSkyVisibility__FUiUi	function	28	30	30	30	LEVEL1.REL:0x01E5E0	src/levels/shared/LEVEL_SetSkyVisibility__FUiUi.c
 shared	LEVEL_SetSkyColor__FUiUi	LEVEL_SetSkyColor__FUiUi	function	24	30	30	30	LEVEL1.REL:0x01E600	src/levels/shared/LEVEL_SetSkyColor__FUiUi.c
 shared	func_L01_01E618	func_L01_01E618	function	64	30	30	30	LEVEL1.REL:0x01E618	src/levels/shared/func_L01_01E618.c
 shared	func_L01_01E658	func_L01_01E658	function	88	30	0	30	LEVEL1.REL:0x01E658	
@@ -6438,7 +6438,7 @@ shared	LEVEL_GetContinuePoint__FP7MATRIX4PUiPUc	LEVEL_GetContinuePoint__FP7MATRI
 shared	LEVEL_SetContinuePoint__FPC7MATRIX4UcUib	LEVEL_SetContinuePoint__FPC7MATRIX4UcUib	function	388	30	0	30	LEVEL1.REL:0x021730	
 shared	LEVEL_ResetGlobalVars__Fv	LEVEL_ResetGlobalVars__Fv	function	56	30	0	30	LEVEL1.REL:0x0218B8	
 shared	LEVEL_CheckDontRespawnMoby__FP4Moby	LEVEL_CheckDontRespawnMoby__FP4Moby	function	72	30	30	30	LEVEL1.REL:0x0218F0	src/levels/shared/LEVEL_CheckDontRespawnMoby__FP4Moby.c
-shared	LEVEL_DontRespawnMobyImmediate__FP4Moby	LEVEL_DontRespawnMobyImmediate__FP4Moby	function	112	30	0	30	LEVEL1.REL:0x021938	
+shared	LEVEL_DontRespawnMobyImmediate__FP4Moby	LEVEL_DontRespawnMobyImmediate__FP4Moby	function	112	30	30	30	LEVEL1.REL:0x021938	src/levels/shared/LEVEL_DontRespawnMobyImmediate__FP4Moby.c
 shared	LEVEL_DontRespawnMobyAfterCheckpoint__FP4Moby	LEVEL_DontRespawnMobyAfterCheckpoint__FP4Moby	function	88	30	30	30	LEVEL1.REL:0x0219A8	src/levels/shared/LEVEL_DontRespawnMobyAfterCheckpoint__FP4Moby.c
 shared	LEVEL_ClearPendingDestroyedMobys__Fb	LEVEL_ClearPendingDestroyedMobys__Fb	function	12	30	30	30	LEVEL1.REL:0x021A00	src/levels/shared/LEVEL_ClearPendingDestroyedMobys__Fb.c
 shared	LEVEL_AwardUncollectedBolts__Fv	LEVEL_AwardUncollectedBolts__Fv	function	100	30	0	30	LEVEL1.REL:0x021A10	
@@ -6528,11 +6528,11 @@ shared	ENEMYTARGET_GetTargetDist__FUiPC4VEC3	ENEMYTARGET_GetTargetDist__FUiPC4VE
 shared	ENEMYTARGET_GetTargetDistSq__FUiPC4VEC3	ENEMYTARGET_GetTargetDistSq__FUiPC4VEC3	function	80	30	0	30	LEVEL1.REL:0x025920	
 shared	ENEMYTARGET_GetTargetDist2DSq__FUiPC4VEC3	ENEMYTARGET_GetTargetDist2DSq__FUiPC4VEC3	function	60	30	0	30	LEVEL1.REL:0x025970	
 shared	GAMETARGET_SetTargetMoby__FP4Moby	GAMETARGET_SetTargetMoby__FP4Moby	function	12	30	30	30	LEVEL1.REL:0x0259B0	src/levels/shared/GAMETARGET_SetTargetMoby__FP4Moby.c
-shared	GAMETARGET_SetTargetPos__FPC4VEC3	GAMETARGET_SetTargetPos__FPC4VEC3	function	36	30	0	30	LEVEL1.REL:0x0259C0	
-shared	GAMETARGET_SetTargetMatrix__FPC7MATRIX4	GAMETARGET_SetTargetMatrix__FPC7MATRIX4	function	140	30	0	30	LEVEL1.REL:0x0259E8	
+shared	GAMETARGET_SetTargetPos__FPC4VEC3	GAMETARGET_SetTargetPos__FPC4VEC3	function	36	30	30	30	LEVEL1.REL:0x0259C0	src/levels/shared/GAMETARGET_SetTargetPos__FPC4VEC3.c
+shared	GAMETARGET_SetTargetMatrix__FPC7MATRIX4	GAMETARGET_SetTargetMatrix__FPC7MATRIX4	function	140	30	30	30	LEVEL1.REL:0x0259E8	src/levels/shared/GAMETARGET_SetTargetMatrix__FPC7MATRIX4.c
 shared	GAMETARGET_GetTargetMoby__Fv	GAMETARGET_GetTargetMoby__Fv	function	12	30	30	30	LEVEL1.REL:0x025A78	src/levels/shared/GAMETARGET_GetTargetMoby__Fv.c
 shared	GAMETARGET_GetTargetPos__Fv	GAMETARGET_GetTargetPos__Fv	function	12	30	30	30	LEVEL1.REL:0x025A88	src/levels/shared/GAMETARGET_GetTargetPos__Fv.c
-shared	GAMETARGET_GetTargetPos__FP4VEC3	GAMETARGET_GetTargetPos__FP4VEC3	function	36	30	0	30	LEVEL1.REL:0x025A98	
+shared	GAMETARGET_GetTargetPos__FP4VEC3	GAMETARGET_GetTargetPos__FP4VEC3	function	36	30	30	30	LEVEL1.REL:0x025A98	src/levels/shared/GAMETARGET_GetTargetPos__FP4VEC3.c
 shared	GAMETARGET_GetTargetMatrix__Fv	GAMETARGET_GetTargetMatrix__Fv	function	12	30	30	30	LEVEL1.REL:0x025AC0	src/levels/shared/GAMETARGET_GetTargetMatrix__Fv.c
 shared	GAMETARGET_GetTargetMatrix__FP7MATRIX4	GAMETARGET_GetTargetMatrix__FP7MATRIX4	function	140	30	0	30	LEVEL1.REL:0x025AD0	
 shared	GAMETARGET_CheckInsideTrigger__FPC7Trigger	GAMETARGET_CheckInsideTrigger__FPC7Trigger	function	32	30	30	30	LEVEL1.REL:0x025B60	src/levels/shared/GAMETARGET_CheckInsideTrigger__FPC7Trigger.c
@@ -7012,7 +7012,7 @@ shared	LevelUpBolt_RegisterSystem__F10DRAW_Layeri15DRAW_ZWriteMode17DRAW_ColorKe
 shared	LevelUpBolt_Start__FP10Line_GroupiP4VEC3T2UifPC18LevelUpBolt_Params	LevelUpBolt_Start__FP10Line_GroupiP4VEC3T2UifPC18LevelUpBolt_Params	function	500	30	0	30	LEVEL1.REL:0x049238	
 shared	LevelUpBolt_RespawnMe__FP10Line_Group	LevelUpBolt_RespawnMe__FP10Line_Group	function	1324	30	0	30	LEVEL1.REL:0x049430	
 01_museum	_GLOBAL_$I$c__dev_projects_SAC_Src_Effects__All_Effects_cpp7Xaaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Effects__All_Effects.cpp7Xaaaa	function	32	1	1	1	LEVEL1.REL:0x0499A0	src/levels/01_museum/_GLOBAL_$I$c__dev_projects_SAC_Src_Effects__All_Effects_cpp7Xaaaa.c
-shared	ACTOR_Init__Fv	ACTOR_Init__Fv	function	40	30	0	30	LEVEL1.REL:0x0499C0	
+shared	ACTOR_Init__Fv	ACTOR_Init__Fv	function	40	30	30	30	LEVEL1.REL:0x0499C0	src/levels/shared/ACTOR_Init__Fv.c
 shared	ACTOR_ReserveMemory__Fii	ACTOR_ReserveMemory__Fii	function	92	30	0	30	LEVEL1.REL:0x0499E8	
 shared	ACTOR_PostInit__Fv	ACTOR_PostInit__Fv	function	220	30	0	30	LEVEL1.REL:0x049A48	
 shared	ACTOR_IsInit__Fv	ACTOR_IsInit__Fv	function	12	30	30	30	LEVEL1.REL:0x049B28	src/levels/shared/ACTOR_IsInit__Fv.c
@@ -7020,14 +7020,14 @@ shared	ACTOR_Reset__Fv	ACTOR_Reset__Fv	function	260	30	0	30	LEVEL1.REL:0x049B38
 shared	ACTOR_Term__Fv	ACTOR_Term__Fv	function	64	30	0	30	LEVEL1.REL:0x049C40	
 shared	func_L01_049C80	func_L01_049C80	function	36	30	30	30	LEVEL1.REL:0x049C80	src/levels/shared/func_L01_049C80.c
 shared	func_L01_049CA8	func_L01_049CA8	function	40	30	30	30	LEVEL1.REL:0x049CA8	src/levels/shared/func_L01_049CA8.c
-shared	func_L01_049CD0	func_L01_049CD0	function	132	30	0	30	LEVEL1.REL:0x049CD0	
+shared	func_L01_049CD0	func_L01_049CD0	function	132	30	30	30	LEVEL1.REL:0x049CD0	src/levels/shared/func_L01_049CD0.c
 shared	ACTOR_Update__Fv	ACTOR_Update__Fv	function	128	30	30	30	LEVEL1.REL:0x049D58	src/levels/shared/ACTOR_Update__Fv.c
 shared	ACTOR_PostUpdate__Fv	ACTOR_PostUpdate__Fv	function	128	30	30	30	LEVEL1.REL:0x049DD8	src/levels/shared/ACTOR_PostUpdate__Fv.c
 shared	ACTOR_Animate__Fv	ACTOR_Animate__Fv	function	100	30	30	30	LEVEL1.REL:0x049E58	src/levels/shared/ACTOR_Animate__Fv.c
 shared	ACTOR_Render__Fv	ACTOR_Render__Fv	function	100	30	30	30	LEVEL1.REL:0x049EC0	src/levels/shared/ACTOR_Render__Fv.c
 shared	ACTOR_CreateTroupe__FP12ACTOR_TroupePC10ACTOR_Type	ACTOR_CreateTroupe__FP12ACTOR_TroupePC10ACTOR_Type	function	36	30	30	30	LEVEL1.REL:0x049F28	src/levels/shared/ACTOR_CreateTroupe__FP12ACTOR_TroupePC10ACTOR_Type.c
 shared	ACTOR_DestroyTroupe__FP12ACTOR_Troupe	ACTOR_DestroyTroupe__FP12ACTOR_Troupe	function	48	30	30	30	LEVEL1.REL:0x049F50	src/levels/shared/ACTOR_DestroyTroupe__FP12ACTOR_Troupe.c
-shared	ACTOR_ClearTroupe__FP12ACTOR_Troupe	ACTOR_ClearTroupe__FP12ACTOR_Troupe	function	164	30	0	30	LEVEL1.REL:0x049F80	
+shared	ACTOR_ClearTroupe__FP12ACTOR_Troupe	ACTOR_ClearTroupe__FP12ACTOR_Troupe	function	164	30	30	30	LEVEL1.REL:0x049F80	src/levels/shared/ACTOR_ClearTroupe__FP12ACTOR_Troupe.c
 shared	ACTOR_Emit__FPiP12ACTOR_Troupei	ACTOR_Emit__FPiP12ACTOR_Troupei	function	408	30	0	30	LEVEL1.REL:0x04A028	
 shared	ALPHASORT_Init__Fv	ALPHASORT_Init__Fv	function	8	30	30	30	LEVEL1.REL:0x04A1C0	src/levels/shared/ALPHASORT_Init__Fv.c
 shared	ALPHASORT_Render__FP7MATRIX4	ALPHASORT_Render__FP7MATRIX4	function	8	30	30	30	LEVEL1.REL:0x04A1C8	src/levels/shared/ALPHASORT_Render__FP7MATRIX4.c
@@ -7171,7 +7171,7 @@ shared	MOBY_GetEnemyCanUpdate__Fv	MOBY_GetEnemyCanUpdate__Fv	function	12	30	30	3
 shared	MOBY_SetEnemyCanUpdate__Fb	MOBY_SetEnemyCanUpdate__Fb	function	12	30	30	30	LEVEL1.REL:0x058F80	src/levels/shared/MOBY_SetEnemyCanUpdate__Fb.c
 shared	MOBY_RegisterGiveExperienceCB__FPFi_b	MOBY_RegisterGiveExperienceCB__FPFi_b	function	12	30	30	30	LEVEL1.REL:0x058F90	src/levels/shared/MOBY_RegisterGiveExperienceCB__FPFi_b.c
 shared	MOBY_RegisterSpawnBoltsCB__FPFP4Moby_v	MOBY_RegisterSpawnBoltsCB__FPFP4Moby_v	function	12	30	30	30	LEVEL1.REL:0x058FA0	src/levels/shared/MOBY_RegisterSpawnBoltsCB__FPFP4Moby_v.c
-shared	MOBY_RegisterPostUpdateCallback__FP4MobyPFP4Moby_v	MOBY_RegisterPostUpdateCallback__FP4MobyPFP4Moby_v	function	60	30	0	30	LEVEL1.REL:0x058FB0	
+shared	MOBY_RegisterPostUpdateCallback__FP4MobyPFP4Moby_v	MOBY_RegisterPostUpdateCallback__FP4MobyPFP4Moby_v	function	60	30	30	30	LEVEL1.REL:0x058FB0	src/levels/shared/MOBY_RegisterPostUpdateCallback__FP4MobyPFP4Moby_v.c
 shared	MOBY_SetGroupVisibilityMask__FPUsUcb	MOBY_SetGroupVisibilityMask__FPUsUcb	function	60	30	0	30	LEVEL1.REL:0x058FF0	
 shared	MOBY_CreateMoby__FPC8MobyTypeUiPC7MATRIX4UiPv	MOBY_CreateMoby__FPC8MobyTypeUiPC7MATRIX4UiPv	function	616	30	0	30	LEVEL1.REL:0x059030	
 shared	MOBY_CreateMoby__FUiUiPC7MATRIX4Uc	MOBY_CreateMoby__FUiUiPC7MATRIX4Uc	function	96	30	0	30	LEVEL1.REL:0x059298	
@@ -7191,8 +7191,8 @@ shared	MOBY_InitializeMoby__FP4MobyPC7MATRIX4UiPv	MOBY_InitializeMoby__FP4MobyPC
 shared	MOBY_DrawMoby__FP4Mobyb	MOBY_DrawMoby__FP4Mobyb	function	8	30	30	30	LEVEL1.REL:0x05A448	src/levels/shared/MOBY_DrawMoby__FP4Mobyb.c
 shared	MOBY_RenderMobyShadowMap__FP4Mobyff	MOBY_RenderMobyShadowMap__FP4Mobyff	function	8	30	30	30	LEVEL1.REL:0x05A450	src/levels/shared/MOBY_RenderMobyShadowMap__FP4Mobyff.c
 shared	MOBY_DrawShadowQuad__FPC4VEC3T0ff	MOBY_DrawShadowQuad__FPC4VEC3T0ff	function	8	30	30	30	LEVEL1.REL:0x05A458	src/levels/shared/MOBY_DrawShadowQuad__FPC4VEC3T0ff.c
-shared	MOBY_RegisterPreDrawCallback__FP4MobyPFP4Moby_v15MobyRenderStage	MOBY_RegisterPreDrawCallback__FP4MobyPFP4Moby_v15MobyRenderStage	function	80	30	0	30	LEVEL1.REL:0x05A460	
-shared	MOBY_RegisterDrawCallback__FP4MobyPFP4Moby_v15MobyRenderStage	MOBY_RegisterDrawCallback__FP4MobyPFP4Moby_v15MobyRenderStage	function	80	30	0	30	LEVEL1.REL:0x05A4B0	
+shared	MOBY_RegisterPreDrawCallback__FP4MobyPFP4Moby_v15MobyRenderStage	MOBY_RegisterPreDrawCallback__FP4MobyPFP4Moby_v15MobyRenderStage	function	80	30	30	30	LEVEL1.REL:0x05A460	src/levels/shared/MOBY_RegisterPreDrawCallback__FP4MobyPFP4Moby_v15MobyRenderStage.c
+shared	MOBY_RegisterDrawCallback__FP4MobyPFP4Moby_v15MobyRenderStage	MOBY_RegisterDrawCallback__FP4MobyPFP4Moby_v15MobyRenderStage	function	80	30	30	30	LEVEL1.REL:0x05A4B0	src/levels/shared/MOBY_RegisterDrawCallback__FP4MobyPFP4Moby_v15MobyRenderStage.c
 shared	MOBY_GetType__FUi	MOBY_GetType__FUi	function	64	30	0	30	LEVEL1.REL:0x05A500	
 shared	MOBY_GetOwner__FPC4Moby	MOBY_GetOwner__FPC4Moby	function	12	30	30	30	LEVEL1.REL:0x05A540	src/levels/shared/MOBY_GetOwner__FPC4Moby.c
 shared	MOBY_SetOwner__FP4MobyP6PLAYER	MOBY_SetOwner__FP4MobyP6PLAYER	function	12	30	30	30	LEVEL1.REL:0x05A550	src/levels/shared/MOBY_SetOwner__FP4MobyP6PLAYER.c
@@ -7314,7 +7314,7 @@ shared	PAR_EmitReserve__FPii	PAR_EmitReserve__FPii	function	52	30	0	30	LEVEL1.RE
 shared	PAR_EmitReserve__FPiP9PAR_Group	PAR_EmitReserve__FPiP9PAR_Group	function	48	30	0	30	LEVEL1.REL:0x0605B8	
 shared	PAR_GetSystemGroup__Fi	PAR_GetSystemGroup__Fi	function	28	30	0	30	LEVEL1.REL:0x0605E8	
 shared	PAR_UnitEmit__Fi	PAR_UnitEmit__Fi	function	264	30	0	30	LEVEL1.REL:0x060608	
-shared	PAR_UnitDestroy__FPv	PAR_UnitDestroy__FPv	function	104	30	0	30	LEVEL1.REL:0x060710	
+shared	PAR_UnitDestroy__FPv	PAR_UnitDestroy__FPv	function	104	30	30	30	LEVEL1.REL:0x060710	src/levels/shared/PAR_UnitDestroy__FPv.c
 shared	PAR_GetSystemMaterial__Fi	PAR_GetSystemMaterial__Fi	function	28	30	0	30	LEVEL1.REL:0x060778	
 shared	PAR_GetSystemMaterialFormat__Fi	PAR_GetSystemMaterialFormat__Fi	function	24	30	0	30	LEVEL1.REL:0x060798	
 shared	PAR_SetGroupCenter__FPC9PAR_GroupPC4VEC3PC18DRAW_RenderContext	PAR_SetGroupCenter__FPC9PAR_GroupPC4VEC3PC18DRAW_RenderContext	function	40	30	30	30	LEVEL1.REL:0x0607B0	src/levels/shared/PAR_SetGroupCenter__FPC9PAR_GroupPC4VEC3PC18DRAW_RenderContext.c
@@ -7524,13 +7524,13 @@ shared	HUD_RenderUberTopNoMatterWhat__Fv_L01	HUD_RenderUberTopNoMatterWhat__Fv	f
 shared	HUD_Render__Fv_L01	HUD_Render__Fv	function	932	30	0	30	LEVEL1.REL:0x08AD20	
 shared	HUD_LoadHud__Fv_L01	HUD_LoadHud__Fv	function	352	30	0	30	LEVEL1.REL:0x08B4B0	
 shared	HUDATTACKCHARGEBAR_Render__Fv	HUDATTACKCHARGEBAR_Render__Fv	function	1128	30	0	30	LEVEL1.REL:0x08D440	
-shared	HUDATTACKCHARGEBAR_Update__Fv	HUDATTACKCHARGEBAR_Update__Fv	function	140	30	0	30	LEVEL1.REL:0x08D8A8	
+shared	HUDATTACKCHARGEBAR_Update__Fv	HUDATTACKCHARGEBAR_Update__Fv	function	140	30	30	30	LEVEL1.REL:0x08D8A8	src/levels/shared/HUDATTACKCHARGEBAR_Update__Fv.c
 shared	HUDATTACKCHARGEBAR_IsShowing__Fv	HUDATTACKCHARGEBAR_IsShowing__Fv	function	16	30	30	30	LEVEL1.REL:0x08D938	src/levels/shared/HUDATTACKCHARGEBAR_IsShowing__Fv.c
 shared	HUDATTACKCHARGEBAR_Refresh__FffbUc	HUDATTACKCHARGEBAR_Refresh__FffbUc	function	228	30	0	30	LEVEL1.REL:0x08D948	
 shared	HUDATTACKCHARGEBAR_Terminate__Fv	HUDATTACKCHARGEBAR_Terminate__Fv	function	20	30	30	30	LEVEL1.REL:0x08DA30	src/levels/shared/HUDATTACKCHARGEBAR_Terminate__Fv.c
 shared	HUDBOSSBAR_Render__Fv	HUDBOSSBAR_Render__Fv	function	1416	30	0	30	LEVEL1.REL:0x08DA48	
 shared	HUDBOSSBAR_Init__Fv	HUDBOSSBAR_Init__Fv	function	56	30	30	30	LEVEL1.REL:0x08DFD0	src/levels/shared/HUDBOSSBAR_Init__Fv.c
-shared	HUDBOSSBAR_Update__Fv	HUDBOSSBAR_Update__Fv	function	104	30	0	30	LEVEL1.REL:0x08E008	
+shared	HUDBOSSBAR_Update__Fv	HUDBOSSBAR_Update__Fv	function	104	30	30	30	LEVEL1.REL:0x08E008	src/levels/shared/HUDBOSSBAR_Update__Fv.c
 shared	HUDBOSSBAR_IsShowing__Fv	HUDBOSSBAR_IsShowing__Fv	function	16	30	30	30	LEVEL1.REL:0x08E070	src/levels/shared/HUDBOSSBAR_IsShowing__Fv.c
 shared	HUDBOSSBAR_Refresh__FUiffUc	HUDBOSSBAR_Refresh__FUiffUc	function	112	30	0	30	LEVEL1.REL:0x08E080	
 shared	HUDBOSSBAR_Refresh__FffUc	HUDBOSSBAR_Refresh__FffUc	function	96	30	30	30	LEVEL1.REL:0x08E0F0	src/levels/shared/HUDBOSSBAR_Refresh__FffUc.c
@@ -7541,7 +7541,7 @@ shared	HUDBOSSBAR_Flash__FUif	HUDBOSSBAR_Flash__FUif	function	80	30	0	30	LEVEL1.
 shared	HUDBOSSBAR_SetShieldColor__FUi	HUDBOSSBAR_SetShieldColor__FUi	function	12	30	30	30	LEVEL1.REL:0x08E290	src/levels/shared/HUDBOSSBAR_SetShieldColor__FUi.c
 shared	HUDBOSSBAR_SetShieldGrowRate__Ff	HUDBOSSBAR_SetShieldGrowRate__Ff	function	12	30	30	30	LEVEL1.REL:0x08E2A0	src/levels/shared/HUDBOSSBAR_SetShieldGrowRate__Ff.c
 shared	HUDELEMEXAMPLE_Render__Fv	HUDELEMEXAMPLE_Render__Fv	function	8	30	30	30	LEVEL1.REL:0x08E2B0	src/levels/shared/HUDELEMEXAMPLE_Render__Fv.c
-shared	HUDELEMEXAMPLE_Update__Fv	HUDELEMEXAMPLE_Update__Fv	function	104	30	0	30	LEVEL1.REL:0x08E2B8	
+shared	HUDELEMEXAMPLE_Update__Fv	HUDELEMEXAMPLE_Update__Fv	function	104	30	30	30	LEVEL1.REL:0x08E2B8	src/levels/shared/HUDELEMEXAMPLE_Update__Fv.c
 shared	HUDELEMEXAMPLE_IsShowing__Fv	HUDELEMEXAMPLE_IsShowing__Fv	function	16	30	30	30	LEVEL1.REL:0x08E320	src/levels/shared/HUDELEMEXAMPLE_IsShowing__Fv.c
 shared	HUDELEMEXAMPLE_Refresh__FUc	HUDELEMEXAMPLE_Refresh__FUc	function	44	30	30	30	LEVEL1.REL:0x08E330	src/levels/shared/HUDELEMEXAMPLE_Refresh__FUc.c
 shared	HUDELEMEXAMPLE_Terminate__Fv	HUDELEMEXAMPLE_Terminate__Fv	function	20	30	30	30	LEVEL1.REL:0x08E360	src/levels/shared/HUDELEMEXAMPLE_Terminate__Fv.c
@@ -7553,7 +7553,7 @@ shared	HUDGENHEALTHBAR_SetKeyValue__FUif	HUDGENHEALTHBAR_SetKeyValue__FUif	funct
 shared	HUDGENHEALTHBAR_Update__FUi	HUDGENHEALTHBAR_Update__FUi	function	164	30	0	30	LEVEL1.REL:0x08E8C8	
 shared	HUDGENHEALTHBAR_IsShowing__FUi	HUDGENHEALTHBAR_IsShowing__FUi	function	28	30	30	30	LEVEL1.REL:0x08E970	src/levels/shared/HUDGENHEALTHBAR_IsShowing__FUi.c
 shared	HUDGENHEALTHBAR_SetOutOfScreenStyle__F35eHUDGENHEALTHBAR_OUTOFSCREEN_STYLES	HUDGENHEALTHBAR_SetOutOfScreenStyle__F35eHUDGENHEALTHBAR_OUTOFSCREEN_STYLES	function	12	30	30	30	LEVEL1.REL:0x08E990	src/levels/shared/HUDGENHEALTHBAR_SetOutOfScreenStyle__F35eHUDGENHEALTHBAR_OUTOFSCREEN_STYLES.c
-shared	HUDGENHEALTHBAR_Refresh__FUiiibUiUc	HUDGENHEALTHBAR_Refresh__FUiiibUiUc	function	248	30	0	30	LEVEL1.REL:0x08E9A0	
+shared	HUDGENHEALTHBAR_Refresh__FUiiibUiUc	HUDGENHEALTHBAR_Refresh__FUiiibUiUc	function	248	30	30	30	LEVEL1.REL:0x08E9A0	src/levels/shared/HUDGENHEALTHBAR_Refresh__FUiiibUiUc.c
 shared	HUDGENHEALTHBAR_Terminate__FUi	HUDGENHEALTHBAR_Terminate__FUi	function	32	30	30	30	LEVEL1.REL:0x08EA98	src/levels/shared/HUDGENHEALTHBAR_Terminate__FUi.c
 shared	HUDGENHEALTHBAR_Hide__FUi	HUDGENHEALTHBAR_Hide__FUi	function	28	30	30	30	LEVEL1.REL:0x08EAB8	src/levels/shared/HUDGENHEALTHBAR_Hide__FUi.c
 shared	HUDGENHEALTHBAR_Init__FUi	HUDGENHEALTHBAR_Init__FUi	function	300	30	0	30	LEVEL1.REL:0x08EAD8	
@@ -7625,7 +7625,7 @@ shared	HUDKILLCOUNTER_Refresh__FUiUiUiUc	HUDKILLCOUNTER_Refresh__FUiUiUiUc	funct
 shared	HUDKILLCOUNTER_Terminate__Fv	HUDKILLCOUNTER_Terminate__Fv	function	20	30	30	30	LEVEL1.REL:0x0914D8	src/levels/shared/HUDKILLCOUNTER_Terminate__Fv.c
 shared	HUDROUNDCOUNTER_Render__Fv	HUDROUNDCOUNTER_Render__Fv	function	536	30	0	30	LEVEL1.REL:0x0914F0	
 shared	HUDROUNDCOUNTER_Init__Fv	HUDROUNDCOUNTER_Init__Fv	function	8	30	30	30	LEVEL1.REL:0x091708	src/levels/shared/HUDROUNDCOUNTER_Init__Fv.c
-shared	HUDROUNDCOUNTER_Update__Fv	HUDROUNDCOUNTER_Update__Fv	function	104	30	0	30	LEVEL1.REL:0x091710	
+shared	HUDROUNDCOUNTER_Update__Fv	HUDROUNDCOUNTER_Update__Fv	function	104	30	30	30	LEVEL1.REL:0x091710	src/levels/shared/HUDROUNDCOUNTER_Update__Fv.c
 shared	HUDROUNDCOUNTER_IsShowing__Fv	HUDROUNDCOUNTER_IsShowing__Fv	function	16	30	30	30	LEVEL1.REL:0x091778	src/levels/shared/HUDROUNDCOUNTER_IsShowing__Fv.c
 shared	HUDROUNDCOUNTER_Refresh__FUiUiUiUcPCc	HUDROUNDCOUNTER_Refresh__FUiUiUiUcPCc	function	124	30	0	30	LEVEL1.REL:0x091788	
 shared	HUDROUNDCOUNTER_Terminate__Fv	HUDROUNDCOUNTER_Terminate__Fv	function	20	30	30	30	LEVEL1.REL:0x091808	src/levels/shared/HUDROUNDCOUNTER_Terminate__Fv.c
@@ -7639,14 +7639,14 @@ shared	HUDSNIPERRANGE_Init__Fv	HUDSNIPERRANGE_Init__Fv	function	52	30	0	30	LEVEL
 shared	func_L01_091968	func_L01_091968	function	400	15	0	15	LEVEL1.REL:0x091968	
 shared	HUDTIMER_Render__Fv	HUDTIMER_Render__Fv	function	1080	30	0	30	LEVEL1.REL:0x091B80	
 shared	HUDTIMER_Init__Fv	HUDTIMER_Init__Fv	function	56	30	30	30	LEVEL1.REL:0x091FB8	src/levels/shared/HUDTIMER_Init__Fv.c
-shared	HUDTIMER_Update__Fv	HUDTIMER_Update__Fv	function	104	30	0	30	LEVEL1.REL:0x091FF0	
+shared	HUDTIMER_Update__Fv	HUDTIMER_Update__Fv	function	104	30	30	30	LEVEL1.REL:0x091FF0	src/levels/shared/HUDTIMER_Update__Fv.c
 shared	HUDTIMER_IsShowing__Fv	HUDTIMER_IsShowing__Fv	function	16	30	30	30	LEVEL1.REL:0x092058	src/levels/shared/HUDTIMER_IsShowing__Fv.c
 shared	HUDTIMER_Refresh__FUifUc	HUDTIMER_Refresh__FUifUc	function	56	30	30	30	LEVEL1.REL:0x092068	src/levels/shared/HUDTIMER_Refresh__FUifUc.c
 shared	HUDTIMER_Refresh__FfUc	HUDTIMER_Refresh__FfUc	function	100	30	0	30	LEVEL1.REL:0x0920A0	
 shared	HUDTIMER_Terminate__Fv	HUDTIMER_Terminate__Fv	function	20	30	30	30	LEVEL1.REL:0x092108	src/levels/shared/HUDTIMER_Terminate__Fv.c
 shared	HUDTIMERBAR_Render__Fv	HUDTIMERBAR_Render__Fv	function	556	30	0	30	LEVEL1.REL:0x092120	
 shared	HUDTIMERBAR_Init__Fv	HUDTIMERBAR_Init__Fv	function	28	30	30	30	LEVEL1.REL:0x092350	src/levels/shared/HUDTIMERBAR_Init__Fv.c
-shared	HUDTIMERBAR_Update__Fv	HUDTIMERBAR_Update__Fv	function	104	30	0	30	LEVEL1.REL:0x092370	
+shared	HUDTIMERBAR_Update__Fv	HUDTIMERBAR_Update__Fv	function	104	30	30	30	LEVEL1.REL:0x092370	src/levels/shared/HUDTIMERBAR_Update__Fv.c
 shared	HUDTIMERBAR_IsShowing__Fv	HUDTIMERBAR_IsShowing__Fv	function	16	30	30	30	LEVEL1.REL:0x0923D8	src/levels/shared/HUDTIMERBAR_IsShowing__Fv.c
 shared	HUDTIMERBAR_Refresh__FfUc	HUDTIMERBAR_Refresh__FfUc	function	64	30	0	30	LEVEL1.REL:0x0923E8	
 shared	HUDTIMERBAR_InitBar__Fb	HUDTIMERBAR_InitBar__Fb	function	104	30	0	30	LEVEL1.REL:0x092428	
@@ -8133,7 +8133,7 @@ shared	SCRN_NOSCREEN_Exit__Fv	SCRN_NOSCREEN_Exit__Fv	function	36	30	0	30	LEVEL1.
 shared	SCRNPROMPTQ_Update__Fv	SCRNPROMPTQ_Update__Fv	function	220	30	0	30	LEVEL1.REL:0x0A0608	
 shared	SCRNPROMPTQ_Render__Fv	SCRNPROMPTQ_Render__Fv	function	8	30	30	30	LEVEL1.REL:0x0A06E8	src/levels/shared/SCRNPROMPTQ_Render__Fv.c
 shared	SCRNPROMPTQ_Init__Fv	SCRNPROMPTQ_Init__Fv	function	44	30	30	30	LEVEL1.REL:0x0A06F0	src/levels/shared/SCRNPROMPTQ_Init__Fv.c
-shared	SCRNPROMPTQ_Exit__Fv	SCRNPROMPTQ_Exit__Fv	function	44	30	0	30	LEVEL1.REL:0x0A0720	
+shared	SCRNPROMPTQ_Exit__Fv	SCRNPROMPTQ_Exit__Fv	function	44	30	30	30	LEVEL1.REL:0x0A0720	src/levels/shared/SCRNPROMPTQ_Exit__Fv.c
 shared	SCRNPAUSEDPROMPT_SetExitCB__FPFPv_vPv	SCRNPAUSEDPROMPT_SetExitCB__FPFPv_vPv	function	20	30	30	30	LEVEL1.REL:0x0A0750	src/levels/shared/SCRNPAUSEDPROMPT_SetExitCB__FPFPv_vPv.c
 shared	SCRNPAUSEDPROMPT_ShowPrompt__FPcT0	SCRNPAUSEDPROMPT_ShowPrompt__FPcT0	function	140	30	0	30	LEVEL1.REL:0x0A0768	
 shared	SCRNPAUSEDPROMPT_ShowPrompt__FPcUi	SCRNPAUSEDPROMPT_ShowPrompt__FPcUi	function	156	30	0	30	LEVEL1.REL:0x0A07F8	
@@ -8141,7 +8141,7 @@ shared	SCRNPAUSEDPROMPT_Update__Fv	SCRNPAUSEDPROMPT_Update__Fv	function	180	30	0
 shared	SCRNPAUSEDPROMPT_Render__Fv	SCRNPAUSEDPROMPT_Render__Fv	function	8	30	30	30	LEVEL1.REL:0x0A0950	src/levels/shared/SCRNPAUSEDPROMPT_Render__Fv.c
 shared	SCRNPAUSEDPROMPT_Init__Fv	SCRNPAUSEDPROMPT_Init__Fv	function	8	30	30	30	LEVEL1.REL:0x0A0958	src/levels/shared/SCRNPAUSEDPROMPT_Init__Fv.c
 shared	SCRNPAUSEDPROMPT_Exit__Fv	SCRNPAUSEDPROMPT_Exit__Fv	function	32	30	30	30	LEVEL1.REL:0x0A0960	src/levels/shared/SCRNPAUSEDPROMPT_Exit__Fv.c
-shared	SCRNPAUSEDPROMPT_IsDone__Fv	SCRNPAUSEDPROMPT_IsDone__Fv	function	16	30	0	30	LEVEL1.REL:0x0A0980	
+shared	SCRNPAUSEDPROMPT_IsDone__Fv	SCRNPAUSEDPROMPT_IsDone__Fv	function	16	30	30	30	LEVEL1.REL:0x0A0980	src/levels/shared/SCRNPAUSEDPROMPT_IsDone__Fv.c
 shared	SCRNQUICKSEL_RefreshNoQuickSelect__FUi	SCRNQUICKSEL_RefreshNoQuickSelect__FUi	function	12	30	30	30	LEVEL1.REL:0x0A0990	src/levels/shared/SCRNQUICKSEL_RefreshNoQuickSelect__FUi.c
 shared	SCRNQUICKSEL_Init_ForGame__Fv	SCRNQUICKSEL_Init_ForGame__Fv	function	80	30	0	30	LEVEL1.REL:0x0A09A0	
 shared	SCRNQUICKSEL_Init__Fv	SCRNQUICKSEL_Init__Fv	function	304	30	0	30	LEVEL1.REL:0x0A09F0	
@@ -8287,7 +8287,7 @@ shared	func_L01_0AA418	func_L01_0AA418	function	56	30	30	30	LEVEL1.REL:0x0AA418	
 shared	SCRNMODVENDOR_UpdateBrowseState__Fv	SCRNMODVENDOR_UpdateBrowseState__Fv	function	380	30	0	30	LEVEL1.REL:0x0AA450	
 shared	SCRNMODVENDOR_ProcessPurchase__Fv	SCRNMODVENDOR_ProcessPurchase__Fv	function	176	30	0	30	LEVEL1.REL:0x0AA5D0	
 shared	SCRNMODVENDOR_UpdateBuyingStateGadget__Fv	SCRNMODVENDOR_UpdateBuyingStateGadget__Fv	function	356	30	0	30	LEVEL1.REL:0x0AA680	
-shared	func_L01_0AA7E8	func_L01_0AA7E8	function	108	30	0	30	LEVEL1.REL:0x0AA7E8	
+shared	func_L01_0AA7E8	func_L01_0AA7E8	function	108	30	30	30	LEVEL1.REL:0x0AA7E8	src/levels/shared/func_L01_0AA7E8.c
 shared	SCRNMODVENDOR_Update__Fv	SCRNMODVENDOR_Update__Fv	function	292	30	0	30	LEVEL1.REL:0x0AA858	
 shared	SCRNMODVENDOR_Render__Fv	SCRNMODVENDOR_Render__Fv	function	1204	30	0	30	LEVEL1.REL:0x0AA980	
 shared	SCRNMODVENDOR_Init__Fv	SCRNMODVENDOR_Init__Fv	function	336	30	0	30	LEVEL1.REL:0x0AAE38	
@@ -8362,7 +8362,7 @@ shared	ICONHORMENU_GetSubSlotColor__FP12tICONHORMENUP17tICONHORMENU_NODEUiUi	ICO
 shared	ICONHORMENU_GetMiddleSlot__FP12tICONHORMENU	ICONHORMENU_GetMiddleSlot__FP12tICONHORMENU	function	52	30	30	30	LEVEL1.REL:0x0B1F30	src/levels/shared/ICONHORMENU_GetMiddleSlot__FP12tICONHORMENU.c
 shared	ICONHORMENU_GetInitialMiddleSlot__FP12tICONHORMENU	ICONHORMENU_GetInitialMiddleSlot__FP12tICONHORMENU	function	36	30	30	30	LEVEL1.REL:0x0B1F68	src/levels/shared/ICONHORMENU_GetInitialMiddleSlot__FP12tICONHORMENU.c
 shared	ICONHORMENU_SetIconPositionAndSizeBoxes__FP12tICONHORMENUP17HUD_BoundingBox16N81	ICONHORMENU_SetIconPositionAndSizeBoxes__FP12tICONHORMENUP17HUD_BoundingBox16N81	function	524	30	30	30	LEVEL1.REL:0x0B1F90	src/levels/shared/ICONHORMENU_SetIconPositionAndSizeBoxes__FP12tICONHORMENUP17HUD_BoundingBox16N81.c
-shared	ICONHORMENU_SetIconScissorArea__FP12tICONHORMENUP17HUD_BoundingBox16	ICONHORMENU_SetIconScissorArea__FP12tICONHORMENUP17HUD_BoundingBox16	function	40	30	0	30	LEVEL1.REL:0x0B21A0	
+shared	ICONHORMENU_SetIconScissorArea__FP12tICONHORMENUP17HUD_BoundingBox16	ICONHORMENU_SetIconScissorArea__FP12tICONHORMENUP17HUD_BoundingBox16	function	40	30	30	30	LEVEL1.REL:0x0B21A0	src/levels/shared/ICONHORMENU_SetIconScissorArea__FP12tICONHORMENUP17HUD_BoundingBox16.c
 shared	ICONHORMENU_SetIconSpacing__FP12tICONHORMENUUiUi	ICONHORMENU_SetIconSpacing__FP12tICONHORMENUUiUi	function	32	30	30	30	LEVEL1.REL:0x0B21C8	src/levels/shared/ICONHORMENU_SetIconSpacing__FP12tICONHORMENUUiUi.c
 shared	ICONHORMENU_SetIconScrollSpeed__FP12tICONHORMENUf	ICONHORMENU_SetIconScrollSpeed__FP12tICONHORMENUf	function	8	30	30	30	LEVEL1.REL:0x0B21E8	src/levels/shared/ICONHORMENU_SetIconScrollSpeed__FP12tICONHORMENUf.c
 shared	ICONHORMENU_CalculateCellRangeToRender__FiUiUiPiT3	ICONHORMENU_CalculateCellRangeToRender__FiUiUiPiT3	function	140	30	0	30	LEVEL1.REL:0x0B21F0	
@@ -8936,8 +8936,8 @@ shared	FlyingCarSpawner_Enable__FP4Moby_L01	FlyingCarSpawner_Enable__FP4Moby	fun
 shared	FlyingCarSpawner_Disable__FP4Moby_L01	FlyingCarSpawner_Disable__FP4Moby	function	12	11	0	11	LEVEL1.REL:0x0D9A28	
 shared	FlyingCarEffects_Register__FUi	FlyingCarEffects_Register__FUi	function	120	11	0	11	LEVEL1.REL:0x0D9A38	
 shared	FlyingCarEffects_Register_Gondola__Fv	FlyingCarEffects_Register_Gondola__Fv	function	116	11	0	11	LEVEL1.REL:0x0D9AB0	
-shared	FlyingCarEffects_GondolaHR__FP12ACTOR_Troupe	FlyingCarEffects_GondolaHR__FP12ACTOR_Troupe	function	32	11	0	11	LEVEL1.REL:0x0D9B28	
-shared	FlyingCarEffects_GondolaLR__FP12ACTOR_Troupe	FlyingCarEffects_GondolaLR__FP12ACTOR_Troupe	function	32	11	0	11	LEVEL1.REL:0x0D9B48	
+shared	FlyingCarEffects_GondolaHR__FP12ACTOR_Troupe	FlyingCarEffects_GondolaHR__FP12ACTOR_Troupe	function	32	11	11	11	LEVEL1.REL:0x0D9B28	src/levels/shared/FlyingCarEffects_GondolaHR__FP12ACTOR_Troupe.c
+shared	FlyingCarEffects_GondolaLR__FP12ACTOR_Troupe	FlyingCarEffects_GondolaLR__FP12ACTOR_Troupe	function	32	11	11	11	LEVEL1.REL:0x0D9B48	src/levels/shared/FlyingCarEffects_GondolaLR__FP12ACTOR_Troupe.c
 shared	FlyingCarEffects_Gondola__FP12ACTOR_TroupeP4VEC3	FlyingCarEffects_Gondola__FP12ACTOR_TroupeP4VEC3	function	480	11	0	11	LEVEL1.REL:0x0D9B68	
 shared	FlyingCarEffects_Register_GenericA__Fv	FlyingCarEffects_Register_GenericA__Fv	function	116	11	0	11	LEVEL1.REL:0x0D9D48	
 shared	FlyingCarEffects_GenericA__FP12ACTOR_Troupe	FlyingCarEffects_GenericA__FP12ACTOR_Troupe	function	520	11	0	11	LEVEL1.REL:0x0D9DC0	
@@ -9800,7 +9800,7 @@ shared	CrateShared_TroupeCreate__FP18CrateShared_TroupePC18CrateShared_ConfigPC8
 shared	CrateShared_TroupeRegister__FP18CrateShared_Troupe	CrateShared_TroupeRegister__FP18CrateShared_Troupe	function	24	20	20	20	LEVEL1.REL:0x1189A0	src/levels/shared/CrateShared_TroupeRegister__FP18CrateShared_Troupe.c
 shared	func_L01_1189B8	func_L01_1189B8	function	80	20	0	20	LEVEL1.REL:0x1189B8	
 shared	CrateShared_TroupeReset__FP18CrateShared_Troupe	CrateShared_TroupeReset__FP18CrateShared_Troupe	function	580	20	0	20	LEVEL1.REL:0x118A08	
-shared	func_L01_118C50	func_L01_118C50	function	544	20	0	20	LEVEL1.REL:0x118C50	
+shared	func_L01_118C50	func_L01_118C50	function	544	20	20	20	LEVEL1.REL:0x118C50	src/levels/shared/func_L01_118C50.c
 shared	func_L01_118E70	func_L01_118E70	function	520	20	0	20	LEVEL1.REL:0x118E70	
 shared	func_L01_119078	func_L01_119078	function	868	20	0	20	LEVEL1.REL:0x119078	
 shared	func_L01_1193E0	func_L01_1193E0	function	72	20	0	20	LEVEL1.REL:0x1193E0	
@@ -9813,7 +9813,7 @@ shared	func_L01_1197B0	func_L01_1197B0	function	180	20	20	20	LEVEL1.REL:0x1197B0
 shared	CrateShared_NotifyRespawned__FP18CrateShared_TroupeP4Moby	CrateShared_NotifyRespawned__FP18CrateShared_TroupeP4Moby	function	276	20	0	20	LEVEL1.REL:0x119868	
 shared	CrateShared_NotifyMoved__FP18CrateShared_TroupeP4Moby	CrateShared_NotifyMoved__FP18CrateShared_TroupeP4Moby	function	2076	20	0	20	LEVEL1.REL:0x119980	
 shared	func_L01_11A1A0	func_L01_11A1A0	function	3516	20	0	20	LEVEL1.REL:0x11A1A0	
-shared	func_L01_11AF60	func_L01_11AF60	function	104	20	0	20	LEVEL1.REL:0x11AF60	
+shared	func_L01_11AF60	func_L01_11AF60	function	104	20	20	20	LEVEL1.REL:0x11AF60	src/levels/shared/func_L01_11AF60.c
 shared	func_L01_11AFC8	func_L01_11AFC8	function	48	20	20	20	LEVEL1.REL:0x11AFC8	src/levels/shared/func_L01_11AFC8.c
 shared	func_L01_11AFF8	func_L01_11AFF8	function	176	20	20	20	LEVEL1.REL:0x11AFF8	src/levels/shared/func_L01_11AFF8.c
 shared	func_L01_11B0A8	func_L01_11B0A8	function	88	20	20	20	LEVEL1.REL:0x11B0A8	src/levels/shared/func_L01_11B0A8.c
@@ -10002,14 +10002,14 @@ shared	Spawn__13LightningTreeP4MobyPC19LightningTreeConfig	Spawn__13LightningTre
 shared	LightningTree_Spawn__FP4MobyPC19LightningTreeConfig	LightningTree_Spawn__FP4MobyPC19LightningTreeConfig	function	124	21	0	21	LEVEL1.REL:0x127178	
 shared	CalculateBranches__13LightningTree	CalculateBranches__13LightningTree	function	2540	21	0	21	LEVEL1.REL:0x1271F8	
 shared	MobyColor_AddColor__FP4MobyUibT2	MobyColor_AddColor__FP4MobyUibT2	function	544	26	0	26	LEVEL1.REL:0x127BE8	
-shared	MobyColor_CleanUp__Fv	MobyColor_CleanUp__Fv	function	152	26	0	26	LEVEL1.REL:0x127E08	
+shared	MobyColor_CleanUp__Fv	MobyColor_CleanUp__Fv	function	152	26	26	26	LEVEL1.REL:0x127E08	src/levels/shared/MobyColor_CleanUp__Fv.c
 shared	MobyColor_Flash__FP4MobyUiPC15MobyFlashParamsb	MobyColor_Flash__FP4MobyUiPC15MobyFlashParamsb	function	104	26	0	26	LEVEL1.REL:0x127EA0	
 shared	MobyColor_Flash__FP4MobyUi15MobyFlashSpeedsb	MobyColor_Flash__FP4MobyUi15MobyFlashSpeedsb	function	140	26	26	26	LEVEL1.REL:0x127F08	src/levels/shared/MobyColor_Flash__FP4MobyUi15MobyFlashSpeedsb.c
 shared	MobyColor_IsFlashing__FP4Moby	MobyColor_IsFlashing__FP4Moby	function	72	26	0	26	LEVEL1.REL:0x127F98	
 shared	MobyColor_StopFlash__FP4Moby	MobyColor_StopFlash__FP4Moby	function	72	26	26	26	LEVEL1.REL:0x127FE0	src/levels/shared/MobyColor_StopFlash__FP4Moby.c
-shared	MobyColor_CopyFlash__FP4MobyT0	MobyColor_CopyFlash__FP4MobyT0	function	224	26	0	26	LEVEL1.REL:0x128028	
+shared	MobyColor_CopyFlash__FP4MobyT0	MobyColor_CopyFlash__FP4MobyT0	function	224	26	26	26	LEVEL1.REL:0x128028	src/levels/shared/MobyColor_CopyFlash__FP4MobyT0.c
 shared	MobyFlash_Update__Fv	MobyFlash_Update__Fv	function	536	26	0	26	LEVEL1.REL:0x128108	
-shared	MobyFlash_CleanUp__Fv	MobyFlash_CleanUp__Fv	function	256	26	0	26	LEVEL1.REL:0x128320	
+shared	MobyFlash_CleanUp__Fv	MobyFlash_CleanUp__Fv	function	256	26	26	26	LEVEL1.REL:0x128320	src/levels/shared/MobyFlash_CleanUp__Fv.c
 shared	MobyColor_StainMoby__FP4MobyUifbT3	MobyColor_StainMoby__FP4MobyUifbT3	function	104	26	0	26	LEVEL1.REL:0x128420	
 shared	MobyColor_StainRemover__FP4Moby	MobyColor_StainRemover__FP4Moby	function	76	26	0	26	LEVEL1.REL:0x128488	
 shared	MobyStain_Update__Fv	MobyStain_Update__Fv	function	208	26	0	26	LEVEL1.REL:0x1284D8	
@@ -11782,7 +11782,7 @@ shared	func_L01_163938	func_L01_163938	function	60	30	0	30	LEVEL1.REL:0x163938
 shared	SimpleLinePart_Spawn__FP10Line_GroupiPC4VEC3T2fP4VEC3UiUifUcUcf	SimpleLinePart_Spawn__FP10Line_GroupiPC4VEC3T2fP4VEC3UiUifUcUcf	function	2212	30	0	30	LEVEL1.REL:0x163998	
 shared	SimpleLinePart_RegisterSystem__F10DRAW_Layeri15DRAW_ZWriteMode17DRAW_ColorKeyMode14DRAW_BloomMode14DRAW_BlendMode	SimpleLinePart_RegisterSystem__F10DRAW_Layeri15DRAW_ZWriteMode17DRAW_ColorKeyMode14DRAW_BloomMode14DRAW_BlendMode	function	32	30	0	30	LEVEL1.REL:0x164240	
 shared	SimpleLinePart_Spawn__FUcPC4VEC4T1fP4VEC4UiUifUcUc14DRAW_BlendMode16ParticleTexturesbT12_	SimpleLinePart_Spawn__FUcPC4VEC4T1fP4VEC4UiUifUcUc14DRAW_BlendMode16ParticleTexturesbT12_	function	576	30	0	30	LEVEL1.REL:0x164260	
-shared	SimpleLinePart_Update__FP13ParticleTypeC	SimpleLinePart_Update__FP13ParticleTypeC	function	372	30	0	30	LEVEL1.REL:0x1644A0	
+shared	SimpleLinePart_Update__FP13ParticleTypeC	SimpleLinePart_Update__FP13ParticleTypeC	function	372	30	30	30	LEVEL1.REL:0x1644A0	src/levels/shared/SimpleLinePart_Update__FP13ParticleTypeC.c
 shared	SparkSprite_SpawnEmu__FUiPC4VEC4T1ffffffUif14DRAW_BlendModeUibT13_iT13_	SparkSprite_SpawnEmu__FUiPC4VEC4T1ffffffUif14DRAW_BlendModeUibT13_iT13_	function	692	30	0	30	LEVEL1.REL:0x164618	
 shared	SparkSprite_UpdateAndTesselate__FPviPC9PAR_GroupPC29PAR_UpdateAndTesselateContext_L01	SparkSprite_UpdateAndTesselate__FPviPC9PAR_GroupPC29PAR_UpdateAndTesselateContext	function	1012	15	0	15	LEVEL1.REL:0x1648D0	
 shared	func_L01_164CC8	func_L01_164CC8	function	196	30	0	30	LEVEL1.REL:0x164CC8	
@@ -11863,7 +11863,7 @@ shared	func_L01_16BD10	func_L01_16BD10	function	36	30	30	30	LEVEL1.REL:0x16BD10	
 shared	func_L01_16BD38	func_L01_16BD38	function	920	30	0	30	LEVEL1.REL:0x16BD38	
 shared	FIRECRACKER_GetBuiltinMaterial__FP20FIRECRACKER_Material28FIRECRACKER_NoSmokeBuiltinID	FIRECRACKER_GetBuiltinMaterial__FP20FIRECRACKER_Material28FIRECRACKER_NoSmokeBuiltinID	function	44	30	0	30	LEVEL1.REL:0x16C0D0	
 shared	FIRECRACKER_Register__FP25FIRECRACKER_NoSmokeTroupeP25FIRECRACKER_NoSmokeConfigPC20FIRECRACKER_Material	FIRECRACKER_Register__FP25FIRECRACKER_NoSmokeTroupeP25FIRECRACKER_NoSmokeConfigPC20FIRECRACKER_Material	function	152	30	30	30	LEVEL1.REL:0x16C100	src/levels/shared/FIRECRACKER_Register__FP25FIRECRACKER_NoSmokeTroupeP25FIRECRACKER_NoSmokeConfigPC20FIRECRACKER_Material.c
-shared	FIRECRACKER_Register__F28FIRECRACKER_NoSmokeBuiltinID	FIRECRACKER_Register__F28FIRECRACKER_NoSmokeBuiltinID	function	148	30	0	30	LEVEL1.REL:0x16C198	
+shared	FIRECRACKER_Register__F28FIRECRACKER_NoSmokeBuiltinID	FIRECRACKER_Register__F28FIRECRACKER_NoSmokeBuiltinID	function	148	30	30	30	LEVEL1.REL:0x16C198	src/levels/shared/FIRECRACKER_Register__F28FIRECRACKER_NoSmokeBuiltinID.c
 shared	FIRECRACKER_Emit__FP25FIRECRACKER_NoSmokeTroupePC4VEC3	FIRECRACKER_Emit__FP25FIRECRACKER_NoSmokeTroupePC4VEC3	function	300	30	0	30	LEVEL1.REL:0x16C230	
 shared	FIRECRACKER_Emit__F28FIRECRACKER_NoSmokeBuiltinIDPC4VEC3	FIRECRACKER_Emit__F28FIRECRACKER_NoSmokeBuiltinIDPC4VEC3	function	44	30	30	30	LEVEL1.REL:0x16C360	src/levels/shared/FIRECRACKER_Emit__F28FIRECRACKER_NoSmokeBuiltinIDPC4VEC3.c
 shared	func_L01_16C390	func_L01_16C390	function	24	30	30	30	LEVEL1.REL:0x16C390	src/levels/shared/func_L01_16C390.c
@@ -11875,7 +11875,7 @@ shared	func_L01_16C450	func_L01_16C450	function	8	13	13	13	LEVEL1.REL:0x16C450	s
 shared	func_L01_16C458	func_L01_16C458	function	180	30	0	30	LEVEL1.REL:0x16C458	
 shared	func_L01_16C510	func_L01_16C510	function	104	30	30	30	LEVEL1.REL:0x16C510	src/levels/shared/func_L01_16C510.c
 shared	FIRECRACKER_Register__FP29FIRECRACKER_SortedTrailTroupeP29FIRECRACKER_SortedTrailConfigPC20FIRECRACKER_Material	FIRECRACKER_Register__FP29FIRECRACKER_SortedTrailTroupeP29FIRECRACKER_SortedTrailConfigPC20FIRECRACKER_Material	function	156	30	30	30	LEVEL1.REL:0x16C578	src/levels/shared/FIRECRACKER_Register__FP29FIRECRACKER_SortedTrailTroupeP29FIRECRACKER_SortedTrailConfigPC20FIRECRACKER_Material.c
-shared	FIRECRACKER_Register__F32FIRECRACKER_SortedTrailBuiltinID	FIRECRACKER_Register__F32FIRECRACKER_SortedTrailBuiltinID	function	148	30	0	30	LEVEL1.REL:0x16C618	
+shared	FIRECRACKER_Register__F32FIRECRACKER_SortedTrailBuiltinID	FIRECRACKER_Register__F32FIRECRACKER_SortedTrailBuiltinID	function	148	30	30	30	LEVEL1.REL:0x16C618	src/levels/shared/FIRECRACKER_Register__F32FIRECRACKER_SortedTrailBuiltinID.c
 shared	FIRECRACKER_Emit__FP29FIRECRACKER_SortedTrailTroupePC4VEC3T1PC7MATRIX3P28FIRECRACKER_SortedTrailActor	FIRECRACKER_Emit__FP29FIRECRACKER_SortedTrailTroupePC4VEC3T1PC7MATRIX3P28FIRECRACKER_SortedTrailActor	function	1156	30	0	30	LEVEL1.REL:0x16C6B0	
 shared	FIRECRACKER_Emit__F32FIRECRACKER_SortedTrailBuiltinIDPC4VEC3T1PC7MATRIX3P28FIRECRACKER_SortedTrailActor	FIRECRACKER_Emit__F32FIRECRACKER_SortedTrailBuiltinIDPC4VEC3T1PC7MATRIX3P28FIRECRACKER_SortedTrailActor	function	44	30	30	30	LEVEL1.REL:0x16CB38	src/levels/shared/FIRECRACKER_Emit__F32FIRECRACKER_SortedTrailBuiltinIDPC4VEC3T1PC7MATRIX3P28FIRECRACKER_SortedTrailActor.c
 shared	FIRECRACKER_ReleaseTrail__FP28FIRECRACKER_SortedTrailActor	FIRECRACKER_ReleaseTrail__FP28FIRECRACKER_SortedTrailActor	function	12	30	30	30	LEVEL1.REL:0x16CB68	src/levels/shared/FIRECRACKER_ReleaseTrail__FP28FIRECRACKER_SortedTrailActor.c
@@ -12005,7 +12005,7 @@ shared	PLAYER_SetPlayerCurrentLevel__FP6PLAYERUib	PLAYER_SetPlayerCurrentLevel__
 shared	PLAYER_LevelUpPlayer__FP6PLAYER	PLAYER_LevelUpPlayer__FP6PLAYER	function	116	30	0	30	LEVEL1.REL:0x17DBA8	
 shared	PLAYER_PlayerNeedsLevelUp__FP6PLAYER	PLAYER_PlayerNeedsLevelUp__FP6PLAYER	function	136	30	0	30	LEVEL1.REL:0x17DC20	
 shared	PLAYER_PlayerIsDeadRequestLevelRestart__FP6PLAYER	PLAYER_PlayerIsDeadRequestLevelRestart__FP6PLAYER	function	108	30	0	30	LEVEL1.REL:0x17DCA8	
-shared	func_L01_17DD18	func_L01_17DD18	function	144	30	0	30	LEVEL1.REL:0x17DD18	
+shared	func_L01_17DD18	func_L01_17DD18	function	144	30	30	30	LEVEL1.REL:0x17DD18	src/levels/shared/func_L01_17DD18.c
 shared	PLAYER_AutoAim__FP6PLAYERiPP4MobyP4VEC3PC7MATRIX4PC4VEC3fbPC20PLAYER_AutoAimConfig	PLAYER_AutoAim__FP6PLAYERiPP4MobyP4VEC3PC7MATRIX4PC4VEC3fbPC20PLAYER_AutoAimConfig	function	2424	30	0	30	LEVEL1.REL:0x17DDA8	
 shared	PLAYER_AutoAim__FP6PLAYERP4VEC3PC7MATRIX4PC4VEC3fbPC20PLAYER_AutoAimConfig	PLAYER_AutoAim__FP6PLAYERP4VEC3PC7MATRIX4PC4VEC3fbPC20PLAYER_AutoAimConfig	function	64	30	30	30	LEVEL1.REL:0x17E720	src/levels/shared/PLAYER_AutoAim__FP6PLAYERP4VEC3PC7MATRIX4PC4VEC3fbPC20PLAYER_AutoAimConfig.c
 shared	PLAYER_GetGround__FPfP4VEC3P15CollSurfaceInfoP4Moby	PLAYER_GetGround__FPfP4VEC3P15CollSurfaceInfoP4Moby	function	152	30	0	30	LEVEL1.REL:0x17E760	
@@ -12048,7 +12048,7 @@ shared	func_L01_181988	func_L01_181988	function	200	30	0	30	LEVEL1.REL:0x181988
 shared	func_L01_181A50	func_L01_181A50	function	68	30	0	30	LEVEL1.REL:0x181A50	
 shared	FIRSTPERSON_InitOnce__FP6PLAYER	FIRSTPERSON_InitOnce__FP6PLAYER	function	112	30	0	30	LEVEL1.REL:0x181A98	
 shared	FIRSTPERSON_Start__FP6PLAYERPC7MATRIX3ff	FIRSTPERSON_Start__FP6PLAYERPC7MATRIX3ff	function	788	30	0	30	LEVEL1.REL:0x181B08	
-shared	func_L01_181E20	func_L01_181E20	function	112	30	0	30	LEVEL1.REL:0x181E20	
+shared	func_L01_181E20	func_L01_181E20	function	112	30	30	30	LEVEL1.REL:0x181E20	src/levels/shared/func_L01_181E20.c
 shared	func_L01_181E90	func_L01_181E90	function	560	30	0	30	LEVEL1.REL:0x181E90	
 shared	func_L01_1820C0	func_L01_1820C0	function	128	30	0	30	LEVEL1.REL:0x1820C0	
 shared	func_L01_182140	func_L01_182140	function	1120	30	0	30	LEVEL1.REL:0x182140	
@@ -12232,7 +12232,7 @@ shared	LOAD_CHARACTER_SkinGdeFile__FPCcP10ApeGeomDefiP15SkinTextureInfobN24_L01	
 shared	LOAD_CHARACTER_Anim__FPCc_L01	LOAD_CHARACTER_Anim__FPCc	function	156	30	0	30	LEVEL1.REL:0x1B9FB0	
 shared	LOAD_CHARACTER_Anim__FP15WAD_FILE_HEADER_L01	LOAD_CHARACTER_Anim__FP15WAD_FILE_HEADER	function	416	30	0	30	LEVEL1.REL:0x1BA050	
 01_museum	_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared_cppLfbaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared.cppLfbaaa	function	32	1	1	1	LEVEL1.REL:0x1BA288	src/levels/01_museum/_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared_cppLfbaaa.c
-shared	BACKGSTREAMER_CLIENT_Lock__F31eBACKGSTREAMER_CLIENT_LOCKTYPES	BACKGSTREAMER_CLIENT_Lock__F31eBACKGSTREAMER_CLIENT_LOCKTYPES	function	32	30	0	30	LEVEL1.REL:0x1BA5B0	
+shared	BACKGSTREAMER_CLIENT_Lock__F31eBACKGSTREAMER_CLIENT_LOCKTYPES	BACKGSTREAMER_CLIENT_Lock__F31eBACKGSTREAMER_CLIENT_LOCKTYPES	function	32	30	30	30	LEVEL1.REL:0x1BA5B0	src/levels/shared/BACKGSTREAMER_CLIENT_Lock__F31eBACKGSTREAMER_CLIENT_LOCKTYPES.c
 shared	BACKGSTREAMER_CLIENT_Unlock__F31eBACKGSTREAMER_CLIENT_LOCKTYPES	BACKGSTREAMER_CLIENT_Unlock__F31eBACKGSTREAMER_CLIENT_LOCKTYPES	function	32	30	0	30	LEVEL1.REL:0x1BA5D0	
 shared	BACKGSTREAMER_CLIENT_SetCommandPtr__FP18tBACKGSTREAMER_CMD	BACKGSTREAMER_CLIENT_SetCommandPtr__FP18tBACKGSTREAMER_CMD	function	28	30	30	30	LEVEL1.REL:0x1BA5F0	src/levels/shared/BACKGSTREAMER_CLIENT_SetCommandPtr__FP18tBACKGSTREAMER_CMD.c
 shared	BACKGSTREAMER_CLIENT_RequestLoad__F31eBACKGSTREAMER_CLIENT_LOCKTYPESPcPUcUiUi	BACKGSTREAMER_CLIENT_RequestLoad__F31eBACKGSTREAMER_CLIENT_LOCKTYPESPcPUcUiUi	function	224	30	0	30	LEVEL1.REL:0x1BA610	
@@ -13589,7 +13589,7 @@ shared	ArenaLizardThugHomingBeacon_Init__FP4Moby	ArenaLizardThugHomingBeacon_Ini
 shared	ArenaLizardThugHomingBeacon_Term__FP4Moby	ArenaLizardThugHomingBeacon_Term__FP4Moby	function	68	5	0	5	LEVEL3.REL:0x0C8F20	
 shared	ArenaLizardThugHomingBeacon_Update__FP4Mobyf	ArenaLizardThugHomingBeacon_Update__FP4Mobyf	function	1252	5	0	5	LEVEL3.REL:0x0C8F68	
 shared	ArenaLizardThugHomeingBeacon_InitType__FP8MobyType	ArenaLizardThugHomeingBeacon_InitType__FP8MobyType	function	304	5	0	5	LEVEL3.REL:0x0C9450	
-shared	ArenaLizardThugHomingbeacon_SetPosTarget__FP4VEC3_L03	ArenaLizardThugHomingbeacon_SetPosTarget__FP4VEC3	function	36	5	0	5	LEVEL3.REL:0x0C9580	
+shared	ArenaLizardThugHomingbeacon_SetPosTarget__FP4VEC3_L03	ArenaLizardThugHomingbeacon_SetPosTarget__FP4VEC3	function	36	5	5	5	LEVEL3.REL:0x0C9580	src/levels/shared/ArenaLizardThugHomingbeacon_SetPosTarget__FP4VEC3_L03.c
 shared	ArenaLizardThugHomingBeacon_PreDraw__FPC8MobyType	ArenaLizardThugHomingBeacon_PreDraw__FPC8MobyType	function	328	5	0	5	LEVEL3.REL:0x0C95A8	
 shared	ArenaLizardThugHomingBeacon_AlertShot__FP4Moby_L03	ArenaLizardThugHomingBeacon_AlertShot__FP4Moby	function	196	5	0	5	LEVEL3.REL:0x0C96F0	
 shared	ArenaLizardThugShot_Fire__FP4MobyPC4VEC3T1_L03	ArenaLizardThugShot_Fire__FP4MobyPC4VEC3T1	function	80	5	0	5	LEVEL3.REL:0x0C97B8	
@@ -14036,7 +14036,7 @@ shared	FlatShockWave_GetCurScale__FP4Moby_L03	FlatShockWave_GetCurScale__FP4Moby
 shared	FlatShockWave_GetInnerRadius__FP4Mobyf_L03	FlatShockWave_GetInnerRadius__FP4Mobyf	function	96	6	0	6	LEVEL3.REL:0x0F9858	
 shared	FlatShockWave_CollideWithTarget__FP4Mobyi_L03	FlatShockWave_CollideWithTarget__FP4Mobyi	function	220	6	0	6	LEVEL3.REL:0x0F98B8	
 shared	FlatShockWave_InitType__FP8MobyType	FlatShockWave_InitType__FP8MobyType	function	148	6	0	6	LEVEL3.REL:0x0F9998	
-shared	LevelSettings_FixLinks__FP4Moby	LevelSettings_FixLinks__FP4Moby	function	68	3	0	3	LEVEL3.REL:0x0FA4E0	
+shared	LevelSettings_FixLinks__FP4Moby	LevelSettings_FixLinks__FP4Moby	function	68	3	3	3	LEVEL3.REL:0x0FA4E0	src/levels/shared/LevelSettings_FixLinks__FP4Moby.c
 shared	LevelSettings_Init__FP4Moby	LevelSettings_Init__FP4Moby	function	8	3	3	3	LEVEL3.REL:0x0FA528	src/levels/shared/LevelSettings_Init__FP4Moby.c
 shared	LevelSettings_Term__FP4Moby	LevelSettings_Term__FP4Moby	function	8	3	3	3	LEVEL3.REL:0x0FA530	src/levels/shared/LevelSettings_Term__FP4Moby.c
 shared	LevelSettings_Update__FP4Mobyf	LevelSettings_Update__FP4Mobyf	function	8	3	3	3	LEVEL3.REL:0x0FA538	src/levels/shared/LevelSettings_Update__FP4Mobyf.c
@@ -14884,7 +14884,7 @@ shared	ScorchMark_Spawn__FiPC4VEC3T1P18DECAL_CSRampConfigP18DECAL_CircleVolume	S
 shared	ScorchMark_Register__FUiP18DECAL_CSRampConfigP18DECAL_CircleVolumePFP9PAR_Group_v	ScorchMark_Register__FUiP18DECAL_CSRampConfigP18DECAL_CircleVolumePFP9PAR_Group_v	function	84	6	6	6	LEVEL3.REL:0x14FC88	src/levels/shared/ScorchMark_Register__FUiP18DECAL_CSRampConfigP18DECAL_CircleVolumePFP9PAR_Group_v.c
 shared	SludgeArmor_Register__Fv	SludgeArmor_Register__Fv	function	440	5	0	5	LEVEL3.REL:0x14FCE0	
 shared	SludgeArmor_SpawnFlung__FPC4VEC3b	SludgeArmor_SpawnFlung__FPC4VEC3b	function	148	5	5	5	LEVEL3.REL:0x14FE98	src/levels/shared/SludgeArmor_SpawnFlung__FPC4VEC3b.c
-shared	SludgeArmor_SpawnTrail__FPC4VEC3T0b	SludgeArmor_SpawnTrail__FPC4VEC3T0b	function	268	5	0	5	LEVEL3.REL:0x14FF30	
+shared	SludgeArmor_SpawnTrail__FPC4VEC3T0b	SludgeArmor_SpawnTrail__FPC4VEC3T0b	function	268	5	5	5	LEVEL3.REL:0x14FF30	src/levels/shared/SludgeArmor_SpawnTrail__FPC4VEC3T0b.c
 shared	func_L03_150040	func_L03_150040	function	472	5	0	5	LEVEL3.REL:0x150040	
 shared	SludgeArmor_EmitSmoke__FfPC7MATRIX4	SludgeArmor_EmitSmoke__FfPC7MATRIX4	function	108	5	0	5	LEVEL3.REL:0x150218	
 shared	SludgeArmor_SpawnFootprint__FP7MATRIX4PC15CollSurfaceInfofb	SludgeArmor_SpawnFootprint__FP7MATRIX4PC15CollSurfaceInfofb	function	72	5	0	5	LEVEL3.REL:0x150288	
@@ -16602,7 +16602,7 @@ shared	GCP_DestroySurroundingBuildings__FP16GiantClankPlayer	GCP_DestroySurround
 shared	GCP_SetYawGoal__FP6PLAYERf_L05	GCP_SetYawGoal__FP6PLAYERf	function	8	2	0	2	LEVEL5.REL:0x0C9690	
 shared	GCP_Stop__FP6PLAYER_L05	GCP_Stop__FP6PLAYER	function	84	2	0	2	LEVEL5.REL:0x0C9698	
 shared	GCP_StartCodeControlled__FP6PLAYER_L05	GCP_StartCodeControlled__FP6PLAYER	function	28	2	2	2	LEVEL5.REL:0x0C96F0	src/levels/shared/GCP_StartCodeControlled__FP6PLAYER_L05.c
-shared	GCP_EndCodeControlled__FP6PLAYER_L05	GCP_EndCodeControlled__FP6PLAYER	function	28	2	0	2	LEVEL5.REL:0x0C9710	
+shared	GCP_EndCodeControlled__FP6PLAYER_L05	GCP_EndCodeControlled__FP6PLAYER	function	28	2	2	2	LEVEL5.REL:0x0C9710	src/levels/shared/GCP_EndCodeControlled__FP6PLAYER_L05.c
 shared	GCP_HideWeapon__FP6PLAYER_L05	GCP_HideWeapon__FP6PLAYER	function	32	2	0	2	LEVEL5.REL:0x0C9730	
 shared	GCP_Dash__FP6PLAYERfPC4VEC2_L05	GCP_Dash__FP6PLAYERfPC4VEC2	function	68	2	0	2	LEVEL5.REL:0x0C9750	
 shared	GCP_IsDashing__FP6PLAYER_L05	GCP_IsDashing__FP6PLAYER	function	16	2	0	2	LEVEL5.REL:0x0C9798	
@@ -17833,7 +17833,7 @@ shared	BackgroundPersonMoby_Destroy__FP4Moby	BackgroundPersonMoby_Destroy__FP4Mo
 10_carnival	BackgroundPersonSimpleMoby_Init__FP4Moby	BackgroundPersonSimpleMoby_Init__FP4Moby	function	256	1	0	1	LEVEL10.REL:0x0BABF0	
 10_carnival	BackgroundPersonSimpleMoby_Term__FP4Moby	BackgroundPersonSimpleMoby_Term__FP4Moby	function	8	1	1	1	LEVEL10.REL:0x0BACF0	src/levels/10_carnival/BackgroundPersonSimpleMoby_Term__FP4Moby.c
 10_carnival	BackgroundPersonSimpleMoby_Update__FP4Mobyf	BackgroundPersonSimpleMoby_Update__FP4Mobyf	function	140	1	0	1	LEVEL10.REL:0x0BACF8	
-10_carnival	BackgroundPersonSimpleMoby_TypeInit__FP8MobyType	BackgroundPersonSimpleMoby_TypeInit__FP8MobyType	function	32	1	0	1	LEVEL10.REL:0x0BAD88	
+10_carnival	BackgroundPersonSimpleMoby_TypeInit__FP8MobyType	BackgroundPersonSimpleMoby_TypeInit__FP8MobyType	function	32	1	1	1	LEVEL10.REL:0x0BAD88	src/levels/10_carnival/BackgroundPersonSimpleMoby_TypeInit__FP8MobyType.c
 10_carnival	BackgroundPersonSimpleMoby_Create__FP4Moby	BackgroundPersonSimpleMoby_Create__FP4Moby	function	124	1	0	1	LEVEL10.REL:0x0BADA8	
 10_carnival	func_L10_0BAE24	func_L10_0BAE24	function	20	1	0	1	LEVEL10.REL:0x0BAE24	
 10_carnival	func_L10_0BAE38	func_L10_0BAE38	function	20	1	0	1	LEVEL10.REL:0x0BAE38	
@@ -19959,7 +19959,7 @@ shared	isnan	isnan	function	56	2	0	2	LEVEL14.REL:0x2544C0
 15_highstakes	Lvl05CardGameController_CanStartPart2__Fv_L15	Lvl05CardGameController_CanStartPart2__Fv	function	68	1	0	1	LEVEL15.REL:0x0FA1E0	
 15_highstakes	Lvl05CardGameController_End__Fv_L15	Lvl05CardGameController_End__Fv	function	144	1	0	1	LEVEL15.REL:0x0FA228	
 15_highstakes	Lvl05CardGameController_Laser__FP4VEC3T0_L15	Lvl05CardGameController_Laser__FP4VEC3T0	function	100	1	0	1	LEVEL15.REL:0x0FA2B8	
-15_highstakes	Lvl05CardGameController_Freeze__FP4Moby_L15	Lvl05CardGameController_Freeze__FP4Moby	function	32	1	0	1	LEVEL15.REL:0x0FA320	
+15_highstakes	Lvl05CardGameController_Freeze__FP4Moby_L15	Lvl05CardGameController_Freeze__FP4Moby	function	32	1	1	1	LEVEL15.REL:0x0FA320	src/levels/15_highstakes/Lvl05CardGameController_Freeze__FP4Moby_L15.c
 15_highstakes	Lvl05CardGameController_Shock__FP4Moby_L15	Lvl05CardGameController_Shock__FP4Moby	function	112	1	0	1	LEVEL15.REL:0x0FA340	
 15_highstakes	Lvl05CardGameController_Flame__FP4Moby_L15	Lvl05CardGameController_Flame__FP4Moby	function	64	1	0	1	LEVEL15.REL:0x0FA3B0	
 15_highstakes	Lvl05CardGameController_PlayQuizDing__FPC4VEC3_L15	Lvl05CardGameController_PlayQuizDing__FPC4VEC3	function	64	1	0	1	LEVEL15.REL:0x0FA3F0	
@@ -20362,7 +20362,7 @@ shared	DoorHinge_InitType__FP8MobyType	DoorHinge_InitType__FP8MobyType	function	
 16_lab	DroneSpawner_FixLinks__FP4Moby	DroneSpawner_FixLinks__FP4Moby	function	140	1	0	1	LEVEL16.REL:0x0E3698	
 16_lab	DroneSpawner_DrawSpawnEffect__FP4Moby	DroneSpawner_DrawSpawnEffect__FP4Moby	function	268	1	0	1	LEVEL16.REL:0x0E3728	
 16_lab	GooSplasher_Init__FP4Moby	GooSplasher_Init__FP4Moby	function	64	1	0	1	LEVEL16.REL:0x0EE2A8	
-16_lab	GooSplasher_Term__FP4Moby	GooSplasher_Term__FP4Moby	function	32	1	0	1	LEVEL16.REL:0x0EE2E8	
+16_lab	GooSplasher_Term__FP4Moby	GooSplasher_Term__FP4Moby	function	32	1	1	1	LEVEL16.REL:0x0EE2E8	src/levels/16_lab/GooSplasher_Term__FP4Moby.c
 16_lab	GooSplasher_Update__FP4Mobyf	GooSplasher_Update__FP4Mobyf	function	68	1	0	1	LEVEL16.REL:0x0EE308	
 16_lab	Level06Box_Init__FP4Moby	Level06Box_Init__FP4Moby	function	628	1	0	1	LEVEL16.REL:0x0F51B8	
 16_lab	Level06Box_Term__FP4Moby	Level06Box_Term__FP4Moby	function	92	1	0	1	LEVEL16.REL:0x0F5430	
@@ -22762,7 +22762,7 @@ shared	func_L24_0BC098	func_L24_0BC098	function	16	2	0	2	LEVEL24.REL:0x0BC098
 shared	func_L24_0BC0A8	func_L24_0BC0A8	function	16	2	0	2	LEVEL24.REL:0x0BC0A8	
 shared	func_L24_0BC0B8	func_L24_0BC0B8	function	16	2	0	2	LEVEL24.REL:0x0BC0B8	
 shared	func_L24_0BC0C8	func_L24_0BC0C8	function	188	2	0	2	LEVEL24.REL:0x0BC0C8	
-shared	GCS_InitCurves__FP9CurveLink	GCS_InitCurves__FP9CurveLink	function	172	2	0	2	LEVEL24.REL:0x0BC188	
+shared	GCS_InitCurves__FP9CurveLink	GCS_InitCurves__FP9CurveLink	function	172	2	2	2	LEVEL24.REL:0x0BC188	src/levels/shared/GCS_InitCurves__FP9CurveLink.c
 shared	GCS_ResetCurves__Fv	GCS_ResetCurves__Fv	function	8	2	2	2	LEVEL24.REL:0x0BC238	src/levels/shared/GCS_ResetCurves__Fv.c
 shared	GCS_EntitySpawnerInit__Fv	GCS_EntitySpawnerInit__Fv	function	8	2	2	2	LEVEL24.REL:0x0BC240	src/levels/shared/GCS_EntitySpawnerInit__Fv.c
 shared	GCS_EntitySpawnerReset__Fv	GCS_EntitySpawnerReset__Fv	function	28	2	2	2	LEVEL24.REL:0x0BC248	src/levels/shared/GCS_EntitySpawnerReset__Fv.c
@@ -22780,7 +22780,7 @@ shared	GCS_CommitRewards__Fv	GCS_CommitRewards__Fv	function	104	2	0	2	LEVEL24.RE
 shared	GCS_ProcessPickups__F12GCS_PickupIDi	GCS_ProcessPickups__F12GCS_PickupIDi	function	412	2	0	2	LEVEL24.REL:0x0BD0A0	
 shared	GCS_HudReset__Fv	GCS_HudReset__Fv	function	48	2	2	2	LEVEL24.REL:0x0BD240	src/levels/shared/GCS_HudReset__Fv.c
 shared	GCS_HudUpdate__Fv	GCS_HudUpdate__Fv	function	236	2	0	2	LEVEL24.REL:0x0BD270	
-shared	GCS_CAM_SetTarget__FPC4VEC3	GCS_CAM_SetTarget__FPC4VEC3	function	40	2	0	2	LEVEL24.REL:0x0BD360	
+shared	GCS_CAM_SetTarget__FPC4VEC3	GCS_CAM_SetTarget__FPC4VEC3	function	40	2	2	2	LEVEL24.REL:0x0BD360	src/levels/shared/GCS_CAM_SetTarget__FPC4VEC3.c
 shared	GCS_CAM_Update__Fv	GCS_CAM_Update__Fv	function	664	2	0	2	LEVEL24.REL:0x0BD388	
 shared	GCS_CAM_Reset__Fv	GCS_CAM_Reset__Fv	function	28	2	2	2	LEVEL24.REL:0x0BD620	src/levels/shared/GCS_CAM_Reset__Fv.c
 shared	GCS_SpeckEmitterUpdate__Fv	GCS_SpeckEmitterUpdate__Fv	function	456	2	0	2	LEVEL24.REL:0x0BD640	
@@ -22822,7 +22822,7 @@ shared	GCSASTEROID_ActorUpdate__FP12ACTOR_Troupe	GCSASTEROID_ActorUpdate__FP12AC
 shared	GCSASTEROID_ActorRender__FP12ACTOR_Troupe	GCSASTEROID_ActorRender__FP12ACTOR_Troupe	function	1756	2	0	2	LEVEL24.REL:0x0BF250	
 shared	GCSASTEROID_ActorDestroy__FP12ACTOR_Troupe	GCSASTEROID_ActorDestroy__FP12ACTOR_Troupe	function	120	2	0	2	LEVEL24.REL:0x0BF930	
 shared	GCSASTEROID_DamageColliderCallback__FP17GCSWORLD_ColliderPC4VEC3T1PC11GCS_HitInfo	GCSASTEROID_DamageColliderCallback__FP17GCSWORLD_ColliderPC4VEC3T1PC11GCS_HitInfo	function	128	2	2	2	LEVEL24.REL:0x0BF9A8	src/levels/shared/GCSASTEROID_DamageColliderCallback__FP17GCSWORLD_ColliderPC4VEC3T1PC11GCS_HitInfo.c
-shared	GCSASTEROID_GetVelocityCallback__FP4VEC3PC17GCSWORLD_Collider	GCSASTEROID_GetVelocityCallback__FP4VEC3PC17GCSWORLD_Collider	function	84	2	0	2	LEVEL24.REL:0x0BFA28	
+shared	GCSASTEROID_GetVelocityCallback__FP4VEC3PC17GCSWORLD_Collider	GCSASTEROID_GetVelocityCallback__FP4VEC3PC17GCSWORLD_Collider	function	84	2	2	2	LEVEL24.REL:0x0BFA28	src/levels/shared/GCSASTEROID_GetVelocityCallback__FP4VEC3PC17GCSWORLD_Collider.c
 shared	GCSASTEROID_TestMeshWithSphereCallback__FPC17GCSWORLD_ColliderPC4VEC3f	GCSASTEROID_TestMeshWithSphereCallback__FPC17GCSWORLD_ColliderPC4VEC3f	function	368	2	0	2	LEVEL24.REL:0x0BFA80	
 shared	GCSASTEROID_TestMeshWithRayCallback__FPC17GCSWORLD_ColliderPC4VEC3T1f	GCSASTEROID_TestMeshWithRayCallback__FPC17GCSWORLD_ColliderPC4VEC3T1f	function	216	2	0	2	LEVEL24.REL:0x0BFBF0	
 shared	GCSASTEROID_TestMeshWithCapsuleCallback__FPC17GCSWORLD_ColliderPC4VEC3T1ff	GCSASTEROID_TestMeshWithCapsuleCallback__FPC17GCSWORLD_ColliderPC4VEC3T1ff	function	316	2	0	2	LEVEL24.REL:0x0BFCC8	
@@ -22834,7 +22834,7 @@ shared	GCSASTEROID_CreateTroupe__FP18GCSASTEROID_TroupePC16LWMODEL_MaterialPC8Mo
 shared	GCSASTEROID_ResetTroupe__FP18GCSASTEROID_Troupe	GCSASTEROID_ResetTroupe__FP18GCSASTEROID_Troupe	function	228	2	0	2	LEVEL24.REL:0x0C0468	
 shared	GCSASTEROID_Emit__FP18GCSASTEROID_TroupeP19GCS_AsteroidPayload	GCSASTEROID_Emit__FP18GCSASTEROID_TroupeP19GCS_AsteroidPayload	function	436	2	0	2	LEVEL24.REL:0x0C0550	
 shared	GCSASTEROID_PayloadProcess__FP11GCS_PayloadPC14GCS_CurvePoint	GCSASTEROID_PayloadProcess__FP11GCS_PayloadPC14GCS_CurvePoint	function	20	2	0	2	LEVEL24.REL:0x0C0708	
-shared	GCSASTEROID_SpawnFlush__Fv	GCSASTEROID_SpawnFlush__Fv	function	88	2	0	2	LEVEL24.REL:0x0C0720	
+shared	GCSASTEROID_SpawnFlush__Fv	GCSASTEROID_SpawnFlush__Fv	function	88	2	2	2	LEVEL24.REL:0x0C0720	src/levels/shared/GCSASTEROID_SpawnFlush__Fv.c
 shared	GCSASTEROID_Refresh__FP19GCS_AsteroidPayloadPC4MobyPC19GCS_AsteroidSpawner	GCSASTEROID_Refresh__FP19GCS_AsteroidPayloadPC4MobyPC19GCS_AsteroidSpawner	function	788	2	0	2	LEVEL24.REL:0x0C0778	
 shared	GCSASTEROID_Init__Fv	GCSASTEROID_Init__Fv	function	1240	2	0	2	LEVEL24.REL:0x0C0A90	
 shared	GCSASTEROID_Reset__Fv	GCSASTEROID_Reset__Fv	function	204	2	0	2	LEVEL24.REL:0x0C0F68	
@@ -22872,7 +22872,7 @@ shared	GCSENEMY_RecoilMotorRefreshConfig__FP26GCSENEMY_RecoilMotorConfig	GCSENEM
 shared	GCSENEMY_RecoilMotorReset__FP32GCSENEMY_RecoilMotorInstanceDataPC26GCSENEMY_RecoilMotorConfig	GCSENEMY_RecoilMotorReset__FP32GCSENEMY_RecoilMotorInstanceDataPC26GCSENEMY_RecoilMotorConfig	function	84	2	2	2	LEVEL24.REL:0x0C38F8	src/levels/shared/GCSENEMY_RecoilMotorReset__FP32GCSENEMY_RecoilMotorInstanceDataPC26GCSENEMY_RecoilMotorConfig.c
 shared	GCSENEMY_RecoilMotorUpdate__FP8MATRIX43P32GCSENEMY_RecoilMotorInstanceDataf	GCSENEMY_RecoilMotorUpdate__FP8MATRIX43P32GCSENEMY_RecoilMotorInstanceDataf	function	272	2	0	2	LEVEL24.REL:0x0C3950	
 shared	GCSENEMY_RecoilMotorImpulse__FP32GCSENEMY_RecoilMotorInstanceDataPC4VEC3T1f	GCSENEMY_RecoilMotorImpulse__FP32GCSENEMY_RecoilMotorInstanceDataPC4VEC3T1f	function	80	2	2	2	LEVEL24.REL:0x0C3A60	src/levels/shared/GCSENEMY_RecoilMotorImpulse__FP32GCSENEMY_RecoilMotorInstanceDataPC4VEC3T1f.c
-shared	GCSENEMY_KnockMotorRefreshConfig__FP25GCSENEMY_KnockMotorConfig	GCSENEMY_KnockMotorRefreshConfig__FP25GCSENEMY_KnockMotorConfig	function	52	2	0	2	LEVEL24.REL:0x0C3AB0	
+shared	GCSENEMY_KnockMotorRefreshConfig__FP25GCSENEMY_KnockMotorConfig	GCSENEMY_KnockMotorRefreshConfig__FP25GCSENEMY_KnockMotorConfig	function	52	2	2	2	LEVEL24.REL:0x0C3AB0	src/levels/shared/GCSENEMY_KnockMotorRefreshConfig__FP25GCSENEMY_KnockMotorConfig.c
 shared	GCSENEMY_KnockMotorReset__FP31GCSENEMY_KnockMotorInstanceDataPC25GCSENEMY_KnockMotorConfig	GCSENEMY_KnockMotorReset__FP31GCSENEMY_KnockMotorInstanceDataPC25GCSENEMY_KnockMotorConfig	function	76	2	2	2	LEVEL24.REL:0x0C3AE8	src/levels/shared/GCSENEMY_KnockMotorReset__FP31GCSENEMY_KnockMotorInstanceDataPC25GCSENEMY_KnockMotorConfig.c
 shared	GCSENEMY_KnockMotorUpdate__FP7MATRIX3P31GCSENEMY_KnockMotorInstanceData	GCSENEMY_KnockMotorUpdate__FP7MATRIX3P31GCSENEMY_KnockMotorInstanceData	function	428	2	0	2	LEVEL24.REL:0x0C3B38	
 shared	GCSENEMY_KnockMotorImpulse__FP31GCSENEMY_KnockMotorInstanceDataPC4VEC3	GCSENEMY_KnockMotorImpulse__FP31GCSENEMY_KnockMotorInstanceDataPC4VEC3	function	56	2	2	2	LEVEL24.REL:0x0C3CE8	src/levels/shared/GCSENEMY_KnockMotorImpulse__FP31GCSENEMY_KnockMotorInstanceDataPC4VEC3.c
@@ -23124,7 +23124,7 @@ shared	GCSMINI_Emit__FPC17GCS_EntitySpawner	GCSMINI_Emit__FPC17GCS_EntitySpawner
 shared	GCSMINI_GetActiveCount__Fv	GCSMINI_GetActiveCount__Fv	function	12	2	2	2	LEVEL24.REL:0x0D8FB8	src/levels/shared/GCSMINI_GetActiveCount__Fv.c
 shared	GCSMINI_AppearStateEnter__FPv	GCSMINI_AppearStateEnter__FPv	function	1156	2	0	2	LEVEL24.REL:0x0D8FC8	
 shared	GCSMINI_AppearStateUpdate__FPv	GCSMINI_AppearStateUpdate__FPv	function	908	2	0	2	LEVEL24.REL:0x0D9450	
-shared	GCSMINI_LaunchRefreshConfig__FP25GCSMINI_LaunchStateConfig	GCSMINI_LaunchRefreshConfig__FP25GCSMINI_LaunchStateConfig	function	120	2	0	2	LEVEL24.REL:0x0D97E0	
+shared	GCSMINI_LaunchRefreshConfig__FP25GCSMINI_LaunchStateConfig	GCSMINI_LaunchRefreshConfig__FP25GCSMINI_LaunchStateConfig	function	120	2	2	2	LEVEL24.REL:0x0D97E0	src/levels/shared/GCSMINI_LaunchRefreshConfig__FP25GCSMINI_LaunchStateConfig.c
 shared	GCSMINI_LaunchStateEnter__FPv	GCSMINI_LaunchStateEnter__FPv	function	724	2	0	2	LEVEL24.REL:0x0D9858	
 shared	GCSMINI_LaunchStateUpdate__FPv	GCSMINI_LaunchStateUpdate__FPv	function	2016	2	0	2	LEVEL24.REL:0x0D9B30	
 shared	GCSMINI_FleeRefreshConfig__FP23GCSMINI_FleeStateConfig	GCSMINI_FleeRefreshConfig__FP23GCSMINI_FleeStateConfig	function	24	2	2	2	LEVEL24.REL:0x0DA310	src/levels/shared/GCSMINI_FleeRefreshConfig__FP23GCSMINI_FleeStateConfig.c
@@ -23154,7 +23154,7 @@ shared	GCSPOPPLER_Emit__FPC17GCS_EntitySpawner	GCSPOPPLER_Emit__FPC17GCS_EntityS
 shared	GCSPOPPLER_GetActiveCount__Fv	GCSPOPPLER_GetActiveCount__Fv	function	12	2	2	2	LEVEL24.REL:0x0DC368	src/levels/shared/GCSPOPPLER_GetActiveCount__Fv.c
 shared	GCSPOPPLER_AppearStateEnter__FPv	GCSPOPPLER_AppearStateEnter__FPv	function	1156	2	0	2	LEVEL24.REL:0x0DC378	
 shared	GCSPOPPLER_AppearStateUpdate__FPv	GCSPOPPLER_AppearStateUpdate__FPv	function	908	2	0	2	LEVEL24.REL:0x0DC800	
-shared	GCSPOPPLER_LaunchRefreshConfig__FP28GCSPOPPLER_LaunchStateConfig	GCSPOPPLER_LaunchRefreshConfig__FP28GCSPOPPLER_LaunchStateConfig	function	120	2	0	2	LEVEL24.REL:0x0DCB90	
+shared	GCSPOPPLER_LaunchRefreshConfig__FP28GCSPOPPLER_LaunchStateConfig	GCSPOPPLER_LaunchRefreshConfig__FP28GCSPOPPLER_LaunchStateConfig	function	120	2	2	2	LEVEL24.REL:0x0DCB90	src/levels/shared/GCSPOPPLER_LaunchRefreshConfig__FP28GCSPOPPLER_LaunchStateConfig.c
 shared	GCSPOPPLER_LaunchStateEnter__FPv	GCSPOPPLER_LaunchStateEnter__FPv	function	724	2	0	2	LEVEL24.REL:0x0DCC08	
 shared	GCSPOPPLER_LaunchStateUpdate__FPv	GCSPOPPLER_LaunchStateUpdate__FPv	function	2016	2	0	2	LEVEL24.REL:0x0DCEE0	
 shared	GCSPOPPLER_FleeRefreshConfig__FP26GCSPOPPLER_FleeStateConfig	GCSPOPPLER_FleeRefreshConfig__FP26GCSPOPPLER_FleeStateConfig	function	24	2	2	2	LEVEL24.REL:0x0DD6C0	src/levels/shared/GCSPOPPLER_FleeRefreshConfig__FP26GCSPOPPLER_FleeStateConfig.c
@@ -23227,7 +23227,7 @@ shared	GCS_FIRECRACKER_Emit__F31GCS_FIRECRACKER_SortedBuiltinIDPC4VEC3T1f	GCS_FI
 shared	GCS_FIRECRACKER_DestroyActor__FPt21GCS_FIRECRACKER_Actor1Z31GCS_FIRECRACKER_NoSmokeEmitData	GCS_FIRECRACKER_DestroyActor__FPt21GCS_FIRECRACKER_Actor1Z31GCS_FIRECRACKER_NoSmokeEmitData	function	8	2	2	2	LEVEL24.REL:0x0E28D8	src/levels/shared/GCS_FIRECRACKER_DestroyActor__FPt21GCS_FIRECRACKER_Actor1Z31GCS_FIRECRACKER_NoSmokeEmitData.c
 shared	GCS_FIRECRACKER_NoSmokeActorUpdate__FP12ACTOR_Troupe	GCS_FIRECRACKER_NoSmokeActorUpdate__FP12ACTOR_Troupe	function	880	2	0	2	LEVEL24.REL:0x0E28E0	
 shared	GCS_FIRECRACKER_Register__FP29GCS_FIRECRACKER_NoSmokeTroupeP29GCS_FIRECRACKER_NoSmokeConfigPC24GCS_FIRECRACKER_Material	GCS_FIRECRACKER_Register__FP29GCS_FIRECRACKER_NoSmokeTroupeP29GCS_FIRECRACKER_NoSmokeConfigPC24GCS_FIRECRACKER_Material	function	148	2	2	2	LEVEL24.REL:0x0E2C50	src/levels/shared/GCS_FIRECRACKER_Register__FP29GCS_FIRECRACKER_NoSmokeTroupeP29GCS_FIRECRACKER_NoSmokeConfigPC24GCS_FIRECRACKER_Material.c
-shared	GCS_FIRECRACKER_Register__F32GCS_FIRECRACKER_NoSmokeBuiltinID	GCS_FIRECRACKER_Register__F32GCS_FIRECRACKER_NoSmokeBuiltinID	function	148	2	0	2	LEVEL24.REL:0x0E2CE8	
+shared	GCS_FIRECRACKER_Register__F32GCS_FIRECRACKER_NoSmokeBuiltinID	GCS_FIRECRACKER_Register__F32GCS_FIRECRACKER_NoSmokeBuiltinID	function	148	2	2	2	LEVEL24.REL:0x0E2CE8	src/levels/shared/GCS_FIRECRACKER_Register__F32GCS_FIRECRACKER_NoSmokeBuiltinID.c
 shared	GCS_FIRECRACKER_Emit__FP29GCS_FIRECRACKER_NoSmokeTroupePC4VEC3	GCS_FIRECRACKER_Emit__FP29GCS_FIRECRACKER_NoSmokeTroupePC4VEC3	function	292	2	0	2	LEVEL24.REL:0x0E2D80	
 shared	GCS_FIRECRACKER_Emit__F32GCS_FIRECRACKER_NoSmokeBuiltinIDPC4VEC3	GCS_FIRECRACKER_Emit__F32GCS_FIRECRACKER_NoSmokeBuiltinIDPC4VEC3	function	44	2	2	2	LEVEL24.REL:0x0E2EA8	src/levels/shared/GCS_FIRECRACKER_Emit__F32GCS_FIRECRACKER_NoSmokeBuiltinIDPC4VEC3.c
 shared	GCS_FIRECRACKER_Register__F31GCS_FIRECRACKER_SplashBuiltinID	GCS_FIRECRACKER_Register__F31GCS_FIRECRACKER_SplashBuiltinID	function	248	2	0	2	LEVEL24.REL:0x0E2ED8	
@@ -23236,7 +23236,7 @@ shared	GCS_FIRECRACKER_DestroyActor__FP32GCS_FIRECRACKER_SortedTrailActor	GCS_FI
 shared	GCS_FIRECRACKER_SortedTrailActorUpdate__FP12ACTOR_Troupe	GCS_FIRECRACKER_SortedTrailActorUpdate__FP12ACTOR_Troupe	function	180	2	0	2	LEVEL24.REL:0x0E31F8	
 shared	GCS_FIRECRACKER_SortedTrailActorDestroy__FP12ACTOR_Troupe	GCS_FIRECRACKER_SortedTrailActorDestroy__FP12ACTOR_Troupe	function	104	2	2	2	LEVEL24.REL:0x0E32B0	src/levels/shared/GCS_FIRECRACKER_SortedTrailActorDestroy__FP12ACTOR_Troupe.c
 shared	GCS_FIRECRACKER_Register__FP33GCS_FIRECRACKER_SortedTrailTroupeP33GCS_FIRECRACKER_SortedTrailConfigPC24GCS_FIRE_7a3a0f66	GCS_FIRECRACKER_Register__FP33GCS_FIRECRACKER_SortedTrailTroupeP33GCS_FIRECRACKER_SortedTrailConfigPC24GCS_FIRECRACKER_Material	function	156	2	2	2	LEVEL24.REL:0x0E3318	src/levels/shared/GCS_FIRECRACKER_Register__FP33GCS_FIRECRACKER_SortedTrailTroupeP33GCS_FIRECRACKER_SortedTrailConfigPC24GCS_FIRE_7a3a0f66.c
-shared	GCS_FIRECRACKER_Register__F36GCS_FIRECRACKER_SortedTrailBuiltinID	GCS_FIRECRACKER_Register__F36GCS_FIRECRACKER_SortedTrailBuiltinID	function	148	2	0	2	LEVEL24.REL:0x0E33B8	
+shared	GCS_FIRECRACKER_Register__F36GCS_FIRECRACKER_SortedTrailBuiltinID	GCS_FIRECRACKER_Register__F36GCS_FIRECRACKER_SortedTrailBuiltinID	function	148	2	2	2	LEVEL24.REL:0x0E33B8	src/levels/shared/GCS_FIRECRACKER_Register__F36GCS_FIRECRACKER_SortedTrailBuiltinID.c
 shared	GCS_FIRECRACKER_Emit__FP33GCS_FIRECRACKER_SortedTrailTroupePC4VEC3T1PC7MATRIX3P32GCS_FIRECRACKER_SortedTrailActor	GCS_FIRECRACKER_Emit__FP33GCS_FIRECRACKER_SortedTrailTroupePC4VEC3T1PC7MATRIX3P32GCS_FIRECRACKER_SortedTrailActor	function	1112	2	0	2	LEVEL24.REL:0x0E3450	
 shared	GCS_FIRECRACKER_Emit__F36GCS_FIRECRACKER_SortedTrailBuiltinIDPC4VEC3T1PC7MATRIX3P32GCS_FIRECRACKER_SortedTrailActor	GCS_FIRECRACKER_Emit__F36GCS_FIRECRACKER_SortedTrailBuiltinIDPC4VEC3T1PC7MATRIX3P32GCS_FIRECRACKER_SortedTrailActor	function	44	2	2	2	LEVEL24.REL:0x0E38A8	src/levels/shared/GCS_FIRECRACKER_Emit__F36GCS_FIRECRACKER_SortedTrailBuiltinIDPC4VEC3T1PC7MATRIX3P32GCS_FIRECRACKER_SortedTrailActor.c
 shared	GCS_FIRECRACKER_ReleaseTrail__FP32GCS_FIRECRACKER_SortedTrailActor	GCS_FIRECRACKER_ReleaseTrail__FP32GCS_FIRECRACKER_SortedTrailActor	function	12	2	2	2	LEVEL24.REL:0x0E38D8	src/levels/shared/GCS_FIRECRACKER_ReleaseTrail__FP32GCS_FIRECRACKER_SortedTrailActor.c
@@ -23458,7 +23458,7 @@ shared	GCSHIP_AnimGetActive__Fv	GCSHIP_AnimGetActive__Fv	function	12	2	2	2	LEVEL
 shared	GCSHIP_AnimSetActive__F10GCS_AnimIDf	GCSHIP_AnimSetActive__F10GCS_AnimIDf	function	132	2	0	2	LEVEL24.REL:0x0FA668	
 shared	GCSHIP_AnimBlendActive__F10GCS_AnimIDff	GCSHIP_AnimBlendActive__F10GCS_AnimIDff	function	152	2	0	2	LEVEL24.REL:0x0FA6F0	
 shared	GCSHIP_AnimSetSpeed__Ff	GCSHIP_AnimSetSpeed__Ff	function	72	2	0	2	LEVEL24.REL:0x0FA788	
-shared	GCSHIP_AnimGetDuration__F10GCS_AnimID	GCSHIP_AnimGetDuration__F10GCS_AnimID	function	80	2	0	2	LEVEL24.REL:0x0FA7D0	
+shared	GCSHIP_AnimGetDuration__F10GCS_AnimID	GCSHIP_AnimGetDuration__F10GCS_AnimID	function	80	2	2	2	LEVEL24.REL:0x0FA7D0	src/levels/shared/GCSHIP_AnimGetDuration__F10GCS_AnimID.c
 shared	GCSHIP_AnimGetDuration__Fv	GCSHIP_AnimGetDuration__Fv	function	56	2	0	2	LEVEL24.REL:0x0FA820	
 shared	GCSHIP_AnimGetTime__Fv	GCSHIP_AnimGetTime__Fv	function	60	2	2	2	LEVEL24.REL:0x0FA858	src/levels/shared/GCSHIP_AnimGetTime__Fv.c
 shared	GCSHIP_AnimIsDone__Fv	GCSHIP_AnimIsDone__Fv	function	116	2	2	2	LEVEL24.REL:0x0FA898	src/levels/shared/GCSHIP_AnimIsDone__Fv.c

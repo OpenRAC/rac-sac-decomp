@@ -304,6 +304,27 @@
       "regression_control": "The same source differs under gnu-ee-20261015. The profile is chosen per source.",
       "verdict": "route accepted for the ported source that needs it.",
       "reproduce": "the private profile table, work/E0/profiles.json"
+    },
+    {
+      "id": "rac5-pinned-ps2eeas",
+      "scope": "level bodies ported from rac5-sm-decomp sources accepted on its pinned/ps2eeas route",
+      "provenance": "The cpp and cc1 of gnu-ee-20261015 with the SN ProDG PS2 assembler ps2eeas.exe (the assembler of prodg2952+ps2eeas; the same file as the Ps2EeAs.exe of rac5-sm-decomp's sn-prodg-2.0 tools). External binaries: pinned by hash, never committed.",
+      "toolchain": {
+        "cpp_sha256": "2ac3d8d3ca177e6705ac2cbdd1bd9e9a7181ac3e40f6230dea6875c3218ec155",
+        "cc1_sha256": "9614eceecbcb1f7a64cf3a4ad3c827b3e257ab6b1f934e42fcbc4ded0f0584d6",
+        "as_sha256": "c839dd63facabe7b76573c114056be61eaa7b3aa2329dd546930ab8f98898c76"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "Four SAC level functions whose rac5 twins are accepted on this route compile to the retail bytes at every placement with it; the PS2 assembler expands and schedules some forms differently from the GNU one.",
+      "regression_control": "The same four sources differ from the retail bytes under gnu-ee-20261015 (first differences at +0x24, +0x24, +0x80 and +0x3C). A fifth twin exact under both routes stays on gnu-ee-20261015. The profile is chosen per source, so no accepted body changes.",
+      "verdict": "route accepted for the ported sources that need it.",
+      "reproduce": "the private profile table, work/E0/profiles.json"
     }
   ],
   "trials": [
