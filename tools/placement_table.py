@@ -37,6 +37,32 @@ def sources(path: Path) -> dict[str, dict[str, str]]:
     return {row["source"]: row for row in records(path) if row.get("source")}
 
 
+def cell_flags(cell: str, default: str) -> str:
+    """The cc1 flags of a source: the part of its profile cell after the colon.
+
+    A profile cell is ``<profile id>:<flags>`` (``gnu-ee-20261015:-O2 -G0
+    -fno-gcse``): flags are chosen per source, as in the sibling projects.  A
+    cell without flags takes the profile's own.
+    """
+    _profile, separator, flags = cell.partition(":")
+    flags = flags.strip()
+    if not separator or not flags:
+        return default
+    return flags if flags.split()[0] == "-quiet" else f"-quiet {flags}"
+
+
+def harness_options(cell: str, profiles: dict[str, dict]) -> list[str]:
+    """Harness options for a source whose profile cell is `cell` (empty when unknown)."""
+    profile = profiles.get(cell.split(":")[0])
+    if not profile:
+        return []
+    options = ["--cpp", profile["cpp"], "--cc1", profile["cc1"],
+               "--flags", cell_flags(cell, profile["flags"]), "--work", profile["work"]]
+    if profile.get("as"):
+        options += ["--as", profile["as"]]
+    return options
+
+
 def join(placement_table: Path, source_table: Path) -> list[dict[str, str]]:
     """Return the full rows: the placement, with the facts of its source."""
     known = sources(source_table)

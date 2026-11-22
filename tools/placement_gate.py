@@ -32,7 +32,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
-from placement_table import SOURCE_FIELDS, join  # noqa: E402
+from placement_table import SOURCE_FIELDS, harness_options, join  # noqa: E402
 
 SOURCE_HEADER = [
     "# The proved sources, one row each; the placements that carry them",
@@ -163,12 +163,7 @@ def main() -> int:
         else:
             command = [sys.executable, str(harness), module, row["offset"],
                        str(source), "--one-line"]
-        profile = profiles.get((row.get("profile") or "").split(":")[0])
-        if profile:
-            command += ["--cpp", profile["cpp"], "--cc1", profile["cc1"],
-                        "--flags", profile["flags"], "--work", profile["work"]]
-            if profile.get("as"):
-                command += ["--as", profile["as"]]
+        command += harness_options(row.get("profile") or "", profiles)
         result = subprocess.run(command, capture_output=True, text=True)
         if "\tEXACT\t" not in result.stdout:
             problems.append(f"{module} {row['offset']}: the harness refuses the body"

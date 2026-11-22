@@ -31,6 +31,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
 from c_source_policy import require_c_source  # noqa: E402
+from placement_table import cell_flags  # noqa: E402
 
 TABLE = ROOT / "config/levels/bodies.tsv"
 SOURCES = ROOT / "config/levels/body_sources.tsv"
@@ -93,11 +94,12 @@ def main() -> int:
             (work / source.name).write_bytes(source.read_bytes())
             tools = {"cpp": str(args.cpp), "cc1": str(args.cc1),
                      "assembler": str(args.assembler), "flags": " ".join(flags)}
-            chosen = profiles.get((source_profile.get(name) or "").split(":")[0])
+            cell = source_profile.get(name) or ""
+            chosen = profiles.get(cell.split(":")[0])
             if chosen:
                 tools = {"cpp": chosen["cpp"], "cc1": chosen["cc1"],
                          "assembler": chosen.get("as", str(args.assembler)),
-                         "flags": chosen["flags"]}
+                         "flags": cell_flags(cell, chosen["flags"])}
             with (work / f"{source.stem}.i").open("wb") as handle:
                 result = subprocess.run([tools["cpp"], source.name], cwd=work,
                                         stdout=handle, stderr=subprocess.PIPE,

@@ -28,6 +28,10 @@ relocation tables, and compares **every byte** with the retail body.
   source is the original one.
 - `*** EXACT ***` is the only accepted result. A refusal (exit code 2) is
   not an attempt. A near miss is not a match.
+- **Flags per source.** The `profile` cell of `body_sources.tsv` is
+  `<profile id>:<cc1 flags>` (`gnu-ee-20261015:-O2 -G0 -fno-gcse`). The
+  gates and `tools/build.py` compile each source with its own flags, as the
+  sibling projects do (rule 3 still asks for evidence for each choice).
 - **One source, every placement.** A level function is found in up to 31
   modules, at a different offset in each. As in the sibling projects, it has
   one source, linked at every placement. A local name carries the tag of the

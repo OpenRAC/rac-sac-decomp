@@ -128,6 +128,19 @@ class ReportTest(unittest.TestCase):
         self.assertEqual(totals["fuzzy_match_percent"], 75.0)
 
 
+class ProfileCellTest(unittest.TestCase):
+    def test_flags_per_source(self) -> None:
+        from placement_table import cell_flags, harness_options
+        self.assertEqual(cell_flags("gnu-ee-20261015:-O2 -G0", "x"), "-quiet -O2 -G0")
+        self.assertEqual(cell_flags("divpad:-O2 -G0 -fno-gcse", "x"), "-quiet -O2 -G0 -fno-gcse")
+        self.assertEqual(cell_flags("divpad", "-quiet -O2 -G0"), "-quiet -O2 -G0")
+        profiles = {"p": {"cpp": "c", "cc1": "k", "as": "a", "flags": "-quiet -O2 -G0", "work": "w"}}
+        self.assertEqual(harness_options("p:-O2 -G0 -fno-gcse", profiles),
+                         ["--cpp", "c", "--cc1", "k", "--flags", "-quiet -O2 -G0 -fno-gcse",
+                          "--work", "w", "--as", "a"])
+        self.assertEqual(harness_options("unknown:-O2", profiles), [])
+
+
 class RepositoryTest(unittest.TestCase):
     def test_tables_and_sources_follow_the_units(self) -> None:
         self.assertEqual(fu.invariants(), [])
