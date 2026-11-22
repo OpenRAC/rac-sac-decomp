@@ -797,7 +797,7 @@ func_001264B0	function	0x001264B0	408	0
 func_00126648	function	0x00126648	444	0	
 func_00126808	function	0x00126808	408	0	
 func_001269A0	function	0x001269A0	44	0	
-func_001269D0	function	0x001269D0	16	0	
+sceDisplayGetVcount__Fv	function	0x001269D0	16	1	src/boot/func_001269D0.c
 func_001269E0	function	0x001269E0	140	0	
 func_00126A70	function	0x00126A70	148	0	
 func_00126B08	function	0x00126B08	148	0	
@@ -2883,7 +2883,7 @@ func_001763F8	function	0x001763F8	80	0
 func_00176448	function	0x00176448	140	0	
 func_001764D8	function	0x001764D8	104	0	
 func_00176540	function	0x00176540	108	0	
-func_001765B0	function	0x001765B0	400	0	
+sceGsResetGraph	function	0x001765B0	400	1	src/boot/func_001765B0.c
 func_00176740	function	0x00176740	12	0	
 func_00176750	function	0x00176750	664	0	
 func_001769E8	function	0x001769E8	92	0	
@@ -2893,15 +2893,15 @@ func_00176B80	function	0x00176B80	160	0
 func_00176C20	function	0x00176C20	16	0	
 func_00176C30	function	0x00176C30	884	0	
 func_00176FA8	function	0x00176FA8	188	0	
-func_00177068	function	0x00177068	200	0	
+sceGszbufaddr	function	0x00177068	200	1	src/boot/func_00177068.c
 func_00177130	function	0x00177130	484	0	
 func_00177318	function	0x00177318	260	0	
-func_00177420	function	0x00177420	232	0	
+sceGsPutDrawEnv	function	0x00177420	232	1	src/boot/func_00177420.c
 func_00177508	function	0x00177508	112	0	
 func_00177578	function	0x00177578	132	0	
 func_00177600	function	0x00177600	40	0	
 func_00177628	function	0x00177628	52	0	
-func_00177660	function	0x00177660	40	0	
+sceDmaGetChan	function	0x00177660	40	1	src/boot/func_00177660.c
 func_00177688	function	0x00177688	220	0	
 func_00177768	function	0x00177768	472	0	
 func_00177940	function	0x00177940	56	0	
@@ -2914,7 +2914,7 @@ func_00177B30	function	0x00177B30	124	0
 func_00177BB0	function	0x00177BB0	128	0	
 func_00177C30	function	0x00177C30	56	0	
 func_00177C68	function	0x00177C68	52	0	
-func_00177CA0	function	0x00177CA0	152	0	
+sceDmaPause	function	0x00177CA0	152	1	src/boot/func_00177CA0.c
 func_00177D38	function	0x00177D38	20	0	
 func_00177D50	function	0x00177D50	20	0	
 func_00177D68	function	0x00177D68	20	0	
@@ -3064,11 +3064,11 @@ func_00180520	function	0x00180520	664	0
 func_001807B8	function	0x001807B8	172	0	
 frag_00180864	fragment	0x00180864	16	0	
 func_00180878	function	0x00180878	188	0	
-func_00180938	function	0x00180938	192	0	
-func_001809F8	function	0x001809F8	296	0	
+sceMcGetSlotMax	function	0x00180938	192	1	src/boot/func_00180938.c
+sceMcOpen	function	0x001809F8	296	1	src/boot/func_001809F8.c
 func_00180B20	function	0x00180B20	52	0	
 func_00180B58	function	0x00180B58	188	0	
-func_00180C18	function	0x00180C18	224	0	
+sceMcSeek	function	0x00180C18	224	1	src/boot/func_00180C18.c
 frag_00180CF8	fragment	0x00180CF8	176	0	
 func_00180DA8	function	0x00180DA8	276	0	
 func_00180EC0	function	0x00180EC0	376	0	
@@ -3103,7 +3103,7 @@ func_00182660	function	0x00182660	64	0
 func_001826A0	function	0x001826A0	60	0	
 func_001826E0	function	0x001826E0	76	0	
 func_00182730	function	0x00182730	100	0	
-func_00182798	function	0x00182798	104	0	
+sceScfGetSummerTime	function	0x00182798	104	1	src/boot/func_00182798.c
 func_00182800	function	0x00182800	104	0	
 func_00182868	function	0x00182868	44	0	
 func_00182898	function	0x00182898	32	0	
@@ -3114,7 +3114,7 @@ frag_00182B3C	fragment	0x00182B3C	144	0
 func_00182BD0	function	0x00182BD0	8	0	
 func_00182BD8	function	0x00182BD8	72	0	
 func_00182C20	function	0x00182C20	104	0	
-func_00182C88	function	0x00182C88	160	0	
+_sceCd_cd_callback	function	0x00182C88	160	1	src/boot/func_00182C88.c
 func_00182D28	function	0x00182D28	208	0	
 func_00182DF8	function	0x00182DF8	156	0	
 func_00182E98	function	0x00182E98	184	0	
@@ -3124,15 +3124,15 @@ func_001830D8	function	0x001830D8	212	0
 func_001831B0	function	0x001831B0	120	0	
 func_00183228	function	0x00183228	764	0	
 func_00183528	function	0x00183528	28	0	
-func_00183548	function	0x00183548	344	0	
+_sceCd_ncmd_prechk	function	0x00183548	344	1	src/boot/func_00183548.c
 func_001836A0	function	0x001836A0	152	0	
-func_00183738	function	0x00183738	160	0	
+sceCdSync	function	0x00183738	160	1	src/boot/func_00183738.c
 func_001837D8	function	0x001837D8	108	0	
 func_00183848	function	0x00183848	344	0	
 func_001839A0	function	0x001839A0	176	0	
 func_00183A50	function	0x00183A50	744	0	
-func_00183D38	function	0x00183D38	536	0	
-func_00183F50	function	0x00183F50	544	0	
+sceCdDiskReady_old	function	0x00183D38	536	1	src/boot/func_00183D38.c
+sceCdDiskReady	function	0x00183F50	544	1	src/boot/func_00183F50.c
 func_00184170	function	0x00184170	480	0	
 func_00184350	function	0x00184350	152	0	
 func_001843E8	function	0x001843E8	36	0	
@@ -3590,17 +3590,17 @@ func_001936D0	function	0x001936D0	76	0
 func_00193720	function	0x00193720	56	0	
 func_00193758	function	0x00193758	72	0	
 func_001937A0	function	0x001937A0	112	0	
-func_00193810	function	0x00193810	128	0	
+scePrintf	function	0x00193810	128	1	src/boot/func_00193810.c
 func_00193890	function	0x00193890	172	0	
-func_00193940	function	0x00193940	24	0	
+sceSifGetSreg	function	0x00193940	24	1	src/boot/func_00193940.c
 func_00193958	function	0x00193958	28	0	
 func_00193978	function	0x00193978	12	0	
 func_00193988	function	0x00193988	200	0	
-func_00193A50	function	0x00193A50	136	0	
-func_00193AD8	function	0x00193AD8	56	0	
+sceSifSetDma	function	0x00193A50	136	1	src/boot/func_00193A50.c
+isceSifSetDma	function	0x00193AD8	56	1	src/boot/func_00193AD8.c
 func_00193B10	function	0x00193B10	640	0	
 func_00193D90	function	0x00193D90	52	0	
-func_00193DC8	function	0x00193DC8	24	0	
+sceSifSetCmdBuffer	function	0x00193DC8	24	1	src/boot/func_00193DC8.c
 func_00193DE0	function	0x00193DE0	24	0	
 func_00193DF8	function	0x00193DF8	120	0	
 func_00193E70	function	0x00193E70	76	0	
@@ -3623,8 +3623,8 @@ func_00194DF8	function	0x00194DF8	60	0
 func_00194E38	function	0x00194E38	148	0	
 func_00194ED0	function	0x00194ED0	208	0	
 func_00194FA0	function	0x00194FA0	148	0	
-func_00195038	function	0x00195038	144	0	
-func_001950C8	function	0x001950C8	88	0	
+sceSifRemoveRpcQueue	function	0x00195038	144	1	src/boot/func_00195038.c
+sceSifGetNextRequest	function	0x001950C8	88	1	src/boot/func_001950C8.c
 func_00195120	function	0x00195120	452	0	
 func_001952E8	function	0x001952E8	64	0	
 func_00195328	function	0x00195328	112	0	
@@ -3647,7 +3647,7 @@ func_00195D40	function	0x00195D40	140	0
 func_00195DD0	function	0x00195DD0	52	0	
 func_00195E08	function	0x00195E08	320	0	
 func_00195F48	function	0x00195F48	240	0	
-func_00196038	function	0x00196038	656	0	
+sceOpen	function	0x00196038	656	1	src/boot/func_00196038.c
 func_001962C8	function	0x001962C8	376	0	
 func_00196440	function	0x00196440	572	0	
 func_00196680	function	0x00196680	620	0	
@@ -3656,7 +3656,7 @@ func_00196BB0	function	0x00196BB0	904	0
 func_00196F38	function	0x00196F38	488	0	
 func_00197120	function	0x00197120	432	0	
 func_001972D0	function	0x001972D0	28	0	
-func_001972F0	function	0x001972F0	440	0	
+sceMkdir	function	0x001972F0	440	1	src/boot/func_001972F0.c
 func_001974A8	function	0x001974A8	28	0	
 func_001974C8	function	0x001974C8	640	0	
 func_00197748	function	0x00197748	300	0	
@@ -3676,8 +3676,8 @@ func_001986A0	function	0x001986A0	572	0
 func_001988E0	function	0x001988E0	680	0	
 func_00198B88	function	0x00198B88	504	0	
 func_00198D80	function	0x00198D80	480	0	
-func_00198F60	function	0x00198F60	136	0	
-func_00198FE8	function	0x00198FE8	112	0	
+sceSifInitIopHeap	function	0x00198F60	136	1	src/boot/func_00198F60.c
+sceSifAllocIopHeap	function	0x00198FE8	112	1	src/boot/func_00198FE8.c
 func_00199058	function	0x00199058	128	0	
 func_001990D8	function	0x001990D8	120	0	
 func_00199150	function	0x00199150	28	0	
@@ -3692,13 +3692,13 @@ func_001995B0	function	0x001995B0	140	0
 func_00199640	function	0x00199640	56	0	
 func_00199678	function	0x00199678	520	0	
 func_00199880	function	0x00199880	520	0	
-func_00199A88	function	0x00199A88	144	0	
+sceSifUnloadModule	function	0x00199A88	144	1	src/boot/func_00199A88.c
 func_00199B18	function	0x00199B18	160	0	
 func_00199BB8	function	0x00199BB8	144	0	
 func_00199C48	function	0x00199C48	28	0	
 func_00199C68	function	0x00199C68	28	0	
 func_00199C88	function	0x00199C88	548	0	
-func_00199EB0	function	0x00199EB0	32	0	
+sceSifLoadModule	function	0x00199EB0	32	1	src/boot/func_00199EB0.c
 func_00199ED0	function	0x00199ED0	28	0	
 func_00199EF0	function	0x00199EF0	260	0	
 func_00199FF8	function	0x00199FF8	28	0	
@@ -3707,8 +3707,8 @@ func_0019A040	function	0x0019A040	236	0
 func_0019A130	function	0x0019A130	220	0	
 func_0019A210	function	0x0019A210	340	0	
 func_0019A368	function	0x0019A368	40	0	
-func_0019A390	function	0x0019A390	80	0	
-func_0019A3E0	function	0x0019A3E0	272	0	
+sceSifSyncIop	function	0x0019A390	80	1	src/boot/func_0019A390.c
+sceSifRebootIop	function	0x0019A3E0	272	1	src/boot/func_0019A3E0.c
 func_0019A4F0	function	0x0019A4F0	80	0	
 func_0019A540	function	0x0019A540	24	0	
 func_0019A558	function	0x0019A558	96	0	
@@ -3788,7 +3788,7 @@ func_0019C680	function	0x0019C680	84	0
 func_0019C6D8	function	0x0019C6D8	168	0	
 func_0019C780	function	0x0019C780	68	0	
 func_0019C7C8	function	0x0019C7C8	36	0	
-func_0019C7F0	function	0x0019C7F0	48	0	
+sceDeci2ReqSend	function	0x0019C7F0	48	1	src/boot/func_0019C7F0.c
 func_0019C820	function	0x0019C820	36	0	
 func_0019C848	function	0x0019C848	48	0	
 func_0019C878	function	0x0019C878	36	0	

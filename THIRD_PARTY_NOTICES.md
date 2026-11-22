@@ -46,6 +46,13 @@ function there compiles to the same relocation-masked bytes. The adaptation
 gives each source this game's symbol and local names, and its own proof at
 every placement here. The copyright and licence of that project are retained.
 
+The boot sources of the Sony library routines (`sce*`) are the C that
+rac5-sm-decomp, rac2-decomp or rac1-decomp wrote for them by reverse
+engineering. They hold no SDK source, header or sample. One of them,
+`src/boot/func_00198F60.c` (`sceSifInitIopHeap`), carries code that
+rac2-decomp took from the Forja project under the MIT licence. Its notice is
+kept in the file.
+
 ## GCC runtime library (libgcc)
 
 These bodies of `src/levels/shared/` reproduce routines of GCC's runtime
