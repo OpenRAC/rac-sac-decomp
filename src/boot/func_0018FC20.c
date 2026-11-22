@@ -1,4 +1,4 @@
-/* func_0018FC20 -- 192 bytes.
+/* lo0bits -- 192 bytes.
  *
  * A function of the boot executable at 0x0018FC20; its placement is
  * listed in config/boot/bodies.tsv.
@@ -10,7 +10,7 @@
  */
 
 int
-func_0018FC20(y)
+lo0bits(y)
     unsigned *y;
 {
     int k;

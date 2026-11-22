@@ -3362,11 +3362,11 @@ func_0018F230	function	0x0018F230	964	0
 func_0018F5F8	function	0x0018F5F8	404	0	
 func_0018F790	function	0x0018F790	232	0	
 func_0018F878	function	0x0018F878	168	0	
-func_0018F920	function	0x0018F920	52	1	src/boot/func_0018F920.c
+Bfree	function	0x0018F920	52	1	src/boot/func_0018F920.c
 func_0018F958	function	0x0018F958	264	0	
 func_0018FA60	function	0x0018FA60	308	0	
-func_0018FB98	function	0x0018FB98	132	1	src/boot/func_0018FB98.c
-func_0018FC20	function	0x0018FC20	192	1	src/boot/func_0018FC20.c
+hi0bits	function	0x0018FB98	132	1	src/boot/func_0018FB98.c
+lo0bits	function	0x0018FC20	192	1	src/boot/func_0018FC20.c
 func_0018FCE0	function	0x0018FCE0	56	0	
 func_0018FD18	function	0x0018FD18	520	0	
 func_0018FF20	function	0x0018FF20	256	0	

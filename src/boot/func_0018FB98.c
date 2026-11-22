@@ -1,4 +1,4 @@
-/* func_0018FB98 -- 132 bytes.
+/* hi0bits -- 132 bytes.
  *
  * A function of the boot executable at 0x0018FB98; its placement is
  * listed in config/boot/bodies.tsv.
@@ -10,7 +10,7 @@
  */
 
 int
-func_0018FB98(x)
+hi0bits(x)
     unsigned x;
 {
     int k;
