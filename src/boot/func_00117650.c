@@ -3,14 +3,14 @@
  * A function of the boot executable at 0x00117650; its placement is
  * listed in config/boot/bodies.tsv.
  *
- * rac5-sm-decomp names this body _13bad_exception.
+ * rac5-sm-decomp names this body _$_13bad_exception.
  * Ported from OpenRAC/rac5-sm-decomp src/boot/_$_13bad_exception.c.
  */
 
 extern void *D_001FBAB8[];
 extern void func_00115858(void *ptr);
 
-void _$_13bad_exception(void *self, int flags) {
+void func_00117650(void *self, int flags) {
     *(void **)self = D_001FBAB8;
     if (flags & 1)
         func_00115858(self);

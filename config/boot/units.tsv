@@ -502,14 +502,14 @@ func_00115CD8	function	0x00115CD8	28	1	src/boot/func_00115CD8.c
 func_00115CF8	function	0x00115CF8	80	1	src/boot/func_00115CF8.c
 func_00115D48	function	0x00115D48	28	0	
 func_00115D68	function	0x00115D68	24	1	src/boot/func_00115D68.c
-__tf13bad_exception	function	0x00115D80	80	1	src/boot/func_00115D80.c
+func_00115D80	function	0x00115D80	80	1	src/boot/func_00115D80.c
 func_00115DD0	function	0x00115DD0	28	0	
-_$_13bad_exception	function	0x00115DF0	48	1	src/boot/func_00115DF0.c
+func_00115DF0	function	0x00115DF0	48	1	src/boot/func_00115DF0.c
 func_00115E20	function	0x00115E20	20	0	
-__tf13bad_exception	function	0x00115E38	80	1	src/boot/func_00115E38.c
-_$_13bad_exception	function	0x00115E88	48	1	src/boot/func_00115E88.c
+func_00115E38	function	0x00115E38	80	1	src/boot/func_00115E38.c
+func_00115E88	function	0x00115E88	48	1	src/boot/func_00115E88.c
 func_00115EB8	function	0x00115EB8	20	0	
-__tf13bad_exception	function	0x00115ED0	80	1	src/boot/func_00115ED0.c
+func_00115ED0	function	0x00115ED0	80	1	src/boot/func_00115ED0.c
 func_00115F20	function	0x00115F20	32	1	src/boot/func_00115F20.c
 func_00115F40	function	0x00115F40	8	1	src/boot/func_00115F40.c
 func_00115F48	function	0x00115F48	24	1	src/boot/func_00115F48.c
@@ -575,10 +575,10 @@ func_00117508	function	0x00117508	68	0
 func_0011754C	function	0x0011754C	12	0	
 func_00117558	function	0x00117558	52	0	
 func_00117590	function	0x00117590	40	1	src/boot/func_00117590.c
-_$_13bad_exception	function	0x001175B8	48	1	src/boot/func_001175B8.c
+func_001175B8	function	0x001175B8	48	1	src/boot/func_001175B8.c
 func_001175E8	function	0x001175E8	20	0	
-__tf13bad_exception	function	0x00117600	80	1	src/boot/func_00117600.c
-_$_13bad_exception	function	0x00117650	48	1	src/boot/func_00117650.c
+func_00117600	function	0x00117600	80	1	src/boot/func_00117600.c
+func_00117650	function	0x00117650	48	1	src/boot/func_00117650.c
 func_00117680	function	0x00117680	20	0	
 func_00117698	function	0x00117698	64	1	src/boot/func_00117698.c
 func_001176D8	function	0x001176D8	68	0	
@@ -643,19 +643,19 @@ func_00119098	function	0x00119098	52	0
 func_001190D0	function	0x001190D0	52	0	
 func_00119108	function	0x00119108	52	0	
 func_00119140	function	0x00119140	52	0	
-__tf13bad_exception	function	0x00119178	80	1	src/boot/func_00119178.c
+func_00119178	function	0x00119178	80	1	src/boot/func_00119178.c
 func_001191C8	function	0x001191C8	28	0	
-__tf13bad_exception	function	0x001191E8	80	1	src/boot/func_001191E8.c
+func_001191E8	function	0x001191E8	80	1	src/boot/func_001191E8.c
 func_00119238	function	0x00119238	28	0	
-__tf13bad_exception	function	0x00119258	80	1	src/boot/func_00119258.c
+func_00119258	function	0x00119258	80	1	src/boot/func_00119258.c
 func_001192A8	function	0x001192A8	28	0	
-__tf13bad_exception	function	0x001192C8	80	1	src/boot/func_001192C8.c
+func_001192C8	function	0x001192C8	80	1	src/boot/func_001192C8.c
 func_00119318	function	0x00119318	28	0	
-__tf13bad_exception	function	0x00119338	80	1	src/boot/func_00119338.c
+func_00119338	function	0x00119338	80	1	src/boot/func_00119338.c
 func_00119388	function	0x00119388	28	0	
-__tf13bad_exception	function	0x001193A8	80	1	src/boot/func_001193A8.c
+func_001193A8	function	0x001193A8	80	1	src/boot/func_001193A8.c
 func_001193F8	function	0x001193F8	28	0	
-__tf13bad_exception	function	0x00119418	80	1	src/boot/func_00119418.c
+func_00119418	function	0x00119418	80	1	src/boot/func_00119418.c
 func_00119468	function	0x00119468	28	0	
 func_00119488	function	0x00119488	832	0	
 func_001197C8	function	0x001197C8	4816	0	
@@ -3352,11 +3352,11 @@ func_0018E730	function	0x0018E730	1556	0
 sn_log10	function	0x0018ED48	424	1	src/boot/func_0018ED48.c
 func_0018EEF0	function	0x0018EEF0	88	0	
 func_0018EF48	function	0x0018EF48	92	0	
-_lseek_r	function	0x0018EFA8	96	1	src/boot/func_0018EFA8.c
-_lseek_r	function	0x0018F008	96	1	src/boot/func_0018F008.c
-_lseek_r	function	0x0018F068	96	1	src/boot/func_0018F068.c
+func_0018EFA8	function	0x0018EFA8	96	1	src/boot/func_0018EFA8.c
+func_0018F008	function	0x0018F008	96	1	src/boot/func_0018F008.c
+func_0018F068	function	0x0018F068	96	1	src/boot/func_0018F068.c
 func_0018F0C8	function	0x0018F0C8	92	0	
-_lseek_r	function	0x0018F128	96	1	src/boot/func_0018F128.c
+func_0018F128	function	0x0018F128	96	1	src/boot/func_0018F128.c
 func_0018F188	function	0x0018F188	168	0	
 func_0018F230	function	0x0018F230	964	0	
 func_0018F5F8	function	0x0018F5F8	404	0	
