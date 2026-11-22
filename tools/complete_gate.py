@@ -42,7 +42,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
 from coverage import bounds_rows, records  # noqa: E402
-from placement_table import join  # noqa: E402
+from placement_table import harness_options, join  # noqa: E402
 from module_gate import baseline_interval, rebuild_boot, rebuild_image  # noqa: E402
 
 CODE_START = 0x80
@@ -142,12 +142,7 @@ def main() -> int:
                 command = [sys.executable, str(args.harness), module,
                            entry["offset"], str(source), "--one-line",
                            "--emit", str(emit)]
-                profile = profiles.get((entry.get("profile") or "").split(":")[0])
-                if profile:
-                    command += ["--cpp", profile["cpp"], "--cc1", profile["cc1"],
-                                "--flags", profile["flags"], "--work", profile["work"]]
-                    if profile.get("as"):
-                        command += ["--as", profile["as"]]
+                command += harness_options(entry.get("profile") or "", profiles)
                 result = subprocess.run(command, capture_output=True, text=True)
                 if "\tEXACT\t" not in result.stdout:
                     problems.append(f"{module} {entry['offset']}: the body is refused")

@@ -52,7 +52,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
 from disc import IsoDisc  # noqa: E402
-from placement_table import join  # noqa: E402
+from placement_table import harness_options, join  # noqa: E402
 from code_intervals import code_end_from_relocations  # noqa: E402
 from r5900_assembly import render_assembly, run_tool  # noqa: E402
 
@@ -131,10 +131,7 @@ def main() -> int:
                 emit = Path(directory) / "body.bin"
                 command = [sys.executable, str(args.harness), module, row["offset"],
                            str(source), "--one-line", "--emit", str(emit)]
-                profile = profiles.get((row.get("profile") or "").split(":")[0])
-                if profile:
-                    command += ["--cpp", profile["cpp"], "--cc1", profile["cc1"],
-                                "--flags", profile["flags"], "--work", profile["work"]]
+                command += harness_options(row.get("profile") or "", profiles)
                 result = subprocess.run(command, capture_output=True, text=True)
                 if "\tEXACT\t" not in result.stdout:
                     problems.append(f"{module} {row['offset']}: the harness refuses "
@@ -259,10 +256,7 @@ def rebuild_boot(boot: Path, harness: Path, rows: list[dict],
             emit = Path(directory) / "body.bin"
             command = [sys.executable, str(harness), row["offset"], str(source),
                        "--one-line", "--emit", str(emit)]
-            profile = profiles.get((row.get("profile") or "").split(":")[0])
-            if profile:
-                command += ["--cpp", profile["cpp"], "--cc1", profile["cc1"],
-                            "--flags", profile["flags"], "--work", profile["work"]]
+            command += harness_options(row.get("profile") or "", profiles)
             result = subprocess.run(command, capture_output=True, text=True)
             if "\tEXACT\t" not in result.stdout:
                 problems.append(f"boot {row['offset']}: the harness refuses the body "
