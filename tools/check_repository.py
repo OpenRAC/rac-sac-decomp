@@ -38,6 +38,9 @@ SIZE_LIMIT = 4 * 1024 * 1024
 LARGE_TRACKED = {
     "progress/report.json": 8 * 1024 * 1024,
     "config/levels/units.tsv": 6 * 1024 * 1024,
+    # One row per placement: a function linked in 31 modules has 31 rows,
+    # about 27 MB once every level function has C.
+    "config/levels/bodies.tsv": 32 * 1024 * 1024,
 }
 # Instruction listings and raw dumps, by name.
 FORBIDDEN_NAMES = {"disasm.txt", "disassembly.txt", "dump.txt", "listing.txt"}
