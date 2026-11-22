@@ -40,7 +40,7 @@ FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 ## Sources ported from rac5-sm-decomp
 
 Size Matters and Secret Agent Clank are built on the same engine. Level
-sources whose header reads "Ported from OpenRAC/rac5-sm-decomp <path>" are
+and boot sources whose header reads "Ported from OpenRAC/rac5-sm-decomp <path>" are
 adapted from the accepted C of `OpenRAC/rac5-sm-decomp` (GPL-3.0). The
 function there compiles to the same relocation-masked bytes. The adaptation
 gives each source this game's symbol and local names, and its own proof at
@@ -66,6 +66,23 @@ These bodies of `src/boot/` follow the form of newlib's
 That file was written by David M. Gay (Copyright (c) 1991 by AT&T) and is
 distributed with newlib under its permission notice, which applies to the
 parts that come from it.
+
+Other boot sources follow newlib routines, and their header names the
+upstream file. Among them are the math routines of `libm/math` and
+`libm/common` (`e_log10.c`, `ef_acos.c`, `ef_atan2.c`, `ef_sqrt.c`,
+`kf_cos.c`, `s_floor.c`, `sf_cos.c`, `sf_sin.c`, `sf_tan.c`,
+`sf_copysign.c` and their kin) and the stdio helpers of `libc/stdio`. Each
+upstream file's own notice applies to the parts that come from it. The math
+routines come from fdlibm, whose notice is:
+
+```text
+Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
+
+Developed at SunPro, a Sun Microsystems, Inc. business.
+Permission to use, copy, modify, and distribute this
+software is freely granted, provided that this notice
+is preserved.
+```
 
 ## Not included
 

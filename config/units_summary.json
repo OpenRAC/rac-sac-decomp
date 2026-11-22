@@ -17,14 +17,14 @@
     "units": 3833,
     "functions": 3819,
     "code_bytes": 644004,
-    "matched_functions": 265,
-    "matched_bytes": 13544,
+    "matched_functions": 485,
+    "matched_bytes": 27640,
     "zero_padding_bytes": 6928
   },
   "tables": {
     "config/levels/bodies.tsv": "221f4cb67f62ff905911f480490d0a29c4b9c9b07b30b595dfefdb3e20df2d46",
-    "config/boot/bodies.tsv": "374dff78653ea21d91eabcfabc7ab05208502e00ec99c0b06d0187acec3897a8",
+    "config/boot/bodies.tsv": "1cebf37345a1bb305b2367a77c4d5060de6deb531ecf922f2573770e7855388f",
     "config/levels/units.tsv": "e0bfae4f9562e4ee3fd9e49e90da0db6bc0dbf68cf024a40fc008c51e3bb559f",
-    "config/boot/units.tsv": "db8b0aaa0ce54b39e128ffdd29f6cf0449df189b59f20049dd97558e45d852a0"
+    "config/boot/units.tsv": "d1bd210a6f54ab2beb1257f0c23d257ba5c2e962111ec6cebaba6cd68f8a4c86"
   }
 }

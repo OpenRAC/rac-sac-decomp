@@ -325,6 +325,141 @@
       "regression_control": "The same four sources differ from the retail bytes under gnu-ee-20261015 (first differences at +0x24, +0x24, +0x80 and +0x3C). A fifth twin exact under both routes stays on gnu-ee-20261015. The profile is chosen per source, so no accepted body changes.",
       "verdict": "route accepted for the ported sources that need it.",
       "reproduce": "the private profile table, work/E0/profiles.json"
+    },
+    {
+      "id": "rac5-prodg2953-ps2eeas",
+      "scope": "boot bodies ported from rac5-sm-decomp sources accepted on the same route",
+      "provenance": "SN ProDG 3.01 ee-gcc 2.95.3 (cpp.exe and cc1.exe), a private build tool on this workstation; rac5-sm-decomp calls this compiler prodg2953 and pins the same hashes in its config/boot/compiler_trial.json. Assembler: the SN ps2eeas.exe of prodg2952+ps2eeas. External binaries: pinned by hash, never committed.",
+      "toolchain": {
+        "cpp_sha256": "b9c50aa66f9cf5dbd80b2affe9874ec7674b7328965c629476f6ad7c77943154",
+        "cc1_sha256": "0393bcd31f91a6b9f0255db97f1cc99eba78ee8fc003e9a04dfabed1ae1d522e",
+        "as_sha256": "c839dd63facabe7b76573c114056be61eaa7b3aa2329dd546930ab8f98898c76"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "11 SAC boot function(s) whose rac5 twin is accepted on this route compile to the retail bytes with it.",
+      "regression_control": "The same sources differ from the retail bytes under prodg2952+ps2eeas, the nearest profile of this project (first difference in the first words, or a literal relocation that does not fit). The profile is chosen per source, so no accepted body changes.",
+      "verdict": "route accepted for the ported boot sources that need it.",
+      "reproduce": "the private profile table, work/E0/profiles.json"
+    },
+    {
+      "id": "rac5-prodg2953",
+      "scope": "boot bodies ported from rac5-sm-decomp sources accepted on the same route",
+      "provenance": "SN ProDG 3.01 ee-gcc 2.95.3 (cpp.exe and cc1.exe), a private build tool on this workstation; rac5-sm-decomp calls this compiler prodg2953 and pins the same hashes in its config/boot/compiler_trial.json. Assembler: the GNU as of gnu-ee-20261015. External binaries: pinned by hash, never committed.",
+      "toolchain": {
+        "cpp_sha256": "b9c50aa66f9cf5dbd80b2affe9874ec7674b7328965c629476f6ad7c77943154",
+        "cc1_sha256": "0393bcd31f91a6b9f0255db97f1cc99eba78ee8fc003e9a04dfabed1ae1d522e",
+        "as_sha256": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "6 SAC boot function(s) whose rac5 twin is accepted on this route compile to the retail bytes with it.",
+      "regression_control": "The same sources differ from the retail bytes under prodg2952+gnu-as, the nearest profile of this project (first difference in the first words, or a literal relocation that does not fit). The profile is chosen per source, so no accepted body changes.",
+      "verdict": "route accepted for the ported boot sources that need it.",
+      "reproduce": "the private profile table, work/E0/profiles.json"
+    },
+    {
+      "id": "rac5-prodg2953-span5",
+      "scope": "boot bodies ported from rac5-sm-decomp sources accepted on the same route",
+      "provenance": "SN ProDG 3.01 ee-gcc 2.95.3 (cpp.exe and cc1.exe), a private build tool on this workstation; rac5-sm-decomp calls this compiler prodg2953 and pins the same hashes in its config/boot/compiler_trial.json. Assembler: rac5's span5 build of GNU as, run with -G0. External binaries: pinned by hash, never committed.",
+      "toolchain": {
+        "cpp_sha256": "b9c50aa66f9cf5dbd80b2affe9874ec7674b7328965c629476f6ad7c77943154",
+        "cc1_sha256": "0393bcd31f91a6b9f0255db97f1cc99eba78ee8fc003e9a04dfabed1ae1d522e",
+        "as_sha256": "f6aab658cf04b7a4ecf1e14ad2a01b6551a8a913c6c3f13a0e847f73a1d24984"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ],
+        "as": [
+          "-G0"
+        ]
+      },
+      "measured_cause": "1 SAC boot function(s) whose rac5 twin is accepted on this route compile to the retail bytes with it.",
+      "regression_control": "The same sources differ from the retail bytes under prodg2952+gnu-as, the nearest profile of this project (first difference in the first words, or a literal relocation that does not fit). The profile is chosen per source, so no accepted body changes.",
+      "verdict": "route accepted for the ported boot sources that need it.",
+      "reproduce": "the private profile table, work/E0/profiles.json"
+    },
+    {
+      "id": "rac5-sdk991111-eesdk",
+      "scope": "boot bodies ported from rac5-sm-decomp sources accepted on the same route",
+      "provenance": "Sony EE-GCC 2.9-ee-991111 as rac5-sm-decomp rebuilds it from the public GPL snapshot (tools/compiler/build_gnu_ee.sh, selector sdk991111). The assembler is GNU as 2.9-ee-991111 (rac5's ee-sdk), run with -G0 as rac5 runs it. External binaries: pinned by hash, never committed.",
+      "toolchain": {
+        "cpp_sha256": "b73ad1bcfcdbd8826d231ec771471e92a6197adf2fc0e4674c3e5e1834cd2807",
+        "cc1_sha256": "1305725c3b7e94410cb0b3ba85b64a990e94652a87db24631d6f9fa26edc5eb1",
+        "as_sha256": "296af123052ee39d175e5b3254102aafca105d4f6e975b351a13867f59b04019"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ],
+        "as": [
+          "-G0"
+        ]
+      },
+      "measured_cause": "3 SAC boot function(s) whose rac5 twin is accepted on this route compile to the retail bytes with it.",
+      "regression_control": "The same sources differ from the retail bytes under sdk991111-sdkas, the nearest profile of this project (first difference in the first words, or a literal relocation that does not fit). The profile is chosen per source, so no accepted body changes.",
+      "verdict": "route accepted for the ported boot sources that need it.",
+      "reproduce": "the private profile table, work/E0/profiles.json"
+    },
+    {
+      "id": "rac5-sdk-divpad-eesdk",
+      "scope": "boot bodies ported from rac5-sm-decomp sources accepted on the same route",
+      "provenance": "Sony EE-GCC 2.9-ee-991111 as rac5-sm-decomp rebuilds it from the public GPL snapshot (tools/compiler/build_gnu_ee.sh, selector sdk-divpad). Its cc1 carries rac5's division padding patch. The assembler is GNU as 2.9-ee-991111 (rac5's ee-sdk), run with -G0 as rac5 runs it. External binaries: pinned by hash, never committed.",
+      "toolchain": {
+        "cpp_sha256": "b73ad1bcfcdbd8826d231ec771471e92a6197adf2fc0e4674c3e5e1834cd2807",
+        "cc1_sha256": "11b995bdd4e0667bf477bba9bd7687261433ef126903ee2b9e32a2bc068bbda1",
+        "as_sha256": "296af123052ee39d175e5b3254102aafca105d4f6e975b351a13867f59b04019"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ],
+        "as": [
+          "-G0"
+        ]
+      },
+      "measured_cause": "3 SAC boot function(s) whose rac5 twin is accepted on this route compile to the retail bytes with it.",
+      "regression_control": "The same sources differ from the retail bytes under sdk991111-sdkas, the nearest profile of this project (first difference in the first words, or a literal relocation that does not fit). The profile is chosen per source, so no accepted body changes.",
+      "verdict": "route accepted for the ported boot sources that need it.",
+      "reproduce": "the private profile table, work/E0/profiles.json"
+    },
+    {
+      "id": "rac5-sdk991111sync",
+      "scope": "boot bodies ported from rac5-sm-decomp sources accepted on the same route",
+      "provenance": "Sony EE-GCC 2.9-ee-991111 as rac5-sm-decomp rebuilds it from the public GPL snapshot (tools/compiler/build_gnu_ee.sh, selector sdk991111sync). Its cc1 carries rac5's sync patch; assembler: the GNU as of gnu-ee-20261015. External binaries: pinned by hash, never committed.",
+      "toolchain": {
+        "cpp_sha256": "b73ad1bcfcdbd8826d231ec771471e92a6197adf2fc0e4674c3e5e1834cd2807",
+        "cc1_sha256": "eaf94d2a0ca4f6ba7f8a2a20974940ea8a0bdd7868e3ec0aa6081b1b32a91250",
+        "as_sha256": "c71a15dba889fc273b0b699986de7316d056b94ae2155ad2c2573eaa62b8d902"
+      },
+      "flags": {
+        "cc1": [
+          "-quiet",
+          "-O2",
+          "-G0"
+        ]
+      },
+      "measured_cause": "1 SAC boot function(s) whose rac5 twin is accepted on this route compile to the retail bytes with it.",
+      "regression_control": "The same sources differ from the retail bytes under sdk991111, the nearest profile of this project (first difference in the first words, or a literal relocation that does not fit). The profile is chosen per source, so no accepted body changes.",
+      "verdict": "route accepted for the ported boot sources that need it.",
+      "reproduce": "the private profile table, work/E0/profiles.json"
     }
   ],
   "trials": [
