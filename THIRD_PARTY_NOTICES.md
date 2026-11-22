@@ -37,6 +37,15 @@ This program is distributed in the hope that it will be useful, but WITHOUT
 ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
+## Sources ported from rac5-sm-decomp
+
+Size Matters and Secret Agent Clank are built on the same engine. Level
+sources whose header reads "Ported from OpenRAC/rac5-sm-decomp <path>" are
+adapted from the accepted C of `OpenRAC/rac5-sm-decomp` (GPL-3.0). The
+function there compiles to the same relocation-masked bytes. The adaptation
+gives each source this game's symbol and local names, and its own proof at
+every placement here. The copyright and licence of that project are retained.
+
 ## GCC runtime library (libgcc)
 
 These bodies of `src/levels/shared/` reproduce routines of GCC's runtime
