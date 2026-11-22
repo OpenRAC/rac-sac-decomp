@@ -36,7 +36,8 @@ SIZE_LIMIT = 4 * 1024 * 1024
 # Generated tables that hold one row per candidate function (names, sizes and
 # percentages, no retail bytes) may be larger, up to their own limit.
 LARGE_TRACKED = {
-    "progress/report.json": 8 * 1024 * 1024,
+    # One unit per candidate function; a matched unit also lists its function.
+    "progress/report.json": 16 * 1024 * 1024,
     "config/levels/units.tsv": 6 * 1024 * 1024,
     # One row per placement: a function linked in 31 modules has 31 rows,
     # about 27 MB once every level function has C.
