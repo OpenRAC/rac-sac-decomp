@@ -1,12 +1,13 @@
-/* __tf13bad_exception -- 80 bytes.
+/* func_001193A8 -- 80 bytes.
  *
  * A function of the boot executable at 0x001193A8; its placement is
  * listed in config/boot/bodies.tsv.
  *
+ * rac5-sm-decomp names this body __tf13bad_exception.
  * Ported from OpenRAC/rac5-sm-decomp src/boot/__tf13bad_exception.c.
  */
 
-/* __tf13bad_exception — GCC 2.9 RTTI accessor: lazily builds its si_type_info through
+/* func_001193A8 — GCC 2.9 RTTI accessor: lazily builds its si_type_info through
  func_00115968 after the base-class accessor, then returns it.
  Exact under route Q (Sony sdk991111 -O2 -G0 + pinned GNU as): 80/80.
  The pinned GNU chain keeps an 8-byte callee-save stride (76/80), so this
@@ -24,7 +25,7 @@ extern char D_001FBD40[];
 extern void func_00115F60(void);
 extern void func_00115968(struct si_type_info *self, char *name, const void *base);
 
-struct si_type_info *__tf13bad_exception(void) {
+struct si_type_info *func_001193A8(void) {
     if (D_00297AB0.name == 0) {
         func_00115F60();
         func_00115968(&D_00297AB0, D_001FBD40, &D_00206118);
