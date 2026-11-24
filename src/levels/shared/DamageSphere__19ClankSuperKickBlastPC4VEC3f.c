@@ -67,6 +67,7 @@ void DamageSphere__19ClankSuperKickBlastPC4VEC3f(ClankSuperKickBlast *self,
     int count;
     int i;
 
+    /* Gadget 0x27 is the record named "kicksplosion" in GADGET_g_GadgetList. */
     damage = GADGET_PlayerHasGadget__FUi(0x27) ? 3.0f : 2.0f;
     damage = damage * PLAYER_GetBaseMeleeDamage__FP6PLAYER(player);
 

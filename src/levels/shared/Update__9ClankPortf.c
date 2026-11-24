@@ -46,7 +46,7 @@ struct Player {
     float f_B0;
     float f_B4;
     char pad_B8[0x1A8];
-    Moby *f_260;
+    Moby *moby;                 /* +0x260: the hero's moby */
 };
 
 extern Player *g_pActivePlayer;
@@ -96,7 +96,7 @@ void Update__9ClankPortf(ClankPort *self, float dt)
             port->timer = v;
             if (v <= 0.0f) {
                 Teleport_Spawn__FP4MobyPC14TeleportConfig(
-                    g_pActivePlayer->f_260, &D_L01_002AB428);
+                    g_pActivePlayer->moby, &D_L01_002AB428);
                 CONTROLLER_SetActiveContext__FUi(2);
                 PLAYER_ShowPlayerAll__Fb(1);
                 port->state = 2;
