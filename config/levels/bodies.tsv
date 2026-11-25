@@ -123564,3 +123564,5 @@ LEVEL25.REL	0x1606A8	16	src/levels/shared/Init__12ArenaRetreatPC18ArenaRetreatCo
 LEVEL5.REL	0x1D09B0	16	src/levels/shared/Enter__13GCP_WalkStateP16GiantClankPlayer.c
 LEVEL27.REL	0x1D8D70	16	src/levels/shared/Enter__13GCP_WalkStateP16GiantClankPlayer.c
 LEVEL31.REL	0x0D5240	16	src/levels/31_treehouse/FoamMissile_Launch__FP4Moby_L31.c
+LEVEL16.REL	0x243268	16	src/levels/16_lab/Init__13Amoeboid_BitePC22ConditionalMeleeConfigP5State.c
+LEVEL16.REL	0x243330	16	src/levels/16_lab/Init__19AmoeboidSmall_MeleePC22ConditionalMeleeConfigP5State.c
