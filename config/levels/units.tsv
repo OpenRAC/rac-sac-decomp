@@ -9825,7 +9825,7 @@ shared	CrateShared_ResetColor__FPC18CrateShared_TroupeP4Moby	CrateShared_ResetCo
 shared	CrateShared_Unload__Fv	CrateShared_Unload__Fv	function	148	20	0	20	LEVEL1.REL:0x11B370	
 shared	CrateShared_ReassignAPE_GeomInstIDs__FP18CrateShared_Troupe	CrateShared_ReassignAPE_GeomInstIDs__FP18CrateShared_Troupe	function	1252	20	0	20	LEVEL1.REL:0x11B408	
 shared	Begin__8NoWeapon	Begin__8NoWeapon	function	80	18	0	18	LEVEL1.REL:0x11B8F0	
-shared	CanActivate__12WeaponCreate	CanActivate__12WeaponCreate	function	24	18	0	18	LEVEL1.REL:0x11B940	
+shared	CanActivate__12WeaponCreate	CanActivate__12WeaponCreate	function	24	18	18	18	LEVEL1.REL:0x11B940	src/levels/shared/CanActivate__12WeaponCreate.c
 shared	Begin__12WeaponNoAnim	Begin__12WeaponNoAnim	function	60	18	0	18	LEVEL1.REL:0x11B958	
 shared	Begin__16DisableSecondary	Begin__16DisableSecondary	function	60	18	0	18	LEVEL1.REL:0x11B998	
 shared	Begin__10WeaponIdle	Begin__10WeaponIdle	function	64	18	0	18	LEVEL1.REL:0x11B9D8	
@@ -9910,7 +9910,7 @@ shared	func_L01_11E2A0	func_L01_11E2A0	function	812	16	0	16	LEVEL1.REL:0x11E2A0
 shared	func_L01_11E5CC	func_L01_11E5CC	function	68	16	0	16	LEVEL1.REL:0x11E5CC	
 shared	func_L01_11E610	func_L01_11E610	function	552	16	0	16	LEVEL1.REL:0x11E610	
 shared	GetDesiredState__9LedgeGrab	GetDesiredState__9LedgeGrab	function	44	16	0	16	LEVEL1.REL:0x11E838	
-shared	CollideWithWorld__C9LedgeGrab	CollideWithWorld__C9LedgeGrab	function	24	16	0	16	LEVEL1.REL:0x11E868	
+shared	CollideWithWorld__C9LedgeGrab	CollideWithWorld__C9LedgeGrab	function	24	16	16	16	LEVEL1.REL:0x11E868	src/levels/shared/CollideWithWorld__C9LedgeGrab.c
 shared	Init__5PunchPC11PunchConfigP5StateT2	Init__5PunchPC11PunchConfigP5StateT2	function	220	18	0	18	LEVEL1.REL:0x11E880	
 shared	GetTransientDataSize__5Punch	GetTransientDataSize__5Punch	function	8	18	18	18	LEVEL1.REL:0x11E960	src/levels/shared/GetTransientDataSize__5Punch.c
 shared	Begin__5Punch	Begin__5Punch	function	148	18	0	18	LEVEL1.REL:0x11E968	
@@ -10219,7 +10219,7 @@ shared	GetDesiredState__14TangleVineTrap	GetDesiredState__14TangleVineTrap	funct
 shared	GetTransientDataSize__14TangleVineTrap	GetTransientDataSize__14TangleVineTrap	function	8	18	18	18	LEVEL1.REL:0x132C60	src/levels/shared/GetTransientDataSize__14TangleVineTrap.c
 shared	SetTrap__14TangleVineTrapP4Moby	SetTrap__14TangleVineTrapP4Moby	function	124	18	0	18	LEVEL1.REL:0x132C68	
 shared	End__14TangleVineTrap	End__14TangleVineTrap	function	24	18	0	18	LEVEL1.REL:0x132CE8	
-shared	ShouldLeaveState__C14TangleVineTrap	ShouldLeaveState__C14TangleVineTrap	function	24	18	0	18	LEVEL1.REL:0x132D00	
+shared	ShouldLeaveState__C14TangleVineTrap	ShouldLeaveState__C14TangleVineTrap	function	24	18	18	18	LEVEL1.REL:0x132D00	src/levels/shared/ShouldLeaveState__C14TangleVineTrap.c
 shared	Init__14TangleVineTrapPC20TangleVineTrapConfigP5State	Init__14TangleVineTrapPC20TangleVineTrapConfigP5State	function	12	18	18	18	LEVEL1.REL:0x132D18	src/levels/shared/Init__14TangleVineTrapPC20TangleVineTrapConfigP5State.c
 shared	DestroyMoby__14TangleVineTrap	DestroyMoby__14TangleVineTrap	function	100	18	0	18	LEVEL1.REL:0x132D28	
 shared	HandleDamage__14TangleVineTrapf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__14TangleVineTrapf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	276	18	0	18	LEVEL1.REL:0x132D90	
@@ -10284,7 +10284,7 @@ shared	Init__15AlertSuspiciousPC21AlertSuspiciousConfigP17AlertBehaviorDataP8Nav
 shared	GetDesiredState__15AlertSuspicious	GetDesiredState__15AlertSuspicious	function	28	13	0	13	LEVEL1.REL:0x1352D0	
 shared	Begin__15AlertSuspicious	Begin__15AlertSuspicious	function	96	13	0	13	LEVEL1.REL:0x1352F0	
 shared	Update__15AlertSuspiciousf	Update__15AlertSuspiciousf	function	1072	13	0	13	LEVEL1.REL:0x135350	
-shared	CanActivate__23AlertSuspiciousBehavior	CanActivate__23AlertSuspiciousBehavior	function	24	13	0	13	LEVEL1.REL:0x135780	
+shared	CanActivate__23AlertSuspiciousBehavior	CanActivate__23AlertSuspiciousBehavior	function	24	13	13	13	LEVEL1.REL:0x135780	src/levels/shared/CanActivate__23AlertSuspiciousBehavior.c
 shared	CanActivate__13EnemyTakeDown	CanActivate__13EnemyTakeDown	function	8	13	13	13	LEVEL1.REL:0x135798	src/levels/shared/CanActivate__13EnemyTakeDown.c
 shared	Begin__13EnemyTakeDown	Begin__13EnemyTakeDown	function	436	13	0	13	LEVEL1.REL:0x1357A0	
 shared	DestroyMoby__13EnemyTakeDown	DestroyMoby__13EnemyTakeDown	function	60	13	0	13	LEVEL1.REL:0x135958	
@@ -17744,7 +17744,7 @@ shared	SetApeGlobals__Fv_L09	SetApeGlobals__Fv	function	488	6	0	6	LEVEL9.REL:0x0
 09_cafeteria	Arena2SwarmSpawner_FixLinks__FP4Moby	Arena2SwarmSpawner_FixLinks__FP4Moby	function	136	1	0	1	LEVEL9.REL:0x0BDEC8	
 09_cafeteria	Arena2SwarmSpawner_ResetHelpMessageTimer__Fv_L09	Arena2SwarmSpawner_ResetHelpMessageTimer__Fv	function	16	1	1	1	LEVEL9.REL:0x0BDF50	src/levels/09_cafeteria/Arena2SwarmSpawner_ResetHelpMessageTimer__Fv_L09.c
 09_cafeteria	Arena2Trash_Spawn__FP3TiePC4VEC3T1f_L09	Arena2Trash_Spawn__FP3TiePC4VEC3T1f	function	832	1	0	1	LEVEL9.REL:0x0BDF60	
-09_cafeteria	Arena2Trash_Init__FP4Moby	Arena2Trash_Init__FP4Moby	function	20	1	0	1	LEVEL9.REL:0x0BE2A0	
+09_cafeteria	Arena2Trash_Init__FP4Moby	Arena2Trash_Init__FP4Moby	function	20	1	1	1	LEVEL9.REL:0x0BE2A0	src/levels/09_cafeteria/Arena2Trash_Init__FP4Moby.c
 09_cafeteria	Arena2Trash_Term__FP4Moby	Arena2Trash_Term__FP4Moby	function	8	1	1	1	LEVEL9.REL:0x0BE2B8	src/levels/09_cafeteria/Arena2Trash_Term__FP4Moby.c
 09_cafeteria	Arena2Trash_Update__FP4Mobyf	Arena2Trash_Update__FP4Mobyf	function	612	1	0	1	LEVEL9.REL:0x0BE2C0	
 09_cafeteria	Arena2Trash_TypeInit__FP8MobyType	Arena2Trash_TypeInit__FP8MobyType	function	76	1	0	1	LEVEL9.REL:0x0BE528	
@@ -18169,7 +18169,7 @@ shared	Lvl04SimpleGondolaCtrl_ResetWindows__FP4Moby	Lvl04SimpleGondolaCtrl_Reset
 10_carnival	Lvl04StartCam_Update__FP4Mobyf	Lvl04StartCam_Update__FP4Mobyf	function	128	1	0	1	LEVEL10.REL:0x0F8950	
 10_carnival	Lvl04StartCam_Activate__Fv_L10	Lvl04StartCam_Activate__Fv	function	636	1	0	1	LEVEL10.REL:0x0F89D0	
 10_carnival	Lvl04Trash_Spawn__FP4MobyPC4VEC3T1f_L10	Lvl04Trash_Spawn__FP4MobyPC4VEC3T1f	function	784	1	0	1	LEVEL10.REL:0x0F8C50	
-10_carnival	Lvl04Trash_Init__FP4Moby	Lvl04Trash_Init__FP4Moby	function	20	1	0	1	LEVEL10.REL:0x0F8F60	
+10_carnival	Lvl04Trash_Init__FP4Moby	Lvl04Trash_Init__FP4Moby	function	20	1	1	1	LEVEL10.REL:0x0F8F60	src/levels/10_carnival/Lvl04Trash_Init__FP4Moby.c
 10_carnival	Lvl04Trash_Term__FP4Moby	Lvl04Trash_Term__FP4Moby	function	8	1	1	1	LEVEL10.REL:0x0F8F78	src/levels/10_carnival/Lvl04Trash_Term__FP4Moby.c
 10_carnival	Lvl04Trash_Update__FP4Mobyf	Lvl04Trash_Update__FP4Mobyf	function	612	1	0	1	LEVEL10.REL:0x0F8F80	
 10_carnival	Lvl04Trash_TypeInit__FP8MobyType	Lvl04Trash_TypeInit__FP8MobyType	function	76	1	0	1	LEVEL10.REL:0x0F91E8	
@@ -21323,7 +21323,7 @@ shared	Doppleganger_Update__FP4Mobyf	Doppleganger_Update__FP4Mobyf	function	128	
 shared	Doppleganger_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	Doppleganger_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	function	332	2	0	2	LEVEL19.REL:0x0D62A0	
 shared	Doppleganger_Spawn__FP4Moby	Doppleganger_Spawn__FP4Moby	function	324	2	0	2	LEVEL19.REL:0x0D63F0	
 shared	CanActivate__26Doppleganger_DisguisedIdle	CanActivate__26Doppleganger_DisguisedIdle	function	24	2	0	2	LEVEL19.REL:0x0D6538	
-shared	CanActivate__25Doppleganger_RevealedIdle	CanActivate__25Doppleganger_RevealedIdle	function	20	2	0	2	LEVEL19.REL:0x0D6550	
+shared	CanActivate__25Doppleganger_RevealedIdle	CanActivate__25Doppleganger_RevealedIdle	function	20	2	2	2	LEVEL19.REL:0x0D6550	src/levels/shared/CanActivate__25Doppleganger_RevealedIdle.c
 shared	CanActivate__23Doppleganger_Suspicious	CanActivate__23Doppleganger_Suspicious	function	48	2	0	2	LEVEL19.REL:0x0D6568	
 shared	Begin__23Doppleganger_Suspicious	Begin__23Doppleganger_Suspicious	function	48	2	0	2	LEVEL19.REL:0x0D6598	
 shared	Update__23Doppleganger_Suspiciousf	Update__23Doppleganger_Suspiciousf	function	480	2	0	2	LEVEL19.REL:0x0D65C8	
@@ -21919,7 +21919,7 @@ shared	CanActivate__8GBM_Idle	CanActivate__8GBM_Idle	function	8	2	2	2	LEVEL20.RE
 21_shower	Init__19Arena4Camera_PatrolPC14NavigateParams	Init__19Arena4Camera_PatrolPC14NavigateParams	function	20	1	1	1	LEVEL21.REL:0x0BA160	src/levels/21_shower/Init__19Arena4Camera_PatrolPC14NavigateParams.c
 21_shower	Begin__19Arena4Camera_Patrol	Begin__19Arena4Camera_Patrol	function	76	1	0	1	LEVEL21.REL:0x0BA178	
 21_shower	Update__19Arena4Camera_Patrolf	Update__19Arena4Camera_Patrolf	function	520	1	0	1	LEVEL21.REL:0x0BA1C8	
-21_shower	CanActivate__23Arena4Camera_ReturnHome	CanActivate__23Arena4Camera_ReturnHome	function	20	1	0	1	LEVEL21.REL:0x0BA3D0	
+21_shower	CanActivate__23Arena4Camera_ReturnHome	CanActivate__23Arena4Camera_ReturnHome	function	20	1	1	1	LEVEL21.REL:0x0BA3D0	src/levels/21_shower/CanActivate__23Arena4Camera_ReturnHome.c
 21_shower	Begin__23Arena4Camera_ReturnHome	Begin__23Arena4Camera_ReturnHome	function	88	1	0	1	LEVEL21.REL:0x0BA3E8	
 21_shower	Update__23Arena4Camera_ReturnHomef	Update__23Arena4Camera_ReturnHomef	function	364	1	0	1	LEVEL21.REL:0x0BA440	
 21_shower	GetDesiredState__20Arena4Camera_Respawn	GetDesiredState__20Arena4Camera_Respawn	function	64	1	0	1	LEVEL21.REL:0x0BA5B0	
