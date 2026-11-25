@@ -1073,7 +1073,7 @@ shared	FADEOVERLAYOBJ_SetColor__FP12tFADEOVERLAYUiUcUc	FADEOVERLAYOBJ_SetColor__
 shared	FADEOVERLAYOBJ_IsAtFinalUpAlpha__FP12tFADEOVERLAY	FADEOVERLAYOBJ_IsAtFinalUpAlpha__FP12tFADEOVERLAY	function	20	31	31	31	FE.REL:0x0277C0	src/levels/shared/FADEOVERLAYOBJ_IsAtFinalUpAlpha__FP12tFADEOVERLAY.c
 shared	FADEOVERLAYOBJ_IsIdle__FP12tFADEOVERLAY	FADEOVERLAYOBJ_IsIdle__FP12tFADEOVERLAY	function	12	31	31	31	FE.REL:0x0277D8	src/levels/shared/FADEOVERLAYOBJ_IsIdle__FP12tFADEOVERLAY.c
 shared	FADEOVERLAYOBJ_HideNow__FP12tFADEOVERLAY	FADEOVERLAYOBJ_HideNow__FP12tFADEOVERLAY	function	12	31	31	31	FE.REL:0x0277E8	src/levels/shared/FADEOVERLAYOBJ_HideNow__FP12tFADEOVERLAY.c
-shared	FADEOVERLAYOBJ_ShowNow__FP12tFADEOVERLAY	FADEOVERLAYOBJ_ShowNow__FP12tFADEOVERLAY	function	16	31	0	31	FE.REL:0x0277F8	
+shared	FADEOVERLAYOBJ_ShowNow__FP12tFADEOVERLAY	FADEOVERLAYOBJ_ShowNow__FP12tFADEOVERLAY	function	16	31	31	31	FE.REL:0x0277F8	src/levels/shared/FADEOVERLAYOBJ_ShowNow__FP12tFADEOVERLAY.c
 shared	FADEOVERLAYOBJ_Update__FP12tFADEOVERLAY	FADEOVERLAYOBJ_Update__FP12tFADEOVERLAY	function	164	31	0	31	FE.REL:0x027808	
 shared	FADEOVERLAYOBJ_Render__FP12tFADEOVERLAY_FE	FADEOVERLAYOBJ_Render__FP12tFADEOVERLAY	function	172	17	0	17	FE.REL:0x0278B0	
 shared	HUD_DefaultTextScales__Fv	HUD_DefaultTextScales__Fv	function	12	31	31	31	FE.REL:0x027960	src/levels/shared/HUD_DefaultTextScales__Fv.c
@@ -9951,7 +9951,7 @@ shared	CLANK_EmitRocketKick__FP4MobyP4VEC4P15ClankRocketDataPC21ClankRocketKickC
 shared	CLANK_RegisterJetEffect__Fv	CLANK_RegisterJetEffect__Fv	function	396	14	0	14	LEVEL1.REL:0x1229E0	
 shared	func_L01_122B70	func_L01_122B70	function	8	30	30	30	LEVEL1.REL:0x122B70	src/levels/shared/func_L01_122B70.c
 shared	PostAnimCallback__16ContagiousChargeP4Moby	PostAnimCallback__16ContagiousChargeP4Moby	function	1648	19	0	19	LEVEL1.REL:0x122B78	
-shared	KillEffect__16ContagiousChargeP4Moby	KillEffect__16ContagiousChargeP4Moby	function	16	19	0	19	LEVEL1.REL:0x1231E8	
+shared	KillEffect__16ContagiousChargeP4Moby	KillEffect__16ContagiousChargeP4Moby	function	16	19	19	19	LEVEL1.REL:0x1231E8	src/levels/shared/KillEffect__16ContagiousChargeP4Moby.c
 shared	Spawn__16ContagiousChargeP4MobyPC22ContagiousChargeConfigUiT1	Spawn__16ContagiousChargeP4MobyPC22ContagiousChargeConfigUiT1	function	280	19	0	19	LEVEL1.REL:0x1231F8	
 shared	ContagiousCharge_Spawn__FP4MobyPC22ContagiousChargeConfigUiT0	ContagiousCharge_Spawn__FP4MobyPC22ContagiousChargeConfigUiT0	function	156	19	0	19	LEVEL1.REL:0x123310	
 shared	func_L01_1233B0	func_L01_1233B0	function	8	30	30	30	LEVEL1.REL:0x1233B0	src/levels/shared/func_L01_1233B0.c
@@ -9962,7 +9962,7 @@ shared	FistStreak_Spawn__FP4MobyPC16FistStreakConfig	FistStreak_Spawn__FP4MobyPC
 shared	func_L01_123970	func_L01_123970	function	8	30	30	30	LEVEL1.REL:0x123970	src/levels/shared/func_L01_123970.c
 shared	PostAnimCallback__11FloatUpTextP4Moby	PostAnimCallback__11FloatUpTextP4Moby	function	8	10	10	10	LEVEL1.REL:0x123978	src/levels/shared/PostAnimCallback__11FloatUpTextP4Moby.c
 shared	draw__11FloatUpText	draw__11FloatUpText	function	1304	10	0	10	LEVEL1.REL:0x123980	
-shared	KillEffect__11FloatUpTextP4Moby	KillEffect__11FloatUpTextP4Moby	function	16	10	0	10	LEVEL1.REL:0x123E98	
+shared	KillEffect__11FloatUpTextP4Moby	KillEffect__11FloatUpTextP4Moby	function	16	10	10	10	LEVEL1.REL:0x123E98	src/levels/shared/KillEffect__11FloatUpTextP4Moby.c
 shared	Spawn__11FloatUpTextP4MobyPC17FloatUpTextConfig	Spawn__11FloatUpTextP4MobyPC17FloatUpTextConfig	function	28	10	0	10	LEVEL1.REL:0x123EA8	
 shared	FloatUpText_Spawn__FP4MobyPC17FloatUpTextConfig	FloatUpText_Spawn__FP4MobyPC17FloatUpTextConfig	function	124	10	0	10	LEVEL1.REL:0x123EC8	
 shared	func_L01_123F48	func_L01_123F48	function	8	28	28	28	LEVEL1.REL:0x123F48	src/levels/shared/func_L01_123F48.c
@@ -9997,7 +9997,7 @@ shared	Spawn__14LightningStormP4MobyPC20LightningStormConfig	Spawn__14LightningS
 shared	LightningStorm_Spawn__FP4MobyPC20LightningStormConfig	LightningStorm_Spawn__FP4MobyPC20LightningStormConfig	function	152	14	0	14	LEVEL1.REL:0x126898	
 shared	func_L01_126930	func_L01_126930	function	8	19	19	19	LEVEL1.REL:0x126930	src/levels/shared/func_L01_126930.c
 shared	PostAnimCallback__13LightningTreeP4Moby	PostAnimCallback__13LightningTreeP4Moby	function	1816	21	0	21	LEVEL1.REL:0x126938	
-shared	KillEffect__13LightningTreeP4Moby	KillEffect__13LightningTreeP4Moby	function	16	21	0	21	LEVEL1.REL:0x127050	
+shared	KillEffect__13LightningTreeP4Moby	KillEffect__13LightningTreeP4Moby	function	16	21	21	21	LEVEL1.REL:0x127050	src/levels/shared/KillEffect__13LightningTreeP4Moby.c
 shared	Spawn__13LightningTreeP4MobyPC19LightningTreeConfig	Spawn__13LightningTreeP4MobyPC19LightningTreeConfig	function	276	21	0	21	LEVEL1.REL:0x127060	
 shared	LightningTree_Spawn__FP4MobyPC19LightningTreeConfig	LightningTree_Spawn__FP4MobyPC19LightningTreeConfig	function	124	21	0	21	LEVEL1.REL:0x127178	
 shared	CalculateBranches__13LightningTree	CalculateBranches__13LightningTree	function	2540	21	0	21	LEVEL1.REL:0x1271F8	
@@ -10030,7 +10030,7 @@ shared	KillEffect__8MobyGlowP4Moby	KillEffect__8MobyGlowP4Moby	function	24	13	0	
 shared	PostAnimCallback__8MobyGlowP4Moby	PostAnimCallback__8MobyGlowP4Moby	function	1376	13	0	13	LEVEL1.REL:0x1290E0	
 shared	func_L01_129640	func_L01_129640	function	8	19	19	19	LEVEL1.REL:0x129640	src/levels/shared/func_L01_129640.c
 shared	PostAnimCallback__11MobyShockedP4Moby	PostAnimCallback__11MobyShockedP4Moby	function	1416	22	0	22	LEVEL1.REL:0x129648	
-shared	KillEffect__11MobyShockedP4Moby	KillEffect__11MobyShockedP4Moby	function	16	22	0	22	LEVEL1.REL:0x129BD0	
+shared	KillEffect__11MobyShockedP4Moby	KillEffect__11MobyShockedP4Moby	function	16	22	22	22	LEVEL1.REL:0x129BD0	src/levels/shared/KillEffect__11MobyShockedP4Moby.c
 shared	Spawn__11MobyShockedP4MobyPC17MobyShockedConfigfUiP6PLAYER18MobyDamageStrengthbT1	Spawn__11MobyShockedP4MobyPC17MobyShockedConfigfUiP6PLAYER18MobyDamageStrengthbT1	function	380	22	0	22	LEVEL1.REL:0x129BE0	
 shared	MobyShocked_Spawn__FP4MobyPC17MobyShockedConfigfUiP6PLAYER18MobyDamageStrengthT0b	MobyShocked_Spawn__FP4MobyPC17MobyShockedConfigfUiP6PLAYER18MobyDamageStrengthT0b	function	296	22	0	22	LEVEL1.REL:0x129D60	
 shared	MobyShocked_SpawnNoSparks__FP4MobyPC17MobyShockedConfigb	MobyShocked_SpawnNoSparks__FP4MobyPC17MobyShockedConfigb	function	148	22	0	22	LEVEL1.REL:0x129E88	
@@ -10056,7 +10056,7 @@ shared	Spawn__12TangleGrowthP7MATRIX4PC18TangleGrowthConfig	Spawn__12TangleGrowt
 shared	TangleGrowth_Spawn__FP7MATRIX4PC18TangleGrowthConfig	TangleGrowth_Spawn__FP7MATRIX4PC18TangleGrowthConfig	function	124	13	0	13	LEVEL1.REL:0x12B848	
 shared	func_L01_12B8C8	func_L01_12B8C8	function	8	19	19	19	LEVEL1.REL:0x12B8C8	src/levels/shared/func_L01_12B8C8.c
 shared	PostAnimCallback__8TeleportP4Moby	PostAnimCallback__8TeleportP4Moby	function	8	19	19	19	LEVEL1.REL:0x12B8D0	src/levels/shared/PostAnimCallback__8TeleportP4Moby.c
-shared	KillEffect__8TeleportP4Moby	KillEffect__8TeleportP4Moby	function	16	19	0	19	LEVEL1.REL:0x12B8D8	
+shared	KillEffect__8TeleportP4Moby	KillEffect__8TeleportP4Moby	function	16	19	19	19	LEVEL1.REL:0x12B8D8	src/levels/shared/KillEffect__8TeleportP4Moby.c
 shared	Spawn__8TeleportP4MobyPC14TeleportConfig	Spawn__8TeleportP4MobyPC14TeleportConfig	function	244	19	0	19	LEVEL1.REL:0x12B8E8	
 shared	Teleport_Spawn__FP4MobyPC14TeleportConfig	Teleport_Spawn__FP4MobyPC14TeleportConfig	function	124	19	0	19	LEVEL1.REL:0x12B9E0	
 shared	Update__8Teleport	Update__8Teleport	function	196	19	0	19	LEVEL1.REL:0x12BA60	
@@ -14873,7 +14873,7 @@ shared	KillEffect__9GooSplashP4Moby	KillEffect__9GooSplashP4Moby	function	24	10	
 shared	Spawn__9GooSplashP4MobyP7MATRIX4PC15GooSplashConfig	Spawn__9GooSplashP4MobyP7MATRIX4PC15GooSplashConfig	function	732	10	0	10	LEVEL3.REL:0x14A028	
 shared	SpawnDecal__9GooSplashiPC4VEC3T2PC15CollSurfaceInfoUi20GooSplashPuddleColor	SpawnDecal__9GooSplashiPC4VEC3T2PC15CollSurfaceInfoUi20GooSplashPuddleColor	function	628	10	0	10	LEVEL3.REL:0x14A308	
 shared	PostAnimCallback__12MobyBoneGlowP4Moby	PostAnimCallback__12MobyBoneGlowP4Moby	function	372	5	0	5	LEVEL3.REL:0x14CF60	
-shared	KillEffect__12MobyBoneGlowP4Moby	KillEffect__12MobyBoneGlowP4Moby	function	16	5	0	5	LEVEL3.REL:0x14D0D8	
+shared	KillEffect__12MobyBoneGlowP4Moby	KillEffect__12MobyBoneGlowP4Moby	function	16	5	5	5	LEVEL3.REL:0x14D0D8	src/levels/shared/KillEffect__12MobyBoneGlowP4Moby.c
 shared	Spawn__12MobyBoneGlowP4MobyPC18MobyBoneGlowConfig	Spawn__12MobyBoneGlowP4MobyPC18MobyBoneGlowConfig	function	208	5	0	5	LEVEL3.REL:0x14D0E8	
 shared	MobyBoneGlow_Spawn__FP4MobyPC18MobyBoneGlowConfig	MobyBoneGlow_Spawn__FP4MobyPC18MobyBoneGlowConfig	function	124	5	0	5	LEVEL3.REL:0x14D1B8	
 shared	PostAnimCallback__10MobyPoisonP4Moby	PostAnimCallback__10MobyPoisonP4Moby	function	508	5	0	5	LEVEL3.REL:0x14E570	
@@ -14901,7 +14901,7 @@ shared	PostAnimCallback__8TimeWarpP4Moby	PostAnimCallback__8TimeWarpP4Moby	funct
 shared	KillEffect__8TimeWarpP4Moby	KillEffect__8TimeWarpP4Moby	function	60	5	0	5	LEVEL3.REL:0x155368	
 shared	Spawn__8TimeWarpP4MobyPC14TimeWarpConfig	Spawn__8TimeWarpP4MobyPC14TimeWarpConfig	function	140	5	0	5	LEVEL3.REL:0x1553A8	
 shared	PostAnimCallback__12WalloperBurnP4Moby	PostAnimCallback__12WalloperBurnP4Moby	function	696	5	0	5	LEVEL3.REL:0x155440	
-shared	KillEffect__12WalloperBurnP4Moby	KillEffect__12WalloperBurnP4Moby	function	16	5	0	5	LEVEL3.REL:0x1556F8	
+shared	KillEffect__12WalloperBurnP4Moby	KillEffect__12WalloperBurnP4Moby	function	16	5	5	5	LEVEL3.REL:0x1556F8	src/levels/shared/KillEffect__12WalloperBurnP4Moby.c
 shared	Spawn__12WalloperBurnP4MobyPC18WalloperBurnConfig	Spawn__12WalloperBurnP4MobyPC18WalloperBurnConfig	function	120	5	0	5	LEVEL3.REL:0x155708	
 shared	WalloperBurn_Spawn__FP4MobyPC18WalloperBurnConfig	WalloperBurn_Spawn__FP4MobyPC18WalloperBurnConfig	function	124	5	0	5	LEVEL3.REL:0x155780	
 shared	func_L03_155800	func_L03_155800	function	36	5	0	5	LEVEL3.REL:0x155800	
@@ -22104,7 +22104,7 @@ shared	CanActivate__8GBM_Idle	CanActivate__8GBM_Idle	function	8	2	2	2	LEVEL20.RE
 21_shower	KillEffect__9CensorBarP4Moby	KillEffect__9CensorBarP4Moby	function	24	1	0	1	LEVEL21.REL:0x13E078	
 21_shower	Spawn__9CensorBarP4MobyPC15CensorBarConfig	Spawn__9CensorBarP4MobyPC15CensorBarConfig	function	52	1	0	1	LEVEL21.REL:0x13E090	
 21_shower	PostAnimCallback__10SoapSplashP4Moby	PostAnimCallback__10SoapSplashP4Moby	function	636	1	0	1	LEVEL21.REL:0x14B0E8	
-21_shower	KillEffect__10SoapSplashP4Moby	KillEffect__10SoapSplashP4Moby	function	16	1	0	1	LEVEL21.REL:0x14B368	
+21_shower	KillEffect__10SoapSplashP4Moby	KillEffect__10SoapSplashP4Moby	function	16	1	1	1	LEVEL21.REL:0x14B368	src/levels/21_shower/KillEffect__10SoapSplashP4Moby.c
 21_shower	Spawn__10SoapSplashP4MobyPC16SoapSplashConfig	Spawn__10SoapSplashP4MobyPC16SoapSplashConfig	function	72	1	0	1	LEVEL21.REL:0x14B378	
 21_shower	SoapSplash_Spawn__FP4MobyPC16SoapSplashConfig	SoapSplash_Spawn__FP4MobyPC16SoapSplashConfig	function	256	1	0	1	LEVEL21.REL:0x14B3C0	
 21_shower	EngineRing_Emit__FUiPC17EngineRing_ConfigPC4VEC3N22P4MobyUif_L21	EngineRing_Emit__FUiPC17EngineRing_ConfigPC4VEC3N22P4MobyUif	function	2548	1	0	1	LEVEL21.REL:0x1652E8	
