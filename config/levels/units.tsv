@@ -12037,7 +12037,7 @@ shared	PLAYER_SetStrafeAnim__FP6PLAYERPC16StrafeAnimations	PLAYER_SetStrafeAnim_
 shared	PLAYER_RefreshActionButtonsDebounce__Fv	PLAYER_RefreshActionButtonsDebounce__Fv	function	16	30	0	30	LEVEL1.REL:0x1808A8	
 shared	PLAYER_UpdateControlsNormal_Analog__FP6PLAYER	PLAYER_UpdateControlsNormal_Analog__FP6PLAYER	function	304	30	0	30	LEVEL1.REL:0x1808B8	
 shared	PLAYER_FaceDamager__FP6PLAYERff	PLAYER_FaceDamager__FP6PLAYERff	function	296	30	0	30	LEVEL1.REL:0x1809E8	
-shared	PLAYER_GetEffectManager__FP4Moby	PLAYER_GetEffectManager__FP4Moby	function	16	30	0	30	LEVEL1.REL:0x180B10	
+shared	PLAYER_GetEffectManager__FP4Moby	PLAYER_GetEffectManager__FP4Moby	function	16	30	30	30	LEVEL1.REL:0x180B10	src/levels/shared/PLAYER_GetEffectManager__FP4Moby.c
 shared	HEALTHUP_InitOnce__Fv	HEALTHUP_InitOnce__Fv	function	32	30	0	30	LEVEL1.REL:0x180B20	
 shared	HEALTHUP_Start__FP6PLAYER	HEALTHUP_Start__FP6PLAYER	function	36	30	0	30	LEVEL1.REL:0x180B40	
 shared	HEALTHUP_SparkSprite_Update__FP8Particle	HEALTHUP_SparkSprite_Update__FP8Particle	function	72	30	0	30	LEVEL1.REL:0x180B68	
@@ -12422,7 +12422,7 @@ shared	GetStealthTakedownState__C11EnemyPatrol	GetStealthTakedownState__C11Enemy
 shared	HitEnd__11EnemyPatrol	HitEnd__11EnemyPatrol	function	8	15	15	15	LEVEL1.REL:0x2379D0	src/levels/shared/HitEnd__11EnemyPatrol.c
 shared	CanActivate__18BasicActivatedIdle	CanActivate__18BasicActivatedIdle	function	8	18	18	18	LEVEL1.REL:0x2379D8	src/levels/shared/CanActivate__18BasicActivatedIdle.c
 shared	GetTransientDataSize__18BasicActivatedIdle	GetTransientDataSize__18BasicActivatedIdle	function	8	18	18	18	LEVEL1.REL:0x2379E0	src/levels/shared/GetTransientDataSize__18BasicActivatedIdle.c
-shared	Activate__18BasicActivatedIdleb	Activate__18BasicActivatedIdleb	function	16	18	0	18	LEVEL1.REL:0x2379E8	
+shared	Activate__18BasicActivatedIdleb	Activate__18BasicActivatedIdleb	function	16	18	18	18	LEVEL1.REL:0x2379E8	src/levels/shared/Activate__18BasicActivatedIdleb.c
 shared	IsActive__18BasicActivatedIdle	IsActive__18BasicActivatedIdle	function	20	18	0	18	LEVEL1.REL:0x2379F8	
 shared	CanActivate__19BasicFireProjectile	CanActivate__19BasicFireProjectile	function	8	18	18	18	LEVEL1.REL:0x237A10	src/levels/shared/CanActivate__19BasicFireProjectile.c
 shared	GetTransientDataSize__19BasicFireProjectile	GetTransientDataSize__19BasicFireProjectile	function	8	18	18	18	LEVEL1.REL:0x237A18	src/levels/shared/GetTransientDataSize__19BasicFireProjectile.c
@@ -18034,7 +18034,7 @@ shared	func_L10_0D6AF8	func_L10_0D6AF8	function	36	2	0	2	LEVEL10.REL:0x0D6AF8
 10_carnival	Begin__23KingpinState_FollowJack	Begin__23KingpinState_FollowJack	function	816	1	0	1	LEVEL10.REL:0x0EC478	
 10_carnival	ChangeSubstate__23KingpinState_FollowJackUi	ChangeSubstate__23KingpinState_FollowJackUi	function	152	1	0	1	LEVEL10.REL:0x0EC7A8	
 10_carnival	Update__23KingpinState_FollowJackf	Update__23KingpinState_FollowJackf	function	516	1	0	1	LEVEL10.REL:0x0EC840	
-10_carnival	SetJackNode__23KingpinState_FollowJackUc	SetJackNode__23KingpinState_FollowJackUc	function	16	1	0	1	LEVEL10.REL:0x0ECA48	
+10_carnival	SetJackNode__23KingpinState_FollowJackUc	SetJackNode__23KingpinState_FollowJackUc	function	16	1	1	1	LEVEL10.REL:0x0ECA48	src/levels/10_carnival/SetJackNode__23KingpinState_FollowJackUc.c
 10_carnival	Begin__17KingpinState_Idle	Begin__17KingpinState_Idle	function	68	1	0	1	LEVEL10.REL:0x0ECA58	
 10_carnival	Init__17KingpinState_IdleUiUiP5State	Init__17KingpinState_IdleUiUiP5State	function	316	1	0	1	LEVEL10.REL:0x0ECAA0	
 10_carnival	GetIdleType__17KingpinState_Idle	GetIdleType__17KingpinState_Idle	function	16	1	1	1	LEVEL10.REL:0x0ECBE0	src/levels/10_carnival/GetIdleType__17KingpinState_Idle.c
@@ -24833,7 +24833,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	BossArena_FixLinks__FP4Moby	BossArena_FixLinks__FP4Moby	function	36	1	0	1	LEVEL30.REL:0x0BEA20	
 30_boss	CLANK_MissionFailedScreenColor__Ff_L30	CLANK_MissionFailedScreenColor__Ff	function	128	1	0	1	LEVEL30.REL:0x0C8F38	
 30_boss	FinalBossFightController_Init__FP4Moby	FinalBossFightController_Init__FP4Moby	function	380	1	0	1	LEVEL30.REL:0x0D2980	
-30_boss	FinalBossFightController_GetArenaCenterLocation__FP4Moby_L30	FinalBossFightController_GetArenaCenterLocation__FP4Moby	function	16	1	0	1	LEVEL30.REL:0x0D2B00	
+30_boss	FinalBossFightController_GetArenaCenterLocation__FP4Moby_L30	FinalBossFightController_GetArenaCenterLocation__FP4Moby	function	16	1	1	1	LEVEL30.REL:0x0D2B00	src/levels/30_boss/FinalBossFightController_GetArenaCenterLocation__FP4Moby_L30.c
 30_boss	FinalBossFightController_Term__FP4Moby	FinalBossFightController_Term__FP4Moby	function	36	1	0	1	LEVEL30.REL:0x0D2B10	
 30_boss	FinalBossFightController_Update__FP4Mobyf	FinalBossFightController_Update__FP4Mobyf	function	340	1	0	1	LEVEL30.REL:0x0D2B38	
 30_boss	FinalBossFightController_NotifySuitDefeated__FP4Moby_L30	FinalBossFightController_NotifySuitDefeated__FP4Moby	function	88	1	0	1	LEVEL30.REL:0x0D2C90	
