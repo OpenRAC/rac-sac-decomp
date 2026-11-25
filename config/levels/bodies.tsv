@@ -123566,3 +123566,6 @@ LEVEL27.REL	0x1D8D70	16	src/levels/shared/Enter__13GCP_WalkStateP16GiantClankPla
 LEVEL31.REL	0x0D5240	16	src/levels/31_treehouse/FoamMissile_Launch__FP4Moby_L31.c
 LEVEL16.REL	0x243268	16	src/levels/16_lab/Init__13Amoeboid_BitePC22ConditionalMeleeConfigP5State.c
 LEVEL16.REL	0x243330	16	src/levels/16_lab/Init__19AmoeboidSmall_MeleePC22ConditionalMeleeConfigP5State.c
+LEVEL9.REL	0x0BB658	16	src/levels/09_cafeteria/Arena2CartKnives_Init__FP4Moby.c
+LEVEL15.REL	0x0BD310	16	src/levels/15_highstakes/CardGameHat_Init__FP4Moby.c
+LEVEL23.REL	0x0D2FD8	16	src/levels/23_qwark/PirateCannonShot_Init__FP4Moby.c
