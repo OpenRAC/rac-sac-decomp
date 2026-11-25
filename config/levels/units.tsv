@@ -4676,7 +4676,7 @@ shared	RootElement__C13TiXmlDocument	RootElement__C13TiXmlDocument	function	28	3
 shared	RootElement__13TiXmlDocument	RootElement__13TiXmlDocument	function	28	31	0	31	FE.REL:0x0D9068	
 shared	Error__C13TiXmlDocument	Error__C13TiXmlDocument	function	12	31	31	31	FE.REL:0x0D9088	src/levels/shared/Error__C13TiXmlDocument.c
 shared	ErrorDesc__C13TiXmlDocument	ErrorDesc__C13TiXmlDocument	function	28	31	0	31	FE.REL:0x0D9098	
-shared	ErrorId__C13TiXmlDocument	ErrorId__C13TiXmlDocument	function	16	31	0	31	FE.REL:0x0D90B8	
+shared	ErrorId__C13TiXmlDocument	ErrorId__C13TiXmlDocument	function	16	31	31	31	FE.REL:0x0D90B8	src/levels/shared/ErrorId__C13TiXmlDocument.c
 shared	ErrorRow__C13TiXmlDocument	ErrorRow__C13TiXmlDocument	function	12	31	31	31	FE.REL:0x0D90C8	src/levels/shared/ErrorRow__C13TiXmlDocument.c
 shared	ErrorCol__C13TiXmlDocument	ErrorCol__C13TiXmlDocument	function	12	31	31	31	FE.REL:0x0D90D8	src/levels/shared/ErrorCol__C13TiXmlDocument.c
 shared	ClearError__13TiXmlDocument	ClearError__13TiXmlDocument	function	36	31	0	31	FE.REL:0x0D90E8	
@@ -5647,7 +5647,7 @@ shared	GetNode__11ApeFreeListPv	GetNode__11ApeFreeListPv	function	8	31	0	31	FE.R
 shared	GetNumUsed__C11ApeFreeList	GetNumUsed__C11ApeFreeList	function	8	31	31	31	FE.REL:0x0EA648	src/levels/shared/GetNumUsed__C11ApeFreeList.c
 shared	SetRTTI__10ApeBaseObj15ApeEBaseObjType	SetRTTI__10ApeBaseObj15ApeEBaseObjType	function	36	31	0	31	FE.REL:0x0EA650	
 shared	SetWorldResourceID__10ApeBaseObjUi	SetWorldResourceID__10ApeBaseObjUi	function	36	31	0	31	FE.REL:0x0EA678	
-shared	GetWorldResourceID__C10ApeBaseObj	GetWorldResourceID__C10ApeBaseObj	function	16	31	0	31	FE.REL:0x0EA6A0	
+shared	GetWorldResourceID__C10ApeBaseObj	GetWorldResourceID__C10ApeBaseObj	function	16	31	31	31	FE.REL:0x0EA6A0	src/levels/shared/GetWorldResourceID__C10ApeBaseObj.c
 shared	GetUniqueID__C10ApeBaseObj	GetUniqueID__C10ApeBaseObj	function	20	31	0	31	FE.REL:0x0EA6B0	
 shared	__10ApeBaseObj15ApeEBaseObjType	__10ApeBaseObj15ApeEBaseObjType	function	160	31	0	31	FE.REL:0x0EA6C8	
 shared	GetTagData__10ApeBaseObj	GetTagData__10ApeBaseObj	function	8	31	31	31	FE.REL:0x0EA768	src/levels/shared/GetTagData__10ApeBaseObj.c
