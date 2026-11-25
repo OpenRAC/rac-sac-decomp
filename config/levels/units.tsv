@@ -15638,7 +15638,7 @@ shared	GadgetBot_GetTargetPos__FP4MobyP4VEC2_L04	GadgetBot_GetTargetPos__FP4Moby
 shared	GadgetBot_PostReset__FP8MobyType	GadgetBot_PostReset__FP8MobyType	function	72	4	0	4	LEVEL4.REL:0x0E6450	
 shared	GadgetBot_UpdateFollowLogic__FP4MobyPfP4VEC3	GadgetBot_UpdateFollowLogic__FP4MobyPfP4VEC3	function	1032	4	0	4	LEVEL4.REL:0x0E6498	
 shared	OnPlayerLeave__14GadgetBotState	OnPlayerLeave__14GadgetBotState	function	40	4	0	4	LEVEL4.REL:0x0E68A0	
-shared	OnPlayerPossess__14GadgetBotState	OnPlayerPossess__14GadgetBotState	function	20	4	0	4	LEVEL4.REL:0x0E68C8	
+shared	OnPlayerPossess__14GadgetBotState	OnPlayerPossess__14GadgetBotState	function	20	4	4	4	LEVEL4.REL:0x0E68C8	src/levels/shared/OnPlayerPossess__14GadgetBotState.c
 shared	CanActivate__13GadgetBotWait	CanActivate__13GadgetBotWait	function	28	4	0	4	LEVEL4.REL:0x0E68E0	
 shared	Begin__12GBP_OnGround	Begin__12GBP_OnGround	function	40	4	0	4	LEVEL4.REL:0x0E6900	
 shared	Setup__12GBP_OnGround	Setup__12GBP_OnGround	function	8	4	4	4	LEVEL4.REL:0x0E6928	src/levels/shared/Setup__12GBP_OnGround.c
@@ -15672,10 +15672,10 @@ shared	CanActivate__21GadgetBotControlStack	CanActivate__21GadgetBotControlStack
 shared	Begin__21GadgetBotControlStack	Begin__21GadgetBotControlStack	function	72	4	0	4	LEVEL4.REL:0x0E9380	
 shared	Update__21GadgetBotControlStackf	Update__21GadgetBotControlStackf	function	1076	4	0	4	LEVEL4.REL:0x0E93C8	
 shared	GetDesiredState__21GadgetBotControlStack	GetDesiredState__21GadgetBotControlStack	function	224	4	0	4	LEVEL4.REL:0x0E9800	
-shared	OnPlayerLeave__21GadgetBotControlStack	OnPlayerLeave__21GadgetBotControlStack	function	20	4	0	4	LEVEL4.REL:0x0E98E0	
+shared	OnPlayerLeave__21GadgetBotControlStack	OnPlayerLeave__21GadgetBotControlStack	function	20	4	4	4	LEVEL4.REL:0x0E98E0	src/levels/shared/OnPlayerLeave__21GadgetBotControlStack.c
 shared	RequestStackBreak__21GadgetBotControlStack	RequestStackBreak__21GadgetBotControlStack	function	20	4	0	4	LEVEL4.REL:0x0E98F8	
 shared	Update__16GadgetBotOnStackf	Update__16GadgetBotOnStackf	function	400	4	0	4	LEVEL4.REL:0x0E9910	
-shared	OnPlayerPossess__16GadgetBotOnStack	OnPlayerPossess__16GadgetBotOnStack	function	20	4	0	4	LEVEL4.REL:0x0E9AA0	
+shared	OnPlayerPossess__16GadgetBotOnStack	OnPlayerPossess__16GadgetBotOnStack	function	20	4	4	4	LEVEL4.REL:0x0E9AA0	src/levels/shared/OnPlayerPossess__16GadgetBotOnStack.c
 shared	GetDesiredState__16GadgetBotOnStack	GetDesiredState__16GadgetBotOnStack	function	44	4	0	4	LEVEL4.REL:0x0E9AB8	
 shared	HandleDamage__16GadgetBotOnStackf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__16GadgetBotOnStackf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	116	4	0	4	LEVEL4.REL:0x0E9AE8	
 shared	CanActivate__15GadgetBotFollow	CanActivate__15GadgetBotFollow	function	24	4	0	4	LEVEL4.REL:0x0E9B60	
@@ -15705,15 +15705,15 @@ shared	CanActivate__14GadgetBotDeath	CanActivate__14GadgetBotDeath	function	8	4	
 shared	Begin__14GadgetBotDeath	Begin__14GadgetBotDeath	function	164	4	0	4	LEVEL4.REL:0x0EAE30	
 shared	Update__14GadgetBotDeathf	Update__14GadgetBotDeathf	function	308	4	0	4	LEVEL4.REL:0x0EAED8	
 shared	GetDesiredState__14GadgetBotDeath	GetDesiredState__14GadgetBotDeath	function	96	4	0	4	LEVEL4.REL:0x0EB010	
-shared	OnPlayerLeave__14GadgetBotDeath	OnPlayerLeave__14GadgetBotDeath	function	20	4	0	4	LEVEL4.REL:0x0EB070	
-shared	OnPlayerPossess__14GadgetBotDeath	OnPlayerPossess__14GadgetBotDeath	function	20	4	0	4	LEVEL4.REL:0x0EB088	
+shared	OnPlayerLeave__14GadgetBotDeath	OnPlayerLeave__14GadgetBotDeath	function	20	4	4	4	LEVEL4.REL:0x0EB070	src/levels/shared/OnPlayerLeave__14GadgetBotDeath.c
+shared	OnPlayerPossess__14GadgetBotDeath	OnPlayerPossess__14GadgetBotDeath	function	20	4	4	4	LEVEL4.REL:0x0EB088	src/levels/shared/OnPlayerPossess__14GadgetBotDeath.c
 shared	HandleDamage__14GadgetBotDeathf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__14GadgetBotDeathf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	124	4	0	4	LEVEL4.REL:0x0EB0A0	
 shared	isDead__14GadgetBotDeath	isDead__14GadgetBotDeath	function	52	4	0	4	LEVEL4.REL:0x0EB120	
 shared	CanActivate__9GBP_Wheel	CanActivate__9GBP_Wheel	function	28	4	0	4	LEVEL4.REL:0x0EB158	
 shared	Begin__9GBP_Wheel	Begin__9GBP_Wheel	function	144	4	0	4	LEVEL4.REL:0x0EB178	
 shared	Update__9GBP_Wheelf	Update__9GBP_Wheelf	function	3512	4	0	4	LEVEL4.REL:0x0EB208	
 shared	GetDesiredState__9GBP_Wheel	GetDesiredState__9GBP_Wheel	function	56	4	0	4	LEVEL4.REL:0x0EBFC0	
-shared	OnPlayerLeave__9GBP_Wheel	OnPlayerLeave__9GBP_Wheel	function	20	4	0	4	LEVEL4.REL:0x0EBFF8	
+shared	OnPlayerLeave__9GBP_Wheel	OnPlayerLeave__9GBP_Wheel	function	20	4	4	4	LEVEL4.REL:0x0EBFF8	src/levels/shared/OnPlayerLeave__9GBP_Wheel.c
 shared	Activate__9GBP_WheelP4MobyPC4VEC3	Activate__9GBP_WheelP4MobyPC4VEC3	function	200	4	0	4	LEVEL4.REL:0x0EC010	
 shared	GetWheelPos__9GBP_WheelP4VEC3	GetWheelPos__9GBP_WheelP4VEC3	function	156	4	0	4	LEVEL4.REL:0x0EC0D8	
 shared	GetSpeed__9GBP_Wheel	GetSpeed__9GBP_Wheel	function	56	4	0	4	LEVEL4.REL:0x0EC178	
@@ -15740,7 +15740,7 @@ shared	FindLever__13GBP_BiteLeverb	FindLever__13GBP_BiteLeverb	function	528	4	0	
 shared	ReleaseLeverIfPossible__13GBP_BiteLever	ReleaseLeverIfPossible__13GBP_BiteLever	function	68	4	0	4	LEVEL4.REL:0x0ED128	
 shared	Begin__18GadgetBotHoldLever	Begin__18GadgetBotHoldLever	function	48	4	0	4	LEVEL4.REL:0x0ED170	
 shared	CanActivate__18GadgetBotHoldLever	CanActivate__18GadgetBotHoldLever	function	8	4	4	4	LEVEL4.REL:0x0ED1A0	src/levels/shared/CanActivate__18GadgetBotHoldLever.c
-shared	OnPlayerPossess__18GadgetBotHoldLever	OnPlayerPossess__18GadgetBotHoldLever	function	20	4	0	4	LEVEL4.REL:0x0ED1A8	
+shared	OnPlayerPossess__18GadgetBotHoldLever	OnPlayerPossess__18GadgetBotHoldLever	function	20	4	4	4	LEVEL4.REL:0x0ED1A8	src/levels/shared/OnPlayerPossess__18GadgetBotHoldLever.c
 shared	Update__18GadgetBotHoldLeverf	Update__18GadgetBotHoldLeverf	function	128	4	0	4	LEVEL4.REL:0x0ED1C0	
 shared	GetDesiredState__18GadgetBotHoldLever	GetDesiredState__18GadgetBotHoldLever	function	96	4	0	4	LEVEL4.REL:0x0ED240	
 shared	OnCommandGiven__18GadgetBotHoldLeverUi	OnCommandGiven__18GadgetBotHoldLeverUi	function	116	4	0	4	LEVEL4.REL:0x0ED2A0	
