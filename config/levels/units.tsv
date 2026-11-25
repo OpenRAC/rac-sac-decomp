@@ -7093,7 +7093,7 @@ shared	GetPos__20APEGDE_BoneComponent	GetPos__20APEGDE_BoneComponent	function	16
 shared	GetScale__20APEGDE_BoneComponent	GetScale__20APEGDE_BoneComponent	function	160	30	0	30	LEVEL1.REL:0x04C050	
 shared	GetRot__20APEGDE_BoneComponent	GetRot__20APEGDE_BoneComponent	function	232	30	0	30	LEVEL1.REL:0x04C0F0	
 shared	SetBone__20APEGDE_BoneComponentP7ApeBone	SetBone__20APEGDE_BoneComponentP7ApeBone	function	152	30	0	30	LEVEL1.REL:0x04C1D8	
-shared	GetHash__20APEGDE_BoneComponent	GetHash__20APEGDE_BoneComponent	function	16	30	0	30	LEVEL1.REL:0x04C270	
+shared	GetHash__20APEGDE_BoneComponent	GetHash__20APEGDE_BoneComponent	function	16	30	30	30	LEVEL1.REL:0x04C270	src/levels/shared/GetHash__20APEGDE_BoneComponent.c
 shared	AnimTranslator_Init__FP14AnimTranslatori	AnimTranslator_Init__FP14AnimTranslatori	function	144	30	0	30	LEVEL1.REL:0x04C280	
 shared	AnimTranslator_Start__FP14AnimTranslatorb	AnimTranslator_Start__FP14AnimTranslatorb	function	36	30	0	30	LEVEL1.REL:0x04C310	
 shared	AnimTranslator_Stop__FP14AnimTranslator	AnimTranslator_Stop__FP14AnimTranslator	function	16	30	0	30	LEVEL1.REL:0x04C338	
@@ -8645,7 +8645,7 @@ shared	Begin__8Disguise	Begin__8Disguise	function	108	14	0	14	LEVEL1.REL:0x0C3E8
 shared	Init__8DisguisePC19ClankDisguiseParamsP4Moby	Init__8DisguisePC19ClankDisguiseParamsP4Moby	function	196	14	0	14	LEVEL1.REL:0x0C3EF8	
 shared	Update__8Disguisef	Update__8Disguisef	function	296	14	0	14	LEVEL1.REL:0x0C3FC0	
 shared	RemoveDisguise__8Disguise	RemoveDisguise__8Disguise	function	192	14	0	14	LEVEL1.REL:0x0C40E8	
-shared	GetDisguiseSubstate__8Disguise	GetDisguiseSubstate__8Disguise	function	16	14	0	14	LEVEL1.REL:0x0C41A8	
+shared	GetDisguiseSubstate__8Disguise	GetDisguiseSubstate__8Disguise	function	16	14	14	14	LEVEL1.REL:0x0C41A8	src/levels/shared/GetDisguiseSubstate__8Disguise.c
 shared	CanActivate__8Disguise	CanActivate__8Disguise	function	8	14	14	14	LEVEL1.REL:0x0C41B8	src/levels/shared/CanActivate__8Disguise.c
 shared	PostAnimCallback__8DisguiseP4Moby	PostAnimCallback__8DisguiseP4Moby	function	144	14	0	14	LEVEL1.REL:0x0C41C0	
 shared	End__8Disguise	End__8Disguise	function	60	14	0	14	LEVEL1.REL:0x0C4250	
@@ -16073,7 +16073,7 @@ shared	Puddle_Update__FP4Mobyf	Puddle_Update__FP4Mobyf	function	8	2	2	2	LEVEL4.R
 04_skyscrapers	Update__15NinjaGoToTargetf	Update__15NinjaGoToTargetf	function	1192	1	0	1	LEVEL4.REL:0x1147D8	
 04_skyscrapers	Begin__15NinjaGoToTarget	Begin__15NinjaGoToTarget	function	132	1	0	1	LEVEL4.REL:0x114C80	
 04_skyscrapers	End__15NinjaGoToTarget	End__15NinjaGoToTarget	function	8	1	1	1	LEVEL4.REL:0x114D08	src/levels/04_skyscrapers/End__15NinjaGoToTarget.c
-04_skyscrapers	GetDesiredState__15NinjaGoToTarget	GetDesiredState__15NinjaGoToTarget	function	16	1	0	1	LEVEL4.REL:0x114D10	
+04_skyscrapers	GetDesiredState__15NinjaGoToTarget	GetDesiredState__15NinjaGoToTarget	function	16	1	1	1	LEVEL4.REL:0x114D10	src/levels/04_skyscrapers/GetDesiredState__15NinjaGoToTarget.c
 04_skyscrapers	SwitchSubtate__15NinjaGoToTarget23NinjaGoToTargetSubState	SwitchSubtate__15NinjaGoToTarget23NinjaGoToTargetSubState	function	84	1	0	1	LEVEL4.REL:0x114D20	
 04_skyscrapers	func_L04_114D74	func_L04_114D74	function	52	1	0	1	LEVEL4.REL:0x114D74	
 04_skyscrapers	func_L04_114DA8	func_L04_114DA8	function	112	1	0	1	LEVEL4.REL:0x114DA8	
@@ -16218,19 +16218,19 @@ shared	HenchbotShared_PlayExplodeSound__FP4Mobyb	HenchbotShared_PlayExplodeSound
 shared	HenchbotShared_TypeInit__FP8MobyType	HenchbotShared_TypeInit__FP8MobyType	function	60	5	0	5	LEVEL4.REL:0x14FBF8	
 shared	Begin__18HenchbotGoToTarget	Begin__18HenchbotGoToTarget	function	80	5	0	5	LEVEL4.REL:0x14FC38	
 shared	End__18HenchbotGoToTarget	End__18HenchbotGoToTarget	function	44	5	0	5	LEVEL4.REL:0x14FC88	
-shared	GetDesiredState__18HenchbotGoToTarget	GetDesiredState__18HenchbotGoToTarget	function	16	5	0	5	LEVEL4.REL:0x14FCB8	
+shared	GetDesiredState__18HenchbotGoToTarget	GetDesiredState__18HenchbotGoToTarget	function	16	5	5	5	LEVEL4.REL:0x14FCB8	src/levels/shared/GetDesiredState__18HenchbotGoToTarget.c
 shared	Update__18HenchbotGoToTargetf	Update__18HenchbotGoToTargetf	function	488	5	0	5	LEVEL4.REL:0x14FCC8	
 shared	SwitchSubstate__18HenchbotGoToTarget26HenchbotGoToTargetSubstate	SwitchSubstate__18HenchbotGoToTarget26HenchbotGoToTargetSubstate	function	344	5	0	5	LEVEL4.REL:0x14FEB0	
 shared	SetMoveSubstate__18HenchbotGoToTarget	SetMoveSubstate__18HenchbotGoToTarget	function	128	5	0	5	LEVEL4.REL:0x150008	
 shared	GetChaseStatus__18HenchbotGoToTarget	GetChaseStatus__18HenchbotGoToTarget	function	104	5	0	5	LEVEL4.REL:0x150088	
 shared	Init__18HenchbotGoToTargetPC24HenchbotGoToTargetConfigP8NavigateP5StateT3P4MobyUi	Init__18HenchbotGoToTargetPC24HenchbotGoToTargetConfigP8NavigateP5StateT3P4MobyUi	function	48	5	0	5	LEVEL4.REL:0x1500F0	
 shared	Begin__18HenchbotFollowPath	Begin__18HenchbotFollowPath	function	448	5	0	5	LEVEL4.REL:0x150120	
-shared	GetDesiredState__18HenchbotFollowPath	GetDesiredState__18HenchbotFollowPath	function	16	5	0	5	LEVEL4.REL:0x1502E0	
+shared	GetDesiredState__18HenchbotFollowPath	GetDesiredState__18HenchbotFollowPath	function	16	5	5	5	LEVEL4.REL:0x1502E0	src/levels/shared/GetDesiredState__18HenchbotFollowPath.c
 shared	Update__18HenchbotFollowPathf	Update__18HenchbotFollowPathf	function	584	5	0	5	LEVEL4.REL:0x1502F0	
 shared	HitEnd__18HenchbotFollowPath	HitEnd__18HenchbotFollowPath	function	20	5	0	5	LEVEL4.REL:0x150538	
 shared	Init__18HenchbotFollowPathPC17EnemyPatrolConfigPC24HenchbotGoToTargetConfigP5CurveP5StateP8NavigatePC14NavigateParamsUi	Init__18HenchbotFollowPathPC17EnemyPatrolConfigPC24HenchbotGoToTargetConfigP5CurveP5StateP8NavigatePC14NavigateParamsUi	function	76	5	0	5	LEVEL4.REL:0x150550	
 shared	Begin__13HenchbotStuck	Begin__13HenchbotStuck	function	72	5	0	5	LEVEL4.REL:0x1505A0	
-shared	GetDesiredState__13HenchbotStuck	GetDesiredState__13HenchbotStuck	function	16	5	0	5	LEVEL4.REL:0x1505E8	
+shared	GetDesiredState__13HenchbotStuck	GetDesiredState__13HenchbotStuck	function	16	5	5	5	LEVEL4.REL:0x1505E8	src/levels/shared/GetDesiredState__13HenchbotStuck.c
 shared	Update__13HenchbotStuckf	Update__13HenchbotStuckf	function	88	5	0	5	LEVEL4.REL:0x1505F8	
 shared	Init__13HenchbotStuckP5StateP8NavigatePC14NavigateParamsUi	Init__13HenchbotStuckP5StateP8NavigatePC14NavigateParamsUi	function	20	5	0	5	LEVEL4.REL:0x150650	
 shared	HenchbotShared_IsValidAnimMoveFrame__FP4Moby_L04	HenchbotShared_IsValidAnimMoveFrame__FP4Moby	function	124	4	0	4	LEVEL4.REL:0x150668	
@@ -16367,7 +16367,7 @@ shared	__16HenchbotAContent	__16HenchbotAContent	function	320	2	0	2	LEVEL4.REL:0
 shared	KillEffect__15OmniKeyLockItemP4Moby	KillEffect__15OmniKeyLockItemP4Moby	function	8	7	7	7	LEVEL4.REL:0x257130	src/levels/shared/KillEffect__15OmniKeyLockItemP4Moby.c
 04_skyscrapers	CanActivate__9NinjaSpar	CanActivate__9NinjaSpar	function	8	1	1	1	LEVEL4.REL:0x257138	src/levels/04_skyscrapers/CanActivate__9NinjaSpar.c
 04_skyscrapers	GetTransientDataSize__9NinjaSpar	GetTransientDataSize__9NinjaSpar	function	8	1	1	1	LEVEL4.REL:0x257140	src/levels/04_skyscrapers/GetTransientDataSize__9NinjaSpar.c
-04_skyscrapers	GetSubstate__9NinjaSpar	GetSubstate__9NinjaSpar	function	16	1	0	1	LEVEL4.REL:0x257148	
+04_skyscrapers	GetSubstate__9NinjaSpar	GetSubstate__9NinjaSpar	function	16	1	1	1	LEVEL4.REL:0x257148	src/levels/04_skyscrapers/GetSubstate__9NinjaSpar.c
 04_skyscrapers	GetTransientDataSize__15NinjaGoToTarget	GetTransientDataSize__15NinjaGoToTarget	function	8	1	1	1	LEVEL4.REL:0x257158	src/levels/04_skyscrapers/GetTransientDataSize__15NinjaGoToTarget.c
 04_skyscrapers	CanActivate__11NinjaDefend	CanActivate__11NinjaDefend	function	8	1	1	1	LEVEL4.REL:0x257160	src/levels/04_skyscrapers/CanActivate__11NinjaDefend.c
 04_skyscrapers	GetTransientDataSize__11NinjaDefend	GetTransientDataSize__11NinjaDefend	function	8	1	1	1	LEVEL4.REL:0x257168	src/levels/04_skyscrapers/GetTransientDataSize__11NinjaDefend.c
@@ -17377,7 +17377,7 @@ shared	VehicleObstacle_Update__FP4Mobyf	VehicleObstacle_Update__FP4Mobyf	functio
 shared	VehicleObstacle_MakeValidPos__FP4VEC3i_L08	VehicleObstacle_MakeValidPos__FP4VEC3i	function	216	3	0	3	LEVEL8.REL:0x0CAD00	
 shared	VehicleObstacle_ReactToObstaclesCollisionPos__FP4VEC3PPC4MobyPC4VEC3Uii_L08	VehicleObstacle_ReactToObstaclesCollisionPos__FP4VEC3PPC4MobyPC4VEC3Uii	function	436	3	0	3	LEVEL8.REL:0x0CADD8	
 shared	VehicleObstacle_ReactToObstacles__FP4VEC3PPC4MobyPC4VEC3UiT0_L08	VehicleObstacle_ReactToObstacles__FP4VEC3PPC4MobyPC4VEC3UiT0	function	520	3	0	3	LEVEL8.REL:0x0CAF90	
-shared	VehicleObstacle_GetReaction__FPC4Moby_L08	VehicleObstacle_GetReaction__FPC4Moby	function	16	3	0	3	LEVEL8.REL:0x0CB198	
+shared	VehicleObstacle_GetReaction__FPC4Moby_L08	VehicleObstacle_GetReaction__FPC4Moby	function	16	3	3	3	LEVEL8.REL:0x0CB198	src/levels/shared/VehicleObstacle_GetReaction__FPC4Moby_L08.c
 shared	VehicleObstacle_InPlayerReaction__FPC4MobyPC4VEC3T1_L08	VehicleObstacle_InPlayerReaction__FPC4MobyPC4VEC3T1	function	144	3	0	3	LEVEL8.REL:0x0CB1A8	
 shared	VehicleObstacle_MakeValidPos__FP4VEC3_L08	VehicleObstacle_MakeValidPos__FP4VEC3	function	188	3	0	3	LEVEL8.REL:0x0CB238	
 shared	VehicleObstacle_ClampOutsideObstacleBounds__FP4VEC3fi_L08	VehicleObstacle_ClampOutsideObstacleBounds__FP4VEC3fi	function	144	3	0	3	LEVEL8.REL:0x0CB2F8	
@@ -18037,10 +18037,10 @@ shared	func_L10_0D6AF8	func_L10_0D6AF8	function	36	2	0	2	LEVEL10.REL:0x0D6AF8
 10_carnival	SetJackNode__23KingpinState_FollowJackUc	SetJackNode__23KingpinState_FollowJackUc	function	16	1	0	1	LEVEL10.REL:0x0ECA48	
 10_carnival	Begin__17KingpinState_Idle	Begin__17KingpinState_Idle	function	68	1	0	1	LEVEL10.REL:0x0ECA58	
 10_carnival	Init__17KingpinState_IdleUiUiP5State	Init__17KingpinState_IdleUiUiP5State	function	316	1	0	1	LEVEL10.REL:0x0ECAA0	
-10_carnival	GetIdleType__17KingpinState_Idle	GetIdleType__17KingpinState_Idle	function	16	1	0	1	LEVEL10.REL:0x0ECBE0	
+10_carnival	GetIdleType__17KingpinState_Idle	GetIdleType__17KingpinState_Idle	function	16	1	1	1	LEVEL10.REL:0x0ECBE0	src/levels/10_carnival/GetIdleType__17KingpinState_Idle.c
 10_carnival	Update__17KingpinState_Idlef	Update__17KingpinState_Idlef	function	580	1	0	1	LEVEL10.REL:0x0ECBF0	
 10_carnival	Begin__21KingpinState_WalkPath	Begin__21KingpinState_WalkPath	function	252	1	0	1	LEVEL10.REL:0x0ECE38	
-10_carnival	GetWalkSpeed__21KingpinState_WalkPath	GetWalkSpeed__21KingpinState_WalkPath	function	16	1	0	1	LEVEL10.REL:0x0ECF38	
+10_carnival	GetWalkSpeed__21KingpinState_WalkPath	GetWalkSpeed__21KingpinState_WalkPath	function	16	1	1	1	LEVEL10.REL:0x0ECF38	src/levels/10_carnival/GetWalkSpeed__21KingpinState_WalkPath.c
 10_carnival	Update__21KingpinState_WalkPathf	Update__21KingpinState_WalkPathf	function	1076	1	0	1	LEVEL10.REL:0x0ECF48	
 10_carnival	Begin__23KingpinState_Suspicious	Begin__23KingpinState_Suspicious	function	60	1	0	1	LEVEL10.REL:0x0ED380	
 10_carnival	SetWanderCurve__23KingpinState_SuspiciousP5Curve	SetWanderCurve__23KingpinState_SuspiciousP5Curve	function	16	1	0	1	LEVEL10.REL:0x0ED3C0	
@@ -18753,7 +18753,7 @@ shared	GadgetTarget_GetTargetData__FUi	GadgetTarget_GetTargetData__FUi	function	
 11_gondola	HenchbotJack_InitType__FP8MobyType	HenchbotJack_InitType__FP8MobyType	function	80	1	0	1	LEVEL11.REL:0x0E2DF0	
 11_gondola	HenchbotJack_UpdateRotation__FP4Mobyf	HenchbotJack_UpdateRotation__FP4Mobyf	function	176	1	0	1	LEVEL11.REL:0x0E2E40	
 11_gondola	HenchbotJack_GetExtraContentSize__Fv	HenchbotJack_GetExtraContentSize__Fv	function	108	1	0	1	LEVEL11.REL:0x0E2EF0	
-11_gondola	GetDesiredState__14HenchbotLaunch	GetDesiredState__14HenchbotLaunch	function	16	1	0	1	LEVEL11.REL:0x0E2F60	
+11_gondola	GetDesiredState__14HenchbotLaunch	GetDesiredState__14HenchbotLaunch	function	16	1	1	1	LEVEL11.REL:0x0E2F60	src/levels/11_gondola/GetDesiredState__14HenchbotLaunch.c
 11_gondola	Begin__14HenchbotLaunch	Begin__14HenchbotLaunch	function	120	1	0	1	LEVEL11.REL:0x0E2F70	
 11_gondola	Update__14HenchbotLaunchf	Update__14HenchbotLaunchf	function	592	1	0	1	LEVEL11.REL:0x0E2FE8	
 11_gondola	Begin__17HenchbotJackDeath	Begin__17HenchbotJackDeath	function	208	1	0	1	LEVEL11.REL:0x0E3238	
