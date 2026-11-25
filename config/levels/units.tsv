@@ -806,9 +806,9 @@ shared	func_FE_01D79C	func_FE_01D79C	function	436	31	0	31	FE.REL:0x01D79C
 shared	func_FE_01D950	func_FE_01D950	function	472	31	0	31	FE.REL:0x01D950	
 shared	func_FE_01DB28	func_FE_01DB28	function	688	31	0	31	FE.REL:0x01DB28	
 shared	GetVertexFormatSize__14DrawObjManager15DRAW_VertFormat	GetVertexFormatSize__14DrawObjManager15DRAW_VertFormat	function	40	31	0	31	FE.REL:0x01DDD8	
-shared	func_FE_01DE00	func_FE_01DE00	function	8	31	0	31	FE.REL:0x01DE00	
+shared	func_FE_01DE00	func_FE_01DE00	function	8	31	31	31	FE.REL:0x01DE00	src/levels/shared/func_FE_01DE00.c
 shared	func_FE_01DE08	func_FE_01DE08	function	8	31	0	31	FE.REL:0x01DE08	
-shared	func_FE_01DE10	func_FE_01DE10	function	8	31	0	31	FE.REL:0x01DE10	
+shared	func_FE_01DE10	func_FE_01DE10	function	8	31	31	31	FE.REL:0x01DE10	src/levels/shared/func_FE_01DE10.c
 shared	func_FE_01DE18	func_FE_01DE18	function	8	31	0	31	FE.REL:0x01DE18	
 shared	func_FE_01DE20	func_FE_01DE20	function	16	31	0	31	FE.REL:0x01DE20	
 shared	IsUse3DDrawObjBaseOnMat__14DrawObjManagerUi	IsUse3DDrawObjBaseOnMat__14DrawObjManagerUi	function	48	31	0	31	FE.REL:0x01DE30	
@@ -1408,15 +1408,15 @@ shared	GAMEMAP_PaintFogArea__FP17HUD_BoundingBox16Ui	GAMEMAP_PaintFogArea__FP17H
 shared	GAMEMAP_GetFogLevelMultiplier__FUiUi	GAMEMAP_GetFogLevelMultiplier__FUiUi	function	40	31	0	31	FE.REL:0x03A320	
 shared	func_FE_03A348	func_FE_03A348	function	32	31	0	31	FE.REL:0x03A348	
 shared	func_FE_03A368	func_FE_03A368	function	32	31	0	31	FE.REL:0x03A368	
-shared	func_FE_03A388	func_FE_03A388	function	8	31	0	31	FE.REL:0x03A388	
+shared	func_FE_03A388	func_FE_03A388	function	8	31	31	31	FE.REL:0x03A388	src/levels/shared/func_FE_03A388.c
 shared	func_FE_03A390	func_FE_03A390	function	8	31	0	31	FE.REL:0x03A390	
 shared	func_FE_03A398	func_FE_03A398	function	8	31	0	31	FE.REL:0x03A398	
 shared	func_FE_03A3A0	func_FE_03A3A0	function	8	31	0	31	FE.REL:0x03A3A0	
-shared	func_FE_03A3A8	func_FE_03A3A8	function	8	31	0	31	FE.REL:0x03A3A8	
+shared	func_FE_03A3A8	func_FE_03A3A8	function	8	31	31	31	FE.REL:0x03A3A8	src/levels/shared/func_FE_03A3A8.c
 shared	func_FE_03A3B0	func_FE_03A3B0	function	8	31	0	31	FE.REL:0x03A3B0	
 shared	func_FE_03A3B8	func_FE_03A3B8	function	8	31	0	31	FE.REL:0x03A3B8	
 shared	func_FE_03A3C0	func_FE_03A3C0	function	8	31	0	31	FE.REL:0x03A3C0	
-shared	func_FE_03A3C8	func_FE_03A3C8	function	8	31	0	31	FE.REL:0x03A3C8	
+shared	func_FE_03A3C8	func_FE_03A3C8	function	8	31	31	31	FE.REL:0x03A3C8	src/levels/shared/func_FE_03A3C8.c
 shared	func_FE_03A3D0	func_FE_03A3D0	function	8	31	0	31	FE.REL:0x03A3D0	
 shared	func_FE_03A3D8	func_FE_03A3D8	function	8	31	31	31	FE.REL:0x03A3D8	src/levels/shared/func_FE_03A3D8.c
 shared	GAMEMAP_SetMapPixelTexture__FUsUsUi17eGAMEMAP_MAP_TYPE	GAMEMAP_SetMapPixelTexture__FUsUsUi17eGAMEMAP_MAP_TYPE	function	356	31	0	31	FE.REL:0x03A3E0	
@@ -2143,9 +2143,9 @@ shared	GAMELOCDBASE_UpdateImposeLangSettings__FUi	GAMELOCDBASE_UpdateImposeLangS
 shared	GAMELOCDBASE_TranslateGameToSystemLanguage__FUi	GAMELOCDBASE_TranslateGameToSystemLanguage__FUi	function	8	31	31	31	FE.REL:0x066378	src/levels/shared/GAMELOCDBASE_TranslateGameToSystemLanguage__FUi.c
 shared	GAMELOCDBASE_TranslateSystemToGameLanguage__Fi	GAMELOCDBASE_TranslateSystemToGameLanguage__Fi	function	40	31	0	31	FE.REL:0x066380	
 shared	func_FE_0663A8	func_FE_0663A8	function	8	31	31	31	FE.REL:0x0663A8	src/levels/shared/func_FE_0663A8.c
-shared	func_FE_0663B0	func_FE_0663B0	function	8	31	0	31	FE.REL:0x0663B0	
+shared	func_FE_0663B0	func_FE_0663B0	function	8	31	31	31	FE.REL:0x0663B0	src/levels/shared/func_FE_0663B0.c
 shared	func_FE_0663B8	func_FE_0663B8	function	8	31	31	31	FE.REL:0x0663B8	src/levels/shared/func_FE_0663B8.c
-shared	func_FE_0663C0	func_FE_0663C0	function	8	31	0	31	FE.REL:0x0663C0	
+shared	func_FE_0663C0	func_FE_0663C0	function	8	31	31	31	FE.REL:0x0663C0	src/levels/shared/func_FE_0663C0.c
 shared	func_FE_0663C8	func_FE_0663C8	function	8	31	0	31	FE.REL:0x0663C8	
 frontend	GAMELOCDBASE_ReloadLocDatabase__Fv_FE	GAMELOCDBASE_ReloadLocDatabase__Fv	function	132	1	0	1	FE.REL:0x0663D0	
 shared	MEMCARDCLIENT_GetMutexId__Fv	MEMCARDCLIENT_GetMutexId__Fv	function	16	31	0	31	FE.REL:0x066458	
@@ -8030,17 +8030,17 @@ shared	SCRNMAINMENU_SetMapOptionActiveAndShowingTo__FbT0	SCRNMAINMENU_SetMapOpti
 shared	SCRNMISSIONS_Update__Fv	SCRNMISSIONS_Update__Fv	function	288	30	0	30	LEVEL1.REL:0x09D680	
 shared	SCRNMISSIONS_Render__Fv	SCRNMISSIONS_Render__Fv	function	596	30	0	30	LEVEL1.REL:0x09D7A0	
 shared	CurrentBannerID__FUi	CurrentBannerID__FUi	function	40	30	0	30	LEVEL1.REL:0x09D9F8	
-shared	func_L01_09DA20	func_L01_09DA20	function	8	30	0	30	LEVEL1.REL:0x09DA20	
+shared	func_L01_09DA20	func_L01_09DA20	function	8	30	30	30	LEVEL1.REL:0x09DA20	src/levels/shared/func_L01_09DA20.c
 shared	func_L01_09DA28	func_L01_09DA28	function	8	30	0	30	LEVEL1.REL:0x09DA28	
 shared	func_L01_09DA30	func_L01_09DA30	function	8	30	0	30	LEVEL1.REL:0x09DA30	
 shared	func_L01_09DA38	func_L01_09DA38	function	8	30	0	30	LEVEL1.REL:0x09DA38	
 shared	func_L01_09DA40	func_L01_09DA40	function	8	30	0	30	LEVEL1.REL:0x09DA40	
-shared	func_L01_09DA48	func_L01_09DA48	function	8	30	0	30	LEVEL1.REL:0x09DA48	
+shared	func_L01_09DA48	func_L01_09DA48	function	8	30	30	30	LEVEL1.REL:0x09DA48	src/levels/shared/func_L01_09DA48.c
 shared	func_L01_09DA50	func_L01_09DA50	function	8	30	0	30	LEVEL1.REL:0x09DA50	
 shared	func_L01_09DA58	func_L01_09DA58	function	8	30	0	30	LEVEL1.REL:0x09DA58	
 shared	func_L01_09DA60	func_L01_09DA60	function	8	30	0	30	LEVEL1.REL:0x09DA60	
-shared	func_L01_09DA68	func_L01_09DA68	function	8	30	0	30	LEVEL1.REL:0x09DA68	
-shared	func_L01_09DA70	func_L01_09DA70	function	8	30	0	30	LEVEL1.REL:0x09DA70	
+shared	func_L01_09DA68	func_L01_09DA68	function	8	30	30	30	LEVEL1.REL:0x09DA68	src/levels/shared/func_L01_09DA68.c
+shared	func_L01_09DA70	func_L01_09DA70	function	8	30	30	30	LEVEL1.REL:0x09DA70	src/levels/shared/func_L01_09DA70.c
 shared	func_L01_09DA78	func_L01_09DA78	function	8	30	30	30	LEVEL1.REL:0x09DA78	src/levels/shared/func_L01_09DA78.c
 shared	func_L01_09DA80	func_L01_09DA80	function	8	30	30	30	LEVEL1.REL:0x09DA80	src/levels/shared/func_L01_09DA80.c
 shared	SCRNMISSIONS_InitTextureSlots__Fv	SCRNMISSIONS_InitTextureSlots__Fv	function	8	30	30	30	LEVEL1.REL:0x09DA88	src/levels/shared/SCRNMISSIONS_InitTextureSlots__Fv.c
@@ -8049,13 +8049,13 @@ shared	SCRNMISSIONS_Exit__Fv	SCRNMISSIONS_Exit__Fv	function	44	30	30	30	LEVEL1.R
 shared	func_L01_09DC50	func_L01_09DC50	function	416	30	0	30	LEVEL1.REL:0x09DC50	
 shared	ConvertBannerIDToTextureID__FUi	ConvertBannerIDToTextureID__FUi	function	40	30	0	30	LEVEL1.REL:0x09DDF0	
 shared	func_L01_09DE18	func_L01_09DE18	function	8	30	30	30	LEVEL1.REL:0x09DE18	src/levels/shared/func_L01_09DE18.c
-shared	func_L01_09DE20	func_L01_09DE20	function	8	30	0	30	LEVEL1.REL:0x09DE20	
+shared	func_L01_09DE20	func_L01_09DE20	function	8	30	30	30	LEVEL1.REL:0x09DE20	src/levels/shared/func_L01_09DE20.c
 shared	func_L01_09DE28	func_L01_09DE28	function	8	30	0	30	LEVEL1.REL:0x09DE28	
-shared	func_L01_09DE30	func_L01_09DE30	function	8	30	0	30	LEVEL1.REL:0x09DE30	
+shared	func_L01_09DE30	func_L01_09DE30	function	8	30	30	30	LEVEL1.REL:0x09DE30	src/levels/shared/func_L01_09DE30.c
 shared	func_L01_09DE38	func_L01_09DE38	function	8	30	0	30	LEVEL1.REL:0x09DE38	
 shared	func_L01_09DE40	func_L01_09DE40	function	8	30	0	30	LEVEL1.REL:0x09DE40	
 shared	func_L01_09DE48	func_L01_09DE48	function	8	30	0	30	LEVEL1.REL:0x09DE48	
-shared	func_L01_09DE50	func_L01_09DE50	function	8	30	0	30	LEVEL1.REL:0x09DE50	
+shared	func_L01_09DE50	func_L01_09DE50	function	8	30	30	30	LEVEL1.REL:0x09DE50	src/levels/shared/func_L01_09DE50.c
 shared	func_L01_09DE58	func_L01_09DE58	function	8	30	0	30	LEVEL1.REL:0x09DE58	
 shared	func_L01_09DE60	func_L01_09DE60	function	8	30	0	30	LEVEL1.REL:0x09DE60	
 shared	func_L01_09DE68	func_L01_09DE68	function	8	30	0	30	LEVEL1.REL:0x09DE68	
@@ -8635,7 +8635,7 @@ shared	Begin__15MissionFailFall	Begin__15MissionFailFall	function	72	14	0	14	LEV
 shared	Update__15MissionFailFallf	Update__15MissionFailFallf	function	448	14	0	14	LEVEL1.REL:0x0C3AB8	
 shared	SetFailData__15MissionFailFallP4Mobyi	SetFailData__15MissionFailFallP4Mobyi	function	20	14	0	14	LEVEL1.REL:0x0C3C78	
 shared	GetDesiredState__15MissionFailFall	GetDesiredState__15MissionFailFall	function	8	14	14	14	LEVEL1.REL:0x0C3C90	src/levels/shared/GetDesiredState__15MissionFailFall.c
-shared	GetTransientDataSize__15MissionFailFall	GetTransientDataSize__15MissionFailFall	function	8	14	0	14	LEVEL1.REL:0x0C3C98	
+shared	GetTransientDataSize__15MissionFailFall	GetTransientDataSize__15MissionFailFall	function	8	14	14	14	LEVEL1.REL:0x0C3C98	src/levels/shared/GetTransientDataSize__15MissionFailFall.c
 shared	Update__15ClankStrafeBackf	Update__15ClankStrafeBackf	function	248	14	0	14	LEVEL1.REL:0x0C3CA0	
 shared	Begin__10ClankPunch	Begin__10ClankPunch	function	80	14	0	14	LEVEL1.REL:0x0C3D98	
 shared	Update__10ClankPunchf	Update__10ClankPunchf	function	48	14	0	14	LEVEL1.REL:0x0C3DE8	
@@ -8650,7 +8650,7 @@ shared	CanActivate__8Disguise	CanActivate__8Disguise	function	8	14	14	14	LEVEL1.
 shared	PostAnimCallback__8DisguiseP4Moby	PostAnimCallback__8DisguiseP4Moby	function	144	14	0	14	LEVEL1.REL:0x0C41C0	
 shared	End__8Disguise	End__8Disguise	function	60	14	0	14	LEVEL1.REL:0x0C4250	
 shared	GetDesiredState__8Disguise	GetDesiredState__8Disguise	function	112	14	0	14	LEVEL1.REL:0x0C4290	
-shared	GetTransientDataSize__8Disguise	GetTransientDataSize__8Disguise	function	8	14	0	14	LEVEL1.REL:0x0C4300	
+shared	GetTransientDataSize__8Disguise	GetTransientDataSize__8Disguise	function	8	14	14	14	LEVEL1.REL:0x0C4300	src/levels/shared/GetTransientDataSize__8Disguise.c
 shared	Begin__20ActivateHoloDisguise	Begin__20ActivateHoloDisguise	function	64	14	0	14	LEVEL1.REL:0x0C4308	
 shared	Update__20ActivateHoloDisguisef	Update__20ActivateHoloDisguisef	function	8	14	14	14	LEVEL1.REL:0x0C4348	src/levels/shared/Update__20ActivateHoloDisguisef.c
 shared	CanActivate__20ActivateHoloDisguise	CanActivate__20ActivateHoloDisguise	function	8	14	14	14	LEVEL1.REL:0x0C4350	src/levels/shared/CanActivate__20ActivateHoloDisguise.c
@@ -8691,7 +8691,7 @@ shared	SetTeleportPos__9ClankPortPC4VEC3	SetTeleportPos__9ClankPortPC4VEC3	funct
 shared	Update__9ClankPortf	Update__9ClankPortf	function	272	14	14	14	LEVEL1.REL:0x0C5EB8	src/levels/shared/Update__9ClankPortf.c
 shared	GetDesiredState__9ClankPort	GetDesiredState__9ClankPort	function	44	14	0	14	LEVEL1.REL:0x0C5FC8	
 shared	CanActivate__9ClankPort	CanActivate__9ClankPort	function	8	14	14	14	LEVEL1.REL:0x0C5FF8	src/levels/shared/CanActivate__9ClankPort.c
-shared	GetTransientDataSize__9ClankPort	GetTransientDataSize__9ClankPort	function	8	14	0	14	LEVEL1.REL:0x0C6000	
+shared	GetTransientDataSize__9ClankPort	GetTransientDataSize__9ClankPort	function	8	14	14	14	LEVEL1.REL:0x0C6000	src/levels/shared/GetTransientDataSize__9ClankPort.c
 shared	Begin__10ClankDrown	Begin__10ClankDrown	function	144	14	0	14	LEVEL1.REL:0x0C6008	
 shared	Update__10ClankDrownf	Update__10ClankDrownf	function	124	14	0	14	LEVEL1.REL:0x0C6098	
 shared	GetDesiredState__10ClankDrown	GetDesiredState__10ClankDrown	function	8	14	14	14	LEVEL1.REL:0x0C6118	src/levels/shared/GetDesiredState__10ClankDrown.c
@@ -10161,7 +10161,7 @@ shared	Begin__8BackAway	Begin__8BackAway	function	104	18	0	18	LEVEL1.REL:0x130CA
 shared	Update__8BackAwayf	Update__8BackAwayf	function	212	18	0	18	LEVEL1.REL:0x130D10	
 shared	TooClose__8BackAway	TooClose__8BackAway	function	124	18	0	18	LEVEL1.REL:0x130DE8	
 shared	CanActivate__8BackAway	CanActivate__8BackAway	function	76	18	0	18	LEVEL1.REL:0x130E68	
-shared	GetTransientDataSize__8BackAway	GetTransientDataSize__8BackAway	function	8	18	0	18	LEVEL1.REL:0x130EB8	
+shared	GetTransientDataSize__8BackAway	GetTransientDataSize__8BackAway	function	8	18	18	18	LEVEL1.REL:0x130EB8	src/levels/shared/GetTransientDataSize__8BackAway.c
 shared	Setup__16ConditionalMelee	Setup__16ConditionalMelee	function	8	18	0	18	LEVEL1.REL:0x130EC0	
 shared	CanActivate__16ConditionalMelee	CanActivate__16ConditionalMelee	function	160	18	0	18	LEVEL1.REL:0x130EC8	
 shared	Begin__16ConditionalMelee	Begin__16ConditionalMelee	function	60	18	0	18	LEVEL1.REL:0x130F68	
@@ -10250,7 +10250,7 @@ shared	Update__12TurnAndMeleef	Update__12TurnAndMeleef	function	632	18	0	18	LEVE
 shared	GetDesiredState__12TurnAndMelee	GetDesiredState__12TurnAndMelee	function	64	18	0	18	LEVEL1.REL:0x133E20	
 shared	Begin__5Stuck	Begin__5Stuck	function	148	18	0	18	LEVEL1.REL:0x133E60	
 shared	CanActivate__5Stuck	CanActivate__5Stuck	function	184	18	0	18	LEVEL1.REL:0x133EF8	
-shared	GetTransientDataSize__5Stuck	GetTransientDataSize__5Stuck	function	8	18	0	18	LEVEL1.REL:0x133FB0	
+shared	GetTransientDataSize__5Stuck	GetTransientDataSize__5Stuck	function	8	18	18	18	LEVEL1.REL:0x133FB0	src/levels/shared/GetTransientDataSize__5Stuck.c
 shared	Begin__14ControllerWait	Begin__14ControllerWait	function	88	18	0	18	LEVEL1.REL:0x133FB8	
 shared	CanActivate__14ControllerWait	CanActivate__14ControllerWait	function	60	18	0	18	LEVEL1.REL:0x134010	
 shared	End__14ControllerWait	End__14ControllerWait	function	36	18	0	18	LEVEL1.REL:0x134050	
@@ -12263,9 +12263,9 @@ shared	BACKG_TEXTSTREAMER_CancelLoad__FUi	BACKG_TEXTSTREAMER_CancelLoad__FUi	fun
 shared	BACKG_TEXTSTREAMER_CancelAllLoads__Fv	BACKG_TEXTSTREAMER_CancelAllLoads__Fv	function	24	30	0	30	LEVEL1.REL:0x1BAAF8	
 shared	BACKG_TEXTSTREAMER_IsShutDown__Fv	BACKG_TEXTSTREAMER_IsShutDown__Fv	function	8	30	30	30	LEVEL1.REL:0x1BAB10	src/levels/shared/BACKG_TEXTSTREAMER_IsShutDown__Fv.c
 shared	func_L01_1BB318	func_L01_1BB318	function	8	30	30	30	LEVEL1.REL:0x1BB318	src/levels/shared/func_L01_1BB318.c
-shared	func_L01_1BB320	func_L01_1BB320	function	8	30	0	30	LEVEL1.REL:0x1BB320	
+shared	func_L01_1BB320	func_L01_1BB320	function	8	30	30	30	LEVEL1.REL:0x1BB320	src/levels/shared/func_L01_1BB320.c
 shared	func_L01_1BB328	func_L01_1BB328	function	8	30	30	30	LEVEL1.REL:0x1BB328	src/levels/shared/func_L01_1BB328.c
-shared	func_L01_1BB330	func_L01_1BB330	function	8	30	0	30	LEVEL1.REL:0x1BB330	
+shared	func_L01_1BB330	func_L01_1BB330	function	8	30	30	30	LEVEL1.REL:0x1BB330	src/levels/shared/func_L01_1BB330.c
 shared	func_L01_1BB338	func_L01_1BB338	function	8	30	0	30	LEVEL1.REL:0x1BB338	
 shared	GAMELOCDBASE_ReloadLocDatabase__Fv_L01	GAMELOCDBASE_ReloadLocDatabase__Fv	function	172	30	0	30	LEVEL1.REL:0x1BB340	
 shared	GetHelpStr__Fi	GetHelpStr__Fi	function	256	30	0	30	LEVEL1.REL:0x1BB9A0	
@@ -12416,7 +12416,7 @@ shared	SetCollisionFilter__12EnemyContentii	SetCollisionFilter__12EnemyContentii
 shared	GetCuffLinkBombConfig__C12EnemyContent	GetCuffLinkBombConfig__C12EnemyContent	function	8	22	22	22	LEVEL1.REL:0x237990	src/levels/shared/GetCuffLinkBombConfig__C12EnemyContent.c
 shared	KickoffMoby__12EnemyContentP4MobyN21Pv	KickoffMoby__12EnemyContentP4MobyN21Pv	function	8	17	17	17	LEVEL1.REL:0x237998	src/levels/shared/KickoffMoby__12EnemyContentP4MobyN21Pv.c
 shared	GetTangleVineTrapScale__C12EnemyContent	GetTangleVineTrapScale__C12EnemyContent	function	16	22	0	22	LEVEL1.REL:0x2379A0	
-shared	GetTransientDataSize__11EnemyPatrol	GetTransientDataSize__11EnemyPatrol	function	8	15	0	15	LEVEL1.REL:0x2379B0	
+shared	GetTransientDataSize__11EnemyPatrol	GetTransientDataSize__11EnemyPatrol	function	8	15	15	15	LEVEL1.REL:0x2379B0	src/levels/shared/GetTransientDataSize__11EnemyPatrol.c
 shared	CanActivate__11EnemyPatrol	CanActivate__11EnemyPatrol	function	8	15	15	15	LEVEL1.REL:0x2379B8	src/levels/shared/CanActivate__11EnemyPatrol.c
 shared	GetStealthTakedownState__C11EnemyPatrol	GetStealthTakedownState__C11EnemyPatrol	function	12	15	0	15	LEVEL1.REL:0x2379C0	
 shared	HitEnd__11EnemyPatrol	HitEnd__11EnemyPatrol	function	8	15	15	15	LEVEL1.REL:0x2379D0	src/levels/shared/HitEnd__11EnemyPatrol.c
@@ -12431,13 +12431,13 @@ shared	ChargeStart__22FireProjectileWithTurnPC4VEC3P4VEC3	ChargeStart__22FirePro
 shared	ChargeUpdate__22FireProjectileWithTurnPC4VEC3P4VEC3	ChargeUpdate__22FireProjectileWithTurnPC4VEC3P4VEC3	function	8	18	18	18	LEVEL1.REL:0x237A30	src/levels/shared/ChargeUpdate__22FireProjectileWithTurnPC4VEC3P4VEC3.c
 shared	ChargeStop__22FireProjectileWithTurnPC4VEC3P4VEC3	ChargeStop__22FireProjectileWithTurnPC4VEC3P4VEC3	function	8	18	18	18	LEVEL1.REL:0x237A38	src/levels/shared/ChargeStop__22FireProjectileWithTurnPC4VEC3P4VEC3.c
 shared	CanActivate__13BasicPlayAnim	CanActivate__13BasicPlayAnim	function	8	18	18	18	LEVEL1.REL:0x237A40	src/levels/shared/CanActivate__13BasicPlayAnim.c
-shared	GetTransientDataSize__13BasicPlayAnim	GetTransientDataSize__13BasicPlayAnim	function	8	18	0	18	LEVEL1.REL:0x237A48	
+shared	GetTransientDataSize__13BasicPlayAnim	GetTransientDataSize__13BasicPlayAnim	function	8	18	18	18	LEVEL1.REL:0x237A48	src/levels/shared/GetTransientDataSize__13BasicPlayAnim.c
 shared	GetTransientDataSize__12PlayAnimTurn	GetTransientDataSize__12PlayAnimTurn	function	8	18	18	18	LEVEL1.REL:0x237A50	src/levels/shared/GetTransientDataSize__12PlayAnimTurn.c
 shared	CanActivate__12PlayAnimTurn	CanActivate__12PlayAnimTurn	function	8	18	18	18	LEVEL1.REL:0x237A58	src/levels/shared/CanActivate__12PlayAnimTurn.c
 shared	CanActivate__20BasicNavigateToPoint	CanActivate__20BasicNavigateToPoint	function	8	18	18	18	LEVEL1.REL:0x237A60	src/levels/shared/CanActivate__20BasicNavigateToPoint.c
-shared	GetTransientDataSize__20BasicNavigateToPoint	GetTransientDataSize__20BasicNavigateToPoint	function	8	18	0	18	LEVEL1.REL:0x237A68	
+shared	GetTransientDataSize__20BasicNavigateToPoint	GetTransientDataSize__20BasicNavigateToPoint	function	8	18	18	18	LEVEL1.REL:0x237A68	src/levels/shared/GetTransientDataSize__20BasicNavigateToPoint.c
 shared	CanActivate__10BasicMelee	CanActivate__10BasicMelee	function	8	18	18	18	LEVEL1.REL:0x237A70	src/levels/shared/CanActivate__10BasicMelee.c
-shared	GetTransientDataSize__10BasicMelee	GetTransientDataSize__10BasicMelee	function	8	18	0	18	LEVEL1.REL:0x237A78	
+shared	GetTransientDataSize__10BasicMelee	GetTransientDataSize__10BasicMelee	function	8	18	18	18	LEVEL1.REL:0x237A78	src/levels/shared/GetTransientDataSize__10BasicMelee.c
 shared	OnHit__10BasicMelee	OnHit__10BasicMelee	function	8	18	18	18	LEVEL1.REL:0x237A80	src/levels/shared/OnHit__10BasicMelee.c
 shared	OnDamage__10BasicMelee	OnDamage__10BasicMelee	function	8	18	18	18	LEVEL1.REL:0x237A88	src/levels/shared/OnDamage__10BasicMelee.c
 shared	SetTargetId__10BasicMeleei	SetTargetId__10BasicMeleei	function	16	18	0	18	LEVEL1.REL:0x237A90	
@@ -12445,10 +12445,10 @@ shared	Init__16ConditionalMeleePC22ConditionalMeleeConfigP5State	Init__16Conditi
 shared	Init__8BackAwayPC14BackAwayConfigP8Navigate	Init__8BackAwayPC14BackAwayConfigP8Navigate	function	12	18	0	18	LEVEL1.REL:0x237AB0	
 shared	CanActivate__14BasicNavWander	CanActivate__14BasicNavWander	function	8	18	18	18	LEVEL1.REL:0x237AC0	src/levels/shared/CanActivate__14BasicNavWander.c
 shared	GetDesiredState__14BasicNavWander	GetDesiredState__14BasicNavWander	function	8	18	18	18	LEVEL1.REL:0x237AC8	src/levels/shared/GetDesiredState__14BasicNavWander.c
-shared	GetTransientDataSize__14BasicNavWander	GetTransientDataSize__14BasicNavWander	function	8	18	0	18	LEVEL1.REL:0x237AD0	
+shared	GetTransientDataSize__14BasicNavWander	GetTransientDataSize__14BasicNavWander	function	8	18	18	18	LEVEL1.REL:0x237AD0	src/levels/shared/GetTransientDataSize__14BasicNavWander.c
 shared	CanActivate__17BasicTurnToTarget	CanActivate__17BasicTurnToTarget	function	8	18	18	18	LEVEL1.REL:0x237AD8	src/levels/shared/CanActivate__17BasicTurnToTarget.c
 shared	GetDesiredState__17BasicTurnToTarget	GetDesiredState__17BasicTurnToTarget	function	8	18	18	18	LEVEL1.REL:0x237AE0	src/levels/shared/GetDesiredState__17BasicTurnToTarget.c
-shared	GetTransientDataSize__17BasicTurnToTarget	GetTransientDataSize__17BasicTurnToTarget	function	8	18	0	18	LEVEL1.REL:0x237AE8	
+shared	GetTransientDataSize__17BasicTurnToTarget	GetTransientDataSize__17BasicTurnToTarget	function	8	18	18	18	LEVEL1.REL:0x237AE8	src/levels/shared/GetTransientDataSize__17BasicTurnToTarget.c
 shared	GetDesiredState__11BasicGetHit	GetDesiredState__11BasicGetHit	function	8	18	18	18	LEVEL1.REL:0x237AF0	src/levels/shared/GetDesiredState__11BasicGetHit.c
 shared	GetTransientDataSize__11BasicGetHit	GetTransientDataSize__11BasicGetHit	function	8	18	0	18	LEVEL1.REL:0x237AF8	
 shared	Finished__11BasicGetHit	Finished__11BasicGetHit	function	8	18	18	18	LEVEL1.REL:0x237B00	src/levels/shared/Finished__11BasicGetHit.c
@@ -12471,26 +12471,26 @@ shared	Init__10BasicChasePC16BasicChaseConfigP8NavigateP5StateP4MobyPUc	Init__10
 shared	Init__20BasicChaseControlledPC26BasicChaseControlledConfigP8NavigateP11ChaseAction	Init__20BasicChaseControlledPC26BasicChaseControlledConfigP8NavigateP11ChaseAction	function	16	18	0	18	LEVEL1.REL:0x237C10	
 shared	CanActivate__14TangleVineTrap	CanActivate__14TangleVineTrap	function	8	18	18	18	LEVEL1.REL:0x237C20	src/levels/shared/CanActivate__14TangleVineTrap.c
 shared	GetStateId__C14TangleVineTrap	GetStateId__C14TangleVineTrap	function	12	18	0	18	LEVEL1.REL:0x237C28	
-shared	GetTransientDataSize__18MoveToValidFirePos	GetTransientDataSize__18MoveToValidFirePos	function	8	18	0	18	LEVEL1.REL:0x237C38	
+shared	GetTransientDataSize__18MoveToValidFirePos	GetTransientDataSize__18MoveToValidFirePos	function	8	18	18	18	LEVEL1.REL:0x237C38	src/levels/shared/GetTransientDataSize__18MoveToValidFirePos.c
 shared	Init__18MoveToValidFirePosPC24MoveToValidFirePosConfigP8NavigateP17FireProjectileLOSP4MobyPUcP5State	Init__18MoveToValidFirePosPC24MoveToValidFirePosConfigP8NavigateP17FireProjectileLOSP4MobyPUcP5State	function	36	18	0	18	LEVEL1.REL:0x237C40	
 shared	Init__17FireProjectileLOSPC23FireProjectileLOSConfig	Init__17FireProjectileLOSPC23FireProjectileLOSConfig	function	52	18	0	18	LEVEL1.REL:0x237C68	
-shared	GetTransientDataSize__21MoveToValidFirePosLOS	GetTransientDataSize__21MoveToValidFirePosLOS	function	8	18	0	18	LEVEL1.REL:0x237CA0	
+shared	GetTransientDataSize__21MoveToValidFirePosLOS	GetTransientDataSize__21MoveToValidFirePosLOS	function	8	18	18	18	LEVEL1.REL:0x237CA0	src/levels/shared/GetTransientDataSize__21MoveToValidFirePosLOS.c
 shared	Init__21MoveToValidFirePosLOSPC27MoveToValidFirePosLOSConfigP8NavigateP4MobyPUcP5State	Init__21MoveToValidFirePosLOSPC27MoveToValidFirePosLOSConfigP8NavigateP4MobyPUcP5State	function	24	18	0	18	LEVEL1.REL:0x237CA8	
 shared	Init__19ReallyBasicPlayAnimPC25ReallyBasicPlayAnimConfig	Init__19ReallyBasicPlayAnimPC25ReallyBasicPlayAnimConfig	function	8	18	18	18	LEVEL1.REL:0x237CC0	src/levels/shared/Init__19ReallyBasicPlayAnimPC25ReallyBasicPlayAnimConfig.c
-shared	GetTransientDataSize__9BasicIdle	GetTransientDataSize__9BasicIdle	function	8	18	0	18	LEVEL1.REL:0x237CC8	
+shared	GetTransientDataSize__9BasicIdle	GetTransientDataSize__9BasicIdle	function	8	18	18	18	LEVEL1.REL:0x237CC8	src/levels/shared/GetTransientDataSize__9BasicIdle.c
 shared	CanActivate__9BasicIdle	CanActivate__9BasicIdle	function	8	18	18	18	LEVEL1.REL:0x237CD0	src/levels/shared/CanActivate__9BasicIdle.c
 shared	Init__9BasicIdlePC15BasicIdleConfig	Init__9BasicIdlePC15BasicIdleConfig	function	8	18	18	18	LEVEL1.REL:0x237CD8	src/levels/shared/Init__9BasicIdlePC15BasicIdleConfig.c
-shared	GetTransientDataSize__12TurnAndMelee	GetTransientDataSize__12TurnAndMelee	function	8	18	0	18	LEVEL1.REL:0x237CE0	
+shared	GetTransientDataSize__12TurnAndMelee	GetTransientDataSize__12TurnAndMelee	function	8	18	18	18	LEVEL1.REL:0x237CE0	src/levels/shared/GetTransientDataSize__12TurnAndMelee.c
 shared	OnHit__12TurnAndMelee	OnHit__12TurnAndMelee	function	8	18	18	18	LEVEL1.REL:0x237CE8	src/levels/shared/OnHit__12TurnAndMelee.c
 shared	OnDamage__12TurnAndMelee	OnDamage__12TurnAndMelee	function	8	18	18	18	LEVEL1.REL:0x237CF0	src/levels/shared/OnDamage__12TurnAndMelee.c
 shared	Init__12TurnAndMeleePC18TurnAndMeleeConfigPUi	Init__12TurnAndMeleePC18TurnAndMeleeConfigPUi	function	12	18	0	18	LEVEL1.REL:0x237CF8	
 shared	Init__5StuckPC11StuckConfigP8Navigate	Init__5StuckPC11StuckConfigP8Navigate	function	12	18	0	18	LEVEL1.REL:0x237D08	
 shared	Init__14ControllerWaitPC20ControllerWaitConfigP4MobyPUc	Init__14ControllerWaitPC20ControllerWaitConfigP4MobyPUc	function	16	18	0	18	LEVEL1.REL:0x237D18	
-shared	GetTransientDataSize__10Hypnotized	GetTransientDataSize__10Hypnotized	function	8	18	0	18	LEVEL1.REL:0x237D28	
+shared	GetTransientDataSize__10Hypnotized	GetTransientDataSize__10Hypnotized	function	8	18	18	18	LEVEL1.REL:0x237D28	src/levels/shared/GetTransientDataSize__10Hypnotized.c
 shared	CanActivate__10Hypnotized	CanActivate__10Hypnotized	function	8	18	18	18	LEVEL1.REL:0x237D30	src/levels/shared/CanActivate__10Hypnotized.c
 shared	GetStealthTakedownState__C10Hypnotized	GetStealthTakedownState__C10Hypnotized	function	12	18	0	18	LEVEL1.REL:0x237D38	
 shared	Init__10HypnotizedPC16HypnotizedConfigP10Alert_Data	Init__10HypnotizedPC16HypnotizedConfigP10Alert_Data	function	16	18	0	18	LEVEL1.REL:0x237D48	
-shared	GetTransientDataSize__10IdleSearch	GetTransientDataSize__10IdleSearch	function	8	18	0	18	LEVEL1.REL:0x237D58	
+shared	GetTransientDataSize__10IdleSearch	GetTransientDataSize__10IdleSearch	function	8	18	18	18	LEVEL1.REL:0x237D58	src/levels/shared/GetTransientDataSize__10IdleSearch.c
 shared	CanActivate__10IdleSearch	CanActivate__10IdleSearch	function	8	18	18	18	LEVEL1.REL:0x237D60	src/levels/shared/CanActivate__10IdleSearch.c
 shared	GetStealthTakedownState__C10IdleSearch	GetStealthTakedownState__C10IdleSearch	function	12	18	0	18	LEVEL1.REL:0x237D68	
 shared	Init__10IdleSearchPC16IdleSearchConfigf	Init__10IdleSearchPC16IdleSearchConfigf	function	12	18	0	18	LEVEL1.REL:0x237D78	
@@ -12504,7 +12504,7 @@ shared	GetStateId__C13EnemyTakeDown	GetStateId__C13EnemyTakeDown	function	12	13	
 shared	CanBeEaten__C13EnemyTakeDown	CanBeEaten__C13EnemyTakeDown	function	8	13	13	13	LEVEL1.REL:0x237DE8	src/levels/shared/CanBeEaten__C13EnemyTakeDown.c
 shared	CanBeHypnotized__C13EnemyTakeDown	CanBeHypnotized__C13EnemyTakeDown	function	8	13	13	13	LEVEL1.REL:0x237DF0	src/levels/shared/CanBeHypnotized__C13EnemyTakeDown.c
 shared	Init__13EnemyTakeDownPC19EnemyTakeDownConfigP4MobyP10Alert_DataP8NavigateT2PUc	Init__13EnemyTakeDownPC19EnemyTakeDownConfigP4MobyP10Alert_DataP8NavigateT2PUc	function	28	13	0	13	LEVEL1.REL:0x237DF8	
-shared	GetTransientDataSize__14AlertDefensive	GetTransientDataSize__14AlertDefensive	function	8	13	0	13	LEVEL1.REL:0x237E18	
+shared	GetTransientDataSize__14AlertDefensive	GetTransientDataSize__14AlertDefensive	function	8	13	13	13	LEVEL1.REL:0x237E18	src/levels/shared/GetTransientDataSize__14AlertDefensive.c
 shared	CanActivate__22AlertFireProjectileLOS	CanActivate__22AlertFireProjectileLOS	function	68	2	0	2	LEVEL1.REL:0x237E20	
 01_museum	Update__22AlertFireProjectileLOSf	Update__22AlertFireProjectileLOSf	function	92	1	0	1	LEVEL1.REL:0x237E68	
 shared	Init__11AlertNoticePC17AlertNoticeConfigP14AlertStateData	Init__11AlertNoticePC17AlertNoticeConfigP14AlertStateData	function	16	13	0	13	LEVEL1.REL:0x237EC8	
@@ -12598,11 +12598,11 @@ shared	GetTangleVineTrapScale__C16Lvl01TankContent	GetTangleVineTrapScale__C16Lv
 shared	SetCollisionFilter__16Lvl01TankContentii	SetCollisionFilter__16Lvl01TankContentii	function	28	2	0	2	LEVEL1.REL:0x238EA8	
 shared	CanActivate__16Lvl07Camera_Idle	CanActivate__16Lvl07Camera_Idle	function	8	3	3	3	LEVEL1.REL:0x238EC8	src/levels/shared/CanActivate__16Lvl07Camera_Idle.c
 shared	CanBeEaten__C16Lvl07Camera_Idle	CanBeEaten__C16Lvl07Camera_Idle	function	8	3	3	3	LEVEL1.REL:0x238ED0	src/levels/shared/CanBeEaten__C16Lvl07Camera_Idle.c
-shared	GetTransientDataSize__22Lvl07Camera_Suspicious	GetTransientDataSize__22Lvl07Camera_Suspicious	function	8	3	0	3	LEVEL1.REL:0x238ED8	
+shared	GetTransientDataSize__22Lvl07Camera_Suspicious	GetTransientDataSize__22Lvl07Camera_Suspicious	function	8	3	3	3	LEVEL1.REL:0x238ED8	src/levels/shared/GetTransientDataSize__22Lvl07Camera_Suspicious.c
 shared	CanBeEaten__C22Lvl07Camera_Suspicious	CanBeEaten__C22Lvl07Camera_Suspicious	function	8	3	3	3	LEVEL1.REL:0x238EE0	src/levels/shared/CanBeEaten__C22Lvl07Camera_Suspicious.c
 shared	GetTransientDataSize__18Lvl07Camera_Patrol	GetTransientDataSize__18Lvl07Camera_Patrol	function	8	3	3	3	LEVEL1.REL:0x238EE8	src/levels/shared/GetTransientDataSize__18Lvl07Camera_Patrol.c
 shared	CanBeEaten__C18Lvl07Camera_Patrol	CanBeEaten__C18Lvl07Camera_Patrol	function	8	3	3	3	LEVEL1.REL:0x238EF0	src/levels/shared/CanBeEaten__C18Lvl07Camera_Patrol.c
-shared	GetTransientDataSize__22Lvl07Camera_ReturnHome	GetTransientDataSize__22Lvl07Camera_ReturnHome	function	8	3	0	3	LEVEL1.REL:0x238EF8	
+shared	GetTransientDataSize__22Lvl07Camera_ReturnHome	GetTransientDataSize__22Lvl07Camera_ReturnHome	function	8	3	3	3	LEVEL1.REL:0x238EF8	src/levels/shared/GetTransientDataSize__22Lvl07Camera_ReturnHome.c
 shared	CanBeEaten__C22Lvl07Camera_ReturnHome	CanBeEaten__C22Lvl07Camera_ReturnHome	function	8	3	3	3	LEVEL1.REL:0x238F00	src/levels/shared/CanBeEaten__C22Lvl07Camera_ReturnHome.c
 shared	GetDesiredState__25Lvl07Camera_CapturedClank	GetDesiredState__25Lvl07Camera_CapturedClank	function	8	3	3	3	LEVEL1.REL:0x238F08	src/levels/shared/GetDesiredState__25Lvl07Camera_CapturedClank.c
 shared	CanBeEaten__C25Lvl07Camera_CapturedClank	CanBeEaten__C25Lvl07Camera_CapturedClank	function	8	3	3	3	LEVEL1.REL:0x238F10	src/levels/shared/CanBeEaten__C25Lvl07Camera_CapturedClank.c
@@ -15236,46 +15236,46 @@ shared	GetSlowMo__13ArenaBehavior	GetSlowMo__13ArenaBehavior	function	12	5	0	5	L
 shared	GetMover__13ArenaBehavior	GetMover__13ArenaBehavior	function	12	5	0	5	LEVEL3.REL:0x261F80	
 shared	HandleDamage__13ArenaBehaviorf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__13ArenaBehaviorf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	8	5	5	5	LEVEL3.REL:0x261F90	src/levels/shared/HandleDamage__13ArenaBehaviorf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby.c
 shared	GetDesiredState__10ArenaEnter	GetDesiredState__10ArenaEnter	function	8	5	5	5	LEVEL3.REL:0x261F98	src/levels/shared/GetDesiredState__10ArenaEnter.c
-shared	GetTransientDataSize__16ArenaEnterPrison	GetTransientDataSize__16ArenaEnterPrison	function	8	5	0	5	LEVEL3.REL:0x261FA0	
+shared	GetTransientDataSize__16ArenaEnterPrison	GetTransientDataSize__16ArenaEnterPrison	function	8	5	5	5	LEVEL3.REL:0x261FA0	src/levels/shared/GetTransientDataSize__16ArenaEnterPrison.c
 shared	GetTransientDataSize__19ArenaEnterCafeteria	GetTransientDataSize__19ArenaEnterCafeteria	function	8	5	0	5	LEVEL3.REL:0x261FA8	
-shared	GetTransientDataSize__14ArenaEnterYard	GetTransientDataSize__14ArenaEnterYard	function	8	5	0	5	LEVEL3.REL:0x261FB0	
-shared	GetTransientDataSize__16ArenaEnterShower	GetTransientDataSize__16ArenaEnterShower	function	8	5	0	5	LEVEL3.REL:0x261FB8	
+shared	GetTransientDataSize__14ArenaEnterYard	GetTransientDataSize__14ArenaEnterYard	function	8	5	5	5	LEVEL3.REL:0x261FB0	src/levels/shared/GetTransientDataSize__14ArenaEnterYard.c
+shared	GetTransientDataSize__16ArenaEnterShower	GetTransientDataSize__16ArenaEnterShower	function	8	5	5	5	LEVEL3.REL:0x261FB8	src/levels/shared/GetTransientDataSize__16ArenaEnterShower.c
 shared	GetTransientDataSize__13ArenaPlayAnim	GetTransientDataSize__13ArenaPlayAnim	function	8	5	5	5	LEVEL3.REL:0x261FC0	src/levels/shared/GetTransientDataSize__13ArenaPlayAnim.c
 shared	CanActivate__13ArenaPlayAnim	CanActivate__13ArenaPlayAnim	function	8	5	5	5	LEVEL3.REL:0x261FC8	src/levels/shared/CanActivate__13ArenaPlayAnim.c
 shared	GetTransientDataSize__10ArenaSwarm	GetTransientDataSize__10ArenaSwarm	function	8	5	5	5	LEVEL3.REL:0x261FD0	src/levels/shared/GetTransientDataSize__10ArenaSwarm.c
-shared	GetTransientDataSize__16ArenaWindUpMelee	GetTransientDataSize__16ArenaWindUpMelee	function	8	5	0	5	LEVEL3.REL:0x261FD8	
+shared	GetTransientDataSize__16ArenaWindUpMelee	GetTransientDataSize__16ArenaWindUpMelee	function	8	5	5	5	LEVEL3.REL:0x261FD8	src/levels/shared/GetTransientDataSize__16ArenaWindUpMelee.c
 shared	GetTransientDataSize__19ArenaFireProjectile	GetTransientDataSize__19ArenaFireProjectile	function	8	5	0	5	LEVEL3.REL:0x261FE0	
 shared	ChargeStart__19ArenaFireProjectilePC4VEC3	ChargeStart__19ArenaFireProjectilePC4VEC3	function	8	5	5	5	LEVEL3.REL:0x261FE8	src/levels/shared/ChargeStart__19ArenaFireProjectilePC4VEC3.c
 shared	ChargeUpdate__19ArenaFireProjectilePC4VEC3	ChargeUpdate__19ArenaFireProjectilePC4VEC3	function	8	5	5	5	LEVEL3.REL:0x261FF0	src/levels/shared/ChargeUpdate__19ArenaFireProjectilePC4VEC3.c
 shared	ChargeStop__19ArenaFireProjectilePC4VEC3	ChargeStop__19ArenaFireProjectilePC4VEC3	function	8	5	5	5	LEVEL3.REL:0x261FF8	src/levels/shared/ChargeStop__19ArenaFireProjectilePC4VEC3.c
 shared	GetTransientDataSize__15ArenaRushAttack	GetTransientDataSize__15ArenaRushAttack	function	8	5	0	5	LEVEL3.REL:0x262000	
-shared	GetTransientDataSize__17ArenaMoveAndFight	GetTransientDataSize__17ArenaMoveAndFight	function	8	5	0	5	LEVEL3.REL:0x262008	
+shared	GetTransientDataSize__17ArenaMoveAndFight	GetTransientDataSize__17ArenaMoveAndFight	function	8	5	5	5	LEVEL3.REL:0x262008	src/levels/shared/GetTransientDataSize__17ArenaMoveAndFight.c
 shared	GetTransientDataSize__19ArenaMeleeEtiquette	GetTransientDataSize__19ArenaMeleeEtiquette	function	8	5	0	5	LEVEL3.REL:0x262010	
-shared	GetTransientDataSize__9ArenaFall	GetTransientDataSize__9ArenaFall	function	8	5	0	5	LEVEL3.REL:0x262018	
+shared	GetTransientDataSize__9ArenaFall	GetTransientDataSize__9ArenaFall	function	8	5	5	5	LEVEL3.REL:0x262018	src/levels/shared/GetTransientDataSize__9ArenaFall.c
 shared	CanActivate__9ArenaFall	CanActivate__9ArenaFall	function	8	5	5	5	LEVEL3.REL:0x262020	src/levels/shared/CanActivate__9ArenaFall.c
-shared	GetTransientDataSize__11ArenaPursue	GetTransientDataSize__11ArenaPursue	function	8	5	0	5	LEVEL3.REL:0x262028	
+shared	GetTransientDataSize__11ArenaPursue	GetTransientDataSize__11ArenaPursue	function	8	5	5	5	LEVEL3.REL:0x262028	src/levels/shared/GetTransientDataSize__11ArenaPursue.c
 shared	GetTransientDataSize__12ArenaRetreat	GetTransientDataSize__12ArenaRetreat	function	8	5	5	5	LEVEL3.REL:0x262030	src/levels/shared/GetTransientDataSize__12ArenaRetreat.c
 shared	GetTransientDataSize__11ArenaGetHit	GetTransientDataSize__11ArenaGetHit	function	8	5	0	5	LEVEL3.REL:0x262038	
 shared	CanActivate__10ArenaDeath	CanActivate__10ArenaDeath	function	8	5	5	5	LEVEL3.REL:0x262040	src/levels/shared/CanActivate__10ArenaDeath.c
 shared	GetDesiredState__10ArenaDeath	GetDesiredState__10ArenaDeath	function	8	5	5	5	LEVEL3.REL:0x262048	src/levels/shared/GetDesiredState__10ArenaDeath.c
 shared	Dying__10ArenaDeath	Dying__10ArenaDeath	function	8	5	5	5	LEVEL3.REL:0x262050	src/levels/shared/Dying__10ArenaDeath.c
-shared	GetTransientDataSize__11ArenaPorked	GetTransientDataSize__11ArenaPorked	function	8	5	0	5	LEVEL3.REL:0x262058	
+shared	GetTransientDataSize__11ArenaPorked	GetTransientDataSize__11ArenaPorked	function	8	5	5	5	LEVEL3.REL:0x262058	src/levels/shared/GetTransientDataSize__11ArenaPorked.c
 shared	CanActivate__11ArenaPorked	CanActivate__11ArenaPorked	function	8	5	5	5	LEVEL3.REL:0x262060	src/levels/shared/CanActivate__11ArenaPorked.c
 shared	Update__11ArenaPorkedf	Update__11ArenaPorkedf	function	8	5	5	5	LEVEL3.REL:0x262068	src/levels/shared/Update__11ArenaPorkedf.c
 shared	Init__11ArenaPorked	Init__11ArenaPorked	function	8	5	0	5	LEVEL3.REL:0x262070	
 shared	GetTransientDataSize__15ArenaPathFollow	GetTransientDataSize__15ArenaPathFollow	function	8	5	5	5	LEVEL3.REL:0x262078	src/levels/shared/GetTransientDataSize__15ArenaPathFollow.c
 shared	Init__9ArenaStunPC15ArenaStunConfig	Init__9ArenaStunPC15ArenaStunConfig	function	8	5	5	5	LEVEL3.REL:0x262080	src/levels/shared/Init__9ArenaStunPC15ArenaStunConfig.c
-shared	GetTransientDataSize__9ArenaStun	GetTransientDataSize__9ArenaStun	function	8	5	0	5	LEVEL3.REL:0x262088	
+shared	GetTransientDataSize__9ArenaStun	GetTransientDataSize__9ArenaStun	function	8	5	5	5	LEVEL3.REL:0x262088	src/levels/shared/GetTransientDataSize__9ArenaStun.c
 shared	__9GooSplash	__9GooSplash	function	32	10	0	10	LEVEL3.REL:0x262090	
 shared	Active__9GooSplash	Active__9GooSplash	function	12	10	0	10	LEVEL3.REL:0x2620B0	
 shared	__14AcidFoodSplash	__14AcidFoodSplash	function	32	5	0	5	LEVEL3.REL:0x2620C0	
 shared	Active__14AcidFoodSplash	Active__14AcidFoodSplash	function	12	5	0	5	LEVEL3.REL:0x2620E0	
 shared	GetArenaStateMachine__20ArenaAmoeboidContent	GetArenaStateMachine__20ArenaAmoeboidContent	function	8	5	0	5	LEVEL3.REL:0x2620F0	
 shared	KickoffMoby__20ArenaAmoeboidContentP4MobyN21Pv	KickoffMoby__20ArenaAmoeboidContentP4MobyN21Pv	function	40	5	0	5	LEVEL3.REL:0x2620F8	
-shared	GetTransientDataSize__25ArenaAmoeboidSmall_Spewed	GetTransientDataSize__25ArenaAmoeboidSmall_Spewed	function	8	5	0	5	LEVEL3.REL:0x262120	
+shared	GetTransientDataSize__25ArenaAmoeboidSmall_Spewed	GetTransientDataSize__25ArenaAmoeboidSmall_Spewed	function	8	5	5	5	LEVEL3.REL:0x262120	src/levels/shared/GetTransientDataSize__25ArenaAmoeboidSmall_Spewed.c
 shared	GetDesiredState__25ArenaAmoeboidSmall_Spewed	GetDesiredState__25ArenaAmoeboidSmall_Spewed	function	8	5	5	5	LEVEL3.REL:0x262128	src/levels/shared/GetDesiredState__25ArenaAmoeboidSmall_Spewed.c
 shared	CanActivate__25ArenaAmoeboidSmall_Spewed	CanActivate__25ArenaAmoeboidSmall_Spewed	function	8	5	5	5	LEVEL3.REL:0x262130	src/levels/shared/CanActivate__25ArenaAmoeboidSmall_Spewed.c
-shared	GetTransientDataSize__25ArenaAmoeboidSmall_Budded	GetTransientDataSize__25ArenaAmoeboidSmall_Budded	function	8	5	0	5	LEVEL3.REL:0x262138	
+shared	GetTransientDataSize__25ArenaAmoeboidSmall_Budded	GetTransientDataSize__25ArenaAmoeboidSmall_Budded	function	8	5	5	5	LEVEL3.REL:0x262138	src/levels/shared/GetTransientDataSize__25ArenaAmoeboidSmall_Budded.c
 shared	GetDesiredState__25ArenaAmoeboidSmall_Budded	GetDesiredState__25ArenaAmoeboidSmall_Budded	function	8	5	5	5	LEVEL3.REL:0x262140	src/levels/shared/GetDesiredState__25ArenaAmoeboidSmall_Budded.c
 shared	CanActivate__25ArenaAmoeboidSmall_Budded	CanActivate__25ArenaAmoeboidSmall_Budded	function	8	5	5	5	LEVEL3.REL:0x262148	src/levels/shared/CanActivate__25ArenaAmoeboidSmall_Budded.c
 shared	SetParent__25ArenaAmoeboidSmall_BuddedP4Moby	SetParent__25ArenaAmoeboidSmall_BuddedP4Moby	function	16	5	0	5	LEVEL3.REL:0x262150	
@@ -15288,7 +15288,7 @@ shared	Reflect__17ProjectileContentP4MobyPC4VEC3N22	Reflect__17ProjectileContent
 shared	Vaporize__17ProjectileContentP4Moby	Vaporize__17ProjectileContentP4Moby	function	40	11	0	11	LEVEL3.REL:0x262468	
 shared	__13DeathSparkles	__13DeathSparkles	function	28	6	0	6	LEVEL3.REL:0x262490	
 shared	Active__13DeathSparkles	Active__13DeathSparkles	function	8	6	0	6	LEVEL3.REL:0x2624B0	
-shared	GetTransientDataSize__22LizardThug_EnterPrison	GetTransientDataSize__22LizardThug_EnterPrison	function	8	5	0	5	LEVEL3.REL:0x2624B8	
+shared	GetTransientDataSize__22LizardThug_EnterPrison	GetTransientDataSize__22LizardThug_EnterPrison	function	8	5	5	5	LEVEL3.REL:0x2624B8	src/levels/shared/GetTransientDataSize__22LizardThug_EnterPrison.c
 shared	GetArenaStateMachine__22ArenaLizardThugContent	GetArenaStateMachine__22ArenaLizardThugContent	function	8	5	0	5	LEVEL3.REL:0x2624C0	
 shared	KickoffMoby__22ArenaLizardThugContentP4MobyN21Pv	KickoffMoby__22ArenaLizardThugContentP4MobyN21Pv	function	40	5	0	5	LEVEL3.REL:0x2624C8	
 shared	Reflect__34ArenaLizardThugHomingBeaconContentP4MobyPC4VEC3N22	Reflect__34ArenaLizardThugHomingBeaconContentP4MobyPC4VEC3N22	function	8	5	5	5	LEVEL3.REL:0x2624F0	src/levels/shared/Reflect__34ArenaLizardThugHomingBeaconContentP4MobyPC4VEC3N22.c
@@ -15315,7 +15315,7 @@ shared	GetArenaStateMachine__20ArenaTyranoidContent	GetArenaStateMachine__20Aren
 shared	SetCollisionFilter__20ArenaTyranoidContentii	SetCollisionFilter__20ArenaTyranoidContentii	function	28	5	0	5	LEVEL3.REL:0x262660	
 shared	KickoffMoby__20ArenaTyranoidContentP4MobyN21Pv	KickoffMoby__20ArenaTyranoidContentP4MobyN21Pv	function	40	5	0	5	LEVEL3.REL:0x262680	
 shared	IsSwarmer__20ArenaTyranoidContent	IsSwarmer__20ArenaTyranoidContent	function	8	5	5	5	LEVEL3.REL:0x2626A8	src/levels/shared/IsSwarmer__20ArenaTyranoidContent.c
-shared	GetTransientDataSize__12Piggy_Wander	GetTransientDataSize__12Piggy_Wander	function	8	5	0	5	LEVEL3.REL:0x262AE0	
+shared	GetTransientDataSize__12Piggy_Wander	GetTransientDataSize__12Piggy_Wander	function	8	5	5	5	LEVEL3.REL:0x262AE0	src/levels/shared/GetTransientDataSize__12Piggy_Wander.c
 shared	ResetTimer__12Piggy_Wander	ResetTimer__12Piggy_Wander	function	8	5	0	5	LEVEL3.REL:0x262AE8	
 shared	GetDesiredState__12Piggy_Revert	GetDesiredState__12Piggy_Revert	function	8	5	5	5	LEVEL3.REL:0x262AF0	src/levels/shared/GetDesiredState__12Piggy_Revert.c
 shared	GetDesiredState__13Piggy_Explode	GetDesiredState__13Piggy_Explode	function	8	5	5	5	LEVEL3.REL:0x262AF8	src/levels/shared/GetDesiredState__13Piggy_Explode.c
@@ -16294,9 +16294,9 @@ shared	RatchetShipExhaust_RegisterParticleSystem__Fi10DRAW_Layer17DRAW_ColorKeyM
 04_skyscrapers	ResetSpawns__12ChuuninClone	ResetSpawns__12ChuuninClone	function	12	1	0	1	LEVEL4.REL:0x255D48	
 04_skyscrapers	ResetChildren__12ChuuninClone	ResetChildren__12ChuuninClone	function	40	1	0	1	LEVEL4.REL:0x255D58	
 04_skyscrapers	CanActivate__12ChuuninEnter	CanActivate__12ChuuninEnter	function	8	1	1	1	LEVEL4.REL:0x255D80	src/levels/04_skyscrapers/CanActivate__12ChuuninEnter.c
-04_skyscrapers	GetTransientDataSize__12ChuuninEnter	GetTransientDataSize__12ChuuninEnter	function	8	1	0	1	LEVEL4.REL:0x255D88	
+04_skyscrapers	GetTransientDataSize__12ChuuninEnter	GetTransientDataSize__12ChuuninEnter	function	8	1	1	1	LEVEL4.REL:0x255D88	src/levels/04_skyscrapers/GetTransientDataSize__12ChuuninEnter.c
 04_skyscrapers	GetDesiredState__12ChuuninEnter	GetDesiredState__12ChuuninEnter	function	8	1	1	1	LEVEL4.REL:0x255D90	src/levels/04_skyscrapers/GetDesiredState__12ChuuninEnter.c
-04_skyscrapers	GetTransientDataSize__17ChuuninFireBreath	GetTransientDataSize__17ChuuninFireBreath	function	8	1	0	1	LEVEL4.REL:0x255D98	
+04_skyscrapers	GetTransientDataSize__17ChuuninFireBreath	GetTransientDataSize__17ChuuninFireBreath	function	8	1	1	1	LEVEL4.REL:0x255D98	src/levels/04_skyscrapers/GetTransientDataSize__17ChuuninFireBreath.c
 04_skyscrapers	CanActivate__17ChuuninFireBreath	CanActivate__17ChuuninFireBreath	function	8	1	1	1	LEVEL4.REL:0x255DA0	src/levels/04_skyscrapers/CanActivate__17ChuuninFireBreath.c
 04_skyscrapers	GetDesiredState__17ChuuninFireBreath	GetDesiredState__17ChuuninFireBreath	function	8	1	1	1	LEVEL4.REL:0x255DA8	src/levels/04_skyscrapers/GetDesiredState__17ChuuninFireBreath.c
 04_skyscrapers	Init__17ChuuninFireBreath	Init__17ChuuninFireBreath	function	8	1	1	1	LEVEL4.REL:0x255DB0	src/levels/04_skyscrapers/Init__17ChuuninFireBreath.c
@@ -16312,18 +16312,18 @@ shared	Begin__13GadgetBotWait	Begin__13GadgetBotWait	function	56	4	0	4	LEVEL4.RE
 shared	CanActivate__12GBP_OnGround	CanActivate__12GBP_OnGround	function	8	4	4	4	LEVEL4.REL:0x256848	src/levels/shared/CanActivate__12GBP_OnGround.c
 shared	GetTransientDataSize__15GadgetBotAttack_L04	GetTransientDataSize__15GadgetBotAttack	function	8	4	0	4	LEVEL4.REL:0x256850	
 shared	SetTarget__15GadgetBotAttackP4Moby	SetTarget__15GadgetBotAttackP4Moby	function	8	4	4	4	LEVEL4.REL:0x256858	src/levels/shared/SetTarget__15GadgetBotAttackP4Moby.c
-shared	GetTransientDataSize__13GadgetBotFall	GetTransientDataSize__13GadgetBotFall	function	8	4	0	4	LEVEL4.REL:0x256860	
+shared	GetTransientDataSize__13GadgetBotFall	GetTransientDataSize__13GadgetBotFall	function	8	4	4	4	LEVEL4.REL:0x256860	src/levels/shared/GetTransientDataSize__13GadgetBotFall.c
 shared	PlayerCanSwitch__13GadgetBotFall	PlayerCanSwitch__13GadgetBotFall	function	8	4	4	4	LEVEL4.REL:0x256868	src/levels/shared/PlayerCanSwitch__13GadgetBotFall.c
 shared	GetTransientDataSize__16GadgetBotInStack	GetTransientDataSize__16GadgetBotInStack	function	8	4	0	4	LEVEL4.REL:0x256870	
 shared	PlayerCanOverride__16GadgetBotInStack	PlayerCanOverride__16GadgetBotInStack	function	8	4	4	4	LEVEL4.REL:0x256878	src/levels/shared/PlayerCanOverride__16GadgetBotInStack.c
 shared	OnPlayerPossess__16GadgetBotInStack	OnPlayerPossess__16GadgetBotInStack	function	8	4	4	4	LEVEL4.REL:0x256880	src/levels/shared/OnPlayerPossess__16GadgetBotInStack.c
-shared	GetTransientDataSize__19GadgetBotGetOnStack	GetTransientDataSize__19GadgetBotGetOnStack	function	8	4	0	4	LEVEL4.REL:0x256888	
+shared	GetTransientDataSize__19GadgetBotGetOnStack	GetTransientDataSize__19GadgetBotGetOnStack	function	8	4	4	4	LEVEL4.REL:0x256888	src/levels/shared/GetTransientDataSize__19GadgetBotGetOnStack.c
 shared	PlayerCanSwitch__19GadgetBotGetOnStack	PlayerCanSwitch__19GadgetBotGetOnStack	function	8	4	4	4	LEVEL4.REL:0x256890	src/levels/shared/PlayerCanSwitch__19GadgetBotGetOnStack.c
-shared	GetTransientDataSize__21GadgetBotControlStack	GetTransientDataSize__21GadgetBotControlStack	function	8	4	0	4	LEVEL4.REL:0x256898	
+shared	GetTransientDataSize__21GadgetBotControlStack	GetTransientDataSize__21GadgetBotControlStack	function	8	4	4	4	LEVEL4.REL:0x256898	src/levels/shared/GetTransientDataSize__21GadgetBotControlStack.c
 shared	CanActivate__16GadgetBotOnStack	CanActivate__16GadgetBotOnStack	function	8	4	4	4	LEVEL4.REL:0x2568A0	src/levels/shared/CanActivate__16GadgetBotOnStack.c
 shared	Begin__16GadgetBotOnStack	Begin__16GadgetBotOnStack	function	56	4	0	4	LEVEL4.REL:0x2568A8	
-shared	GetTransientDataSize__15GadgetBotFollow	GetTransientDataSize__15GadgetBotFollow	function	8	4	0	4	LEVEL4.REL:0x2568E0	
-shared	GetTransientDataSize__19GadgetBotAggressive	GetTransientDataSize__19GadgetBotAggressive	function	8	4	0	4	LEVEL4.REL:0x2568E8	
+shared	GetTransientDataSize__15GadgetBotFollow	GetTransientDataSize__15GadgetBotFollow	function	8	4	4	4	LEVEL4.REL:0x2568E0	src/levels/shared/GetTransientDataSize__15GadgetBotFollow.c
+shared	GetTransientDataSize__19GadgetBotAggressive	GetTransientDataSize__19GadgetBotAggressive	function	8	4	4	4	LEVEL4.REL:0x2568E8	src/levels/shared/GetTransientDataSize__19GadgetBotAggressive.c
 shared	GetTransientDataSize__15GadgetBotRepair	GetTransientDataSize__15GadgetBotRepair	function	8	4	0	4	LEVEL4.REL:0x2568F0	
 shared	PlayerCanOverride__15GadgetBotRepair	PlayerCanOverride__15GadgetBotRepair	function	8	4	4	4	LEVEL4.REL:0x2568F8	src/levels/shared/PlayerCanOverride__15GadgetBotRepair.c
 shared	GetTransientDataSize__10GBP_Repair	GetTransientDataSize__10GBP_Repair	function	8	4	0	4	LEVEL4.REL:0x256900	
@@ -16335,7 +16335,7 @@ shared	Timestep__15GadgetBotGetHitf	Timestep__15GadgetBotGetHitf	function	32	4	0
 shared	ResetReactTimer__15GadgetBotGetHit	ResetReactTimer__15GadgetBotGetHit	function	8	4	0	4	LEVEL4.REL:0x256980	
 shared	PlayerCanOverride__14GadgetBotDeath	PlayerCanOverride__14GadgetBotDeath	function	28	4	4	4	LEVEL4.REL:0x256988	src/levels/shared/PlayerCanOverride__14GadgetBotDeath.c
 shared	GetTransientDataSize__9GBP_Wheel	GetTransientDataSize__9GBP_Wheel	function	8	4	0	4	LEVEL4.REL:0x2569A8	
-shared	GetTransientDataSize__16GadgetBotInWheel	GetTransientDataSize__16GadgetBotInWheel	function	8	4	0	4	LEVEL4.REL:0x2569B0	
+shared	GetTransientDataSize__16GadgetBotInWheel	GetTransientDataSize__16GadgetBotInWheel	function	8	4	4	4	LEVEL4.REL:0x2569B0	src/levels/shared/GetTransientDataSize__16GadgetBotInWheel.c
 shared	GetTransientDataSize__18GadgetBotExitWheel	GetTransientDataSize__18GadgetBotExitWheel	function	8	4	4	4	LEVEL4.REL:0x2569B8	src/levels/shared/GetTransientDataSize__18GadgetBotExitWheel.c
 shared	PlayerCanOverride__18GadgetBotExitWheel	PlayerCanOverride__18GadgetBotExitWheel	function	8	4	4	4	LEVEL4.REL:0x2569C0	src/levels/shared/PlayerCanOverride__18GadgetBotExitWheel.c
 shared	GetTransientDataSize__13GBP_BiteLever	GetTransientDataSize__13GBP_BiteLever	function	8	4	0	4	LEVEL4.REL:0x2569C8	
@@ -16347,7 +16347,7 @@ shared	PlayerCanOverride__14GadgetBotSwing	PlayerCanOverride__14GadgetBotSwing	f
 shared	GetTransientDataSize__16GadgetBotShocked	GetTransientDataSize__16GadgetBotShocked	function	8	4	4	4	LEVEL4.REL:0x256A08	src/levels/shared/GetTransientDataSize__16GadgetBotShocked.c
 shared	PlayerCanSwitch__16GadgetBotShocked	PlayerCanSwitch__16GadgetBotShocked	function	8	4	4	4	LEVEL4.REL:0x256A10	src/levels/shared/PlayerCanSwitch__16GadgetBotShocked.c
 shared	PlayerCanOverride__16GadgetBotShocked	PlayerCanOverride__16GadgetBotShocked	function	8	4	4	4	LEVEL4.REL:0x256A18	src/levels/shared/PlayerCanOverride__16GadgetBotShocked.c
-shared	GetTransientDataSize__16GadgetBotGetHelm	GetTransientDataSize__16GadgetBotGetHelm	function	8	4	0	4	LEVEL4.REL:0x256A20	
+shared	GetTransientDataSize__16GadgetBotGetHelm	GetTransientDataSize__16GadgetBotGetHelm	function	8	4	4	4	LEVEL4.REL:0x256A20	src/levels/shared/GetTransientDataSize__16GadgetBotGetHelm.c
 shared	PlayerCanSwitch__16GadgetBotGetHelm	PlayerCanSwitch__16GadgetBotGetHelm	function	8	4	4	4	LEVEL4.REL:0x256A28	src/levels/shared/PlayerCanSwitch__16GadgetBotGetHelm.c
 shared	PlayerCanOverride__16GadgetBotGetHelm	PlayerCanOverride__16GadgetBotGetHelm	function	8	4	4	4	LEVEL4.REL:0x256A30	src/levels/shared/PlayerCanOverride__16GadgetBotGetHelm.c
 shared	GetTransientDataSize__15GBP_GoToScanner	GetTransientDataSize__15GBP_GoToScanner	function	8	4	4	4	LEVEL4.REL:0x256A38	src/levels/shared/GetTransientDataSize__15GBP_GoToScanner.c
@@ -16356,21 +16356,21 @@ shared	PlayerCanSwitch__15GBP_GoToScanner	PlayerCanSwitch__15GBP_GoToScanner	fun
 shared	PlayerCanOverride__15GBP_GoToScanner	PlayerCanOverride__15GBP_GoToScanner	function	8	4	4	4	LEVEL4.REL:0x256A50	src/levels/shared/PlayerCanOverride__15GBP_GoToScanner.c
 shared	HandleDamage__15GBP_GoToScannerf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__15GBP_GoToScannerf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	24	4	0	4	LEVEL4.REL:0x256A58	
 shared	__16GadgetBotContent	__16GadgetBotContent	function	972	4	0	4	LEVEL4.REL:0x256A70	
-shared	GetTransientDataSize__18HenchbotGoToTarget	GetTransientDataSize__18HenchbotGoToTarget	function	8	5	0	5	LEVEL4.REL:0x256E68	
+shared	GetTransientDataSize__18HenchbotGoToTarget	GetTransientDataSize__18HenchbotGoToTarget	function	8	5	5	5	LEVEL4.REL:0x256E68	src/levels/shared/GetTransientDataSize__18HenchbotGoToTarget.c
 shared	GetTransientDataSize__18HenchbotFollowPath	GetTransientDataSize__18HenchbotFollowPath	function	8	5	0	5	LEVEL4.REL:0x256E70	
 shared	CanActivate__13HenchbotStuck	CanActivate__13HenchbotStuck	function	8	5	5	5	LEVEL4.REL:0x256E78	src/levels/shared/CanActivate__13HenchbotStuck.c
-shared	GetTransientDataSize__13HenchbotStuck	GetTransientDataSize__13HenchbotStuck	function	8	5	0	5	LEVEL4.REL:0x256E80	
+shared	GetTransientDataSize__13HenchbotStuck	GetTransientDataSize__13HenchbotStuck	function	8	5	5	5	LEVEL4.REL:0x256E80	src/levels/shared/GetTransientDataSize__13HenchbotStuck.c
 shared	CanActivate__10HBA_Reinit	CanActivate__10HBA_Reinit	function	8	2	2	2	LEVEL4.REL:0x256E88	src/levels/shared/CanActivate__10HBA_Reinit.c
 shared	CanActivate__13HBA_EnterJump	CanActivate__13HBA_EnterJump	function	8	2	2	2	LEVEL4.REL:0x256E90	src/levels/shared/CanActivate__13HBA_EnterJump.c
 shared	CanActivate__16HBA_EnterForward	CanActivate__16HBA_EnterForward	function	8	2	2	2	LEVEL4.REL:0x256E98	src/levels/shared/CanActivate__16HBA_EnterForward.c
 shared	__16HenchbotAContent	__16HenchbotAContent	function	320	2	0	2	LEVEL4.REL:0x256EA0	
 shared	KillEffect__15OmniKeyLockItemP4Moby	KillEffect__15OmniKeyLockItemP4Moby	function	8	7	7	7	LEVEL4.REL:0x257130	src/levels/shared/KillEffect__15OmniKeyLockItemP4Moby.c
 04_skyscrapers	CanActivate__9NinjaSpar	CanActivate__9NinjaSpar	function	8	1	1	1	LEVEL4.REL:0x257138	src/levels/04_skyscrapers/CanActivate__9NinjaSpar.c
-04_skyscrapers	GetTransientDataSize__9NinjaSpar	GetTransientDataSize__9NinjaSpar	function	8	1	0	1	LEVEL4.REL:0x257140	
+04_skyscrapers	GetTransientDataSize__9NinjaSpar	GetTransientDataSize__9NinjaSpar	function	8	1	1	1	LEVEL4.REL:0x257140	src/levels/04_skyscrapers/GetTransientDataSize__9NinjaSpar.c
 04_skyscrapers	GetSubstate__9NinjaSpar	GetSubstate__9NinjaSpar	function	16	1	0	1	LEVEL4.REL:0x257148	
 04_skyscrapers	GetTransientDataSize__15NinjaGoToTarget	GetTransientDataSize__15NinjaGoToTarget	function	8	1	0	1	LEVEL4.REL:0x257158	
 04_skyscrapers	CanActivate__11NinjaDefend	CanActivate__11NinjaDefend	function	8	1	1	1	LEVEL4.REL:0x257160	src/levels/04_skyscrapers/CanActivate__11NinjaDefend.c
-04_skyscrapers	GetTransientDataSize__11NinjaDefend	GetTransientDataSize__11NinjaDefend	function	8	1	0	1	LEVEL4.REL:0x257168	
+04_skyscrapers	GetTransientDataSize__11NinjaDefend	GetTransientDataSize__11NinjaDefend	function	8	1	1	1	LEVEL4.REL:0x257168	src/levels/04_skyscrapers/GetTransientDataSize__11NinjaDefend.c
 04_skyscrapers	Init__11NinjaDefend	Init__11NinjaDefend	function	8	1	1	1	LEVEL4.REL:0x257170	src/levels/04_skyscrapers/Init__11NinjaDefend.c
 04_skyscrapers	CanActivate__14NinjaClimbRoof	CanActivate__14NinjaClimbRoof	function	8	1	1	1	LEVEL4.REL:0x257178	src/levels/04_skyscrapers/CanActivate__14NinjaClimbRoof.c
 04_skyscrapers	GetTransientDataSize__14NinjaClimbRoof	GetTransientDataSize__14NinjaClimbRoof	function	8	1	1	1	LEVEL4.REL:0x257180	src/levels/04_skyscrapers/GetTransientDataSize__14NinjaClimbRoof.c
@@ -16381,16 +16381,16 @@ shared	KillEffect__15OmniKeyLockItemP4Moby	KillEffect__15OmniKeyLockItemP4Moby	f
 04_skyscrapers	CanActivate__10NinjaReset	CanActivate__10NinjaReset	function	8	1	1	1	LEVEL4.REL:0x2571B8	src/levels/04_skyscrapers/CanActivate__10NinjaReset.c
 04_skyscrapers	GetTransientDataSize__10NinjaReset	GetTransientDataSize__10NinjaReset	function	8	1	1	1	LEVEL4.REL:0x2571C0	src/levels/04_skyscrapers/GetTransientDataSize__10NinjaReset.c
 04_skyscrapers	CanActivate__18NinjaEnterSkylight	CanActivate__18NinjaEnterSkylight	function	8	1	1	1	LEVEL4.REL:0x2571C8	src/levels/04_skyscrapers/CanActivate__18NinjaEnterSkylight.c
-04_skyscrapers	GetTransientDataSize__12NinjaDestroy	GetTransientDataSize__12NinjaDestroy	function	8	1	0	1	LEVEL4.REL:0x2571D0	
+04_skyscrapers	GetTransientDataSize__12NinjaDestroy	GetTransientDataSize__12NinjaDestroy	function	8	1	1	1	LEVEL4.REL:0x2571D0	src/levels/04_skyscrapers/GetTransientDataSize__12NinjaDestroy.c
 04_skyscrapers	CanActivate__12NinjaDestroy	CanActivate__12NinjaDestroy	function	8	1	1	1	LEVEL4.REL:0x2571D8	src/levels/04_skyscrapers/CanActivate__12NinjaDestroy.c
 04_skyscrapers	GetDesiredState__12NinjaDestroy	GetDesiredState__12NinjaDestroy	function	8	1	1	1	LEVEL4.REL:0x2571E0	src/levels/04_skyscrapers/GetDesiredState__12NinjaDestroy.c
 04_skyscrapers	Init__12NinjaDestroy	Init__12NinjaDestroy	function	8	1	1	1	LEVEL4.REL:0x2571E8	src/levels/04_skyscrapers/Init__12NinjaDestroy.c
-04_skyscrapers	GetTransientDataSize__10NinjaSleep	GetTransientDataSize__10NinjaSleep	function	8	1	0	1	LEVEL4.REL:0x2571F0	
-04_skyscrapers	GetTransientDataSize__11NinjaAttack	GetTransientDataSize__11NinjaAttack	function	8	1	0	1	LEVEL4.REL:0x2571F8	
+04_skyscrapers	GetTransientDataSize__10NinjaSleep	GetTransientDataSize__10NinjaSleep	function	8	1	1	1	LEVEL4.REL:0x2571F0	src/levels/04_skyscrapers/GetTransientDataSize__10NinjaSleep.c
+04_skyscrapers	GetTransientDataSize__11NinjaAttack	GetTransientDataSize__11NinjaAttack	function	8	1	1	1	LEVEL4.REL:0x2571F8	src/levels/04_skyscrapers/GetTransientDataSize__11NinjaAttack.c
 04_skyscrapers	CanActivate__13NinjaHideIdle	CanActivate__13NinjaHideIdle	function	8	1	1	1	LEVEL4.REL:0x257200	src/levels/04_skyscrapers/CanActivate__13NinjaHideIdle.c
 04_skyscrapers	Begin__17NinjaBigKnockback	Begin__17NinjaBigKnockback	function	84	1	0	1	LEVEL4.REL:0x257208	
 04_skyscrapers	__17RobotNinjaContent	__17RobotNinjaContent	function	716	1	0	1	LEVEL4.REL:0x257260	
-04_skyscrapers	GetTransientDataSize__18SentryTurret02Turn	GetTransientDataSize__18SentryTurret02Turn	function	8	1	0	1	LEVEL4.REL:0x257530	
+04_skyscrapers	GetTransientDataSize__18SentryTurret02Turn	GetTransientDataSize__18SentryTurret02Turn	function	8	1	1	1	LEVEL4.REL:0x257530	src/levels/04_skyscrapers/GetTransientDataSize__18SentryTurret02Turn.c
 04_skyscrapers	CanActivate__18SentryTurret02Turn	CanActivate__18SentryTurret02Turn	function	8	1	1	1	LEVEL4.REL:0x257538	src/levels/04_skyscrapers/CanActivate__18SentryTurret02Turn.c
 04_skyscrapers	GetDesiredState__18SentryTurret02Turn	GetDesiredState__18SentryTurret02Turn	function	8	1	1	1	LEVEL4.REL:0x257540	src/levels/04_skyscrapers/GetDesiredState__18SentryTurret02Turn.c
 04_skyscrapers	Init__18SentryTurret02Turn	Init__18SentryTurret02Turn	function	8	1	1	1	LEVEL4.REL:0x257548	src/levels/04_skyscrapers/Init__18SentryTurret02Turn.c
@@ -18336,18 +18336,18 @@ shared	__final_insertion_sort__H2ZPP21BackgroundPersonActorZPFP21BackgroundPerso
 10_carnival	__unguarded_insertion_sort_aux__H3ZPP27BackgroundPersonSimpleActorZP27BackgroundPersonSimpleActorZPFP27Backgrou_7fdc7f0f	__unguarded_insertion_sort_aux__H3ZPP27BackgroundPersonSimpleActorZP27BackgroundPersonSimpleActorZPFP27BackgroundPersonSimpleActorP27BackgroundPersonSimpleActor_b_X01X01PX11X21_v	function	88	1	0	1	LEVEL10.REL:0x238CF0	
 10_carnival	__final_insertion_sort__H2ZPP27BackgroundPersonSimpleActorZPFP27BackgroundPersonSimpleActorP27BackgroundPersonS_156efef2	__final_insertion_sort__H2ZPP27BackgroundPersonSimpleActorZPFP27BackgroundPersonSimpleActorP27BackgroundPersonSimpleActor_b_X01X01X11_v	function	120	1	0	1	LEVEL10.REL:0x238D48	
 10_carnival	CanActivate__29ExpatGuardState_FollowKingpin	CanActivate__29ExpatGuardState_FollowKingpin	function	8	1	1	1	LEVEL10.REL:0x23A638	src/levels/10_carnival/CanActivate__29ExpatGuardState_FollowKingpin.c
-10_carnival	GetTransientDataSize__29ExpatGuardState_FollowKingpin	GetTransientDataSize__29ExpatGuardState_FollowKingpin	function	8	1	0	1	LEVEL10.REL:0x23A640	
-10_carnival	GetTransientDataSize__28ExpatGuardState_CatchKingpin	GetTransientDataSize__28ExpatGuardState_CatchKingpin	function	8	1	0	1	LEVEL10.REL:0x23A648	
+10_carnival	GetTransientDataSize__29ExpatGuardState_FollowKingpin	GetTransientDataSize__29ExpatGuardState_FollowKingpin	function	8	1	1	1	LEVEL10.REL:0x23A640	src/levels/10_carnival/GetTransientDataSize__29ExpatGuardState_FollowKingpin.c
+10_carnival	GetTransientDataSize__28ExpatGuardState_CatchKingpin	GetTransientDataSize__28ExpatGuardState_CatchKingpin	function	8	1	1	1	LEVEL10.REL:0x23A648	src/levels/10_carnival/GetTransientDataSize__28ExpatGuardState_CatchKingpin.c
 10_carnival	GetStealthTakedownState__C28ExpatGuardState_CatchKingpin	GetStealthTakedownState__C28ExpatGuardState_CatchKingpin	function	8	1	1	1	LEVEL10.REL:0x23A650	src/levels/10_carnival/GetStealthTakedownState__C28ExpatGuardState_CatchKingpin.c
-10_carnival	GetTransientDataSize__26ExpatGuardState_LeftBehind	GetTransientDataSize__26ExpatGuardState_LeftBehind	function	8	1	0	1	LEVEL10.REL:0x23A658	
+10_carnival	GetTransientDataSize__26ExpatGuardState_LeftBehind	GetTransientDataSize__26ExpatGuardState_LeftBehind	function	8	1	1	1	LEVEL10.REL:0x23A658	src/levels/10_carnival/GetTransientDataSize__26ExpatGuardState_LeftBehind.c
 10_carnival	GetStealthTakedownState__C26ExpatGuardState_LeftBehind	GetStealthTakedownState__C26ExpatGuardState_LeftBehind	function	8	1	1	1	LEVEL10.REL:0x23A660	src/levels/10_carnival/GetStealthTakedownState__C26ExpatGuardState_LeftBehind.c
-10_carnival	GetTransientDataSize__26ExpatGuardState_Suspicious	GetTransientDataSize__26ExpatGuardState_Suspicious	function	8	1	0	1	LEVEL10.REL:0x23A668	
+10_carnival	GetTransientDataSize__26ExpatGuardState_Suspicious	GetTransientDataSize__26ExpatGuardState_Suspicious	function	8	1	1	1	LEVEL10.REL:0x23A668	src/levels/10_carnival/GetTransientDataSize__26ExpatGuardState_Suspicious.c
 10_carnival	GetStealthTakedownState__C26ExpatGuardState_Suspicious	GetStealthTakedownState__C26ExpatGuardState_Suspicious	function	8	1	1	1	LEVEL10.REL:0x23A670	src/levels/10_carnival/GetStealthTakedownState__C26ExpatGuardState_Suspicious.c
 10_carnival	IsShooting__24ExpatGuardState_Engaging	IsShooting__24ExpatGuardState_Engaging	function	16	1	0	1	LEVEL10.REL:0x23A678	
-10_carnival	GetTransientDataSize__24ExpatGuardState_Engaging	GetTransientDataSize__24ExpatGuardState_Engaging	function	8	1	0	1	LEVEL10.REL:0x23A688	
+10_carnival	GetTransientDataSize__24ExpatGuardState_Engaging	GetTransientDataSize__24ExpatGuardState_Engaging	function	8	1	1	1	LEVEL10.REL:0x23A688	src/levels/10_carnival/GetTransientDataSize__24ExpatGuardState_Engaging.c
 10_carnival	GetDesiredState__21ExpatGuardState_Death	GetDesiredState__21ExpatGuardState_Death	function	8	1	1	1	LEVEL10.REL:0x23A690	src/levels/10_carnival/GetDesiredState__21ExpatGuardState_Death.c
 10_carnival	CanActivate__21ExpatGuardState_Death	CanActivate__21ExpatGuardState_Death	function	8	1	1	1	LEVEL10.REL:0x23A698	src/levels/10_carnival/CanActivate__21ExpatGuardState_Death.c
-10_carnival	GetTransientDataSize__21ExpatGuardState_Death	GetTransientDataSize__21ExpatGuardState_Death	function	8	1	0	1	LEVEL10.REL:0x23A6A0	
+10_carnival	GetTransientDataSize__21ExpatGuardState_Death	GetTransientDataSize__21ExpatGuardState_Death	function	8	1	1	1	LEVEL10.REL:0x23A6A0	src/levels/10_carnival/GetTransientDataSize__21ExpatGuardState_Death.c
 10_carnival	GetDesiredState__29ExpatGuardState_CapturedClank	GetDesiredState__29ExpatGuardState_CapturedClank	function	8	1	1	1	LEVEL10.REL:0x23A6A8	src/levels/10_carnival/GetDesiredState__29ExpatGuardState_CapturedClank.c
 10_carnival	CanActivate__29ExpatGuardState_CapturedClank	CanActivate__29ExpatGuardState_CapturedClank	function	8	1	1	1	LEVEL10.REL:0x23A6B0	src/levels/10_carnival/CanActivate__29ExpatGuardState_CapturedClank.c
 10_carnival	CanBeEaten__C29ExpatGuardState_CapturedClank	CanBeEaten__C29ExpatGuardState_CapturedClank	function	8	1	1	1	LEVEL10.REL:0x23A6B8	src/levels/10_carnival/CanBeEaten__C29ExpatGuardState_CapturedClank.c
@@ -18373,7 +18373,7 @@ shared	__final_insertion_sort__H2ZPP21BackgroundPersonActorZPFP21BackgroundPerso
 10_carnival	CanBeEaten__C22HenchbotCarnival_Death	CanBeEaten__C22HenchbotCarnival_Death	function	8	1	1	1	LEVEL10.REL:0x23A9E8	src/levels/10_carnival/CanBeEaten__C22HenchbotCarnival_Death.c
 10_carnival	CanBeHypnotized__C22HenchbotCarnival_Death	CanBeHypnotized__C22HenchbotCarnival_Death	function	8	1	1	1	LEVEL10.REL:0x23A9F0	src/levels/10_carnival/CanBeHypnotized__C22HenchbotCarnival_Death.c
 10_carnival	__23HenchbotCarnivalContent	__23HenchbotCarnivalContent	function	452	1	0	1	LEVEL10.REL:0x23A9F8	
-10_carnival	GetTransientDataSize__25HenchbotGangMember_JumpIn	GetTransientDataSize__25HenchbotGangMember_JumpIn	function	8	1	0	1	LEVEL10.REL:0x23ABC0	
+10_carnival	GetTransientDataSize__25HenchbotGangMember_JumpIn	GetTransientDataSize__25HenchbotGangMember_JumpIn	function	8	1	1	1	LEVEL10.REL:0x23ABC0	src/levels/10_carnival/GetTransientDataSize__25HenchbotGangMember_JumpIn.c
 10_carnival	GetDesiredState__25HenchbotGangMember_JumpIn	GetDesiredState__25HenchbotGangMember_JumpIn	function	8	1	1	1	LEVEL10.REL:0x23ABC8	src/levels/10_carnival/GetDesiredState__25HenchbotGangMember_JumpIn.c
 10_carnival	CanActivate__25HenchbotGangMember_JumpIn	CanActivate__25HenchbotGangMember_JumpIn	function	8	1	1	1	LEVEL10.REL:0x23ABD0	src/levels/10_carnival/CanActivate__25HenchbotGangMember_JumpIn.c
 10_carnival	GetDesiredState__23HenchbotGangMember_Idle	GetDesiredState__23HenchbotGangMember_Idle	function	8	1	1	1	LEVEL10.REL:0x23ABD8	src/levels/10_carnival/GetDesiredState__23HenchbotGangMember_Idle.c
@@ -18381,29 +18381,29 @@ shared	__final_insertion_sort__H2ZPP21BackgroundPersonActorZPFP21BackgroundPerso
 10_carnival	GetEnemyStateMachine__25HenchbotGangMemberContent	GetEnemyStateMachine__25HenchbotGangMemberContent	function	8	1	0	1	LEVEL10.REL:0x23ABE8	
 10_carnival	GetDesiredState__18JackState_WalkPath	GetDesiredState__18JackState_WalkPath	function	8	1	1	1	LEVEL10.REL:0x23AC30	src/levels/10_carnival/GetDesiredState__18JackState_WalkPath.c
 10_carnival	CanActivate__18JackState_WalkPath	CanActivate__18JackState_WalkPath	function	8	1	1	1	LEVEL10.REL:0x23AC38	src/levels/10_carnival/CanActivate__18JackState_WalkPath.c
-10_carnival	GetTransientDataSize__18JackState_WalkPath	GetTransientDataSize__18JackState_WalkPath	function	8	1	0	1	LEVEL10.REL:0x23AC40	
+10_carnival	GetTransientDataSize__18JackState_WalkPath	GetTransientDataSize__18JackState_WalkPath	function	8	1	1	1	LEVEL10.REL:0x23AC40	src/levels/10_carnival/GetTransientDataSize__18JackState_WalkPath.c
 10_carnival	GetDesiredState__18JackState_ThrowHat	GetDesiredState__18JackState_ThrowHat	function	8	1	1	1	LEVEL10.REL:0x23AC48	src/levels/10_carnival/GetDesiredState__18JackState_ThrowHat.c
 10_carnival	CanActivate__18JackState_ThrowHat	CanActivate__18JackState_ThrowHat	function	8	1	1	1	LEVEL10.REL:0x23AC50	src/levels/10_carnival/CanActivate__18JackState_ThrowHat.c
-10_carnival	GetTransientDataSize__18JackState_ThrowHat	GetTransientDataSize__18JackState_ThrowHat	function	8	1	0	1	LEVEL10.REL:0x23AC58	
+10_carnival	GetTransientDataSize__18JackState_ThrowHat	GetTransientDataSize__18JackState_ThrowHat	function	8	1	1	1	LEVEL10.REL:0x23AC58	src/levels/10_carnival/GetTransientDataSize__18JackState_ThrowHat.c
 10_carnival	GetDesiredState__17KingpinState_Idle	GetDesiredState__17KingpinState_Idle	function	32	1	0	1	LEVEL10.REL:0x23AC60	
 10_carnival	CanActivate__17KingpinState_Idle	CanActivate__17KingpinState_Idle	function	8	1	1	1	LEVEL10.REL:0x23AC80	src/levels/10_carnival/CanActivate__17KingpinState_Idle.c
-10_carnival	GetTransientDataSize__17KingpinState_Idle	GetTransientDataSize__17KingpinState_Idle	function	8	1	0	1	LEVEL10.REL:0x23AC88	
+10_carnival	GetTransientDataSize__17KingpinState_Idle	GetTransientDataSize__17KingpinState_Idle	function	8	1	1	1	LEVEL10.REL:0x23AC88	src/levels/10_carnival/GetTransientDataSize__17KingpinState_Idle.c
 10_carnival	CanBeHypnotized__C17KingpinState_Idle	CanBeHypnotized__C17KingpinState_Idle	function	8	1	1	1	LEVEL10.REL:0x23AC90	src/levels/10_carnival/CanBeHypnotized__C17KingpinState_Idle.c
 10_carnival	GetDesiredState__21KingpinState_WalkPath	GetDesiredState__21KingpinState_WalkPath	function	32	1	0	1	LEVEL10.REL:0x23AC98	
 10_carnival	CanActivate__21KingpinState_WalkPath	CanActivate__21KingpinState_WalkPath	function	8	1	1	1	LEVEL10.REL:0x23ACB8	src/levels/10_carnival/CanActivate__21KingpinState_WalkPath.c
-10_carnival	GetTransientDataSize__21KingpinState_WalkPath	GetTransientDataSize__21KingpinState_WalkPath	function	8	1	0	1	LEVEL10.REL:0x23ACC0	
+10_carnival	GetTransientDataSize__21KingpinState_WalkPath	GetTransientDataSize__21KingpinState_WalkPath	function	8	1	1	1	LEVEL10.REL:0x23ACC0	src/levels/10_carnival/GetTransientDataSize__21KingpinState_WalkPath.c
 10_carnival	CanBeHypnotized__C21KingpinState_WalkPath	CanBeHypnotized__C21KingpinState_WalkPath	function	8	1	1	1	LEVEL10.REL:0x23ACC8	src/levels/10_carnival/CanBeHypnotized__C21KingpinState_WalkPath.c
 10_carnival	GetDesiredState__23KingpinState_Suspicious	GetDesiredState__23KingpinState_Suspicious	function	32	1	0	1	LEVEL10.REL:0x23ACD0	
 10_carnival	CanActivate__23KingpinState_Suspicious	CanActivate__23KingpinState_Suspicious	function	8	1	1	1	LEVEL10.REL:0x23ACF0	src/levels/10_carnival/CanActivate__23KingpinState_Suspicious.c
-10_carnival	GetTransientDataSize__23KingpinState_Suspicious	GetTransientDataSize__23KingpinState_Suspicious	function	8	1	0	1	LEVEL10.REL:0x23ACF8	
+10_carnival	GetTransientDataSize__23KingpinState_Suspicious	GetTransientDataSize__23KingpinState_Suspicious	function	8	1	1	1	LEVEL10.REL:0x23ACF8	src/levels/10_carnival/GetTransientDataSize__23KingpinState_Suspicious.c
 10_carnival	CanBeHypnotized__C23KingpinState_Suspicious	CanBeHypnotized__C23KingpinState_Suspicious	function	8	1	1	1	LEVEL10.REL:0x23AD00	src/levels/10_carnival/CanBeHypnotized__C23KingpinState_Suspicious.c
 10_carnival	GetDesiredState__22KingpinState_HearNoise	GetDesiredState__22KingpinState_HearNoise	function	32	1	0	1	LEVEL10.REL:0x23AD08	
 10_carnival	CanActivate__22KingpinState_HearNoise	CanActivate__22KingpinState_HearNoise	function	8	1	1	1	LEVEL10.REL:0x23AD28	src/levels/10_carnival/CanActivate__22KingpinState_HearNoise.c
-10_carnival	GetTransientDataSize__22KingpinState_HearNoise	GetTransientDataSize__22KingpinState_HearNoise	function	8	1	0	1	LEVEL10.REL:0x23AD30	
+10_carnival	GetTransientDataSize__22KingpinState_HearNoise	GetTransientDataSize__22KingpinState_HearNoise	function	8	1	1	1	LEVEL10.REL:0x23AD30	src/levels/10_carnival/GetTransientDataSize__22KingpinState_HearNoise.c
 10_carnival	CanBeHypnotized__C22KingpinState_HearNoise	CanBeHypnotized__C22KingpinState_HearNoise	function	8	1	1	1	LEVEL10.REL:0x23AD38	src/levels/10_carnival/CanBeHypnotized__C22KingpinState_HearNoise.c
 10_carnival	GetDesiredState__23KingpinState_FollowJack	GetDesiredState__23KingpinState_FollowJack	function	8	1	1	1	LEVEL10.REL:0x23AD40	src/levels/10_carnival/GetDesiredState__23KingpinState_FollowJack.c
 10_carnival	CanActivate__23KingpinState_FollowJack	CanActivate__23KingpinState_FollowJack	function	8	1	1	1	LEVEL10.REL:0x23AD48	src/levels/10_carnival/CanActivate__23KingpinState_FollowJack.c
-10_carnival	GetTransientDataSize__23KingpinState_FollowJack	GetTransientDataSize__23KingpinState_FollowJack	function	8	1	0	1	LEVEL10.REL:0x23AD50	
+10_carnival	GetTransientDataSize__23KingpinState_FollowJack	GetTransientDataSize__23KingpinState_FollowJack	function	8	1	1	1	LEVEL10.REL:0x23AD50	src/levels/10_carnival/GetTransientDataSize__23KingpinState_FollowJack.c
 10_carnival	CanBeHypnotized__C23KingpinState_FollowJack	CanBeHypnotized__C23KingpinState_FollowJack	function	8	1	1	1	LEVEL10.REL:0x23AD58	src/levels/10_carnival/CanBeHypnotized__C23KingpinState_FollowJack.c
 10_carnival	CanBeEaten__C23KingpinState_FollowJack	CanBeEaten__C23KingpinState_FollowJack	function	8	1	1	1	LEVEL10.REL:0x23AD60	src/levels/10_carnival/CanBeEaten__C23KingpinState_FollowJack.c
 10_carnival	GetDesiredState__26KingpinState_CapturedClank	GetDesiredState__26KingpinState_CapturedClank	function	8	1	1	1	LEVEL10.REL:0x23AD68	src/levels/10_carnival/GetDesiredState__26KingpinState_CapturedClank.c
@@ -19184,11 +19184,11 @@ shared	ForceAllocateMtx__14DrawObjManagerPP4AMtx_L11	ForceAllocateMtx__14DrawObj
 11_gondola	CanActivate__22ExpatGondola_OnCarrier	CanActivate__22ExpatGondola_OnCarrier	function	8	1	1	1	LEVEL11.REL:0x251B38	src/levels/11_gondola/CanActivate__22ExpatGondola_OnCarrier.c
 11_gondola	CanBeEaten__C22ExpatGondola_OnCarrier	CanBeEaten__C22ExpatGondola_OnCarrier	function	8	1	1	1	LEVEL11.REL:0x251B40	src/levels/11_gondola/CanBeEaten__C22ExpatGondola_OnCarrier.c
 11_gondola	CanBeHypnotized__C22ExpatGondola_OnCarrier	CanBeHypnotized__C22ExpatGondola_OnCarrier	function	8	1	1	1	LEVEL11.REL:0x251B48	src/levels/11_gondola/CanBeHypnotized__C22ExpatGondola_OnCarrier.c
-11_gondola	GetTransientDataSize__23ExpatGondola_Reposition	GetTransientDataSize__23ExpatGondola_Reposition	function	8	1	0	1	LEVEL11.REL:0x251B50	
+11_gondola	GetTransientDataSize__23ExpatGondola_Reposition	GetTransientDataSize__23ExpatGondola_Reposition	function	8	1	1	1	LEVEL11.REL:0x251B50	src/levels/11_gondola/GetTransientDataSize__23ExpatGondola_Reposition.c
 11_gondola	CanActivate__23ExpatGondola_Reposition	CanActivate__23ExpatGondola_Reposition	function	8	1	1	1	LEVEL11.REL:0x251B58	src/levels/11_gondola/CanActivate__23ExpatGondola_Reposition.c
 11_gondola	GetTransientDataSize__17ExpatGondola_Fire	GetTransientDataSize__17ExpatGondola_Fire	function	8	1	0	1	LEVEL11.REL:0x251B60	
 11_gondola	GetDesiredState__17ExpatGondola_Fire	GetDesiredState__17ExpatGondola_Fire	function	8	1	1	1	LEVEL11.REL:0x251B68	src/levels/11_gondola/GetDesiredState__17ExpatGondola_Fire.c
-11_gondola	GetTransientDataSize__23ExpatGondola_ChargeShot	GetTransientDataSize__23ExpatGondola_ChargeShot	function	8	1	0	1	LEVEL11.REL:0x251B70	
+11_gondola	GetTransientDataSize__23ExpatGondola_ChargeShot	GetTransientDataSize__23ExpatGondola_ChargeShot	function	8	1	1	1	LEVEL11.REL:0x251B70	src/levels/11_gondola/GetTransientDataSize__23ExpatGondola_ChargeShot.c
 11_gondola	GetDesiredState__23ExpatGondola_ChargeShot	GetDesiredState__23ExpatGondola_ChargeShot	function	8	1	1	1	LEVEL11.REL:0x251B78	src/levels/11_gondola/GetDesiredState__23ExpatGondola_ChargeShot.c
 11_gondola	GetTransientDataSize__24ExpatGondola_GondolaJump	GetTransientDataSize__24ExpatGondola_GondolaJump	function	8	1	1	1	LEVEL11.REL:0x251B80	src/levels/11_gondola/GetTransientDataSize__24ExpatGondola_GondolaJump.c
 11_gondola	GetDesiredState__24ExpatGondola_GondolaJump	GetDesiredState__24ExpatGondola_GondolaJump	function	8	1	1	1	LEVEL11.REL:0x251B88	src/levels/11_gondola/GetDesiredState__24ExpatGondola_GondolaJump.c
@@ -19197,7 +19197,7 @@ shared	ForceAllocateMtx__14DrawObjManagerPP4AMtx_L11	ForceAllocateMtx__14DrawObj
 11_gondola	RestartJump__24ExpatGondola_GondolaJump	RestartJump__24ExpatGondola_GondolaJump	function	8	1	0	1	LEVEL11.REL:0x251BA0	
 11_gondola	GetDesiredState__18ExpatGondola_Death	GetDesiredState__18ExpatGondola_Death	function	8	1	1	1	LEVEL11.REL:0x251BA8	src/levels/11_gondola/GetDesiredState__18ExpatGondola_Death.c
 11_gondola	CanActivate__18ExpatGondola_Death	CanActivate__18ExpatGondola_Death	function	20	1	0	1	LEVEL11.REL:0x251BB0	
-11_gondola	GetTransientDataSize__18ExpatGondola_Death	GetTransientDataSize__18ExpatGondola_Death	function	8	1	0	1	LEVEL11.REL:0x251BC8	
+11_gondola	GetTransientDataSize__18ExpatGondola_Death	GetTransientDataSize__18ExpatGondola_Death	function	8	1	1	1	LEVEL11.REL:0x251BC8	src/levels/11_gondola/GetTransientDataSize__18ExpatGondola_Death.c
 11_gondola	CanBeEaten__C18ExpatGondola_Death	CanBeEaten__C18ExpatGondola_Death	function	8	1	1	1	LEVEL11.REL:0x251BD0	src/levels/11_gondola/CanBeEaten__C18ExpatGondola_Death.c
 11_gondola	CanBeHypnotized__C18ExpatGondola_Death	CanBeHypnotized__C18ExpatGondola_Death	function	8	1	1	1	LEVEL11.REL:0x251BD8	src/levels/11_gondola/CanBeHypnotized__C18ExpatGondola_Death.c
 11_gondola	__19ExpatGondolaContent	__19ExpatGondolaContent	function	580	1	0	1	LEVEL11.REL:0x251BE0	
@@ -19226,14 +19226,14 @@ shared	ForceAllocateMtx__14DrawObjManagerPP4AMtx_L11	ForceAllocateMtx__14DrawObj
 11_gondola	CanActivate__21HenchbotGondola_Death	CanActivate__21HenchbotGondola_Death	function	8	1	1	1	LEVEL11.REL:0x251F28	src/levels/11_gondola/CanActivate__21HenchbotGondola_Death.c
 11_gondola	CanBeEaten__C21HenchbotGondola_Death	CanBeEaten__C21HenchbotGondola_Death	function	8	1	1	1	LEVEL11.REL:0x251F30	src/levels/11_gondola/CanBeEaten__C21HenchbotGondola_Death.c
 11_gondola	CanBeHypnotized__C21HenchbotGondola_Death	CanBeHypnotized__C21HenchbotGondola_Death	function	8	1	1	1	LEVEL11.REL:0x251F38	src/levels/11_gondola/CanBeHypnotized__C21HenchbotGondola_Death.c
-11_gondola	GetTransientDataSize__23HenchbotGondola_Explode	GetTransientDataSize__23HenchbotGondola_Explode	function	8	1	0	1	LEVEL11.REL:0x251F40	
+11_gondola	GetTransientDataSize__23HenchbotGondola_Explode	GetTransientDataSize__23HenchbotGondola_Explode	function	8	1	1	1	LEVEL11.REL:0x251F40	src/levels/11_gondola/GetTransientDataSize__23HenchbotGondola_Explode.c
 11_gondola	GetDesiredState__23HenchbotGondola_Explode	GetDesiredState__23HenchbotGondola_Explode	function	8	1	1	1	LEVEL11.REL:0x251F48	src/levels/11_gondola/GetDesiredState__23HenchbotGondola_Explode.c
 11_gondola	CanActivate__23HenchbotGondola_Explode	CanActivate__23HenchbotGondola_Explode	function	8	1	1	1	LEVEL11.REL:0x251F50	src/levels/11_gondola/CanActivate__23HenchbotGondola_Explode.c
 11_gondola	CanBeEaten__C23HenchbotGondola_Explode	CanBeEaten__C23HenchbotGondola_Explode	function	8	1	1	1	LEVEL11.REL:0x251F58	src/levels/11_gondola/CanBeEaten__C23HenchbotGondola_Explode.c
 11_gondola	CanBeHypnotized__C23HenchbotGondola_Explode	CanBeHypnotized__C23HenchbotGondola_Explode	function	8	1	1	1	LEVEL11.REL:0x251F60	src/levels/11_gondola/CanBeHypnotized__C23HenchbotGondola_Explode.c
 11_gondola	__22HenchbotGondolaContent	__22HenchbotGondolaContent	function	452	1	0	1	LEVEL11.REL:0x251F68	
 11_gondola	CanActivate__14HenchbotLaunch	CanActivate__14HenchbotLaunch	function	8	1	1	1	LEVEL11.REL:0x252130	src/levels/11_gondola/CanActivate__14HenchbotLaunch.c
-11_gondola	GetTransientDataSize__14HenchbotLaunch	GetTransientDataSize__14HenchbotLaunch	function	8	1	0	1	LEVEL11.REL:0x252138	
+11_gondola	GetTransientDataSize__14HenchbotLaunch	GetTransientDataSize__14HenchbotLaunch	function	8	1	1	1	LEVEL11.REL:0x252138	src/levels/11_gondola/GetTransientDataSize__14HenchbotLaunch.c
 11_gondola	End__14HenchbotLaunch	End__14HenchbotLaunch	function	32	1	0	1	LEVEL11.REL:0x252140	
 11_gondola	GetDesiredState__17HenchbotJackDeath	GetDesiredState__17HenchbotJackDeath	function	8	1	1	1	LEVEL11.REL:0x252160	src/levels/11_gondola/GetDesiredState__17HenchbotJackDeath.c
 11_gondola	CanActivate__17HenchbotJackDeath	CanActivate__17HenchbotJackDeath	function	8	1	1	1	LEVEL11.REL:0x252168	src/levels/11_gondola/CanActivate__17HenchbotJackDeath.c
@@ -19254,10 +19254,10 @@ shared	__5QWARK	__5QWARK	function	464	3	0	3	LEVEL11.REL:0x2522D8
 11_gondola	GetDesiredState__8Inactive	GetDesiredState__8Inactive	function	80	1	0	1	LEVEL11.REL:0x2524B8	
 11_gondola	CanActivate__8JackIdle	CanActivate__8JackIdle	function	8	1	1	1	LEVEL11.REL:0x252508	src/levels/11_gondola/CanActivate__8JackIdle.c
 11_gondola	GetDesiredState__8JackIdle	GetDesiredState__8JackIdle	function	8	1	1	1	LEVEL11.REL:0x252510	src/levels/11_gondola/GetDesiredState__8JackIdle.c
-11_gondola	GetTransientDataSize__13MissileLaunch	GetTransientDataSize__13MissileLaunch	function	8	1	0	1	LEVEL11.REL:0x252518	
+11_gondola	GetTransientDataSize__13MissileLaunch	GetTransientDataSize__13MissileLaunch	function	8	1	1	1	LEVEL11.REL:0x252518	src/levels/11_gondola/GetTransientDataSize__13MissileLaunch.c
 11_gondola	__15JOAT_Reposition	__15JOAT_Reposition	function	36	1	0	1	LEVEL11.REL:0x252520	
 11_gondola	CanActivate__15JOAT_Reposition	CanActivate__15JOAT_Reposition	function	8	1	1	1	LEVEL11.REL:0x252548	src/levels/11_gondola/CanActivate__15JOAT_Reposition.c
-11_gondola	GetTransientDataSize__15JOAT_Reposition	GetTransientDataSize__15JOAT_Reposition	function	8	1	0	1	LEVEL11.REL:0x252550	
+11_gondola	GetTransientDataSize__15JOAT_Reposition	GetTransientDataSize__15JOAT_Reposition	function	8	1	1	1	LEVEL11.REL:0x252550	src/levels/11_gondola/GetTransientDataSize__15JOAT_Reposition.c
 11_gondola	__9CardShoot	__9CardShoot	function	36	1	0	1	LEVEL11.REL:0x252558	
 11_gondola	GetTransientDataSize__9CardShoot	GetTransientDataSize__9CardShoot	function	8	1	0	1	LEVEL11.REL:0x252580	
 11_gondola	GetTransientDataSize__9JackDeath	GetTransientDataSize__9JackDeath	function	8	1	0	1	LEVEL11.REL:0x252588	
@@ -19526,7 +19526,7 @@ shared	GENPAR_CrateSmokeOuterEmit__FiPC28GENPAR_CrateSmokeOuterConfigPC17GENPAR_
 13_casino	CanActivate__20CasinoGuard_GetClank	CanActivate__20CasinoGuard_GetClank	function	8	1	1	1	LEVEL13.REL:0x22BEF8	src/levels/13_casino/CanActivate__20CasinoGuard_GetClank.c
 13_casino	GetDesiredState__20CasinoGuard_GetClank	GetDesiredState__20CasinoGuard_GetClank	function	8	1	1	1	LEVEL13.REL:0x22BF00	src/levels/13_casino/GetDesiredState__20CasinoGuard_GetClank.c
 13_casino	Init__20CasinoGuard_GetClankPC26CasinoGuard_GetClankConfig	Init__20CasinoGuard_GetClankPC26CasinoGuard_GetClankConfig	function	8	1	1	1	LEVEL13.REL:0x22BF08	src/levels/13_casino/Init__20CasinoGuard_GetClankPC26CasinoGuard_GetClankConfig.c
-13_casino	GetTransientDataSize__16CasinoGuard_Talk	GetTransientDataSize__16CasinoGuard_Talk	function	8	1	0	1	LEVEL13.REL:0x22BF10	
+13_casino	GetTransientDataSize__16CasinoGuard_Talk	GetTransientDataSize__16CasinoGuard_Talk	function	8	1	1	1	LEVEL13.REL:0x22BF10	src/levels/13_casino/GetTransientDataSize__16CasinoGuard_Talk.c
 13_casino	CanActivate__16CasinoGuard_Talk	CanActivate__16CasinoGuard_Talk	function	8	1	1	1	LEVEL13.REL:0x22BF18	src/levels/13_casino/CanActivate__16CasinoGuard_Talk.c
 13_casino	GetDesiredState__16CasinoGuard_Talk	GetDesiredState__16CasinoGuard_Talk	function	40	1	0	1	LEVEL13.REL:0x22BF20	
 13_casino	Init__16CasinoGuard_TalkPC22CasinoGuard_TalkConfig	Init__16CasinoGuard_TalkPC22CasinoGuard_TalkConfig	function	8	1	1	1	LEVEL13.REL:0x22BF48	src/levels/13_casino/Init__16CasinoGuard_TalkPC22CasinoGuard_TalkConfig.c
@@ -20039,7 +20039,7 @@ shared	isnan	isnan	function	56	2	0	2	LEVEL14.REL:0x2544C0
 15_highstakes	CanActivate__29HenchbotHighStakes_GoToTarget	CanActivate__29HenchbotHighStakes_GoToTarget	function	8	1	1	1	LEVEL15.REL:0x227228	src/levels/15_highstakes/CanActivate__29HenchbotHighStakes_GoToTarget.c
 15_highstakes	GetDesiredState__17ArenaGBEnterTable	GetDesiredState__17ArenaGBEnterTable	function	48	1	0	1	LEVEL15.REL:0x227230	
 15_highstakes	GetTransientDataSize__17ArenaGBEnterTable	GetTransientDataSize__17ArenaGBEnterTable	function	8	1	0	1	LEVEL15.REL:0x227260	
-15_highstakes	GetTransientDataSize__28HenchbotHighStakes_BiteClank	GetTransientDataSize__28HenchbotHighStakes_BiteClank	function	8	1	0	1	LEVEL15.REL:0x227268	
+15_highstakes	GetTransientDataSize__28HenchbotHighStakes_BiteClank	GetTransientDataSize__28HenchbotHighStakes_BiteClank	function	8	1	1	1	LEVEL15.REL:0x227268	src/levels/15_highstakes/GetTransientDataSize__28HenchbotHighStakes_BiteClank.c
 15_highstakes	SetCollisionFilter__25HenchbotHighStakesContentii	SetCollisionFilter__25HenchbotHighStakesContentii	function	28	1	0	1	LEVEL15.REL:0x227270	
 15_highstakes	GetEnemyStateMachine__25HenchbotHighStakesContent	GetEnemyStateMachine__25HenchbotHighStakesContent	function	8	1	0	1	LEVEL15.REL:0x227290	
 15_highstakes	__9IceShards	__9IceShards	function	36	1	0	1	LEVEL15.REL:0x227298	
@@ -20472,12 +20472,12 @@ shared	SimpleSpark_Spawn__FPC4VEC4T0PC18SimpleSpark_Paramsb_L16	SimpleSpark_Spaw
 16_lab	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Player__All_Player_cppqoaaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Player__All_Player.cppqoaaaa	function	32	1	1	1	LEVEL16.REL:0x18F908	src/levels/16_lab/_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Player__All_Player_cppqoaaaa.c
 16_lab	_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared_cppHTaaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared.cppHTaaaa	function	32	1	1	1	LEVEL16.REL:0x1C51F0	src/levels/16_lab/_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared_cppHTaaaa.c
 16_lab	_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems_cpp7vaaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems.cpp7vaaaa	function	32	1	1	1	LEVEL16.REL:0x1C9A28	src/levels/16_lab/_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems_cpp7vaaaa.c
-16_lab	GetTransientDataSize__23ControlledMoveToFirePos	GetTransientDataSize__23ControlledMoveToFirePos	function	8	1	0	1	LEVEL16.REL:0x243228	
-16_lab	GetTransientDataSize__25ControlledMoveToAttackPos	GetTransientDataSize__25ControlledMoveToAttackPos	function	8	1	0	1	LEVEL16.REL:0x243230	
+16_lab	GetTransientDataSize__23ControlledMoveToFirePos	GetTransientDataSize__23ControlledMoveToFirePos	function	8	1	1	1	LEVEL16.REL:0x243228	src/levels/16_lab/GetTransientDataSize__23ControlledMoveToFirePos.c
+16_lab	GetTransientDataSize__25ControlledMoveToAttackPos	GetTransientDataSize__25ControlledMoveToAttackPos	function	8	1	1	1	LEVEL16.REL:0x243230	src/levels/16_lab/GetTransientDataSize__25ControlledMoveToAttackPos.c
 16_lab	Init__13Amoeboid_BitePC22ConditionalMeleeConfigP5State	Init__13Amoeboid_BitePC22ConditionalMeleeConfigP5State	function	16	1	0	1	LEVEL16.REL:0x243268	
 16_lab	HandleDamage__14Amoeboid_Deathf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__14Amoeboid_Deathf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	8	1	1	1	LEVEL16.REL:0x243278	src/levels/16_lab/HandleDamage__14Amoeboid_Deathf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby.c
-16_lab	GetTransientDataSize__19Amoeboid_Suspicious	GetTransientDataSize__19Amoeboid_Suspicious	function	8	1	0	1	LEVEL16.REL:0x243280	
-16_lab	GetTransientDataSize__18Amoeboid_Suspended	GetTransientDataSize__18Amoeboid_Suspended	function	8	1	0	1	LEVEL16.REL:0x243288	
+16_lab	GetTransientDataSize__19Amoeboid_Suspicious	GetTransientDataSize__19Amoeboid_Suspicious	function	8	1	1	1	LEVEL16.REL:0x243280	src/levels/16_lab/GetTransientDataSize__19Amoeboid_Suspicious.c
+16_lab	GetTransientDataSize__18Amoeboid_Suspended	GetTransientDataSize__18Amoeboid_Suspended	function	8	1	1	1	LEVEL16.REL:0x243288	src/levels/16_lab/GetTransientDataSize__18Amoeboid_Suspended.c
 16_lab	CanBeEaten__C18Amoeboid_Suspended	CanBeEaten__C18Amoeboid_Suspended	function	8	1	1	1	LEVEL16.REL:0x243290	src/levels/16_lab/CanBeEaten__C18Amoeboid_Suspended.c
 16_lab	CanBeHypnotized__C18Amoeboid_Suspended	CanBeHypnotized__C18Amoeboid_Suspended	function	8	1	1	1	LEVEL16.REL:0x243298	src/levels/16_lab/CanBeHypnotized__C18Amoeboid_Suspended.c
 16_lab	CanBeEaten__C13Amoeboid_Path	CanBeEaten__C13Amoeboid_Path	function	8	1	1	1	LEVEL16.REL:0x2432A0	src/levels/16_lab/CanBeEaten__C13Amoeboid_Path.c
@@ -20485,12 +20485,12 @@ shared	SimpleSpark_Spawn__FPC4VEC4T0PC18SimpleSpark_Paramsb_L16	SimpleSpark_Spaw
 16_lab	GetEnemyStateMachine__15AmoeboidContent	GetEnemyStateMachine__15AmoeboidContent	function	8	1	0	1	LEVEL16.REL:0x2432B0	
 16_lab	GetCuffLinkBombConfig__C15AmoeboidContent	GetCuffLinkBombConfig__C15AmoeboidContent	function	12	1	1	1	LEVEL16.REL:0x2432B8	src/levels/16_lab/GetCuffLinkBombConfig__C15AmoeboidContent.c
 16_lab	HandleDamage__19AmoeboidSmall_Deathf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__19AmoeboidSmall_Deathf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	8	1	1	1	LEVEL16.REL:0x2432C8	src/levels/16_lab/HandleDamage__19AmoeboidSmall_Deathf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby.c
-16_lab	GetTransientDataSize__20AmoeboidSmall_Spewed	GetTransientDataSize__20AmoeboidSmall_Spewed	function	8	1	0	1	LEVEL16.REL:0x2432D0	
+16_lab	GetTransientDataSize__20AmoeboidSmall_Spewed	GetTransientDataSize__20AmoeboidSmall_Spewed	function	8	1	1	1	LEVEL16.REL:0x2432D0	src/levels/16_lab/GetTransientDataSize__20AmoeboidSmall_Spewed.c
 16_lab	GetDesiredState__20AmoeboidSmall_Spewed	GetDesiredState__20AmoeboidSmall_Spewed	function	8	1	1	1	LEVEL16.REL:0x2432D8	src/levels/16_lab/GetDesiredState__20AmoeboidSmall_Spewed.c
 16_lab	CanActivate__20AmoeboidSmall_Spewed	CanActivate__20AmoeboidSmall_Spewed	function	8	1	1	1	LEVEL16.REL:0x2432E0	src/levels/16_lab/CanActivate__20AmoeboidSmall_Spewed.c
 16_lab	CanBeEaten__C20AmoeboidSmall_Spewed	CanBeEaten__C20AmoeboidSmall_Spewed	function	8	1	1	1	LEVEL16.REL:0x2432E8	src/levels/16_lab/CanBeEaten__C20AmoeboidSmall_Spewed.c
 16_lab	CanBeHypnotized__C20AmoeboidSmall_Spewed	CanBeHypnotized__C20AmoeboidSmall_Spewed	function	8	1	1	1	LEVEL16.REL:0x2432F0	src/levels/16_lab/CanBeHypnotized__C20AmoeboidSmall_Spewed.c
-16_lab	GetTransientDataSize__20AmoeboidSmall_Budded	GetTransientDataSize__20AmoeboidSmall_Budded	function	8	1	0	1	LEVEL16.REL:0x2432F8	
+16_lab	GetTransientDataSize__20AmoeboidSmall_Budded	GetTransientDataSize__20AmoeboidSmall_Budded	function	8	1	1	1	LEVEL16.REL:0x2432F8	src/levels/16_lab/GetTransientDataSize__20AmoeboidSmall_Budded.c
 16_lab	GetDesiredState__20AmoeboidSmall_Budded	GetDesiredState__20AmoeboidSmall_Budded	function	8	1	1	1	LEVEL16.REL:0x243300	src/levels/16_lab/GetDesiredState__20AmoeboidSmall_Budded.c
 16_lab	CanActivate__20AmoeboidSmall_Budded	CanActivate__20AmoeboidSmall_Budded	function	8	1	1	1	LEVEL16.REL:0x243308	src/levels/16_lab/CanActivate__20AmoeboidSmall_Budded.c
 16_lab	SetParent__20AmoeboidSmall_BuddedP4Moby	SetParent__20AmoeboidSmall_BuddedP4Moby	function	16	1	0	1	LEVEL16.REL:0x243310	
@@ -20499,10 +20499,10 @@ shared	SimpleSpark_Spawn__FPC4VEC4T0PC18SimpleSpark_Paramsb_L16	SimpleSpark_Spaw
 16_lab	Init__19AmoeboidSmall_MeleePC22ConditionalMeleeConfigP5State	Init__19AmoeboidSmall_MeleePC22ConditionalMeleeConfigP5State	function	16	1	0	1	LEVEL16.REL:0x243330	
 16_lab	CanBeEaten__C18AmoeboidSmall_Path	CanBeEaten__C18AmoeboidSmall_Path	function	8	1	1	1	LEVEL16.REL:0x243340	src/levels/16_lab/CanBeEaten__C18AmoeboidSmall_Path.c
 16_lab	CanBeHypnotized__C18AmoeboidSmall_Path	CanBeHypnotized__C18AmoeboidSmall_Path	function	8	1	1	1	LEVEL16.REL:0x243348	src/levels/16_lab/CanBeHypnotized__C18AmoeboidSmall_Path.c
-16_lab	GetTransientDataSize__23AmoeboidSmall_Suspended	GetTransientDataSize__23AmoeboidSmall_Suspended	function	8	1	0	1	LEVEL16.REL:0x243350	
+16_lab	GetTransientDataSize__23AmoeboidSmall_Suspended	GetTransientDataSize__23AmoeboidSmall_Suspended	function	8	1	1	1	LEVEL16.REL:0x243350	src/levels/16_lab/GetTransientDataSize__23AmoeboidSmall_Suspended.c
 16_lab	CanBeEaten__C23AmoeboidSmall_Suspended	CanBeEaten__C23AmoeboidSmall_Suspended	function	8	1	1	1	LEVEL16.REL:0x243358	src/levels/16_lab/CanBeEaten__C23AmoeboidSmall_Suspended.c
 16_lab	CanBeHypnotized__C23AmoeboidSmall_Suspended	CanBeHypnotized__C23AmoeboidSmall_Suspended	function	8	1	1	1	LEVEL16.REL:0x243360	src/levels/16_lab/CanBeHypnotized__C23AmoeboidSmall_Suspended.c
-16_lab	GetTransientDataSize__24AmoeboidSmall_Suspicious	GetTransientDataSize__24AmoeboidSmall_Suspicious	function	8	1	0	1	LEVEL16.REL:0x243368	
+16_lab	GetTransientDataSize__24AmoeboidSmall_Suspicious	GetTransientDataSize__24AmoeboidSmall_Suspicious	function	8	1	1	1	LEVEL16.REL:0x243368	src/levels/16_lab/GetTransientDataSize__24AmoeboidSmall_Suspicious.c
 16_lab	DestroyMoby__31AmoeboidSmall_KnucklesKnockback	DestroyMoby__31AmoeboidSmall_KnucklesKnockback	function	32	1	0	1	LEVEL16.REL:0x243370	
 16_lab	GetEnemyStateMachine__20AmoeboidSmallContent	GetEnemyStateMachine__20AmoeboidSmallContent	function	8	1	0	1	LEVEL16.REL:0x243390	
 16_lab	IsSwarmer__20AmoeboidSmallContent	IsSwarmer__20AmoeboidSmallContent	function	8	1	1	1	LEVEL16.REL:0x243398	src/levels/16_lab/IsSwarmer__20AmoeboidSmallContent.c
@@ -20514,10 +20514,10 @@ shared	GetStealthTakedownState__C20BoltThief_LookAround	GetStealthTakedownState_
 shared	CanActivate__20BoltThief_Suspicious	CanActivate__20BoltThief_Suspicious	function	24	3	0	3	LEVEL16.REL:0x243688	
 shared	GetStealthTakedownState__C20BoltThief_Suspicious	GetStealthTakedownState__C20BoltThief_Suspicious	function	8	3	3	3	LEVEL16.REL:0x2436A0	src/levels/shared/GetStealthTakedownState__C20BoltThief_Suspicious.c
 shared	GetStealthTakedownState__C19BoltThief_Defensive	GetStealthTakedownState__C19BoltThief_Defensive	function	8	3	3	3	LEVEL16.REL:0x2436A8	src/levels/shared/GetStealthTakedownState__C19BoltThief_Defensive.c
-shared	GetTransientDataSize__16BoltThief_Attack	GetTransientDataSize__16BoltThief_Attack	function	8	3	0	3	LEVEL16.REL:0x2436B0	
+shared	GetTransientDataSize__16BoltThief_Attack	GetTransientDataSize__16BoltThief_Attack	function	8	3	3	3	LEVEL16.REL:0x2436B0	src/levels/shared/GetTransientDataSize__16BoltThief_Attack.c
 shared	GetTransientDataSize__16BoltThief_Patrol	GetTransientDataSize__16BoltThief_Patrol	function	8	3	3	3	LEVEL16.REL:0x2436B8	src/levels/shared/GetTransientDataSize__16BoltThief_Patrol.c
 shared	GetStealthTakedownState__C16BoltThief_Patrol	GetStealthTakedownState__C16BoltThief_Patrol	function	8	3	3	3	LEVEL16.REL:0x2436C0	src/levels/shared/GetStealthTakedownState__C16BoltThief_Patrol.c
-shared	GetTransientDataSize__20BoltThief_ReturnHome	GetTransientDataSize__20BoltThief_ReturnHome	function	8	3	0	3	LEVEL16.REL:0x2436C8	
+shared	GetTransientDataSize__20BoltThief_ReturnHome	GetTransientDataSize__20BoltThief_ReturnHome	function	8	3	3	3	LEVEL16.REL:0x2436C8	src/levels/shared/GetTransientDataSize__20BoltThief_ReturnHome.c
 shared	GetStealthTakedownState__C20BoltThief_ReturnHome	GetStealthTakedownState__C20BoltThief_ReturnHome	function	8	3	3	3	LEVEL16.REL:0x2436D0	src/levels/shared/GetStealthTakedownState__C20BoltThief_ReturnHome.c
 shared	GetTransientDataSize__16BoltThief_Hoover	GetTransientDataSize__16BoltThief_Hoover	function	8	3	0	3	LEVEL16.REL:0x2436D8	
 shared	GetStealthTakedownState__C16BoltThief_Hoover	GetStealthTakedownState__C16BoltThief_Hoover	function	8	3	3	3	LEVEL16.REL:0x2436E0	src/levels/shared/GetStealthTakedownState__C16BoltThief_Hoover.c
@@ -20525,11 +20525,11 @@ shared	GetTransientDataSize__20BoltThief_GetMadLoot	GetTransientDataSize__20Bolt
 shared	GetStealthTakedownState__C20BoltThief_GetMadLoot	GetStealthTakedownState__C20BoltThief_GetMadLoot	function	8	3	3	3	LEVEL16.REL:0x2436F0	src/levels/shared/GetStealthTakedownState__C20BoltThief_GetMadLoot.c
 shared	CanBeEaten__C15BoltThief_Death	CanBeEaten__C15BoltThief_Death	function	8	3	3	3	LEVEL16.REL:0x2436F8	src/levels/shared/CanBeEaten__C15BoltThief_Death.c
 shared	CanBeHypnotized__C15BoltThief_Death	CanBeHypnotized__C15BoltThief_Death	function	8	3	3	3	LEVEL16.REL:0x243700	src/levels/shared/CanBeHypnotized__C15BoltThief_Death.c
-shared	GetTransientDataSize__24BoltThief_FallIntoCombat	GetTransientDataSize__24BoltThief_FallIntoCombat	function	8	3	0	3	LEVEL16.REL:0x243708	
+shared	GetTransientDataSize__24BoltThief_FallIntoCombat	GetTransientDataSize__24BoltThief_FallIntoCombat	function	8	3	3	3	LEVEL16.REL:0x243708	src/levels/shared/GetTransientDataSize__24BoltThief_FallIntoCombat.c
 shared	CanActivate__24BoltThief_FallIntoCombat	CanActivate__24BoltThief_FallIntoCombat	function	8	3	3	3	LEVEL16.REL:0x243710	src/levels/shared/CanActivate__24BoltThief_FallIntoCombat.c
 shared	CanBeEaten__C24BoltThief_FallIntoCombat	CanBeEaten__C24BoltThief_FallIntoCombat	function	8	3	3	3	LEVEL16.REL:0x243718	src/levels/shared/CanBeEaten__C24BoltThief_FallIntoCombat.c
 shared	CanBeHypnotized__C24BoltThief_FallIntoCombat	CanBeHypnotized__C24BoltThief_FallIntoCombat	function	8	3	3	3	LEVEL16.REL:0x243720	src/levels/shared/CanBeHypnotized__C24BoltThief_FallIntoCombat.c
-shared	GetTransientDataSize__23BoltThief_CapturedClank	GetTransientDataSize__23BoltThief_CapturedClank	function	8	3	0	3	LEVEL16.REL:0x243728	
+shared	GetTransientDataSize__23BoltThief_CapturedClank	GetTransientDataSize__23BoltThief_CapturedClank	function	8	3	3	3	LEVEL16.REL:0x243728	src/levels/shared/GetTransientDataSize__23BoltThief_CapturedClank.c
 shared	GetDesiredState__23BoltThief_CapturedClank	GetDesiredState__23BoltThief_CapturedClank	function	8	3	3	3	LEVEL16.REL:0x243730	src/levels/shared/GetDesiredState__23BoltThief_CapturedClank.c
 shared	CanBeEaten__C23BoltThief_CapturedClank	CanBeEaten__C23BoltThief_CapturedClank	function	8	3	3	3	LEVEL16.REL:0x243738	src/levels/shared/CanBeEaten__C23BoltThief_CapturedClank.c
 shared	CanBeHypnotized__C23BoltThief_CapturedClank	CanBeHypnotized__C23BoltThief_CapturedClank	function	8	3	3	3	LEVEL16.REL:0x243740	src/levels/shared/CanBeHypnotized__C23BoltThief_CapturedClank.c
@@ -20558,7 +20558,7 @@ shared	Vaporize__20BoltThiefBombContentP4Moby	Vaporize__20BoltThiefBombContentP4
 16_lab	CanBeHypnotized__C12Drone_Disarm	CanBeHypnotized__C12Drone_Disarm	function	8	1	1	1	LEVEL16.REL:0x243960	src/levels/16_lab/CanBeHypnotized__C12Drone_Disarm.c
 16_lab	CanBeEaten__C10Drone_Fire	CanBeEaten__C10Drone_Fire	function	8	1	1	1	LEVEL16.REL:0x243968	src/levels/16_lab/CanBeEaten__C10Drone_Fire.c
 16_lab	CanBeHypnotized__C10Drone_Fire	CanBeHypnotized__C10Drone_Fire	function	8	1	1	1	LEVEL16.REL:0x243970	src/levels/16_lab/CanBeHypnotized__C10Drone_Fire.c
-16_lab	GetTransientDataSize__16Drone_Suspicious	GetTransientDataSize__16Drone_Suspicious	function	8	1	0	1	LEVEL16.REL:0x243978	
+16_lab	GetTransientDataSize__16Drone_Suspicious	GetTransientDataSize__16Drone_Suspicious	function	8	1	1	1	LEVEL16.REL:0x243978	src/levels/16_lab/GetTransientDataSize__16Drone_Suspicious.c
 16_lab	CanBeEaten__C16Drone_Suspicious	CanBeEaten__C16Drone_Suspicious	function	8	1	1	1	LEVEL16.REL:0x243980	src/levels/16_lab/CanBeEaten__C16Drone_Suspicious.c
 16_lab	CanBeHypnotized__C16Drone_Suspicious	CanBeHypnotized__C16Drone_Suspicious	function	8	1	1	1	LEVEL16.REL:0x243988	src/levels/16_lab/CanBeHypnotized__C16Drone_Suspicious.c
 16_lab	CanBeEaten__C21DroneStrafeController	CanBeEaten__C21DroneStrafeController	function	8	1	1	1	LEVEL16.REL:0x243990	src/levels/16_lab/CanBeEaten__C21DroneStrafeController.c
@@ -21271,25 +21271,25 @@ shared	DustyLaser_CreateGroup__FP15DustyLaserGroupPC16DustyLaserConfigi_L18	Dust
 18_qwark	CanActivate__10OperaDeath	CanActivate__10OperaDeath	function	8	1	1	1	LEVEL18.REL:0x1E2A78	src/levels/18_qwark/CanActivate__10OperaDeath.c
 18_qwark	GetDesiredState__10OperaDeath	GetDesiredState__10OperaDeath	function	8	1	1	1	LEVEL18.REL:0x1E2A80	src/levels/18_qwark/GetDesiredState__10OperaDeath.c
 18_qwark	Init__10OperaDeathPC16OperaDeathConfig	Init__10OperaDeathPC16OperaDeathConfig	function	8	1	0	1	LEVEL18.REL:0x1E2A88	
-18_qwark	GetTransientDataSize__15OperaReposition	GetTransientDataSize__15OperaReposition	function	8	1	0	1	LEVEL18.REL:0x1E2A90	
+18_qwark	GetTransientDataSize__15OperaReposition	GetTransientDataSize__15OperaReposition	function	8	1	1	1	LEVEL18.REL:0x1E2A90	src/levels/18_qwark/GetTransientDataSize__15OperaReposition.c
 18_qwark	Init__15OperaRepositionPC26BasicNavigateToPointConfigPC21OperaRepositionConfigP8Navigate14GoToPointFlags	Init__15OperaRepositionPC26BasicNavigateToPointConfigPC21OperaRepositionConfigP8Navigate14GoToPointFlags	function	44	1	0	1	LEVEL18.REL:0x1E2A98	
-18_qwark	GetTransientDataSize__9OperaSpew	GetTransientDataSize__9OperaSpew	function	8	1	0	1	LEVEL18.REL:0x1E2AC8	
+18_qwark	GetTransientDataSize__9OperaSpew	GetTransientDataSize__9OperaSpew	function	8	1	1	1	LEVEL18.REL:0x1E2AC8	src/levels/18_qwark/GetTransientDataSize__9OperaSpew.c
 18_qwark	Setup__9OperaSpew	Setup__9OperaSpew	function	8	1	0	1	LEVEL18.REL:0x1E2AD0	
 18_qwark	Init__9OperaSpewPC15OperaSpewConfig	Init__9OperaSpewPC15OperaSpewConfig	function	28	1	0	1	LEVEL18.REL:0x1E2AD8	
-18_qwark	GetTransientDataSize__15OperaAlienDeath	GetTransientDataSize__15OperaAlienDeath	function	8	1	0	1	LEVEL18.REL:0x1E2AF8	
+18_qwark	GetTransientDataSize__15OperaAlienDeath	GetTransientDataSize__15OperaAlienDeath	function	8	1	1	1	LEVEL18.REL:0x1E2AF8	src/levels/18_qwark/GetTransientDataSize__15OperaAlienDeath.c
 18_qwark	GetDesiredState__15OperaAlienDeath	GetDesiredState__15OperaAlienDeath	function	8	1	1	1	LEVEL18.REL:0x1E2B00	src/levels/18_qwark/GetDesiredState__15OperaAlienDeath.c
 18_qwark	Init__15OperaAlienDeathPC21OperaAlienDeathConfig	Init__15OperaAlienDeathPC21OperaAlienDeathConfig	function	8	1	1	1	LEVEL18.REL:0x1E2B08	src/levels/18_qwark/Init__15OperaAlienDeathPC21OperaAlienDeathConfig.c
-18_qwark	GetTransientDataSize__18OperaAlienLargeBud	GetTransientDataSize__18OperaAlienLargeBud	function	8	1	0	1	LEVEL18.REL:0x1E2B90	
+18_qwark	GetTransientDataSize__18OperaAlienLargeBud	GetTransientDataSize__18OperaAlienLargeBud	function	8	1	1	1	LEVEL18.REL:0x1E2B90	src/levels/18_qwark/GetTransientDataSize__18OperaAlienLargeBud.c
 18_qwark	Setup__18OperaAlienLargeBud	Setup__18OperaAlienLargeBud	function	8	1	0	1	LEVEL18.REL:0x1E2B98	
 18_qwark	Timestep__18OperaAlienLargeBudf	Timestep__18OperaAlienLargeBudf	function	16	1	0	1	LEVEL18.REL:0x1E2BA0	
 18_qwark	__22OperaAlienLargeContent	__22OperaAlienLargeContent	function	264	1	0	1	LEVEL18.REL:0x1E2BB0	
 18_qwark	__23OperaAlienMediumContent	__23OperaAlienMediumContent	function	236	1	0	1	LEVEL18.REL:0x1E2CB8	
-18_qwark	GetTransientDataSize__21OperaAlienSmallLaunch	GetTransientDataSize__21OperaAlienSmallLaunch	function	8	1	0	1	LEVEL18.REL:0x1E2DA8	
+18_qwark	GetTransientDataSize__21OperaAlienSmallLaunch	GetTransientDataSize__21OperaAlienSmallLaunch	function	8	1	1	1	LEVEL18.REL:0x1E2DA8	src/levels/18_qwark/GetTransientDataSize__21OperaAlienSmallLaunch.c
 18_qwark	CanActivate__21OperaAlienSmallLaunch	CanActivate__21OperaAlienSmallLaunch	function	8	1	1	1	LEVEL18.REL:0x1E2DB0	src/levels/18_qwark/CanActivate__21OperaAlienSmallLaunch.c
 18_qwark	HandleDamage__21OperaAlienSmallLaunchf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__21OperaAlienSmallLaunchf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	24	1	0	1	LEVEL18.REL:0x1E2DB8	
 18_qwark	__22OperaAlienSmallContent	__22OperaAlienSmallContent	function	236	1	0	1	LEVEL18.REL:0x1E2DD0	
 18_qwark	ModifyJointsCallback__19OperaButterflyEnterP4Moby	ModifyJointsCallback__19OperaButterflyEnterP4Moby	function	80	1	0	1	LEVEL18.REL:0x1E2EC0	
-18_qwark	GetTransientDataSize__20OperaButterflyWander	GetTransientDataSize__20OperaButterflyWander	function	8	1	0	1	LEVEL18.REL:0x1E2F10	
+18_qwark	GetTransientDataSize__20OperaButterflyWander	GetTransientDataSize__20OperaButterflyWander	function	8	1	1	1	LEVEL18.REL:0x1E2F10	src/levels/18_qwark/GetTransientDataSize__20OperaButterflyWander.c
 18_qwark	__16OperaClamContent	__16OperaClamContent	function	208	1	0	1	LEVEL18.REL:0x1E2F18	
 18_qwark	GetTransientDataSize__11LemurRanged	GetTransientDataSize__11LemurRanged	function	8	1	1	1	LEVEL18.REL:0x1E3208	src/levels/18_qwark/GetTransientDataSize__11LemurRanged.c
 18_qwark	Setup__11LemurRanged	Setup__11LemurRanged	function	8	1	0	1	LEVEL18.REL:0x1E3210	
@@ -21682,31 +21682,31 @@ shared	ACTOR_LinkedBlockCreate__H2Z21StaticTrail_actorListZ17StaticTrail_actor_P
 shared	ACTOR_LinkedBlockEmit__H2Z21StaticTrail_actorListZ17StaticTrail_actor_P12ACTOR_TroupeP11ACTOR_Blocki_Pv	ACTOR_LinkedBlockEmit__H2Z21StaticTrail_actorListZ17StaticTrail_actor_P12ACTOR_TroupeP11ACTOR_Blocki_Pv	function	48	2	0	2	LEVEL19.REL:0x243570	
 shared	Update__20AlertChaseControlledf	Update__20AlertChaseControlledf	function	92	2	0	2	LEVEL19.REL:0x243E58	
 19_foundry	Vaporize__22BoltThiefBulletContentP4Moby	Vaporize__22BoltThiefBulletContentP4Moby	function	84	1	0	1	LEVEL19.REL:0x244948	
-shared	GetStealthTakedownState__C26Doppleganger_DisguisedIdle	GetStealthTakedownState__C26Doppleganger_DisguisedIdle	function	8	2	0	2	LEVEL19.REL:0x244A60	
-shared	GetStealthTakedownState__C25Doppleganger_RevealedIdle	GetStealthTakedownState__C25Doppleganger_RevealedIdle	function	8	2	0	2	LEVEL19.REL:0x244A68	
-shared	GetTransientDataSize__23Doppleganger_Suspicious	GetTransientDataSize__23Doppleganger_Suspicious	function	8	2	0	2	LEVEL19.REL:0x244A70	
-shared	GetStealthTakedownState__C23Doppleganger_Suspicious	GetStealthTakedownState__C23Doppleganger_Suspicious	function	8	2	0	2	LEVEL19.REL:0x244A78	
+shared	GetStealthTakedownState__C26Doppleganger_DisguisedIdle	GetStealthTakedownState__C26Doppleganger_DisguisedIdle	function	8	2	2	2	LEVEL19.REL:0x244A60	src/levels/shared/GetStealthTakedownState__C26Doppleganger_DisguisedIdle.c
+shared	GetStealthTakedownState__C25Doppleganger_RevealedIdle	GetStealthTakedownState__C25Doppleganger_RevealedIdle	function	8	2	2	2	LEVEL19.REL:0x244A68	src/levels/shared/GetStealthTakedownState__C25Doppleganger_RevealedIdle.c
+shared	GetTransientDataSize__23Doppleganger_Suspicious	GetTransientDataSize__23Doppleganger_Suspicious	function	8	2	2	2	LEVEL19.REL:0x244A70	src/levels/shared/GetTransientDataSize__23Doppleganger_Suspicious.c
+shared	GetStealthTakedownState__C23Doppleganger_Suspicious	GetStealthTakedownState__C23Doppleganger_Suspicious	function	8	2	2	2	LEVEL19.REL:0x244A78	src/levels/shared/GetStealthTakedownState__C23Doppleganger_Suspicious.c
 shared	CanBeEaten__C23Doppleganger_GoDisguise	CanBeEaten__C23Doppleganger_GoDisguise	function	8	2	2	2	LEVEL19.REL:0x244A80	src/levels/shared/CanBeEaten__C23Doppleganger_GoDisguise.c
 shared	CanBeHypnotized__C23Doppleganger_GoDisguise	CanBeHypnotized__C23Doppleganger_GoDisguise	function	8	2	2	2	LEVEL19.REL:0x244A88	src/levels/shared/CanBeHypnotized__C23Doppleganger_GoDisguise.c
 shared	CanBeEaten__C21Doppleganger_GoReveal	CanBeEaten__C21Doppleganger_GoReveal	function	8	2	2	2	LEVEL19.REL:0x244A90	src/levels/shared/CanBeEaten__C21Doppleganger_GoReveal.c
 shared	CanBeHypnotized__C21Doppleganger_GoReveal	CanBeHypnotized__C21Doppleganger_GoReveal	function	8	2	2	2	LEVEL19.REL:0x244A98	src/levels/shared/CanBeHypnotized__C21Doppleganger_GoReveal.c
-shared	GetStealthTakedownState__C22Doppleganger_FallApart	GetStealthTakedownState__C22Doppleganger_FallApart	function	8	2	0	2	LEVEL19.REL:0x244AA0	
-shared	GetTransientDataSize__19Doppleganger_Attack	GetTransientDataSize__19Doppleganger_Attack	function	8	2	0	2	LEVEL19.REL:0x244AA8	
+shared	GetStealthTakedownState__C22Doppleganger_FallApart	GetStealthTakedownState__C22Doppleganger_FallApart	function	8	2	2	2	LEVEL19.REL:0x244AA0	src/levels/shared/GetStealthTakedownState__C22Doppleganger_FallApart.c
+shared	GetTransientDataSize__19Doppleganger_Attack	GetTransientDataSize__19Doppleganger_Attack	function	8	2	2	2	LEVEL19.REL:0x244AA8	src/levels/shared/GetTransientDataSize__19Doppleganger_Attack.c
 shared	SetupBombs__21Doppleganger_FireBombUif	SetupBombs__21Doppleganger_FireBombUif	function	12	2	0	2	LEVEL19.REL:0x244AB0	
 shared	GetTransientDataSize__19Doppleganger_Patrol	GetTransientDataSize__19Doppleganger_Patrol	function	8	2	2	2	LEVEL19.REL:0x244AC0	src/levels/shared/GetTransientDataSize__19Doppleganger_Patrol.c
-shared	GetStealthTakedownState__C19Doppleganger_Patrol	GetStealthTakedownState__C19Doppleganger_Patrol	function	8	2	0	2	LEVEL19.REL:0x244AC8	
+shared	GetStealthTakedownState__C19Doppleganger_Patrol	GetStealthTakedownState__C19Doppleganger_Patrol	function	8	2	2	2	LEVEL19.REL:0x244AC8	src/levels/shared/GetStealthTakedownState__C19Doppleganger_Patrol.c
 shared	DestroyMoby__21Doppleganger_Knuckles	DestroyMoby__21Doppleganger_Knuckles	function	32	2	0	2	LEVEL19.REL:0x244AD0	
 shared	CanBeEaten__C18Doppleganger_Death	CanBeEaten__C18Doppleganger_Death	function	8	2	2	2	LEVEL19.REL:0x244AF0	src/levels/shared/CanBeEaten__C18Doppleganger_Death.c
 shared	CanBeHypnotized__C18Doppleganger_Death	CanBeHypnotized__C18Doppleganger_Death	function	8	2	2	2	LEVEL19.REL:0x244AF8	src/levels/shared/CanBeHypnotized__C18Doppleganger_Death.c
 shared	DestroyMoby__29Doppleganger_RevealedTakeDown	DestroyMoby__29Doppleganger_RevealedTakeDown	function	32	2	0	2	LEVEL19.REL:0x244B00	
 shared	DestroyMoby__30Doppleganger_DisguisedTakeDown	DestroyMoby__30Doppleganger_DisguisedTakeDown	function	32	2	0	2	LEVEL19.REL:0x244B20	
 shared	DestroyMoby__27Doppleganger_TangleVineTrap	DestroyMoby__27Doppleganger_TangleVineTrap	function	32	2	0	2	LEVEL19.REL:0x244B40	
-shared	GetTransientDataSize__26Doppleganger_CapturedClank	GetTransientDataSize__26Doppleganger_CapturedClank	function	8	2	0	2	LEVEL19.REL:0x244B60	
+shared	GetTransientDataSize__26Doppleganger_CapturedClank	GetTransientDataSize__26Doppleganger_CapturedClank	function	8	2	2	2	LEVEL19.REL:0x244B60	src/levels/shared/GetTransientDataSize__26Doppleganger_CapturedClank.c
 shared	GetDesiredState__26Doppleganger_CapturedClank	GetDesiredState__26Doppleganger_CapturedClank	function	8	2	2	2	LEVEL19.REL:0x244B68	src/levels/shared/GetDesiredState__26Doppleganger_CapturedClank.c
 shared	CanBeEaten__C26Doppleganger_CapturedClank	CanBeEaten__C26Doppleganger_CapturedClank	function	8	2	2	2	LEVEL19.REL:0x244B70	src/levels/shared/CanBeEaten__C26Doppleganger_CapturedClank.c
 shared	CanBeHypnotized__C26Doppleganger_CapturedClank	CanBeHypnotized__C26Doppleganger_CapturedClank	function	8	2	2	2	LEVEL19.REL:0x244B78	src/levels/shared/CanBeHypnotized__C26Doppleganger_CapturedClank.c
-shared	GetTransientDataSize__23Doppleganger_ReturnHome	GetTransientDataSize__23Doppleganger_ReturnHome	function	8	2	0	2	LEVEL19.REL:0x244B80	
-shared	GetStealthTakedownState__C23Doppleganger_ReturnHome	GetStealthTakedownState__C23Doppleganger_ReturnHome	function	8	2	0	2	LEVEL19.REL:0x244B88	
+shared	GetTransientDataSize__23Doppleganger_ReturnHome	GetTransientDataSize__23Doppleganger_ReturnHome	function	8	2	2	2	LEVEL19.REL:0x244B80	src/levels/shared/GetTransientDataSize__23Doppleganger_ReturnHome.c
+shared	GetStealthTakedownState__C23Doppleganger_ReturnHome	GetStealthTakedownState__C23Doppleganger_ReturnHome	function	8	2	2	2	LEVEL19.REL:0x244B88	src/levels/shared/GetStealthTakedownState__C23Doppleganger_ReturnHome.c
 shared	GetTransientDataSize__20Doppleganger_Respawn	GetTransientDataSize__20Doppleganger_Respawn	function	8	2	0	2	LEVEL19.REL:0x244B90	
 shared	CanActivate__20Doppleganger_Respawn	CanActivate__20Doppleganger_Respawn	function	8	2	2	2	LEVEL19.REL:0x244B98	src/levels/shared/CanActivate__20Doppleganger_Respawn.c
 shared	Init__20Doppleganger_RespawnPC13RespawnConfig	Init__20Doppleganger_RespawnPC13RespawnConfig	function	8	2	2	2	LEVEL19.REL:0x244BA0	src/levels/shared/Init__20Doppleganger_RespawnPC13RespawnConfig.c
@@ -21725,12 +21725,12 @@ shared	ResetTimer__21StaticMidge_Celebrate	ResetTimer__21StaticMidge_Celebrate	f
 shared	GetStealthTakedownState__C21StaticMidge_Defensive	GetStealthTakedownState__C21StaticMidge_Defensive	function	8	2	2	2	LEVEL19.REL:0x2452B0	src/levels/shared/GetStealthTakedownState__C21StaticMidge_Defensive.c
 shared	CanBeEaten__C17StaticMidge_Death	CanBeEaten__C17StaticMidge_Death	function	8	2	2	2	LEVEL19.REL:0x2452B8	src/levels/shared/CanBeEaten__C17StaticMidge_Death.c
 shared	CanBeHypnotized__C17StaticMidge_Death	CanBeHypnotized__C17StaticMidge_Death	function	8	2	2	2	LEVEL19.REL:0x2452C0	src/levels/shared/CanBeHypnotized__C17StaticMidge_Death.c
-shared	GetTransientDataSize__22StaticMidge_ReturnHome	GetTransientDataSize__22StaticMidge_ReturnHome	function	8	2	0	2	LEVEL19.REL:0x2452C8	
-shared	GetStealthTakedownState__C22StaticMidge_ReturnHome	GetStealthTakedownState__C22StaticMidge_ReturnHome	function	8	2	0	2	LEVEL19.REL:0x2452D0	
+shared	GetTransientDataSize__22StaticMidge_ReturnHome	GetTransientDataSize__22StaticMidge_ReturnHome	function	8	2	2	2	LEVEL19.REL:0x2452C8	src/levels/shared/GetTransientDataSize__22StaticMidge_ReturnHome.c
+shared	GetStealthTakedownState__C22StaticMidge_ReturnHome	GetStealthTakedownState__C22StaticMidge_ReturnHome	function	8	2	2	2	LEVEL19.REL:0x2452D0	src/levels/shared/GetStealthTakedownState__C22StaticMidge_ReturnHome.c
 shared	GetTransientDataSize__19StaticMidge_Respawn	GetTransientDataSize__19StaticMidge_Respawn	function	8	2	0	2	LEVEL19.REL:0x2452D8	
 shared	CanActivate__19StaticMidge_Respawn	CanActivate__19StaticMidge_Respawn	function	8	2	2	2	LEVEL19.REL:0x2452E0	src/levels/shared/CanActivate__19StaticMidge_Respawn.c
 shared	Init__19StaticMidge_RespawnPC18MidgeRespawnConfig	Init__19StaticMidge_RespawnPC18MidgeRespawnConfig	function	8	2	2	2	LEVEL19.REL:0x2452E8	src/levels/shared/Init__19StaticMidge_RespawnPC18MidgeRespawnConfig.c
-shared	GetTransientDataSize__25StaticMidge_CapturedClank	GetTransientDataSize__25StaticMidge_CapturedClank	function	8	2	0	2	LEVEL19.REL:0x2452F0	
+shared	GetTransientDataSize__25StaticMidge_CapturedClank	GetTransientDataSize__25StaticMidge_CapturedClank	function	8	2	2	2	LEVEL19.REL:0x2452F0	src/levels/shared/GetTransientDataSize__25StaticMidge_CapturedClank.c
 shared	GetDesiredState__25StaticMidge_CapturedClank	GetDesiredState__25StaticMidge_CapturedClank	function	8	2	2	2	LEVEL19.REL:0x2452F8	src/levels/shared/GetDesiredState__25StaticMidge_CapturedClank.c
 shared	CanBeEaten__C25StaticMidge_CapturedClank	CanBeEaten__C25StaticMidge_CapturedClank	function	8	2	2	2	LEVEL19.REL:0x245300	src/levels/shared/CanBeEaten__C25StaticMidge_CapturedClank.c
 shared	CanBeHypnotized__C25StaticMidge_CapturedClank	CanBeHypnotized__C25StaticMidge_CapturedClank	function	8	2	2	2	LEVEL19.REL:0x245308	src/levels/shared/CanBeHypnotized__C25StaticMidge_CapturedClank.c
@@ -21738,7 +21738,7 @@ shared	GetDesiredState__18StaticMidge_Patrol	GetDesiredState__18StaticMidge_Patr
 shared	Init__17StaticMidge_StompPC16BasicChaseConfigP8NavigateP14AlertStateDataPCfUi	Init__17StaticMidge_StompPC16BasicChaseConfigP8NavigateP14AlertStateDataPCfUi	function	52	2	0	2	LEVEL19.REL:0x245330	
 shared	NoWhistle__19StaticMidge_Whistle	NoWhistle__19StaticMidge_Whistle	function	12	2	0	2	LEVEL19.REL:0x245368	
 shared	CanActivate__22StaticMidge_Suspicious	CanActivate__22StaticMidge_Suspicious	function	24	2	0	2	LEVEL19.REL:0x245378	
-shared	GetTransientDataSize__26StaticMidge_FallIntoCombat	GetTransientDataSize__26StaticMidge_FallIntoCombat	function	8	2	0	2	LEVEL19.REL:0x245390	
+shared	GetTransientDataSize__26StaticMidge_FallIntoCombat	GetTransientDataSize__26StaticMidge_FallIntoCombat	function	8	2	2	2	LEVEL19.REL:0x245390	src/levels/shared/GetTransientDataSize__26StaticMidge_FallIntoCombat.c
 shared	CanActivate__26StaticMidge_FallIntoCombat	CanActivate__26StaticMidge_FallIntoCombat	function	8	2	2	2	LEVEL19.REL:0x245398	src/levels/shared/CanActivate__26StaticMidge_FallIntoCombat.c
 shared	CanBeEaten__C26StaticMidge_FallIntoCombat	CanBeEaten__C26StaticMidge_FallIntoCombat	function	8	2	2	2	LEVEL19.REL:0x2453A0	src/levels/shared/CanBeEaten__C26StaticMidge_FallIntoCombat.c
 shared	CanBeHypnotized__C26StaticMidge_FallIntoCombat	CanBeHypnotized__C26StaticMidge_FallIntoCombat	function	8	2	2	2	LEVEL19.REL:0x2453A8	src/levels/shared/CanBeHypnotized__C26StaticMidge_FallIntoCombat.c
@@ -21893,9 +21893,9 @@ shared	GENPAR_UVColorRotVelGravEmit__FiPC30GENPAR_UVColorRotVelGravConfigPC19GEN
 20_gadgebot	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Player__All_Player_cppFhbaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Player__All_Player.cppFhbaaa	function	32	1	1	1	LEVEL20.REL:0x122E68	src/levels/20_gadgebot/_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Player__All_Player_cppFhbaaa.c
 20_gadgebot	_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared_cppzmbaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared.cppzmbaaa	function	32	1	1	1	LEVEL20.REL:0x158750	src/levels/20_gadgebot/_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared_cppzmbaaa.c
 20_gadgebot	_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems_cppKXaaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems.cppKXaaaa	function	32	1	1	1	LEVEL20.REL:0x15CF88	src/levels/20_gadgebot/_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems_cppKXaaaa.c
-shared	GetTransientDataSize__12GBM_Teleport	GetTransientDataSize__12GBM_Teleport	function	8	2	0	2	LEVEL20.REL:0x1D5E08	
+shared	GetTransientDataSize__12GBM_Teleport	GetTransientDataSize__12GBM_Teleport	function	8	2	2	2	LEVEL20.REL:0x1D5E08	src/levels/shared/GetTransientDataSize__12GBM_Teleport.c
 shared	CanActivate__12GBM_Teleport	CanActivate__12GBM_Teleport	function	8	2	2	2	LEVEL20.REL:0x1D5E10	src/levels/shared/CanActivate__12GBM_Teleport.c
-shared	GetTransientDataSize__14GBM_GoToTarget	GetTransientDataSize__14GBM_GoToTarget	function	8	2	0	2	LEVEL20.REL:0x1D5E18	
+shared	GetTransientDataSize__14GBM_GoToTarget	GetTransientDataSize__14GBM_GoToTarget	function	8	2	2	2	LEVEL20.REL:0x1D5E18	src/levels/shared/GetTransientDataSize__14GBM_GoToTarget.c
 shared	GetTransientDataSize__10GBM_Attack	GetTransientDataSize__10GBM_Attack	function	8	2	0	2	LEVEL20.REL:0x1D5E20	
 shared	__14GBMidgeContent	__14GBMidgeContent	function	236	2	0	2	LEVEL20.REL:0x1D5E28	
 shared	CanActivate__12GBM_HackIdle	CanActivate__12GBM_HackIdle	function	8	2	2	2	LEVEL20.REL:0x1D6128	src/levels/shared/CanActivate__12GBM_HackIdle.c
@@ -22121,7 +22121,7 @@ shared	func_L21_18F838	func_L21_18F838	function	8	2	2	2	LEVEL21.REL:0x18F838	src
 21_shower	ACTOR_LinkedBlockEmit__H2Z20SoapSplash_actorListZ16SoapSplash_actor_P12ACTOR_TroupeP11ACTOR_Blocki_Pv	ACTOR_LinkedBlockEmit__H2Z20SoapSplash_actorListZ16SoapSplash_actor_P12ACTOR_TroupeP11ACTOR_Blocki_Pv	function	48	1	0	1	LEVEL21.REL:0x25A350	
 21_shower	CanActivate__17Arena4Camera_Idle	CanActivate__17Arena4Camera_Idle	function	8	1	1	1	LEVEL21.REL:0x25A7E8	src/levels/21_shower/CanActivate__17Arena4Camera_Idle.c
 21_shower	GetTransientDataSize__19Arena4Camera_Patrol	GetTransientDataSize__19Arena4Camera_Patrol	function	8	1	1	1	LEVEL21.REL:0x25A7F0	src/levels/21_shower/GetTransientDataSize__19Arena4Camera_Patrol.c
-21_shower	GetTransientDataSize__23Arena4Camera_ReturnHome	GetTransientDataSize__23Arena4Camera_ReturnHome	function	8	1	0	1	LEVEL21.REL:0x25A7F8	
+21_shower	GetTransientDataSize__23Arena4Camera_ReturnHome	GetTransientDataSize__23Arena4Camera_ReturnHome	function	8	1	1	1	LEVEL21.REL:0x25A7F8	src/levels/21_shower/GetTransientDataSize__23Arena4Camera_ReturnHome.c
 21_shower	GetTransientDataSize__20Arena4Camera_Respawn	GetTransientDataSize__20Arena4Camera_Respawn	function	8	1	0	1	LEVEL21.REL:0x25A800	
 21_shower	CanActivate__20Arena4Camera_Respawn	CanActivate__20Arena4Camera_Respawn	function	8	1	1	1	LEVEL21.REL:0x25A808	src/levels/21_shower/CanActivate__20Arena4Camera_Respawn.c
 21_shower	__19Arena4CameraContent	__19Arena4CameraContent	function	180	1	0	1	LEVEL21.REL:0x25A810	
@@ -22560,7 +22560,7 @@ shared	GENPAR_UVColorRotRegister__FUi	GENPAR_UVColorRotRegister__FUi	function	64
 23_qwark	GetTransientDataSize__11PirateDeath	GetTransientDataSize__11PirateDeath	function	8	1	0	1	LEVEL23.REL:0x1DBA58	
 23_qwark	CanActivate__11PirateDeath	CanActivate__11PirateDeath	function	8	1	1	1	LEVEL23.REL:0x1DBA60	src/levels/23_qwark/CanActivate__11PirateDeath.c
 23_qwark	GetDesiredState__11PirateDeath	GetDesiredState__11PirateDeath	function	8	1	1	1	LEVEL23.REL:0x1DBA68	src/levels/23_qwark/GetDesiredState__11PirateDeath.c
-23_qwark	GetTransientDataSize__12PirateWander	GetTransientDataSize__12PirateWander	function	8	1	0	1	LEVEL23.REL:0x1DBA70	
+23_qwark	GetTransientDataSize__12PirateWander	GetTransientDataSize__12PirateWander	function	8	1	1	1	LEVEL23.REL:0x1DBA70	src/levels/23_qwark/GetTransientDataSize__12PirateWander.c
 23_qwark	GetDesiredState__12PirateWander	GetDesiredState__12PirateWander	function	28	1	0	1	LEVEL23.REL:0x1DBA78	
 23_qwark	CanActivate__12PirateWander	CanActivate__12PirateWander	function	8	1	1	1	LEVEL23.REL:0x1DBA98	src/levels/23_qwark/CanActivate__12PirateWander.c
 23_qwark	Begin__11PirateAlert	Begin__11PirateAlert	function	56	1	0	1	LEVEL23.REL:0x1DBAA0	
@@ -22573,8 +22573,8 @@ shared	GENPAR_UVColorRotRegister__FUi	GENPAR_UVColorRotRegister__FUi	function	64
 23_qwark	GetTransientDataSize__9PirateFly	GetTransientDataSize__9PirateFly	function	8	1	0	1	LEVEL23.REL:0x1DBB48	
 23_qwark	CanActivate__9PirateFly	CanActivate__9PirateFly	function	8	1	1	1	LEVEL23.REL:0x1DBB50	src/levels/23_qwark/CanActivate__9PirateFly.c
 23_qwark	GetDesiredState__9PirateFly	GetDesiredState__9PirateFly	function	8	1	1	1	LEVEL23.REL:0x1DBB58	src/levels/23_qwark/GetDesiredState__9PirateFly.c
-23_qwark	GetTransientDataSize__13PG_Reposition	GetTransientDataSize__13PG_Reposition	function	8	1	0	1	LEVEL23.REL:0x1DBC48	
-23_qwark	GetTransientDataSize__11GetOnScreen	GetTransientDataSize__11GetOnScreen	function	8	1	0	1	LEVEL23.REL:0x1DBC50	
+23_qwark	GetTransientDataSize__13PG_Reposition	GetTransientDataSize__13PG_Reposition	function	8	1	1	1	LEVEL23.REL:0x1DBC48	src/levels/23_qwark/GetTransientDataSize__13PG_Reposition.c
+23_qwark	GetTransientDataSize__11GetOnScreen	GetTransientDataSize__11GetOnScreen	function	8	1	1	1	LEVEL23.REL:0x1DBC50	src/levels/23_qwark/GetTransientDataSize__11GetOnScreen.c
 23_qwark	__16PirateGunContent	__16PirateGunContent	function	376	1	0	1	LEVEL23.REL:0x1DBC58	
 23_qwark	__18PirateMeleeContent	__18PirateMeleeContent	function	348	1	0	1	LEVEL23.REL:0x1DBDD0	
 24_giantclank	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cpplLaaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors.cpplLaaaa	function	32	1	1	1	LEVEL24.REL:0x009DB0	src/levels/24_giantclank/_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cpplLaaaa.c
@@ -24209,27 +24209,27 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 27_qwarkdam	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Player__All_Player_cppTWaaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Player__All_Player.cppTWaaaa	function	32	1	1	1	LEVEL27.REL:0x126298	src/levels/27_qwarkdam/_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Player__All_Player_cppTWaaaa.c
 27_qwarkdam	_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared_cppYnbaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared.cppYnbaaa	function	32	1	1	1	LEVEL27.REL:0x15BB80	src/levels/27_qwarkdam/_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared_cppYnbaaa.c
 27_qwarkdam	_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems_cppwUaaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems.cppwUaaaa	function	32	1	1	1	LEVEL27.REL:0x1603B8	src/levels/27_qwarkdam/_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems_cppwUaaaa.c
-27_qwarkdam	GetTransientDataSize__7CPEnter	GetTransientDataSize__7CPEnter	function	8	1	0	1	LEVEL27.REL:0x1D8280	
+27_qwarkdam	GetTransientDataSize__7CPEnter	GetTransientDataSize__7CPEnter	function	8	1	1	1	LEVEL27.REL:0x1D8280	src/levels/27_qwarkdam/GetTransientDataSize__7CPEnter.c
 27_qwarkdam	CanActivate__7CPEnter	CanActivate__7CPEnter	function	8	1	1	1	LEVEL27.REL:0x1D8288	src/levels/27_qwarkdam/CanActivate__7CPEnter.c
 27_qwarkdam	HandleDamage__7CPEnterf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__7CPEnterf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	24	1	0	1	LEVEL27.REL:0x1D8290	
-27_qwarkdam	GetTransientDataSize__7CPChase	GetTransientDataSize__7CPChase	function	8	1	0	1	LEVEL27.REL:0x1D82A8	
+27_qwarkdam	GetTransientDataSize__7CPChase	GetTransientDataSize__7CPChase	function	8	1	1	1	LEVEL27.REL:0x1D82A8	src/levels/27_qwarkdam/GetTransientDataSize__7CPChase.c
 27_qwarkdam	CanActivate__7CPChase	CanActivate__7CPChase	function	44	1	0	1	LEVEL27.REL:0x1D82B0	
 27_qwarkdam	Setup__7CPChase	Setup__7CPChase	function	8	1	0	1	LEVEL27.REL:0x1D82E0	
 27_qwarkdam	Timestep__7CPChasef	Timestep__7CPChasef	function	32	1	0	1	LEVEL27.REL:0x1D82E8	
-27_qwarkdam	GetTransientDataSize__11CPShootWall	GetTransientDataSize__11CPShootWall	function	8	1	0	1	LEVEL27.REL:0x1D8308	
+27_qwarkdam	GetTransientDataSize__11CPShootWall	GetTransientDataSize__11CPShootWall	function	8	1	1	1	LEVEL27.REL:0x1D8308	src/levels/27_qwarkdam/GetTransientDataSize__11CPShootWall.c
 27_qwarkdam	Setup__11CPShootWall	Setup__11CPShootWall	function	8	1	0	1	LEVEL27.REL:0x1D8310	
 27_qwarkdam	Timestep__11CPShootWallf	Timestep__11CPShootWallf	function	32	1	0	1	LEVEL27.REL:0x1D8318	
-27_qwarkdam	GetTransientDataSize__13CPShootTarget	GetTransientDataSize__13CPShootTarget	function	8	1	0	1	LEVEL27.REL:0x1D8338	
+27_qwarkdam	GetTransientDataSize__13CPShootTarget	GetTransientDataSize__13CPShootTarget	function	8	1	1	1	LEVEL27.REL:0x1D8338	src/levels/27_qwarkdam/GetTransientDataSize__13CPShootTarget.c
 27_qwarkdam	Setup__13CPShootTarget	Setup__13CPShootTarget	function	8	1	0	1	LEVEL27.REL:0x1D8340	
 27_qwarkdam	Timestep__13CPShootTargetf	Timestep__13CPShootTargetf	function	32	1	0	1	LEVEL27.REL:0x1D8348	
-27_qwarkdam	GetTransientDataSize__6CPGrow	GetTransientDataSize__6CPGrow	function	8	1	0	1	LEVEL27.REL:0x1D8368	
+27_qwarkdam	GetTransientDataSize__6CPGrow	GetTransientDataSize__6CPGrow	function	8	1	1	1	LEVEL27.REL:0x1D8368	src/levels/27_qwarkdam/GetTransientDataSize__6CPGrow.c
 27_qwarkdam	Setup__6CPGrow	Setup__6CPGrow	function	12	1	0	1	LEVEL27.REL:0x1D8370	
 27_qwarkdam	SetLeak__6CPGrowP4Moby	SetLeak__6CPGrowP4Moby	function	12	1	0	1	LEVEL27.REL:0x1D8380	
-27_qwarkdam	GetTransientDataSize__6CPDial	GetTransientDataSize__6CPDial	function	8	1	0	1	LEVEL27.REL:0x1D8390	
+27_qwarkdam	GetTransientDataSize__6CPDial	GetTransientDataSize__6CPDial	function	8	1	1	1	LEVEL27.REL:0x1D8390	src/levels/27_qwarkdam/GetTransientDataSize__6CPDial.c
 27_qwarkdam	CanActivate__6CPDial	CanActivate__6CPDial	function	8	1	1	1	LEVEL27.REL:0x1D8398	src/levels/27_qwarkdam/CanActivate__6CPDial.c
 27_qwarkdam	GetDesiredState__6CPDial	GetDesiredState__6CPDial	function	8	1	1	1	LEVEL27.REL:0x1D83A0	src/levels/27_qwarkdam/GetDesiredState__6CPDial.c
 27_qwarkdam	Begin__11CPKnockback	Begin__11CPKnockback	function	76	1	0	1	LEVEL27.REL:0x1D83A8	
-27_qwarkdam	GetTransientDataSize__8CPCharge	GetTransientDataSize__8CPCharge	function	8	1	0	1	LEVEL27.REL:0x1D83F8	
+27_qwarkdam	GetTransientDataSize__8CPCharge	GetTransientDataSize__8CPCharge	function	8	1	1	1	LEVEL27.REL:0x1D83F8	src/levels/27_qwarkdam/GetTransientDataSize__8CPCharge.c
 27_qwarkdam	HandleDamage__8CPChargef14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__8CPChargef14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	24	1	0	1	LEVEL27.REL:0x1D8400	
 27_qwarkdam	__19CactusPirateContent	__19CactusPirateContent	function	320	1	0	1	LEVEL27.REL:0x1D8418	
 27_qwarkdam	GetEnemyStateMachine__19CactusPirateContent	GetEnemyStateMachine__19CactusPirateContent	function	8	1	0	1	LEVEL27.REL:0x1DAD48	
@@ -24670,9 +24670,9 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 29_base	ForceAllocateMtx__14DrawObjManagerPP4AMtx_L29	ForceAllocateMtx__14DrawObjManagerPP4AMtx	function	132	1	0	1	LEVEL29.REL:0x248138	
 29_base	CanActivate__10Expat_Idle	CanActivate__10Expat_Idle	function	8	1	1	1	LEVEL29.REL:0x24B550	src/levels/29_base/CanActivate__10Expat_Idle.c
 29_base	IsShooting__19ExpatState_Engaging	IsShooting__19ExpatState_Engaging	function	16	1	0	1	LEVEL29.REL:0x24B558	
-29_base	GetTransientDataSize__19ExpatState_Engaging	GetTransientDataSize__19ExpatState_Engaging	function	8	1	0	1	LEVEL29.REL:0x24B568	
+29_base	GetTransientDataSize__19ExpatState_Engaging	GetTransientDataSize__19ExpatState_Engaging	function	8	1	1	1	LEVEL29.REL:0x24B568	src/levels/29_base/GetTransientDataSize__19ExpatState_Engaging.c
 29_base	Timestep__11Expat_Snipef	Timestep__11Expat_Snipef	function	24	1	0	1	LEVEL29.REL:0x24B570	
-29_base	GetTransientDataSize__11Expat_Snipe	GetTransientDataSize__11Expat_Snipe	function	8	1	0	1	LEVEL29.REL:0x24B588	
+29_base	GetTransientDataSize__11Expat_Snipe	GetTransientDataSize__11Expat_Snipe	function	8	1	1	1	LEVEL29.REL:0x24B588	src/levels/29_base/GetTransientDataSize__11Expat_Snipe.c
 29_base	__12ExpatContent	__12ExpatContent	function	544	1	0	1	LEVEL29.REL:0x24B590	
 29_base	ExplodingScubaTank_WasDamagedByPlayerWeapon__FP4Moby	ExplodingScubaTank_WasDamagedByPlayerWeapon__FP4Moby	function	60	1	0	1	LEVEL29.REL:0x24B7B0	
 29_base	Level10UberDoorLogic_Unlock__FP4Moby	Level10UberDoorLogic_Unlock__FP4Moby	function	8	1	1	1	LEVEL29.REL:0x24B830	src/levels/29_base/Level10UberDoorLogic_Unlock__FP4Moby.c
@@ -25177,17 +25177,17 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	ForceAllocateMtx__14DrawObjManagerPP4AMtx_L30	ForceAllocateMtx__14DrawObjManagerPP4AMtx	function	136	1	0	1	LEVEL30.REL:0x228268	
 30_boss	GU_IsPointToLeft__H2Z4VEC2Z4VEC4_PCX01PCX11_b	GU_IsPointToLeft__H2Z4VEC2Z4VEC4_PCX01PCX11_b	function	60	1	0	1	LEVEL30.REL:0x229C80	
 30_boss	CanActivate__7Mounted	CanActivate__7Mounted	function	8	1	1	1	LEVEL30.REL:0x22AE70	src/levels/30_boss/CanActivate__7Mounted.c
-30_boss	GetTransientDataSize__7Mounted	GetTransientDataSize__7Mounted	function	8	1	0	1	LEVEL30.REL:0x22AE78	
+30_boss	GetTransientDataSize__7Mounted	GetTransientDataSize__7Mounted	function	8	1	1	1	LEVEL30.REL:0x22AE78	src/levels/30_boss/GetTransientDataSize__7Mounted.c
 30_boss	GetStateId__C7Mounted	GetStateId__C7Mounted	function	8	1	1	1	LEVEL30.REL:0x22AE80	src/levels/30_boss/GetStateId__C7Mounted.c
 30_boss	CanActivate__10JumpToSuit	CanActivate__10JumpToSuit	function	8	1	1	1	LEVEL30.REL:0x22AE88	src/levels/30_boss/CanActivate__10JumpToSuit.c
 30_boss	GetTransientDataSize__10JumpToSuit	GetTransientDataSize__10JumpToSuit	function	8	1	0	1	LEVEL30.REL:0x22AE90	
-30_boss	GetStateId__C10JumpToSuit	GetStateId__C10JumpToSuit	function	8	1	0	1	LEVEL30.REL:0x22AE98	
+30_boss	GetStateId__C10JumpToSuit	GetStateId__C10JumpToSuit	function	8	1	1	1	LEVEL30.REL:0x22AE98	src/levels/30_boss/GetStateId__C10JumpToSuit.c
 30_boss	CanActivate__15TakeDownAttempt	CanActivate__15TakeDownAttempt	function	8	1	1	1	LEVEL30.REL:0x22AEA0	src/levels/30_boss/CanActivate__15TakeDownAttempt.c
 30_boss	GetTransientDataSize__15TakeDownAttempt	GetTransientDataSize__15TakeDownAttempt	function	8	1	0	1	LEVEL30.REL:0x22AEA8	
 30_boss	GetStateId__C15TakeDownAttempt	GetStateId__C15TakeDownAttempt	function	8	1	0	1	LEVEL30.REL:0x22AEB0	
 30_boss	CanActivate__15TakeDownSuccess	CanActivate__15TakeDownSuccess	function	8	1	1	1	LEVEL30.REL:0x22AEB8	src/levels/30_boss/CanActivate__15TakeDownSuccess.c
 30_boss	GetTransientDataSize__15TakeDownSuccess	GetTransientDataSize__15TakeDownSuccess	function	8	1	0	1	LEVEL30.REL:0x22AEC0	
-30_boss	GetStateId__C15TakeDownSuccess	GetStateId__C15TakeDownSuccess	function	8	1	0	1	LEVEL30.REL:0x22AEC8	
+30_boss	GetStateId__C15TakeDownSuccess	GetStateId__C15TakeDownSuccess	function	8	1	1	1	LEVEL30.REL:0x22AEC8	src/levels/30_boss/GetStateId__C15TakeDownSuccess.c
 30_boss	CanActivate__12TakeDownFail	CanActivate__12TakeDownFail	function	8	1	1	1	LEVEL30.REL:0x22AED0	src/levels/30_boss/CanActivate__12TakeDownFail.c
 30_boss	GetTransientDataSize__12TakeDownFail	GetTransientDataSize__12TakeDownFail	function	8	1	0	1	LEVEL30.REL:0x22AED8	
 30_boss	GetStateId__C12TakeDownFail	GetStateId__C12TakeDownFail	function	8	1	0	1	LEVEL30.REL:0x22AEE0	
@@ -25197,14 +25197,14 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	GetTransientDataSize__10FightIntro	GetTransientDataSize__10FightIntro	function	8	1	0	1	LEVEL30.REL:0x22AF00	
 30_boss	GetStateId__C10FightIntro	GetStateId__C10FightIntro	function	8	1	0	1	LEVEL30.REL:0x22AF08	
 30_boss	GetTransientDataSize__19SuitDeactivateScene	GetTransientDataSize__19SuitDeactivateScene	function	8	1	0	1	LEVEL30.REL:0x22AF10	
-30_boss	GetStateId__C19SuitDeactivateScene	GetStateId__C19SuitDeactivateScene	function	8	1	0	1	LEVEL30.REL:0x22AF18	
+30_boss	GetStateId__C19SuitDeactivateScene	GetStateId__C19SuitDeactivateScene	function	8	1	1	1	LEVEL30.REL:0x22AF18	src/levels/30_boss/GetStateId__C19SuitDeactivateScene.c
 30_boss	__Q212KlunkContent5State	__Q212KlunkContent5State	function	268	1	0	1	LEVEL30.REL:0x22AF20	
 30_boss	CanActivate__14WindFireAttack	CanActivate__14WindFireAttack	function	8	1	1	1	LEVEL30.REL:0x22B030	src/levels/30_boss/CanActivate__14WindFireAttack.c
 30_boss	GetTransientDataSize__14WindFireAttack	GetTransientDataSize__14WindFireAttack	function	8	1	0	1	LEVEL30.REL:0x22B038	
 30_boss	CanActivate__14PimpCaneAttack	CanActivate__14PimpCaneAttack	function	8	1	1	1	LEVEL30.REL:0x22B040	src/levels/30_boss/CanActivate__14PimpCaneAttack.c
-30_boss	GetTransientDataSize__14PimpCaneAttack	GetTransientDataSize__14PimpCaneAttack	function	8	1	0	1	LEVEL30.REL:0x22B048	
+30_boss	GetTransientDataSize__14PimpCaneAttack	GetTransientDataSize__14PimpCaneAttack	function	8	1	1	1	LEVEL30.REL:0x22B048	src/levels/30_boss/GetTransientDataSize__14PimpCaneAttack.c
 30_boss	CanActivate__4Wait	CanActivate__4Wait	function	8	1	1	1	LEVEL30.REL:0x22B050	src/levels/30_boss/CanActivate__4Wait.c
-30_boss	GetTransientDataSize__4Wait	GetTransientDataSize__4Wait	function	8	1	0	1	LEVEL30.REL:0x22B058	
+30_boss	GetTransientDataSize__4Wait	GetTransientDataSize__4Wait	function	8	1	1	1	LEVEL30.REL:0x22B058	src/levels/30_boss/GetTransientDataSize__4Wait.c
 30_boss	CanActivate__15JumpFromChamber	CanActivate__15JumpFromChamber	function	8	1	1	1	LEVEL30.REL:0x22B060	src/levels/30_boss/CanActivate__15JumpFromChamber.c
 30_boss	GetTransientDataSize__15JumpFromChamber	GetTransientDataSize__15JumpFromChamber	function	8	1	1	1	LEVEL30.REL:0x22B068	src/levels/30_boss/GetTransientDataSize__15JumpFromChamber.c
 30_boss	CanActivate__8SuitWait	CanActivate__8SuitWait	function	8	1	1	1	LEVEL30.REL:0x22B070	src/levels/30_boss/CanActivate__8SuitWait.c
@@ -25215,17 +25215,17 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	CanActivate__10LaserSweep	CanActivate__10LaserSweep	function	8	1	1	1	LEVEL30.REL:0x22B288	src/levels/30_boss/CanActivate__10LaserSweep.c
 30_boss	GetTransientDataSize__10LaserSweep	GetTransientDataSize__10LaserSweep	function	8	1	0	1	LEVEL30.REL:0x22B290	
 30_boss	CanActivate__13NefariousWait	CanActivate__13NefariousWait	function	8	1	1	1	LEVEL30.REL:0x22B298	src/levels/30_boss/CanActivate__13NefariousWait.c
-30_boss	GetTransientDataSize__13NefariousWait	GetTransientDataSize__13NefariousWait	function	8	1	0	1	LEVEL30.REL:0x22B2A0	
+30_boss	GetTransientDataSize__13NefariousWait	GetTransientDataSize__13NefariousWait	function	8	1	1	1	LEVEL30.REL:0x22B2A0	src/levels/30_boss/GetTransientDataSize__13NefariousWait.c
 30_boss	CanActivate__17NefariousSuitWait	CanActivate__17NefariousSuitWait	function	8	1	1	1	LEVEL30.REL:0x22B2A8	src/levels/30_boss/CanActivate__17NefariousSuitWait.c
 30_boss	CanActivate__18NefJumpFromChamber	CanActivate__18NefJumpFromChamber	function	8	1	1	1	LEVEL30.REL:0x22B2B0	src/levels/30_boss/CanActivate__18NefJumpFromChamber.c
 30_boss	GetTransientDataSize__18NefJumpFromChamber	GetTransientDataSize__18NefJumpFromChamber	function	8	1	1	1	LEVEL30.REL:0x22B2B8	src/levels/30_boss/GetTransientDataSize__18NefJumpFromChamber.c
 30_boss	__Q216NefariousContent5State	__Q216NefariousContent5State	function	192	1	0	1	LEVEL30.REL:0x22B2C0	
 30_boss	CanActivate__15GadgetbotAttack_L30	CanActivate__15GadgetbotAttack	function	8	1	1	1	LEVEL30.REL:0x22B380	src/levels/30_boss/CanActivate__15GadgetbotAttack_L30.c
-30_boss	GetTransientDataSize__15GadgetbotAttack_L30	GetTransientDataSize__15GadgetbotAttack	function	8	1	0	1	LEVEL30.REL:0x22B388	
+30_boss	GetTransientDataSize__15GadgetbotAttack_L30	GetTransientDataSize__15GadgetbotAttack	function	8	1	1	1	LEVEL30.REL:0x22B388	src/levels/30_boss/GetTransientDataSize__15GadgetbotAttack_L30.c
 30_boss	CanActivate__14CrossbowAttack	CanActivate__14CrossbowAttack	function	8	1	1	1	LEVEL30.REL:0x22B390	src/levels/30_boss/CanActivate__14CrossbowAttack.c
 30_boss	GetTransientDataSize__14CrossbowAttack	GetTransientDataSize__14CrossbowAttack	function	8	1	1	1	LEVEL30.REL:0x22B398	src/levels/30_boss/GetTransientDataSize__14CrossbowAttack.c
 30_boss	CanActivate__15RoboRatchetWait	CanActivate__15RoboRatchetWait	function	8	1	1	1	LEVEL30.REL:0x22B3A0	src/levels/30_boss/CanActivate__15RoboRatchetWait.c
-30_boss	GetTransientDataSize__15RoboRatchetWait	GetTransientDataSize__15RoboRatchetWait	function	8	1	0	1	LEVEL30.REL:0x22B3A8	
+30_boss	GetTransientDataSize__15RoboRatchetWait	GetTransientDataSize__15RoboRatchetWait	function	8	1	1	1	LEVEL30.REL:0x22B3A8	src/levels/30_boss/GetTransientDataSize__15RoboRatchetWait.c
 30_boss	CanActivate__19RoboJumpFromChamber	CanActivate__19RoboJumpFromChamber	function	8	1	1	1	LEVEL30.REL:0x22B3B0	src/levels/30_boss/CanActivate__19RoboJumpFromChamber.c
 30_boss	GetTransientDataSize__19RoboJumpFromChamber	GetTransientDataSize__19RoboJumpFromChamber	function	8	1	1	1	LEVEL30.REL:0x22B3B8	src/levels/30_boss/GetTransientDataSize__19RoboJumpFromChamber.c
 30_boss	CanActivate__19RoboRatchetSuitWait	CanActivate__19RoboRatchetSuitWait	function	8	1	1	1	LEVEL30.REL:0x22B3C0	src/levels/30_boss/CanActivate__19RoboRatchetSuitWait.c

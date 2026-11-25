@@ -4,11 +4,11 @@
     "units": 25383,
     "functions": 25377,
     "code_bytes": 7358732,
-    "matched_functions": 6149,
-    "matched_bytes": 187248,
+    "matched_functions": 6295,
+    "matched_bytes": 188416,
     "partial_functions": 0,
     "placements": 366340,
-    "matched_placements": 111073,
+    "matched_placements": 112085,
     "shared_functions": 17853,
     "code_bytes_by_placement": 68944592,
     "zero_padding_bytes": 538928
@@ -17,14 +17,14 @@
     "units": 3833,
     "functions": 3819,
     "code_bytes": 644004,
-    "matched_functions": 521,
-    "matched_bytes": 35136,
+    "matched_functions": 550,
+    "matched_bytes": 35368,
     "zero_padding_bytes": 6928
   },
   "tables": {
-    "config/levels/bodies.tsv": "5815f89c60297bcaa2fa8227c6ed203974383e3f8b3248fd28249decc7c87cd4",
-    "config/boot/bodies.tsv": "9c86047ca13183f8f2eae15b490bf71f45855ce50bc166510761adef97f327f4",
-    "config/levels/units.tsv": "23a0cc0fc52cf6b161072ab225419ed6dc963ddaa0f9156a30a5ae2946f3379c",
-    "config/boot/units.tsv": "ab41e56fcb818e623ce6b1dde58ec41297a7e2e4f16395c5a2de7ec98d45a45a"
+    "config/levels/bodies.tsv": "08611b212244cbea69dfdb545970e9ca2a5baa0b92efca88d5d78a44f9bfa04a",
+    "config/boot/bodies.tsv": "d44ab7fab96907843535d100329df228dbf05ba75b59ea2ed8ce644dd743760e",
+    "config/levels/units.tsv": "5e356f6c9cab1d14d8891b77af442ec6ee91ff4a0d0f613473dbb838dabf865b",
+    "config/boot/units.tsv": "b9f89b558fb322e7c69cacf15e6f444f0e1c288f20a969f058edccbdfb4550db"
   }
 }
