@@ -5440,7 +5440,7 @@ shared	AddSibling__14ApeAnimChannelP14ApeAnimChannel	AddSibling__14ApeAnimChanne
 shared	GetNumSiblings__14ApeAnimChannel	GetNumSiblings__14ApeAnimChannel	function	8	31	0	31	FE.REL:0x0E7588	
 shared	GetSibling__14ApeAnimChannelUi	GetSibling__14ApeAnimChannelUi	function	20	31	0	31	FE.REL:0x0E7590	
 shared	FindSemantic__14ApeAnimChannelUi	FindSemantic__14ApeAnimChannelUi	function	84	31	0	31	FE.REL:0x0E75A8	
-shared	SetMatrix__14ApeAnimChannelP4AMtx	SetMatrix__14ApeAnimChannelP4AMtx	function	8	31	0	31	FE.REL:0x0E7600	
+shared	SetMatrix__14ApeAnimChannelP4AMtx	SetMatrix__14ApeAnimChannelP4AMtx	function	8	31	31	31	FE.REL:0x0E7600	src/levels/shared/SetMatrix__14ApeAnimChannelP4AMtx.c
 shared	SetWorldMatrix__14ApeAnimChannelP4AMtx	SetWorldMatrix__14ApeAnimChannelP4AMtx	function	8	31	31	31	FE.REL:0x0E7608	src/levels/shared/SetWorldMatrix__14ApeAnimChannelP4AMtx.c
 shared	GetMatrix__14ApeAnimChannel	GetMatrix__14ApeAnimChannel	function	8	31	31	31	FE.REL:0x0E7610	src/levels/shared/GetMatrix__14ApeAnimChannel.c
 shared	GetWorldMatrix__14ApeAnimChannel	GetWorldMatrix__14ApeAnimChannel	function	8	31	31	31	FE.REL:0x0E7618	src/levels/shared/GetWorldMatrix__14ApeAnimChannel.c
@@ -5448,7 +5448,7 @@ shared	UpdateExternalData__14ApeAnimChannel	UpdateExternalData__14ApeAnimChannel
 shared	SetDefaultValuesFromMatrix__14ApeAnimChannelP4AMtx	SetDefaultValuesFromMatrix__14ApeAnimChannelP4AMtx	function	8	31	31	31	FE.REL:0x0E7628	src/levels/shared/SetDefaultValuesFromMatrix__14ApeAnimChannelP4AMtx.c
 shared	SetDefaultValuesFromVector__14ApeAnimChannelP5AVec4	SetDefaultValuesFromVector__14ApeAnimChannelP5AVec4	function	8	31	31	31	FE.REL:0x0E7630	src/levels/shared/SetDefaultValuesFromVector__14ApeAnimChannelP5AVec4.c
 shared	IsDirty__14ApeAnimChannel	IsDirty__14ApeAnimChannel	function	8	31	31	31	FE.REL:0x0E7638	src/levels/shared/IsDirty__14ApeAnimChannel.c
-shared	SetDirty__14ApeAnimChannelb	SetDirty__14ApeAnimChannelb	function	8	31	0	31	FE.REL:0x0E7640	
+shared	SetDirty__14ApeAnimChannelb	SetDirty__14ApeAnimChannelb	function	8	31	31	31	FE.REL:0x0E7640	src/levels/shared/SetDirty__14ApeAnimChannelb.c
 shared	SetDisableWrite__14ApeAnimChannelb	SetDisableWrite__14ApeAnimChannelb	function	8	31	0	31	FE.REL:0x0E7648	
 shared	Initialize__14ApeAnimChannel	Initialize__14ApeAnimChannel	function	8	31	31	31	FE.REL:0x0E7650	src/levels/shared/Initialize__14ApeAnimChannel.c
 shared	GetProfileBar__15ApeAnimTreeNode	GetProfileBar__15ApeAnimTreeNode	function	24	31	0	31	FE.REL:0x0E7658	
@@ -5583,7 +5583,7 @@ shared	GetPartID__21ApePointMassBoneJoint	GetPartID__21ApePointMassBoneJoint	fun
 shared	GetParentPartID__21ApePointMassBoneJoint	GetParentPartID__21ApePointMassBoneJoint	function	8	31	0	31	FE.REL:0x0E95E0	
 shared	__13ApeAnimIKNodeP11ApeInstance	__13ApeAnimIKNodeP11ApeInstance	function	192	31	0	31	FE.REL:0x0E95E8	
 shared	_$_13ApeAnimIKNode	_$_13ApeAnimIKNode	function	88	31	0	31	FE.REL:0x0E96A8	
-shared	SetInstance__13ApeAnimIKNodeP11ApeInstance	SetInstance__13ApeAnimIKNodeP11ApeInstance	function	8	31	0	31	FE.REL:0x0E9700	
+shared	SetInstance__13ApeAnimIKNodeP11ApeInstance	SetInstance__13ApeAnimIKNodeP11ApeInstance	function	8	31	31	31	FE.REL:0x0E9700	src/levels/shared/SetInstance__13ApeAnimIKNodeP11ApeInstance.c
 shared	GetInstance__13ApeAnimIKNode	GetInstance__13ApeAnimIKNode	function	8	31	31	31	FE.REL:0x0E9708	src/levels/shared/GetInstance__13ApeAnimIKNode.c
 shared	IsLeaf__13ApeAnimIKNode	IsLeaf__13ApeAnimIKNode	function	8	31	31	31	FE.REL:0x0E9710	src/levels/shared/IsLeaf__13ApeAnimIKNode.c
 shared	IsDeleteable__13ApeAnimIKNode	IsDeleteable__13ApeAnimIKNode	function	8	31	31	31	FE.REL:0x0E9718	src/levels/shared/IsDeleteable__13ApeAnimIKNode.c
@@ -5846,7 +5846,7 @@ shared	GetNameHash__C11ApeIDefBase	GetNameHash__C11ApeIDefBase	function	8	31	31	
 shared	GetAnimHash__C11ApeIDefBase	GetAnimHash__C11ApeIDefBase	function	8	31	0	31	FE.REL:0x0EC2F0	
 shared	SetAnimHash__11ApeIDefBaseG10ApeHashStr	SetAnimHash__11ApeIDefBaseG10ApeHashStr	function	12	31	0	31	FE.REL:0x0EC2F8	
 shared	GetLightGroup__C11ApeIDefBase	GetLightGroup__C11ApeIDefBase	function	8	31	31	31	FE.REL:0x0EC308	src/levels/shared/GetLightGroup__C11ApeIDefBase.c
-shared	SetLightGroup__11ApeIDefBaseUi	SetLightGroup__11ApeIDefBaseUi	function	8	31	0	31	FE.REL:0x0EC310	
+shared	SetLightGroup__11ApeIDefBaseUi	SetLightGroup__11ApeIDefBaseUi	function	8	31	31	31	FE.REL:0x0EC310	src/levels/shared/SetLightGroup__11ApeIDefBaseUi.c
 shared	SetPhysics__11ApeIDefBaseP13ApePhysicsDef	SetPhysics__11ApeIDefBaseP13ApePhysicsDef	function	8	31	0	31	FE.REL:0x0EC318	
 shared	GetPhysics__C11ApeIDefBase	GetPhysics__C11ApeIDefBase	function	8	31	0	31	FE.REL:0x0EC320	
 shared	Reset__10ApeGeomDef	Reset__10ApeGeomDef	function	148	31	0	31	FE.REL:0x0EC328	
@@ -12309,7 +12309,7 @@ shared	GU_IsPointToLeft__H2Z4VEC4Z4VEC4_PCX01PCX11_b	GU_IsPointToLeft__H2Z4VEC4Z
 shared	__14EffectCallback	__14EffectCallback	function	28	30	0	30	LEVEL1.REL:0x2337F8	
 shared	SetNext__14EffectCallbackP14EffectCallback	SetNext__14EffectCallbackP14EffectCallback	function	8	30	0	30	LEVEL1.REL:0x233818	
 shared	GetNext__14EffectCallback	GetNext__14EffectCallback	function	8	30	30	30	LEVEL1.REL:0x233820	src/levels/shared/GetNext__14EffectCallback.c
-shared	SetPrevious__14EffectCallbackP14EffectCallback	SetPrevious__14EffectCallbackP14EffectCallback	function	8	30	0	30	LEVEL1.REL:0x233828	
+shared	SetPrevious__14EffectCallbackP14EffectCallback	SetPrevious__14EffectCallbackP14EffectCallback	function	8	30	30	30	LEVEL1.REL:0x233828	src/levels/shared/SetPrevious__14EffectCallbackP14EffectCallback.c
 shared	GetPrevious__14EffectCallback	GetPrevious__14EffectCallback	function	8	30	30	30	LEVEL1.REL:0x233830	src/levels/shared/GetPrevious__14EffectCallback.c
 shared	ApeEndianSwap__H1Z15WAD_FILE_HEADER_RPX01_v	ApeEndianSwap__H1Z15WAD_FILE_HEADER_RPX01_v	function	8	30	30	30	LEVEL1.REL:0x234A90	src/levels/shared/ApeEndianSwap__H1Z15WAD_FILE_HEADER_RPX01_v.c
 shared	ApeEndianSwap__H1Zv_RPX01_v	ApeEndianSwap__H1Zv_RPX01_v	function	8	30	30	30	LEVEL1.REL:0x234A98	src/levels/shared/ApeEndianSwap__H1Zv_RPX01_v.c
@@ -12553,7 +12553,7 @@ shared	Drowning__10ClankDrown	Drowning__10ClankDrown	function	12	14	0	14	LEVEL1.
 shared	CanActivate__11ClankBounce	CanActivate__11ClankBounce	function	8	14	14	14	LEVEL1.REL:0x238108	src/levels/shared/CanActivate__11ClankBounce.c
 shared	Begin__23KnucklePunchBodyControl	Begin__23KnucklePunchBodyControl	function	8	14	14	14	LEVEL1.REL:0x238110	src/levels/shared/Begin__23KnucklePunchBodyControl.c
 shared	CanActivate__23KnucklePunchBodyControl	CanActivate__23KnucklePunchBodyControl	function	8	14	14	14	LEVEL1.REL:0x238118	src/levels/shared/CanActivate__23KnucklePunchBodyControl.c
-shared	SetHoldState__12KnucklePunchP5State	SetHoldState__12KnucklePunchP5State	function	8	14	0	14	LEVEL1.REL:0x238120	
+shared	SetHoldState__12KnucklePunchP5State	SetHoldState__12KnucklePunchP5State	function	8	14	14	14	LEVEL1.REL:0x238120	src/levels/shared/SetHoldState__12KnucklePunchP5State.c
 shared	CanActivate__17KnuckleComboPunch	CanActivate__17KnuckleComboPunch	function	8	14	14	14	LEVEL1.REL:0x238128	src/levels/shared/CanActivate__17KnuckleComboPunch.c
 shared	CanActivate__10NoWalkFall	CanActivate__10NoWalkFall	function	8	14	14	14	LEVEL1.REL:0x238130	src/levels/shared/CanActivate__10NoWalkFall.c
 shared	__5CLANK	__5CLANK	function	1068	14	0	14	LEVEL1.REL:0x238138	
@@ -18408,7 +18408,7 @@ shared	__final_insertion_sort__H2ZPP21BackgroundPersonActorZPFP21BackgroundPerso
 10_carnival	CanBeEaten__C23KingpinState_FollowJack	CanBeEaten__C23KingpinState_FollowJack	function	8	1	1	1	LEVEL10.REL:0x23AD60	src/levels/10_carnival/CanBeEaten__C23KingpinState_FollowJack.c
 10_carnival	GetDesiredState__26KingpinState_CapturedClank	GetDesiredState__26KingpinState_CapturedClank	function	8	1	1	1	LEVEL10.REL:0x23AD68	src/levels/10_carnival/GetDesiredState__26KingpinState_CapturedClank.c
 10_carnival	CanActivate__26KingpinState_CapturedClank	CanActivate__26KingpinState_CapturedClank	function	8	1	1	1	LEVEL10.REL:0x23AD70	src/levels/10_carnival/CanActivate__26KingpinState_CapturedClank.c
-10_carnival	SetCaptureType__26KingpinState_CapturedClankUc	SetCaptureType__26KingpinState_CapturedClankUc	function	8	1	0	1	LEVEL10.REL:0x23AD78	
+10_carnival	SetCaptureType__26KingpinState_CapturedClankUc	SetCaptureType__26KingpinState_CapturedClankUc	function	8	1	1	1	LEVEL10.REL:0x23AD78	src/levels/10_carnival/SetCaptureType__26KingpinState_CapturedClankUc.c
 10_carnival	CanBeHypnotized__C26KingpinState_CapturedClank	CanBeHypnotized__C26KingpinState_CapturedClank	function	8	1	1	1	LEVEL10.REL:0x23AD80	src/levels/10_carnival/CanBeHypnotized__C26KingpinState_CapturedClank.c
 10_carnival	CanBeEaten__C26KingpinState_CapturedClank	CanBeEaten__C26KingpinState_CapturedClank	function	8	1	1	1	LEVEL10.REL:0x23AD88	src/levels/10_carnival/CanBeEaten__C26KingpinState_CapturedClank.c
 10_carnival	__14KingpinContent	__14KingpinContent	function	236	1	0	1	LEVEL10.REL:0x23AD90	
@@ -21270,7 +21270,7 @@ shared	DustyLaser_CreateGroup__FP15DustyLaserGroupPC16DustyLaserConfigi_L18	Dust
 18_qwark	GetTransientDataSize__10OperaDeath	GetTransientDataSize__10OperaDeath	function	8	1	1	1	LEVEL18.REL:0x1E2A70	src/levels/18_qwark/GetTransientDataSize__10OperaDeath.c
 18_qwark	CanActivate__10OperaDeath	CanActivate__10OperaDeath	function	8	1	1	1	LEVEL18.REL:0x1E2A78	src/levels/18_qwark/CanActivate__10OperaDeath.c
 18_qwark	GetDesiredState__10OperaDeath	GetDesiredState__10OperaDeath	function	8	1	1	1	LEVEL18.REL:0x1E2A80	src/levels/18_qwark/GetDesiredState__10OperaDeath.c
-18_qwark	Init__10OperaDeathPC16OperaDeathConfig	Init__10OperaDeathPC16OperaDeathConfig	function	8	1	0	1	LEVEL18.REL:0x1E2A88	
+18_qwark	Init__10OperaDeathPC16OperaDeathConfig	Init__10OperaDeathPC16OperaDeathConfig	function	8	1	1	1	LEVEL18.REL:0x1E2A88	src/levels/18_qwark/Init__10OperaDeathPC16OperaDeathConfig.c
 18_qwark	GetTransientDataSize__15OperaReposition	GetTransientDataSize__15OperaReposition	function	8	1	1	1	LEVEL18.REL:0x1E2A90	src/levels/18_qwark/GetTransientDataSize__15OperaReposition.c
 18_qwark	Init__15OperaRepositionPC26BasicNavigateToPointConfigPC21OperaRepositionConfigP8Navigate14GoToPointFlags	Init__15OperaRepositionPC26BasicNavigateToPointConfigPC21OperaRepositionConfigP8Navigate14GoToPointFlags	function	44	1	0	1	LEVEL18.REL:0x1E2A98	
 18_qwark	GetTransientDataSize__9OperaSpew	GetTransientDataSize__9OperaSpew	function	8	1	1	1	LEVEL18.REL:0x1E2AC8	src/levels/18_qwark/GetTransientDataSize__9OperaSpew.c
