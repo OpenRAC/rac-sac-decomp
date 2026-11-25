@@ -13672,7 +13672,7 @@ shared	Reflect__27ArenaMolotovCocktailContentP4MobyPC4VEC3N22	Reflect__27ArenaMo
 shared	Vaporize__27ArenaMolotovCocktailContentP4Moby	Vaporize__27ArenaMolotovCocktailContentP4Moby	function	8	5	5	5	LEVEL3.REL:0x0D0990	src/levels/shared/Vaporize__27ArenaMolotovCocktailContentP4Moby.c
 shared	ArenaMolotovCocktail_DestroyAllMolotovs__Fv_L03	ArenaMolotovCocktail_DestroyAllMolotovs__Fv	function	104	5	0	5	LEVEL3.REL:0x0D0998	
 03_prison	ArenaMLP_GetLandingPos__FP4VEC3P4MobyPC4VEC3_L03	ArenaMLP_GetLandingPos__FP4VEC3P4MobyPC4VEC3	function	288	1	0	1	LEVEL3.REL:0x0D0A00	
-03_prison	ArenaMLP_RelaseLandingPos__FP4MobyUi_L03	ArenaMLP_RelaseLandingPos__FP4MobyUi	function	16	1	0	1	LEVEL3.REL:0x0D0B20	
+03_prison	ArenaMLP_RelaseLandingPos__FP4MobyUi_L03	ArenaMLP_RelaseLandingPos__FP4MobyUi	function	16	1	1	1	LEVEL3.REL:0x0D0B20	src/levels/03_prison/ArenaMLP_RelaseLandingPos__FP4MobyUi_L03.c
 03_prison	ArenaMolotovLandingPoints_Init__FP4Moby	ArenaMolotovLandingPoints_Init__FP4Moby	function	40	1	0	1	LEVEL3.REL:0x0D0B30	
 03_prison	ArenaMolotovLandingPoints_Term__FP4Moby	ArenaMolotovLandingPoints_Term__FP4Moby	function	8	1	1	1	LEVEL3.REL:0x0D0B58	src/levels/03_prison/ArenaMolotovLandingPoints_Term__FP4Moby.c
 03_prison	ArenaMolotovLandingPoints_Update__FP4Mobyf	ArenaMolotovLandingPoints_Update__FP4Mobyf	function	8	1	1	1	LEVEL3.REL:0x0D0B60	src/levels/03_prison/ArenaMolotovLandingPoints_Update__FP4Mobyf.c
@@ -17735,7 +17735,7 @@ shared	SetApeGlobals__Fv_L09	SetApeGlobals__Fv	function	488	6	0	6	LEVEL9.REL:0x0
 09_cafeteria	Arena2SwarmSpawner_SetSwarmerMold__FP4MobyT0_L09	Arena2SwarmSpawner_SetSwarmerMold__FP4MobyT0	function	12	1	1	1	LEVEL9.REL:0x0BD7B8	src/levels/09_cafeteria/Arena2SwarmSpawner_SetSwarmerMold__FP4MobyT0_L09.c
 09_cafeteria	Arena2SwarmSpawner_TurnOnTubes__FP4MobyUifUi_L09	Arena2SwarmSpawner_TurnOnTubes__FP4MobyUifUi	function	160	1	0	1	LEVEL9.REL:0x0BD7C8	
 09_cafeteria	Arena2SwarmSpawner_Reset__FP4Moby_L09	Arena2SwarmSpawner_Reset__FP4Moby	function	112	1	0	1	LEVEL9.REL:0x0BD868	
-09_cafeteria	Arena2SwarmSpawner_Deactivate__FP4MobyUi_L09	Arena2SwarmSpawner_Deactivate__FP4MobyUi	function	16	1	0	1	LEVEL9.REL:0x0BD8D8	
+09_cafeteria	Arena2SwarmSpawner_Deactivate__FP4MobyUi_L09	Arena2SwarmSpawner_Deactivate__FP4MobyUi	function	16	1	1	1	LEVEL9.REL:0x0BD8D8	src/levels/09_cafeteria/Arena2SwarmSpawner_Deactivate__FP4MobyUi_L09.c
 09_cafeteria	Arena2SwarmSpawner_GetNumActiveTubes__FP4Moby_L09	Arena2SwarmSpawner_GetNumActiveTubes__FP4Moby	function	52	1	0	1	LEVEL9.REL:0x0BD8E8	
 09_cafeteria	Arena2SwarmSpawner_Init__FP4Moby	Arena2SwarmSpawner_Init__FP4Moby	function	116	1	0	1	LEVEL9.REL:0x0BD920	
 09_cafeteria	Arena2SwarmSpawner_Term__FP4Moby	Arena2SwarmSpawner_Term__FP4Moby	function	8	1	1	1	LEVEL9.REL:0x0BD998	src/levels/09_cafeteria/Arena2SwarmSpawner_Term__FP4Moby.c
@@ -18193,7 +18193,7 @@ shared	BackgroundPerson_Clear__Fi	BackgroundPerson_Clear__Fi	function	32	2	0	2	L
 shared	func_L10_112B20	func_L10_112B20	function	112	2	0	2	LEVEL10.REL:0x112B20	
 shared	func_L10_112B90	func_L10_112B90	function	1484	2	0	2	LEVEL10.REL:0x112B90	
 shared	func_L10_113160	func_L10_113160	function	124	2	0	2	LEVEL10.REL:0x113160	
-shared	BackgroundPersonLessThan__FP21BackgroundPersonActorT0	BackgroundPersonLessThan__FP21BackgroundPersonActorT0	function	16	2	0	2	LEVEL10.REL:0x1131E0	
+shared	BackgroundPersonLessThan__FP21BackgroundPersonActorT0	BackgroundPersonLessThan__FP21BackgroundPersonActorT0	function	16	2	2	2	LEVEL10.REL:0x1131E0	src/levels/shared/BackgroundPersonLessThan__FP21BackgroundPersonActorT0.c
 shared	func_L10_1131F0	func_L10_1131F0	function	764	2	0	2	LEVEL10.REL:0x1131F0	
 shared	func_L10_1134F0	func_L10_1134F0	function	104	2	0	2	LEVEL10.REL:0x1134F0	
 shared	func_L10_113558	func_L10_113558	function	28	2	0	2	LEVEL10.REL:0x113558	
@@ -18205,7 +18205,7 @@ shared	func_L10_113558	func_L10_113558	function	28	2	0	2	LEVEL10.REL:0x113558
 10_carnival	func_L10_113B18	func_L10_113B18	function	64	1	0	1	LEVEL10.REL:0x113B18	
 10_carnival	func_L10_113B58	func_L10_113B58	function	872	1	0	1	LEVEL10.REL:0x113B58	
 10_carnival	func_L10_113EC0	func_L10_113EC0	function	192	1	0	1	LEVEL10.REL:0x113EC0	
-10_carnival	BackgroundPersonSimpleLessThan__FP27BackgroundPersonSimpleActorT0	BackgroundPersonSimpleLessThan__FP27BackgroundPersonSimpleActorT0	function	16	1	0	1	LEVEL10.REL:0x113F80	
+10_carnival	BackgroundPersonSimpleLessThan__FP27BackgroundPersonSimpleActorT0	BackgroundPersonSimpleLessThan__FP27BackgroundPersonSimpleActorT0	function	16	1	1	1	LEVEL10.REL:0x113F80	src/levels/10_carnival/BackgroundPersonSimpleLessThan__FP27BackgroundPersonSimpleActorT0.c
 10_carnival	func_L10_113F90	func_L10_113F90	function	764	1	0	1	LEVEL10.REL:0x113F90	
 10_carnival	func_L10_114290	func_L10_114290	function	104	1	0	1	LEVEL10.REL:0x114290	
 shared	func_L10_119FB0	func_L10_119FB0	function	236	4	0	4	LEVEL10.REL:0x119FB0	

@@ -123883,3 +123883,8 @@ LEVEL29.REL	0x2524A0	20	src/levels/shared/Set__10AglVtxRGBAUcUcUcUc.c
 LEVEL30.REL	0x2315A0	20	src/levels/shared/Set__10AglVtxRGBAUcUcUcUc.c
 LEVEL31.REL	0x21C870	20	src/levels/shared/Set__10AglVtxRGBAUcUcUcUc.c
 LEVEL32.REL	0x1F30C0	20	src/levels/shared/Set__10AglVtxRGBAUcUcUcUc.c
+LEVEL10.REL	0x1131E0	16	src/levels/shared/BackgroundPersonLessThan__FP21BackgroundPersonActorT0.c
+LEVEL18.REL	0x0E0E98	16	src/levels/shared/BackgroundPersonLessThan__FP21BackgroundPersonActorT0.c
+LEVEL10.REL	0x113F80	16	src/levels/10_carnival/BackgroundPersonSimpleLessThan__FP27BackgroundPersonSimpleActorT0.c
+LEVEL3.REL	0x0D0B20	16	src/levels/03_prison/ArenaMLP_RelaseLandingPos__FP4MobyUi_L03.c
+LEVEL9.REL	0x0BD8D8	16	src/levels/09_cafeteria/Arena2SwarmSpawner_Deactivate__FP4MobyUi_L09.c
