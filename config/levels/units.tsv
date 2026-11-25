@@ -2617,7 +2617,7 @@ shared	AddMesh__14AglIRenderListR22AglSubMeshRenderParamsG20AglRenderListSortKey
 shared	AddMesh__14AglIRenderListR22AglSubMeshRenderParamsUi	AddMesh__14AglIRenderListR22AglSubMeshRenderParamsUi	function	56	31	0	31	FE.REL:0x079A18	
 shared	Sort__14AglIRenderList	Sort__14AglIRenderList	function	80	31	0	31	FE.REL:0x079A50	
 shared	Render__14AglIRenderList	Render__14AglIRenderList	function	168	31	0	31	FE.REL:0x079AA0	
-shared	Set__Q214AglIRenderList8CallbackPFPv_vPv20AglRenderTargetEType	Set__Q214AglIRenderList8CallbackPFPv_vPv20AglRenderTargetEType	function	16	31	0	31	FE.REL:0x079B48	
+shared	Set__Q214AglIRenderList8CallbackPFPv_vPv20AglRenderTargetEType	Set__Q214AglIRenderList8CallbackPFPv_vPv20AglRenderTargetEType	function	16	31	31	31	FE.REL:0x079B48	src/levels/shared/Set__Q214AglIRenderList8CallbackPFPv_vPv20AglRenderTargetEType.c
 shared	Call__Q214AglIRenderList8Callback	Call__Q214AglIRenderList8Callback	function	84	31	0	31	FE.REL:0x079B58	
 shared	Dump__14AglIRenderList	Dump__14AglIRenderList	function	140	31	0	31	FE.REL:0x079BB0	
 shared	AddMesh__15AglRenderListUIR22AglSubMeshRenderParamsUi	AddMesh__15AglRenderListUIR22AglSubMeshRenderParamsUi	function	28	31	0	31	FE.REL:0x079C40	
@@ -2966,7 +2966,7 @@ shared	DrawPrimitive__10AglSubMesh	DrawPrimitive__10AglSubMesh	function	132	31	0
 shared	DrawMesh__10AglSubMeshR22AglSubMeshRenderParams	DrawMesh__10AglSubMeshR22AglSubMeshRenderParams	function	128	31	0	31	FE.REL:0x089ED0	
 shared	SetDisplayList__10AglSubMeshUiUi	SetDisplayList__10AglSubMeshUiUi	function	84	31	0	31	FE.REL:0x089F50	
 shared	BuildDisplayList__10AglSubMesh	BuildDisplayList__10AglSubMesh	function	360	31	0	31	FE.REL:0x089FA8	
-shared	IsTriMesh__C18AglPs2BuildMeshInf	IsTriMesh__C18AglPs2BuildMeshInf	function	16	31	0	31	FE.REL:0x08A110	
+shared	IsTriMesh__C18AglPs2BuildMeshInf	IsTriMesh__C18AglPs2BuildMeshInf	function	16	31	31	31	FE.REL:0x08A110	src/levels/shared/IsTriMesh__C18AglPs2BuildMeshInf.c
 shared	StripDegenerateJoins__18AglPs2BuildMeshInf	StripDegenerateJoins__18AglPs2BuildMeshInf	function	280	31	0	31	FE.REL:0x08A120	
 shared	StripAllDegenerates__18AglPs2BuildMeshInf	StripAllDegenerates__18AglPs2BuildMeshInf	function	216	31	0	31	FE.REL:0x08A238	
 shared	ReadFloat2__18AglPs2BuildMeshInfPC16AgxVertexElementUiRfT3	ReadFloat2__18AglPs2BuildMeshInfPC16AgxVertexElementUiRfT3	function	240	31	0	31	FE.REL:0x08A310	
@@ -3201,7 +3201,7 @@ shared	Pop__9ApeAssertv	Pop__9ApeAssertv	function	28	31	0	31	FE.REL:0x099E68
 shared	Assert__9ApeAssertPCcUiT1UiUiiT1e	Assert__9ApeAssertPCcUiT1UiUiiT1e	function	428	31	0	31	FE.REL:0x099E88	
 shared	GetCurrentPC__9ApeAssertv	GetCurrentPC__9ApeAssertv	function	8	31	31	31	FE.REL:0x09A038	src/levels/shared/GetCurrentPC__9ApeAssertv.c
 shared	GetCurrentSP__9ApeAssertv	GetCurrentSP__9ApeAssertv	function	8	31	31	31	FE.REL:0x09A040	src/levels/shared/GetCurrentSP__9ApeAssertv.c
-shared	GetUserData__C15ApeFreeListNodeUi	GetUserData__C15ApeFreeListNodeUi	function	16	31	0	31	FE.REL:0x09A048	
+shared	GetUserData__C15ApeFreeListNodeUi	GetUserData__C15ApeFreeListNodeUi	function	16	31	31	31	FE.REL:0x09A048	src/levels/shared/GetUserData__C15ApeFreeListNodeUi.c
 shared	SetUserData__15ApeFreeListNodeUiUi	SetUserData__15ApeFreeListNodeUiUi	function	16	31	0	31	FE.REL:0x09A058	
 shared	Create__11ApeFreeListUiUiP12ApeAllocatorb	Create__11ApeFreeListUiUiP12ApeAllocatorb	function	208	31	0	31	FE.REL:0x09A068	
 shared	Destroy__11ApeFreeList	Destroy__11ApeFreeList	function	256	31	0	31	FE.REL:0x09A138	
@@ -6711,7 +6711,7 @@ shared	WEAPON_ShowWeapon__FP6PLAYERb	WEAPON_ShowWeapon__FP6PLAYERb	function	164	
 shared	WEAPON_Disarm__FP6PLAYER	WEAPON_Disarm__FP6PLAYER	function	76	30	0	30	LEVEL1.REL:0x032AB0	
 shared	WEAPON_KillAllTransient__Fv	WEAPON_KillAllTransient__Fv	function	132	30	0	30	LEVEL1.REL:0x032B00	
 shared	WEAPON_PlayOutOfAmmoSound__FP4Moby	WEAPON_PlayOutOfAmmoSound__FP4Moby	function	60	30	0	30	LEVEL1.REL:0x032B88	
-shared	WEAPON_PlayerHasFirstPersonHUD__FP6PLAYER	WEAPON_PlayerHasFirstPersonHUD__FP6PLAYER	function	16	30	0	30	LEVEL1.REL:0x032BC8	
+shared	WEAPON_PlayerHasFirstPersonHUD__FP6PLAYER	WEAPON_PlayerHasFirstPersonHUD__FP6PLAYER	function	16	30	30	30	LEVEL1.REL:0x032BC8	src/levels/shared/WEAPON_PlayerHasFirstPersonHUD__FP6PLAYER.c
 shared	WEAPON_GetWeaponName__FP6PLAYERPcUiUibUi	WEAPON_GetWeaponName__FP6PLAYERPcUiUibUi	function	412	30	0	30	LEVEL1.REL:0x032BD8	
 shared	WEAPON_GetWeaponAmmoName__FP6PLAYERPcUiUibUi	WEAPON_GetWeaponAmmoName__FP6PLAYERPcUiUibUi	function	244	30	0	30	LEVEL1.REL:0x032D78	
 shared	WEAPON_GetWeaponAmmoNameWithAmount__FP6PLAYERPcUiUiUiUi	WEAPON_GetWeaponAmmoNameWithAmount__FP6PLAYERPcUiUiUiUi	function	136	30	0	30	LEVEL1.REL:0x032E70	
@@ -9578,7 +9578,7 @@ shared	TangleVineBlossom_Term__FP4Moby	TangleVineBlossom_Term__FP4Moby	function	
 shared	TangleVineBlossom_Update__FP4Mobyf	TangleVineBlossom_Update__FP4Mobyf	function	424	13	0	13	LEVEL1.REL:0x105F88	
 shared	TangleVineBlossom_Fire__FP4MobyPC4VEC3_L01	TangleVineBlossom_Fire__FP4MobyPC4VEC3	function	632	13	0	13	LEVEL1.REL:0x106130	
 shared	TangleVineBlossom_Spawn__Fv_L01	TangleVineBlossom_Spawn__Fv	function	64	13	0	13	LEVEL1.REL:0x1063A8	
-shared	TangleVineBlossom_IsCollidable__FP4Moby_L01	TangleVineBlossom_IsCollidable__FP4Moby	function	16	13	0	13	LEVEL1.REL:0x1063E8	
+shared	TangleVineBlossom_IsCollidable__FP4Moby_L01	TangleVineBlossom_IsCollidable__FP4Moby	function	16	13	13	13	LEVEL1.REL:0x1063E8	src/levels/shared/TangleVineBlossom_IsCollidable__FP4Moby_L01.c
 shared	TangleVineBlossom_UpdateFly__FP4Moby	TangleVineBlossom_UpdateFly__FP4Moby	function	1516	13	0	13	LEVEL1.REL:0x1063F8	
 shared	TangleVineBlossom_Capture__FP4Moby	TangleVineBlossom_Capture__FP4Moby	function	444	13	0	13	LEVEL1.REL:0x1069E8	
 shared	TangleVineBlossom_Grow__FP4MobyT0	TangleVineBlossom_Grow__FP4MobyT0	function	1448	13	0	13	LEVEL1.REL:0x106BA8	
@@ -9772,7 +9772,7 @@ shared	Spotlight_Init__Fv	Spotlight_Init__Fv	function	60	7	0	7	LEVEL1.REL:0x1161
 shared	Spotlight_Create__FPC8MATRIX43PC15SpotlightParams	Spotlight_Create__FPC8MATRIX43PC15SpotlightParams	function	200	7	0	7	LEVEL1.REL:0x116188	
 shared	Spotlight_UpdateMatrix__FP9SpotlightPC8MATRIX43	Spotlight_UpdateMatrix__FP9SpotlightPC8MATRIX43	function	124	7	0	7	LEVEL1.REL:0x116250	
 shared	Spotlight_UpdatePos__FP9SpotlightPC4VEC3	Spotlight_UpdatePos__FP9SpotlightPC4VEC3	function	56	7	0	7	LEVEL1.REL:0x1162D0	
-shared	Spotlight_Destroy__FP9Spotlight	Spotlight_Destroy__FP9Spotlight	function	16	7	0	7	LEVEL1.REL:0x116308	
+shared	Spotlight_Destroy__FP9Spotlight	Spotlight_Destroy__FP9Spotlight	function	16	7	7	7	LEVEL1.REL:0x116308	src/levels/shared/Spotlight_Destroy__FP9Spotlight.c
 shared	Spotlight_RayCheck__FPC4VEC3T0fP4Moby	Spotlight_RayCheck__FPC4VEC3T0fP4Moby	function	152	7	7	7	LEVEL1.REL:0x116318	src/levels/shared/Spotlight_RayCheck__FPC4VEC3T0fP4Moby.c
 shared	Spotlight_RayCheckNoEnvironment__FPC4VEC3T0fP4Moby	Spotlight_RayCheckNoEnvironment__FPC4VEC3T0fP4Moby	function	152	7	0	7	LEVEL1.REL:0x1163B0	
 shared	Spotlight_Detect__FPC4VEC3T0fP4MobyT0T0b	Spotlight_Detect__FPC4VEC3T0fP4MobyT0T0b	function	804	7	0	7	LEVEL1.REL:0x116448	
@@ -12064,9 +12064,9 @@ shared	FIRSTPERSON_CheckEnterState__FP6PLAYERPUi	FIRSTPERSON_CheckEnterState__FP
 shared	FIRSTPERSON_CheckExitState__FP6PLAYER	FIRSTPERSON_CheckExitState__FP6PLAYER	function	56	30	0	30	LEVEL1.REL:0x183358	
 shared	FIRSTPERSON_ExitState__FP6PLAYERb	FIRSTPERSON_ExitState__FP6PLAYERb	function	260	30	0	30	LEVEL1.REL:0x183390	
 shared	FIRSTPERSON_IsActive__FP6PLAYER	FIRSTPERSON_IsActive__FP6PLAYER	function	36	30	0	30	LEVEL1.REL:0x183498	
-shared	FIRSTPERSON_IsMovingToPlayer__FP6PLAYER	FIRSTPERSON_IsMovingToPlayer__FP6PLAYER	function	16	30	0	30	LEVEL1.REL:0x1834C0	
-shared	FIRSTPERSON_GetHit__FP6PLAYER	FIRSTPERSON_GetHit__FP6PLAYER	function	16	30	0	30	LEVEL1.REL:0x1834D0	
-shared	FIRSTPERSON_SetTargetAcquired__FP6PLAYER	FIRSTPERSON_SetTargetAcquired__FP6PLAYER	function	16	30	0	30	LEVEL1.REL:0x1834E0	
+shared	FIRSTPERSON_IsMovingToPlayer__FP6PLAYER	FIRSTPERSON_IsMovingToPlayer__FP6PLAYER	function	16	30	30	30	LEVEL1.REL:0x1834C0	src/levels/shared/FIRSTPERSON_IsMovingToPlayer__FP6PLAYER.c
+shared	FIRSTPERSON_GetHit__FP6PLAYER	FIRSTPERSON_GetHit__FP6PLAYER	function	16	30	30	30	LEVEL1.REL:0x1834D0	src/levels/shared/FIRSTPERSON_GetHit__FP6PLAYER.c
+shared	FIRSTPERSON_SetTargetAcquired__FP6PLAYER	FIRSTPERSON_SetTargetAcquired__FP6PLAYER	function	16	30	30	30	LEVEL1.REL:0x1834E0	src/levels/shared/FIRSTPERSON_SetTargetAcquired__FP6PLAYER.c
 shared	FIRSTPERSON_SetMagnetTarget__FP6PLAYERPC4VEC3	FIRSTPERSON_SetMagnetTarget__FP6PLAYERPC4VEC3	function	44	30	0	30	LEVEL1.REL:0x1834F0	
 shared	FIRSTPERSON_RenderReticle__FP6PLAYER	FIRSTPERSON_RenderReticle__FP6PLAYER	function	380	30	0	30	LEVEL1.REL:0x183520	
 shared	FIRSTPERSON_RenderDamageOverlay__FP6PLAYER_L01	FIRSTPERSON_RenderDamageOverlay__FP6PLAYER	function	184	16	0	16	LEVEL1.REL:0x1836A0	
@@ -12075,7 +12075,7 @@ shared	FIRSTPERSON_SetShogun__FP6PLAYERb	FIRSTPERSON_SetShogun__FP6PLAYERb	funct
 shared	FIRSTPERSON_SetFov__FP6PLAYERf	FIRSTPERSON_SetFov__FP6PLAYERf	function	8	30	30	30	LEVEL1.REL:0x1837D8	src/levels/shared/FIRSTPERSON_SetFov__FP6PLAYERf.c
 shared	FIRSTPERSON_SetControlSpeedScaleCallback__FP6PLAYERPFP6PLAYER_f	FIRSTPERSON_SetControlSpeedScaleCallback__FP6PLAYERPFP6PLAYER_f	function	8	30	30	30	LEVEL1.REL:0x1837E0	src/levels/shared/FIRSTPERSON_SetControlSpeedScaleCallback__FP6PLAYERPFP6PLAYER_f.c
 shared	FIRSTPERSON_GetMaxControlVel__Fv	FIRSTPERSON_GetMaxControlVel__Fv	function	20	30	30	30	LEVEL1.REL:0x1837E8	src/levels/shared/FIRSTPERSON_GetMaxControlVel__Fv.c
-shared	FIRSTPERSON_CanFireGun__FP6PLAYER	FIRSTPERSON_CanFireGun__FP6PLAYER	function	16	30	0	30	LEVEL1.REL:0x183800	
+shared	FIRSTPERSON_CanFireGun__FP6PLAYER	FIRSTPERSON_CanFireGun__FP6PLAYER	function	16	30	30	30	LEVEL1.REL:0x183800	src/levels/shared/FIRSTPERSON_CanFireGun__FP6PLAYER.c
 shared	FIRSTPERSON_GetAimMatrix__FP6PLAYER	FIRSTPERSON_GetAimMatrix__FP6PLAYER	function	8	30	30	30	LEVEL1.REL:0x183810	src/levels/shared/FIRSTPERSON_GetAimMatrix__FP6PLAYER.c
 shared	FIRSTPERSON_GetPlayerCollisionBounds__FP6PLAYERPfT1	FIRSTPERSON_GetPlayerCollisionBounds__FP6PLAYERPfT1	function	20	30	0	30	LEVEL1.REL:0x183818	
 shared	FIRSTPERSON_GetLowerBound__FP6PLAYER	FIRSTPERSON_GetLowerBound__FP6PLAYER	function	20	30	0	30	LEVEL1.REL:0x183830	
@@ -12442,7 +12442,7 @@ shared	OnHit__10BasicMelee	OnHit__10BasicMelee	function	8	18	18	18	LEVEL1.REL:0x
 shared	OnDamage__10BasicMelee	OnDamage__10BasicMelee	function	8	18	18	18	LEVEL1.REL:0x237A88	src/levels/shared/OnDamage__10BasicMelee.c
 shared	SetTargetId__10BasicMeleei	SetTargetId__10BasicMeleei	function	16	18	18	18	LEVEL1.REL:0x237A90	src/levels/shared/SetTargetId__10BasicMeleei.c
 shared	Init__16ConditionalMeleePC22ConditionalMeleeConfigP5State	Init__16ConditionalMeleePC22ConditionalMeleeConfigP5State	function	12	18	18	18	LEVEL1.REL:0x237AA0	src/levels/shared/Init__16ConditionalMeleePC22ConditionalMeleeConfigP5State.c
-shared	Init__8BackAwayPC14BackAwayConfigP8Navigate	Init__8BackAwayPC14BackAwayConfigP8Navigate	function	12	18	0	18	LEVEL1.REL:0x237AB0	
+shared	Init__8BackAwayPC14BackAwayConfigP8Navigate	Init__8BackAwayPC14BackAwayConfigP8Navigate	function	12	18	18	18	LEVEL1.REL:0x237AB0	src/levels/shared/Init__8BackAwayPC14BackAwayConfigP8Navigate.c
 shared	CanActivate__14BasicNavWander	CanActivate__14BasicNavWander	function	8	18	18	18	LEVEL1.REL:0x237AC0	src/levels/shared/CanActivate__14BasicNavWander.c
 shared	GetDesiredState__14BasicNavWander	GetDesiredState__14BasicNavWander	function	8	18	18	18	LEVEL1.REL:0x237AC8	src/levels/shared/GetDesiredState__14BasicNavWander.c
 shared	GetTransientDataSize__14BasicNavWander	GetTransientDataSize__14BasicNavWander	function	8	18	18	18	LEVEL1.REL:0x237AD0	src/levels/shared/GetTransientDataSize__14BasicNavWander.c
@@ -12484,7 +12484,7 @@ shared	GetTransientDataSize__12TurnAndMelee	GetTransientDataSize__12TurnAndMelee
 shared	OnHit__12TurnAndMelee	OnHit__12TurnAndMelee	function	8	18	18	18	LEVEL1.REL:0x237CE8	src/levels/shared/OnHit__12TurnAndMelee.c
 shared	OnDamage__12TurnAndMelee	OnDamage__12TurnAndMelee	function	8	18	18	18	LEVEL1.REL:0x237CF0	src/levels/shared/OnDamage__12TurnAndMelee.c
 shared	Init__12TurnAndMeleePC18TurnAndMeleeConfigPUi	Init__12TurnAndMeleePC18TurnAndMeleeConfigPUi	function	12	18	18	18	LEVEL1.REL:0x237CF8	src/levels/shared/Init__12TurnAndMeleePC18TurnAndMeleeConfigPUi.c
-shared	Init__5StuckPC11StuckConfigP8Navigate	Init__5StuckPC11StuckConfigP8Navigate	function	12	18	0	18	LEVEL1.REL:0x237D08	
+shared	Init__5StuckPC11StuckConfigP8Navigate	Init__5StuckPC11StuckConfigP8Navigate	function	12	18	18	18	LEVEL1.REL:0x237D08	src/levels/shared/Init__5StuckPC11StuckConfigP8Navigate.c
 shared	Init__14ControllerWaitPC20ControllerWaitConfigP4MobyPUc	Init__14ControllerWaitPC20ControllerWaitConfigP4MobyPUc	function	16	18	0	18	LEVEL1.REL:0x237D18	
 shared	GetTransientDataSize__10Hypnotized	GetTransientDataSize__10Hypnotized	function	8	18	18	18	LEVEL1.REL:0x237D28	src/levels/shared/GetTransientDataSize__10Hypnotized.c
 shared	CanActivate__10Hypnotized	CanActivate__10Hypnotized	function	8	18	18	18	LEVEL1.REL:0x237D30	src/levels/shared/CanActivate__10Hypnotized.c
@@ -13821,7 +13821,7 @@ shared	ResetTimer__13Tyranoid_Jeer	ResetTimer__13Tyranoid_Jeer	function	108	5	0	
 shared	Timestep__15Tyranoid_Flinchf	Timestep__15Tyranoid_Flinchf	function	64	5	0	5	LEVEL3.REL:0x0DBC68	
 shared	Begin__15Tyranoid_Flinch	Begin__15Tyranoid_Flinch	function	32	5	0	5	LEVEL3.REL:0x0DBCA8	
 shared	CanActivate__15Tyranoid_Flinch	CanActivate__15Tyranoid_Flinch	function	68	5	0	5	LEVEL3.REL:0x0DBCC8	
-shared	AttemptFlinch__15Tyranoid_Flinch	AttemptFlinch__15Tyranoid_Flinch	function	16	5	0	5	LEVEL3.REL:0x0DBD10	
+shared	AttemptFlinch__15Tyranoid_Flinch	AttemptFlinch__15Tyranoid_Flinch	function	16	5	5	5	LEVEL3.REL:0x0DBD10	src/levels/shared/AttemptFlinch__15Tyranoid_Flinch.c
 shared	CanActivate__19Tyranoid_RollAttack	CanActivate__19Tyranoid_RollAttack	function	312	5	0	5	LEVEL3.REL:0x0DBD20	
 shared	Begin__19Tyranoid_RollAttack	Begin__19Tyranoid_RollAttack	function	68	5	0	5	LEVEL3.REL:0x0DBE58	
 shared	End__19Tyranoid_RollAttack	End__19Tyranoid_RollAttack	function	48	5	0	5	LEVEL3.REL:0x0DBEA0	
@@ -15988,7 +15988,7 @@ shared	OmniKeyTile_ResetTile__FP11OmniKeyTilebN31	OmniKeyTile_ResetTile__FP11Omn
 shared	OmniKeyProng_GetProngEndPoint__Fv	OmniKeyProng_GetProngEndPoint__Fv	function	8	7	7	7	LEVEL4.REL:0x10B0C0	src/levels/shared/OmniKeyProng_GetProngEndPoint__Fv.c
 shared	OmniKeyProng_GetPosX__FP4Mobyf	OmniKeyProng_GetPosX__FP4Mobyf	function	56	7	0	7	LEVEL4.REL:0x10B0C8	
 shared	OmniKeyController_GetTotalNumTiles__FP4Moby	OmniKeyController_GetTotalNumTiles__FP4Moby	function	64	7	0	7	LEVEL4.REL:0x10B100	
-shared	OmniKeyController_IsGameOver__FP4Moby	OmniKeyController_IsGameOver__FP4Moby	function	16	7	0	7	LEVEL4.REL:0x10B140	
+shared	OmniKeyController_IsGameOver__FP4Moby	OmniKeyController_IsGameOver__FP4Moby	function	16	7	7	7	LEVEL4.REL:0x10B140	src/levels/shared/OmniKeyController_IsGameOver__FP4Moby.c
 shared	OmniKeyController_DrawTile__FP4MobyP11OmniKeyTile	OmniKeyController_DrawTile__FP4MobyP11OmniKeyTile	function	276	7	0	7	LEVEL4.REL:0x10B150	
 shared	OmniKeyController_DrawTile__FP4MobyiiiiUiUiUib	OmniKeyController_DrawTile__FP4MobyiiiiUiUiUib	function	344	7	0	7	LEVEL4.REL:0x10B268	
 shared	OmniKeyController_DrawBackground__FP4MobyUi	OmniKeyController_DrawBackground__FP4MobyUi	function	64	7	0	7	LEVEL4.REL:0x10B3C0	
@@ -16605,7 +16605,7 @@ shared	GCP_StartCodeControlled__FP6PLAYER_L05	GCP_StartCodeControlled__FP6PLAYER
 shared	GCP_EndCodeControlled__FP6PLAYER_L05	GCP_EndCodeControlled__FP6PLAYER	function	28	2	2	2	LEVEL5.REL:0x0C9710	src/levels/shared/GCP_EndCodeControlled__FP6PLAYER_L05.c
 shared	GCP_HideWeapon__FP6PLAYER_L05	GCP_HideWeapon__FP6PLAYER	function	32	2	0	2	LEVEL5.REL:0x0C9730	
 shared	GCP_Dash__FP6PLAYERfPC4VEC2_L05	GCP_Dash__FP6PLAYERfPC4VEC2	function	68	2	0	2	LEVEL5.REL:0x0C9750	
-shared	GCP_IsDashing__FP6PLAYER_L05	GCP_IsDashing__FP6PLAYER	function	16	2	0	2	LEVEL5.REL:0x0C9798	
+shared	GCP_IsDashing__FP6PLAYER_L05	GCP_IsDashing__FP6PLAYER	function	16	2	2	2	LEVEL5.REL:0x0C9798	src/levels/shared/GCP_IsDashing__FP6PLAYER_L05.c
 shared	GCP_ChargeMegaBlaster__FP6PLAYER_L05	GCP_ChargeMegaBlaster__FP6PLAYER	function	92	2	0	2	LEVEL5.REL:0x0C97A8	
 shared	GCP_GetMegaBlasterCharge__FP6PLAYER_L05	GCP_GetMegaBlasterCharge__FP6PLAYER	function	8	2	2	2	LEVEL5.REL:0x0C9808	src/levels/shared/GCP_GetMegaBlasterCharge__FP6PLAYER_L05.c
 shared	GCP_SetMatrix__FP6PLAYERPC7MATRIX4_L05	GCP_SetMatrix__FP6PLAYERPC7MATRIX4	function	96	2	0	2	LEVEL5.REL:0x0C9810	
@@ -18343,7 +18343,7 @@ shared	__final_insertion_sort__H2ZPP21BackgroundPersonActorZPFP21BackgroundPerso
 10_carnival	GetStealthTakedownState__C26ExpatGuardState_LeftBehind	GetStealthTakedownState__C26ExpatGuardState_LeftBehind	function	8	1	1	1	LEVEL10.REL:0x23A660	src/levels/10_carnival/GetStealthTakedownState__C26ExpatGuardState_LeftBehind.c
 10_carnival	GetTransientDataSize__26ExpatGuardState_Suspicious	GetTransientDataSize__26ExpatGuardState_Suspicious	function	8	1	1	1	LEVEL10.REL:0x23A668	src/levels/10_carnival/GetTransientDataSize__26ExpatGuardState_Suspicious.c
 10_carnival	GetStealthTakedownState__C26ExpatGuardState_Suspicious	GetStealthTakedownState__C26ExpatGuardState_Suspicious	function	8	1	1	1	LEVEL10.REL:0x23A670	src/levels/10_carnival/GetStealthTakedownState__C26ExpatGuardState_Suspicious.c
-10_carnival	IsShooting__24ExpatGuardState_Engaging	IsShooting__24ExpatGuardState_Engaging	function	16	1	0	1	LEVEL10.REL:0x23A678	
+10_carnival	IsShooting__24ExpatGuardState_Engaging	IsShooting__24ExpatGuardState_Engaging	function	16	1	1	1	LEVEL10.REL:0x23A678	src/levels/10_carnival/IsShooting__24ExpatGuardState_Engaging.c
 10_carnival	GetTransientDataSize__24ExpatGuardState_Engaging	GetTransientDataSize__24ExpatGuardState_Engaging	function	8	1	1	1	LEVEL10.REL:0x23A688	src/levels/10_carnival/GetTransientDataSize__24ExpatGuardState_Engaging.c
 10_carnival	GetDesiredState__21ExpatGuardState_Death	GetDesiredState__21ExpatGuardState_Death	function	8	1	1	1	LEVEL10.REL:0x23A690	src/levels/10_carnival/GetDesiredState__21ExpatGuardState_Death.c
 10_carnival	CanActivate__21ExpatGuardState_Death	CanActivate__21ExpatGuardState_Death	function	8	1	1	1	LEVEL10.REL:0x23A698	src/levels/10_carnival/CanActivate__21ExpatGuardState_Death.c
@@ -20110,7 +20110,7 @@ shared	isnan	isnan	function	56	2	0	2	LEVEL14.REL:0x2544C0
 16_lab	GetDesiredState__13Amoeboid_Path	GetDesiredState__13Amoeboid_Path	function	56	1	0	1	LEVEL16.REL:0x0BD268	
 16_lab	Begin__13Amoeboid_Path	Begin__13Amoeboid_Path	function	88	1	0	1	LEVEL16.REL:0x0BD2A0	
 16_lab	Update__13Amoeboid_Pathf	Update__13Amoeboid_Pathf	function	160	1	0	1	LEVEL16.REL:0x0BD2F8	
-16_lab	Init__13Amoeboid_PathP5CurvePC16PathFollowParams	Init__13Amoeboid_PathP5CurvePC16PathFollowParams	function	12	1	0	1	LEVEL16.REL:0x0BD398	
+16_lab	Init__13Amoeboid_PathP5CurvePC16PathFollowParams	Init__13Amoeboid_PathP5CurvePC16PathFollowParams	function	12	1	1	1	LEVEL16.REL:0x0BD398	src/levels/16_lab/Init__13Amoeboid_PathP5CurvePC16PathFollowParams.c
 16_lab	DestroyMoby__26Amoeboid_KnucklesKnockback	DestroyMoby__26Amoeboid_KnucklesKnockback	function	756	1	0	1	LEVEL16.REL:0x0BD3A8	
 16_lab	Amoeboid_FireExplode__FP4Moby	Amoeboid_FireExplode__FP4Moby	function	148	1	0	1	LEVEL16.REL:0x0BD6A0	
 16_lab	Amoeboid_NapalmBubble_PartUpdateOnly__FP9PAR_Group	Amoeboid_NapalmBubble_PartUpdateOnly__FP9PAR_Group	function	1368	1	0	1	LEVEL16.REL:0x0BD738	
@@ -20170,7 +20170,7 @@ shared	isnan	isnan	function	56	2	0	2	LEVEL14.REL:0x2544C0
 16_lab	GetDesiredState__18AmoeboidSmall_Path	GetDesiredState__18AmoeboidSmall_Path	function	56	1	0	1	LEVEL16.REL:0x0C1960	
 16_lab	Begin__18AmoeboidSmall_Path	Begin__18AmoeboidSmall_Path	function	88	1	0	1	LEVEL16.REL:0x0C1998	
 16_lab	Update__18AmoeboidSmall_Pathf	Update__18AmoeboidSmall_Pathf	function	160	1	0	1	LEVEL16.REL:0x0C19F0	
-16_lab	Init__18AmoeboidSmall_PathP5CurvePC16PathFollowParams	Init__18AmoeboidSmall_PathP5CurvePC16PathFollowParams	function	12	1	0	1	LEVEL16.REL:0x0C1A90	
+16_lab	Init__18AmoeboidSmall_PathP5CurvePC16PathFollowParams	Init__18AmoeboidSmall_PathP5CurvePC16PathFollowParams	function	12	1	1	1	LEVEL16.REL:0x0C1A90	src/levels/16_lab/Init__18AmoeboidSmall_PathP5CurvePC16PathFollowParams.c
 16_lab	AmoeboidSmall_FireExplode__FP4Moby	AmoeboidSmall_FireExplode__FP4Moby	function	148	1	0	1	LEVEL16.REL:0x0C1AA0	
 16_lab	AmoeboidSmall_NapalmBubble_PartUpdateOnly__FP9PAR_Group	AmoeboidSmall_NapalmBubble_PartUpdateOnly__FP9PAR_Group	function	1368	1	0	1	LEVEL16.REL:0x0C1B38	
 16_lab	AmoeboidTubes_Explode__FP4Moby	AmoeboidTubes_Explode__FP4Moby	function	1164	1	0	1	LEVEL16.REL:0x0C2090	
@@ -21349,7 +21349,7 @@ shared	Timestep__22Doppleganger_FallApartf	Timestep__22Doppleganger_FallApartf	f
 shared	CanActivate__22Doppleganger_FallApart	CanActivate__22Doppleganger_FallApart	function	60	2	0	2	LEVEL19.REL:0x0D7460	
 shared	ResetTimer__22Doppleganger_FallApart	ResetTimer__22Doppleganger_FallApart	function	108	2	0	2	LEVEL19.REL:0x0D74A0	
 shared	Init__19Doppleganger_Attack	Init__19Doppleganger_Attack	function	8	2	2	2	LEVEL19.REL:0x0D7510	src/levels/shared/Init__19Doppleganger_Attack.c
-shared	IHaveAttacked__19Doppleganger_Attack	IHaveAttacked__19Doppleganger_Attack	function	16	2	0	2	LEVEL19.REL:0x0D7518	
+shared	IHaveAttacked__19Doppleganger_Attack	IHaveAttacked__19Doppleganger_Attack	function	16	2	2	2	LEVEL19.REL:0x0D7518	src/levels/shared/IHaveAttacked__19Doppleganger_Attack.c
 shared	CanAttack__19Doppleganger_Attack	CanAttack__19Doppleganger_Attack	function	40	2	0	2	LEVEL19.REL:0x0D7528	
 shared	Timestep__19Doppleganger_Attackf	Timestep__19Doppleganger_Attackf	function	40	2	0	2	LEVEL19.REL:0x0D7550	
 shared	CanActivate__19Doppleganger_Attack	CanActivate__19Doppleganger_Attack	function	48	2	0	2	LEVEL19.REL:0x0D7578	
@@ -21610,7 +21610,7 @@ shared	Damage__17StaticMidge_StompPC4VEC3fP4Moby	Damage__17StaticMidge_StompPC4V
 shared	Timestep__21StaticMidge_Celebratef	Timestep__21StaticMidge_Celebratef	function	40	2	0	2	LEVEL19.REL:0x110D50	
 shared	Begin__21StaticMidge_Celebrate	Begin__21StaticMidge_Celebrate	function	32	2	0	2	LEVEL19.REL:0x110D78	
 shared	CanActivate__21StaticMidge_Celebrate	CanActivate__21StaticMidge_Celebrate	function	68	2	0	2	LEVEL19.REL:0x110D98	
-shared	AttemptCelebrate__21StaticMidge_Celebrate	AttemptCelebrate__21StaticMidge_Celebrate	function	16	2	0	2	LEVEL19.REL:0x110DE0	
+shared	AttemptCelebrate__21StaticMidge_Celebrate	AttemptCelebrate__21StaticMidge_Celebrate	function	16	2	2	2	LEVEL19.REL:0x110DE0	src/levels/shared/AttemptCelebrate__21StaticMidge_Celebrate.c
 shared	CanActivate__18StaticMidge_Patrol	CanActivate__18StaticMidge_Patrol	function	8	2	2	2	LEVEL19.REL:0x110DF0	src/levels/shared/CanActivate__18StaticMidge_Patrol.c
 shared	Update__18StaticMidge_Patrolf	Update__18StaticMidge_Patrolf	function	120	2	0	2	LEVEL19.REL:0x110DF8	
 shared	Timestep__18StaticMidge_Staticf	Timestep__18StaticMidge_Staticf	function	40	2	0	2	LEVEL19.REL:0x110E70	
@@ -21626,7 +21626,7 @@ shared	DrawBoltToTarget__18StaticMidge_StaticP4Moby	DrawBoltToTarget__18StaticMi
 shared	ShockMoby__18StaticMidge_StaticP4VEC3P4Moby	ShockMoby__18StaticMidge_StaticP4VEC3P4Moby	function	192	2	0	2	LEVEL19.REL:0x111848	
 shared	Begin__19StaticMidge_Whistle	Begin__19StaticMidge_Whistle	function	236	2	0	2	LEVEL19.REL:0x111908	
 shared	CanActivate__19StaticMidge_Whistle	CanActivate__19StaticMidge_Whistle	function	188	2	0	2	LEVEL19.REL:0x1119F8	
-shared	Init__19StaticMidge_WhistlePC25ReallyBasicPlayAnimConfigP17AlertBehaviorData	Init__19StaticMidge_WhistlePC25ReallyBasicPlayAnimConfigP17AlertBehaviorData	function	12	2	0	2	LEVEL19.REL:0x111AB8	
+shared	Init__19StaticMidge_WhistlePC25ReallyBasicPlayAnimConfigP17AlertBehaviorData	Init__19StaticMidge_WhistlePC25ReallyBasicPlayAnimConfigP17AlertBehaviorData	function	12	2	2	2	LEVEL19.REL:0x111AB8	src/levels/shared/Init__19StaticMidge_WhistlePC25ReallyBasicPlayAnimConfigP17AlertBehaviorData.c
 shared	Begin__22StaticMidge_Suspicious	Begin__22StaticMidge_Suspicious	function	44	2	0	2	LEVEL19.REL:0x111AC8	
 shared	Begin__21StaticMidge_Defensive	Begin__21StaticMidge_Defensive	function	44	2	0	2	LEVEL19.REL:0x111AF8	
 shared	Update__21StaticMidge_Defensivef	Update__21StaticMidge_Defensivef	function	84	2	0	2	LEVEL19.REL:0x111B28	
@@ -23014,7 +23014,7 @@ shared	GCSLANCER_IdleStateEnter__FPv	GCSLANCER_IdleStateEnter__FPv	function	260	
 shared	GCSLANCER_IdleStateExit__FPv	GCSLANCER_IdleStateExit__FPv	function	8	2	2	2	LEVEL24.REL:0x0CF480	src/levels/shared/GCSLANCER_IdleStateExit__FPv.c
 shared	GCSLANCER_IdleStateUpdate__FPv	GCSLANCER_IdleStateUpdate__FPv	function	1268	2	0	2	LEVEL24.REL:0x0CF488	
 shared	GCSLANCER_StrafeRefreshConfig__FP27GCSLANCER_StrafeStateConfig	GCSLANCER_StrafeRefreshConfig__FP27GCSLANCER_StrafeStateConfig	function	252	2	0	2	LEVEL24.REL:0x0CF980	
-shared	GCSLANCER_StrafeStateCreate__FPv	GCSLANCER_StrafeStateCreate__FPv	function	16	2	0	2	LEVEL24.REL:0x0CFA80	
+shared	GCSLANCER_StrafeStateCreate__FPv	GCSLANCER_StrafeStateCreate__FPv	function	16	2	2	2	LEVEL24.REL:0x0CFA80	src/levels/shared/GCSLANCER_StrafeStateCreate__FPv.c
 shared	GCSLANCER_StrafeStateEnter__FPv	GCSLANCER_StrafeStateEnter__FPv	function	496	2	0	2	LEVEL24.REL:0x0CFA90	
 shared	GCSLANCER_StrafeStateExit__FPv	GCSLANCER_StrafeStateExit__FPv	function	260	2	0	2	LEVEL24.REL:0x0CFC80	
 shared	GCSLANCER_StrafeStateUpdate__FPv	GCSLANCER_StrafeStateUpdate__FPv	function	748	2	0	2	LEVEL24.REL:0x0CFD88	
@@ -24669,7 +24669,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 29_base	AllocateMtx__14DrawObjManagerRC8MATRIX43_L29	AllocateMtx__14DrawObjManagerRC8MATRIX43	function	908	1	0	1	LEVEL29.REL:0x247DA8	
 29_base	ForceAllocateMtx__14DrawObjManagerPP4AMtx_L29	ForceAllocateMtx__14DrawObjManagerPP4AMtx	function	132	1	0	1	LEVEL29.REL:0x248138	
 29_base	CanActivate__10Expat_Idle	CanActivate__10Expat_Idle	function	8	1	1	1	LEVEL29.REL:0x24B550	src/levels/29_base/CanActivate__10Expat_Idle.c
-29_base	IsShooting__19ExpatState_Engaging	IsShooting__19ExpatState_Engaging	function	16	1	0	1	LEVEL29.REL:0x24B558	
+29_base	IsShooting__19ExpatState_Engaging	IsShooting__19ExpatState_Engaging	function	16	1	1	1	LEVEL29.REL:0x24B558	src/levels/29_base/IsShooting__19ExpatState_Engaging.c
 29_base	GetTransientDataSize__19ExpatState_Engaging	GetTransientDataSize__19ExpatState_Engaging	function	8	1	1	1	LEVEL29.REL:0x24B568	src/levels/29_base/GetTransientDataSize__19ExpatState_Engaging.c
 29_base	Timestep__11Expat_Snipef	Timestep__11Expat_Snipef	function	24	1	0	1	LEVEL29.REL:0x24B570	
 29_base	GetTransientDataSize__11Expat_Snipe	GetTransientDataSize__11Expat_Snipe	function	8	1	1	1	LEVEL29.REL:0x24B588	src/levels/29_base/GetTransientDataSize__11Expat_Snipe.c
@@ -25035,7 +25035,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	GetDesiredState__18NefJumpFromChamber	GetDesiredState__18NefJumpFromChamber	function	44	1	0	1	LEVEL30.REL:0x0F19E8	
 30_boss	End__18NefJumpFromChamber	End__18NefJumpFromChamber	function	120	1	0	1	LEVEL30.REL:0x0F1A18	
 30_boss	Nefarious_GetEffectMan__FP4Moby	Nefarious_GetEffectMan__FP4Moby	function	12	1	1	1	LEVEL30.REL:0x0F1A90	src/levels/30_boss/Nefarious_GetEffectMan__FP4Moby.c
-30_boss	NefariousBomb_HasLanded__FP4Moby_L30	NefariousBomb_HasLanded__FP4Moby	function	16	1	0	1	LEVEL30.REL:0x0F1AA0	
+30_boss	NefariousBomb_HasLanded__FP4Moby_L30	NefariousBomb_HasLanded__FP4Moby	function	16	1	1	1	LEVEL30.REL:0x0F1AA0	src/levels/30_boss/NefariousBomb_HasLanded__FP4Moby_L30.c
 30_boss	NefariousBomb_IsDetonating__FP4Moby_L30	NefariousBomb_IsDetonating__FP4Moby	function	16	1	1	1	LEVEL30.REL:0x0F1AB0	src/levels/30_boss/NefariousBomb_IsDetonating__FP4Moby_L30.c
 30_boss	NefariousBomb_GetEndPos__FP4Moby_L30	NefariousBomb_GetEndPos__FP4Moby	function	12	1	1	1	LEVEL30.REL:0x0F1AC0	src/levels/30_boss/NefariousBomb_GetEndPos__FP4Moby_L30.c
 30_boss	NefariousBomb_Fire__FP4MobyP4VEC3T1_L30	NefariousBomb_Fire__FP4MobyP4VEC3T1	function	336	1	0	1	LEVEL30.REL:0x0F1AD0	
