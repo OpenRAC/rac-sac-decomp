@@ -5438,7 +5438,7 @@ shared	__14ApeAnimChannel	__14ApeAnimChannel	function	124	31	0	31	FE.REL:0x0E749
 shared	SetKey__14ApeAnimChannelPf	SetKey__14ApeAnimChannelPf	function	72	31	0	31	FE.REL:0x0E7518	
 shared	AddSibling__14ApeAnimChannelP14ApeAnimChannel	AddSibling__14ApeAnimChannelP14ApeAnimChannel	function	36	31	31	31	FE.REL:0x0E7560	src/levels/shared/AddSibling__14ApeAnimChannelP14ApeAnimChannel.c
 shared	GetNumSiblings__14ApeAnimChannel	GetNumSiblings__14ApeAnimChannel	function	8	31	31	31	FE.REL:0x0E7588	src/levels/shared/GetNumSiblings__14ApeAnimChannel.c
-shared	GetSibling__14ApeAnimChannelUi	GetSibling__14ApeAnimChannelUi	function	20	31	0	31	FE.REL:0x0E7590	
+shared	GetSibling__14ApeAnimChannelUi	GetSibling__14ApeAnimChannelUi	function	20	31	31	31	FE.REL:0x0E7590	src/levels/shared/GetSibling__14ApeAnimChannelUi.c
 shared	FindSemantic__14ApeAnimChannelUi	FindSemantic__14ApeAnimChannelUi	function	84	31	0	31	FE.REL:0x0E75A8	
 shared	SetMatrix__14ApeAnimChannelP4AMtx	SetMatrix__14ApeAnimChannelP4AMtx	function	8	31	31	31	FE.REL:0x0E7600	src/levels/shared/SetMatrix__14ApeAnimChannelP4AMtx.c
 shared	SetWorldMatrix__14ApeAnimChannelP4AMtx	SetWorldMatrix__14ApeAnimChannelP4AMtx	function	8	31	31	31	FE.REL:0x0E7608	src/levels/shared/SetWorldMatrix__14ApeAnimChannelP4AMtx.c
@@ -5471,7 +5471,7 @@ shared	InitializeReplacementNode__15ApeAnimTreeNode	InitializeReplacementNode__1
 shared	IsDeleteable__15ApeAnimTreeNode	IsDeleteable__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E7908	src/levels/shared/IsDeleteable__15ApeAnimTreeNode.c
 shared	RemoveDeletableChildren__15ApeAnimTreeNode	RemoveDeletableChildren__15ApeAnimTreeNode	function	348	31	0	31	FE.REL:0x0E7910	
 shared	GetNumChildren__15ApeAnimTreeNode	GetNumChildren__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E7A70	src/levels/shared/GetNumChildren__15ApeAnimTreeNode.c
-shared	GetChildNode__15ApeAnimTreeNodeUi	GetChildNode__15ApeAnimTreeNodeUi	function	20	31	0	31	FE.REL:0x0E7A78	
+shared	GetChildNode__15ApeAnimTreeNodeUi	GetChildNode__15ApeAnimTreeNodeUi	function	20	31	31	31	FE.REL:0x0E7A78	src/levels/shared/GetChildNode__15ApeAnimTreeNodeUi.c
 shared	GetParent__15ApeAnimTreeNode	GetParent__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E7A90	src/levels/shared/GetParent__15ApeAnimTreeNode.c
 shared	__19ApeAnimPlayAnimNode	__19ApeAnimPlayAnimNode	function	236	31	0	31	FE.REL:0x0E7A98	
 shared	SetTime__19ApeAnimPlayAnimNodef	SetTime__19ApeAnimPlayAnimNodef	function	8	31	31	31	FE.REL:0x0E7B88	src/levels/shared/SetTime__19ApeAnimPlayAnimNodef.c
@@ -5529,13 +5529,13 @@ shared	DeleteType__21ApeAnimProceduralNodei	DeleteType__21ApeAnimProceduralNodei
 shared	GetLightData__21ApeAnimProceduralNodeUi	GetLightData__21ApeAnimProceduralNodeUi	function	184	31	0	31	FE.REL:0x0E86C8	
 shared	__24ApeAnimMergeOperatorNode	__24ApeAnimMergeOperatorNode	function	188	31	0	31	FE.REL:0x0E8780	
 shared	_$_24ApeAnimMergeOperatorNode	_$_24ApeAnimMergeOperatorNode	function	76	31	0	31	FE.REL:0x0E8840	
-shared	SetAlpha__24ApeAnimMergeOperatorNodeif	SetAlpha__24ApeAnimMergeOperatorNodeif	function	20	31	0	31	FE.REL:0x0E8890	
+shared	SetAlpha__24ApeAnimMergeOperatorNodeif	SetAlpha__24ApeAnimMergeOperatorNodeif	function	20	31	31	31	FE.REL:0x0E8890	src/levels/shared/SetAlpha__24ApeAnimMergeOperatorNodeif.c
 shared	GetAlpha__24ApeAnimMergeOperatorNodei	GetAlpha__24ApeAnimMergeOperatorNodei	function	20	31	0	31	FE.REL:0x0E88A8	
 shared	IsLeaf__24ApeAnimMergeOperatorNode	IsLeaf__24ApeAnimMergeOperatorNode	function	8	31	31	31	FE.REL:0x0E88C0	src/levels/shared/IsLeaf__24ApeAnimMergeOperatorNode.c
 shared	GetNodeName__C24ApeAnimMergeOperatorNode	GetNodeName__C24ApeAnimMergeOperatorNode	function	12	31	31	31	FE.REL:0x0E88C8	src/levels/shared/GetNodeName__C24ApeAnimMergeOperatorNode.c
 shared	__21ApeAnimBlendInOutNode	__21ApeAnimBlendInOutNode	function	232	31	0	31	FE.REL:0x0E88D8	
 shared	_$_21ApeAnimBlendInOutNode	_$_21ApeAnimBlendInOutNode	function	120	31	0	31	FE.REL:0x0E89C0	
-shared	SetAlpha__21ApeAnimBlendInOutNodeif	SetAlpha__21ApeAnimBlendInOutNodeif	function	20	31	0	31	FE.REL:0x0E8A38	
+shared	SetAlpha__21ApeAnimBlendInOutNodeif	SetAlpha__21ApeAnimBlendInOutNodeif	function	20	31	31	31	FE.REL:0x0E8A38	src/levels/shared/SetAlpha__21ApeAnimBlendInOutNodeif.c
 shared	IsLeaf__21ApeAnimBlendInOutNode	IsLeaf__21ApeAnimBlendInOutNode	function	8	31	31	31	FE.REL:0x0E8A50	src/levels/shared/IsLeaf__21ApeAnimBlendInOutNode.c
 shared	IsDeleteable__21ApeAnimBlendInOutNode	IsDeleteable__21ApeAnimBlendInOutNode	function	52	31	0	31	FE.REL:0x0E8A58	
 shared	InitializeReplacementNode__21ApeAnimBlendInOutNode	InitializeReplacementNode__21ApeAnimBlendInOutNode	function	88	31	0	31	FE.REL:0x0E8A90	
@@ -5543,7 +5543,7 @@ shared	GetNodeName__C21ApeAnimBlendInOutNode	GetNodeName__C21ApeAnimBlendInOutNo
 shared	RemoveDeletableChildren__21ApeAnimBlendInOutNode	RemoveDeletableChildren__21ApeAnimBlendInOutNode	function	200	31	0	31	FE.REL:0x0E8AF8	
 shared	__22ApeAnimAddOperatorNode	__22ApeAnimAddOperatorNode	function	184	31	0	31	FE.REL:0x0E8BC0	
 shared	_$_22ApeAnimAddOperatorNode	_$_22ApeAnimAddOperatorNode	function	76	31	0	31	FE.REL:0x0E8C78	
-shared	SetAlpha__22ApeAnimAddOperatorNodeif	SetAlpha__22ApeAnimAddOperatorNodeif	function	20	31	0	31	FE.REL:0x0E8CC8	
+shared	SetAlpha__22ApeAnimAddOperatorNodeif	SetAlpha__22ApeAnimAddOperatorNodeif	function	20	31	31	31	FE.REL:0x0E8CC8	src/levels/shared/SetAlpha__22ApeAnimAddOperatorNodeif.c
 shared	IsLeaf__22ApeAnimAddOperatorNode	IsLeaf__22ApeAnimAddOperatorNode	function	8	31	31	31	FE.REL:0x0E8CE0	src/levels/shared/IsLeaf__22ApeAnimAddOperatorNode.c
 shared	GetNodeName__C22ApeAnimAddOperatorNode	GetNodeName__C22ApeAnimAddOperatorNode	function	12	31	31	31	FE.REL:0x0E8CE8	src/levels/shared/GetNodeName__C22ApeAnimAddOperatorNode.c
 shared	__24ApeAnimAdditiveInOutNode	__24ApeAnimAdditiveInOutNode	function	220	31	0	31	FE.REL:0x0E8CF8	
@@ -5557,7 +5557,7 @@ shared	GetNodeName__C24ApeAnimAdditiveInOutNode	GetNodeName__C24ApeAnimAdditiveI
 shared	__t17ApeLoadBalanceCnt1Z17ApeAnimCompositor	__t17ApeLoadBalanceCnt1Z17ApeAnimCompositor	function	28	31	0	31	FE.REL:0x0E8FB0	
 shared	__27ApeAnimLocalAddOperatorNode	__27ApeAnimLocalAddOperatorNode	function	184	31	0	31	FE.REL:0x0E8FD0	
 shared	_$_27ApeAnimLocalAddOperatorNode	_$_27ApeAnimLocalAddOperatorNode	function	76	31	0	31	FE.REL:0x0E9088	
-shared	SetAlpha__27ApeAnimLocalAddOperatorNodeif	SetAlpha__27ApeAnimLocalAddOperatorNodeif	function	20	31	0	31	FE.REL:0x0E90D8	
+shared	SetAlpha__27ApeAnimLocalAddOperatorNodeif	SetAlpha__27ApeAnimLocalAddOperatorNodeif	function	20	31	31	31	FE.REL:0x0E90D8	src/levels/shared/SetAlpha__27ApeAnimLocalAddOperatorNodeif.c
 shared	IsLeaf__27ApeAnimLocalAddOperatorNode	IsLeaf__27ApeAnimLocalAddOperatorNode	function	8	31	31	31	FE.REL:0x0E90F0	src/levels/shared/IsLeaf__27ApeAnimLocalAddOperatorNode.c
 shared	GetNodeName__C27ApeAnimLocalAddOperatorNode	GetNodeName__C27ApeAnimLocalAddOperatorNode	function	12	31	31	31	FE.REL:0x0E90F8	src/levels/shared/GetNodeName__C27ApeAnimLocalAddOperatorNode.c
 shared	_$_17ApePointMassPoint	_$_17ApePointMassPoint	function	48	31	0	31	FE.REL:0x0E9108	
@@ -20698,7 +20698,7 @@ shared	Vaporize__20BoltThiefBombContentP4Moby	Vaporize__20BoltThiefBombContentP4
 17_race	ClankHoverBoat_Init__FP4Moby	ClankHoverBoat_Init__FP4Moby	function	284	1	0	1	LEVEL17.REL:0x0B9278	
 17_race	ClankHoverBoat_Term__FP4Moby	ClankHoverBoat_Term__FP4Moby	function	192	1	0	1	LEVEL17.REL:0x0B9398	
 17_race	ClankHoverBoat_Update__FP4Mobyf	ClankHoverBoat_Update__FP4Mobyf	function	1112	1	0	1	LEVEL17.REL:0x0B9458	
-17_race	ClankHoverBoat_IsHydrofoiling__FP4Moby_L17	ClankHoverBoat_IsHydrofoiling__FP4Moby	function	16	1	0	1	LEVEL17.REL:0x0B98B0	
+17_race	ClankHoverBoat_IsHydrofoiling__FP4Moby_L17	ClankHoverBoat_IsHydrofoiling__FP4Moby	function	16	1	1	1	LEVEL17.REL:0x0B98B0	src/levels/17_race/ClankHoverBoat_IsHydrofoiling__FP4Moby_L17.c
 17_race	ClankHoverBoat_IsOnGround__FP4Moby_L17	ClankHoverBoat_IsOnGround__FP4Moby	function	12	1	1	1	LEVEL17.REL:0x0B98C0	src/levels/17_race/ClankHoverBoat_IsOnGround__FP4Moby_L17.c
 17_race	ClankHoverBoat_GetHydrofoilOffset__FP4Moby_L17	ClankHoverBoat_GetHydrofoilOffset__FP4Moby	function	12	1	1	1	LEVEL17.REL:0x0B98D0	src/levels/17_race/ClankHoverBoat_GetHydrofoilOffset__FP4Moby_L17.c
 17_race	ClankHoverBoat_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	ClankHoverBoat_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	function	504	1	0	1	LEVEL17.REL:0x0B98E0	
@@ -23775,7 +23775,7 @@ shared	TieSlider_Update__FP4Mobyf	TieSlider_Update__FP4Mobyf	function	632	2	0	2	
 26_damrace	ClankHoverCar_Init__FP4Moby	ClankHoverCar_Init__FP4Moby	function	204	1	0	1	LEVEL26.REL:0x0B88B0	
 26_damrace	ClankHoverCar_Term__FP4Moby	ClankHoverCar_Term__FP4Moby	function	132	1	0	1	LEVEL26.REL:0x0B8980	
 26_damrace	ClankHoverCar_Update__FP4Mobyf	ClankHoverCar_Update__FP4Mobyf	function	572	1	0	1	LEVEL26.REL:0x0B8A08	
-26_damrace	ClankHoverCar_IsOnTwoWheels__FP4Moby_L26	ClankHoverCar_IsOnTwoWheels__FP4Moby	function	16	1	0	1	LEVEL26.REL:0x0B8C48	
+26_damrace	ClankHoverCar_IsOnTwoWheels__FP4Moby_L26	ClankHoverCar_IsOnTwoWheels__FP4Moby	function	16	1	1	1	LEVEL26.REL:0x0B8C48	src/levels/26_damrace/ClankHoverCar_IsOnTwoWheels__FP4Moby_L26.c
 26_damrace	ClankHoverCar_IsRolling__FP4Moby_L26	ClankHoverCar_IsRolling__FP4Moby	function	20	1	0	1	LEVEL26.REL:0x0B8C58	
 26_damrace	ClankHoverCar_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	ClankHoverCar_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	function	944	1	0	1	LEVEL26.REL:0x0B8C70	
 26_damrace	ClankHoverCar_TypeInit__FP8MobyType	ClankHoverCar_TypeInit__FP8MobyType	function	396	1	0	1	LEVEL26.REL:0x0B9020	
