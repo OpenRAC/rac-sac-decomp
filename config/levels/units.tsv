@@ -4674,7 +4674,7 @@ shared	ToElement__C12TiXmlElement	ToElement__C12TiXmlElement	function	8	31	31	31
 shared	ToElement__12TiXmlElement	ToElement__12TiXmlElement	function	8	31	31	31	FE.REL:0x0D9040	src/levels/shared/ToElement__12TiXmlElement.c
 shared	RootElement__C13TiXmlDocument	RootElement__C13TiXmlDocument	function	28	31	0	31	FE.REL:0x0D9048	
 shared	RootElement__13TiXmlDocument	RootElement__13TiXmlDocument	function	28	31	0	31	FE.REL:0x0D9068	
-shared	Error__C13TiXmlDocument	Error__C13TiXmlDocument	function	12	31	0	31	FE.REL:0x0D9088	
+shared	Error__C13TiXmlDocument	Error__C13TiXmlDocument	function	12	31	31	31	FE.REL:0x0D9088	src/levels/shared/Error__C13TiXmlDocument.c
 shared	ErrorDesc__C13TiXmlDocument	ErrorDesc__C13TiXmlDocument	function	28	31	0	31	FE.REL:0x0D9098	
 shared	ErrorId__C13TiXmlDocument	ErrorId__C13TiXmlDocument	function	16	31	0	31	FE.REL:0x0D90B8	
 shared	ErrorRow__C13TiXmlDocument	ErrorRow__C13TiXmlDocument	function	12	31	31	31	FE.REL:0x0D90C8	src/levels/shared/ErrorRow__C13TiXmlDocument.c
@@ -5174,7 +5174,7 @@ shared	func_FE_0E20AC	func_FE_0E20AC	function	20	31	0	31	FE.REL:0x0E20AC
 shared	func_FE_0E20C0	func_FE_0E20C0	function	8	31	0	31	FE.REL:0x0E20C0	
 shared	func_FE_0E20C8	func_FE_0E20C8	function	8	31	0	31	FE.REL:0x0E20C8	
 shared	func_FE_0E20D0	func_FE_0E20D0	function	32	31	0	31	FE.REL:0x0E20D0	
-shared	GetPass2BlendMode__15AglMaterialBase	GetPass2BlendMode__15AglMaterialBase	function	12	31	0	31	FE.REL:0x0E20F0	
+shared	GetPass2BlendMode__15AglMaterialBase	GetPass2BlendMode__15AglMaterialBase	function	12	31	31	31	FE.REL:0x0E20F0	src/levels/shared/GetPass2BlendMode__15AglMaterialBase.c
 shared	GetShaderParam__15AglMaterialBaseUi	GetShaderParam__15AglMaterialBaseUi	function	36	31	0	31	FE.REL:0x0E2100	
 shared	SetShaderParam__15AglMaterialBaseUiG7union32	SetShaderParam__15AglMaterialBaseUiG7union32	function	100	31	0	31	FE.REL:0x0E2128	
 shared	SetShaderParam__15AglMaterialBaseUif	SetShaderParam__15AglMaterialBaseUif	function	100	31	0	31	FE.REL:0x0E2190	
