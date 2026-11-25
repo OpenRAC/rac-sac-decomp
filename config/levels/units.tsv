@@ -4688,7 +4688,7 @@ shared	Create__t12ApeTFreeList1Z12ApeCameraDefUiP12ApeAllocator	Create__t12ApeTF
 shared	Create__t12ApeTFreeList1Z10ApeGeomDefUiP12ApeAllocator	Create__t12ApeTFreeList1Z10ApeGeomDefUiP12ApeAllocator	function	40	31	0	31	FE.REL:0x0D9158	
 shared	Create__t12ApeTFreeList1Z10AglTextureUiP12ApeAllocator	Create__t12ApeTFreeList1Z10AglTextureUiP12ApeAllocator	function	40	31	0	31	FE.REL:0x0D9180	
 shared	GetMovieStatus__12AglMovieBase	GetMovieStatus__12AglMovieBase	function	8	31	31	31	FE.REL:0x0D91A8	src/levels/shared/GetMovieStatus__12AglMovieBase.c
-shared	SetScale__12AglMovieBaseff	SetScale__12AglMovieBaseff	function	12	31	0	31	FE.REL:0x0D91B0	
+shared	SetScale__12AglMovieBaseff	SetScale__12AglMovieBaseff	function	12	31	31	31	FE.REL:0x0D91B0	src/levels/shared/SetScale__12AglMovieBaseff.c
 shared	compare__t10ApeTBinMap2ZUiZP11ApeLevelDefPCvT1	compare__t10ApeTBinMap2ZUiZP11ApeLevelDefPCvT1	function	40	31	0	31	FE.REL:0x0D91C0	
 shared	compare__t10ApeTBinMap2ZUiZP20ApeLevelDefXMLLoaderPCvT1	compare__t10ApeTBinMap2ZUiZP20ApeLevelDefXMLLoaderPCvT1	function	40	31	0	31	FE.REL:0x0D91E8	
 shared	compare__t10ApeTBinMap2ZUiZP19ApeAnimationLibraryPCvT1	compare__t10ApeTBinMap2ZUiZP19ApeAnimationLibraryPCvT1	function	40	31	0	31	FE.REL:0x0D9210	
@@ -5272,7 +5272,7 @@ shared	RegisterToWorldMtx__16AglIPtlContainerPC4AMtx	RegisterToWorldMtx__16AglIP
 shared	IsEmitInWorldSpace__C16AglIPtlContainer	IsEmitInWorldSpace__C16AglIPtlContainer	function	12	31	31	31	FE.REL:0x0E41E8	src/levels/shared/IsEmitInWorldSpace__C16AglIPtlContainer.c
 shared	IsEmitInLocalSpace__C16AglIPtlContainer	IsEmitInLocalSpace__C16AglIPtlContainer	function	12	31	31	31	FE.REL:0x0E41F8	src/levels/shared/IsEmitInLocalSpace__C16AglIPtlContainer.c
 shared	SetUpdateEnable__16AglIPtlContainerb	SetUpdateEnable__16AglIPtlContainerb	function	28	31	0	31	FE.REL:0x0E4208	
-shared	GetUpdateEnable__C16AglIPtlContainer	GetUpdateEnable__C16AglIPtlContainer	function	12	31	0	31	FE.REL:0x0E4228	
+shared	GetUpdateEnable__C16AglIPtlContainer	GetUpdateEnable__C16AglIPtlContainer	function	12	31	31	31	FE.REL:0x0E4228	src/levels/shared/GetUpdateEnable__C16AglIPtlContainer.c
 shared	_$_21AglStaticPtlContainer	_$_21AglStaticPtlContainer	function	132	31	0	31	FE.REL:0x0E4238	
 shared	__21AglStaticPtlContainerR17AglEmitProperties	__21AglStaticPtlContainerR17AglEmitProperties	function	464	31	0	31	FE.REL:0x0E42C0	
 shared	Update__21AglStaticPtlContainerf	Update__21AglStaticPtlContainerf	function	8	31	31	31	FE.REL:0x0E4490	src/levels/shared/Update__21AglStaticPtlContainerf.c
@@ -5302,8 +5302,8 @@ shared	Stop__25AglPostProcScreenWarpBase	Stop__25AglPostProcScreenWarpBase	funct
 shared	Resume__25AglPostProcScreenWarpBase	Resume__25AglPostProcScreenWarpBase	function	8	31	31	31	FE.REL:0x0E4978	src/levels/shared/Resume__25AglPostProcScreenWarpBase.c
 shared	GetPause__C25AglPostProcScreenWarpBase	GetPause__C25AglPostProcScreenWarpBase	function	8	31	31	31	FE.REL:0x0E4980	src/levels/shared/GetPause__C25AglPostProcScreenWarpBase.c
 shared	UseIndirectTexturing__25AglPostProcScreenWarpBaseb	UseIndirectTexturing__25AglPostProcScreenWarpBaseb	function	8	31	31	31	FE.REL:0x0E4988	src/levels/shared/UseIndirectTexturing__25AglPostProcScreenWarpBaseb.c
-shared	SetAmplitude__25AglPostProcScreenWarpBaseff	SetAmplitude__25AglPostProcScreenWarpBaseff	function	12	31	0	31	FE.REL:0x0E4990	
-shared	SetFrequency__25AglPostProcScreenWarpBaseff	SetFrequency__25AglPostProcScreenWarpBaseff	function	12	31	0	31	FE.REL:0x0E49A0	
+shared	SetAmplitude__25AglPostProcScreenWarpBaseff	SetAmplitude__25AglPostProcScreenWarpBaseff	function	12	31	31	31	FE.REL:0x0E4990	src/levels/shared/SetAmplitude__25AglPostProcScreenWarpBaseff.c
+shared	SetFrequency__25AglPostProcScreenWarpBaseff	SetFrequency__25AglPostProcScreenWarpBaseff	function	12	31	31	31	FE.REL:0x0E49A0	src/levels/shared/SetFrequency__25AglPostProcScreenWarpBaseff.c
 shared	SetTint__25AglPostProcScreenWarpBaseRC7ApeRGBA	SetTint__25AglPostProcScreenWarpBaseRC7ApeRGBA	function	76	31	0	31	FE.REL:0x0E49B0	
 shared	_$_21AglPostProcScreenWarp	_$_21AglPostProcScreenWarp	function	28	31	31	31	FE.REL:0x0E4A00	src/levels/shared/_$_21AglPostProcScreenWarp.c
 shared	Process__21AglPostProcScreenWarp	Process__21AglPostProcScreenWarp	function	8	31	31	31	FE.REL:0x0E4A20	src/levels/shared/Process__21AglPostProcScreenWarp.c
@@ -5437,7 +5437,7 @@ shared	Normalize__5AQuat	Normalize__5AQuat	function	120	31	0	31	FE.REL:0x0E7420
 shared	__14ApeAnimChannel	__14ApeAnimChannel	function	124	31	0	31	FE.REL:0x0E7498	
 shared	SetKey__14ApeAnimChannelPf	SetKey__14ApeAnimChannelPf	function	72	31	0	31	FE.REL:0x0E7518	
 shared	AddSibling__14ApeAnimChannelP14ApeAnimChannel	AddSibling__14ApeAnimChannelP14ApeAnimChannel	function	36	31	31	31	FE.REL:0x0E7560	src/levels/shared/AddSibling__14ApeAnimChannelP14ApeAnimChannel.c
-shared	GetNumSiblings__14ApeAnimChannel	GetNumSiblings__14ApeAnimChannel	function	8	31	0	31	FE.REL:0x0E7588	
+shared	GetNumSiblings__14ApeAnimChannel	GetNumSiblings__14ApeAnimChannel	function	8	31	31	31	FE.REL:0x0E7588	src/levels/shared/GetNumSiblings__14ApeAnimChannel.c
 shared	GetSibling__14ApeAnimChannelUi	GetSibling__14ApeAnimChannelUi	function	20	31	0	31	FE.REL:0x0E7590	
 shared	FindSemantic__14ApeAnimChannelUi	FindSemantic__14ApeAnimChannelUi	function	84	31	0	31	FE.REL:0x0E75A8	
 shared	SetMatrix__14ApeAnimChannelP4AMtx	SetMatrix__14ApeAnimChannelP4AMtx	function	8	31	31	31	FE.REL:0x0E7600	src/levels/shared/SetMatrix__14ApeAnimChannelP4AMtx.c
@@ -5470,7 +5470,7 @@ shared	GetLabel__15ApeAnimTreeNode	GetLabel__15ApeAnimTreeNode	function	8	31	31	
 shared	InitializeReplacementNode__15ApeAnimTreeNode	InitializeReplacementNode__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E7900	src/levels/shared/InitializeReplacementNode__15ApeAnimTreeNode.c
 shared	IsDeleteable__15ApeAnimTreeNode	IsDeleteable__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E7908	src/levels/shared/IsDeleteable__15ApeAnimTreeNode.c
 shared	RemoveDeletableChildren__15ApeAnimTreeNode	RemoveDeletableChildren__15ApeAnimTreeNode	function	348	31	0	31	FE.REL:0x0E7910	
-shared	GetNumChildren__15ApeAnimTreeNode	GetNumChildren__15ApeAnimTreeNode	function	8	31	0	31	FE.REL:0x0E7A70	
+shared	GetNumChildren__15ApeAnimTreeNode	GetNumChildren__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E7A70	src/levels/shared/GetNumChildren__15ApeAnimTreeNode.c
 shared	GetChildNode__15ApeAnimTreeNodeUi	GetChildNode__15ApeAnimTreeNodeUi	function	20	31	0	31	FE.REL:0x0E7A78	
 shared	GetParent__15ApeAnimTreeNode	GetParent__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E7A90	src/levels/shared/GetParent__15ApeAnimTreeNode.c
 shared	__19ApeAnimPlayAnimNode	__19ApeAnimPlayAnimNode	function	236	31	0	31	FE.REL:0x0E7A98	
@@ -5548,7 +5548,7 @@ shared	IsLeaf__22ApeAnimAddOperatorNode	IsLeaf__22ApeAnimAddOperatorNode	functio
 shared	GetNodeName__C22ApeAnimAddOperatorNode	GetNodeName__C22ApeAnimAddOperatorNode	function	12	31	31	31	FE.REL:0x0E8CE8	src/levels/shared/GetNodeName__C22ApeAnimAddOperatorNode.c
 shared	__24ApeAnimAdditiveInOutNode	__24ApeAnimAdditiveInOutNode	function	220	31	0	31	FE.REL:0x0E8CF8	
 shared	_$_24ApeAnimAdditiveInOutNode	_$_24ApeAnimAdditiveInOutNode	function	76	31	0	31	FE.REL:0x0E8DD8	
-shared	SetAlpha__24ApeAnimAdditiveInOutNodef	SetAlpha__24ApeAnimAdditiveInOutNodef	function	12	31	0	31	FE.REL:0x0E8E28	
+shared	SetAlpha__24ApeAnimAdditiveInOutNodef	SetAlpha__24ApeAnimAdditiveInOutNodef	function	12	31	31	31	FE.REL:0x0E8E28	src/levels/shared/SetAlpha__24ApeAnimAdditiveInOutNodef.c
 shared	IsLeaf__24ApeAnimAdditiveInOutNode	IsLeaf__24ApeAnimAdditiveInOutNode	function	8	31	31	31	FE.REL:0x0E8E38	src/levels/shared/IsLeaf__24ApeAnimAdditiveInOutNode.c
 shared	IsDeleteable__24ApeAnimAdditiveInOutNode	IsDeleteable__24ApeAnimAdditiveInOutNode	function	36	31	0	31	FE.REL:0x0E8E40	
 shared	InitializeReplacementNode__24ApeAnimAdditiveInOutNode	InitializeReplacementNode__24ApeAnimAdditiveInOutNode	function	68	31	0	31	FE.REL:0x0E8E68	
@@ -5662,7 +5662,7 @@ shared	SetLogging__7ApeFileb	SetLogging__7ApeFileb	function	28	31	0	31	FE.REL:0x
 shared	GetLogging__7ApeFile	GetLogging__7ApeFile	function	16	31	0	31	FE.REL:0x0EA818	
 shared	Disconnect__18ApeInputDeviceBase	Disconnect__18ApeInputDeviceBase	function	8	31	31	31	FE.REL:0x0EA828	src/levels/shared/Disconnect__18ApeInputDeviceBase.c
 shared	Connect__18ApeInputDeviceBase	Connect__18ApeInputDeviceBase	function	8	31	31	31	FE.REL:0x0EA830	src/levels/shared/Connect__18ApeInputDeviceBase.c
-shared	IsConnected__C18ApeInputDeviceBase	IsConnected__C18ApeInputDeviceBase	function	12	31	0	31	FE.REL:0x0EA838	
+shared	IsConnected__C18ApeInputDeviceBase	IsConnected__C18ApeInputDeviceBase	function	12	31	31	31	FE.REL:0x0EA838	src/levels/shared/IsConnected__C18ApeInputDeviceBase.c
 shared	GetType__C18ApeInputDeviceBase	GetType__C18ApeInputDeviceBase	function	8	31	31	31	FE.REL:0x0EA848	src/levels/shared/GetType__C18ApeInputDeviceBase.c
 shared	GetBitsPressed__C18ApeInputDeviceBase	GetBitsPressed__C18ApeInputDeviceBase	function	8	31	31	31	FE.REL:0x0EA850	src/levels/shared/GetBitsPressed__C18ApeInputDeviceBase.c
 shared	GetBitsChanged__C18ApeInputDeviceBase	GetBitsChanged__C18ApeInputDeviceBase	function	8	31	31	31	FE.REL:0x0EA858	src/levels/shared/GetBitsChanged__C18ApeInputDeviceBase.c
@@ -5685,7 +5685,7 @@ shared	ProcessPLAT__Q23IFF9ChunkDescRQ23IFF7CReaderPv	ProcessPLAT__Q23IFF9ChunkD
 shared	Create__t12ApeTFreeList1Z14ApeInputDeviceUiP12ApeAllocator	Create__t12ApeTFreeList1Z14ApeInputDeviceUiP12ApeAllocator	function	40	31	0	31	FE.REL:0x0EABD0	
 shared	GetName__C9ApeSpline	GetName__C9ApeSpline	function	8	31	31	31	FE.REL:0x0EABF8	src/levels/shared/GetName__C9ApeSpline.c
 shared	GetLength__C9ApeSpline	GetLength__C9ApeSpline	function	8	31	31	31	FE.REL:0x0EAC00	src/levels/shared/GetLength__C9ApeSpline.c
-shared	GetLoop__C9ApeSpline	GetLoop__C9ApeSpline	function	12	31	0	31	FE.REL:0x0EAC08	
+shared	GetLoop__C9ApeSpline	GetLoop__C9ApeSpline	function	12	31	31	31	FE.REL:0x0EAC08	src/levels/shared/GetLoop__C9ApeSpline.c
 shared	compare__t10ApeTBinMap2ZUiZP9ApeSplinePCvT1	compare__t10ApeTBinMap2ZUiZP9ApeSplinePCvT1	function	40	31	0	31	FE.REL:0x0EAC18	
 shared	_$_t12ApeTFreeList1Z14ApeInputDevice	_$_t12ApeTFreeList1Z14ApeInputDevice	function	100	31	0	31	FE.REL:0x0EAC40	
 shared	Create__t12ApeTFreeList1Z14ApeInputDeviceUiUiP12ApeAllocatorb	Create__t12ApeTFreeList1Z14ApeInputDeviceUiUiP12ApeAllocatorb	function	8	31	31	31	FE.REL:0x0EACA8	src/levels/shared/Create__t12ApeTFreeList1Z14ApeInputDeviceUiUiP12ApeAllocatorb.c
@@ -10051,7 +10051,7 @@ shared	SecurityLaserBeam_UpdateScorchMoving__FP17SecurityLaserBeamPC4VEC3	Securi
 shared	SecurityLaserBeam_DrawScorchStatic__FP17SecurityLaserBeamPC4VEC3	SecurityLaserBeam_DrawScorchStatic__FP17SecurityLaserBeamPC4VEC3	function	140	10	0	10	LEVEL1.REL:0x12AF50	
 shared	func_L01_12AFE0	func_L01_12AFE0	function	8	19	19	19	LEVEL1.REL:0x12AFE0	src/levels/shared/func_L01_12AFE0.c
 shared	PostAnimCallback__12TangleGrowthP4Moby	PostAnimCallback__12TangleGrowthP4Moby	function	1952	13	0	13	LEVEL1.REL:0x12AFE8	
-shared	KillEffect__12TangleGrowthP4Moby	KillEffect__12TangleGrowthP4Moby	function	12	13	0	13	LEVEL1.REL:0x12B788	
+shared	KillEffect__12TangleGrowthP4Moby	KillEffect__12TangleGrowthP4Moby	function	12	13	13	13	LEVEL1.REL:0x12B788	src/levels/shared/KillEffect__12TangleGrowthP4Moby.c
 shared	Spawn__12TangleGrowthP7MATRIX4PC18TangleGrowthConfig	Spawn__12TangleGrowthP7MATRIX4PC18TangleGrowthConfig	function	172	13	0	13	LEVEL1.REL:0x12B798	
 shared	TangleGrowth_Spawn__FP7MATRIX4PC18TangleGrowthConfig	TangleGrowth_Spawn__FP7MATRIX4PC18TangleGrowthConfig	function	124	13	0	13	LEVEL1.REL:0x12B848	
 shared	func_L01_12B8C8	func_L01_12B8C8	function	8	19	19	19	LEVEL1.REL:0x12B8C8	src/levels/shared/func_L01_12B8C8.c
@@ -10093,7 +10093,7 @@ shared	func_L01_12E764	func_L01_12E764	function	32	18	0	18	LEVEL1.REL:0x12E764
 shared	CrateTeleporter_CanGo__FP4Moby	CrateTeleporter_CanGo__FP4Moby	function	36	18	18	18	LEVEL1.REL:0x12E788	src/levels/shared/CrateTeleporter_CanGo__FP4Moby.c
 shared	CrateTeleporter_Go__FP4Moby13CTP_SpawnTypePFP4MobyP4Moby_vT0	CrateTeleporter_Go__FP4Moby13CTP_SpawnTypePFP4MobyP4Moby_vT0	function	116	18	0	18	LEVEL1.REL:0x12E7B0	
 shared	CrateTeleporter_Spawn__FPC7MATRIX413CTP_SpawnTypePFP4MobyP4Moby_vP4Moby	CrateTeleporter_Spawn__FPC7MATRIX413CTP_SpawnTypePFP4MobyP4Moby_vP4Moby	function	144	18	0	18	LEVEL1.REL:0x12E828	
-shared	CrateTeleporter_SetDelay__FP4Mobyf	CrateTeleporter_SetDelay__FP4Mobyf	function	12	18	0	18	LEVEL1.REL:0x12E8B8	
+shared	CrateTeleporter_SetDelay__FP4Mobyf	CrateTeleporter_SetDelay__FP4Mobyf	function	12	18	18	18	LEVEL1.REL:0x12E8B8	src/levels/shared/CrateTeleporter_SetDelay__FP4Mobyf.c
 shared	CTP_SetState__FP4MobyUc	CTP_SetState__FP4MobyUc	function	76	18	0	18	LEVEL1.REL:0x12E8C8	
 shared	func_L01_12E914	func_L01_12E914	function	8	18	0	18	LEVEL1.REL:0x12E914	
 shared	func_L01_12E91C	func_L01_12E91C	function	16	18	0	18	LEVEL1.REL:0x12E91C	
@@ -12017,7 +12017,7 @@ shared	PLAYER_DepenBox__FP6PLAYERPC4VEC4PC4VEC3PC7MATRIX4	PLAYER_DepenBox__FP6PL
 shared	PLAYER_GetDamageCenter__FP4VEC3PC6PLAYER	PLAYER_GetDamageCenter__FP4VEC3PC6PLAYER	function	84	30	30	30	LEVEL1.REL:0x17EEE0	src/levels/shared/PLAYER_GetDamageCenter__FP4VEC3PC6PLAYER.c
 shared	PLAYER_GetStandingOnMoby__FP6PLAYER	PLAYER_GetStandingOnMoby__FP6PLAYER	function	64	30	0	30	LEVEL1.REL:0x17EF38	
 shared	PLAYER_SetGunMeshGroupVisibility__FP6PLAYERUs	PLAYER_SetGunMeshGroupVisibility__FP6PLAYERUs	function	8	30	30	30	LEVEL1.REL:0x17EF78	src/levels/shared/PLAYER_SetGunMeshGroupVisibility__FP6PLAYERUs.c
-shared	PLAYER_GetGunMeshGroupVisibility__FP6PLAYER	PLAYER_GetGunMeshGroupVisibility__FP6PLAYER	function	8	30	0	30	LEVEL1.REL:0x17EF80	
+shared	PLAYER_GetGunMeshGroupVisibility__FP6PLAYER	PLAYER_GetGunMeshGroupVisibility__FP6PLAYER	function	8	30	30	30	LEVEL1.REL:0x17EF80	src/levels/shared/PLAYER_GetGunMeshGroupVisibility__FP6PLAYER.c
 shared	PLAYER_GetWorldDir__FP6PLAYERR4VEC4ff	PLAYER_GetWorldDir__FP6PLAYERR4VEC4ff	function	456	30	0	30	LEVEL1.REL:0x17EF88	
 shared	PLAYER_distToGround__FPfP4VEC4f	PLAYER_distToGround__FPfP4VEC4f	function	228	30	0	30	LEVEL1.REL:0x17F150	
 shared	PLAYER_ControlsGetWorldDir__FP6PLAYER	PLAYER_ControlsGetWorldDir__FP6PLAYER	function	540	30	0	30	LEVEL1.REL:0x17F238	
@@ -14832,7 +14832,7 @@ shared	ZIPLINE_UpdateControlsNormal_Analog__FP7RATCHETP14ControllerData	ZIPLINE_
 shared	ZIPLINE_HandleCamera__FP7RATCHET	ZIPLINE_HandleCamera__FP7RATCHET	function	204	5	0	5	LEVEL3.REL:0x1419A0	
 shared	ZIPLINE_UpdateSubstates__FP7RATCHET	ZIPLINE_UpdateSubstates__FP7RATCHET	function	1532	5	0	5	LEVEL3.REL:0x141A70	
 shared	PostAnimCallback__14AcidFoodSplashP4Moby	PostAnimCallback__14AcidFoodSplashP4Moby	function	72	5	0	5	LEVEL3.REL:0x142078	
-shared	KillEffect__14AcidFoodSplashP4Moby	KillEffect__14AcidFoodSplashP4Moby	function	12	5	0	5	LEVEL3.REL:0x1420C0	
+shared	KillEffect__14AcidFoodSplashP4Moby	KillEffect__14AcidFoodSplashP4Moby	function	12	5	5	5	LEVEL3.REL:0x1420C0	src/levels/shared/KillEffect__14AcidFoodSplashP4Moby.c
 shared	Spawn__14AcidFoodSplashP7MATRIX4PC20AcidFoodSplashConfig	Spawn__14AcidFoodSplashP7MATRIX4PC20AcidFoodSplashConfig	function	1408	5	0	5	LEVEL3.REL:0x1420D0	
 shared	AcidFoodSplash_Spawn__FP7MATRIX4PC20AcidFoodSplashConfig	AcidFoodSplash_Spawn__FP7MATRIX4PC20AcidFoodSplashConfig	function	124	5	0	5	LEVEL3.REL:0x142650	
 shared	SpawnDecal__14AcidFoodSplashiPC4VEC3T2PC15CollSurfaceInfoUiUi	SpawnDecal__14AcidFoodSplashiPC4VEC3T2PC15CollSurfaceInfoUiUi	function	712	5	0	5	LEVEL3.REL:0x1426D0	
@@ -18134,7 +18134,7 @@ shared	Lvl04Gondola_Spawn__FPC7MATRIX4_L10	Lvl04Gondola_Spawn__FPC7MATRIX4	funct
 shared	Lvl04Gondola_SpawnAutonomous__FP5CurveffbP4MobyUiT3UiP7TriggerfT3T4_L10	Lvl04Gondola_SpawnAutonomous__FP5CurveffbP4MobyUiT3UiP7TriggerfT3T4	function	1564	2	0	2	LEVEL10.REL:0x0F5D68	
 shared	Lvl04Gondola_IsGondolaMoving__FP4Moby_L10	Lvl04Gondola_IsGondolaMoving__FP4Moby	function	12	2	2	2	LEVEL10.REL:0x0F6388	src/levels/shared/Lvl04Gondola_IsGondolaMoving__FP4Moby_L10.c
 shared	Lvl04Gondola_IsOnCurve__FP4MobyPC5Curve_L10	Lvl04Gondola_IsOnCurve__FP4MobyPC5Curve	function	20	2	0	2	LEVEL10.REL:0x0F6398	
-shared	Lvl04Gondola_SetTargetSpeed__FP4Mobyf	Lvl04Gondola_SetTargetSpeed__FP4Mobyf	function	12	2	0	2	LEVEL10.REL:0x0F63B0	
+shared	Lvl04Gondola_SetTargetSpeed__FP4Mobyf	Lvl04Gondola_SetTargetSpeed__FP4Mobyf	function	12	2	2	2	LEVEL10.REL:0x0F63B0	src/levels/shared/Lvl04Gondola_SetTargetSpeed__FP4Mobyf.c
 shared	Lvl04Gondola_Init__FP4Moby	Lvl04Gondola_Init__FP4Moby	function	708	2	0	2	LEVEL10.REL:0x0F63C0	
 shared	Lvl04Gondola_Term__FP4Moby	Lvl04Gondola_Term__FP4Moby	function	116	2	0	2	LEVEL10.REL:0x0F6688	
 shared	Lvl04Gondola_Update__FP4Mobyf	Lvl04Gondola_Update__FP4Mobyf	function	1592	2	0	2	LEVEL10.REL:0x0F6700	
@@ -22565,7 +22565,7 @@ shared	GENPAR_UVColorRotRegister__FUi	GENPAR_UVColorRotRegister__FUi	function	64
 23_qwark	CanActivate__12PirateWander	CanActivate__12PirateWander	function	8	1	1	1	LEVEL23.REL:0x1DBA98	src/levels/23_qwark/CanActivate__12PirateWander.c
 23_qwark	Begin__11PirateAlert	Begin__11PirateAlert	function	56	1	0	1	LEVEL23.REL:0x1DBAA0	
 23_qwark	Update__11PirateAlertf	Update__11PirateAlertf	function	60	1	0	1	LEVEL23.REL:0x1DBAD8	
-23_qwark	End__11PirateAlert	End__11PirateAlert	function	12	1	0	1	LEVEL23.REL:0x1DBB18	
+23_qwark	End__11PirateAlert	End__11PirateAlert	function	12	1	1	1	LEVEL23.REL:0x1DBB18	src/levels/23_qwark/End__11PirateAlert.c
 23_qwark	Init__11PirateAlert	Init__11PirateAlert	function	8	1	1	1	LEVEL23.REL:0x1DBB28	src/levels/23_qwark/Init__11PirateAlert.c
 23_qwark	GetTransientDataSize__9PiratePop	GetTransientDataSize__9PiratePop	function	8	1	1	1	LEVEL23.REL:0x1DBB30	src/levels/23_qwark/GetTransientDataSize__9PiratePop.c
 23_qwark	CanActivate__9PiratePop	CanActivate__9PiratePop	function	8	1	1	1	LEVEL23.REL:0x1DBB38	src/levels/23_qwark/CanActivate__9PiratePop.c
