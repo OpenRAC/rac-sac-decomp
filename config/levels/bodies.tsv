@@ -123950,3 +123950,9 @@ LEVEL29.REL	0x242E50	12	src/levels/shared/GetKey__19ApeAnimChannelFloatPf.c
 LEVEL30.REL	0x222F80	12	src/levels/shared/GetKey__19ApeAnimChannelFloatPf.c
 LEVEL31.REL	0x20E618	12	src/levels/shared/GetKey__19ApeAnimChannelFloatPf.c
 LEVEL32.REL	0x1E7530	12	src/levels/shared/GetKey__19ApeAnimChannelFloatPf.c
+LEVEL4.REL	0x0FC3F0	20	src/levels/shared/JumpPad_Deactivate__FP4Moby.c
+LEVEL19.REL	0x0ED570	20	src/levels/shared/JumpPad_Deactivate__FP4Moby.c
+LEVEL31.REL	0x0DDF88	20	src/levels/shared/JumpPad_Deactivate__FP4Moby.c
+LEVEL8.REL	0x0C9D18	20	src/levels/shared/VehicleFormation_Deactivate__FP4Moby.c
+LEVEL17.REL	0x0D3C20	20	src/levels/shared/VehicleFormation_Deactivate__FP4Moby.c
+LEVEL26.REL	0x0D33B0	20	src/levels/shared/VehicleFormation_Deactivate__FP4Moby.c

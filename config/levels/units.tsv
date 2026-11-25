@@ -15877,7 +15877,7 @@ shared	JumpPad_Init__FP4Moby	JumpPad_Init__FP4Moby	function	548	3	0	3	LEVEL4.REL
 shared	JumpPad_Term__FP4Moby	JumpPad_Term__FP4Moby	function	132	3	0	3	LEVEL4.REL:0x0FC038	
 shared	JumpPad_Update__FP4Mobyf	JumpPad_Update__FP4Mobyf	function	452	3	0	3	LEVEL4.REL:0x0FC0C0	
 shared	JumpPad_Activate__FP4Moby	JumpPad_Activate__FP4Moby	function	356	3	0	3	LEVEL4.REL:0x0FC288	
-shared	JumpPad_Deactivate__FP4Moby	JumpPad_Deactivate__FP4Moby	function	20	3	0	3	LEVEL4.REL:0x0FC3F0	
+shared	JumpPad_Deactivate__FP4Moby	JumpPad_Deactivate__FP4Moby	function	20	3	3	3	LEVEL4.REL:0x0FC3F0	src/levels/shared/JumpPad_Deactivate__FP4Moby.c
 shared	func_L04_0FC408	func_L04_0FC408	function	64	3	0	3	LEVEL4.REL:0x0FC408	
 shared	func_L04_0FC448	func_L04_0FC448	function	352	3	0	3	LEVEL4.REL:0x0FC448	
 shared	func_L04_0FC5A8	func_L04_0FC5A8	function	88	3	0	3	LEVEL4.REL:0x0FC5A8	
@@ -17343,7 +17343,7 @@ shared	VehicleFormation_Init__FP4Moby	VehicleFormation_Init__FP4Moby	function	27
 shared	VehicleFormation_Term__FP4Moby	VehicleFormation_Term__FP4Moby	function	8	3	3	3	LEVEL8.REL:0x0C96D0	src/levels/shared/VehicleFormation_Term__FP4Moby.c
 shared	VehicleFormation_Update__FP4Mobyf	VehicleFormation_Update__FP4Mobyf	function	1548	3	0	3	LEVEL8.REL:0x0C96D8	
 shared	VehicleFormation_Activate__FP4Moby_L08	VehicleFormation_Activate__FP4Moby	function	48	3	0	3	LEVEL8.REL:0x0C9CE8	
-shared	VehicleFormation_Deactivate__FP4Moby	VehicleFormation_Deactivate__FP4Moby	function	20	3	0	3	LEVEL8.REL:0x0C9D18	
+shared	VehicleFormation_Deactivate__FP4Moby	VehicleFormation_Deactivate__FP4Moby	function	20	3	3	3	LEVEL8.REL:0x0C9D18	src/levels/shared/VehicleFormation_Deactivate__FP4Moby.c
 shared	VehicleFormation_SetContinueFormation__FP4Moby_L08	VehicleFormation_SetContinueFormation__FP4Moby	function	28	3	0	3	LEVEL8.REL:0x0C9D30	
 shared	VehicleFormation_SetSingleFile__FP4Moby_L08	VehicleFormation_SetSingleFile__FP4Moby	function	16	3	3	3	LEVEL8.REL:0x0C9D50	src/levels/shared/VehicleFormation_SetSingleFile__FP4Moby_L08.c
 shared	VehicleFormation_GetSingleFile__FP4Moby_L08	VehicleFormation_GetSingleFile__FP4Moby	function	12	3	3	3	LEVEL8.REL:0x0C9D60	src/levels/shared/VehicleFormation_GetSingleFile__FP4Moby_L08.c
