@@ -5768,13 +5768,13 @@ shared	GetSibling__C6ApeObj	GetSibling__C6ApeObj	function	8	31	31	31	FE.REL:0x0E
 shared	GetChild__C6ApeObj	GetChild__C6ApeObj	function	8	31	31	31	FE.REL:0x0EB948	src/levels/shared/GetChild__C6ApeObj.c
 shared	GetBSphereOfHierarchy__C6ApeObj	GetBSphereOfHierarchy__C6ApeObj	function	8	31	31	31	FE.REL:0x0EB950	src/levels/shared/GetBSphereOfHierarchy__C6ApeObj.c
 shared	GetSkeleton__C6ApeObj	GetSkeleton__C6ApeObj	function	8	31	31	31	FE.REL:0x0EB958	src/levels/shared/GetSkeleton__C6ApeObj.c
-shared	IsDirty__C6ApeObj	IsDirty__C6ApeObj	function	16	31	0	31	FE.REL:0x0EB960	
+shared	IsDirty__C6ApeObj	IsDirty__C6ApeObj	function	16	31	31	31	FE.REL:0x0EB960	src/levels/shared/IsDirty__C6ApeObj.c
 shared	SetRenderedTime__6ApeObjUi	SetRenderedTime__6ApeObjUi	function	8	31	31	31	FE.REL:0x0EB970	src/levels/shared/SetRenderedTime__6ApeObjUi.c
 shared	GetName__C6ApeObj	GetName__C6ApeObj	function	8	31	31	31	FE.REL:0x0EB978	src/levels/shared/GetName__C6ApeObj.c
 shared	GetNameHash__C6ApeObj	GetNameHash__C6ApeObj	function	8	31	31	31	FE.REL:0x0EB980	src/levels/shared/GetNameHash__C6ApeObj.c
 shared	IsVisible__C6ApeObj	IsVisible__C6ApeObj	function	20	31	0	31	FE.REL:0x0EB988	
-shared	IsMirrored__C6ApeObj	IsMirrored__C6ApeObj	function	16	31	0	31	FE.REL:0x0EB9A0	
-shared	IsScaled__C6ApeObj	IsScaled__C6ApeObj	function	16	31	0	31	FE.REL:0x0EB9B0	
+shared	IsMirrored__C6ApeObj	IsMirrored__C6ApeObj	function	16	31	31	31	FE.REL:0x0EB9A0	src/levels/shared/IsMirrored__C6ApeObj.c
+shared	IsScaled__C6ApeObj	IsScaled__C6ApeObj	function	16	31	31	31	FE.REL:0x0EB9B0	src/levels/shared/IsScaled__C6ApeObj.c
 shared	GetDef__C6ApeObj	GetDef__C6ApeObj	function	8	31	31	31	FE.REL:0x0EB9C0	src/levels/shared/GetDef__C6ApeObj.c
 shared	GetBSphere__C6ApeObj	GetBSphere__C6ApeObj	function	8	31	31	31	FE.REL:0x0EB9C8	src/levels/shared/GetBSphere__C6ApeObj.c
 shared	SetMatrix__6ApeObjRC4AMtx	SetMatrix__6ApeObjRC4AMtx	function	64	31	0	31	FE.REL:0x0EB9D0	
@@ -5826,7 +5826,7 @@ shared	SetPhysics__11ApeInstanceP14ApePhysicsInst	SetPhysics__11ApeInstanceP14Ap
 shared	GetPhysics__C11ApeInstance	GetPhysics__C11ApeInstance	function	8	31	31	31	FE.REL:0x0EBFC0	src/levels/shared/GetPhysics__C11ApeInstance.c
 shared	SetBlendAlpha__11ApeInstancef	SetBlendAlpha__11ApeInstancef	function	76	31	0	31	FE.REL:0x0EBFC8	
 shared	SetBlendAlpha__11ApeInstanceUc	SetBlendAlpha__11ApeInstanceUc	function	56	31	0	31	FE.REL:0x0EC018	
-shared	GetBlendAlpha__C11ApeInstance	GetBlendAlpha__C11ApeInstance	function	16	31	0	31	FE.REL:0x0EC050	
+shared	GetBlendAlpha__C11ApeInstance	GetBlendAlpha__C11ApeInstance	function	16	31	31	31	FE.REL:0x0EC050	src/levels/shared/GetBlendAlpha__C11ApeInstance.c
 shared	SetFarZCullSqr__11ApeInstancef	SetFarZCullSqr__11ApeInstancef	function	8	31	31	31	FE.REL:0x0EC060	src/levels/shared/SetFarZCullSqr__11ApeInstancef.c
 shared	GetFarZCullSqr__C11ApeInstance	GetFarZCullSqr__C11ApeInstance	function	8	31	31	31	FE.REL:0x0EC068	src/levels/shared/GetFarZCullSqr__C11ApeInstance.c
 shared	SetRGB__11ApeInstanceG7ApeRGBA	SetRGB__11ApeInstanceG7ApeRGBA	function	24	31	0	31	FE.REL:0x0EC070	
