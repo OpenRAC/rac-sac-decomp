@@ -5871,14 +5871,14 @@ shared	GetIntensity__C11ApeLightDef	GetIntensity__C11ApeLightDef	function	12	31	
 shared	GetClampedIntensity__C11ApeLightDef	GetClampedIntensity__C11ApeLightDef	function	20	31	0	31	FE.REL:0x0EC858	
 shared	GetAttenuationV__C11ApeLightDefR5AVec4	GetAttenuationV__C11ApeLightDefR5AVec4	function	36	31	0	31	FE.REL:0x0EC870	
 shared	SetRadius__11ApeLightDeff	SetRadius__11ApeLightDeff	function	8	31	0	31	FE.REL:0x0EC898	
-shared	SetStartAtten__11ApeLightDeff	SetStartAtten__11ApeLightDeff	function	8	31	0	31	FE.REL:0x0EC8A0	
+shared	SetStartAtten__11ApeLightDeff	SetStartAtten__11ApeLightDeff	function	8	31	31	31	FE.REL:0x0EC8A0	src/levels/shared/SetStartAtten__11ApeLightDeff.c
 shared	GetStartAtten__C11ApeLightDef	GetStartAtten__C11ApeLightDef	function	8	31	31	31	FE.REL:0x0EC8A8	src/levels/shared/GetStartAtten__C11ApeLightDef.c
-shared	SetEndAtten__11ApeLightDeff	SetEndAtten__11ApeLightDeff	function	8	31	0	31	FE.REL:0x0EC8B0	
-shared	GetEndAtten__C11ApeLightDef	GetEndAtten__C11ApeLightDef	function	8	31	0	31	FE.REL:0x0EC8B8	
-shared	SetConstantAtten__11ApeLightDeff	SetConstantAtten__11ApeLightDeff	function	8	31	0	31	FE.REL:0x0EC8C0	
+shared	SetEndAtten__11ApeLightDeff	SetEndAtten__11ApeLightDeff	function	8	31	31	31	FE.REL:0x0EC8B0	src/levels/shared/SetEndAtten__11ApeLightDeff.c
+shared	GetEndAtten__C11ApeLightDef	GetEndAtten__C11ApeLightDef	function	8	31	31	31	FE.REL:0x0EC8B8	src/levels/shared/GetEndAtten__C11ApeLightDef.c
+shared	SetConstantAtten__11ApeLightDeff	SetConstantAtten__11ApeLightDeff	function	8	31	31	31	FE.REL:0x0EC8C0	src/levels/shared/SetConstantAtten__11ApeLightDeff.c
 shared	GetConstantAtten__C11ApeLightDef	GetConstantAtten__C11ApeLightDef	function	8	31	31	31	FE.REL:0x0EC8C8	src/levels/shared/GetConstantAtten__C11ApeLightDef.c
-shared	SetLinearAtten__11ApeLightDeff	SetLinearAtten__11ApeLightDeff	function	8	31	0	31	FE.REL:0x0EC8D0	
-shared	GetLinearAtten__C11ApeLightDef	GetLinearAtten__C11ApeLightDef	function	8	31	0	31	FE.REL:0x0EC8D8	
+shared	SetLinearAtten__11ApeLightDeff	SetLinearAtten__11ApeLightDeff	function	8	31	31	31	FE.REL:0x0EC8D0	src/levels/shared/SetLinearAtten__11ApeLightDeff.c
+shared	GetLinearAtten__C11ApeLightDef	GetLinearAtten__C11ApeLightDef	function	8	31	31	31	FE.REL:0x0EC8D8	src/levels/shared/GetLinearAtten__C11ApeLightDef.c
 shared	SetQuadraticAtten__11ApeLightDeff	SetQuadraticAtten__11ApeLightDeff	function	8	31	0	31	FE.REL:0x0EC8E0	
 shared	GetQuadraticAtten__C11ApeLightDef	GetQuadraticAtten__C11ApeLightDef	function	8	31	0	31	FE.REL:0x0EC8E8	
 shared	__12ApeCameraDef	__12ApeCameraDef	function	288	31	0	31	FE.REL:0x0EC8F0	
@@ -12536,8 +12536,8 @@ shared	Init__20WeaponNoAnimIfNoAmmoPC26WeaponNoAnimIfNoAmmoConfig	Init__20Weapon
 shared	Update__16RemoteControlledf	Update__16RemoteControlledf	function	20	14	0	14	LEVEL1.REL:0x238068	
 shared	GetDesiredState__16RemoteControlled	GetDesiredState__16RemoteControlled	function	8	14	14	14	LEVEL1.REL:0x238080	src/levels/shared/GetDesiredState__16RemoteControlled.c
 shared	CanActivate__16RemoteControlled	CanActivate__16RemoteControlled	function	8	14	14	14	LEVEL1.REL:0x238088	src/levels/shared/CanActivate__16RemoteControlled.c
-shared	SetTimer__10DoubleJumpf	SetTimer__10DoubleJumpf	function	8	14	0	14	LEVEL1.REL:0x238090	
-shared	SetTimer__5Glidef	SetTimer__5Glidef	function	8	14	0	14	LEVEL1.REL:0x238098	
+shared	SetTimer__10DoubleJumpf	SetTimer__10DoubleJumpf	function	8	14	14	14	LEVEL1.REL:0x238090	src/levels/shared/SetTimer__10DoubleJumpf.c
+shared	SetTimer__5Glidef	SetTimer__5Glidef	function	8	14	14	14	LEVEL1.REL:0x238098	src/levels/shared/SetTimer__5Glidef.c
 shared	CanActivate__4Idle	CanActivate__4Idle	function	8	14	14	14	LEVEL1.REL:0x2380A0	src/levels/shared/CanActivate__4Idle.c
 shared	CanActivate__11FallToDeath	CanActivate__11FallToDeath	function	8	14	14	14	LEVEL1.REL:0x2380A8	src/levels/shared/CanActivate__11FallToDeath.c
 shared	GetDesiredState__11FallToDeath	GetDesiredState__11FallToDeath	function	8	14	14	14	LEVEL1.REL:0x2380B0	src/levels/shared/GetDesiredState__11FallToDeath.c
