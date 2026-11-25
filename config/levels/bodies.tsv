@@ -123551,3 +123551,16 @@ LEVEL29.REL	0x24A0D0	16	src/levels/shared/Activate__18BasicActivatedIdleb.c
 LEVEL30.REL	0x22A018	16	src/levels/shared/Activate__18BasicActivatedIdleb.c
 LEVEL31.REL	0x2156E0	16	src/levels/shared/Activate__18BasicActivatedIdleb.c
 LEVEL10.REL	0x0ECA48	16	src/levels/10_carnival/SetJackNode__23KingpinState_FollowJackUc.c
+LEVEL3.REL	0x15BE88	16	src/levels/shared/Init__11ArenaPursuePC17ArenaPursueConfigP8Navigateb.c
+LEVEL9.REL	0x159D40	16	src/levels/shared/Init__11ArenaPursuePC17ArenaPursueConfigP8Navigateb.c
+LEVEL14.REL	0x15C050	16	src/levels/shared/Init__11ArenaPursuePC17ArenaPursueConfigP8Navigateb.c
+LEVEL21.REL	0x154F08	16	src/levels/shared/Init__11ArenaPursuePC17ArenaPursueConfigP8Navigateb.c
+LEVEL25.REL	0x160490	16	src/levels/shared/Init__11ArenaPursuePC17ArenaPursueConfigP8Navigateb.c
+LEVEL3.REL	0x15C0A0	16	src/levels/shared/Init__12ArenaRetreatPC18ArenaRetreatConfigP8Navigateb.c
+LEVEL9.REL	0x159F58	16	src/levels/shared/Init__12ArenaRetreatPC18ArenaRetreatConfigP8Navigateb.c
+LEVEL14.REL	0x15C268	16	src/levels/shared/Init__12ArenaRetreatPC18ArenaRetreatConfigP8Navigateb.c
+LEVEL21.REL	0x155120	16	src/levels/shared/Init__12ArenaRetreatPC18ArenaRetreatConfigP8Navigateb.c
+LEVEL25.REL	0x1606A8	16	src/levels/shared/Init__12ArenaRetreatPC18ArenaRetreatConfigP8Navigateb.c
+LEVEL5.REL	0x1D09B0	16	src/levels/shared/Enter__13GCP_WalkStateP16GiantClankPlayer.c
+LEVEL27.REL	0x1D8D70	16	src/levels/shared/Enter__13GCP_WalkStateP16GiantClankPlayer.c
+LEVEL31.REL	0x0D5240	16	src/levels/31_treehouse/FoamMissile_Launch__FP4Moby_L31.c

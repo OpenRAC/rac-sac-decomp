@@ -15039,11 +15039,11 @@ shared	AddAttack__19ArenaMeleeEtiquetteP13ArenaBehaviorPC14MEAttackConfig	AddAtt
 shared	Begin__19ArenaMeleeEtiquette	Begin__19ArenaMeleeEtiquette	function	200	5	0	5	LEVEL3.REL:0x15B448	
 shared	Update__19ArenaMeleeEtiquettef	Update__19ArenaMeleeEtiquettef	function	1872	5	0	5	LEVEL3.REL:0x15B510	
 shared	CalculateNextAttack__19ArenaMeleeEtiquette	CalculateNextAttack__19ArenaMeleeEtiquette	function	552	5	0	5	LEVEL3.REL:0x15BC60	
-shared	Init__11ArenaPursuePC17ArenaPursueConfigP8Navigateb	Init__11ArenaPursuePC17ArenaPursueConfigP8Navigateb	function	16	5	0	5	LEVEL3.REL:0x15BE88	
+shared	Init__11ArenaPursuePC17ArenaPursueConfigP8Navigateb	Init__11ArenaPursuePC17ArenaPursueConfigP8Navigateb	function	16	5	5	5	LEVEL3.REL:0x15BE88	src/levels/shared/Init__11ArenaPursuePC17ArenaPursueConfigP8Navigateb.c
 shared	CanActivate__11ArenaPursue	CanActivate__11ArenaPursue	function	120	5	0	5	LEVEL3.REL:0x15BE98	
 shared	Begin__11ArenaPursue	Begin__11ArenaPursue	function	60	5	0	5	LEVEL3.REL:0x15BF10	
 shared	Update__11ArenaPursuef	Update__11ArenaPursuef	function	336	5	0	5	LEVEL3.REL:0x15BF50	
-shared	Init__12ArenaRetreatPC18ArenaRetreatConfigP8Navigateb	Init__12ArenaRetreatPC18ArenaRetreatConfigP8Navigateb	function	16	5	0	5	LEVEL3.REL:0x15C0A0	
+shared	Init__12ArenaRetreatPC18ArenaRetreatConfigP8Navigateb	Init__12ArenaRetreatPC18ArenaRetreatConfigP8Navigateb	function	16	5	5	5	LEVEL3.REL:0x15C0A0	src/levels/shared/Init__12ArenaRetreatPC18ArenaRetreatConfigP8Navigateb.c
 shared	CanActivate__12ArenaRetreat	CanActivate__12ArenaRetreat	function	44	5	0	5	LEVEL3.REL:0x15C0B0	
 shared	Begin__12ArenaRetreat	Begin__12ArenaRetreat	function	212	5	0	5	LEVEL3.REL:0x15C0E0	
 shared	Update__12ArenaRetreatf	Update__12ArenaRetreatf	function	256	5	0	5	LEVEL3.REL:0x15C1B8	
@@ -16851,7 +16851,7 @@ shared	CanFire__9GCP_StateP16GiantClankPlayer	CanFire__9GCP_StateP16GiantClankPl
 shared	Enter__13GCP_IdleStateP16GiantClankPlayer	Enter__13GCP_IdleStateP16GiantClankPlayer	function	264	2	0	2	LEVEL5.REL:0x1D0618	
 shared	Update__13GCP_IdleStateP16GiantClankPlayer	Update__13GCP_IdleStateP16GiantClankPlayer	function	644	2	0	2	LEVEL5.REL:0x1D0720	
 shared	CanFire__13GCP_IdleStateP16GiantClankPlayer	CanFire__13GCP_IdleStateP16GiantClankPlayer	function	8	2	2	2	LEVEL5.REL:0x1D09A8	src/levels/shared/CanFire__13GCP_IdleStateP16GiantClankPlayer.c
-shared	Enter__13GCP_WalkStateP16GiantClankPlayer	Enter__13GCP_WalkStateP16GiantClankPlayer	function	16	2	0	2	LEVEL5.REL:0x1D09B0	
+shared	Enter__13GCP_WalkStateP16GiantClankPlayer	Enter__13GCP_WalkStateP16GiantClankPlayer	function	16	2	2	2	LEVEL5.REL:0x1D09B0	src/levels/shared/Enter__13GCP_WalkStateP16GiantClankPlayer.c
 shared	Update__13GCP_WalkStateP16GiantClankPlayer	Update__13GCP_WalkStateP16GiantClankPlayer	function	400	2	0	2	LEVEL5.REL:0x1D09C0	
 shared	PostMotionUpdate__13GCP_WalkStateP16GiantClankPlayer	PostMotionUpdate__13GCP_WalkStateP16GiantClankPlayer	function	736	2	0	2	LEVEL5.REL:0x1D0B50	
 shared	CanFire__13GCP_WalkStateP16GiantClankPlayer	CanFire__13GCP_WalkStateP16GiantClankPlayer	function	8	2	2	2	LEVEL5.REL:0x1D0E30	src/levels/shared/CanFire__13GCP_WalkStateP16GiantClankPlayer.c
@@ -25269,7 +25269,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 31_treehouse	FoamMissile_Init__FP4Moby	FoamMissile_Init__FP4Moby	function	8	1	1	1	LEVEL31.REL:0x0D5048	src/levels/31_treehouse/FoamMissile_Init__FP4Moby.c
 31_treehouse	FoamMissile_Term__FP4Moby	FoamMissile_Term__FP4Moby	function	8	1	1	1	LEVEL31.REL:0x0D5050	src/levels/31_treehouse/FoamMissile_Term__FP4Moby.c
 31_treehouse	FoamMissile_Update__FP4Mobyf	FoamMissile_Update__FP4Mobyf	function	484	1	0	1	LEVEL31.REL:0x0D5058	
-31_treehouse	FoamMissile_Launch__FP4Moby_L31	FoamMissile_Launch__FP4Moby	function	16	1	0	1	LEVEL31.REL:0x0D5240	
+31_treehouse	FoamMissile_Launch__FP4Moby_L31	FoamMissile_Launch__FP4Moby	function	16	1	1	1	LEVEL31.REL:0x0D5240	src/levels/31_treehouse/FoamMissile_Launch__FP4Moby_L31.c
 31_treehouse	FoamMissileLauncher_Init__FP4Moby	FoamMissileLauncher_Init__FP4Moby	function	112	1	0	1	LEVEL31.REL:0x0D5250	
 31_treehouse	FoamMissileLauncher_Term__FP4Moby	FoamMissileLauncher_Term__FP4Moby	function	96	1	0	1	LEVEL31.REL:0x0D52C0	
 31_treehouse	FoamMissileLauncher_Update__FP4Mobyf	FoamMissileLauncher_Update__FP4Mobyf	function	536	1	0	1	LEVEL31.REL:0x0D5320	
