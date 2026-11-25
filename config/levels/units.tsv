@@ -5329,12 +5329,12 @@ shared	GetNearZClip__C19AglRenderTargetBase	GetNearZClip__C19AglRenderTargetBase
 shared	GetFarZClip__C19AglRenderTargetBase	GetFarZClip__C19AglRenderTargetBase	function	8	31	0	31	FE.REL:0x0E4CA0	
 shared	GetAspectRatio__C19AglRenderTargetBase	GetAspectRatio__C19AglRenderTargetBase	function	8	31	0	31	FE.REL:0x0E4CA8	
 shared	GetViewport__C19AglRenderTargetBase	GetViewport__C19AglRenderTargetBase	function	8	31	31	31	FE.REL:0x0E4CB0	src/levels/shared/GetViewport__C19AglRenderTargetBase.c
-shared	GetScissor__C19AglRenderTargetBase	GetScissor__C19AglRenderTargetBase	function	8	31	0	31	FE.REL:0x0E4CB8	
+shared	GetScissor__C19AglRenderTargetBase	GetScissor__C19AglRenderTargetBase	function	8	31	31	31	FE.REL:0x0E4CB8	src/levels/shared/GetScissor__C19AglRenderTargetBase.c
 shared	GetFog__19AglRenderTargetBaseUc	GetFog__19AglRenderTargetBaseUc	function	20	31	0	31	FE.REL:0x0E4CC0	
-shared	GetFrustum__C19AglRenderTargetBase	GetFrustum__C19AglRenderTargetBase	function	8	31	0	31	FE.REL:0x0E4CD8	
+shared	GetFrustum__C19AglRenderTargetBase	GetFrustum__C19AglRenderTargetBase	function	8	31	31	31	FE.REL:0x0E4CD8	src/levels/shared/GetFrustum__C19AglRenderTargetBase.c
 shared	GetWorldToCameraMtx__C19AglRenderTargetBase	GetWorldToCameraMtx__C19AglRenderTargetBase	function	8	31	0	31	FE.REL:0x0E4CE0	
 shared	GetCameraToWorldMtx__C19AglRenderTargetBase	GetCameraToWorldMtx__C19AglRenderTargetBase	function	8	31	0	31	FE.REL:0x0E4CE8	
-shared	GetCameraPos__C19AglRenderTargetBase	GetCameraPos__C19AglRenderTargetBase	function	8	31	0	31	FE.REL:0x0E4CF0	
+shared	GetCameraPos__C19AglRenderTargetBase	GetCameraPos__C19AglRenderTargetBase	function	8	31	31	31	FE.REL:0x0E4CF0	src/levels/shared/GetCameraPos__C19AglRenderTargetBase.c
 shared	GetWorldToProjMtx__C19AglRenderTargetBase	GetWorldToProjMtx__C19AglRenderTargetBase	function	8	31	0	31	FE.REL:0x0E4CF8	
 shared	GetProjMtx__C19AglRenderTargetBase	GetProjMtx__C19AglRenderTargetBase	function	8	31	0	31	FE.REL:0x0E4D00	
 shared	GetBloom__19AglRenderTargetBase	GetBloom__19AglRenderTargetBase	function	12	31	0	31	FE.REL:0x0E4D08	
@@ -5584,7 +5584,7 @@ shared	GetParentPartID__21ApePointMassBoneJoint	GetParentPartID__21ApePointMassB
 shared	__13ApeAnimIKNodeP11ApeInstance	__13ApeAnimIKNodeP11ApeInstance	function	192	31	0	31	FE.REL:0x0E95E8	
 shared	_$_13ApeAnimIKNode	_$_13ApeAnimIKNode	function	88	31	0	31	FE.REL:0x0E96A8	
 shared	SetInstance__13ApeAnimIKNodeP11ApeInstance	SetInstance__13ApeAnimIKNodeP11ApeInstance	function	8	31	0	31	FE.REL:0x0E9700	
-shared	GetInstance__13ApeAnimIKNode	GetInstance__13ApeAnimIKNode	function	8	31	0	31	FE.REL:0x0E9708	
+shared	GetInstance__13ApeAnimIKNode	GetInstance__13ApeAnimIKNode	function	8	31	31	31	FE.REL:0x0E9708	src/levels/shared/GetInstance__13ApeAnimIKNode.c
 shared	IsLeaf__13ApeAnimIKNode	IsLeaf__13ApeAnimIKNode	function	8	31	31	31	FE.REL:0x0E9710	src/levels/shared/IsLeaf__13ApeAnimIKNode.c
 shared	IsDeleteable__13ApeAnimIKNode	IsDeleteable__13ApeAnimIKNode	function	8	31	31	31	FE.REL:0x0E9718	src/levels/shared/IsDeleteable__13ApeAnimIKNode.c
 shared	GetNodeName__C13ApeAnimIKNode	GetNodeName__C13ApeAnimIKNode	function	12	31	31	31	FE.REL:0x0E9720	src/levels/shared/GetNodeName__C13ApeAnimIKNode.c
@@ -5845,7 +5845,7 @@ shared	GetName__C11ApeIDefBase	GetName__C11ApeIDefBase	function	8	31	31	31	FE.RE
 shared	GetNameHash__C11ApeIDefBase	GetNameHash__C11ApeIDefBase	function	8	31	0	31	FE.REL:0x0EC2E8	
 shared	GetAnimHash__C11ApeIDefBase	GetAnimHash__C11ApeIDefBase	function	8	31	0	31	FE.REL:0x0EC2F0	
 shared	SetAnimHash__11ApeIDefBaseG10ApeHashStr	SetAnimHash__11ApeIDefBaseG10ApeHashStr	function	12	31	0	31	FE.REL:0x0EC2F8	
-shared	GetLightGroup__C11ApeIDefBase	GetLightGroup__C11ApeIDefBase	function	8	31	0	31	FE.REL:0x0EC308	
+shared	GetLightGroup__C11ApeIDefBase	GetLightGroup__C11ApeIDefBase	function	8	31	31	31	FE.REL:0x0EC308	src/levels/shared/GetLightGroup__C11ApeIDefBase.c
 shared	SetLightGroup__11ApeIDefBaseUi	SetLightGroup__11ApeIDefBaseUi	function	8	31	0	31	FE.REL:0x0EC310	
 shared	SetPhysics__11ApeIDefBaseP13ApePhysicsDef	SetPhysics__11ApeIDefBaseP13ApePhysicsDef	function	8	31	0	31	FE.REL:0x0EC318	
 shared	GetPhysics__C11ApeIDefBase	GetPhysics__C11ApeIDefBase	function	8	31	0	31	FE.REL:0x0EC320	
@@ -5865,7 +5865,7 @@ shared	__11ApeLightDef	__11ApeLightDef	function	288	31	0	31	FE.REL:0x0EC690
 shared	GetType__C11ApeLightDef	GetType__C11ApeLightDef	function	8	31	31	31	FE.REL:0x0EC7B0	src/levels/shared/GetType__C11ApeLightDef.c
 shared	SetColor__11ApeLightDefRC5AVec3	SetColor__11ApeLightDefRC5AVec3	function	12	31	0	31	FE.REL:0x0EC7B8	
 shared	SetColor__11ApeLightDefRC7ApeRGBA	SetColor__11ApeLightDefRC7ApeRGBA	function	92	31	0	31	FE.REL:0x0EC7C8	
-shared	GetColor__C11ApeLightDef	GetColor__C11ApeLightDef	function	8	31	0	31	FE.REL:0x0EC828	
+shared	GetColor__C11ApeLightDef	GetColor__C11ApeLightDef	function	8	31	31	31	FE.REL:0x0EC828	src/levels/shared/GetColor__C11ApeLightDef.c
 shared	SetIntensity__11ApeLightDeff	SetIntensity__11ApeLightDeff	function	20	31	0	31	FE.REL:0x0EC830	
 shared	GetIntensity__C11ApeLightDef	GetIntensity__C11ApeLightDef	function	12	31	0	31	FE.REL:0x0EC848	
 shared	GetClampedIntensity__C11ApeLightDef	GetClampedIntensity__C11ApeLightDef	function	20	31	0	31	FE.REL:0x0EC858	
@@ -22128,7 +22128,7 @@ shared	func_L21_18F838	func_L21_18F838	function	8	2	2	2	LEVEL21.REL:0x18F838	src
 21_shower	__10SoapSplash	__10SoapSplash	function	32	1	0	1	LEVEL21.REL:0x25AA10	
 21_shower	Active__10SoapSplash	Active__10SoapSplash	function	12	1	0	1	LEVEL21.REL:0x25AA30	
 21_shower	__9CensorBar	__9CensorBar	function	32	1	0	1	LEVEL21.REL:0x25AA40	
-21_shower	GetEnemyStateMachine__19Arena4CameraContent	GetEnemyStateMachine__19Arena4CameraContent	function	8	1	0	1	LEVEL21.REL:0x25B368	
+21_shower	GetEnemyStateMachine__19Arena4CameraContent	GetEnemyStateMachine__19Arena4CameraContent	function	8	1	1	1	LEVEL21.REL:0x25B368	src/levels/21_shower/GetEnemyStateMachine__19Arena4CameraContent.c
 21_shower	SetCollisionFilter__19Arena4CameraContentii	SetCollisionFilter__19Arena4CameraContentii	function	8	1	1	1	LEVEL21.REL:0x25B370	src/levels/21_shower/SetCollisionFilter__19Arena4CameraContentii.c
 21_shower	Init__13CensorBarType	Init__13CensorBarType	function	152	1	0	1	LEVEL21.REL:0x25B600	
 21_shower	Update__13CensorBarType	Update__13CensorBarType	function	8	1	1	1	LEVEL21.REL:0x25B698	src/levels/21_shower/Update__13CensorBarType.c
@@ -23759,7 +23759,7 @@ shared	TieSlider_Update__FP4Mobyf	TieSlider_Update__FP4Mobyf	function	632	2	0	2	
 25_escapeyard	Update__11A5GuardIdlef	Update__11A5GuardIdlef	function	220	1	0	1	LEVEL25.REL:0x266DF8	
 25_escapeyard	CanActivate__12A5GuardChase	CanActivate__12A5GuardChase	function	168	1	0	1	LEVEL25.REL:0x266ED8	
 25_escapeyard	Update__12A5GuardChasef	Update__12A5GuardChasef	function	644	1	0	1	LEVEL25.REL:0x266F80	
-25_escapeyard	GetArenaStateMachine__18Arena5GuardContent	GetArenaStateMachine__18Arena5GuardContent	function	8	1	0	1	LEVEL25.REL:0x267208	
+25_escapeyard	GetArenaStateMachine__18Arena5GuardContent	GetArenaStateMachine__18Arena5GuardContent	function	8	1	1	1	LEVEL25.REL:0x267208	src/levels/25_escapeyard/GetArenaStateMachine__18Arena5GuardContent.c
 25_escapeyard	SetCollisionFilter__18Arena5GuardContentii	SetCollisionFilter__18Arena5GuardContentii	function	28	1	0	1	LEVEL25.REL:0x267210	
 25_escapeyard	KickoffMoby__18Arena5GuardContentP4MobyN21Pv	KickoffMoby__18Arena5GuardContentP4MobyN21Pv	function	8	1	1	1	LEVEL25.REL:0x267230	src/levels/25_escapeyard/KickoffMoby__18Arena5GuardContentP4MobyN21Pv.c
 25_escapeyard	IsSwarmer__18Arena5GuardContent	IsSwarmer__18Arena5GuardContent	function	8	1	1	1	LEVEL25.REL:0x267238	src/levels/25_escapeyard/IsSwarmer__18Arena5GuardContent.c
