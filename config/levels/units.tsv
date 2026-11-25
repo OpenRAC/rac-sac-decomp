@@ -1004,7 +1004,7 @@ frontend	func_FE_025DA8	func_FE_025DA8	function	2708	1	0	1	FE.REL:0x025DA8
 shared	ResetSaveSlot__14MemCardManager	ResetSaveSlot__14MemCardManager	function	104	31	0	31	FE.REL:0x026840	
 shared	SetTaskError__14MemCardManagerPCciiii	SetTaskError__14MemCardManagerPCciiii	function	28	31	0	31	FE.REL:0x0268A8	
 shared	SetLogicsError__14MemCardManagerPCc	SetLogicsError__14MemCardManagerPCc	function	12	31	31	31	FE.REL:0x0268C8	src/levels/shared/SetLogicsError__14MemCardManagerPCc.c
-shared	SetJobError__14MemCardManagerPCc	SetJobError__14MemCardManagerPCc	function	12	31	0	31	FE.REL:0x0268D8	
+shared	SetJobError__14MemCardManagerPCc	SetJobError__14MemCardManagerPCc	function	12	31	31	31	FE.REL:0x0268D8	src/levels/shared/SetJobError__14MemCardManagerPCc.c
 shared	AsciiString2Sjis__14MemCardManagerPCcPUs	AsciiString2Sjis__14MemCardManagerPCcPUs	function	152	31	0	31	FE.REL:0x0268E8	
 shared	Ascii2Sjis__14MemCardManagerUc	Ascii2Sjis__14MemCardManagerUc	function	268	31	0	31	FE.REL:0x026980	
 shared	GetSaveLevelTextureName__14MemCardManageri	GetSaveLevelTextureName__14MemCardManageri	function	48	31	0	31	FE.REL:0x026A90	
@@ -4739,7 +4739,7 @@ shared	GetKey__19ApeAnimChannelFloat	GetKey__19ApeAnimChannelFloat	function	8	31
 shared	WeightedAverageFinalize__19ApeAnimChannelFloatPff	WeightedAverageFinalize__19ApeAnimChannelFloatPff	function	48	31	0	31	FE.REL:0x0DA130	
 shared	WeightedAverageAccumulate__19ApeAnimChannelFloatPff	WeightedAverageAccumulate__19ApeAnimChannelFloatPff	function	24	31	0	31	FE.REL:0x0DA160	
 shared	WeightedAverageInitialize__19ApeAnimChannelFloatPf	WeightedAverageInitialize__19ApeAnimChannelFloatPf	function	8	31	31	31	FE.REL:0x0DA178	src/levels/shared/WeightedAverageInitialize__19ApeAnimChannelFloatPf.c
-shared	AdditiveFinalize__19ApeAnimChannelFloatPf	AdditiveFinalize__19ApeAnimChannelFloatPf	function	12	31	0	31	FE.REL:0x0DA180	
+shared	AdditiveFinalize__19ApeAnimChannelFloatPf	AdditiveFinalize__19ApeAnimChannelFloatPf	function	12	31	31	31	FE.REL:0x0DA180	src/levels/shared/AdditiveFinalize__19ApeAnimChannelFloatPf.c
 shared	AdditiveAccumulate__19ApeAnimChannelFloatPff	AdditiveAccumulate__19ApeAnimChannelFloatPff	function	8	31	31	31	FE.REL:0x0DA190	src/levels/shared/AdditiveAccumulate__19ApeAnimChannelFloatPff.c
 shared	AdditiveInitialize__19ApeAnimChannelFloatPf	AdditiveInitialize__19ApeAnimChannelFloatPf	function	8	31	31	31	FE.REL:0x0DA198	src/levels/shared/AdditiveInitialize__19ApeAnimChannelFloatPf.c
 shared	Free__19ApeAnimChannelFloat	Free__19ApeAnimChannelFloat	function	192	31	0	31	FE.REL:0x0DA1A0	
@@ -5298,7 +5298,7 @@ shared	SetBackgroundColor__19AglPostProcMaskBaseRC7ApeRGBA	SetBackgroundColor__1
 shared	SetBlendMode__19AglPostProcMaskBase12AgxBlendModeT1	SetBlendMode__19AglPostProcMaskBase12AgxBlendModeT1	function	12	31	31	31	FE.REL:0x0E4930	src/levels/shared/SetBlendMode__19AglPostProcMaskBase12AgxBlendModeT1.c
 shared	_$_15AglPostProcMask	_$_15AglPostProcMask	function	28	31	31	31	FE.REL:0x0E4940	src/levels/shared/_$_15AglPostProcMask.c
 shared	Process__15AglPostProcMask	Process__15AglPostProcMask	function	8	31	31	31	FE.REL:0x0E4960	src/levels/shared/Process__15AglPostProcMask.c
-shared	Stop__25AglPostProcScreenWarpBase	Stop__25AglPostProcScreenWarpBase	function	12	31	0	31	FE.REL:0x0E4968	
+shared	Stop__25AglPostProcScreenWarpBase	Stop__25AglPostProcScreenWarpBase	function	12	31	31	31	FE.REL:0x0E4968	src/levels/shared/Stop__25AglPostProcScreenWarpBase.c
 shared	Resume__25AglPostProcScreenWarpBase	Resume__25AglPostProcScreenWarpBase	function	8	31	31	31	FE.REL:0x0E4978	src/levels/shared/Resume__25AglPostProcScreenWarpBase.c
 shared	GetPause__C25AglPostProcScreenWarpBase	GetPause__C25AglPostProcScreenWarpBase	function	8	31	31	31	FE.REL:0x0E4980	src/levels/shared/GetPause__C25AglPostProcScreenWarpBase.c
 shared	UseIndirectTexturing__25AglPostProcScreenWarpBaseb	UseIndirectTexturing__25AglPostProcScreenWarpBaseb	function	8	31	31	31	FE.REL:0x0E4988	src/levels/shared/UseIndirectTexturing__25AglPostProcScreenWarpBaseb.c
@@ -6919,7 +6919,7 @@ shared	Arena_GetChallenge__FUiUi	Arena_GetChallenge__FUiUi	function	68	30	0	30	L
 shared	func_L01_0402C8	func_L01_0402C8	function	104	30	0	30	LEVEL1.REL:0x0402C8	
 shared	func_L01_040330	func_L01_040330	function	308	30	0	30	LEVEL1.REL:0x040330	
 shared	Arena_WinChallenge__FP4Moby	Arena_WinChallenge__FP4Moby	function	12	30	30	30	LEVEL1.REL:0x040468	src/levels/shared/Arena_WinChallenge__FP4Moby.c
-shared	Arena_FailChallenge__FP4Moby	Arena_FailChallenge__FP4Moby	function	12	30	0	30	LEVEL1.REL:0x040478	
+shared	Arena_FailChallenge__FP4Moby	Arena_FailChallenge__FP4Moby	function	12	30	30	30	LEVEL1.REL:0x040478	src/levels/shared/Arena_FailChallenge__FP4Moby.c
 shared	Arena_IncrementEnemyKilledByRatchetCounterGlobalForThisChallenge__Fv	Arena_IncrementEnemyKilledByRatchetCounterGlobalForThisChallenge__Fv	function	20	30	0	30	LEVEL1.REL:0x040488	
 shared	Arena_GetEnemyKilledByRatchetCounterGlobalForThisChallenge__Fv	Arena_GetEnemyKilledByRatchetCounterGlobalForThisChallenge__Fv	function	12	30	30	30	LEVEL1.REL:0x0404A0	src/levels/shared/Arena_GetEnemyKilledByRatchetCounterGlobalForThisChallenge__Fv.c
 shared	Arena_IncrementAmountOfBaconedUpSausageAndButteredUpBaconRatchetHasFattenedHisAssWithThisRound__Fv	Arena_IncrementAmountOfBaconedUpSausageAndButteredUpBaconRatchetHasFattenedHisAssWithThisRound__Fv	function	20	30	0	30	LEVEL1.REL:0x0404B0	
@@ -7042,7 +7042,7 @@ shared	ANIM_CreateInstance__FPC19GDE_AnimationHeaderUiPP16GDE_SkeletonInfoP13ANI
 shared	ANIM_SetInstanceAnimation__FP13GDE_AnimationP13ANIM_Instance	ANIM_SetInstanceAnimation__FP13GDE_AnimationP13ANIM_Instance	function	8	30	30	30	LEVEL1.REL:0x04A258	src/levels/shared/ANIM_SetInstanceAnimation__FP13GDE_AnimationP13ANIM_Instance.c
 shared	ANIM_SnapTo__FP10ANIM_MixerP13ANIM_Instancef	ANIM_SnapTo__FP10ANIM_MixerP13ANIM_Instancef	function	88	30	0	30	LEVEL1.REL:0x04A260	
 shared	ANIM_SetAutoBlend__FP14ANIM_BlendInfobf	ANIM_SetAutoBlend__FP14ANIM_BlendInfobf	function	8	30	30	30	LEVEL1.REL:0x04A2B8	src/levels/shared/ANIM_SetAutoBlend__FP14ANIM_BlendInfobf.c
-shared	ANIM_ResetCursorCache__FP13ANIM_Instance	ANIM_ResetCursorCache__FP13ANIM_Instance	function	12	30	0	30	LEVEL1.REL:0x04A2C0	
+shared	ANIM_ResetCursorCache__FP13ANIM_Instance	ANIM_ResetCursorCache__FP13ANIM_Instance	function	12	30	30	30	LEVEL1.REL:0x04A2C0	src/levels/shared/ANIM_ResetCursorCache__FP13ANIM_Instance.c
 shared	ANIM_Animate__FP13ANIM_InstanceT0iib	ANIM_Animate__FP13ANIM_InstanceT0iib	function	8	30	30	30	LEVEL1.REL:0x04A2D0	src/levels/shared/ANIM_Animate__FP13ANIM_InstanceT0iib.c
 shared	ANIM_AdvanceTime__FP13ANIM_Instancef	ANIM_AdvanceTime__FP13ANIM_Instancef	function	8	30	30	30	LEVEL1.REL:0x04A2D8	src/levels/shared/ANIM_AdvanceTime__FP13ANIM_Instancef.c
 shared	ANIM_EventSeek__FP13ANIM_Instance	ANIM_EventSeek__FP13ANIM_Instance	function	8	30	30	30	LEVEL1.REL:0x04A2E0	src/levels/shared/ANIM_EventSeek__FP13ANIM_Instance.c
@@ -12549,7 +12549,7 @@ shared	GetDesiredState__11MissionFail	GetDesiredState__11MissionFail	function	8	
 shared	CanActivate__18ClankSuperKickFall	CanActivate__18ClankSuperKickFall	function	8	14	14	14	LEVEL1.REL:0x2380E0	src/levels/shared/CanActivate__18ClankSuperKickFall.c
 shared	CanActivate__11ClankLaunch	CanActivate__11ClankLaunch	function	8	14	14	14	LEVEL1.REL:0x2380E8	src/levels/shared/CanActivate__11ClankLaunch.c
 shared	Setup__10ClankDrown	Setup__10ClankDrown	function	8	14	0	14	LEVEL1.REL:0x2380F0	
-shared	Drowning__10ClankDrown	Drowning__10ClankDrown	function	12	14	0	14	LEVEL1.REL:0x2380F8	
+shared	Drowning__10ClankDrown	Drowning__10ClankDrown	function	12	14	14	14	LEVEL1.REL:0x2380F8	src/levels/shared/Drowning__10ClankDrown.c
 shared	CanActivate__11ClankBounce	CanActivate__11ClankBounce	function	8	14	14	14	LEVEL1.REL:0x238108	src/levels/shared/CanActivate__11ClankBounce.c
 shared	Begin__23KnucklePunchBodyControl	Begin__23KnucklePunchBodyControl	function	8	14	14	14	LEVEL1.REL:0x238110	src/levels/shared/Begin__23KnucklePunchBodyControl.c
 shared	CanActivate__23KnucklePunchBodyControl	CanActivate__23KnucklePunchBodyControl	function	8	14	14	14	LEVEL1.REL:0x238118	src/levels/shared/CanActivate__23KnucklePunchBodyControl.c
@@ -16291,7 +16291,7 @@ shared	RatchetShipExhaust_RegisterParticleSystem__Fi10DRAW_Layer17DRAW_ColorKeyM
 04_skyscrapers	SetParent__12ChuuninCloneP12ChuuninClone	SetParent__12ChuuninCloneP12ChuuninClone	function	8	1	1	1	LEVEL4.REL:0x255D08	src/levels/04_skyscrapers/SetParent__12ChuuninCloneP12ChuuninClone.c
 04_skyscrapers	GetChildren__12ChuuninClone	GetChildren__12ChuuninClone	function	8	1	1	1	LEVEL4.REL:0x255D10	src/levels/04_skyscrapers/GetChildren__12ChuuninClone.c
 04_skyscrapers	HasChildren__12ChuuninClone	HasChildren__12ChuuninClone	function	48	1	0	1	LEVEL4.REL:0x255D18	
-04_skyscrapers	ResetSpawns__12ChuuninClone	ResetSpawns__12ChuuninClone	function	12	1	0	1	LEVEL4.REL:0x255D48	
+04_skyscrapers	ResetSpawns__12ChuuninClone	ResetSpawns__12ChuuninClone	function	12	1	1	1	LEVEL4.REL:0x255D48	src/levels/04_skyscrapers/ResetSpawns__12ChuuninClone.c
 04_skyscrapers	ResetChildren__12ChuuninClone	ResetChildren__12ChuuninClone	function	40	1	0	1	LEVEL4.REL:0x255D58	
 04_skyscrapers	CanActivate__12ChuuninEnter	CanActivate__12ChuuninEnter	function	8	1	1	1	LEVEL4.REL:0x255D80	src/levels/04_skyscrapers/CanActivate__12ChuuninEnter.c
 04_skyscrapers	GetTransientDataSize__12ChuuninEnter	GetTransientDataSize__12ChuuninEnter	function	8	1	1	1	LEVEL4.REL:0x255D88	src/levels/04_skyscrapers/GetTransientDataSize__12ChuuninEnter.c
@@ -20191,7 +20191,7 @@ shared	BladeSlingerShot_InitType__FP8MobyType	BladeSlingerShot_InitType__FP8Moby
 shared	BladeSlingerShot_DrawBullet__FP4Moby	BladeSlingerShot_DrawBullet__FP4Moby	function	712	2	0	2	LEVEL16.REL:0x0C3208	
 shared	BoltThief_ModAccuracy__FP4MobyUib_L16	BoltThief_ModAccuracy__FP4MobyUib	function	48	3	0	3	LEVEL16.REL:0x0C7748	
 shared	BoltThief_GiveMeBolts__FP4MobyUi_L16	BoltThief_GiveMeBolts__FP4MobyUi	function	20	3	0	3	LEVEL16.REL:0x0C7778	
-shared	BoltThief_NoMoreHoover__FP4Moby_L16	BoltThief_NoMoreHoover__FP4Moby	function	12	3	0	3	LEVEL16.REL:0x0C7790	
+shared	BoltThief_NoMoreHoover__FP4Moby_L16	BoltThief_NoMoreHoover__FP4Moby	function	12	3	3	3	LEVEL16.REL:0x0C7790	src/levels/shared/BoltThief_NoMoreHoover__FP4Moby_L16.c
 shared	BoltThief_SetSuspicionPoint__FP4MobyPC4VEC3_L16	BoltThief_SetSuspicionPoint__FP4MobyPC4VEC3	function	52	3	0	3	LEVEL16.REL:0x0C77A0	
 shared	BoltThief_StartFall__FP4Moby_L16	BoltThief_StartFall__FP4Moby	function	32	3	0	3	LEVEL16.REL:0x0C77D8	
 shared	BoltThief_NoAlert__FP4Mobyb_L16	BoltThief_NoAlert__FP4Mobyb	function	12	3	3	3	LEVEL16.REL:0x0C77F8	src/levels/shared/BoltThief_NoAlert__FP4Mobyb_L16.c
@@ -21736,7 +21736,7 @@ shared	CanBeEaten__C25StaticMidge_CapturedClank	CanBeEaten__C25StaticMidge_Captu
 shared	CanBeHypnotized__C25StaticMidge_CapturedClank	CanBeHypnotized__C25StaticMidge_CapturedClank	function	8	2	2	2	LEVEL19.REL:0x245308	src/levels/shared/CanBeHypnotized__C25StaticMidge_CapturedClank.c
 shared	GetDesiredState__18StaticMidge_Patrol	GetDesiredState__18StaticMidge_Patrol	function	28	2	0	2	LEVEL19.REL:0x245310	
 shared	Init__17StaticMidge_StompPC16BasicChaseConfigP8NavigateP14AlertStateDataPCfUi	Init__17StaticMidge_StompPC16BasicChaseConfigP8NavigateP14AlertStateDataPCfUi	function	52	2	0	2	LEVEL19.REL:0x245330	
-shared	NoWhistle__19StaticMidge_Whistle	NoWhistle__19StaticMidge_Whistle	function	12	2	0	2	LEVEL19.REL:0x245368	
+shared	NoWhistle__19StaticMidge_Whistle	NoWhistle__19StaticMidge_Whistle	function	12	2	2	2	LEVEL19.REL:0x245368	src/levels/shared/NoWhistle__19StaticMidge_Whistle.c
 shared	CanActivate__22StaticMidge_Suspicious	CanActivate__22StaticMidge_Suspicious	function	24	2	0	2	LEVEL19.REL:0x245378	
 shared	GetTransientDataSize__26StaticMidge_FallIntoCombat	GetTransientDataSize__26StaticMidge_FallIntoCombat	function	8	2	2	2	LEVEL19.REL:0x245390	src/levels/shared/GetTransientDataSize__26StaticMidge_FallIntoCombat.c
 shared	CanActivate__26StaticMidge_FallIntoCombat	CanActivate__26StaticMidge_FallIntoCombat	function	8	2	2	2	LEVEL19.REL:0x245398	src/levels/shared/CanActivate__26StaticMidge_FallIntoCombat.c
@@ -21992,7 +21992,7 @@ shared	CanActivate__8GBM_Idle	CanActivate__8GBM_Idle	function	8	2	2	2	LEVEL20.RE
 21_shower	Arena4Drain_DrownMobys__FP4Moby	Arena4Drain_DrownMobys__FP4Moby	function	404	1	0	1	LEVEL21.REL:0x0BE278	
 21_shower	Arena4Drain_IsMobyCaught__FP4MobyT0_L21	Arena4Drain_IsMobyCaught__FP4MobyT0	function	64	1	0	1	LEVEL21.REL:0x0BE410	
 21_shower	Arena4Drain_Open__FP4Moby_L21	Arena4Drain_Open__FP4Moby	function	8	1	1	1	LEVEL21.REL:0x0BE450	src/levels/21_shower/Arena4Drain_Open__FP4Moby_L21.c
-21_shower	Arena4Drain_Close__FP4Moby_L21	Arena4Drain_Close__FP4Moby	function	12	1	0	1	LEVEL21.REL:0x0BE458	
+21_shower	Arena4Drain_Close__FP4Moby_L21	Arena4Drain_Close__FP4Moby	function	12	1	1	1	LEVEL21.REL:0x0BE458	src/levels/21_shower/Arena4Drain_Close__FP4Moby_L21.c
 21_shower	Arena4Dryer_Init__FP4Moby	Arena4Dryer_Init__FP4Moby	function	180	1	0	1	LEVEL21.REL:0x0BE468	
 21_shower	Arena4Dryer_Term__FP4Moby	Arena4Dryer_Term__FP4Moby	function	8	1	1	1	LEVEL21.REL:0x0BE520	src/levels/21_shower/Arena4Dryer_Term__FP4Moby.c
 21_shower	Arena4Dryer_Update__FP4Mobyf	Arena4Dryer_Update__FP4Mobyf	function	160	1	0	1	LEVEL21.REL:0x0BE528	
@@ -24457,7 +24457,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 29_base	ButtonWallMounted_Term__FP4Moby	ButtonWallMounted_Term__FP4Moby	function	92	1	1	1	LEVEL29.REL:0x0C6F58	src/levels/29_base/ButtonWallMounted_Term__FP4Moby.c
 29_base	ButtonWallMounted_Update__FP4Mobyf	ButtonWallMounted_Update__FP4Mobyf	function	868	1	0	1	LEVEL29.REL:0x0C6FB8	
 29_base	ButtonWallMounted_WasPressed__FP4Moby	ButtonWallMounted_WasPressed__FP4Moby	function	20	1	0	1	LEVEL29.REL:0x0C7320	
-29_base	ButtonWallMounted_SetHandled__FP4Moby	ButtonWallMounted_SetHandled__FP4Moby	function	12	1	0	1	LEVEL29.REL:0x0C7338	
+29_base	ButtonWallMounted_SetHandled__FP4Moby	ButtonWallMounted_SetHandled__FP4Moby	function	12	1	1	1	LEVEL29.REL:0x0C7338	src/levels/29_base/ButtonWallMounted_SetHandled__FP4Moby.c
 29_base	ButtonWallMounted_SetButtonPressCutSceneParams__FP4MobyPC4VEC3fff	ButtonWallMounted_SetButtonPressCutSceneParams__FP4MobyPC4VEC3fff	function	64	1	0	1	LEVEL29.REL:0x0C7348	
 29_base	ButtonWallMounted_Reset__FP4Moby	ButtonWallMounted_Reset__FP4Moby	function	28	1	0	1	LEVEL29.REL:0x0C7388	
 29_base	ButtonWallMounted_FixLinks__FP4Moby	ButtonWallMounted_FixLinks__FP4Moby	function	52	1	0	1	LEVEL29.REL:0x0C73A8	
@@ -24875,7 +24875,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	FlameWall_Move__FP4Mobyb	FlameWall_Move__FP4Mobyb	function	364	1	0	1	LEVEL30.REL:0x0D8B88	
 30_boss	Klunk_UpdateCamera__FP4Moby	Klunk_UpdateCamera__FP4Moby	function	180	1	0	1	LEVEL30.REL:0x0DFD08	
 30_boss	Klunk_Init__FP4Moby	Klunk_Init__FP4Moby	function	880	1	0	1	LEVEL30.REL:0x0DFDC0	
-30_boss	Klunk_NotifySuitChange__FP4Moby_L30	Klunk_NotifySuitChange__FP4Moby	function	12	1	0	1	LEVEL30.REL:0x0E0130	
+30_boss	Klunk_NotifySuitChange__FP4Moby_L30	Klunk_NotifySuitChange__FP4Moby	function	12	1	1	1	LEVEL30.REL:0x0E0130	src/levels/30_boss/Klunk_NotifySuitChange__FP4Moby_L30.c
 30_boss	Klunk_NotifySuitDefeated__FP4Moby_L30	Klunk_NotifySuitDefeated__FP4Moby	function	12	1	1	1	LEVEL30.REL:0x0E0140	src/levels/30_boss/Klunk_NotifySuitDefeated__FP4Moby_L30.c
 30_boss	Klunk_GetCurrentHPPercent__FP4Moby_L30	Klunk_GetCurrentHPPercent__FP4Moby	function	84	1	0	1	LEVEL30.REL:0x0E0150	
 30_boss	Klunk_Term__FP4Moby	Klunk_Term__FP4Moby	function	244	1	0	1	LEVEL30.REL:0x0E01A8	
