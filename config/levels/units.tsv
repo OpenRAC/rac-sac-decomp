@@ -4329,7 +4329,7 @@ shared	scePadSetFlushRate	scePadSetFlushRate	function	48	31	0	31	FE.REL:0x0CA5F8
 shared	sceGifPkInit	sceGifPkInit	function	16	31	31	31	FE.REL:0x0CA628	src/levels/shared/sceGifPkInit.c
 shared	sceGifPkReset	sceGifPkReset	function	16	31	31	31	FE.REL:0x0CA638	src/levels/shared/sceGifPkReset.c
 shared	sceGifPkTerminate	sceGifPkTerminate	function	88	31	0	31	FE.REL:0x0CA648	
-shared	sceGifPkSize	sceGifPkSize	function	20	31	0	31	FE.REL:0x0CA6A0	
+shared	sceGifPkSize	sceGifPkSize	function	20	31	31	31	FE.REL:0x0CA6A0	src/levels/shared/sceGifPkSize.c
 shared	sceGifPkCnt	sceGifPkCnt	function	116	31	0	31	FE.REL:0x0CA6B8	
 shared	sceGifPkEnd	sceGifPkEnd	function	116	31	0	31	FE.REL:0x0CA730	
 shared	sceGifPkOpenGifTag	sceGifPkOpenGifTag	function	24	31	0	31	FE.REL:0x0CA7A8	
@@ -4339,7 +4339,7 @@ shared	sceGifPkAddGsAD	sceGifPkAddGsAD	function	36	31	0	31	FE.REL:0x0CA890
 shared	sceVif1PkInit	sceVif1PkInit	function	16	31	31	31	FE.REL:0x0CA8B8	src/levels/shared/sceVif1PkInit.c
 shared	sceVif1PkReset	sceVif1PkReset	function	16	31	31	31	FE.REL:0x0CA8C8	src/levels/shared/sceVif1PkReset.c
 shared	sceVif1PkTerminate	sceVif1PkTerminate	function	88	31	0	31	FE.REL:0x0CA8D8	
-shared	sceVif1PkSize	sceVif1PkSize	function	20	31	0	31	FE.REL:0x0CA930	
+shared	sceVif1PkSize	sceVif1PkSize	function	20	31	31	31	FE.REL:0x0CA930	src/levels/shared/sceVif1PkSize.c
 shared	sceVif1PkCnt	sceVif1PkCnt	function	88	31	0	31	FE.REL:0x0CA948	
 shared	sceVif1PkRef	sceVif1PkRef	function	152	31	0	31	FE.REL:0x0CA9A0	
 shared	sceVif1PkCall	sceVif1PkCall	function	112	31	0	31	FE.REL:0x0CAA38	
@@ -4640,7 +4640,7 @@ shared	__aml__5AVec3f	__aml__5AVec3f	function	40	31	0	31	FE.REL:0x0D8DA8
 shared	Reset__8ApeLList	Reset__8ApeLList	function	16	31	0	31	FE.REL:0x0D8DD0	
 shared	GetOffset__15ApeFreeListNode	GetOffset__15ApeFreeListNode	function	8	31	31	31	FE.REL:0x0D8DE0	src/levels/shared/GetOffset__15ApeFreeListNode.c
 shared	SetARGB__7ApeRGBAUi	SetARGB__7ApeRGBAUi	function	32	31	0	31	FE.REL:0x0D8DE8	
-shared	Set__7ApeRGBAUcUcUcUc	Set__7ApeRGBAUcUcUcUc	function	20	31	0	31	FE.REL:0x0D8E08	
+shared	Set__7ApeRGBAUcUcUcUc	Set__7ApeRGBAUcUcUcUc	function	20	31	31	31	FE.REL:0x0D8E08	src/levels/shared/Set__7ApeRGBAUcUcUcUc.c
 shared	_$_9TiXmlBase	_$_9TiXmlBase	function	48	31	0	31	FE.REL:0x0D8E20	
 shared	Clear__11TiXmlCursor	Clear__11TiXmlCursor	function	16	31	0	31	FE.REL:0x0D8E50	
 shared	Hash__C9TiXmlNode	Hash__C9TiXmlNode	function	32	31	0	31	FE.REL:0x0D8E60	
@@ -5227,7 +5227,7 @@ shared	PreRenderCB__14AglIRenderList	PreRenderCB__14AglIRenderList	function	28	3
 shared	PostRenderCB__14AglIRenderList	PostRenderCB__14AglIRenderList	function	28	31	0	31	FE.REL:0x0E2A78	
 shared	_$_15AglRenderListUI	_$_15AglRenderListUI	function	96	31	0	31	FE.REL:0x0E2A98	
 shared	__15AglRenderListUIPCc	__15AglRenderListUIPCc	function	112	31	0	31	FE.REL:0x0E2AF8	
-shared	Set__10AglVtxRGBAUcUcUcUc	Set__10AglVtxRGBAUcUcUcUc	function	20	31	0	31	FE.REL:0x0E2B68	
+shared	Set__10AglVtxRGBAUcUcUcUc	Set__10AglVtxRGBAUcUcUcUc	function	20	31	31	31	FE.REL:0x0E2B68	src/levels/shared/Set__10AglVtxRGBAUcUcUcUc.c
 shared	Set__10AglVtxRGBAUi	Set__10AglVtxRGBAUi	function	32	31	0	31	FE.REL:0x0E2B80	
 shared	Set__10AglVtxRGBARC10AglVtxRGBA	Set__10AglVtxRGBARC10AglVtxRGBA	function	36	31	0	31	FE.REL:0x0E2BA0	
 shared	Create__t12ApeTFreeList1Z11AglMaterialUiP12ApeAllocator	Create__t12ApeTFreeList1Z11AglMaterialUiP12ApeAllocator	function	40	31	0	31	FE.REL:0x0E2BC8	
