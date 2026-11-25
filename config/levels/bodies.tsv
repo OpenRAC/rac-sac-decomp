@@ -124225,3 +124225,11 @@ LEVEL22.REL	0x0F8560	20	src/levels/shared/Init__18Lvl07Camera_PatrolPC14Navigate
 LEVEL19.REL	0x0D7E28	20	src/levels/shared/Init__19Doppleganger_PatrolPC12PatrolConfig.c
 LEVEL22.REL	0x0D2A80	20	src/levels/shared/Init__19Doppleganger_PatrolPC12PatrolConfig.c
 LEVEL21.REL	0x0BA160	20	src/levels/21_shower/Init__19Arena4Camera_PatrolPC14NavigateParams.c
+LEVEL3.REL	0x103928	20	src/levels/shared/CanActivate__14Piggy_PlayAnim.c
+LEVEL9.REL	0x104630	20	src/levels/shared/CanActivate__14Piggy_PlayAnim.c
+LEVEL14.REL	0x1069C0	20	src/levels/shared/CanActivate__14Piggy_PlayAnim.c
+LEVEL21.REL	0x0FF688	20	src/levels/shared/CanActivate__14Piggy_PlayAnim.c
+LEVEL25.REL	0x1099A8	20	src/levels/shared/CanActivate__14Piggy_PlayAnim.c
+LEVEL11.REL	0x251BB0	20	src/levels/11_gondola/CanActivate__18ExpatGondola_Death.c
+LEVEL10.REL	0x0F6398	20	src/levels/shared/Lvl04Gondola_IsOnCurve__FP4MobyPC5Curve_L10.c
+LEVEL11.REL	0x0F8DD0	20	src/levels/shared/Lvl04Gondola_IsOnCurve__FP4MobyPC5Curve_L10.c

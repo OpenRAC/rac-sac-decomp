@@ -14115,7 +14115,7 @@ shared	Timestep__12Piggy_Wanderf	Timestep__12Piggy_Wanderf	function	64	5	0	5	LEV
 shared	Begin__12Piggy_Wander	Begin__12Piggy_Wander	function	340	5	0	5	LEVEL3.REL:0x103580	
 shared	Update__12Piggy_Wanderf	Update__12Piggy_Wanderf	function	324	5	0	5	LEVEL3.REL:0x1036D8	
 shared	GoToPoint__12Piggy_WanderP4MobyPC4VEC317PiggyNormalSpeeds	GoToPoint__12Piggy_WanderP4MobyPC4VEC317PiggyNormalSpeeds	function	260	5	0	5	LEVEL3.REL:0x103820	
-shared	CanActivate__14Piggy_PlayAnim	CanActivate__14Piggy_PlayAnim	function	20	5	0	5	LEVEL3.REL:0x103928	
+shared	CanActivate__14Piggy_PlayAnim	CanActivate__14Piggy_PlayAnim	function	20	5	5	5	LEVEL3.REL:0x103928	src/levels/shared/CanActivate__14Piggy_PlayAnim.c
 shared	CanActivate__13Piggy_Explode	CanActivate__13Piggy_Explode	function	320	5	0	5	LEVEL3.REL:0x103940	
 shared	Update__13Piggy_Explodef	Update__13Piggy_Explodef	function	572	5	0	5	LEVEL3.REL:0x103A80	
 shared	CanActivate__12Piggy_Revert	CanActivate__12Piggy_Revert	function	48	5	0	5	LEVEL3.REL:0x103CC0	
@@ -18133,7 +18133,7 @@ shared	LightweightSystem_TypeInit__FP8MobyType	LightweightSystem_TypeInit__FP8Mo
 shared	Lvl04Gondola_Spawn__FPC7MATRIX4_L10	Lvl04Gondola_Spawn__FPC7MATRIX4	function	76	2	0	2	LEVEL10.REL:0x0F5D18	
 shared	Lvl04Gondola_SpawnAutonomous__FP5CurveffbP4MobyUiT3UiP7TriggerfT3T4_L10	Lvl04Gondola_SpawnAutonomous__FP5CurveffbP4MobyUiT3UiP7TriggerfT3T4	function	1564	2	0	2	LEVEL10.REL:0x0F5D68	
 shared	Lvl04Gondola_IsGondolaMoving__FP4Moby_L10	Lvl04Gondola_IsGondolaMoving__FP4Moby	function	12	2	2	2	LEVEL10.REL:0x0F6388	src/levels/shared/Lvl04Gondola_IsGondolaMoving__FP4Moby_L10.c
-shared	Lvl04Gondola_IsOnCurve__FP4MobyPC5Curve_L10	Lvl04Gondola_IsOnCurve__FP4MobyPC5Curve	function	20	2	0	2	LEVEL10.REL:0x0F6398	
+shared	Lvl04Gondola_IsOnCurve__FP4MobyPC5Curve_L10	Lvl04Gondola_IsOnCurve__FP4MobyPC5Curve	function	20	2	2	2	LEVEL10.REL:0x0F6398	src/levels/shared/Lvl04Gondola_IsOnCurve__FP4MobyPC5Curve_L10.c
 shared	Lvl04Gondola_SetTargetSpeed__FP4Mobyf	Lvl04Gondola_SetTargetSpeed__FP4Mobyf	function	12	2	2	2	LEVEL10.REL:0x0F63B0	src/levels/shared/Lvl04Gondola_SetTargetSpeed__FP4Mobyf.c
 shared	Lvl04Gondola_Init__FP4Moby	Lvl04Gondola_Init__FP4Moby	function	708	2	0	2	LEVEL10.REL:0x0F63C0	
 shared	Lvl04Gondola_Term__FP4Moby	Lvl04Gondola_Term__FP4Moby	function	116	2	0	2	LEVEL10.REL:0x0F6688	
@@ -19196,7 +19196,7 @@ shared	ForceAllocateMtx__14DrawObjManagerPP4AMtx_L11	ForceAllocateMtx__14DrawObj
 11_gondola	CanBeHypnotized__C24ExpatGondola_GondolaJump	CanBeHypnotized__C24ExpatGondola_GondolaJump	function	8	1	1	1	LEVEL11.REL:0x251B98	src/levels/11_gondola/CanBeHypnotized__C24ExpatGondola_GondolaJump.c
 11_gondola	RestartJump__24ExpatGondola_GondolaJump	RestartJump__24ExpatGondola_GondolaJump	function	8	1	1	1	LEVEL11.REL:0x251BA0	src/levels/11_gondola/RestartJump__24ExpatGondola_GondolaJump.c
 11_gondola	GetDesiredState__18ExpatGondola_Death	GetDesiredState__18ExpatGondola_Death	function	8	1	1	1	LEVEL11.REL:0x251BA8	src/levels/11_gondola/GetDesiredState__18ExpatGondola_Death.c
-11_gondola	CanActivate__18ExpatGondola_Death	CanActivate__18ExpatGondola_Death	function	20	1	0	1	LEVEL11.REL:0x251BB0	
+11_gondola	CanActivate__18ExpatGondola_Death	CanActivate__18ExpatGondola_Death	function	20	1	1	1	LEVEL11.REL:0x251BB0	src/levels/11_gondola/CanActivate__18ExpatGondola_Death.c
 11_gondola	GetTransientDataSize__18ExpatGondola_Death	GetTransientDataSize__18ExpatGondola_Death	function	8	1	1	1	LEVEL11.REL:0x251BC8	src/levels/11_gondola/GetTransientDataSize__18ExpatGondola_Death.c
 11_gondola	CanBeEaten__C18ExpatGondola_Death	CanBeEaten__C18ExpatGondola_Death	function	8	1	1	1	LEVEL11.REL:0x251BD0	src/levels/11_gondola/CanBeEaten__C18ExpatGondola_Death.c
 11_gondola	CanBeHypnotized__C18ExpatGondola_Death	CanBeHypnotized__C18ExpatGondola_Death	function	8	1	1	1	LEVEL11.REL:0x251BD8	src/levels/11_gondola/CanBeHypnotized__C18ExpatGondola_Death.c
