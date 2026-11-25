@@ -4733,8 +4733,8 @@ shared	Free__t12ApeTFreeList1Z15ApeGeomInstancePv	Free__t12ApeTFreeList1Z15ApeGe
 shared	Printf__6ApeLogPCce	Printf__6ApeLogPCce	function	56	31	0	31	FE.REL:0x0DA058	
 shared	Inst__3Ape	Inst__3Ape	function	84	31	0	31	FE.REL:0x0DA090	
 shared	_$_19ApeAnimChannelFloat	_$_19ApeAnimChannelFloat	function	28	31	31	31	FE.REL:0x0DA0E8	src/levels/shared/_$_19ApeAnimChannelFloat.c
-shared	SetKeyLocal__19ApeAnimChannelFloatPf	SetKeyLocal__19ApeAnimChannelFloatPf	function	12	31	0	31	FE.REL:0x0DA108	
-shared	GetKey__19ApeAnimChannelFloatPf	GetKey__19ApeAnimChannelFloatPf	function	12	31	0	31	FE.REL:0x0DA118	
+shared	SetKeyLocal__19ApeAnimChannelFloatPf	SetKeyLocal__19ApeAnimChannelFloatPf	function	12	31	31	31	FE.REL:0x0DA108	src/levels/shared/SetKeyLocal__19ApeAnimChannelFloatPf.c
+shared	GetKey__19ApeAnimChannelFloatPf	GetKey__19ApeAnimChannelFloatPf	function	12	31	31	31	FE.REL:0x0DA118	src/levels/shared/GetKey__19ApeAnimChannelFloatPf.c
 shared	GetKey__19ApeAnimChannelFloat	GetKey__19ApeAnimChannelFloat	function	8	31	31	31	FE.REL:0x0DA128	src/levels/shared/GetKey__19ApeAnimChannelFloat.c
 shared	WeightedAverageFinalize__19ApeAnimChannelFloatPff	WeightedAverageFinalize__19ApeAnimChannelFloatPff	function	48	31	0	31	FE.REL:0x0DA130	
 shared	WeightedAverageAccumulate__19ApeAnimChannelFloatPff	WeightedAverageAccumulate__19ApeAnimChannelFloatPff	function	24	31	0	31	FE.REL:0x0DA160	
