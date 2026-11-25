@@ -8568,7 +8568,7 @@ shared	CLANK_RegisterInterestingObject__FP5CLANKP4MobyibPC4VEC3	CLANK_RegisterIn
 shared	CLANK_PostUpdate__FP6PLAYER_L01	CLANK_PostUpdate__FP6PLAYER	function	1228	13	0	13	LEVEL1.REL:0x0C12B8	
 shared	CLANK_StateUpdate__FP6PLAYER	CLANK_StateUpdate__FP6PLAYER	function	76	14	0	14	LEVEL1.REL:0x0C1788	
 shared	CLANK_HandleCamera__FP6PLAYER	CLANK_HandleCamera__FP6PLAYER	function	8	14	14	14	LEVEL1.REL:0x0C17D8	src/levels/shared/CLANK_HandleCamera__FP6PLAYER.c
-shared	CLANK_IsOnGround__FP6PLAYER	CLANK_IsOnGround__FP6PLAYER	function	16	14	0	14	LEVEL1.REL:0x0C17E0	
+shared	CLANK_IsOnGround__FP6PLAYER	CLANK_IsOnGround__FP6PLAYER	function	16	14	14	14	LEVEL1.REL:0x0C17E0	src/levels/shared/CLANK_IsOnGround__FP6PLAYER.c
 shared	CLANK_IsDying__FP6PLAYER	CLANK_IsDying__FP6PLAYER	function	64	14	0	14	LEVEL1.REL:0x0C17F0	
 shared	CLANK_CollisionSphere__FP6PLAYERffii	CLANK_CollisionSphere__FP6PLAYERffii	function	692	14	0	14	LEVEL1.REL:0x0C1830	
 shared	CLANK_IsTakingDownEnemy__FPC6PLAYERP4Moby_L01	CLANK_IsTakingDownEnemy__FPC6PLAYERP4Moby	function	92	14	0	14	LEVEL1.REL:0x0C1AE8	
@@ -8722,7 +8722,7 @@ shared	CLANK_UpdateHeadTurn__FP5CLANK	CLANK_UpdateHeadTurn__FP5CLANK	function	10
 shared	CLANK_UpdateControlsNormal_Analog__FP5CLANK	CLANK_UpdateControlsNormal_Analog__FP5CLANK	function	28	14	14	14	LEVEL1.REL:0x0C7FD0	src/levels/shared/CLANK_UpdateControlsNormal_Analog__FP5CLANK.c
 shared	CLANK_AnimEventCB__FP4MobyP13GDE_AnimEvent	CLANK_AnimEventCB__FP4MobyP13GDE_AnimEvent	function	428	14	0	14	LEVEL1.REL:0x0C7FF0	
 shared	CLANK_IsChangingIntoDisguise__FP6PLAYER	CLANK_IsChangingIntoDisguise__FP6PLAYER	function	108	14	0	14	LEVEL1.REL:0x0C81A0	
-shared	CLANK_IsDisguised__FP6PLAYER_L01	CLANK_IsDisguised__FP6PLAYER	function	16	14	0	14	LEVEL1.REL:0x0C8210	
+shared	CLANK_IsDisguised__FP6PLAYER_L01	CLANK_IsDisguised__FP6PLAYER	function	16	14	14	14	LEVEL1.REL:0x0C8210	src/levels/shared/CLANK_IsDisguised__FP6PLAYER_L01.c
 shared	CLANK_MissionFailed__FP5CLANKP4Mobyi	CLANK_MissionFailed__FP5CLANKP4Mobyi	function	248	14	0	14	LEVEL1.REL:0x0C8220	
 shared	CLANK_CatchThrowTie__FP6PLAYER	CLANK_CatchThrowTie__FP6PLAYER	function	64	14	0	14	LEVEL1.REL:0x0C8318	
 shared	CLANK_GetSound__F10ClankSound	CLANK_GetSound__F10ClankSound	function	20	14	0	14	LEVEL1.REL:0x0C8358	
@@ -9225,7 +9225,7 @@ shared	Lvl07CameraBottom_Init__FP4Moby	Lvl07CameraBottom_Init__FP4Moby	function	
 shared	Lvl07CameraBottom_Term__FP4Moby	Lvl07CameraBottom_Term__FP4Moby	function	44	3	3	3	LEVEL1.REL:0x0EF1C0	src/levels/shared/Lvl07CameraBottom_Term__FP4Moby.c
 shared	Lvl07CameraBottom_Update__FP4Mobyf	Lvl07CameraBottom_Update__FP4Mobyf	function	2220	3	0	3	LEVEL1.REL:0x0EF1F0	
 shared	Lvl07CameraBottom_Goop__FP4Moby_L01	Lvl07CameraBottom_Goop__FP4Moby	function	136	3	0	3	LEVEL1.REL:0x0EFAA0	
-shared	Lvl07CameraBottom_IsTargetable__FP4Moby_L01	Lvl07CameraBottom_IsTargetable__FP4Moby	function	16	3	0	3	LEVEL1.REL:0x0EFB28	
+shared	Lvl07CameraBottom_IsTargetable__FP4Moby_L01	Lvl07CameraBottom_IsTargetable__FP4Moby	function	16	3	3	3	LEVEL1.REL:0x0EFB28	src/levels/shared/Lvl07CameraBottom_IsTargetable__FP4Moby_L01.c
 shared	Lvl07CameraBottom_GetCollisionPoint__FP4MobyP4VEC3PC4VEC3f_L01	Lvl07CameraBottom_GetCollisionPoint__FP4MobyP4VEC3PC4VEC3f	function	260	3	0	3	LEVEL1.REL:0x0EFB38	
 shared	Lvl07CameraBottom_DidBrakeDisguise__FP4Moby_L01	Lvl07CameraBottom_DidBrakeDisguise__FP4Moby	function	12	3	3	3	LEVEL1.REL:0x0EFC40	src/levels/shared/Lvl07CameraBottom_DidBrakeDisguise__FP4Moby_L01.c
 shared	Lvl07CameraBottom_DamageAlertChange__FP4MobyPC4VEC3_L01	Lvl07CameraBottom_DamageAlertChange__FP4MobyPC4VEC3	function	88	3	0	3	LEVEL1.REL:0x0EFC50	
@@ -17015,7 +17015,7 @@ shared	AcidFountain_GetFormInfo__FP4Moby	AcidFountain_GetFormInfo__FP4Moby	funct
 07_countess	DanceSniper_Term__FP4Moby	DanceSniper_Term__FP4Moby	function	60	1	0	1	LEVEL7.REL:0x0D59B8	
 07_countess	DanceSniper_Update__FP4Mobyf	DanceSniper_Update__FP4Mobyf	function	1724	1	0	1	LEVEL7.REL:0x0D59F8	
 07_countess	DanceSniper_Aim__FP4Moby_L07	DanceSniper_Aim__FP4Moby	function	612	1	0	1	LEVEL7.REL:0x0D60B8	
-07_countess	DanceSniper_Disable__FP4Moby_L07	DanceSniper_Disable__FP4Moby	function	16	1	0	1	LEVEL7.REL:0x0D6320	
+07_countess	DanceSniper_Disable__FP4Moby_L07	DanceSniper_Disable__FP4Moby	function	16	1	1	1	LEVEL7.REL:0x0D6320	src/levels/07_countess/DanceSniper_Disable__FP4Moby_L07.c
 07_countess	DanceSniper_SetAimHeight__Ff_L07	DanceSniper_SetAimHeight__Ff	function	12	1	1	1	LEVEL7.REL:0x0D6330	src/levels/07_countess/DanceSniper_SetAimHeight__Ff_L07.c
 07_countess	DanceSniper_Fire__FP4Mobyb_L07	DanceSniper_Fire__FP4Mobyb	function	120	1	0	1	LEVEL7.REL:0x0D6340	
 07_countess	DanceSniper_Kill__FP4Moby_L07	DanceSniper_Kill__FP4Moby	function	176	1	0	1	LEVEL7.REL:0x0D63B8	
@@ -17503,7 +17503,7 @@ shared	ClankVehicle_UpdateEnd__FP4MobyP4VEC3	ClankVehicle_UpdateEnd__FP4MobyP4VE
 shared	ClankVehicle_TypePostReset__FP8MobyType	ClankVehicle_TypePostReset__FP8MobyType	function	28	3	0	3	LEVEL8.REL:0x0DA070	
 shared	ClankVehicle_Moved__FP4Moby	ClankVehicle_Moved__FP4Moby	function	532	3	0	3	LEVEL8.REL:0x0DA090	
 shared	ClankVehicle_SectionTranslate__FP4Moby	ClankVehicle_SectionTranslate__FP4Moby	function	188	3	0	3	LEVEL8.REL:0x0DA2A8	
-shared	EndVehicleSegment__12ClankVehicle	EndVehicleSegment__12ClankVehicle	function	16	3	0	3	LEVEL8.REL:0x0DA368	
+shared	EndVehicleSegment__12ClankVehicle	EndVehicleSegment__12ClankVehicle	function	16	3	3	3	LEVEL8.REL:0x0DA368	src/levels/shared/EndVehicleSegment__12ClankVehicle.c
 shared	ClankVehicle_UpdatePredictor__FP4Moby	ClankVehicle_UpdatePredictor__FP4Moby	function	100	3	0	3	LEVEL8.REL:0x0DA378	
 shared	ClankVehicle_Predict__FPC4MobyP4VEC3i	ClankVehicle_Predict__FPC4MobyP4VEC3i	function	172	3	0	3	LEVEL8.REL:0x0DA3E0	
 shared	ClankVehicle_GetHitFlavor__Fv	ClankVehicle_GetHitFlavor__Fv	function	212	3	0	3	LEVEL8.REL:0x0DA490	
@@ -20263,7 +20263,7 @@ shared	Begin__18BoltThief_BoltBomb	Begin__18BoltThief_BoltBomb	function	48	3	0	3
 shared	FireProjectile__18BoltThief_BoltBombPC4VEC3P4VEC3	FireProjectile__18BoltThief_BoltBombPC4VEC3P4VEC3	function	112	3	0	3	LEVEL16.REL:0x0CAC68	
 shared	ChargeUpdate__18BoltThief_BoltBombPC4VEC3P4VEC3	ChargeUpdate__18BoltThief_BoltBombPC4VEC3P4VEC3	function	376	3	0	3	LEVEL16.REL:0x0CACD8	
 shared	CanActivate__16BoltThief_Patrol	CanActivate__16BoltThief_Patrol	function	44	3	0	3	LEVEL16.REL:0x0CAE50	
-shared	Init__16BoltThief_Patrol	Init__16BoltThief_Patrol	function	16	3	0	3	LEVEL16.REL:0x0CAE80	
+shared	Init__16BoltThief_Patrol	Init__16BoltThief_Patrol	function	16	3	3	3	LEVEL16.REL:0x0CAE80	src/levels/shared/Init__16BoltThief_Patrol.c
 shared	Begin__16BoltThief_Patrol	Begin__16BoltThief_Patrol	function	76	3	0	3	LEVEL16.REL:0x0CAE90	
 shared	Update__16BoltThief_Patrolf	Update__16BoltThief_Patrolf	function	524	3	0	3	LEVEL16.REL:0x0CAEE0	
 shared	ChangeSubstate__16BoltThief_PatrolUi	ChangeSubstate__16BoltThief_PatrolUi	function	208	3	0	3	LEVEL16.REL:0x0CB0F0	
@@ -21068,7 +21068,7 @@ shared	__final_insertion_sort__H2ZP30ClankVehicleHoverAutoAimResultZ49ClankVehic
 18_qwark	OperaEye_Update__FP4Mobyf	OperaEye_Update__FP4Mobyf	function	476	1	0	1	LEVEL18.REL:0x0CC9A0	
 18_qwark	OperaEye_InitType__FP8MobyType	OperaEye_InitType__FP8MobyType	function	472	1	0	1	LEVEL18.REL:0x0CCB80	
 18_qwark	OperaEye_Draw__FPC18DRAW_RenderContextPv	OperaEye_Draw__FPC18DRAW_RenderContextPv	function	1592	1	0	1	LEVEL18.REL:0x0CCD58	
-18_qwark	OperaEye_SpawnInWave__FP4Moby	OperaEye_SpawnInWave__FP4Moby	function	16	1	0	1	LEVEL18.REL:0x0CD390	
+18_qwark	OperaEye_SpawnInWave__FP4Moby	OperaEye_SpawnInWave__FP4Moby	function	16	1	1	1	LEVEL18.REL:0x0CD390	src/levels/18_qwark/OperaEye_SpawnInWave__FP4Moby.c
 18_qwark	OperaHelp_Init__FP4Moby	OperaHelp_Init__FP4Moby	function	48	1	0	1	LEVEL18.REL:0x0CD3A0	
 18_qwark	OperaHelp_Term__FP4Moby	OperaHelp_Term__FP4Moby	function	8	1	1	1	LEVEL18.REL:0x0CD3D0	src/levels/18_qwark/OperaHelp_Term__FP4Moby.c
 18_qwark	OperaHelp_Update__FP4Mobyf	OperaHelp_Update__FP4Mobyf	function	896	1	0	1	LEVEL18.REL:0x0CD3D8	
@@ -23704,7 +23704,7 @@ shared	PostAnim__17GCSHIP_DeathState	PostAnim__17GCSHIP_DeathState	function	432	
 25_escapeyard	func_L25_0C0E84	func_L25_0C0E84	function	32	1	0	1	LEVEL25.REL:0x0C0E84	
 25_escapeyard	Arena5AlertButton_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	Arena5AlertButton_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	function	352	1	0	1	LEVEL25.REL:0x0C0EA8	
 25_escapeyard	Arena5AlertButton_Activate__FP4Moby	Arena5AlertButton_Activate__FP4Moby	function	20	1	0	1	LEVEL25.REL:0x0C1008	
-25_escapeyard	Arena5AlertButton_Deactivate__FP4Moby	Arena5AlertButton_Deactivate__FP4Moby	function	16	1	0	1	LEVEL25.REL:0x0C1020	
+25_escapeyard	Arena5AlertButton_Deactivate__FP4Moby	Arena5AlertButton_Deactivate__FP4Moby	function	16	1	1	1	LEVEL25.REL:0x0C1020	src/levels/25_escapeyard/Arena5AlertButton_Deactivate__FP4Moby.c
 25_escapeyard	Arena5AlertButton_InitType__FP8MobyType	Arena5AlertButton_InitType__FP8MobyType	function	76	1	0	1	LEVEL25.REL:0x0C1030	
 25_escapeyard	Arena5Controller_Init__FP4Moby	Arena5Controller_Init__FP4Moby	function	144	1	0	1	LEVEL25.REL:0x0C1080	
 25_escapeyard	Arena5Controller_Term__FP4Moby	Arena5Controller_Term__FP4Moby	function	8	1	1	1	LEVEL25.REL:0x0C1110	src/levels/25_escapeyard/Arena5Controller_Term__FP4Moby.c
@@ -24279,7 +24279,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 28_gadgebot	LockChallenge_Term__FP4Moby	LockChallenge_Term__FP4Moby	function	8	1	1	1	LEVEL28.REL:0x0D8E98	src/levels/28_gadgebot/LockChallenge_Term__FP4Moby.c
 28_gadgebot	LockChallenge_Update__FP4Mobyf	LockChallenge_Update__FP4Mobyf	function	632	1	0	1	LEVEL28.REL:0x0D8EA0	
 28_gadgebot	LockChallenge_InitType__FP8MobyType	LockChallenge_InitType__FP8MobyType	function	8	1	1	1	LEVEL28.REL:0x0D9118	src/levels/28_gadgebot/LockChallenge_InitType__FP8MobyType.c
-28_gadgebot	LockChallenge_Finished__FP4Moby	LockChallenge_Finished__FP4Moby	function	16	1	0	1	LEVEL28.REL:0x0D9120	
+28_gadgebot	LockChallenge_Finished__FP4Moby	LockChallenge_Finished__FP4Moby	function	16	1	1	1	LEVEL28.REL:0x0D9120	src/levels/28_gadgebot/LockChallenge_Finished__FP4Moby.c
 28_gadgebot	LockShield_Init__FP4Moby	LockShield_Init__FP4Moby	function	456	1	0	1	LEVEL28.REL:0x0D9130	
 28_gadgebot	LockShield_Term__FP4Moby	LockShield_Term__FP4Moby	function	132	1	0	1	LEVEL28.REL:0x0D92F8	
 28_gadgebot	LockShield_Update__FP4Mobyf	LockShield_Update__FP4Mobyf	function	1024	1	0	1	LEVEL28.REL:0x0D9380	
@@ -24961,7 +24961,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	KlunkKingpin_CircleStrafe__FP4MobyP4VEC3	KlunkKingpin_CircleStrafe__FP4MobyP4VEC3	function	820	1	0	1	LEVEL30.REL:0x0E5BB0	
 30_boss	KlunkKingpin_Update__FP4Mobyf	KlunkKingpin_Update__FP4Mobyf	function	848	1	0	1	LEVEL30.REL:0x0E5EE8	
 30_boss	KlunkKingpin_NotifyRepairComplete__FP4Moby_L30	KlunkKingpin_NotifyRepairComplete__FP4Moby	function	60	1	0	1	LEVEL30.REL:0x0E6238	
-30_boss	KlunkKingpin_IsOutOfChamber__FP4Moby_L30	KlunkKingpin_IsOutOfChamber__FP4Moby	function	16	1	0	1	LEVEL30.REL:0x0E6278	
+30_boss	KlunkKingpin_IsOutOfChamber__FP4Moby_L30	KlunkKingpin_IsOutOfChamber__FP4Moby	function	16	1	1	1	LEVEL30.REL:0x0E6278	src/levels/30_boss/KlunkKingpin_IsOutOfChamber__FP4Moby_L30.c
 30_boss	KlunkKingpin_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	KlunkKingpin_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	function	360	1	0	1	LEVEL30.REL:0x0E6288	
 30_boss	KlunkKingpin_GetTorsoDir__FP4MobyP4VEC2_L30	KlunkKingpin_GetTorsoDir__FP4MobyP4VEC2	function	24	1	0	1	LEVEL30.REL:0x0E63F0	
 30_boss	KlunkKingpin_FixLinks__FP4Moby	KlunkKingpin_FixLinks__FP4Moby	function	112	1	0	1	LEVEL30.REL:0x0E6408	
@@ -25056,7 +25056,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	RoboRatchet_Update__FP4Mobyf	RoboRatchet_Update__FP4Mobyf	function	860	1	0	1	LEVEL30.REL:0x0F5768	
 30_boss	RoboRatchet_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	RoboRatchet_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	function	360	1	0	1	LEVEL30.REL:0x0F5AC8	
 30_boss	RoboRatchet_UseGadgebotCamera__FP4Moby_L30	RoboRatchet_UseGadgebotCamera__FP4Moby	function	484	1	0	1	LEVEL30.REL:0x0F5C30	
-30_boss	RoboRatchet_IsOutOfChamber__FP4Moby_L30	RoboRatchet_IsOutOfChamber__FP4Moby	function	16	1	0	1	LEVEL30.REL:0x0F5E18	
+30_boss	RoboRatchet_IsOutOfChamber__FP4Moby_L30	RoboRatchet_IsOutOfChamber__FP4Moby	function	16	1	1	1	LEVEL30.REL:0x0F5E18	src/levels/30_boss/RoboRatchet_IsOutOfChamber__FP4Moby_L30.c
 30_boss	RoboRatchet_GetTorsoDir__FP4MobyP4VEC2_L30	RoboRatchet_GetTorsoDir__FP4MobyP4VEC2	function	24	1	0	1	LEVEL30.REL:0x0F5E28	
 30_boss	RoboRatchet_FixLinks__FP4Moby	RoboRatchet_FixLinks__FP4Moby	function	112	1	0	1	LEVEL30.REL:0x0F5E40	
 30_boss	RoboRatchet_GetExtraContentSize__Fv	RoboRatchet_GetExtraContentSize__Fv	function	92	1	0	1	LEVEL30.REL:0x0F5EB0	
