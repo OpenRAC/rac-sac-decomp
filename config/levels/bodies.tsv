@@ -115053,3 +115053,11 @@ LEVEL11.REL	0x251E30	8	src/levels/shared/GetTransientDataSize__18HenchbotFollowP
 LEVEL15.REL	0x227190	8	src/levels/shared/GetTransientDataSize__18HenchbotFollowPath.c
 LEVEL28.REL	0x1D4148	8	src/levels/shared/GetTransientDataSize__18HenchbotFollowPath.c
 LEVEL23.REL	0x1DBA58	8	src/levels/23_qwark/GetTransientDataSize__11PirateDeath.c
+LEVEL16.REL	0x2436D8	8	src/levels/shared/GetTransientDataSize__16BoltThief_Hoover.c
+LEVEL19.REL	0x244550	8	src/levels/shared/GetTransientDataSize__16BoltThief_Hoover.c
+LEVEL29.REL	0x24AFE0	8	src/levels/shared/GetTransientDataSize__16BoltThief_Hoover.c
+LEVEL16.REL	0x2436E8	8	src/levels/shared/GetTransientDataSize__20BoltThief_GetMadLoot.c
+LEVEL19.REL	0x244560	8	src/levels/shared/GetTransientDataSize__20BoltThief_GetMadLoot.c
+LEVEL29.REL	0x24AFF0	8	src/levels/shared/GetTransientDataSize__20BoltThief_GetMadLoot.c
+LEVEL30.REL	0x22AEA8	8	src/levels/30_boss/GetTransientDataSize__15TakeDownAttempt.c
+LEVEL30.REL	0x22AEC0	8	src/levels/30_boss/GetTransientDataSize__15TakeDownSuccess.c
