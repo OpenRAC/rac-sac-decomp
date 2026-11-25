@@ -18573,12 +18573,12 @@ shared	CLANK_MissionFailedScreenColor__Ff_L11	CLANK_MissionFailedScreenColor__Ff
 11_gondola	Update__25ExpatGondola_TurnToTargetf	Update__25ExpatGondola_TurnToTargetf	function	88	1	0	1	LEVEL11.REL:0x0D20A8	
 11_gondola	CanActivate__23ExpatGondola_ChargeShot	CanActivate__23ExpatGondola_ChargeShot	function	124	1	0	1	LEVEL11.REL:0x0D2100	
 11_gondola	Begin__23ExpatGondola_ChargeShot	Begin__23ExpatGondola_ChargeShot	function	88	1	0	1	LEVEL11.REL:0x0D2180	
-11_gondola	Init__23ExpatGondola_ChargeShot	Init__23ExpatGondola_ChargeShot	function	8	1	0	1	LEVEL11.REL:0x0D21D8	
+11_gondola	Init__23ExpatGondola_ChargeShot	Init__23ExpatGondola_ChargeShot	function	8	1	1	1	LEVEL11.REL:0x0D21D8	src/levels/11_gondola/Init__23ExpatGondola_ChargeShot.c
 11_gondola	Update__23ExpatGondola_ChargeShotf	Update__23ExpatGondola_ChargeShotf	function	136	1	0	1	LEVEL11.REL:0x0D21E0	
 11_gondola	ChangeSubstate__23ExpatGondola_ChargeShotUi	ChangeSubstate__23ExpatGondola_ChargeShotUi	function	176	1	0	1	LEVEL11.REL:0x0D2268	
 11_gondola	PostAnimCallback__23ExpatGondola_ChargeShotP4Moby	PostAnimCallback__23ExpatGondola_ChargeShotP4Moby	function	184	1	0	1	LEVEL11.REL:0x0D2318	
 11_gondola	Begin__17ExpatGondola_Fire	Begin__17ExpatGondola_Fire	function	100	1	0	1	LEVEL11.REL:0x0D23D0	
-11_gondola	Init__17ExpatGondola_Fire	Init__17ExpatGondola_Fire	function	8	1	0	1	LEVEL11.REL:0x0D2438	
+11_gondola	Init__17ExpatGondola_Fire	Init__17ExpatGondola_Fire	function	8	1	1	1	LEVEL11.REL:0x0D2438	src/levels/11_gondola/Init__17ExpatGondola_Fire.c
 11_gondola	End__17ExpatGondola_Fire	End__17ExpatGondola_Fire	function	104	1	0	1	LEVEL11.REL:0x0D2440	
 11_gondola	CanActivate__17ExpatGondola_Fire	CanActivate__17ExpatGondola_Fire	function	172	1	0	1	LEVEL11.REL:0x0D24A8	
 11_gondola	Update__17ExpatGondola_Firef	Update__17ExpatGondola_Firef	function	364	1	0	1	LEVEL11.REL:0x0D2558	
@@ -18587,7 +18587,7 @@ shared	CLANK_MissionFailedScreenColor__Ff_L11	CLANK_MissionFailedScreenColor__Ff
 11_gondola	ModifyJointsCallback__17ExpatGondola_FireP4Moby	ModifyJointsCallback__17ExpatGondola_FireP4Moby	function	56	1	0	1	LEVEL11.REL:0x0D2AA0	
 11_gondola	CanActivate__24ExpatGondola_GondolaJump	CanActivate__24ExpatGondola_GondolaJump	function	72	1	0	1	LEVEL11.REL:0x0D2AD8	
 11_gondola	Begin__24ExpatGondola_GondolaJump	Begin__24ExpatGondola_GondolaJump	function	172	1	0	1	LEVEL11.REL:0x0D2B20	
-11_gondola	Init__24ExpatGondola_GondolaJump	Init__24ExpatGondola_GondolaJump	function	8	1	0	1	LEVEL11.REL:0x0D2BD0	
+11_gondola	Init__24ExpatGondola_GondolaJump	Init__24ExpatGondola_GondolaJump	function	8	1	1	1	LEVEL11.REL:0x0D2BD0	src/levels/11_gondola/Init__24ExpatGondola_GondolaJump.c
 11_gondola	End__24ExpatGondola_GondolaJump	End__24ExpatGondola_GondolaJump	function	32	1	0	1	LEVEL11.REL:0x0D2BD8	
 11_gondola	HandleDamage__24ExpatGondola_GondolaJumpf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__24ExpatGondola_GondolaJumpf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	108	1	0	1	LEVEL11.REL:0x0D2BF8	
 11_gondola	StartJump__24ExpatGondola_GondolaJump15GondolaJumpTypebN22	StartJump__24ExpatGondola_GondolaJump15GondolaJumpTypebN22	function	468	1	0	1	LEVEL11.REL:0x0D2C68	

@@ -115669,3 +115669,6 @@ LEVEL30.REL	0x236058	8	src/levels/shared/SetDirty__14ApeAnimChannelb.c
 LEVEL31.REL	0x221328	8	src/levels/shared/SetDirty__14ApeAnimChannelb.c
 LEVEL32.REL	0x1F7B78	8	src/levels/shared/SetDirty__14ApeAnimChannelb.c
 LEVEL10.REL	0x23AD78	8	src/levels/10_carnival/SetCaptureType__26KingpinState_CapturedClankUc.c
+LEVEL11.REL	0x0D21D8	8	src/levels/11_gondola/Init__23ExpatGondola_ChargeShot.c
+LEVEL11.REL	0x0D2438	8	src/levels/11_gondola/Init__17ExpatGondola_Fire.c
+LEVEL11.REL	0x0D2BD0	8	src/levels/11_gondola/Init__24ExpatGondola_GondolaJump.c
