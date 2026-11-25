@@ -1,0 +1,17 @@
+/* GetRegionSet__6ApePVS -- 8 bytes.
+ *
+ * One source for every placement of this function in the level modules;
+ * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Returns the unsigned byte at offset 0x12.
+ */
+
+typedef struct State {
+    char pad[0x12];
+    unsigned char field;
+} State;
+
+int GetRegionSet__6ApePVS(State *self)
+{
+    return self->field;
+}
