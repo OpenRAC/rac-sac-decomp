@@ -5325,7 +5325,7 @@ shared	GetType__C19AglRenderTargetBase	GetType__C19AglRenderTargetBase	function	
 shared	GetProjectionType__C19AglRenderTargetBase	GetProjectionType__C19AglRenderTargetBase	function	8	31	0	31	FE.REL:0x0E4C28	
 shared	GetFOV__C19AglRenderTargetBase	GetFOV__C19AglRenderTargetBase	function	24	31	0	31	FE.REL:0x0E4C30	
 shared	GetFocalLength__C19AglRenderTargetBase	GetFocalLength__C19AglRenderTargetBase	function	80	31	0	31	FE.REL:0x0E4C48	
-shared	GetNearZClip__C19AglRenderTargetBase	GetNearZClip__C19AglRenderTargetBase	function	8	31	0	31	FE.REL:0x0E4C98	
+shared	GetNearZClip__C19AglRenderTargetBase	GetNearZClip__C19AglRenderTargetBase	function	8	31	31	31	FE.REL:0x0E4C98	src/levels/shared/GetNearZClip__C19AglRenderTargetBase.c
 shared	GetFarZClip__C19AglRenderTargetBase	GetFarZClip__C19AglRenderTargetBase	function	8	31	0	31	FE.REL:0x0E4CA0	
 shared	GetAspectRatio__C19AglRenderTargetBase	GetAspectRatio__C19AglRenderTargetBase	function	8	31	0	31	FE.REL:0x0E4CA8	
 shared	GetViewport__C19AglRenderTargetBase	GetViewport__C19AglRenderTargetBase	function	8	31	31	31	FE.REL:0x0E4CB0	src/levels/shared/GetViewport__C19AglRenderTargetBase.c
@@ -5481,13 +5481,13 @@ shared	SetEndState__19ApeAnimPlayAnimNodei	SetEndState__19ApeAnimPlayAnimNodei	f
 shared	GetEndState__C19ApeAnimPlayAnimNode	GetEndState__C19ApeAnimPlayAnimNode	function	8	31	0	31	FE.REL:0x0E7BD8	
 shared	IsDone__19ApeAnimPlayAnimNode	IsDone__19ApeAnimPlayAnimNode	function	8	31	0	31	FE.REL:0x0E7BE0	
 shared	IsLeaf__19ApeAnimPlayAnimNode	IsLeaf__19ApeAnimPlayAnimNode	function	8	31	31	31	FE.REL:0x0E7BE8	src/levels/shared/IsLeaf__19ApeAnimPlayAnimNode.c
-shared	GetTime__C19ApeAnimPlayAnimNode	GetTime__C19ApeAnimPlayAnimNode	function	8	31	0	31	FE.REL:0x0E7BF0	
-shared	GetTimeScale__C19ApeAnimPlayAnimNode	GetTimeScale__C19ApeAnimPlayAnimNode	function	8	31	0	31	FE.REL:0x0E7BF8	
+shared	GetTime__C19ApeAnimPlayAnimNode	GetTime__C19ApeAnimPlayAnimNode	function	8	31	31	31	FE.REL:0x0E7BF0	src/levels/shared/GetTime__C19ApeAnimPlayAnimNode.c
+shared	GetTimeScale__C19ApeAnimPlayAnimNode	GetTimeScale__C19ApeAnimPlayAnimNode	function	8	31	31	31	FE.REL:0x0E7BF8	src/levels/shared/GetTimeScale__C19ApeAnimPlayAnimNode.c
 shared	GetDuration__C19ApeAnimPlayAnimNode	GetDuration__C19ApeAnimPlayAnimNode	function	24	31	0	31	FE.REL:0x0E7C00	
 shared	GetPercentage__19ApeAnimPlayAnimNode	GetPercentage__19ApeAnimPlayAnimNode	function	48	31	0	31	FE.REL:0x0E7C18	
 shared	GetAnimDef__19ApeAnimPlayAnimNode	GetAnimDef__19ApeAnimPlayAnimNode	function	8	31	0	31	FE.REL:0x0E7C48	
 shared	GetNodeName__C19ApeAnimPlayAnimNode	GetNodeName__C19ApeAnimPlayAnimNode	function	12	31	31	31	FE.REL:0x0E7C50	src/levels/shared/GetNodeName__C19ApeAnimPlayAnimNode.c
-shared	GetTotalTimeAnimated__19ApeAnimPlayAnimNode	GetTotalTimeAnimated__19ApeAnimPlayAnimNode	function	8	31	0	31	FE.REL:0x0E7C60	
+shared	GetTotalTimeAnimated__19ApeAnimPlayAnimNode	GetTotalTimeAnimated__19ApeAnimPlayAnimNode	function	8	31	31	31	FE.REL:0x0E7C60	src/levels/shared/GetTotalTimeAnimated__19ApeAnimPlayAnimNode.c
 shared	GetTotalTimeLooped__19ApeAnimPlayAnimNode	GetTotalTimeLooped__19ApeAnimPlayAnimNode	function	8	31	31	31	FE.REL:0x0E7C68	src/levels/shared/GetTotalTimeLooped__19ApeAnimPlayAnimNode.c
 shared	__24ApeAnimJointModifierNode	__24ApeAnimJointModifierNode	function	156	31	0	31	FE.REL:0x0E7C70	
 shared	_$_24ApeAnimJointModifierNode	_$_24ApeAnimJointModifierNode	function	40	31	0	31	FE.REL:0x0E7D10	
@@ -5522,7 +5522,7 @@ shared	_$_21ApeAnimProceduralNode	_$_21ApeAnimProceduralNode	function	336	31	0	3
 shared	IsDone__21ApeAnimProceduralNode	IsDone__21ApeAnimProceduralNode	function	60	31	0	31	FE.REL:0x0E8590	
 shared	IsLeaf__21ApeAnimProceduralNode	IsLeaf__21ApeAnimProceduralNode	function	8	31	31	31	FE.REL:0x0E85D0	src/levels/shared/IsLeaf__21ApeAnimProceduralNode.c
 shared	GetTime__C21ApeAnimProceduralNode	GetTime__C21ApeAnimProceduralNode	function	8	31	0	31	FE.REL:0x0E85D8	
-shared	GetDuration__C21ApeAnimProceduralNode	GetDuration__C21ApeAnimProceduralNode	function	8	31	0	31	FE.REL:0x0E85E0	
+shared	GetDuration__C21ApeAnimProceduralNode	GetDuration__C21ApeAnimProceduralNode	function	8	31	31	31	FE.REL:0x0E85E0	src/levels/shared/GetDuration__C21ApeAnimProceduralNode.c
 shared	GetNodeName__C21ApeAnimProceduralNode	GetNodeName__C21ApeAnimProceduralNode	function	12	31	31	31	FE.REL:0x0E85E8	src/levels/shared/GetNodeName__C21ApeAnimProceduralNode.c
 shared	SetTotalDuration__21ApeAnimProceduralNodef	SetTotalDuration__21ApeAnimProceduralNodef	function	8	31	0	31	FE.REL:0x0E85F8	
 shared	DeleteType__21ApeAnimProceduralNodei	DeleteType__21ApeAnimProceduralNodei	function	200	31	0	31	FE.REL:0x0E8600	
@@ -5872,11 +5872,11 @@ shared	GetClampedIntensity__C11ApeLightDef	GetClampedIntensity__C11ApeLightDef	f
 shared	GetAttenuationV__C11ApeLightDefR5AVec4	GetAttenuationV__C11ApeLightDefR5AVec4	function	36	31	0	31	FE.REL:0x0EC870	
 shared	SetRadius__11ApeLightDeff	SetRadius__11ApeLightDeff	function	8	31	0	31	FE.REL:0x0EC898	
 shared	SetStartAtten__11ApeLightDeff	SetStartAtten__11ApeLightDeff	function	8	31	0	31	FE.REL:0x0EC8A0	
-shared	GetStartAtten__C11ApeLightDef	GetStartAtten__C11ApeLightDef	function	8	31	0	31	FE.REL:0x0EC8A8	
+shared	GetStartAtten__C11ApeLightDef	GetStartAtten__C11ApeLightDef	function	8	31	31	31	FE.REL:0x0EC8A8	src/levels/shared/GetStartAtten__C11ApeLightDef.c
 shared	SetEndAtten__11ApeLightDeff	SetEndAtten__11ApeLightDeff	function	8	31	0	31	FE.REL:0x0EC8B0	
 shared	GetEndAtten__C11ApeLightDef	GetEndAtten__C11ApeLightDef	function	8	31	0	31	FE.REL:0x0EC8B8	
 shared	SetConstantAtten__11ApeLightDeff	SetConstantAtten__11ApeLightDeff	function	8	31	0	31	FE.REL:0x0EC8C0	
-shared	GetConstantAtten__C11ApeLightDef	GetConstantAtten__C11ApeLightDef	function	8	31	0	31	FE.REL:0x0EC8C8	
+shared	GetConstantAtten__C11ApeLightDef	GetConstantAtten__C11ApeLightDef	function	8	31	31	31	FE.REL:0x0EC8C8	src/levels/shared/GetConstantAtten__C11ApeLightDef.c
 shared	SetLinearAtten__11ApeLightDeff	SetLinearAtten__11ApeLightDeff	function	8	31	0	31	FE.REL:0x0EC8D0	
 shared	GetLinearAtten__C11ApeLightDef	GetLinearAtten__C11ApeLightDef	function	8	31	0	31	FE.REL:0x0EC8D8	
 shared	SetQuadraticAtten__11ApeLightDeff	SetQuadraticAtten__11ApeLightDeff	function	8	31	0	31	FE.REL:0x0EC8E0	
@@ -9766,7 +9766,7 @@ shared	Splash_Create__FPC4VEC3PC12SplashParamsi	Splash_Create__FPC4VEC3PC12Splas
 shared	func_L01_115EA8	func_L01_115EA8	function	508	24	0	24	LEVEL1.REL:0x115EA8	
 shared	Splash_Translate__FPC4VEC3	Splash_Translate__FPC4VEC3	function	124	24	0	24	LEVEL1.REL:0x1160A8	
 shared	func_L01_116128	func_L01_116128	function	16	2	2	2	LEVEL1.REL:0x116128	src/levels/shared/func_L01_116128.c
-shared	Spotlight_GetLength__FP9Spotlight	Spotlight_GetLength__FP9Spotlight	function	8	7	0	7	LEVEL1.REL:0x116138	
+shared	Spotlight_GetLength__FP9Spotlight	Spotlight_GetLength__FP9Spotlight	function	8	7	7	7	LEVEL1.REL:0x116138	src/levels/shared/Spotlight_GetLength__FP9Spotlight.c
 shared	Spotlight_GetParams__FP9Spotlight	Spotlight_GetParams__FP9Spotlight	function	8	7	7	7	LEVEL1.REL:0x116140	src/levels/shared/Spotlight_GetParams__FP9Spotlight.c
 shared	Spotlight_Init__Fv	Spotlight_Init__Fv	function	60	7	0	7	LEVEL1.REL:0x116148	
 shared	Spotlight_Create__FPC8MATRIX43PC15SpotlightParams	Spotlight_Create__FPC8MATRIX43PC15SpotlightParams	function	200	7	0	7	LEVEL1.REL:0x116188	
