@@ -1020,15 +1020,15 @@ shared	func_FE_026B20	func_FE_026B20	function	12	31	0	31	FE.REL:0x026B20
 shared	func_FE_026B2C	func_FE_026B2C	function	12	31	0	31	FE.REL:0x026B2C	
 shared	func_FE_026B38	func_FE_026B38	function	44	31	0	31	FE.REL:0x026B38	
 shared	GetSaveLevelTextureNameHash__14MemCardManageri	GetSaveLevelTextureNameHash__14MemCardManageri	function	40	31	0	31	FE.REL:0x026B68	
-shared	func_FE_026B90	func_FE_026B90	function	12	31	0	31	FE.REL:0x026B90	
+shared	func_FE_026B90	func_FE_026B90	function	12	31	31	31	FE.REL:0x026B90	src/levels/shared/func_FE_026B90.c
 shared	func_FE_026B9C	func_FE_026B9C	function	12	31	0	31	FE.REL:0x026B9C	
-shared	func_FE_026BA8	func_FE_026BA8	function	12	31	0	31	FE.REL:0x026BA8	
+shared	func_FE_026BA8	func_FE_026BA8	function	12	31	31	31	FE.REL:0x026BA8	src/levels/shared/func_FE_026BA8.c
 shared	func_FE_026BB4	func_FE_026BB4	function	12	31	0	31	FE.REL:0x026BB4	
-shared	func_FE_026BC0	func_FE_026BC0	function	12	31	0	31	FE.REL:0x026BC0	
+shared	func_FE_026BC0	func_FE_026BC0	function	12	31	31	31	FE.REL:0x026BC0	src/levels/shared/func_FE_026BC0.c
 shared	func_FE_026BCC	func_FE_026BCC	function	12	31	0	31	FE.REL:0x026BCC	
-shared	func_FE_026BD8	func_FE_026BD8	function	12	31	0	31	FE.REL:0x026BD8	
+shared	func_FE_026BD8	func_FE_026BD8	function	12	31	31	31	FE.REL:0x026BD8	src/levels/shared/func_FE_026BD8.c
 shared	func_FE_026BE4	func_FE_026BE4	function	12	31	0	31	FE.REL:0x026BE4	
-shared	func_FE_026BF0	func_FE_026BF0	function	12	31	0	31	FE.REL:0x026BF0	
+shared	func_FE_026BF0	func_FE_026BF0	function	12	31	31	31	FE.REL:0x026BF0	src/levels/shared/func_FE_026BF0.c
 shared	func_FE_026BFC	func_FE_026BFC	function	12	31	0	31	FE.REL:0x026BFC	
 shared	func_FE_026C08	func_FE_026C08	function	24	31	0	31	FE.REL:0x026C08	
 shared	GetSystemTime__14MemCardManagerR2tm	GetSystemTime__14MemCardManagerR2tm	function	244	31	0	31	FE.REL:0x026C20	
@@ -2074,7 +2074,7 @@ shared	LOADER_inShrubIgnoreList__FUsUsPUs	LOADER_inShrubIgnoreList__FUsUsPUs	fun
 shared	LOADER_inTieIgnoreList__FUsUsPUs	LOADER_inTieIgnoreList__FUsUsPUs	function	160	31	0	31	FE.REL:0x063CF8	
 shared	LOADER_cleanupIgnoreData__Fv	LOADER_cleanupIgnoreData__Fv	function	112	31	0	31	FE.REL:0x063D98	
 frontend	LOADER_initMobyTableData__FUi_FE	LOADER_initMobyTableData__FUi	function	8	1	1	1	FE.REL:0x063E08	src/levels/frontend/LOADER_initMobyTableData__FUi_FE.c
-shared	LOADER_getLevelWadBudget__Fv	LOADER_getLevelWadBudget__Fv	function	12	31	0	31	FE.REL:0x063E10	
+shared	LOADER_getLevelWadBudget__Fv	LOADER_getLevelWadBudget__Fv	function	12	31	31	31	FE.REL:0x063E10	src/levels/shared/LOADER_getLevelWadBudget__Fv.c
 shared	LOAD_CHARACTER_SkinGdeFile__FP15WAD_FILE_HEADERPP10ApeGeomDef	LOAD_CHARACTER_SkinGdeFile__FP15WAD_FILE_HEADERPP10ApeGeomDef	function	8	31	31	31	FE.REL:0x063E20	src/levels/shared/LOAD_CHARACTER_SkinGdeFile__FP15WAD_FILE_HEADERPP10ApeGeomDef.c
 frontend	LOAD_CHARACTER_SkinGdeFile__FPCcP10ApeGeomDefiP15SkinTextureInfobN24_FE	LOAD_CHARACTER_SkinGdeFile__FPCcP10ApeGeomDefiP15SkinTextureInfobN24	function	8	1	1	1	FE.REL:0x063E28	src/levels/frontend/LOAD_CHARACTER_SkinGdeFile__FPCcP10ApeGeomDefiP15SkinTextureInfobN24_FE.c
 frontend	LOAD_CHARACTER_Anim__FPCc_FE	LOAD_CHARACTER_Anim__FPCc	function	8	1	1	1	FE.REL:0x063E30	src/levels/frontend/LOAD_CHARACTER_Anim__FPCc_FE.c
@@ -4326,7 +4326,7 @@ shared	func_FE_0CA400	func_FE_0CA400	function	100	31	0	31	FE.REL:0x0CA400
 shared	scePadSetWarningLevel	scePadSetWarningLevel	function	104	31	0	31	FE.REL:0x0CA468	
 shared	scePadSetDmaCallback	scePadSetDmaCallback	function	292	31	0	31	FE.REL:0x0CA4D0	
 shared	scePadSetFlushRate	scePadSetFlushRate	function	48	31	0	31	FE.REL:0x0CA5F8	
-shared	sceGifPkInit	sceGifPkInit	function	16	31	0	31	FE.REL:0x0CA628	
+shared	sceGifPkInit	sceGifPkInit	function	16	31	31	31	FE.REL:0x0CA628	src/levels/shared/sceGifPkInit.c
 shared	sceGifPkReset	sceGifPkReset	function	16	31	0	31	FE.REL:0x0CA638	
 shared	sceGifPkTerminate	sceGifPkTerminate	function	88	31	0	31	FE.REL:0x0CA648	
 shared	sceGifPkSize	sceGifPkSize	function	20	31	0	31	FE.REL:0x0CA6A0	
@@ -4336,7 +4336,7 @@ shared	sceGifPkOpenGifTag	sceGifPkOpenGifTag	function	24	31	0	31	FE.REL:0x0CA7A8
 shared	sceGifPkCloseGifTag	sceGifPkCloseGifTag	function	164	31	0	31	FE.REL:0x0CA7C0	
 shared	sceGifPkAddGsData	sceGifPkAddGsData	function	40	31	0	31	FE.REL:0x0CA868	
 shared	sceGifPkAddGsAD	sceGifPkAddGsAD	function	36	31	0	31	FE.REL:0x0CA890	
-shared	sceVif1PkInit	sceVif1PkInit	function	16	31	0	31	FE.REL:0x0CA8B8	
+shared	sceVif1PkInit	sceVif1PkInit	function	16	31	31	31	FE.REL:0x0CA8B8	src/levels/shared/sceVif1PkInit.c
 shared	sceVif1PkReset	sceVif1PkReset	function	16	31	0	31	FE.REL:0x0CA8C8	
 shared	sceVif1PkTerminate	sceVif1PkTerminate	function	88	31	0	31	FE.REL:0x0CA8D8	
 shared	sceVif1PkSize	sceVif1PkSize	function	20	31	0	31	FE.REL:0x0CA930	
@@ -12440,7 +12440,7 @@ shared	CanActivate__10BasicMelee	CanActivate__10BasicMelee	function	8	18	18	18	L
 shared	GetTransientDataSize__10BasicMelee	GetTransientDataSize__10BasicMelee	function	8	18	18	18	LEVEL1.REL:0x237A78	src/levels/shared/GetTransientDataSize__10BasicMelee.c
 shared	OnHit__10BasicMelee	OnHit__10BasicMelee	function	8	18	18	18	LEVEL1.REL:0x237A80	src/levels/shared/OnHit__10BasicMelee.c
 shared	OnDamage__10BasicMelee	OnDamage__10BasicMelee	function	8	18	18	18	LEVEL1.REL:0x237A88	src/levels/shared/OnDamage__10BasicMelee.c
-shared	SetTargetId__10BasicMeleei	SetTargetId__10BasicMeleei	function	16	18	0	18	LEVEL1.REL:0x237A90	
+shared	SetTargetId__10BasicMeleei	SetTargetId__10BasicMeleei	function	16	18	18	18	LEVEL1.REL:0x237A90	src/levels/shared/SetTargetId__10BasicMeleei.c
 shared	Init__16ConditionalMeleePC22ConditionalMeleeConfigP5State	Init__16ConditionalMeleePC22ConditionalMeleeConfigP5State	function	12	18	18	18	LEVEL1.REL:0x237AA0	src/levels/shared/Init__16ConditionalMeleePC22ConditionalMeleeConfigP5State.c
 shared	Init__8BackAwayPC14BackAwayConfigP8Navigate	Init__8BackAwayPC14BackAwayConfigP8Navigate	function	12	18	0	18	LEVEL1.REL:0x237AB0	
 shared	CanActivate__14BasicNavWander	CanActivate__14BasicNavWander	function	8	18	18	18	LEVEL1.REL:0x237AC0	src/levels/shared/CanActivate__14BasicNavWander.c
@@ -12470,7 +12470,7 @@ shared	CanBeHypnotized__C16ReallyBasicDeath	CanBeHypnotized__C16ReallyBasicDeath
 shared	Init__10BasicChasePC16BasicChaseConfigP8NavigateP5StateP4MobyPUc	Init__10BasicChasePC16BasicChaseConfigP8NavigateP5StateP4MobyPUc	function	28	18	0	18	LEVEL1.REL:0x237BF0	
 shared	Init__20BasicChaseControlledPC26BasicChaseControlledConfigP8NavigateP11ChaseAction	Init__20BasicChaseControlledPC26BasicChaseControlledConfigP8NavigateP11ChaseAction	function	16	18	0	18	LEVEL1.REL:0x237C10	
 shared	CanActivate__14TangleVineTrap	CanActivate__14TangleVineTrap	function	8	18	18	18	LEVEL1.REL:0x237C20	src/levels/shared/CanActivate__14TangleVineTrap.c
-shared	GetStateId__C14TangleVineTrap	GetStateId__C14TangleVineTrap	function	12	18	0	18	LEVEL1.REL:0x237C28	
+shared	GetStateId__C14TangleVineTrap	GetStateId__C14TangleVineTrap	function	12	18	18	18	LEVEL1.REL:0x237C28	src/levels/shared/GetStateId__C14TangleVineTrap.c
 shared	GetTransientDataSize__18MoveToValidFirePos	GetTransientDataSize__18MoveToValidFirePos	function	8	18	18	18	LEVEL1.REL:0x237C38	src/levels/shared/GetTransientDataSize__18MoveToValidFirePos.c
 shared	Init__18MoveToValidFirePosPC24MoveToValidFirePosConfigP8NavigateP17FireProjectileLOSP4MobyPUcP5State	Init__18MoveToValidFirePosPC24MoveToValidFirePosConfigP8NavigateP17FireProjectileLOSP4MobyPUcP5State	function	36	18	0	18	LEVEL1.REL:0x237C40	
 shared	Init__17FireProjectileLOSPC23FireProjectileLOSConfig	Init__17FireProjectileLOSPC23FireProjectileLOSConfig	function	52	18	0	18	LEVEL1.REL:0x237C68	
@@ -12500,7 +12500,7 @@ shared	GetTransientDataSize__15AlertSuspicious	GetTransientDataSize__15AlertSusp
 shared	CanActivate__15AlertSuspicious	CanActivate__15AlertSuspicious	function	8	13	13	13	LEVEL1.REL:0x237DA8	src/levels/shared/CanActivate__15AlertSuspicious.c
 shared	GetDesiredState__23AlertSuspiciousBehavior	GetDesiredState__23AlertSuspiciousBehavior	function	28	13	0	13	LEVEL1.REL:0x237DB0	
 shared	GetTransientDataSize__13EnemyTakeDown	GetTransientDataSize__13EnemyTakeDown	function	8	13	13	13	LEVEL1.REL:0x237DD0	src/levels/shared/GetTransientDataSize__13EnemyTakeDown.c
-shared	GetStateId__C13EnemyTakeDown	GetStateId__C13EnemyTakeDown	function	12	13	0	13	LEVEL1.REL:0x237DD8	
+shared	GetStateId__C13EnemyTakeDown	GetStateId__C13EnemyTakeDown	function	12	13	13	13	LEVEL1.REL:0x237DD8	src/levels/shared/GetStateId__C13EnemyTakeDown.c
 shared	CanBeEaten__C13EnemyTakeDown	CanBeEaten__C13EnemyTakeDown	function	8	13	13	13	LEVEL1.REL:0x237DE8	src/levels/shared/CanBeEaten__C13EnemyTakeDown.c
 shared	CanBeHypnotized__C13EnemyTakeDown	CanBeHypnotized__C13EnemyTakeDown	function	8	13	13	13	LEVEL1.REL:0x237DF0	src/levels/shared/CanBeHypnotized__C13EnemyTakeDown.c
 shared	Init__13EnemyTakeDownPC19EnemyTakeDownConfigP4MobyP10Alert_DataP8NavigateT2PUc	Init__13EnemyTakeDownPC19EnemyTakeDownConfigP4MobyP10Alert_DataP8NavigateT2PUc	function	28	13	0	13	LEVEL1.REL:0x237DF8	
@@ -12512,7 +12512,7 @@ shared	CanActivate__10AlertMelee	CanActivate__10AlertMelee	function	68	2	0	2	LEV
 shared	Update__10AlertMeleef	Update__10AlertMeleef	function	92	2	0	2	LEVEL1.REL:0x237F20	
 shared	Init__15StealthTakeDownPC21StealthTakeDownConfig	Init__15StealthTakeDownPC21StealthTakeDownConfig	function	8	14	14	14	LEVEL1.REL:0x237F80	src/levels/shared/Init__15StealthTakeDownPC21StealthTakeDownConfig.c
 shared	GetTarget__C15StealthTakeDown	GetTarget__C15StealthTakeDown	function	8	14	14	14	LEVEL1.REL:0x237F88	src/levels/shared/GetTarget__C15StealthTakeDown.c
-shared	GetStateId__C15StealthTakeDown	GetStateId__C15StealthTakeDown	function	12	14	0	14	LEVEL1.REL:0x237F90	
+shared	GetStateId__C15StealthTakeDown	GetStateId__C15StealthTakeDown	function	12	14	14	14	LEVEL1.REL:0x237F90	src/levels/shared/GetStateId__C15StealthTakeDown.c
 shared	Init__9LedgeGrabPC15LedgeGrabConfigP5State	Init__9LedgeGrabPC15LedgeGrabConfigP5State	function	12	16	16	16	LEVEL1.REL:0x237FA0	src/levels/shared/Init__9LedgeGrabPC15LedgeGrabConfigP5State.c
 shared	GetCastedTransientData__9LedgeGrab	GetCastedTransientData__9LedgeGrab	function	12	16	16	16	LEVEL1.REL:0x237FB0	src/levels/shared/GetCastedTransientData__9LedgeGrab.c
 shared	GetCastedTransientData__C9LedgeGrab	GetCastedTransientData__C9LedgeGrab	function	12	16	16	16	LEVEL1.REL:0x237FC0	src/levels/shared/GetCastedTransientData__C9LedgeGrab.c
@@ -13489,7 +13489,7 @@ shared	ArenaAmoeboidSmall_TypeInit__FP8MobyType	ArenaAmoeboidSmall_TypeInit__FP8
 shared	ArenaAmoeboidSmall_Moved__FP4Moby	ArenaAmoeboidSmall_Moved__FP4Moby	function	416	5	0	5	LEVEL3.REL:0x0C25D0	
 shared	ArenaAmoeboidSmall_FixLinks__FP4Moby	ArenaAmoeboidSmall_FixLinks__FP4Moby	function	28	5	5	5	LEVEL3.REL:0x0C2770	src/levels/shared/ArenaAmoeboidSmall_FixLinks__FP4Moby.c
 shared	Begin__25ArenaAmoeboidSmall_Spewed	Begin__25ArenaAmoeboidSmall_Spewed	function	84	5	0	5	LEVEL3.REL:0x0C2790	
-shared	SetParent__25ArenaAmoeboidSmall_SpewedP4Moby	SetParent__25ArenaAmoeboidSmall_SpewedP4Moby	function	16	5	0	5	LEVEL3.REL:0x0C27E8	
+shared	SetParent__25ArenaAmoeboidSmall_SpewedP4Moby	SetParent__25ArenaAmoeboidSmall_SpewedP4Moby	function	16	5	5	5	LEVEL3.REL:0x0C27E8	src/levels/shared/SetParent__25ArenaAmoeboidSmall_SpewedP4Moby.c
 shared	Update__25ArenaAmoeboidSmall_Spewedf	Update__25ArenaAmoeboidSmall_Spewedf	function	1056	5	0	5	LEVEL3.REL:0x0C27F8	
 shared	Begin__25ArenaAmoeboidSmall_Budded	Begin__25ArenaAmoeboidSmall_Budded	function	80	5	0	5	LEVEL3.REL:0x0C2C18	
 shared	Update__25ArenaAmoeboidSmall_Buddedf	Update__25ArenaAmoeboidSmall_Buddedf	function	1256	5	0	5	LEVEL3.REL:0x0C2C68	
@@ -15278,7 +15278,7 @@ shared	CanActivate__25ArenaAmoeboidSmall_Spewed	CanActivate__25ArenaAmoeboidSmal
 shared	GetTransientDataSize__25ArenaAmoeboidSmall_Budded	GetTransientDataSize__25ArenaAmoeboidSmall_Budded	function	8	5	5	5	LEVEL3.REL:0x262138	src/levels/shared/GetTransientDataSize__25ArenaAmoeboidSmall_Budded.c
 shared	GetDesiredState__25ArenaAmoeboidSmall_Budded	GetDesiredState__25ArenaAmoeboidSmall_Budded	function	8	5	5	5	LEVEL3.REL:0x262140	src/levels/shared/GetDesiredState__25ArenaAmoeboidSmall_Budded.c
 shared	CanActivate__25ArenaAmoeboidSmall_Budded	CanActivate__25ArenaAmoeboidSmall_Budded	function	8	5	5	5	LEVEL3.REL:0x262148	src/levels/shared/CanActivate__25ArenaAmoeboidSmall_Budded.c
-shared	SetParent__25ArenaAmoeboidSmall_BuddedP4Moby	SetParent__25ArenaAmoeboidSmall_BuddedP4Moby	function	16	5	0	5	LEVEL3.REL:0x262150	
+shared	SetParent__25ArenaAmoeboidSmall_BuddedP4Moby	SetParent__25ArenaAmoeboidSmall_BuddedP4Moby	function	16	5	5	5	LEVEL3.REL:0x262150	src/levels/shared/SetParent__25ArenaAmoeboidSmall_BuddedP4Moby.c
 shared	GetTransientDataSize__28AmoeboidSmall_LaunchFromTube	GetTransientDataSize__28AmoeboidSmall_LaunchFromTube	function	8	5	5	5	LEVEL3.REL:0x262160	src/levels/shared/GetTransientDataSize__28AmoeboidSmall_LaunchFromTube.c
 shared	CanActivate__28AmoeboidSmall_LaunchFromTube	CanActivate__28AmoeboidSmall_LaunchFromTube	function	8	5	5	5	LEVEL3.REL:0x262168	src/levels/shared/CanActivate__28AmoeboidSmall_LaunchFromTube.c
 shared	GetArenaStateMachine__25ArenaAmoeboidSmallContent	GetArenaStateMachine__25ArenaAmoeboidSmallContent	function	8	5	5	5	LEVEL3.REL:0x262170	src/levels/shared/GetArenaStateMachine__25ArenaAmoeboidSmallContent.c
@@ -18043,7 +18043,7 @@ shared	func_L10_0D6AF8	func_L10_0D6AF8	function	36	2	0	2	LEVEL10.REL:0x0D6AF8
 10_carnival	GetWalkSpeed__21KingpinState_WalkPath	GetWalkSpeed__21KingpinState_WalkPath	function	16	1	1	1	LEVEL10.REL:0x0ECF38	src/levels/10_carnival/GetWalkSpeed__21KingpinState_WalkPath.c
 10_carnival	Update__21KingpinState_WalkPathf	Update__21KingpinState_WalkPathf	function	1076	1	0	1	LEVEL10.REL:0x0ECF48	
 10_carnival	Begin__23KingpinState_Suspicious	Begin__23KingpinState_Suspicious	function	60	1	0	1	LEVEL10.REL:0x0ED380	
-10_carnival	SetWanderCurve__23KingpinState_SuspiciousP5Curve	SetWanderCurve__23KingpinState_SuspiciousP5Curve	function	16	1	0	1	LEVEL10.REL:0x0ED3C0	
+10_carnival	SetWanderCurve__23KingpinState_SuspiciousP5Curve	SetWanderCurve__23KingpinState_SuspiciousP5Curve	function	16	1	1	1	LEVEL10.REL:0x0ED3C0	src/levels/10_carnival/SetWanderCurve__23KingpinState_SuspiciousP5Curve.c
 10_carnival	Update__23KingpinState_Suspiciousf	Update__23KingpinState_Suspiciousf	function	464	1	0	1	LEVEL10.REL:0x0ED3D0	
 10_carnival	ChangeSubstate__23KingpinState_SuspiciousUi	ChangeSubstate__23KingpinState_SuspiciousUi	function	744	1	0	1	LEVEL10.REL:0x0ED5A0	
 10_carnival	Init__22KingpinState_HearNoiseP5State	Init__22KingpinState_HearNoiseP5State	function	8	1	1	1	LEVEL10.REL:0x0ED888	src/levels/10_carnival/Init__22KingpinState_HearNoiseP5State.c
@@ -20141,7 +20141,7 @@ shared	isnan	isnan	function	56	2	0	2	LEVEL14.REL:0x2544C0
 16_lab	AmoeboidSmall_FixLinks__FP4Moby	AmoeboidSmall_FixLinks__FP4Moby	function	92	1	0	1	LEVEL16.REL:0x0C0110	
 16_lab	AmoeboidSmall_GetExtraContentSize__Fv	AmoeboidSmall_GetExtraContentSize__Fv	function	400	1	0	1	LEVEL16.REL:0x0C0170	
 16_lab	Begin__20AmoeboidSmall_Spewed	Begin__20AmoeboidSmall_Spewed	function	116	1	0	1	LEVEL16.REL:0x0C0300	
-16_lab	SetParent__20AmoeboidSmall_SpewedP4Moby	SetParent__20AmoeboidSmall_SpewedP4Moby	function	16	1	0	1	LEVEL16.REL:0x0C0378	
+16_lab	SetParent__20AmoeboidSmall_SpewedP4Moby	SetParent__20AmoeboidSmall_SpewedP4Moby	function	16	1	1	1	LEVEL16.REL:0x0C0378	src/levels/16_lab/SetParent__20AmoeboidSmall_SpewedP4Moby.c
 16_lab	Update__20AmoeboidSmall_Spewedf	Update__20AmoeboidSmall_Spewedf	function	1120	1	0	1	LEVEL16.REL:0x0C0388	
 16_lab	Begin__20AmoeboidSmall_Budded	Begin__20AmoeboidSmall_Budded	function	100	1	0	1	LEVEL16.REL:0x0C07E8	
 16_lab	Update__20AmoeboidSmall_Buddedf	Update__20AmoeboidSmall_Buddedf	function	1296	1	0	1	LEVEL16.REL:0x0C0850	
@@ -20493,7 +20493,7 @@ shared	SimpleSpark_Spawn__FPC4VEC4T0PC18SimpleSpark_Paramsb_L16	SimpleSpark_Spaw
 16_lab	GetTransientDataSize__20AmoeboidSmall_Budded	GetTransientDataSize__20AmoeboidSmall_Budded	function	8	1	1	1	LEVEL16.REL:0x2432F8	src/levels/16_lab/GetTransientDataSize__20AmoeboidSmall_Budded.c
 16_lab	GetDesiredState__20AmoeboidSmall_Budded	GetDesiredState__20AmoeboidSmall_Budded	function	8	1	1	1	LEVEL16.REL:0x243300	src/levels/16_lab/GetDesiredState__20AmoeboidSmall_Budded.c
 16_lab	CanActivate__20AmoeboidSmall_Budded	CanActivate__20AmoeboidSmall_Budded	function	8	1	1	1	LEVEL16.REL:0x243308	src/levels/16_lab/CanActivate__20AmoeboidSmall_Budded.c
-16_lab	SetParent__20AmoeboidSmall_BuddedP4Moby	SetParent__20AmoeboidSmall_BuddedP4Moby	function	16	1	0	1	LEVEL16.REL:0x243310	
+16_lab	SetParent__20AmoeboidSmall_BuddedP4Moby	SetParent__20AmoeboidSmall_BuddedP4Moby	function	16	1	1	1	LEVEL16.REL:0x243310	src/levels/16_lab/SetParent__20AmoeboidSmall_BuddedP4Moby.c
 16_lab	CanBeEaten__C20AmoeboidSmall_Budded	CanBeEaten__C20AmoeboidSmall_Budded	function	8	1	1	1	LEVEL16.REL:0x243320	src/levels/16_lab/CanBeEaten__C20AmoeboidSmall_Budded.c
 16_lab	CanBeHypnotized__C20AmoeboidSmall_Budded	CanBeHypnotized__C20AmoeboidSmall_Budded	function	8	1	1	1	LEVEL16.REL:0x243328	src/levels/16_lab/CanBeHypnotized__C20AmoeboidSmall_Budded.c
 16_lab	Init__19AmoeboidSmall_MeleePC22ConditionalMeleeConfigP5State	Init__19AmoeboidSmall_MeleePC22ConditionalMeleeConfigP5State	function	16	1	0	1	LEVEL16.REL:0x243330	
