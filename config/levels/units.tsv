@@ -4615,7 +4615,7 @@ shared	Append__t9ApeTArray1ZP22ApeLevelObjectTemplateRCP22ApeLevelObjectTemplate
 shared	Grow__t10ApeTBinMap2ZUiZUiUs	Grow__t10ApeTBinMap2ZUiZUiUs	function	148	31	0	31	FE.REL:0x0D86A8	
 shared	Add__t10ApeTBinMap2ZUiZUiRCUiUi	Add__t10ApeTBinMap2ZUiZUiRCUiUi	function	152	31	0	31	FE.REL:0x0D8740	
 shared	__as__t10ApeTRefPtr1Z14ApeSkeletonDefP14ApeSkeletonDef	__as__t10ApeTRefPtr1Z14ApeSkeletonDefP14ApeSkeletonDef	function	84	31	0	31	FE.REL:0x0D87D8	
-shared	__t10ApeTRefPtr1Z14ApeSkeletonDef	__t10ApeTRefPtr1Z14ApeSkeletonDef	function	12	31	0	31	FE.REL:0x0D8830	
+shared	__t10ApeTRefPtr1Z14ApeSkeletonDef	__t10ApeTRefPtr1Z14ApeSkeletonDef	function	12	31	31	31	FE.REL:0x0D8830	src/levels/shared/__t10ApeTRefPtr1Z14ApeSkeletonDef.c
 shared	_$_t10ApeTRefPtr1Z14ApeSkeletonDef	_$_t10ApeTRefPtr1Z14ApeSkeletonDef	function	80	31	0	31	FE.REL:0x0D8840	
 shared	Append__t9ApeTArray1ZP13ApeAnimKeyTagRCP13ApeAnimKeyTag	Append__t9ApeTArray1ZP13ApeAnimKeyTagRCP13ApeAnimKeyTag	function	112	31	0	31	FE.REL:0x0D8890	
 shared	Sort__t10ApeTBinMap2ZUiZP19ApeAnimationLibrary	Sort__t10ApeTBinMap2ZUiZP19ApeAnimationLibrary	function	76	31	0	31	FE.REL:0x0D8900	
@@ -5013,7 +5013,7 @@ shared	Append__t9ApeTArray1Z17LOADER_IgnoreDataRC17LOADER_IgnoreData	Append__t9A
 shared	_$_17LOADER_TextureSet	_$_17LOADER_TextureSet	function	48	31	0	31	FE.REL:0x0E0118	
 shared	compare__t10ApeTBinMap2ZUiZP17LOADER_TextureSetPCvT1	compare__t10ApeTBinMap2ZUiZP17LOADER_TextureSetPCvT1	function	40	31	0	31	FE.REL:0x0E0148	
 shared	ApeBaseObjCast__H1Z10AglTexture_Pv15ApeEBaseObjType_PX01	ApeBaseObjCast__H1Z10AglTexture_Pv15ApeEBaseObjType_PX01	function	8	31	31	31	FE.REL:0x0E0170	src/levels/shared/ApeBaseObjCast__H1Z10AglTexture_Pv15ApeEBaseObjType_PX01.c
-shared	__t10ApeTRefPtr1Z10AglTexture	__t10ApeTRefPtr1Z10AglTexture	function	12	31	0	31	FE.REL:0x0E0178	
+shared	__t10ApeTRefPtr1Z10AglTexture	__t10ApeTRefPtr1Z10AglTexture	function	12	31	31	31	FE.REL:0x0E0178	src/levels/shared/__t10ApeTRefPtr1Z10AglTexture.c
 shared	_$_t10ApeTRefPtr1Z10AglTexture	_$_t10ApeTRefPtr1Z10AglTexture	function	96	31	0	31	FE.REL:0x0E0188	
 shared	__as__t10ApeTRefPtr1Z10AglTextureP10AglTexture	__as__t10ApeTRefPtr1Z10AglTextureP10AglTexture	function	96	31	0	31	FE.REL:0x0E01E8	
 shared	ApeBaseObjCast__H1Z11AglMaterial_Pv15ApeEBaseObjType_PX01	ApeBaseObjCast__H1Z11AglMaterial_Pv15ApeEBaseObjType_PX01	function	8	31	31	31	FE.REL:0x0E0248	src/levels/shared/ApeBaseObjCast__H1Z11AglMaterial_Pv15ApeEBaseObjType_PX01.c
@@ -5033,9 +5033,9 @@ shared	ApeBaseObjCast__H1Z10AglSubMesh_Pv15ApeEBaseObjType_PX01	ApeBaseObjCast__
 shared	GetFirstObject__t12ApeTFreeList1Z11AglMaterial	GetFirstObject__t12ApeTFreeList1Z11AglMaterial	function	56	31	0	31	FE.REL:0x0E03D8	
 shared	GetNextObject__t12ApeTFreeList1Z11AglMaterialP11AglMaterial	GetNextObject__t12ApeTFreeList1Z11AglMaterialP11AglMaterial	function	52	31	0	31	FE.REL:0x0E0410	
 shared	Free__t12ApeTFreeList1Z10AglSubMeshPv	Free__t12ApeTFreeList1Z10AglSubMeshPv	function	28	31	31	31	FE.REL:0x0E0448	src/levels/shared/Free__t12ApeTFreeList1Z10AglSubMeshPv.c
-shared	__t10ApeTRefPtr1Z10AglSubMesh	__t10ApeTRefPtr1Z10AglSubMesh	function	12	31	0	31	FE.REL:0x0E0468	
+shared	__t10ApeTRefPtr1Z10AglSubMesh	__t10ApeTRefPtr1Z10AglSubMesh	function	12	31	31	31	FE.REL:0x0E0468	src/levels/shared/__t10ApeTRefPtr1Z10AglSubMesh.c
 shared	_$_t10ApeTRefPtr1Z10AglSubMesh	_$_t10ApeTRefPtr1Z10AglSubMesh	function	96	31	0	31	FE.REL:0x0E0478	
-shared	__t10ApeTRefPtr1Z11AglMaterial	__t10ApeTRefPtr1Z11AglMaterial	function	12	31	0	31	FE.REL:0x0E04D8	
+shared	__t10ApeTRefPtr1Z11AglMaterial	__t10ApeTRefPtr1Z11AglMaterial	function	12	31	31	31	FE.REL:0x0E04D8	src/levels/shared/__t10ApeTRefPtr1Z11AglMaterial.c
 shared	__as__t10ApeTRefPtr1Z10AglSubMeshP10AglSubMesh	__as__t10ApeTRefPtr1Z10AglSubMeshP10AglSubMesh	function	96	31	0	31	FE.REL:0x0E04E8	
 shared	Alloc__t12ApeTFreeList1Z11AglTopology	Alloc__t12ApeTFreeList1Z11AglTopology	function	28	31	31	31	FE.REL:0x0E0548	src/levels/shared/Alloc__t12ApeTFreeList1Z11AglTopology.c
 shared	Free__t12ApeTFreeList1Z11AglTopologyPv	Free__t12ApeTFreeList1Z11AglTopologyPv	function	28	31	31	31	FE.REL:0x0E0568	src/levels/shared/Free__t12ApeTFreeList1Z11AglTopologyPv.c
@@ -5056,21 +5056,21 @@ shared	Alloc__t12ApeTFreeList1Zt11ApeTRingBuf1Z12AglStaticPtl	Alloc__t12ApeTFree
 shared	Free__t12ApeTFreeList1Zt11ApeTRingBuf1Z12AglStaticPtlPv	Free__t12ApeTFreeList1Zt11ApeTRingBuf1Z12AglStaticPtlPv	function	28	31	31	31	FE.REL:0x0E0A20	src/levels/shared/Free__t12ApeTFreeList1Zt11ApeTRingBuf1Z12AglStaticPtlPv.c
 shared	Alloc__t12ApeTFreeList1Zt11ApeTRingBuf1Z12AglSimplePtl	Alloc__t12ApeTFreeList1Zt11ApeTRingBuf1Z12AglSimplePtl	function	28	31	31	31	FE.REL:0x0E0A40	src/levels/shared/Alloc__t12ApeTFreeList1Zt11ApeTRingBuf1Z12AglSimplePtl.c
 shared	Free__t12ApeTFreeList1Zt11ApeTRingBuf1Z12AglSimplePtlPv	Free__t12ApeTFreeList1Zt11ApeTRingBuf1Z12AglSimplePtlPv	function	28	31	31	31	FE.REL:0x0E0A60	src/levels/shared/Free__t12ApeTFreeList1Zt11ApeTRingBuf1Z12AglSimplePtlPv.c
-shared	__t10ApeTRefPtr1Z17AglEmitProperties	__t10ApeTRefPtr1Z17AglEmitProperties	function	12	31	0	31	FE.REL:0x0E0A80	
+shared	__t10ApeTRefPtr1Z17AglEmitProperties	__t10ApeTRefPtr1Z17AglEmitProperties	function	12	31	31	31	FE.REL:0x0E0A80	src/levels/shared/__t10ApeTRefPtr1Z17AglEmitProperties.c
 shared	_$_t10ApeTRefPtr1Z17AglEmitProperties	_$_t10ApeTRefPtr1Z17AglEmitProperties	function	80	31	0	31	FE.REL:0x0E0A90	
-shared	__t10ApeTRefPtr1Z11AglIPtlInit	__t10ApeTRefPtr1Z11AglIPtlInit	function	12	31	0	31	FE.REL:0x0E0AE0	
+shared	__t10ApeTRefPtr1Z11AglIPtlInit	__t10ApeTRefPtr1Z11AglIPtlInit	function	12	31	31	31	FE.REL:0x0E0AE0	src/levels/shared/__t10ApeTRefPtr1Z11AglIPtlInit.c
 shared	_$_t10ApeTRefPtr1Z11AglIPtlInit	_$_t10ApeTRefPtr1Z11AglIPtlInit	function	116	31	0	31	FE.REL:0x0E0AF0	
-shared	__t10ApeTRefPtr1Z16AglPtlColorTable	__t10ApeTRefPtr1Z16AglPtlColorTable	function	12	31	0	31	FE.REL:0x0E0B68	
+shared	__t10ApeTRefPtr1Z16AglPtlColorTable	__t10ApeTRefPtr1Z16AglPtlColorTable	function	12	31	31	31	FE.REL:0x0E0B68	src/levels/shared/__t10ApeTRefPtr1Z16AglPtlColorTable.c
 shared	_$_t10ApeTRefPtr1Z16AglPtlColorTable	_$_t10ApeTRefPtr1Z16AglPtlColorTable	function	116	31	0	31	FE.REL:0x0E0B78	
-shared	__t10ApeTRefPtr1Z16AglPtlScaleTable	__t10ApeTRefPtr1Z16AglPtlScaleTable	function	12	31	0	31	FE.REL:0x0E0BF0	
+shared	__t10ApeTRefPtr1Z16AglPtlScaleTable	__t10ApeTRefPtr1Z16AglPtlScaleTable	function	12	31	31	31	FE.REL:0x0E0BF0	src/levels/shared/__t10ApeTRefPtr1Z16AglPtlScaleTable.c
 shared	_$_t10ApeTRefPtr1Z16AglPtlScaleTable	_$_t10ApeTRefPtr1Z16AglPtlScaleTable	function	116	31	0	31	FE.REL:0x0E0C00	
-shared	__t10ApeTRefPtr1Z11AglPtlMover	__t10ApeTRefPtr1Z11AglPtlMover	function	12	31	0	31	FE.REL:0x0E0C78	
+shared	__t10ApeTRefPtr1Z11AglPtlMover	__t10ApeTRefPtr1Z11AglPtlMover	function	12	31	31	31	FE.REL:0x0E0C78	src/levels/shared/__t10ApeTRefPtr1Z11AglPtlMover.c
 shared	_$_t10ApeTRefPtr1Z11AglPtlMover	_$_t10ApeTRefPtr1Z11AglPtlMover	function	116	31	0	31	FE.REL:0x0E0C88	
-shared	__t10ApeTRefPtr1Z13AglPtlRotator	__t10ApeTRefPtr1Z13AglPtlRotator	function	12	31	0	31	FE.REL:0x0E0D00	
+shared	__t10ApeTRefPtr1Z13AglPtlRotator	__t10ApeTRefPtr1Z13AglPtlRotator	function	12	31	31	31	FE.REL:0x0E0D00	src/levels/shared/__t10ApeTRefPtr1Z13AglPtlRotator.c
 shared	_$_t10ApeTRefPtr1Z13AglPtlRotator	_$_t10ApeTRefPtr1Z13AglPtlRotator	function	116	31	0	31	FE.REL:0x0E0D10	
-shared	__t10ApeTRefPtr1Z12AglPtlUVAnim	__t10ApeTRefPtr1Z12AglPtlUVAnim	function	12	31	0	31	FE.REL:0x0E0D88	
+shared	__t10ApeTRefPtr1Z12AglPtlUVAnim	__t10ApeTRefPtr1Z12AglPtlUVAnim	function	12	31	31	31	FE.REL:0x0E0D88	src/levels/shared/__t10ApeTRefPtr1Z12AglPtlUVAnim.c
 shared	_$_t10ApeTRefPtr1Z12AglPtlUVAnim	_$_t10ApeTRefPtr1Z12AglPtlUVAnim	function	116	31	0	31	FE.REL:0x0E0D98	
-shared	__t10ApeTRefPtr1Z17AglPtlConstrainer	__t10ApeTRefPtr1Z17AglPtlConstrainer	function	12	31	0	31	FE.REL:0x0E0E10	
+shared	__t10ApeTRefPtr1Z17AglPtlConstrainer	__t10ApeTRefPtr1Z17AglPtlConstrainer	function	12	31	31	31	FE.REL:0x0E0E10	src/levels/shared/__t10ApeTRefPtr1Z17AglPtlConstrainer.c
 shared	_$_t10ApeTRefPtr1Z17AglPtlConstrainer	_$_t10ApeTRefPtr1Z17AglPtlConstrainer	function	124	31	0	31	FE.REL:0x0E0E20	
 shared	Free__t12ApeTFreeList1Z17AglEmitPropertiesPv	Free__t12ApeTFreeList1Z17AglEmitPropertiesPv	function	28	31	31	31	FE.REL:0x0E0EA0	src/levels/shared/Free__t12ApeTFreeList1Z17AglEmitPropertiesPv.c
 shared	__as__t10ApeTRefPtr1Z11AglIPtlInitRCt10ApeTRefPtr1Z11AglIPtlInit	__as__t10ApeTRefPtr1Z11AglIPtlInitRCt10ApeTRefPtr1Z11AglIPtlInit	function	44	31	0	31	FE.REL:0x0E0EC0	
@@ -5717,7 +5717,7 @@ shared	__as__t10ApeTRefPtr1Z14ApeSkeletonDefRCt10ApeTRefPtr1Z14ApeSkeletonDef	__
 shared	Free__t12ApeTFreeList1Z11ApeLightDefPv	Free__t12ApeTFreeList1Z11ApeLightDefPv	function	28	31	31	31	FE.REL:0x0EB348	src/levels/shared/Free__t12ApeTFreeList1Z11ApeLightDefPv.c
 shared	Alloc__t12ApeTFreeList1Z11ApeLightDef	Alloc__t12ApeTFreeList1Z11ApeLightDef	function	28	31	31	31	FE.REL:0x0EB368	src/levels/shared/Alloc__t12ApeTFreeList1Z11ApeLightDef.c
 shared	__as__t10ApeTRefPtr1Z16AglIPtlContainerP16AglIPtlContainer	__as__t10ApeTRefPtr1Z16AglIPtlContainerP16AglIPtlContainer	function	76	31	0	31	FE.REL:0x0EB388	
-shared	__t10ApeTRefPtr1Z16AglIPtlContainer	__t10ApeTRefPtr1Z16AglIPtlContainer	function	12	31	0	31	FE.REL:0x0EB3D8	
+shared	__t10ApeTRefPtr1Z16AglIPtlContainer	__t10ApeTRefPtr1Z16AglIPtlContainer	function	12	31	31	31	FE.REL:0x0EB3D8	src/levels/shared/__t10ApeTRefPtr1Z16AglIPtlContainer.c
 shared	_$_t10ApeTRefPtr1Z16AglIPtlContainer	_$_t10ApeTRefPtr1Z16AglIPtlContainer	function	96	31	0	31	FE.REL:0x0EB3E8	
 shared	Free__t12ApeTFreeList1Z13ApeEmitterDefPv	Free__t12ApeTFreeList1Z13ApeEmitterDefPv	function	28	31	31	31	FE.REL:0x0EB448	src/levels/shared/Free__t12ApeTFreeList1Z13ApeEmitterDefPv.c
 shared	Alloc__t12ApeTFreeList1Z13ApeEmitterDef	Alloc__t12ApeTFreeList1Z13ApeEmitterDef	function	28	31	31	31	FE.REL:0x0EB468	src/levels/shared/Alloc__t12ApeTFreeList1Z13ApeEmitterDef.c
