@@ -5465,7 +5465,7 @@ shared	GetChannel__15ApeAnimTreeNodei	GetChannel__15ApeAnimTreeNodei	function	24
 shared	GetChannelFromHash__15ApeAnimTreeNodeUi	GetChannelFromHash__15ApeAnimTreeNodeUi	function	92	31	0	31	FE.REL:0x0E7880	
 shared	IsLeaf__15ApeAnimTreeNode	IsLeaf__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E78E0	src/levels/shared/IsLeaf__15ApeAnimTreeNode.c
 shared	IsDone__15ApeAnimTreeNode	IsDone__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E78E8	src/levels/shared/IsDone__15ApeAnimTreeNode.c
-shared	SetLabel__15ApeAnimTreeNodeUi	SetLabel__15ApeAnimTreeNodeUi	function	8	31	0	31	FE.REL:0x0E78F0	
+shared	SetLabel__15ApeAnimTreeNodeUi	SetLabel__15ApeAnimTreeNodeUi	function	8	31	31	31	FE.REL:0x0E78F0	src/levels/shared/SetLabel__15ApeAnimTreeNodeUi.c
 shared	GetLabel__15ApeAnimTreeNode	GetLabel__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E78F8	src/levels/shared/GetLabel__15ApeAnimTreeNode.c
 shared	InitializeReplacementNode__15ApeAnimTreeNode	InitializeReplacementNode__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E7900	src/levels/shared/InitializeReplacementNode__15ApeAnimTreeNode.c
 shared	IsDeleteable__15ApeAnimTreeNode	IsDeleteable__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E7908	src/levels/shared/IsDeleteable__15ApeAnimTreeNode.c
@@ -12307,7 +12307,7 @@ shared	finite	finite	function	32	30	0	30	LEVEL1.REL:0x229490
 shared	Navigate_SetTargetPosInt__FP8NavigatePC4VEC3b	Navigate_SetTargetPosInt__FP8NavigatePC4VEC3b	function	128	30	0	30	LEVEL1.REL:0x232438	
 shared	GU_IsPointToLeft__H2Z4VEC4Z4VEC4_PCX01PCX11_b	GU_IsPointToLeft__H2Z4VEC4Z4VEC4_PCX01PCX11_b	function	60	30	30	30	LEVEL1.REL:0x232F40	src/levels/shared/GU_IsPointToLeft__H2Z4VEC4Z4VEC4_PCX01PCX11_b.c
 shared	__14EffectCallback	__14EffectCallback	function	28	30	0	30	LEVEL1.REL:0x2337F8	
-shared	SetNext__14EffectCallbackP14EffectCallback	SetNext__14EffectCallbackP14EffectCallback	function	8	30	0	30	LEVEL1.REL:0x233818	
+shared	SetNext__14EffectCallbackP14EffectCallback	SetNext__14EffectCallbackP14EffectCallback	function	8	30	30	30	LEVEL1.REL:0x233818	src/levels/shared/SetNext__14EffectCallbackP14EffectCallback.c
 shared	GetNext__14EffectCallback	GetNext__14EffectCallback	function	8	30	30	30	LEVEL1.REL:0x233820	src/levels/shared/GetNext__14EffectCallback.c
 shared	SetPrevious__14EffectCallbackP14EffectCallback	SetPrevious__14EffectCallbackP14EffectCallback	function	8	30	30	30	LEVEL1.REL:0x233828	src/levels/shared/SetPrevious__14EffectCallbackP14EffectCallback.c
 shared	GetPrevious__14EffectCallback	GetPrevious__14EffectCallback	function	8	30	30	30	LEVEL1.REL:0x233830	src/levels/shared/GetPrevious__14EffectCallback.c
