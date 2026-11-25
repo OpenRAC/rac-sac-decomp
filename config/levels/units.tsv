@@ -10113,11 +10113,11 @@ shared	Begin__18BalconyRespawnPath	Begin__18BalconyRespawnPath	function	152	2	0	
 shared	Update__18BalconyRespawnPathf	Update__18BalconyRespawnPathf	function	128	2	0	2	LEVEL1.REL:0x12EF20	
 shared	GetDesiredState__18BalconyRespawnPath	GetDesiredState__18BalconyRespawnPath	function	48	2	0	2	LEVEL1.REL:0x12EFA0	
 shared	BasicBehaviors_CheckLOS__FP4MobyPC4VEC3b	BasicBehaviors_CheckLOS__FP4MobyPC4VEC3b	function	200	18	0	18	LEVEL1.REL:0x12EFD0	
-shared	Init__18BasicActivatedIdlePC24BasicActivatedIdleConfigP5State	Init__18BasicActivatedIdlePC24BasicActivatedIdleConfigP5State	function	12	18	0	18	LEVEL1.REL:0x12F098	
+shared	Init__18BasicActivatedIdlePC24BasicActivatedIdleConfigP5State	Init__18BasicActivatedIdlePC24BasicActivatedIdleConfigP5State	function	12	18	18	18	LEVEL1.REL:0x12F098	src/levels/shared/Init__18BasicActivatedIdlePC24BasicActivatedIdleConfigP5State.c
 shared	Begin__18BasicActivatedIdle	Begin__18BasicActivatedIdle	function	128	18	0	18	LEVEL1.REL:0x12F0A8	
 shared	GetDesiredState__18BasicActivatedIdle	GetDesiredState__18BasicActivatedIdle	function	100	18	0	18	LEVEL1.REL:0x12F128	
 shared	Update__18BasicActivatedIdlef	Update__18BasicActivatedIdlef	function	68	18	0	18	LEVEL1.REL:0x12F190	
-shared	Init__19BasicFireProjectilePC25BasicFireProjectileConfigP5State	Init__19BasicFireProjectilePC25BasicFireProjectileConfigP5State	function	12	18	0	18	LEVEL1.REL:0x12F1D8	
+shared	Init__19BasicFireProjectilePC25BasicFireProjectileConfigP5State	Init__19BasicFireProjectilePC25BasicFireProjectileConfigP5State	function	12	18	18	18	LEVEL1.REL:0x12F1D8	src/levels/shared/Init__19BasicFireProjectilePC25BasicFireProjectileConfigP5State.c
 shared	Begin__19BasicFireProjectile	Begin__19BasicFireProjectile	function	248	18	0	18	LEVEL1.REL:0x12F1E8	
 shared	GetDesiredState__19BasicFireProjectile	GetDesiredState__19BasicFireProjectile	function	128	18	0	18	LEVEL1.REL:0x12F2E0	
 shared	Update__19BasicFireProjectilef	Update__19BasicFireProjectilef	function	156	18	0	18	LEVEL1.REL:0x12F360	
@@ -10141,7 +10141,7 @@ shared	func_L01_12FD0C	func_L01_12FD0C	function	124	18	0	18	LEVEL1.REL:0x12FD0C
 shared	func_L01_12FD88	func_L01_12FD88	function	284	18	0	18	LEVEL1.REL:0x12FD88	
 shared	func_L01_12FEA4	func_L01_12FEA4	function	56	18	0	18	LEVEL1.REL:0x12FEA4	
 shared	PostAnimCallback__22FireProjectileWithTurnP4Moby	PostAnimCallback__22FireProjectileWithTurnP4Moby	function	632	18	0	18	LEVEL1.REL:0x12FEE0	
-shared	Init__13BasicPlayAnimPC19BasicPlayAnimConfigP5State	Init__13BasicPlayAnimPC19BasicPlayAnimConfigP5State	function	12	18	0	18	LEVEL1.REL:0x130158	
+shared	Init__13BasicPlayAnimPC19BasicPlayAnimConfigP5State	Init__13BasicPlayAnimPC19BasicPlayAnimConfigP5State	function	12	18	18	18	LEVEL1.REL:0x130158	src/levels/shared/Init__13BasicPlayAnimPC19BasicPlayAnimConfigP5State.c
 shared	Begin__13BasicPlayAnim	Begin__13BasicPlayAnim	function	148	18	0	18	LEVEL1.REL:0x130168	
 shared	GetDesiredState__13BasicPlayAnim	GetDesiredState__13BasicPlayAnim	function	152	18	0	18	LEVEL1.REL:0x130200	
 shared	Update__13BasicPlayAnimf	Update__13BasicPlayAnimf	function	36	18	0	18	LEVEL1.REL:0x130298	
@@ -10176,7 +10176,7 @@ shared	SetWaiting__14BasicNavWander	SetWaiting__14BasicNavWander	function	260	18
 shared	SetWalking__14BasicNavWander	SetWalking__14BasicNavWander	function	80	18	0	18	LEVEL1.REL:0x131648	
 shared	Begin__17BasicTurnToTarget	Begin__17BasicTurnToTarget	function	96	18	0	18	LEVEL1.REL:0x131698	
 shared	Update__17BasicTurnToTargetf	Update__17BasicTurnToTargetf	function	316	18	0	18	LEVEL1.REL:0x1316F8	
-shared	Init__17BasicTurnToTargetPC23BasicTurnToTargetConfigP5State	Init__17BasicTurnToTargetPC23BasicTurnToTargetConfigP5State	function	12	18	0	18	LEVEL1.REL:0x131838	
+shared	Init__17BasicTurnToTargetPC23BasicTurnToTargetConfigP5State	Init__17BasicTurnToTargetPC23BasicTurnToTargetConfigP5State	function	12	18	18	18	LEVEL1.REL:0x131838	src/levels/shared/Init__17BasicTurnToTargetPC23BasicTurnToTargetConfigP5State.c
 shared	CanActivate__11BasicGetHit	CanActivate__11BasicGetHit	function	108	18	0	18	LEVEL1.REL:0x131848	
 shared	Begin__11BasicGetHit	Begin__11BasicGetHit	function	100	18	0	18	LEVEL1.REL:0x1318B8	
 shared	Update__11BasicGetHitf	Update__11BasicGetHitf	function	236	18	0	18	LEVEL1.REL:0x131920	
@@ -10220,7 +10220,7 @@ shared	GetTransientDataSize__14TangleVineTrap	GetTransientDataSize__14TangleVine
 shared	SetTrap__14TangleVineTrapP4Moby	SetTrap__14TangleVineTrapP4Moby	function	124	18	0	18	LEVEL1.REL:0x132C68	
 shared	End__14TangleVineTrap	End__14TangleVineTrap	function	24	18	0	18	LEVEL1.REL:0x132CE8	
 shared	ShouldLeaveState__C14TangleVineTrap	ShouldLeaveState__C14TangleVineTrap	function	24	18	0	18	LEVEL1.REL:0x132D00	
-shared	Init__14TangleVineTrapPC20TangleVineTrapConfigP5State	Init__14TangleVineTrapPC20TangleVineTrapConfigP5State	function	12	18	0	18	LEVEL1.REL:0x132D18	
+shared	Init__14TangleVineTrapPC20TangleVineTrapConfigP5State	Init__14TangleVineTrapPC20TangleVineTrapConfigP5State	function	12	18	18	18	LEVEL1.REL:0x132D18	src/levels/shared/Init__14TangleVineTrapPC20TangleVineTrapConfigP5State.c
 shared	DestroyMoby__14TangleVineTrap	DestroyMoby__14TangleVineTrap	function	100	18	0	18	LEVEL1.REL:0x132D28	
 shared	HandleDamage__14TangleVineTrapf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__14TangleVineTrapf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	276	18	0	18	LEVEL1.REL:0x132D90	
 shared	Begin__18MoveToValidFirePos	Begin__18MoveToValidFirePos	function	112	18	0	18	LEVEL1.REL:0x132EA8	
@@ -12483,7 +12483,7 @@ shared	Init__9BasicIdlePC15BasicIdleConfig	Init__9BasicIdlePC15BasicIdleConfig	f
 shared	GetTransientDataSize__12TurnAndMelee	GetTransientDataSize__12TurnAndMelee	function	8	18	18	18	LEVEL1.REL:0x237CE0	src/levels/shared/GetTransientDataSize__12TurnAndMelee.c
 shared	OnHit__12TurnAndMelee	OnHit__12TurnAndMelee	function	8	18	18	18	LEVEL1.REL:0x237CE8	src/levels/shared/OnHit__12TurnAndMelee.c
 shared	OnDamage__12TurnAndMelee	OnDamage__12TurnAndMelee	function	8	18	18	18	LEVEL1.REL:0x237CF0	src/levels/shared/OnDamage__12TurnAndMelee.c
-shared	Init__12TurnAndMeleePC18TurnAndMeleeConfigPUi	Init__12TurnAndMeleePC18TurnAndMeleeConfigPUi	function	12	18	0	18	LEVEL1.REL:0x237CF8	
+shared	Init__12TurnAndMeleePC18TurnAndMeleeConfigPUi	Init__12TurnAndMeleePC18TurnAndMeleeConfigPUi	function	12	18	18	18	LEVEL1.REL:0x237CF8	src/levels/shared/Init__12TurnAndMeleePC18TurnAndMeleeConfigPUi.c
 shared	Init__5StuckPC11StuckConfigP8Navigate	Init__5StuckPC11StuckConfigP8Navigate	function	12	18	0	18	LEVEL1.REL:0x237D08	
 shared	Init__14ControllerWaitPC20ControllerWaitConfigP4MobyPUc	Init__14ControllerWaitPC20ControllerWaitConfigP4MobyPUc	function	16	18	0	18	LEVEL1.REL:0x237D18	
 shared	GetTransientDataSize__10Hypnotized	GetTransientDataSize__10Hypnotized	function	8	18	18	18	LEVEL1.REL:0x237D28	src/levels/shared/GetTransientDataSize__10Hypnotized.c
@@ -12516,7 +12516,7 @@ shared	GetStateId__C15StealthTakeDown	GetStateId__C15StealthTakeDown	function	12
 shared	Init__9LedgeGrabPC15LedgeGrabConfigP5State	Init__9LedgeGrabPC15LedgeGrabConfigP5State	function	12	16	0	16	LEVEL1.REL:0x237FA0	
 shared	GetCastedTransientData__9LedgeGrab	GetCastedTransientData__9LedgeGrab	function	12	16	0	16	LEVEL1.REL:0x237FB0	
 shared	GetCastedTransientData__C9LedgeGrab	GetCastedTransientData__C9LedgeGrab	function	12	16	0	16	LEVEL1.REL:0x237FC0	
-shared	Init__10StrafeBackPC16StrafeBackConfigP5State	Init__10StrafeBackPC16StrafeBackConfigP5State	function	12	21	0	21	LEVEL1.REL:0x237FD0	
+shared	Init__10StrafeBackPC16StrafeBackConfigP5State	Init__10StrafeBackPC16StrafeBackConfigP5State	function	12	21	21	21	LEVEL1.REL:0x237FD0	src/levels/shared/Init__10StrafeBackPC16StrafeBackConfigP5State.c
 shared	CanActivate__10StrafeBack	CanActivate__10StrafeBack	function	8	21	21	21	LEVEL1.REL:0x237FE0	src/levels/shared/CanActivate__10StrafeBack.c
 shared	CanActivate__8NoWeapon	CanActivate__8NoWeapon	function	8	18	18	18	LEVEL1.REL:0x237FE8	src/levels/shared/CanActivate__8NoWeapon.c
 shared	CanActivate__12WeaponNoAnim	CanActivate__12WeaponNoAnim	function	8	18	18	18	LEVEL1.REL:0x237FF0	src/levels/shared/CanActivate__12WeaponNoAnim.c
@@ -12526,7 +12526,7 @@ shared	Init__10WeaponIdlePC16WeaponIdleConfig	Init__10WeaponIdlePC16WeaponIdleCo
 shared	Init__16WeaponAkimboIdlePC22WeaponAkimboIdleConfig	Init__16WeaponAkimboIdlePC22WeaponAkimboIdleConfig	function	8	18	18	18	LEVEL1.REL:0x238010	src/levels/shared/Init__16WeaponAkimboIdlePC22WeaponAkimboIdleConfig.c
 shared	Init__10WeaponFirePC16WeaponFireConfig	Init__10WeaponFirePC16WeaponFireConfig	function	8	18	18	18	LEVEL1.REL:0x238018	src/levels/shared/Init__10WeaponFirePC16WeaponFireConfig.c
 shared	Init__19WeaponFireStreamingPC25WeaponFireStreamingConfig	Init__19WeaponFireStreamingPC25WeaponFireStreamingConfig	function	8	18	18	18	LEVEL1.REL:0x238020	src/levels/shared/Init__19WeaponFireStreamingPC25WeaponFireStreamingConfig.c
-shared	Init__24WeaponFireStreaming3PartPC30WeaponFireStreaming3PartConfigP11PlayerState	Init__24WeaponFireStreaming3PartPC30WeaponFireStreaming3PartConfigP11PlayerState	function	12	18	0	18	LEVEL1.REL:0x238028	
+shared	Init__24WeaponFireStreaming3PartPC30WeaponFireStreaming3PartConfigP11PlayerState	Init__24WeaponFireStreaming3PartPC30WeaponFireStreaming3PartConfigP11PlayerState	function	12	18	18	18	LEVEL1.REL:0x238028	src/levels/shared/Init__24WeaponFireStreaming3PartPC30WeaponFireStreaming3PartConfigP11PlayerState.c
 shared	Update__16WeaponFireNoAnimf	Update__16WeaponFireNoAnimf	function	8	18	18	18	LEVEL1.REL:0x238038	src/levels/shared/Update__16WeaponFireNoAnimf.c
 shared	Init__13WeaponPullOutPC19WeaponPullOutConfig	Init__13WeaponPullOutPC19WeaponPullOutConfig	function	8	18	18	18	LEVEL1.REL:0x238040	src/levels/shared/Init__13WeaponPullOutPC19WeaponPullOutConfig.c
 shared	Init__19WeaponAkimboPullOutPC25WeaponAkimboPullOutConfig	Init__19WeaponAkimboPullOutPC25WeaponAkimboPullOutConfig	function	8	18	18	18	LEVEL1.REL:0x238048	src/levels/shared/Init__19WeaponAkimboPullOutPC25WeaponAkimboPullOutConfig.c
@@ -19848,7 +19848,7 @@ shared	isnan	isnan	function	56	2	0	2	LEVEL14.REL:0x2544C0
 15_highstakes	CanActivate__28HenchbotHighStakes_BiteClank	CanActivate__28HenchbotHighStakes_BiteClank	function	184	1	0	1	LEVEL15.REL:0x0EA4E0	
 15_highstakes	Begin__28HenchbotHighStakes_BiteClank	Begin__28HenchbotHighStakes_BiteClank	function	72	1	0	1	LEVEL15.REL:0x0EA598	
 15_highstakes	Update__28HenchbotHighStakes_BiteClankf	Update__28HenchbotHighStakes_BiteClankf	function	1240	1	0	1	LEVEL15.REL:0x0EA5E0	
-15_highstakes	Init__28HenchbotHighStakes_BiteClankP34HenchbotHighStakes_BiteClankConfigP5State	Init__28HenchbotHighStakes_BiteClankP34HenchbotHighStakes_BiteClankConfigP5State	function	12	1	0	1	LEVEL15.REL:0x0EAAB8	
+15_highstakes	Init__28HenchbotHighStakes_BiteClankP34HenchbotHighStakes_BiteClankConfigP5State	Init__28HenchbotHighStakes_BiteClankP34HenchbotHighStakes_BiteClankConfigP5State	function	12	1	1	1	LEVEL15.REL:0x0EAAB8	src/levels/15_highstakes/Init__28HenchbotHighStakes_BiteClankP34HenchbotHighStakes_BiteClankConfigP5State.c
 15_highstakes	HenchbotHS_GetEffectMan__FP4Moby	HenchbotHS_GetEffectMan__FP4Moby	function	12	1	0	1	LEVEL15.REL:0x0EAAC8	
 15_highstakes	HenchbotHS_PostAnimCallback__FP4Moby	HenchbotHS_PostAnimCallback__FP4Moby	function	36	1	0	1	LEVEL15.REL:0x0EAAD8	
 15_highstakes	HighStakesCard_Init__FP4Moby	HighStakesCard_Init__FP4Moby	function	260	1	0	1	LEVEL15.REL:0x0EAB00	
@@ -20096,7 +20096,7 @@ shared	isnan	isnan	function	56	2	0	2	LEVEL14.REL:0x2544C0
 16_lab	Update__22Amoeboid_MoveToFirePosf	Update__22Amoeboid_MoveToFirePosf	function	92	1	0	1	LEVEL16.REL:0x0BCA10	
 16_lab	CanActivate__22Amoeboid_MoveToFirePos	CanActivate__22Amoeboid_MoveToFirePos	function	72	1	0	1	LEVEL16.REL:0x0BCA70	
 16_lab	SetTargetPos__19Amoeboid_Suspicious	SetTargetPos__19Amoeboid_Suspicious	function	276	1	0	1	LEVEL16.REL:0x0BCAB8	
-16_lab	Init__19Amoeboid_SuspiciousPC24AmoeboidSuspiciousConfigP8Navigate	Init__19Amoeboid_SuspiciousPC24AmoeboidSuspiciousConfigP8Navigate	function	12	1	0	1	LEVEL16.REL:0x0BCBD0	
+16_lab	Init__19Amoeboid_SuspiciousPC24AmoeboidSuspiciousConfigP8Navigate	Init__19Amoeboid_SuspiciousPC24AmoeboidSuspiciousConfigP8Navigate	function	12	1	1	1	LEVEL16.REL:0x0BCBD0	src/levels/16_lab/Init__19Amoeboid_SuspiciousPC24AmoeboidSuspiciousConfigP8Navigate.c
 16_lab	Begin__19Amoeboid_Suspicious	Begin__19Amoeboid_Suspicious	function	96	1	0	1	LEVEL16.REL:0x0BCBE0	
 16_lab	Update__19Amoeboid_Suspiciousf	Update__19Amoeboid_Suspiciousf	function	772	1	0	1	LEVEL16.REL:0x0BCC40	
 16_lab	CanActivate__19Amoeboid_Suspicious	CanActivate__19Amoeboid_Suspicious	function	28	1	0	1	LEVEL16.REL:0x0BCF48	
@@ -20154,7 +20154,7 @@ shared	isnan	isnan	function	56	2	0	2	LEVEL14.REL:0x2544C0
 16_lab	Update__29AmoeboidSmall_MoveToAttackPosf	Update__29AmoeboidSmall_MoveToAttackPosf	function	92	1	0	1	LEVEL16.REL:0x0C0FE0	
 16_lab	CanActivate__29AmoeboidSmall_MoveToAttackPos	CanActivate__29AmoeboidSmall_MoveToAttackPos	function	72	1	0	1	LEVEL16.REL:0x0C1040	
 16_lab	SetTargetPos__24AmoeboidSmall_Suspicious	SetTargetPos__24AmoeboidSmall_Suspicious	function	276	1	0	1	LEVEL16.REL:0x0C1088	
-16_lab	Init__24AmoeboidSmall_SuspiciousPC29AmoeboidSmallSuspiciousConfigP8Navigate	Init__24AmoeboidSmall_SuspiciousPC29AmoeboidSmallSuspiciousConfigP8Navigate	function	12	1	0	1	LEVEL16.REL:0x0C11A0	
+16_lab	Init__24AmoeboidSmall_SuspiciousPC29AmoeboidSmallSuspiciousConfigP8Navigate	Init__24AmoeboidSmall_SuspiciousPC29AmoeboidSmallSuspiciousConfigP8Navigate	function	12	1	1	1	LEVEL16.REL:0x0C11A0	src/levels/16_lab/Init__24AmoeboidSmall_SuspiciousPC29AmoeboidSmallSuspiciousConfigP8Navigate.c
 16_lab	Begin__24AmoeboidSmall_Suspicious	Begin__24AmoeboidSmall_Suspicious	function	96	1	0	1	LEVEL16.REL:0x0C11B0	
 16_lab	Update__24AmoeboidSmall_Suspiciousf	Update__24AmoeboidSmall_Suspiciousf	function	772	1	0	1	LEVEL16.REL:0x0C1210	
 16_lab	CanActivate__24AmoeboidSmall_Suspicious	CanActivate__24AmoeboidSmall_Suspicious	function	28	1	0	1	LEVEL16.REL:0x0C1518	
@@ -20325,7 +20325,7 @@ shared	DoorHinge_InitType__FP8MobyType	DoorHinge_InitType__FP8MobyType	function	
 16_lab	Begin__12Drone_Disarm	Begin__12Drone_Disarm	function	76	1	0	1	LEVEL16.REL:0x0E0F68	
 16_lab	End__12Drone_Disarm	End__12Drone_Disarm	function	60	1	0	1	LEVEL16.REL:0x0E0FB8	
 16_lab	SetTargetPos__16Drone_Suspicious	SetTargetPos__16Drone_Suspicious	function	276	1	0	1	LEVEL16.REL:0x0E0FF8	
-16_lab	Init__16Drone_SuspiciousPC21DroneSuspiciousConfigP8Navigate	Init__16Drone_SuspiciousPC21DroneSuspiciousConfigP8Navigate	function	12	1	0	1	LEVEL16.REL:0x0E1110	
+16_lab	Init__16Drone_SuspiciousPC21DroneSuspiciousConfigP8Navigate	Init__16Drone_SuspiciousPC21DroneSuspiciousConfigP8Navigate	function	12	1	1	1	LEVEL16.REL:0x0E1110	src/levels/16_lab/Init__16Drone_SuspiciousPC21DroneSuspiciousConfigP8Navigate.c
 16_lab	Begin__16Drone_Suspicious	Begin__16Drone_Suspicious	function	96	1	0	1	LEVEL16.REL:0x0E1120	
 16_lab	Update__16Drone_Suspiciousf	Update__16Drone_Suspiciousf	function	764	1	0	1	LEVEL16.REL:0x0E1180	
 16_lab	CanActivate__16Drone_Suspicious	CanActivate__16Drone_Suspicious	function	28	1	0	1	LEVEL16.REL:0x0E1480	
