@@ -123569,3 +123569,5 @@ LEVEL16.REL	0x243330	16	src/levels/16_lab/Init__19AmoeboidSmall_MeleePC22Conditi
 LEVEL9.REL	0x0BB658	16	src/levels/09_cafeteria/Arena2CartKnives_Init__FP4Moby.c
 LEVEL15.REL	0x0BD310	16	src/levels/15_highstakes/CardGameHat_Init__FP4Moby.c
 LEVEL23.REL	0x0D2FD8	16	src/levels/23_qwark/PirateCannonShot_Init__FP4Moby.c
+LEVEL3.REL	0x0BC638	16	src/levels/03_prison/Arena1Fan_Reset__FP4Moby_L03.c
+LEVEL22.REL	0x0EFB60	16	src/levels/22_graveyard/Level08Fan_Reset__FP4Moby_L22.c

@@ -13411,7 +13411,7 @@ shared	SCRNINVENTORY_ReleaseItemGeoInst__Fv_L03	SCRNINVENTORY_ReleaseItemGeoInst
 03_prison	Arena1_OnHunterMode__Fv	Arena1_OnHunterMode__Fv	function	12	1	1	1	LEVEL3.REL:0x0BC440	src/levels/03_prison/Arena1_OnHunterMode__Fv.c
 03_prison	Arena1Fan_Start__FP4Moby13Arena1FanMode_L03	Arena1Fan_Start__FP4Moby13Arena1FanMode	function	348	1	0	1	LEVEL3.REL:0x0BC450	
 03_prison	Arena1Fan_Stop__FP4Moby_L03	Arena1Fan_Stop__FP4Moby	function	136	1	0	1	LEVEL3.REL:0x0BC5B0	
-03_prison	Arena1Fan_Reset__FP4Moby_L03	Arena1Fan_Reset__FP4Moby	function	16	1	0	1	LEVEL3.REL:0x0BC638	
+03_prison	Arena1Fan_Reset__FP4Moby_L03	Arena1Fan_Reset__FP4Moby	function	16	1	1	1	LEVEL3.REL:0x0BC638	src/levels/03_prison/Arena1Fan_Reset__FP4Moby_L03.c
 03_prison	Arena1Fan_Init__FP4Moby	Arena1Fan_Init__FP4Moby	function	704	1	0	1	LEVEL3.REL:0x0BC648	
 03_prison	Arena1Fan_Term__FP4Moby	Arena1Fan_Term__FP4Moby	function	56	1	1	1	LEVEL3.REL:0x0BC908	src/levels/03_prison/Arena1Fan_Term__FP4Moby.c
 03_prison	Arena1Fan_Update__FP4Mobyf	Arena1Fan_Update__FP4Mobyf	function	1924	1	0	1	LEVEL3.REL:0x0BC940	
@@ -22212,7 +22212,7 @@ shared	func_L21_18F838	func_L21_18F838	function	8	2	2	2	LEVEL21.REL:0x18F838	src
 22_graveyard	Level08Fan_Start__FP4Moby_L22	Level08Fan_Start__FP4Moby	function	160	1	0	1	LEVEL22.REL:0x0EFA10	
 22_graveyard	Level08Fan_Stop__FP4Moby_L22	Level08Fan_Stop__FP4Moby	function	68	1	0	1	LEVEL22.REL:0x0EFAB0	
 22_graveyard	Level08Fan_StartTangled__FP4Moby_L22	Level08Fan_StartTangled__FP4Moby	function	104	1	0	1	LEVEL22.REL:0x0EFAF8	
-22_graveyard	Level08Fan_Reset__FP4Moby_L22	Level08Fan_Reset__FP4Moby	function	16	1	0	1	LEVEL22.REL:0x0EFB60	
+22_graveyard	Level08Fan_Reset__FP4Moby_L22	Level08Fan_Reset__FP4Moby	function	16	1	1	1	LEVEL22.REL:0x0EFB60	src/levels/22_graveyard/Level08Fan_Reset__FP4Moby_L22.c
 22_graveyard	Level08Fan_SetTranslation__FP4MobyPC4VEC2_L22	Level08Fan_SetTranslation__FP4MobyPC4VEC2	function	220	1	0	1	LEVEL22.REL:0x0EFB70	
 22_graveyard	Level08Fan_Init__FP4Moby	Level08Fan_Init__FP4Moby	function	604	1	0	1	LEVEL22.REL:0x0EFC50	
 22_graveyard	Level08Fan_Term__FP4Moby	Level08Fan_Term__FP4Moby	function	56	1	1	1	LEVEL22.REL:0x0EFEB0	src/levels/22_graveyard/Level08Fan_Term__FP4Moby.c
