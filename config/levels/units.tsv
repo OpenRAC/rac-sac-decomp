@@ -1290,7 +1290,7 @@ shared	PAUSEMODE_ResetPendingPopScreen__Fv	PAUSEMODE_ResetPendingPopScreen__Fv	f
 shared	PAUSEMODE_GetMenuBufferRam__Fv	PAUSEMODE_GetMenuBufferRam__Fv	function	12	31	31	31	FE.REL:0x037118	src/levels/shared/PAUSEMODE_GetMenuBufferRam__Fv.c
 shared	PAUSEMODE_ResetScaleFX__FUcff	PAUSEMODE_ResetScaleFX__FUcff	function	40	31	31	31	FE.REL:0x037128	src/levels/shared/PAUSEMODE_ResetScaleFX__FUcff.c
 shared	PAUSEMODE_UpdateScaleFX__Fv	PAUSEMODE_UpdateScaleFX__Fv	function	60	31	31	31	FE.REL:0x037150	src/levels/shared/PAUSEMODE_UpdateScaleFX__Fv.c
-shared	PAUSEMODE_GetScaleFX__Fv	PAUSEMODE_GetScaleFX__Fv	function	36	31	0	31	FE.REL:0x037190	
+shared	PAUSEMODE_GetScaleFX__Fv	PAUSEMODE_GetScaleFX__Fv	function	36	31	31	31	FE.REL:0x037190	src/levels/shared/PAUSEMODE_GetScaleFX__Fv.c
 shared	SCRNDEFAULT_Render__FPc	SCRNDEFAULT_Render__FPc	function	196	31	0	31	FE.REL:0x0371B8	
 shared	SCRNDEFAULT_Update__Fv	SCRNDEFAULT_Update__Fv	function	48	31	0	31	FE.REL:0x037280	
 shared	PAUSEMODE_GetGameModeOnPauseModeEntrance__Fv	PAUSEMODE_GetGameModeOnPauseModeEntrance__Fv	function	12	31	31	31	FE.REL:0x0372B0	src/levels/shared/PAUSEMODE_GetGameModeOnPauseModeEntrance__Fv.c
@@ -1688,7 +1688,7 @@ shared	MergeAABBWithPoint__FP4VEC3T0PC4VEC3	MergeAABBWithPoint__FP4VEC3T0PC4VEC3
 shared	GetAABBFromOBB__FP4VEC3T0PC4VEC3N42	GetAABBFromOBB__FP4VEC3T0PC4VEC3N42	function	284	31	0	31	FE.REL:0x045EE0	
 shared	GetAABBFromOBBLocal__FP4VEC3PC4VEC3N31	GetAABBFromOBBLocal__FP4VEC3PC4VEC3N31	function	160	31	0	31	FE.REL:0x046000	
 shared	GetAABBFromCone__FP4VEC3T0PC4VEC3T2ff	GetAABBFromCone__FP4VEC3T0PC4VEC3T2ff	function	560	31	0	31	FE.REL:0x0460A0	
-shared	GetAABBFromPyramid__FP4VEC3T0PC4VEC3N42	GetAABBFromPyramid__FP4VEC3T0PC4VEC3N42	function	288	31	0	31	FE.REL:0x0462D0	
+shared	GetAABBFromPyramid__FP4VEC3T0PC4VEC3N42	GetAABBFromPyramid__FP4VEC3T0PC4VEC3N42	function	288	31	31	31	FE.REL:0x0462D0	src/levels/shared/GetAABBFromPyramid__FP4VEC3T0PC4VEC3N42.c
 shared	GetSphereFromPoints__FP4VEC3PfPC4VEC3i	GetSphereFromPoints__FP4VEC3PfPC4VEC3i	function	908	31	0	31	FE.REL:0x0463F0	
 shared	GetRadiusFromPoints__FPC4VEC3T0i	GetRadiusFromPoints__FPC4VEC3T0i	function	164	31	0	31	FE.REL:0x046780	
 shared	IntersectRayWithOBBInternal__FPfPC4VEC3T1fT1N41	IntersectRayWithOBBInternal__FPfPC4VEC3T1fT1N41	function	864	31	0	31	FE.REL:0x046828	
