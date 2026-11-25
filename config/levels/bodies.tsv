@@ -124219,3 +124219,9 @@ LEVEL11.REL	0x10FCD0	20	src/levels/shared/QWARK_IsActive__FP6PLAYER.c
 LEVEL18.REL	0x0D97A0	20	src/levels/shared/QWARK_IsActive__FP6PLAYER.c
 LEVEL23.REL	0x0D8890	20	src/levels/shared/QWARK_IsActive__FP6PLAYER.c
 LEVEL29.REL	0x0C7320	20	src/levels/29_base/ButtonWallMounted_WasPressed__FP4Moby.c
+LEVEL1.REL	0x0EDF60	20	src/levels/shared/Init__18Lvl07Camera_PatrolPC14NavigateParams.c
+LEVEL19.REL	0x0F2688	20	src/levels/shared/Init__18Lvl07Camera_PatrolPC14NavigateParams.c
+LEVEL22.REL	0x0F8560	20	src/levels/shared/Init__18Lvl07Camera_PatrolPC14NavigateParams.c
+LEVEL19.REL	0x0D7E28	20	src/levels/shared/Init__19Doppleganger_PatrolPC12PatrolConfig.c
+LEVEL22.REL	0x0D2A80	20	src/levels/shared/Init__19Doppleganger_PatrolPC12PatrolConfig.c
+LEVEL21.REL	0x0BA160	20	src/levels/21_shower/Init__19Arena4Camera_PatrolPC14NavigateParams.c
