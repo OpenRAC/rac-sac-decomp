@@ -8562,7 +8562,7 @@ shared	CLANK_Activate__FP6PLAYER	CLANK_Activate__FP6PLAYER	function	440	14	0	14	
 shared	CLANK_Deactivate__FP6PLAYER	CLANK_Deactivate__FP6PLAYER	function	192	14	0	14	LEVEL1.REL:0x0C09D8	
 shared	CLANK_Update__FP6PLAYER_L01	CLANK_Update__FP6PLAYER	function	1552	13	0	13	LEVEL1.REL:0x0C0A98	
 shared	CLANK_HideClank__FP6PLAYER	CLANK_HideClank__FP6PLAYER	function	8	14	14	14	LEVEL1.REL:0x0C10A8	src/levels/shared/CLANK_HideClank__FP6PLAYER.c
-shared	CLANK_IsActive__FP6PLAYER	CLANK_IsActive__FP6PLAYER	function	20	14	0	14	LEVEL1.REL:0x0C10B0	
+shared	CLANK_IsActive__FP6PLAYER	CLANK_IsActive__FP6PLAYER	function	20	14	14	14	LEVEL1.REL:0x0C10B0	src/levels/shared/CLANK_IsActive__FP6PLAYER.c
 shared	CLANK_GetCollisionSphere__FP5CLANKP6Sphere	CLANK_GetCollisionSphere__FP5CLANKP6Sphere	function	192	14	0	14	LEVEL1.REL:0x0C10C8	
 shared	CLANK_RegisterInterestingObject__FP5CLANKP4MobyibPC4VEC3	CLANK_RegisterInterestingObject__FP5CLANKP4MobyibPC4VEC3	function	300	14	0	14	LEVEL1.REL:0x0C1188	
 shared	CLANK_PostUpdate__FP6PLAYER_L01	CLANK_PostUpdate__FP6PLAYER	function	1228	13	0	13	LEVEL1.REL:0x0C12B8	
@@ -19022,7 +19022,7 @@ shared	QWARK_PostInit__FP6PLAYER	QWARK_PostInit__FP6PLAYER	function	244	3	0	3	LE
 shared	QWARK_GetHeroJoints__FP4Moby	QWARK_GetHeroJoints__FP4Moby	function	1580	3	0	3	LEVEL11.REL:0x10F5B8	
 shared	QWARK_Update__FP6PLAYER	QWARK_Update__FP6PLAYER	function	224	3	0	3	LEVEL11.REL:0x10FBE8	
 shared	QWARK_GetHit__FP6PLAYER	QWARK_GetHit__FP6PLAYER	function	8	3	3	3	LEVEL11.REL:0x10FCC8	src/levels/shared/QWARK_GetHit__FP6PLAYER.c
-shared	QWARK_IsActive__FP6PLAYER	QWARK_IsActive__FP6PLAYER	function	20	3	0	3	LEVEL11.REL:0x10FCD0	
+shared	QWARK_IsActive__FP6PLAYER	QWARK_IsActive__FP6PLAYER	function	20	3	3	3	LEVEL11.REL:0x10FCD0	src/levels/shared/QWARK_IsActive__FP6PLAYER.c
 shared	QWARK_PostUpdate__FP6PLAYER_L11	QWARK_PostUpdate__FP6PLAYER	function	368	2	0	2	LEVEL11.REL:0x10FCE8	
 shared	QWARK_StateUpdate__FP6PLAYER	QWARK_StateUpdate__FP6PLAYER	function	76	3	0	3	LEVEL11.REL:0x10FE58	
 shared	QWARK_HandleCamera__FP6PLAYER	QWARK_HandleCamera__FP6PLAYER	function	8	3	3	3	LEVEL11.REL:0x10FEA8	src/levels/shared/QWARK_HandleCamera__FP6PLAYER.c
@@ -24456,7 +24456,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 29_base	ButtonWallMounted_Init__FP4Moby	ButtonWallMounted_Init__FP4Moby	function	428	1	0	1	LEVEL29.REL:0x0C6DA8	
 29_base	ButtonWallMounted_Term__FP4Moby	ButtonWallMounted_Term__FP4Moby	function	92	1	1	1	LEVEL29.REL:0x0C6F58	src/levels/29_base/ButtonWallMounted_Term__FP4Moby.c
 29_base	ButtonWallMounted_Update__FP4Mobyf	ButtonWallMounted_Update__FP4Mobyf	function	868	1	0	1	LEVEL29.REL:0x0C6FB8	
-29_base	ButtonWallMounted_WasPressed__FP4Moby	ButtonWallMounted_WasPressed__FP4Moby	function	20	1	0	1	LEVEL29.REL:0x0C7320	
+29_base	ButtonWallMounted_WasPressed__FP4Moby	ButtonWallMounted_WasPressed__FP4Moby	function	20	1	1	1	LEVEL29.REL:0x0C7320	src/levels/29_base/ButtonWallMounted_WasPressed__FP4Moby.c
 29_base	ButtonWallMounted_SetHandled__FP4Moby	ButtonWallMounted_SetHandled__FP4Moby	function	12	1	1	1	LEVEL29.REL:0x0C7338	src/levels/29_base/ButtonWallMounted_SetHandled__FP4Moby.c
 29_base	ButtonWallMounted_SetButtonPressCutSceneParams__FP4MobyPC4VEC3fff	ButtonWallMounted_SetButtonPressCutSceneParams__FP4MobyPC4VEC3fff	function	64	1	0	1	LEVEL29.REL:0x0C7348	
 29_base	ButtonWallMounted_Reset__FP4Moby	ButtonWallMounted_Reset__FP4Moby	function	28	1	0	1	LEVEL29.REL:0x0C7388	
