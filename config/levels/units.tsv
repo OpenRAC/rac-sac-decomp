@@ -5796,8 +5796,8 @@ shared	GetAttachedData__C6ApeObjUi	GetAttachedData__C6ApeObjUi	function	28	31	0	
 shared	RemoveAttachedData__6ApeObjUi	RemoveAttachedData__6ApeObjUi	function	28	31	0	31	FE.REL:0x0EBD40	
 shared	SetAttachedData__6ApeObjUiPv	SetAttachedData__6ApeObjUiPv	function	12	31	0	31	FE.REL:0x0EBD60	
 shared	SetDebugFlags__6ApeObjRCQ26ApeObj10DebugFlags	SetDebugFlags__6ApeObjRCQ26ApeObj10DebugFlags	function	12	31	0	31	FE.REL:0x0EBD70	
-shared	GetDebugFlags__C6ApeObj	GetDebugFlags__C6ApeObj	function	8	31	0	31	FE.REL:0x0EBD80	
-shared	GetDebugFlags__6ApeObj	GetDebugFlags__6ApeObj	function	8	31	0	31	FE.REL:0x0EBD88	
+shared	GetDebugFlags__C6ApeObj	GetDebugFlags__C6ApeObj	function	8	31	31	31	FE.REL:0x0EBD80	src/levels/shared/GetDebugFlags__C6ApeObj.c
+shared	GetDebugFlags__6ApeObj	GetDebugFlags__6ApeObj	function	8	31	31	31	FE.REL:0x0EBD88	src/levels/shared/GetDebugFlags__6ApeObj.c
 shared	ClearDebugFlags__6ApeObj	ClearDebugFlags__6ApeObj	function	36	31	0	31	FE.REL:0x0EBD90	
 shared	RegisterAnimMatrix__6ApeObjP10ApeAnimMtx	RegisterAnimMatrix__6ApeObjP10ApeAnimMtx	function	8	31	0	31	FE.REL:0x0EBDB8	
 shared	ReleaseAnimMatrix__6ApeObj	ReleaseAnimMatrix__6ApeObj	function	16	31	0	31	FE.REL:0x0EBDC0	
@@ -5805,9 +5805,9 @@ shared	GetAnimMatrix__6ApeObj	GetAnimMatrix__6ApeObj	function	8	31	0	31	FE.REL:0
 shared	QueryAnimData__C6ApeObj	QueryAnimData__C6ApeObj	function	24	31	0	31	FE.REL:0x0EBDD8	
 shared	SetRenderedTime__11ApeInstanceUi	SetRenderedTime__11ApeInstanceUi	function	8	31	0	31	FE.REL:0x0EBDF0	
 shared	SetLockedPvsRegion__11ApeInstanceUi	SetLockedPvsRegion__11ApeInstanceUi	function	28	31	0	31	FE.REL:0x0EBDF8	
-shared	GetLockedPvsRegion__C11ApeInstance	GetLockedPvsRegion__C11ApeInstance	function	8	31	0	31	FE.REL:0x0EBE18	
+shared	GetLockedPvsRegion__C11ApeInstance	GetLockedPvsRegion__C11ApeInstance	function	8	31	31	31	FE.REL:0x0EBE18	src/levels/shared/GetLockedPvsRegion__C11ApeInstance.c
 shared	SetLockedLightSet__11ApeInstanceUi	SetLockedLightSet__11ApeInstanceUi	function	28	31	0	31	FE.REL:0x0EBE20	
-shared	GetLockedLightSet__C11ApeInstance	GetLockedLightSet__C11ApeInstance	function	8	31	0	31	FE.REL:0x0EBE40	
+shared	GetLockedLightSet__C11ApeInstance	GetLockedLightSet__C11ApeInstance	function	8	31	31	31	FE.REL:0x0EBE40	src/levels/shared/GetLockedLightSet__C11ApeInstance.c
 shared	SetShadowCaster__11ApeInstanceb	SetShadowCaster__11ApeInstanceb	function	56	31	0	31	FE.REL:0x0EBE48	
 shared	IsShadowCaster__C11ApeInstance	IsShadowCaster__C11ApeInstance	function	20	31	0	31	FE.REL:0x0EBE80	
 shared	GetLoadFinalized__C11ApeInstance	GetLoadFinalized__C11ApeInstance	function	20	31	0	31	FE.REL:0x0EBE98	
@@ -5831,8 +5831,8 @@ shared	SetFarZCullSqr__11ApeInstancef	SetFarZCullSqr__11ApeInstancef	function	8	
 shared	GetFarZCullSqr__C11ApeInstance	GetFarZCullSqr__C11ApeInstance	function	8	31	0	31	FE.REL:0x0EC068	
 shared	SetRGB__11ApeInstanceG7ApeRGBA	SetRGB__11ApeInstanceG7ApeRGBA	function	24	31	0	31	FE.REL:0x0EC070	
 shared	GetRGB__C11ApeInstance	GetRGB__C11ApeInstance	function	24	31	0	31	FE.REL:0x0EC088	
-shared	GetPVS__C11ApeInstance	GetPVS__C11ApeInstance	function	8	31	0	31	FE.REL:0x0EC0A0	
-shared	GetLightSet__C11ApeInstance	GetLightSet__C11ApeInstance	function	8	31	0	31	FE.REL:0x0EC0A8	
+shared	GetPVS__C11ApeInstance	GetPVS__C11ApeInstance	function	8	31	31	31	FE.REL:0x0EC0A0	src/levels/shared/GetPVS__C11ApeInstance.c
+shared	GetLightSet__C11ApeInstance	GetLightSet__C11ApeInstance	function	8	31	31	31	FE.REL:0x0EC0A8	src/levels/shared/GetLightSet__C11ApeInstance.c
 shared	SetLightSet__11ApeInstanceP11ApeLightSet	SetLightSet__11ApeInstanceP11ApeLightSet	function	8	31	0	31	FE.REL:0x0EC0B0	
 shared	EnablePhysics__11ApeInstance	EnablePhysics__11ApeInstance	function	52	31	0	31	FE.REL:0x0EC0B8	
 shared	DisablePhysics__11ApeInstance	DisablePhysics__11ApeInstance	function	52	31	0	31	FE.REL:0x0EC0F0	
@@ -5922,7 +5922,7 @@ shared	GetBindOffset__20ApeCollisionInstance	GetBindOffset__20ApeCollisionInstan
 shared	SetBindOffset__20ApeCollisionInstanceRC4AMtx	SetBindOffset__20ApeCollisionInstanceRC4AMtx	function	40	31	0	31	FE.REL:0x0ECF80	
 shared	SetObjID__20ApeCollisionInstanceP6ApeObj	SetObjID__20ApeCollisionInstanceP6ApeObj	function	8	31	0	31	FE.REL:0x0ECFA8	
 shared	GetObjID__20ApeCollisionInstance	GetObjID__20ApeCollisionInstance	function	8	31	0	31	FE.REL:0x0ECFB0	
-shared	GetInWorld__20ApeCollisionInstance	GetInWorld__20ApeCollisionInstance	function	8	31	0	31	FE.REL:0x0ECFB8	
+shared	GetInWorld__20ApeCollisionInstance	GetInWorld__20ApeCollisionInstance	function	8	31	31	31	FE.REL:0x0ECFB8	src/levels/shared/GetInWorld__20ApeCollisionInstance.c
 shared	AddToWorld__20ApeCollisionInstance	AddToWorld__20ApeCollisionInstance	function	60	31	0	31	FE.REL:0x0ECFC0	
 shared	RemoveFromWorld__20ApeCollisionInstance	RemoveFromWorld__20ApeCollisionInstance	function	56	31	0	31	FE.REL:0x0ED000	
 shared	_$_17ApeCameraInstance	_$_17ApeCameraInstance	function	28	31	31	31	FE.REL:0x0ED038	src/levels/shared/_$_17ApeCameraInstance.c
@@ -12584,7 +12584,7 @@ shared	Active__13LightningTree	Active__13LightningTree	function	12	21	0	21	LEVEL
 shared	__16ContagiousCharge	__16ContagiousCharge	function	32	19	0	19	LEVEL1.REL:0x238A90	
 shared	Active__16ContagiousCharge	Active__16ContagiousCharge	function	12	19	0	19	LEVEL1.REL:0x238AB0	
 shared	__14LightningStorm	__14LightningStorm	function	32	14	0	14	LEVEL1.REL:0x238AC0	
-shared	Active__14LightningStorm	Active__14LightningStorm	function	8	14	0	14	LEVEL1.REL:0x238AE0	
+shared	Active__14LightningStorm	Active__14LightningStorm	function	8	14	14	14	LEVEL1.REL:0x238AE0	src/levels/shared/Active__14LightningStorm.c
 shared	BlowUpCheck__12BalconyDeathP4Moby	BlowUpCheck__12BalconyDeathP4Moby	function	92	2	0	2	LEVEL1.REL:0x238AE8	
 shared	Init__11BalconyTrapPC20TangleVineTrapConfigP5StateT2	Init__11BalconyTrapPC20TangleVineTrapConfigP5StateT2	function	28	2	0	2	LEVEL1.REL:0x238B48	
 shared	CanActivate__18BalconyRespawnPath	CanActivate__18BalconyRespawnPath	function	8	2	2	2	LEVEL1.REL:0x238B68	src/levels/shared/CanActivate__18BalconyRespawnPath.c
