@@ -5675,7 +5675,7 @@ shared	GetSingleton__11ApeResource	GetSingleton__11ApeResource	function	128	31	0
 shared	__10ApeRamFilePvUiPCc	__10ApeRamFilePvUiPCc	function	88	31	0	31	FE.REL:0x0EA918	
 shared	_$_10ApeRamFile	_$_10ApeRamFile	function	40	31	0	31	FE.REL:0x0EA970	
 shared	Write__10ApeRamFilePvUiP16ApeFileCompleted	Write__10ApeRamFilePvUiP16ApeFileCompleted	function	8	31	31	31	FE.REL:0x0EA998	src/levels/shared/Write__10ApeRamFilePvUiP16ApeFileCompleted.c
-shared	GetSize__10ApeRamFile	GetSize__10ApeRamFile	function	8	31	0	31	FE.REL:0x0EA9A0	
+shared	GetSize__10ApeRamFile	GetSize__10ApeRamFile	function	8	31	31	31	FE.REL:0x0EA9A0	src/levels/shared/GetSize__10ApeRamFile.c
 shared	__10ApeZipFilePCc	__10ApeZipFilePCc	function	60	31	0	31	FE.REL:0x0EA9A8	
 shared	_$_10ApeZipFile	_$_10ApeZipFile	function	40	31	0	31	FE.REL:0x0EA9E8	
 shared	getInst__12ApeFileCache	getInst__12ApeFileCache	function	188	31	0	31	FE.REL:0x0EAA10	
@@ -5784,8 +5784,8 @@ shared	GetTranslation__C6ApeObj	GetTranslation__C6ApeObj	function	8	31	31	31	FE.
 shared	SetRotation__6ApeObjRC4AMtx	SetRotation__6ApeObjRC4AMtx	function	52	31	0	31	FE.REL:0x0EBA48	
 shared	SetRotation__6ApeObjRC5AVec3N21	SetRotation__6ApeObjRC5AVec3N21	function	52	31	0	31	FE.REL:0x0EBA80	
 shared	SetScale__6ApeObjRC5AVec3	SetScale__6ApeObjRC5AVec3	function	252	31	0	31	FE.REL:0x0EBAB8	
-shared	GetScale__C6ApeObj	GetScale__C6ApeObj	function	8	31	0	31	FE.REL:0x0EBBB8	
-shared	GetLTM__C6ApeObj	GetLTM__C6ApeObj	function	8	31	0	31	FE.REL:0x0EBBC0	
+shared	GetScale__C6ApeObj	GetScale__C6ApeObj	function	8	31	31	31	FE.REL:0x0EBBB8	src/levels/shared/GetScale__C6ApeObj.c
+shared	GetLTM__C6ApeObj	GetLTM__C6ApeObj	function	8	31	31	31	FE.REL:0x0EBBC0	src/levels/shared/GetLTM__C6ApeObj.c
 shared	GetUnscaledLTM__C6ApeObjR4AMtx	GetUnscaledLTM__C6ApeObjR4AMtx	function	36	31	0	31	FE.REL:0x0EBBC8	
 shared	SyncLTM__6ApeObjRC4AMtx	SyncLTM__6ApeObjRC4AMtx	function	76	31	0	31	FE.REL:0x0EBBF0	
 shared	SyncLTM__6ApeObjRC4AMtxT1	SyncLTM__6ApeObjRC4AMtxT1	function	68	31	0	31	FE.REL:0x0EBC40	
@@ -5812,7 +5812,7 @@ shared	SetShadowCaster__11ApeInstanceb	SetShadowCaster__11ApeInstanceb	function	
 shared	IsShadowCaster__C11ApeInstance	IsShadowCaster__C11ApeInstance	function	20	31	0	31	FE.REL:0x0EBE80	
 shared	GetLoadFinalized__C11ApeInstance	GetLoadFinalized__C11ApeInstance	function	20	31	0	31	FE.REL:0x0EBE98	
 shared	SetLoadFinalized__11ApeInstanceb	SetLoadFinalized__11ApeInstanceb	function	56	31	0	31	FE.REL:0x0EBEB0	
-shared	GetSkeleton__C11ApeInstance	GetSkeleton__C11ApeInstance	function	8	31	0	31	FE.REL:0x0EBEE8	
+shared	GetSkeleton__C11ApeInstance	GetSkeleton__C11ApeInstance	function	8	31	31	31	FE.REL:0x0EBEE8	src/levels/shared/GetSkeleton__C11ApeInstance.c
 shared	SetShadowEnable__11ApeInstanceb	SetShadowEnable__11ApeInstanceb	function	56	31	0	31	FE.REL:0x0EBEF0	
 shared	SetSortLayer__11ApeInstance13AglESortLayer	SetSortLayer__11ApeInstance13AglESortLayer	function	8	31	0	31	FE.REL:0x0EBF28	
 shared	GetSortLayer__C11ApeInstance	GetSortLayer__C11ApeInstance	function	8	31	0	31	FE.REL:0x0EBF30	
@@ -5842,7 +5842,7 @@ shared	GetBSphere__C11ApeIDefBase	GetBSphere__C11ApeIDefBase	function	8	31	31	31
 shared	SetBSphere__11ApeIDefBaseRC9ApeSphere	SetBSphere__11ApeIDefBaseRC9ApeSphere	function	40	31	0	31	FE.REL:0x0EC2B0	
 shared	GetBBox__C11ApeIDefBase	GetBBox__C11ApeIDefBase	function	8	31	31	31	FE.REL:0x0EC2D8	src/levels/shared/GetBBox__C11ApeIDefBase.c
 shared	GetName__C11ApeIDefBase	GetName__C11ApeIDefBase	function	8	31	31	31	FE.REL:0x0EC2E0	src/levels/shared/GetName__C11ApeIDefBase.c
-shared	GetNameHash__C11ApeIDefBase	GetNameHash__C11ApeIDefBase	function	8	31	0	31	FE.REL:0x0EC2E8	
+shared	GetNameHash__C11ApeIDefBase	GetNameHash__C11ApeIDefBase	function	8	31	31	31	FE.REL:0x0EC2E8	src/levels/shared/GetNameHash__C11ApeIDefBase.c
 shared	GetAnimHash__C11ApeIDefBase	GetAnimHash__C11ApeIDefBase	function	8	31	0	31	FE.REL:0x0EC2F0	
 shared	SetAnimHash__11ApeIDefBaseG10ApeHashStr	SetAnimHash__11ApeIDefBaseG10ApeHashStr	function	12	31	0	31	FE.REL:0x0EC2F8	
 shared	GetLightGroup__C11ApeIDefBase	GetLightGroup__C11ApeIDefBase	function	8	31	31	31	FE.REL:0x0EC308	src/levels/shared/GetLightGroup__C11ApeIDefBase.c
@@ -15281,7 +15281,7 @@ shared	CanActivate__25ArenaAmoeboidSmall_Budded	CanActivate__25ArenaAmoeboidSmal
 shared	SetParent__25ArenaAmoeboidSmall_BuddedP4Moby	SetParent__25ArenaAmoeboidSmall_BuddedP4Moby	function	16	5	0	5	LEVEL3.REL:0x262150	
 shared	GetTransientDataSize__28AmoeboidSmall_LaunchFromTube	GetTransientDataSize__28AmoeboidSmall_LaunchFromTube	function	8	5	5	5	LEVEL3.REL:0x262160	src/levels/shared/GetTransientDataSize__28AmoeboidSmall_LaunchFromTube.c
 shared	CanActivate__28AmoeboidSmall_LaunchFromTube	CanActivate__28AmoeboidSmall_LaunchFromTube	function	8	5	5	5	LEVEL3.REL:0x262168	src/levels/shared/CanActivate__28AmoeboidSmall_LaunchFromTube.c
-shared	GetArenaStateMachine__25ArenaAmoeboidSmallContent	GetArenaStateMachine__25ArenaAmoeboidSmallContent	function	8	5	0	5	LEVEL3.REL:0x262170	
+shared	GetArenaStateMachine__25ArenaAmoeboidSmallContent	GetArenaStateMachine__25ArenaAmoeboidSmallContent	function	8	5	5	5	LEVEL3.REL:0x262170	src/levels/shared/GetArenaStateMachine__25ArenaAmoeboidSmallContent.c
 shared	KickoffMoby__25ArenaAmoeboidSmallContentP4MobyN21Pv	KickoffMoby__25ArenaAmoeboidSmallContentP4MobyN21Pv	function	40	5	0	5	LEVEL3.REL:0x262178	
 shared	IsSwarmer__25ArenaAmoeboidSmallContent	IsSwarmer__25ArenaAmoeboidSmallContent	function	8	5	5	5	LEVEL3.REL:0x2621A0	src/levels/shared/IsSwarmer__25ArenaAmoeboidSmallContent.c
 shared	Reflect__17ProjectileContentP4MobyPC4VEC3N22	Reflect__17ProjectileContentP4MobyPC4VEC3N22	function	656	9	0	9	LEVEL3.REL:0x2621D8	
@@ -19269,7 +19269,7 @@ shared	__5QWARK	__5QWARK	function	464	3	0	3	LEVEL11.REL:0x2522D8
 11_gondola	GetCuffLinkBombConfig__C22HenchbotGondolaContent	GetCuffLinkBombConfig__C22HenchbotGondolaContent	function	12	1	1	1	LEVEL11.REL:0x2528A8	src/levels/11_gondola/GetCuffLinkBombConfig__C22HenchbotGondolaContent.c
 11_gondola	GetEnemyStateMachine__22HenchbotGondolaContent	GetEnemyStateMachine__22HenchbotGondolaContent	function	8	1	0	1	LEVEL11.REL:0x2528B8	
 11_gondola	SetCollisionFilter__22HenchbotGondolaContentii	SetCollisionFilter__22HenchbotGondolaContentii	function	28	1	0	1	LEVEL11.REL:0x2528C0	
-11_gondola	GetEnemyStateMachine__19HenchbotJackContent	GetEnemyStateMachine__19HenchbotJackContent	function	8	1	0	1	LEVEL11.REL:0x2528E0	
+11_gondola	GetEnemyStateMachine__19HenchbotJackContent	GetEnemyStateMachine__19HenchbotJackContent	function	8	1	1	1	LEVEL11.REL:0x2528E0	src/levels/11_gondola/GetEnemyStateMachine__19HenchbotJackContent.c
 13_casino	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cppw9aaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors.cppw9aaaa	function	32	1	1	1	LEVEL13.REL:0x009DB0	src/levels/13_casino/_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cppw9aaaa.c
 13_casino	SAC_EndProfiling__Fv_L13	SAC_EndProfiling__Fv	function	456	1	0	1	LEVEL13.REL:0x023380	
 13_casino	func_L13_023F20	func_L13_023F20	function	1500	1	0	1	LEVEL13.REL:0x023F20	
@@ -19545,7 +19545,7 @@ shared	GENPAR_CrateSmokeOuterEmit__FiPC28GENPAR_CrateSmokeOuterConfigPC17GENPAR_
 13_casino	CanActivate__18WaitressRefillTray	CanActivate__18WaitressRefillTray	function	8	1	1	1	LEVEL13.REL:0x22C9B0	src/levels/13_casino/CanActivate__18WaitressRefillTray.c
 13_casino	__15WaitressContent	__15WaitressContent	function	208	1	0	1	LEVEL13.REL:0x22C9B8	
 13_casino	CanActivate2__25CasinoTouristPlayAnimProb	CanActivate2__25CasinoTouristPlayAnimProb	function	84	1	0	1	LEVEL13.REL:0x22CC98	
-13_casino	GetEnemyStateMachine__20CasinoTouristContent	GetEnemyStateMachine__20CasinoTouristContent	function	8	1	0	1	LEVEL13.REL:0x22CCF0	
+13_casino	GetEnemyStateMachine__20CasinoTouristContent	GetEnemyStateMachine__20CasinoTouristContent	function	8	1	1	1	LEVEL13.REL:0x22CCF0	src/levels/13_casino/GetEnemyStateMachine__20CasinoTouristContent.c
 13_casino	GetEnemyStateMachine__30Level05CasinoControllerContent	GetEnemyStateMachine__30Level05CasinoControllerContent	function	8	1	1	1	LEVEL13.REL:0x22CCF8	src/levels/13_casino/GetEnemyStateMachine__30Level05CasinoControllerContent.c
 13_casino	GetDesiredState__12WaitressIdle	GetDesiredState__12WaitressIdle	function	28	1	0	1	LEVEL13.REL:0x22CD00	
 13_casino	GetEnemyStateMachine__15WaitressContent	GetEnemyStateMachine__15WaitressContent	function	8	1	0	1	LEVEL13.REL:0x22CD20	
