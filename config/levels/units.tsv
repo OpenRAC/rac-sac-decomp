@@ -4352,9 +4352,9 @@ shared	sceVif1PkOpenGifTag	sceVif1PkOpenGifTag	function	24	31	0	31	FE.REL:0x0CAC
 shared	sceVif1PkCloseGifTag	sceVif1PkCloseGifTag	function	164	31	0	31	FE.REL:0x0CAC80	
 shared	sceVif1PkReserve	sceVif1PkReserve	function	20	31	0	31	FE.REL:0x0CAD28	
 shared	sceVif1PkAlign	sceVif1PkAlign	function	124	31	0	31	FE.REL:0x0CAD40	
-shared	sceVif1PkAddCode	sceVif1PkAddCode	function	20	31	0	31	FE.REL:0x0CADC0	
-shared	sceVif1PkAddData	sceVif1PkAddData	function	20	31	0	31	FE.REL:0x0CADD8	
-shared	sceVif1PkAddUpkData32	sceVif1PkAddUpkData32	function	20	31	0	31	FE.REL:0x0CADF0	
+shared	sceVif1PkAddCode	sceVif1PkAddCode	function	20	31	31	31	FE.REL:0x0CADC0	src/levels/shared/sceVif1PkAddCode.c
+shared	sceVif1PkAddData	sceVif1PkAddData	function	20	31	31	31	FE.REL:0x0CADD8	src/levels/shared/sceVif1PkAddData.c
+shared	sceVif1PkAddUpkData32	sceVif1PkAddUpkData32	function	20	31	31	31	FE.REL:0x0CADF0	src/levels/shared/sceVif1PkAddUpkData32.c
 shared	sceVif1PkAddUpkData32N	sceVif1PkAddUpkData32N	function	64	31	0	31	FE.REL:0x0CAE08	
 shared	sceVif1PkAddUpkData64	sceVif1PkAddUpkData64	function	40	31	0	31	FE.REL:0x0CAE48	
 shared	sceVif1PkAddUpkData128	sceVif1PkAddUpkData128	function	80	31	0	31	FE.REL:0x0CAE70	
