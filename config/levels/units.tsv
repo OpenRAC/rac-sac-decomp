@@ -4327,7 +4327,7 @@ shared	scePadSetWarningLevel	scePadSetWarningLevel	function	104	31	0	31	FE.REL:0
 shared	scePadSetDmaCallback	scePadSetDmaCallback	function	292	31	0	31	FE.REL:0x0CA4D0	
 shared	scePadSetFlushRate	scePadSetFlushRate	function	48	31	0	31	FE.REL:0x0CA5F8	
 shared	sceGifPkInit	sceGifPkInit	function	16	31	31	31	FE.REL:0x0CA628	src/levels/shared/sceGifPkInit.c
-shared	sceGifPkReset	sceGifPkReset	function	16	31	0	31	FE.REL:0x0CA638	
+shared	sceGifPkReset	sceGifPkReset	function	16	31	31	31	FE.REL:0x0CA638	src/levels/shared/sceGifPkReset.c
 shared	sceGifPkTerminate	sceGifPkTerminate	function	88	31	0	31	FE.REL:0x0CA648	
 shared	sceGifPkSize	sceGifPkSize	function	20	31	0	31	FE.REL:0x0CA6A0	
 shared	sceGifPkCnt	sceGifPkCnt	function	116	31	0	31	FE.REL:0x0CA6B8	
@@ -4337,7 +4337,7 @@ shared	sceGifPkCloseGifTag	sceGifPkCloseGifTag	function	164	31	0	31	FE.REL:0x0CA
 shared	sceGifPkAddGsData	sceGifPkAddGsData	function	40	31	0	31	FE.REL:0x0CA868	
 shared	sceGifPkAddGsAD	sceGifPkAddGsAD	function	36	31	0	31	FE.REL:0x0CA890	
 shared	sceVif1PkInit	sceVif1PkInit	function	16	31	31	31	FE.REL:0x0CA8B8	src/levels/shared/sceVif1PkInit.c
-shared	sceVif1PkReset	sceVif1PkReset	function	16	31	0	31	FE.REL:0x0CA8C8	
+shared	sceVif1PkReset	sceVif1PkReset	function	16	31	31	31	FE.REL:0x0CA8C8	src/levels/shared/sceVif1PkReset.c
 shared	sceVif1PkTerminate	sceVif1PkTerminate	function	88	31	0	31	FE.REL:0x0CA8D8	
 shared	sceVif1PkSize	sceVif1PkSize	function	20	31	0	31	FE.REL:0x0CA930	
 shared	sceVif1PkCnt	sceVif1PkCnt	function	88	31	0	31	FE.REL:0x0CA948	
