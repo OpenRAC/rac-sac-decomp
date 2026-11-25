@@ -5906,7 +5906,7 @@ shared	Render__11ApePointDefR23AglTopologyRenderParams	Render__11ApePointDefR23A
 shared	_$_15ApeGeomInstance	_$_15ApeGeomInstance	function	28	31	31	31	FE.REL:0x0ECD68	src/levels/shared/_$_15ApeGeomInstance.c
 shared	__15ApeGeomInstance	__15ApeGeomInstance	function	56	31	0	31	FE.REL:0x0ECD88	
 shared	GetDef__C15ApeGeomInstance	GetDef__C15ApeGeomInstance	function	8	31	31	31	FE.REL:0x0ECDC0	src/levels/shared/GetDef__C15ApeGeomInstance.c
-shared	IsLocalLight__C16ApeLightInstance	IsLocalLight__C16ApeLightInstance	function	16	31	0	31	FE.REL:0x0ECDC8	
+shared	IsLocalLight__C16ApeLightInstance	IsLocalLight__C16ApeLightInstance	function	16	31	31	31	FE.REL:0x0ECDC8	src/levels/shared/IsLocalLight__C16ApeLightInstance.c
 shared	GetDef__C16ApeLightInstance	GetDef__C16ApeLightInstance	function	8	31	31	31	FE.REL:0x0ECDD8	src/levels/shared/GetDef__C16ApeLightInstance.c
 shared	GetType__C16ApeLightInstance	GetType__C16ApeLightInstance	function	8	31	31	31	FE.REL:0x0ECDE0	src/levels/shared/GetType__C16ApeLightInstance.c
 shared	_$_18ApeEmitterInstance	_$_18ApeEmitterInstance	function	28	31	31	31	FE.REL:0x0ECDE8	src/levels/shared/_$_18ApeEmitterInstance.c
@@ -9442,7 +9442,7 @@ shared	SecurityLaserOmni_Term__FP4Moby	SecurityLaserOmni_Term__FP4Moby	function	
 shared	SecurityLaserOmni_Update__FP4MobyP4VEC3T1_L01	SecurityLaserOmni_Update__FP4MobyP4VEC3T1	function	500	4	0	4	LEVEL1.REL:0x0FBD38	
 shared	SecurityLaserOmni_SetEffectState__FP4Mobyb_L01	SecurityLaserOmni_SetEffectState__FP4Mobyb	function	744	4	0	4	LEVEL1.REL:0x0FBF30	
 shared	SecurityLaserOmni_Goop__FP4Moby_L01	SecurityLaserOmni_Goop__FP4Moby	function	248	4	0	4	LEVEL1.REL:0x0FC218	
-shared	SecurityLaserOmni_IsTargetable__FP4Moby_L01	SecurityLaserOmni_IsTargetable__FP4Moby	function	16	4	0	4	LEVEL1.REL:0x0FC310	
+shared	SecurityLaserOmni_IsTargetable__FP4Moby_L01	SecurityLaserOmni_IsTargetable__FP4Moby	function	16	4	4	4	LEVEL1.REL:0x0FC310	src/levels/shared/SecurityLaserOmni_IsTargetable__FP4Moby_L01.c
 shared	SecurityLaserOmni_SetParams__FP4MobyPC19SecurityLaserParams_L01	SecurityLaserOmni_SetParams__FP4MobyPC19SecurityLaserParams	function	12	4	4	4	LEVEL1.REL:0x0FC320	src/levels/shared/SecurityLaserOmni_SetParams__FP4MobyPC19SecurityLaserParams_L01.c
 shared	SecurityLaserOmni_TypeInit__FP8MobyType	SecurityLaserOmni_TypeInit__FP8MobyType	function	28	4	4	4	LEVEL1.REL:0x0FC330	src/levels/shared/SecurityLaserOmni_TypeInit__FP8MobyType.c
 shared	SecurityLaserOmni_BurstsAndStaticScorchRenderCallback__FPC18DRAW_RenderContextPv	SecurityLaserOmni_BurstsAndStaticScorchRenderCallback__FPC18DRAW_RenderContextPv	function	84	4	0	4	LEVEL1.REL:0x0FC350	
@@ -9463,7 +9463,7 @@ shared	SecurityLaserStatic_Term__FP4Moby	SecurityLaserStatic_Term__FP4Moby	funct
 shared	SecurityLaserStatic_Update__FP4MobyP4VEC3T1_L01	SecurityLaserStatic_Update__FP4MobyP4VEC3T1	function	376	6	0	6	LEVEL1.REL:0x0FD230	
 shared	SecurityLaserStatic_SetEffectState__FP4Mobyb_L01	SecurityLaserStatic_SetEffectState__FP4Mobyb	function	756	6	0	6	LEVEL1.REL:0x0FD3A8	
 shared	SecurityLaserStatic_Goop__FP4Moby_L01	SecurityLaserStatic_Goop__FP4Moby	function	180	6	0	6	LEVEL1.REL:0x0FD6A0	
-shared	SecurityLaserStatic_IsTargetable__FP4Moby_L01	SecurityLaserStatic_IsTargetable__FP4Moby	function	16	6	0	6	LEVEL1.REL:0x0FD758	
+shared	SecurityLaserStatic_IsTargetable__FP4Moby_L01	SecurityLaserStatic_IsTargetable__FP4Moby	function	16	6	6	6	LEVEL1.REL:0x0FD758	src/levels/shared/SecurityLaserStatic_IsTargetable__FP4Moby_L01.c
 shared	SecurityLaserStatic_SetParams__FP4MobyPC19SecurityLaserParams_L01	SecurityLaserStatic_SetParams__FP4MobyPC19SecurityLaserParams	function	12	6	6	6	LEVEL1.REL:0x0FD768	src/levels/shared/SecurityLaserStatic_SetParams__FP4MobyPC19SecurityLaserParams_L01.c
 shared	SecurityLaserStatic_TypeInit__FP8MobyType	SecurityLaserStatic_TypeInit__FP8MobyType	function	28	6	6	6	LEVEL1.REL:0x0FD778	src/levels/shared/SecurityLaserStatic_TypeInit__FP8MobyType.c
 shared	SecurityLaserStatic_BurstsRenderCallback__FPC18DRAW_RenderContextPv	SecurityLaserStatic_BurstsRenderCallback__FPC18DRAW_RenderContextPv	function	72	6	0	6	LEVEL1.REL:0x0FD798	
@@ -9544,7 +9544,7 @@ shared	SmokeBomb_Explode__FP4Moby	SmokeBomb_Explode__FP4Moby	function	364	12	0	1
 shared	SoundEmitter_Init__FP4Moby	SoundEmitter_Init__FP4Moby	function	212	10	0	10	LEVEL1.REL:0x1042F0	
 shared	SoundEmitter_Term__FP4Moby	SoundEmitter_Term__FP4Moby	function	8	10	10	10	LEVEL1.REL:0x1043C8	src/levels/shared/SoundEmitter_Term__FP4Moby.c
 shared	SoundEmitter_Update__FP4Mobyf	SoundEmitter_Update__FP4Mobyf	function	136	10	0	10	LEVEL1.REL:0x1043D0	
-shared	SoundEmitter_CheckPlaying__FP4Moby_L01	SoundEmitter_CheckPlaying__FP4Moby	function	16	10	0	10	LEVEL1.REL:0x104458	
+shared	SoundEmitter_CheckPlaying__FP4Moby_L01	SoundEmitter_CheckPlaying__FP4Moby	function	16	10	10	10	LEVEL1.REL:0x104458	src/levels/shared/SoundEmitter_CheckPlaying__FP4Moby_L01.c
 shared	SoundEmitter_StartSound__FP4Moby_L01	SoundEmitter_StartSound__FP4Moby	function	80	10	0	10	LEVEL1.REL:0x104468	
 shared	SoundEmitter_StopSound__FP4Moby_L01	SoundEmitter_StopSound__FP4Moby	function	56	10	0	10	LEVEL1.REL:0x1044B8	
 shared	Spitfire_Spawn__FP4MobyP4VEC4T1ff17WEAPSTAT_DamageIDPC22Spitfire_EmitterConfig_L01	Spitfire_Spawn__FP4MobyP4VEC4T1ff17WEAPSTAT_DamageIDPC22Spitfire_EmitterConfig	function	516	18	0	18	LEVEL1.REL:0x1044F0	
@@ -9698,7 +9698,7 @@ shared	func_L01_11259C	func_L01_11259C	function	608	9	0	9	LEVEL1.REL:0x11259C
 shared	func_L01_1127FC	func_L01_1127FC	function	108	9	0	9	LEVEL1.REL:0x1127FC	
 shared	func_L01_112868	func_L01_112868	function	636	9	0	9	LEVEL1.REL:0x112868	
 shared	func_L01_112AE4	func_L01_112AE4	function	208	9	0	9	LEVEL1.REL:0x112AE4	
-shared	UberDoor_IsLocked__FP4Moby_L01	UberDoor_IsLocked__FP4Moby	function	16	9	0	9	LEVEL1.REL:0x112BB8	
+shared	UberDoor_IsLocked__FP4Moby_L01	UberDoor_IsLocked__FP4Moby	function	16	9	9	9	LEVEL1.REL:0x112BB8	src/levels/shared/UberDoor_IsLocked__FP4Moby_L01.c
 shared	UberDoor_SnapOpen__FP4Moby_L01	UberDoor_SnapOpen__FP4Moby	function	48	9	0	9	LEVEL1.REL:0x112BC8	
 shared	func_L01_112BF8	func_L01_112BF8	function	400	9	0	9	LEVEL1.REL:0x112BF8	
 shared	UberDoor_FixLinks__FP4Moby	UberDoor_FixLinks__FP4Moby	function	192	9	0	9	LEVEL1.REL:0x112D88	
@@ -10312,7 +10312,7 @@ shared	Footstep_GetType__FPC13GDE_AnimEvent	Footstep_GetType__FPC13GDE_AnimEvent
 shared	Footstep_Update__FP4MobyPC13GDE_AnimEventPC14FootstepSoundsPC15CollSurfaceInfo	Footstep_Update__FP4MobyPC13GDE_AnimEventPC14FootstepSoundsPC15CollSurfaceInfo	function	296	21	0	21	LEVEL1.REL:0x136660	
 shared	Footstep_GetSound__FPC14FootstepSounds17FootstepEventType21FootstepSoundBankTypeP18SOUND_ASSET_HANDLE	Footstep_GetSound__FPC14FootstepSounds17FootstepEventType21FootstepSoundBankTypeP18SOUND_ASSET_HANDLE	function	92	21	0	21	LEVEL1.REL:0x136788	
 shared	GadgetBotWidgetShared_IsWidget__FP4Moby	GadgetBotWidgetShared_IsWidget__FP4Moby	function	64	11	0	11	LEVEL1.REL:0x1367E8	
-shared	GadgetBotWidgetShared_IsActive__FP4Moby	GadgetBotWidgetShared_IsActive__FP4Moby	function	16	11	0	11	LEVEL1.REL:0x136828	
+shared	GadgetBotWidgetShared_IsActive__FP4Moby	GadgetBotWidgetShared_IsActive__FP4Moby	function	16	11	11	11	LEVEL1.REL:0x136828	src/levels/shared/GadgetBotWidgetShared_IsActive__FP4Moby.c
 shared	NightWatchmanRoot_Init__FP4Moby	NightWatchmanRoot_Init__FP4Moby	function	108	2	0	2	LEVEL1.REL:0x136838	
 shared	NightWatchmanRoot_DrawCard__FP4MobyPC7MATRIX4	NightWatchmanRoot_DrawCard__FP4MobyPC7MATRIX4	function	168	2	0	2	LEVEL1.REL:0x1368A8	
 shared	NightWatchmanShared_Init__FP4Moby	NightWatchmanShared_Init__FP4Moby	function	284	2	0	2	LEVEL1.REL:0x136950	
@@ -12016,7 +12016,7 @@ shared	PLAYER_DepenSphere__FP6PLAYERPC4VEC4f	PLAYER_DepenSphere__FP6PLAYERPC4VEC
 shared	PLAYER_DepenBox__FP6PLAYERPC4VEC4PC4VEC3PC7MATRIX4	PLAYER_DepenBox__FP6PLAYERPC4VEC4PC4VEC3PC7MATRIX4	function	252	30	0	30	LEVEL1.REL:0x17EDE0	
 shared	PLAYER_GetDamageCenter__FP4VEC3PC6PLAYER	PLAYER_GetDamageCenter__FP4VEC3PC6PLAYER	function	84	30	30	30	LEVEL1.REL:0x17EEE0	src/levels/shared/PLAYER_GetDamageCenter__FP4VEC3PC6PLAYER.c
 shared	PLAYER_GetStandingOnMoby__FP6PLAYER	PLAYER_GetStandingOnMoby__FP6PLAYER	function	64	30	0	30	LEVEL1.REL:0x17EF38	
-shared	PLAYER_SetGunMeshGroupVisibility__FP6PLAYERUs	PLAYER_SetGunMeshGroupVisibility__FP6PLAYERUs	function	8	30	0	30	LEVEL1.REL:0x17EF78	
+shared	PLAYER_SetGunMeshGroupVisibility__FP6PLAYERUs	PLAYER_SetGunMeshGroupVisibility__FP6PLAYERUs	function	8	30	30	30	LEVEL1.REL:0x17EF78	src/levels/shared/PLAYER_SetGunMeshGroupVisibility__FP6PLAYERUs.c
 shared	PLAYER_GetGunMeshGroupVisibility__FP6PLAYER	PLAYER_GetGunMeshGroupVisibility__FP6PLAYER	function	8	30	0	30	LEVEL1.REL:0x17EF80	
 shared	PLAYER_GetWorldDir__FP6PLAYERR4VEC4ff	PLAYER_GetWorldDir__FP6PLAYERR4VEC4ff	function	456	30	0	30	LEVEL1.REL:0x17EF88	
 shared	PLAYER_distToGround__FPfP4VEC4f	PLAYER_distToGround__FPfP4VEC4f	function	228	30	0	30	LEVEL1.REL:0x17F150	
@@ -12548,7 +12548,7 @@ shared	CanActivate__11MissionFail	CanActivate__11MissionFail	function	8	14	14	14
 shared	GetDesiredState__11MissionFail	GetDesiredState__11MissionFail	function	8	14	14	14	LEVEL1.REL:0x2380D8	src/levels/shared/GetDesiredState__11MissionFail.c
 shared	CanActivate__18ClankSuperKickFall	CanActivate__18ClankSuperKickFall	function	8	14	14	14	LEVEL1.REL:0x2380E0	src/levels/shared/CanActivate__18ClankSuperKickFall.c
 shared	CanActivate__11ClankLaunch	CanActivate__11ClankLaunch	function	8	14	14	14	LEVEL1.REL:0x2380E8	src/levels/shared/CanActivate__11ClankLaunch.c
-shared	Setup__10ClankDrown	Setup__10ClankDrown	function	8	14	0	14	LEVEL1.REL:0x2380F0	
+shared	Setup__10ClankDrown	Setup__10ClankDrown	function	8	14	14	14	LEVEL1.REL:0x2380F0	src/levels/shared/Setup__10ClankDrown.c
 shared	Drowning__10ClankDrown	Drowning__10ClankDrown	function	12	14	14	14	LEVEL1.REL:0x2380F8	src/levels/shared/Drowning__10ClankDrown.c
 shared	CanActivate__11ClankBounce	CanActivate__11ClankBounce	function	8	14	14	14	LEVEL1.REL:0x238108	src/levels/shared/CanActivate__11ClankBounce.c
 shared	Begin__23KnucklePunchBodyControl	Begin__23KnucklePunchBodyControl	function	8	14	14	14	LEVEL1.REL:0x238110	src/levels/shared/Begin__23KnucklePunchBodyControl.c
@@ -13851,8 +13851,8 @@ shared	ArenaWave_FixLinks__FP4Moby	ArenaWave_FixLinks__FP4Moby	function	184	6	0	
 shared	BeeMine_Spawn__FP6PLAYERPC7MATRIX4PC4VEC3T2fb_L03	BeeMine_Spawn__FP6PLAYERPC7MATRIX4PC4VEC3T2fb	function	1792	5	0	5	LEVEL3.REL:0x0DCDA8	
 shared	BeeMine_Destory__FP4Moby_L03	BeeMine_Destory__FP4Moby	function	36	5	0	5	LEVEL3.REL:0x0DD4A8	
 shared	BeeMine_GetLevel__FP4Moby_L03	BeeMine_GetLevel__FP4Moby	function	12	5	5	5	LEVEL3.REL:0x0DD4D0	src/levels/shared/BeeMine_GetLevel__FP4Moby_L03.c
-shared	BeeMine_IsPoisonous__FP4Moby_L03	BeeMine_IsPoisonous__FP4Moby	function	16	5	0	5	LEVEL3.REL:0x0DD4E0	
-shared	BeeMine_IsSuperHive__FP4Moby_L03	BeeMine_IsSuperHive__FP4Moby	function	16	5	0	5	LEVEL3.REL:0x0DD4F0	
+shared	BeeMine_IsPoisonous__FP4Moby_L03	BeeMine_IsPoisonous__FP4Moby	function	16	5	5	5	LEVEL3.REL:0x0DD4E0	src/levels/shared/BeeMine_IsPoisonous__FP4Moby_L03.c
+shared	BeeMine_IsSuperHive__FP4Moby_L03	BeeMine_IsSuperHive__FP4Moby	function	16	5	5	5	LEVEL3.REL:0x0DD4F0	src/levels/shared/BeeMine_IsSuperHive__FP4Moby_L03.c
 shared	BeeMine_Init__FP4Moby	BeeMine_Init__FP4Moby	function	24	5	0	5	LEVEL3.REL:0x0DD500	
 shared	BeeMine_Term__FP4Moby	BeeMine_Term__FP4Moby	function	84	5	0	5	LEVEL3.REL:0x0DD518	
 shared	BeeMine_Update__FP4Mobyf	BeeMine_Update__FP4Mobyf	function	136	5	0	5	LEVEL3.REL:0x0DD570	
@@ -16614,7 +16614,7 @@ shared	GCP_EnableHealthRegen__Fb_L05	GCP_EnableHealthRegen__Fb	function	12	2	2	2
 shared	GCP_GetCowboyScale__Fv_L05	GCP_GetCowboyScale__Fv	function	16	2	0	2	LEVEL5.REL:0x0C98C0	
 shared	GCP_IsStunned__FP6PLAYER_L05	GCP_IsStunned__FP6PLAYER	function	36	2	0	2	LEVEL5.REL:0x0C98D0	
 shared	GCP_EnableGearsOfWarStyleCoverSystem__FP6PLAYER_L05	GCP_EnableGearsOfWarStyleCoverSystem__FP6PLAYER	function	36	2	0	2	LEVEL5.REL:0x0C98F8	
-shared	GCP_DisableGearsOfWarStyleCoverSystem__FP6PLAYER_L05	GCP_DisableGearsOfWarStyleCoverSystem__FP6PLAYER	function	8	2	0	2	LEVEL5.REL:0x0C9920	
+shared	GCP_DisableGearsOfWarStyleCoverSystem__FP6PLAYER_L05	GCP_DisableGearsOfWarStyleCoverSystem__FP6PLAYER	function	8	2	2	2	LEVEL5.REL:0x0C9920	src/levels/shared/GCP_DisableGearsOfWarStyleCoverSystem__FP6PLAYER_L05.c
 shared	GCP_SetTarget__FP6PLAYER	GCP_SetTarget__FP6PLAYER	function	32	2	0	2	LEVEL5.REL:0x0C9928	
 shared	GCP_GetExtraContentSize__Fv	GCP_GetExtraContentSize__Fv	function	156	2	0	2	LEVEL5.REL:0x0C9948	
 shared	GCP_InGearsOfWarStyleCoverArea__FP16GiantClankPlayer	GCP_InGearsOfWarStyleCoverArea__FP16GiantClankPlayer	function	44	2	0	2	LEVEL5.REL:0x0C99E8	
@@ -16737,7 +16737,7 @@ shared	GiantQwarkBlaster_strafeHackOff__Fv	GiantQwarkBlaster_strafeHackOff__Fv	f
 05_giant	ZillaBotCapacitor_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	ZillaBotCapacitor_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	function	432	1	0	1	LEVEL5.REL:0x0D8848	
 05_giant	ZillaBotCapacitor_InitType__FP8MobyType	ZillaBotCapacitor_InitType__FP8MobyType	function	480	1	0	1	LEVEL5.REL:0x0D89F8	
 05_giant	ZillaBotCapacitor_Appear__FP4Moby_L05	ZillaBotCapacitor_Appear__FP4Moby	function	132	1	0	1	LEVEL5.REL:0x0D8BD8	
-05_giant	ZillaBotCapacitor_IsDamaged__FP4Moby_L05	ZillaBotCapacitor_IsDamaged__FP4Moby	function	16	1	0	1	LEVEL5.REL:0x0D8C60	
+05_giant	ZillaBotCapacitor_IsDamaged__FP4Moby_L05	ZillaBotCapacitor_IsDamaged__FP4Moby	function	16	1	1	1	LEVEL5.REL:0x0D8C60	src/levels/05_giant/ZillaBotCapacitor_IsDamaged__FP4Moby_L05.c
 05_giant	ZillaBotMissile_Init__FP4Moby	ZillaBotMissile_Init__FP4Moby	function	172	1	0	1	LEVEL5.REL:0x0D8C70	
 05_giant	ZillaBotMissile_Term__FP4Moby	ZillaBotMissile_Term__FP4Moby	function	72	1	0	1	LEVEL5.REL:0x0D8D20	
 05_giant	ZillaBotMissile_Update__FP4Mobyf	ZillaBotMissile_Update__FP4Mobyf	function	1148	1	0	1	LEVEL5.REL:0x0D8D68	
@@ -17349,7 +17349,7 @@ shared	VehicleFormation_SetSingleFile__FP4Moby_L08	VehicleFormation_SetSingleFil
 shared	VehicleFormation_GetSingleFile__FP4Moby_L08	VehicleFormation_GetSingleFile__FP4Moby	function	12	3	3	3	LEVEL8.REL:0x0C9D60	src/levels/shared/VehicleFormation_GetSingleFile__FP4Moby_L08.c
 shared	VehicleFormation_GetOtherVehicle__FP4MobyT0_L08	VehicleFormation_GetOtherVehicle__FP4MobyT0	function	60	3	0	3	LEVEL8.REL:0x0C9D70	
 shared	VehicleFormation_GetVehicleFormationEnemy__FP4Moby_L08	VehicleFormation_GetVehicleFormationEnemy__FP4Moby	function	240	3	0	3	LEVEL8.REL:0x0C9DB0	
-shared	VehicleFormation_IsActive__FPC4Moby_L08	VehicleFormation_IsActive__FPC4Moby	function	16	3	0	3	LEVEL8.REL:0x0C9EA0	
+shared	VehicleFormation_IsActive__FPC4Moby_L08	VehicleFormation_IsActive__FPC4Moby	function	16	3	3	3	LEVEL8.REL:0x0C9EA0	src/levels/shared/VehicleFormation_IsActive__FPC4Moby_L08.c
 shared	VehicleFormation_GetCount__FPC4Moby_L08	VehicleFormation_GetCount__FPC4Moby	function	12	3	3	3	LEVEL8.REL:0x0C9EB0	src/levels/shared/VehicleFormation_GetCount__FPC4Moby_L08.c
 shared	VehicleFormation_CountNumberOfEnemies__FP4Moby_L08	VehicleFormation_CountNumberOfEnemies__FP4Moby	function	96	3	0	3	LEVEL8.REL:0x0C9EC0	
 shared	VehicleFormation_GetTotalEnemyCount__Fv_L08	VehicleFormation_GetTotalEnemyCount__Fv	function	12	3	3	3	LEVEL8.REL:0x0C9F20	src/levels/shared/VehicleFormation_GetTotalEnemyCount__Fv_L08.c
@@ -18659,7 +18659,7 @@ shared	GadgetTarget_GetTargetData__FUi	GadgetTarget_GetTargetData__FUi	function	
 11_gondola	HellaCopter_Shoot__FP4MobyT0_L11	HellaCopter_Shoot__FP4MobyT0	function	40	1	0	1	LEVEL11.REL:0x0DDE80	
 11_gondola	HellaCopter_LookAtTarget__FP4MobyT0_L11	HellaCopter_LookAtTarget__FP4MobyT0	function	12	1	1	1	LEVEL11.REL:0x0DDEA8	src/levels/11_gondola/HellaCopter_LookAtTarget__FP4MobyT0_L11.c
 11_gondola	HellaCopter_ForceShootNow__FP4MobyT0_L11	HellaCopter_ForceShootNow__FP4MobyT0	function	184	1	0	1	LEVEL11.REL:0x0DDEB8	
-11_gondola	HellaCopter_IsStopped__FP4Moby_L11	HellaCopter_IsStopped__FP4Moby	function	16	1	0	1	LEVEL11.REL:0x0DDF70	
+11_gondola	HellaCopter_IsStopped__FP4Moby_L11	HellaCopter_IsStopped__FP4Moby	function	16	1	1	1	LEVEL11.REL:0x0DDF70	src/levels/11_gondola/HellaCopter_IsStopped__FP4Moby_L11.c
 11_gondola	HellaCopter_GetTargetPathQuaternion__FP4MobyP4QUATPC4VEC3	HellaCopter_GetTargetPathQuaternion__FP4MobyP4QUATPC4VEC3	function	280	1	0	1	LEVEL11.REL:0x0DDF80	
 11_gondola	HellaCopter_UpdateOrientation__FP4MobyPC4VEC3	HellaCopter_UpdateOrientation__FP4MobyPC4VEC3	function	204	1	0	1	LEVEL11.REL:0x0DE098	
 11_gondola	HellaCopter_MoveAlongPath__FP4Mobyf	HellaCopter_MoveAlongPath__FP4Mobyf	function	80	1	0	1	LEVEL11.REL:0x0DE168	
@@ -18900,7 +18900,7 @@ shared	GadgetTarget_GetTargetData__FUi	GadgetTarget_GetTargetData__FUi	function	
 11_gondola	Lvl04ChaseGondola_IsInEnemyBounds__FP4MobyP4VEC3b_L11	Lvl04ChaseGondola_IsInEnemyBounds__FP4MobyP4VEC3b	function	284	1	0	1	LEVEL11.REL:0x0F5FC0	
 11_gondola	Lvl04ChaseGondola_CareenAndExplode__FP4MobyPC4VEC4f_L11	Lvl04ChaseGondola_CareenAndExplode__FP4MobyPC4VEC4f	function	188	1	0	1	LEVEL11.REL:0x0F60E0	
 11_gondola	Lvl04ChaseGondola_IsDangerous__FP4Moby_L11	Lvl04ChaseGondola_IsDangerous__FP4Moby	function	12	1	1	1	LEVEL11.REL:0x0F61A0	src/levels/11_gondola/Lvl04ChaseGondola_IsDangerous__FP4Moby_L11.c
-11_gondola	Lvl04ChaseGondola_IsGondolaMoving__FP4Moby_L11	Lvl04ChaseGondola_IsGondolaMoving__FP4Moby	function	16	1	0	1	LEVEL11.REL:0x0F61B0	
+11_gondola	Lvl04ChaseGondola_IsGondolaMoving__FP4Moby_L11	Lvl04ChaseGondola_IsGondolaMoving__FP4Moby	function	16	1	1	1	LEVEL11.REL:0x0F61B0	src/levels/11_gondola/Lvl04ChaseGondola_IsGondolaMoving__FP4Moby_L11.c
 11_gondola	Lvl04ChaseGondola_GetRandPosOnGondola__FP4MobyP4VEC3b_L11	Lvl04ChaseGondola_GetRandPosOnGondola__FP4MobyP4VEC3b	function	260	1	0	1	LEVEL11.REL:0x0F61C0	
 11_gondola	Lvl04ChaseGondola_GetRandOffsetOnGondola__FP4MobyP4VEC3_L11	Lvl04ChaseGondola_GetRandOffsetOnGondola__FP4MobyP4VEC3	function	180	1	0	1	LEVEL11.REL:0x0F62C8	
 11_gondola	Lvl04ChaseGondola_GetRandPosOnGondolaSurface__FP4MobyP4VEC3_L11	Lvl04ChaseGondola_GetRandPosOnGondolaSurface__FP4MobyP4VEC3	function	208	1	0	1	LEVEL11.REL:0x0F6380	
@@ -19194,7 +19194,7 @@ shared	ForceAllocateMtx__14DrawObjManagerPP4AMtx_L11	ForceAllocateMtx__14DrawObj
 11_gondola	GetDesiredState__24ExpatGondola_GondolaJump	GetDesiredState__24ExpatGondola_GondolaJump	function	8	1	1	1	LEVEL11.REL:0x251B88	src/levels/11_gondola/GetDesiredState__24ExpatGondola_GondolaJump.c
 11_gondola	CanBeEaten__C24ExpatGondola_GondolaJump	CanBeEaten__C24ExpatGondola_GondolaJump	function	8	1	1	1	LEVEL11.REL:0x251B90	src/levels/11_gondola/CanBeEaten__C24ExpatGondola_GondolaJump.c
 11_gondola	CanBeHypnotized__C24ExpatGondola_GondolaJump	CanBeHypnotized__C24ExpatGondola_GondolaJump	function	8	1	1	1	LEVEL11.REL:0x251B98	src/levels/11_gondola/CanBeHypnotized__C24ExpatGondola_GondolaJump.c
-11_gondola	RestartJump__24ExpatGondola_GondolaJump	RestartJump__24ExpatGondola_GondolaJump	function	8	1	0	1	LEVEL11.REL:0x251BA0	
+11_gondola	RestartJump__24ExpatGondola_GondolaJump	RestartJump__24ExpatGondola_GondolaJump	function	8	1	1	1	LEVEL11.REL:0x251BA0	src/levels/11_gondola/RestartJump__24ExpatGondola_GondolaJump.c
 11_gondola	GetDesiredState__18ExpatGondola_Death	GetDesiredState__18ExpatGondola_Death	function	8	1	1	1	LEVEL11.REL:0x251BA8	src/levels/11_gondola/GetDesiredState__18ExpatGondola_Death.c
 11_gondola	CanActivate__18ExpatGondola_Death	CanActivate__18ExpatGondola_Death	function	20	1	0	1	LEVEL11.REL:0x251BB0	
 11_gondola	GetTransientDataSize__18ExpatGondola_Death	GetTransientDataSize__18ExpatGondola_Death	function	8	1	1	1	LEVEL11.REL:0x251BC8	src/levels/11_gondola/GetTransientDataSize__18ExpatGondola_Death.c
@@ -21774,7 +21774,7 @@ shared	Reset__15StaticTrailType	Reset__15StaticTrailType	function	8	2	2	2	LEVEL1
 20_gadgebot	GadgetBotHelm_GoToHead__FP4MobyT0PC7MATRIX4_L20	GadgetBotHelm_GoToHead__FP4MobyT0PC7MATRIX4	function	160	1	0	1	LEVEL20.REL:0x0CFC78	
 20_gadgebot	GadgetBotHelm_SetHeadMat__FP4MobyPC7MATRIX4_L20	GadgetBotHelm_SetHeadMat__FP4MobyPC7MATRIX4	function	1392	1	0	1	LEVEL20.REL:0x0CFD18	
 20_gadgebot	GadgetBotHelm_Find__FPC4VEC3fT0f_L20	GadgetBotHelm_Find__FPC4VEC3fT0f	function	488	1	0	1	LEVEL20.REL:0x0D0288	
-20_gadgebot	GadgetBotHelm_IsInPlace__FP4Moby_L20	GadgetBotHelm_IsInPlace__FP4Moby	function	16	1	0	1	LEVEL20.REL:0x0D0470	
+20_gadgebot	GadgetBotHelm_IsInPlace__FP4Moby_L20	GadgetBotHelm_IsInPlace__FP4Moby	function	16	1	1	1	LEVEL20.REL:0x0D0470	src/levels/20_gadgebot/GadgetBotHelm_IsInPlace__FP4Moby_L20.c
 20_gadgebot	GadgetBotHelm_IsInOnGround__FP4Moby_L20	GadgetBotHelm_IsInOnGround__FP4Moby	function	16	1	1	1	LEVEL20.REL:0x0D0480	src/levels/20_gadgebot/GadgetBotHelm_IsInOnGround__FP4Moby_L20.c
 20_gadgebot	GadgetBotHelm_Launch__FP4MobyfPC4VEC3_L20	GadgetBotHelm_Launch__FP4MobyfPC4VEC3	function	888	1	0	1	LEVEL20.REL:0x0D0490	
 20_gadgebot	GadgetBotHelm_GetType__Fv_L20	GadgetBotHelm_GetType__Fv	function	12	1	1	1	LEVEL20.REL:0x0D0808	src/levels/20_gadgebot/GadgetBotHelm_GetType__Fv_L20.c
@@ -21790,7 +21790,7 @@ shared	GadgetBotLever_Release__FP4MobyT0_L20	GadgetBotLever_Release__FP4MobyT0	f
 shared	GadgetBotLever_Claim__FP4MobyT0_L20	GadgetBotLever_Claim__FP4MobyT0	function	68	2	0	2	LEVEL20.REL:0x0D0DE0	
 shared	GadgetBotLever_QueryClaim__FP4MobyT0_L20	GadgetBotLever_QueryClaim__FP4MobyT0	function	32	2	0	2	LEVEL20.REL:0x0D0E28	
 shared	GadgetBotLever_FindFromOwner__FP4Moby_L20	GadgetBotLever_FindFromOwner__FP4Moby	function	100	2	0	2	LEVEL20.REL:0x0D0E48	
-shared	GadgetBotLever_DearLeverAreYouAToggleLeverQuestionMark__FP4Moby_L20	GadgetBotLever_DearLeverAreYouAToggleLeverQuestionMark__FP4Moby	function	16	2	0	2	LEVEL20.REL:0x0D0EB0	
+shared	GadgetBotLever_DearLeverAreYouAToggleLeverQuestionMark__FP4Moby_L20	GadgetBotLever_DearLeverAreYouAToggleLeverQuestionMark__FP4Moby	function	16	2	2	2	LEVEL20.REL:0x0D0EB0	src/levels/shared/GadgetBotLever_DearLeverAreYouAToggleLeverQuestionMark__FP4Moby_L20.c
 shared	GadgetBotLever_Moved__FP4Moby	GadgetBotLever_Moved__FP4Moby	function	388	2	0	2	LEVEL20.REL:0x0D0EC0	
 shared	GadgetBotLever_InitType__FP8MobyType	GadgetBotLever_InitType__FP8MobyType	function	12	2	2	2	LEVEL20.REL:0x0D1048	src/levels/shared/GadgetBotLever_InitType__FP8MobyType.c
 20_gadgebot	GadgetBotScanner_Init__FP4Moby	GadgetBotScanner_Init__FP4Moby	function	368	1	0	1	LEVEL20.REL:0x0D1728	
@@ -22070,7 +22070,7 @@ shared	CanActivate__8GBM_Idle	CanActivate__8GBM_Idle	function	8	2	2	2	LEVEL20.RE
 21_shower	Arena4WaveHazards_Deactivate__FP4Moby_L21	Arena4WaveHazards_Deactivate__FP4Moby	function	192	1	0	1	LEVEL21.REL:0x0C41C8	
 21_shower	Arena4WaveTube_OpenDoor__FP4Moby_L21	Arena4WaveTube_OpenDoor__FP4Moby	function	84	1	0	1	LEVEL21.REL:0x0C4288	
 21_shower	Arena4WaveTube_CloseDoor__FP4Moby_L21	Arena4WaveTube_CloseDoor__FP4Moby	function	84	1	0	1	LEVEL21.REL:0x0C42E0	
-21_shower	Arena4WaveTube_IsOpen__FP4Moby_L21	Arena4WaveTube_IsOpen__FP4Moby	function	16	1	0	1	LEVEL21.REL:0x0C4338	
+21_shower	Arena4WaveTube_IsOpen__FP4Moby_L21	Arena4WaveTube_IsOpen__FP4Moby	function	16	1	1	1	LEVEL21.REL:0x0C4338	src/levels/21_shower/Arena4WaveTube_IsOpen__FP4Moby_L21.c
 21_shower	Arena4WaveTube_IsReady__FP4Moby_L21	Arena4WaveTube_IsReady__FP4Moby	function	12	1	1	1	LEVEL21.REL:0x0C4348	src/levels/21_shower/Arena4WaveTube_IsReady__FP4Moby_L21.c
 21_shower	Arena4WaveTube_MakeUsed__FP4Moby_L21	Arena4WaveTube_MakeUsed__FP4Moby	function	24	1	0	1	LEVEL21.REL:0x0C4358	
 21_shower	Arena4WaveTube_Init__FP4Moby	Arena4WaveTube_Init__FP4Moby	function	320	1	0	1	LEVEL21.REL:0x0C4370	
@@ -23970,7 +23970,7 @@ shared	CylinderBendy_Draw__FUiPC4VEC3N21P20CylinderBendy_ConfigT1_L26	CylinderBe
 26_damrace	IsPushed__20ClankHoverCarContent	IsPushed__20ClankHoverCarContent	function	40	1	0	1	LEVEL26.REL:0x1D28B8	
 26_damrace	ClankHoverCar_IsSpinningOut__FP4Moby	ClankHoverCar_IsSpinningOut__FP4Moby	function	40	1	0	1	LEVEL26.REL:0x1D28E0	
 26_damrace	ClankHoverCar_IsCheckingGap__FP4Moby	ClankHoverCar_IsCheckingGap__FP4Moby	function	44	1	0	1	LEVEL26.REL:0x1D2908	
-26_damrace	DamOilSpill_IsDynamic__FP4Moby	DamOilSpill_IsDynamic__FP4Moby	function	16	1	0	1	LEVEL26.REL:0x1D2968	
+26_damrace	DamOilSpill_IsDynamic__FP4Moby	DamOilSpill_IsDynamic__FP4Moby	function	16	1	1	1	LEVEL26.REL:0x1D2968	src/levels/26_damrace/DamOilSpill_IsDynamic__FP4Moby.c
 26_damrace	EnemyVehicleMissile_Detonate__FP4Moby	EnemyVehicleMissile_Detonate__FP4Moby	function	196	1	0	1	LEVEL26.REL:0x1D2978	
 26_damrace	EnemyVehicleMissile_CheckCollision__FP4MobyPC4VEC3f	EnemyVehicleMissile_CheckCollision__FP4MobyPC4VEC3f	function	1140	1	0	1	LEVEL26.REL:0x1D2A40	
 26_damrace	VehicleMissile_Detonate__FP4Moby	VehicleMissile_Detonate__FP4Moby	function	264	1	0	1	LEVEL26.REL:0x1D2FD0	
@@ -25036,7 +25036,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	End__18NefJumpFromChamber	End__18NefJumpFromChamber	function	120	1	0	1	LEVEL30.REL:0x0F1A18	
 30_boss	Nefarious_GetEffectMan__FP4Moby	Nefarious_GetEffectMan__FP4Moby	function	12	1	1	1	LEVEL30.REL:0x0F1A90	src/levels/30_boss/Nefarious_GetEffectMan__FP4Moby.c
 30_boss	NefariousBomb_HasLanded__FP4Moby_L30	NefariousBomb_HasLanded__FP4Moby	function	16	1	0	1	LEVEL30.REL:0x0F1AA0	
-30_boss	NefariousBomb_IsDetonating__FP4Moby_L30	NefariousBomb_IsDetonating__FP4Moby	function	16	1	0	1	LEVEL30.REL:0x0F1AB0	
+30_boss	NefariousBomb_IsDetonating__FP4Moby_L30	NefariousBomb_IsDetonating__FP4Moby	function	16	1	1	1	LEVEL30.REL:0x0F1AB0	src/levels/30_boss/NefariousBomb_IsDetonating__FP4Moby_L30.c
 30_boss	NefariousBomb_GetEndPos__FP4Moby_L30	NefariousBomb_GetEndPos__FP4Moby	function	12	1	1	1	LEVEL30.REL:0x0F1AC0	src/levels/30_boss/NefariousBomb_GetEndPos__FP4Moby_L30.c
 30_boss	NefariousBomb_Fire__FP4MobyP4VEC3T1_L30	NefariousBomb_Fire__FP4MobyP4VEC3T1	function	336	1	0	1	LEVEL30.REL:0x0F1AD0	
 30_boss	NefariousBomb_Init__FP4Moby	NefariousBomb_Init__FP4Moby	function	12	1	1	1	LEVEL30.REL:0x0F1C20	src/levels/30_boss/NefariousBomb_Init__FP4Moby.c
