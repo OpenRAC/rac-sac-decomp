@@ -5207,7 +5207,7 @@ shared	GetSortID__C15AglMaterialBase	GetSortID__C15AglMaterialBase	function	8	31
 shared	SetSortID__15AglMaterialBaseUi	SetSortID__15AglMaterialBaseUi	function	8	31	31	31	FE.REL:0x0E24C0	src/levels/shared/SetSortID__15AglMaterialBaseUi.c
 shared	GetSortLayer__C15AglMaterialBaseUc	GetSortLayer__C15AglMaterialBaseUc	function	48	31	0	31	FE.REL:0x0E24C8	
 shared	SetSortLayer__15AglMaterialBase13AglESortLayer	SetSortLayer__15AglMaterialBase13AglESortLayer	function	8	31	31	31	FE.REL:0x0E24F8	src/levels/shared/SetSortLayer__15AglMaterialBase13AglESortLayer.c
-shared	GetShader__15AglMaterialBasei	GetShader__15AglMaterialBasei	function	24	31	0	31	FE.REL:0x0E2500	
+shared	GetShader__15AglMaterialBasei	GetShader__15AglMaterialBasei	function	24	31	31	31	FE.REL:0x0E2500	src/levels/shared/GetShader__15AglMaterialBasei.c
 shared	AddRenderState__15AglMaterialBase	AddRenderState__15AglMaterialBase	function	176	31	0	31	FE.REL:0x0E2518	
 shared	__11AglMaterial	__11AglMaterial	function	52	31	0	31	FE.REL:0x0E25C8	
 shared	_$_11AglMaterial	_$_11AglMaterial	function	40	31	0	31	FE.REL:0x0E2600	
@@ -5461,7 +5461,7 @@ shared	Depth__15ApeAnimTreeNode	Depth__15ApeAnimTreeNode	function	48	31	0	31	FE.
 shared	AddNode__15ApeAnimTreeNodeP15ApeAnimTreeNode	AddNode__15ApeAnimTreeNodeP15ApeAnimTreeNode	function	60	31	0	31	FE.REL:0x0E7788	
 shared	RemoveNode__15ApeAnimTreeNodeP15ApeAnimTreeNodeb	RemoveNode__15ApeAnimTreeNodeP15ApeAnimTreeNodeb	function	140	31	0	31	FE.REL:0x0E77C8	
 shared	GetNumChannels__15ApeAnimTreeNode	GetNumChannels__15ApeAnimTreeNode	function	12	31	0	31	FE.REL:0x0E7858	
-shared	GetChannel__15ApeAnimTreeNodei	GetChannel__15ApeAnimTreeNodei	function	24	31	0	31	FE.REL:0x0E7868	
+shared	GetChannel__15ApeAnimTreeNodei	GetChannel__15ApeAnimTreeNodei	function	24	31	31	31	FE.REL:0x0E7868	src/levels/shared/GetChannel__15ApeAnimTreeNodei.c
 shared	GetChannelFromHash__15ApeAnimTreeNodeUi	GetChannelFromHash__15ApeAnimTreeNodeUi	function	92	31	0	31	FE.REL:0x0E7880	
 shared	IsLeaf__15ApeAnimTreeNode	IsLeaf__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E78E0	src/levels/shared/IsLeaf__15ApeAnimTreeNode.c
 shared	IsDone__15ApeAnimTreeNode	IsDone__15ApeAnimTreeNode	function	8	31	31	31	FE.REL:0x0E78E8	src/levels/shared/IsDone__15ApeAnimTreeNode.c
@@ -9190,7 +9190,7 @@ shared	Lvl07Camera_Update__FP4Mobyf	Lvl07Camera_Update__FP4Mobyf	function	364	3	
 shared	Lvl07Camera_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	Lvl07Camera_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	function	212	3	0	3	LEVEL1.REL:0x0ED970	
 shared	Lvl07Camera_Predict__FP4MobyP4VEC3f_L01	Lvl07Camera_Predict__FP4MobyP4VEC3f	function	48	3	0	3	LEVEL1.REL:0x0EDA48	
 shared	Lvl07Camera_GetFloorHeight__FP4Moby_L01	Lvl07Camera_GetFloorHeight__FP4Moby	function	48	3	0	3	LEVEL1.REL:0x0EDA78	
-shared	Begin__16Lvl07Camera_Idle	Begin__16Lvl07Camera_Idle	function	24	3	0	3	LEVEL1.REL:0x0EDAA8	
+shared	Begin__16Lvl07Camera_Idle	Begin__16Lvl07Camera_Idle	function	24	3	3	3	LEVEL1.REL:0x0EDAA8	src/levels/shared/Begin__16Lvl07Camera_Idle.c
 shared	Update__16Lvl07Camera_Idlef	Update__16Lvl07Camera_Idlef	function	32	3	0	3	LEVEL1.REL:0x0EDAC0	
 shared	Predict__16Lvl07Camera_IdleP4VEC3f	Predict__16Lvl07Camera_IdleP4VEC3f	function	40	3	0	3	LEVEL1.REL:0x0EDAE0	
 shared	CanActivate__22Lvl07Camera_Suspicious	CanActivate__22Lvl07Camera_Suspicious	function	52	3	0	3	LEVEL1.REL:0x0EDB08	
@@ -12640,7 +12640,7 @@ shared	Mask_RemoveList__FP13MaskActorListP9MaskActorN21	Mask_RemoveList__FP13Mas
 01_museum	CanActivate__21SensorDogState_GetHit	CanActivate__21SensorDogState_GetHit	function	8	1	1	1	LEVEL1.REL:0x239418	src/levels/01_museum/CanActivate__21SensorDogState_GetHit.c
 01_museum	CanBeEaten__C21SensorDogState_GetHit	CanBeEaten__C21SensorDogState_GetHit	function	8	1	1	1	LEVEL1.REL:0x239420	src/levels/01_museum/CanBeEaten__C21SensorDogState_GetHit.c
 01_museum	CanBeHypnotized__C21SensorDogState_GetHit	CanBeHypnotized__C21SensorDogState_GetHit	function	8	1	1	1	LEVEL1.REL:0x239428	src/levels/01_museum/CanBeHypnotized__C21SensorDogState_GetHit.c
-01_museum	CanActivate__23SensorDogState_JumpDown	CanActivate__23SensorDogState_JumpDown	function	24	1	0	1	LEVEL1.REL:0x239430	
+01_museum	CanActivate__23SensorDogState_JumpDown	CanActivate__23SensorDogState_JumpDown	function	24	1	1	1	LEVEL1.REL:0x239430	src/levels/01_museum/CanActivate__23SensorDogState_JumpDown.c
 01_museum	CanBeEaten__C23SensorDogState_JumpDown	CanBeEaten__C23SensorDogState_JumpDown	function	8	1	1	1	LEVEL1.REL:0x239448	src/levels/01_museum/CanBeEaten__C23SensorDogState_JumpDown.c
 01_museum	CanBeHypnotized__C23SensorDogState_JumpDown	CanBeHypnotized__C23SensorDogState_JumpDown	function	8	1	1	1	LEVEL1.REL:0x239450	src/levels/01_museum/CanBeHypnotized__C23SensorDogState_JumpDown.c
 01_museum	__16SensorDogContent	__16SensorDogContent	function	432	1	0	1	LEVEL1.REL:0x239458	
@@ -18692,8 +18692,8 @@ shared	GadgetTarget_GetTargetData__FUi	GadgetTarget_GetTargetData__FUi	function	
 11_gondola	Update__20HenchbotGondola_Idlef	Update__20HenchbotGondola_Idlef	function	148	1	0	1	LEVEL11.REL:0x0E0328	
 11_gondola	CanActivate__28HenchbotGondola_ChargeAttack	CanActivate__28HenchbotGondola_ChargeAttack	function	180	1	0	1	LEVEL11.REL:0x0E03C0	
 11_gondola	HandleDamage__28HenchbotGondola_ChargeAttackf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__28HenchbotGondola_ChargeAttackf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	44	1	0	1	LEVEL11.REL:0x0E0478	
-11_gondola	CanBeEaten__C28HenchbotGondola_ChargeAttack	CanBeEaten__C28HenchbotGondola_ChargeAttack	function	24	1	0	1	LEVEL11.REL:0x0E04A8	
-11_gondola	CanBeHypnotized__C28HenchbotGondola_ChargeAttack	CanBeHypnotized__C28HenchbotGondola_ChargeAttack	function	24	1	0	1	LEVEL11.REL:0x0E04C0	
+11_gondola	CanBeEaten__C28HenchbotGondola_ChargeAttack	CanBeEaten__C28HenchbotGondola_ChargeAttack	function	24	1	1	1	LEVEL11.REL:0x0E04A8	src/levels/11_gondola/CanBeEaten__C28HenchbotGondola_ChargeAttack.c
+11_gondola	CanBeHypnotized__C28HenchbotGondola_ChargeAttack	CanBeHypnotized__C28HenchbotGondola_ChargeAttack	function	24	1	1	1	LEVEL11.REL:0x0E04C0	src/levels/11_gondola/CanBeHypnotized__C28HenchbotGondola_ChargeAttack.c
 11_gondola	Begin__28HenchbotGondola_ChargeAttack	Begin__28HenchbotGondola_ChargeAttack	function	40	1	0	1	LEVEL11.REL:0x0E04D8	
 11_gondola	Update__28HenchbotGondola_ChargeAttackf	Update__28HenchbotGondola_ChargeAttackf	function	92	1	0	1	LEVEL11.REL:0x0E0500	
 11_gondola	func_L11_0E055C	func_L11_0E055C	function	188	1	0	1	LEVEL11.REL:0x0E055C	
@@ -21519,7 +21519,7 @@ shared	InitialCamera_Update__FP4Mobyf	InitialCamera_Update__FP4Mobyf	function	21
 19_foundry	Lvl07JumpPadEvent_Init__FP4Moby	Lvl07JumpPadEvent_Init__FP4Moby	function	52	1	0	1	LEVEL19.REL:0x0F9388	
 19_foundry	Lvl07JumpPadEvent_Term__FP4Moby	Lvl07JumpPadEvent_Term__FP4Moby	function	8	1	1	1	LEVEL19.REL:0x0F93C0	src/levels/19_foundry/Lvl07JumpPadEvent_Term__FP4Moby.c
 19_foundry	Lvl07JumpPadEvent_Update__FP4Mobyf	Lvl07JumpPadEvent_Update__FP4Mobyf	function	624	1	0	1	LEVEL19.REL:0x0F93C8	
-19_foundry	Lvl07JumpPadEvent_IsOmniKeyHacked__FP4Moby	Lvl07JumpPadEvent_IsOmniKeyHacked__FP4Moby	function	24	1	0	1	LEVEL19.REL:0x0F9638	
+19_foundry	Lvl07JumpPadEvent_IsOmniKeyHacked__FP4Moby	Lvl07JumpPadEvent_IsOmniKeyHacked__FP4Moby	function	24	1	1	1	LEVEL19.REL:0x0F9638	src/levels/19_foundry/Lvl07JumpPadEvent_IsOmniKeyHacked__FP4Moby.c
 19_foundry	Lvl07JumpPadEvent_FixLinks__FP4Moby	Lvl07JumpPadEvent_FixLinks__FP4Moby	function	92	1	0	1	LEVEL19.REL:0x0F9650	
 19_foundry	Lvl07PileOfLucre_Spawn__FP4VEC3P4MobyPC4VEC3_L19	Lvl07PileOfLucre_Spawn__FP4VEC3P4MobyPC4VEC3	function	876	1	0	1	LEVEL19.REL:0x0F96B0	
 19_foundry	Lvl07PileOfLucre_Init__FP4Moby	Lvl07PileOfLucre_Init__FP4Moby	function	304	1	0	1	LEVEL19.REL:0x0F9A20	
@@ -21913,7 +21913,7 @@ shared	CanActivate__8GBM_Idle	CanActivate__8GBM_Idle	function	8	2	2	2	LEVEL20.RE
 21_shower	Arena4Camera_Term__FP4Moby	Arena4Camera_Term__FP4Moby	function	100	1	0	1	LEVEL21.REL:0x0B9ED8	
 21_shower	Arena4Camera_Update__FP4Mobyf	Arena4Camera_Update__FP4Mobyf	function	468	1	0	1	LEVEL21.REL:0x0B9F40	
 21_shower	Arena4Camera_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	Arena4Camera_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	function	8	1	1	1	LEVEL21.REL:0x0BA118	src/levels/21_shower/Arena4Camera_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0.c
-21_shower	Begin__17Arena4Camera_Idle	Begin__17Arena4Camera_Idle	function	24	1	0	1	LEVEL21.REL:0x0BA120	
+21_shower	Begin__17Arena4Camera_Idle	Begin__17Arena4Camera_Idle	function	24	1	1	1	LEVEL21.REL:0x0BA120	src/levels/21_shower/Begin__17Arena4Camera_Idle.c
 21_shower	Update__17Arena4Camera_Idlef	Update__17Arena4Camera_Idlef	function	32	1	0	1	LEVEL21.REL:0x0BA138	
 21_shower	CanActivate__19Arena4Camera_Patrol	CanActivate__19Arena4Camera_Patrol	function	8	1	1	1	LEVEL21.REL:0x0BA158	src/levels/21_shower/CanActivate__19Arena4Camera_Patrol.c
 21_shower	Init__19Arena4Camera_PatrolPC14NavigateParams	Init__19Arena4Camera_PatrolPC14NavigateParams	function	20	1	1	1	LEVEL21.REL:0x0BA160	src/levels/21_shower/Init__19Arena4Camera_PatrolPC14NavigateParams.c
