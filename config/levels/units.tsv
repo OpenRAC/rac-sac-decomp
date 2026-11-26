@@ -4594,7 +4594,7 @@ shared	__t10ApeTRefPtr1Z6ApeTagP6ApeTag	__t10ApeTRefPtr1Z6ApeTagP6ApeTag	functio
 shared	_$_t10ApeTRefPtr1Z6ApeTag	_$_t10ApeTRefPtr1Z6ApeTag	function	80	31	0	31	FE.REL:0x0D7DB8	
 shared	__as__t10ApeTRefPtr1Z6ApeTagP6ApeTag	__as__t10ApeTRefPtr1Z6ApeTagP6ApeTag	function	84	31	0	31	FE.REL:0x0D7E08	
 shared	ApePtrAdd__H1Zv_PX01Ui_PX01	ApePtrAdd__H1Zv_PX01Ui_PX01	function	8	31	31	31	FE.REL:0x0D7E60	src/levels/shared/ApePtrAdd__H1Zv_PX01Ui_PX01.c
-shared	ApeAlign__H1ZUi_X01Ui_X01	ApeAlign__H1ZUi_X01Ui_X01	function	20	31	0	31	FE.REL:0x0D7E68	
+shared	ApeAlign__H1ZUi_X01Ui_X01	ApeAlign__H1ZUi_X01Ui_X01	function	20	31	31	31	FE.REL:0x0D7E68	src/levels/shared/ApeAlign__H1ZUi_X01Ui_X01.c
 shared	__as__t10ApeTRefPtr1Z11AglMaterialP11AglMaterial	__as__t10ApeTRefPtr1Z11AglMaterialP11AglMaterial	function	96	31	0	31	FE.REL:0x0D7E80	
 shared	Append__t9ApeTArray1ZP9AglShaderRCP9AglShader	Append__t9ApeTArray1ZP9AglShaderRCP9AglShader	function	112	31	0	31	FE.REL:0x0D7EE0	
 shared	ApeClamp__H3ZUcZiZi_RCX01RCX11RCX21_X01	ApeClamp__H3ZUcZiZi_RCX01RCX11RCX21_X01	function	56	31	0	31	FE.REL:0x0D7F50	
@@ -4913,7 +4913,7 @@ shared	Sort__t10ApeTBinMap2ZUiZPt7ApeTMap2ZUiZUi	Sort__t10ApeTBinMap2ZUiZPt7ApeT
 shared	FindIndex__t10ApeTBinMap2ZUiZPt7ApeTMap2ZUiZUiRCUiRi	FindIndex__t10ApeTBinMap2ZUiZPt7ApeTMap2ZUiZUiRCUiRi	function	180	31	0	31	FE.REL:0x0DCFA8	
 shared	Grow__t10ApeTBinMap2ZUiZPt7ApeTMap2ZUiZUiUs	Grow__t10ApeTBinMap2ZUiZPt7ApeTMap2ZUiZUiUs	function	148	31	0	31	FE.REL:0x0DD060	
 shared	Add__t10ApeTBinMap2ZUiZPt7ApeTMap2ZUiZUiRCUiPt7ApeTMap2ZUiZUi	Add__t10ApeTBinMap2ZUiZPt7ApeTMap2ZUiZUiRCUiPt7ApeTMap2ZUiZUi	function	152	31	0	31	FE.REL:0x0DD0F8	
-shared	ApeAlign__H1ZPc_X01Ui_X01	ApeAlign__H1ZPc_X01Ui_X01	function	20	31	0	31	FE.REL:0x0DD190	
+shared	ApeAlign__H1ZPc_X01Ui_X01	ApeAlign__H1ZPc_X01Ui_X01	function	20	31	31	31	FE.REL:0x0DD190	src/levels/shared/ApeAlign__H1ZPc_X01Ui_X01.c
 shared	Grow__t10ApeTBinMap2ZiZiUs	Grow__t10ApeTBinMap2ZiZiUs	function	148	31	0	31	FE.REL:0x0DD1A8	
 shared	Add__t10ApeTBinMap2ZiZiRCii	Add__t10ApeTBinMap2ZiZiRCii	function	152	31	0	31	FE.REL:0x0DD240	
 shared	Sort__t10ApeTBinMap2ZiZi	Sort__t10ApeTBinMap2ZiZi	function	76	31	0	31	FE.REL:0x0DD2D8	
@@ -5605,7 +5605,7 @@ shared	Delete__t9ApeTArray1ZP11ApeFreeListi	Delete__t9ApeTArray1ZP11ApeFreeListi
 shared	ApePtrAdd__H1Z15ApeFreeListNode_PX01Ui_PX01	ApePtrAdd__H1Z15ApeFreeListNode_PX01Ui_PX01	function	8	31	31	31	FE.REL:0x0E9BD0	src/levels/shared/ApePtrAdd__H1Z15ApeFreeListNode_PX01Ui_PX01.c
 shared	Append__t9ApeTArray1ZP14ApeTBinMapBaseRCP14ApeTBinMapBase	Append__t9ApeTArray1ZP14ApeTBinMapBaseRCP14ApeTBinMapBase	function	112	31	0	31	FE.REL:0x0E9BD8	
 shared	Delete__t9ApeTArray1ZP14ApeTBinMapBasei	Delete__t9ApeTArray1ZP14ApeTBinMapBasei	function	60	31	0	31	FE.REL:0x0E9C48	
-shared	ApeAlign__H1ZPv_X01Ui_X01	ApeAlign__H1ZPv_X01Ui_X01	function	20	31	0	31	FE.REL:0x0E9C88	
+shared	ApeAlign__H1ZPv_X01Ui_X01	ApeAlign__H1ZPv_X01Ui_X01	function	20	31	31	31	FE.REL:0x0E9C88	src/levels/shared/ApeAlign__H1ZPv_X01Ui_X01.c
 shared	Append__t9ApeTArray1ZP19ApeZipDirectoryNodeRCP19ApeZipDirectoryNode	Append__t9ApeTArray1ZP19ApeZipDirectoryNodeRCP19ApeZipDirectoryNode	function	112	31	0	31	FE.REL:0x0E9CA0	
 shared	Delete__t9ApeTArray1ZP19ApeZipDirectoryNodei	Delete__t9ApeTArray1ZP19ApeZipDirectoryNodei	function	60	31	0	31	FE.REL:0x0E9D10	
 shared	Append__t9ApeTArray1Z16ApeFileCacheItemRC16ApeFileCacheItem	Append__t9ApeTArray1Z16ApeFileCacheItemRC16ApeFileCacheItem	function	272	31	0	31	FE.REL:0x0E9D50	
@@ -5691,7 +5691,7 @@ shared	_$_t12ApeTFreeList1Z14ApeInputDevice	_$_t12ApeTFreeList1Z14ApeInputDevice
 shared	Create__t12ApeTFreeList1Z14ApeInputDeviceUiUiP12ApeAllocatorb	Create__t12ApeTFreeList1Z14ApeInputDeviceUiUiP12ApeAllocatorb	function	8	31	31	31	FE.REL:0x0EACA8	src/levels/shared/Create__t12ApeTFreeList1Z14ApeInputDeviceUiUiP12ApeAllocatorb.c
 shared	_$_t12ApeTFreeList1ZQ23IFF9ChunkDesc	_$_t12ApeTFreeList1ZQ23IFF9ChunkDesc	function	100	31	0	31	FE.REL:0x0EACB0	
 shared	Create__t12ApeTFreeList1ZQ23IFF9ChunkDescUiUiP12ApeAllocatorb	Create__t12ApeTFreeList1ZQ23IFF9ChunkDescUiUiP12ApeAllocatorb	function	8	31	31	31	FE.REL:0x0EAD18	src/levels/shared/Create__t12ApeTFreeList1ZQ23IFF9ChunkDescUiUiP12ApeAllocatorb.c
-shared	ApeRoundUp__H1ZUi_X01Ui_X01	ApeRoundUp__H1ZUi_X01Ui_X01	function	20	31	0	31	FE.REL:0x0EAD20	
+shared	ApeRoundUp__H1ZUi_X01Ui_X01	ApeRoundUp__H1ZUi_X01Ui_X01	function	20	31	31	31	FE.REL:0x0EAD20	src/levels/shared/ApeRoundUp__H1ZUi_X01Ui_X01.c
 shared	Read__H1Z10ApePs2File_16ApeFileReadCachePX01PvUi_i	Read__H1Z10ApePs2File_16ApeFileReadCachePX01PvUi_i	function	336	31	0	31	FE.REL:0x0EAD38	
 shared	__10ApePs2FilePCc	__10ApePs2FilePCc	function	84	31	0	31	FE.REL:0x0EAE88	
 shared	_$_10ApePs2File	_$_10ApePs2File	function	108	31	0	31	FE.REL:0x0EAEE0	
@@ -13579,7 +13579,7 @@ shared	ChargeStart__24LizardThug_FiresuperShotPC4VEC3	ChargeStart__24LizardThug_
 shared	ChargeUpdate__24LizardThug_FiresuperShotPC4VEC3	ChargeUpdate__24LizardThug_FiresuperShotPC4VEC3	function	128	5	0	5	LEVEL3.REL:0x0C8A60	
 shared	ChargeStop__24LizardThug_FiresuperShotPC4VEC3	ChargeStop__24LizardThug_FiresuperShotPC4VEC3	function	8	5	5	5	LEVEL3.REL:0x0C8AE0	src/levels/shared/ChargeStop__24LizardThug_FiresuperShotPC4VEC3.c
 shared	Begin__28LizardThug_ThrowHomingBeacon	Begin__28LizardThug_ThrowHomingBeacon	function	28	5	5	5	LEVEL3.REL:0x0C8AE8	src/levels/shared/Begin__28LizardThug_ThrowHomingBeacon.c
-shared	CanActivate__28LizardThug_ThrowHomingBeacon	CanActivate__28LizardThug_ThrowHomingBeacon	function	24	5	0	5	LEVEL3.REL:0x0C8B08	
+shared	CanActivate__28LizardThug_ThrowHomingBeacon	CanActivate__28LizardThug_ThrowHomingBeacon	function	24	5	5	5	LEVEL3.REL:0x0C8B08	src/levels/shared/CanActivate__28LizardThug_ThrowHomingBeacon.c
 shared	FireProjectile__28LizardThug_ThrowHomingBeaconPC4VEC3	FireProjectile__28LizardThug_ThrowHomingBeaconPC4VEC3	function	524	5	0	5	LEVEL3.REL:0x0C8B20	
 shared	ArenaLizardThug_AnimEventCB__FP4MobyP13GDE_AnimEvent	ArenaLizardThug_AnimEventCB__FP4MobyP13GDE_AnimEvent	function	164	5	0	5	LEVEL3.REL:0x0C8D30	
 shared	ArenaLizardThug_GetEffectMan__FP4Moby	ArenaLizardThug_GetEffectMan__FP4Moby	function	12	5	5	5	LEVEL3.REL:0x0C8DD8	src/levels/shared/ArenaLizardThug_GetEffectMan__FP4Moby.c
@@ -15678,7 +15678,7 @@ shared	Update__16GadgetBotOnStackf	Update__16GadgetBotOnStackf	function	400	4	0	
 shared	OnPlayerPossess__16GadgetBotOnStack	OnPlayerPossess__16GadgetBotOnStack	function	20	4	4	4	LEVEL4.REL:0x0E9AA0	src/levels/shared/OnPlayerPossess__16GadgetBotOnStack.c
 shared	GetDesiredState__16GadgetBotOnStack	GetDesiredState__16GadgetBotOnStack	function	44	4	0	4	LEVEL4.REL:0x0E9AB8	
 shared	HandleDamage__16GadgetBotOnStackf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__16GadgetBotOnStackf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	116	4	0	4	LEVEL4.REL:0x0E9AE8	
-shared	CanActivate__15GadgetBotFollow	CanActivate__15GadgetBotFollow	function	24	4	0	4	LEVEL4.REL:0x0E9B60	
+shared	CanActivate__15GadgetBotFollow	CanActivate__15GadgetBotFollow	function	24	4	4	4	LEVEL4.REL:0x0E9B60	src/levels/shared/CanActivate__15GadgetBotFollow.c
 shared	Begin__15GadgetBotFollow	Begin__15GadgetBotFollow	function	156	4	0	4	LEVEL4.REL:0x0E9B78	
 shared	Update__15GadgetBotFollowf	Update__15GadgetBotFollowf	function	268	4	0	4	LEVEL4.REL:0x0E9C18	
 shared	End__15GadgetBotFollow	End__15GadgetBotFollow	function	48	4	0	4	LEVEL4.REL:0x0E9D28	
@@ -16116,7 +16116,7 @@ shared	Puddle_Update__FP4Mobyf	Puddle_Update__FP4Mobyf	function	8	2	2	2	LEVEL4.R
 04_skyscrapers	Update__12NinjaDestroyf	Update__12NinjaDestroyf	function	268	1	0	1	LEVEL4.REL:0x116240	
 04_skyscrapers	Begin__10NinjaSleep	Begin__10NinjaSleep	function	280	1	0	1	LEVEL4.REL:0x116350	
 04_skyscrapers	End__10NinjaSleep	End__10NinjaSleep	function	48	1	0	1	LEVEL4.REL:0x116468	
-04_skyscrapers	CanActivate__10NinjaSleep	CanActivate__10NinjaSleep	function	24	1	0	1	LEVEL4.REL:0x116498	
+04_skyscrapers	CanActivate__10NinjaSleep	CanActivate__10NinjaSleep	function	24	1	1	1	LEVEL4.REL:0x116498	src/levels/04_skyscrapers/CanActivate__10NinjaSleep.c
 04_skyscrapers	PostAnimCallback__11NinjaAttackP4Moby	PostAnimCallback__11NinjaAttackP4Moby	function	636	1	0	1	LEVEL4.REL:0x1164B0	
 04_skyscrapers	Begin__11NinjaAttack	Begin__11NinjaAttack	function	40	1	0	1	LEVEL4.REL:0x116730	
 04_skyscrapers	Update__11NinjaAttackf	Update__11NinjaAttackf	function	56	1	0	1	LEVEL4.REL:0x116758	
@@ -20105,7 +20105,7 @@ shared	isnan	isnan	function	56	2	0	2	LEVEL14.REL:0x2544C0
 16_lab	Update__18Amoeboid_Suspendedf	Update__18Amoeboid_Suspendedf	function	444	1	0	1	LEVEL16.REL:0x0BCFE0	
 16_lab	GetDesiredState__18Amoeboid_Suspended	GetDesiredState__18Amoeboid_Suspended	function	56	1	0	1	LEVEL16.REL:0x0BD1A0	
 16_lab	Init__18Amoeboid_SuspendedPC23AmoeboidSuspendedConfig	Init__18Amoeboid_SuspendedPC23AmoeboidSuspendedConfig	function	8	1	1	1	LEVEL16.REL:0x0BD1D8	src/levels/16_lab/Init__18Amoeboid_SuspendedPC23AmoeboidSuspendedConfig.c
-16_lab	CanActivate__13Amoeboid_Path	CanActivate__13Amoeboid_Path	function	24	1	0	1	LEVEL16.REL:0x0BD1E0	
+16_lab	CanActivate__13Amoeboid_Path	CanActivate__13Amoeboid_Path	function	24	1	1	1	LEVEL16.REL:0x0BD1E0	src/levels/16_lab/CanActivate__13Amoeboid_Path.c
 16_lab	HitEnd__13Amoeboid_Path	HitEnd__13Amoeboid_Path	function	112	1	0	1	LEVEL16.REL:0x0BD1F8	
 16_lab	GetDesiredState__13Amoeboid_Path	GetDesiredState__13Amoeboid_Path	function	56	1	0	1	LEVEL16.REL:0x0BD268	
 16_lab	Begin__13Amoeboid_Path	Begin__13Amoeboid_Path	function	88	1	0	1	LEVEL16.REL:0x0BD2A0	
@@ -20165,7 +20165,7 @@ shared	isnan	isnan	function	56	2	0	2	LEVEL14.REL:0x2544C0
 16_lab	Update__23AmoeboidSmall_Suspendedf	Update__23AmoeboidSmall_Suspendedf	function	444	1	0	1	LEVEL16.REL:0x0C16D8	
 16_lab	GetDesiredState__23AmoeboidSmall_Suspended	GetDesiredState__23AmoeboidSmall_Suspended	function	56	1	0	1	LEVEL16.REL:0x0C1898	
 16_lab	Init__23AmoeboidSmall_SuspendedPC28AmoeboidSmallSuspendedConfig	Init__23AmoeboidSmall_SuspendedPC28AmoeboidSmallSuspendedConfig	function	8	1	1	1	LEVEL16.REL:0x0C18D0	src/levels/16_lab/Init__23AmoeboidSmall_SuspendedPC28AmoeboidSmallSuspendedConfig.c
-16_lab	CanActivate__18AmoeboidSmall_Path	CanActivate__18AmoeboidSmall_Path	function	24	1	0	1	LEVEL16.REL:0x0C18D8	
+16_lab	CanActivate__18AmoeboidSmall_Path	CanActivate__18AmoeboidSmall_Path	function	24	1	1	1	LEVEL16.REL:0x0C18D8	src/levels/16_lab/CanActivate__18AmoeboidSmall_Path.c
 16_lab	HitEnd__18AmoeboidSmall_Path	HitEnd__18AmoeboidSmall_Path	function	112	1	0	1	LEVEL16.REL:0x0C18F0	
 16_lab	GetDesiredState__18AmoeboidSmall_Path	GetDesiredState__18AmoeboidSmall_Path	function	56	1	0	1	LEVEL16.REL:0x0C1960	
 16_lab	Begin__18AmoeboidSmall_Path	Begin__18AmoeboidSmall_Path	function	88	1	0	1	LEVEL16.REL:0x0C1998	
@@ -20313,7 +20313,7 @@ shared	DoorHinge_InitType__FP8MobyType	DoorHinge_InitType__FP8MobyType	function	
 16_lab	Drone_InitType__FP8MobyType	Drone_InitType__FP8MobyType	function	60	1	0	1	LEVEL16.REL:0x0E0BF0	
 16_lab	Drone_GetExtraContentSize__Fv	Drone_GetExtraContentSize__Fv	function	212	1	0	1	LEVEL16.REL:0x0E0C30	
 16_lab	Update__12Drone_Patrolf	Update__12Drone_Patrolf	function	28	1	1	1	LEVEL16.REL:0x0E0D08	src/levels/16_lab/Update__12Drone_Patrolf.c
-16_lab	CanActivate__11Drone_Intro	CanActivate__11Drone_Intro	function	24	1	0	1	LEVEL16.REL:0x0E0D28	
+16_lab	CanActivate__11Drone_Intro	CanActivate__11Drone_Intro	function	24	1	1	1	LEVEL16.REL:0x0E0D28	src/levels/16_lab/CanActivate__11Drone_Intro.c
 16_lab	HitEnd__11Drone_Intro	HitEnd__11Drone_Intro	function	148	1	0	1	LEVEL16.REL:0x0E0D40	
 16_lab	GetDesiredState__11Drone_Intro	GetDesiredState__11Drone_Intro	function	56	1	0	1	LEVEL16.REL:0x0E0DD8	
 16_lab	Begin__11Drone_Intro	Begin__11Drone_Intro	function	64	1	0	1	LEVEL16.REL:0x0E0E10	
@@ -21322,7 +21322,7 @@ shared	Doppleganger_Term__FP4Moby	Doppleganger_Term__FP4Moby	function	336	2	0	2	
 shared	Doppleganger_Update__FP4Mobyf	Doppleganger_Update__FP4Mobyf	function	128	2	0	2	LEVEL19.REL:0x0D6220	
 shared	Doppleganger_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	Doppleganger_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	function	332	2	0	2	LEVEL19.REL:0x0D62A0	
 shared	Doppleganger_Spawn__FP4Moby	Doppleganger_Spawn__FP4Moby	function	324	2	0	2	LEVEL19.REL:0x0D63F0	
-shared	CanActivate__26Doppleganger_DisguisedIdle	CanActivate__26Doppleganger_DisguisedIdle	function	24	2	0	2	LEVEL19.REL:0x0D6538	
+shared	CanActivate__26Doppleganger_DisguisedIdle	CanActivate__26Doppleganger_DisguisedIdle	function	24	2	2	2	LEVEL19.REL:0x0D6538	src/levels/shared/CanActivate__26Doppleganger_DisguisedIdle.c
 shared	CanActivate__25Doppleganger_RevealedIdle	CanActivate__25Doppleganger_RevealedIdle	function	20	2	2	2	LEVEL19.REL:0x0D6550	src/levels/shared/CanActivate__25Doppleganger_RevealedIdle.c
 shared	CanActivate__23Doppleganger_Suspicious	CanActivate__23Doppleganger_Suspicious	function	48	2	0	2	LEVEL19.REL:0x0D6568	
 shared	Begin__23Doppleganger_Suspicious	Begin__23Doppleganger_Suspicious	function	48	2	0	2	LEVEL19.REL:0x0D6598	
