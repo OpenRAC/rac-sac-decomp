@@ -4401,7 +4401,7 @@ shared	sceVu0ViewScreenMatrix	sceVu0ViewScreenMatrix	function	260	31	0	31	FE.REL
 shared	sceVu0DropShadowMatrix	sceVu0DropShadowMatrix	function	400	31	0	31	FE.REL:0x0CC268	
 shared	sceVu0RotTransPersN	sceVu0RotTransPersN	function	196	31	0	31	FE.REL:0x0CC3F8	
 shared	sceVu0RotTransPers	sceVu0RotTransPers	function	164	31	0	31	FE.REL:0x0CC4C0	
-shared	sceVu0CopyVectorXYZ	sceVu0CopyVectorXYZ	function	28	31	0	31	FE.REL:0x0CC568	
+shared	sceVu0CopyVectorXYZ	sceVu0CopyVectorXYZ	function	28	31	31	31	FE.REL:0x0CC568	src/levels/shared/sceVu0CopyVectorXYZ.c
 shared	sceVu0InterVectorXYZ	sceVu0InterVectorXYZ	function	140	31	0	31	FE.REL:0x0CC588	
 shared	sceVu0ScaleVectorXYZ	sceVu0ScaleVectorXYZ	function	104	31	0	31	FE.REL:0x0CC618	
 shared	sceVu0ClipScreen	sceVu0ClipScreen	function	124	31	0	31	FE.REL:0x0CC680	
@@ -4929,7 +4929,7 @@ shared	Expand__t12ApeFixedList1Z10MCMgrStatei	Expand__t12ApeFixedList1Z10MCMgrSt
 shared	AddElement__t12ApeFixedList1Z10MCMgrStateRC10MCMgrState	AddElement__t12ApeFixedList1Z10MCMgrStateRC10MCMgrState	function	848	31	0	31	FE.REL:0x0DD8A8	
 shared	RemoveFirstElement__t12ApeFixedList1Z10MCMgrState	RemoveFirstElement__t12ApeFixedList1Z10MCMgrState	function	648	31	0	31	FE.REL:0x0DDBF8	
 shared	SetRadius__9ApeSpheref	SetRadius__9ApeSpheref	function	8	31	31	31	FE.REL:0x0DDE80	src/levels/shared/SetRadius__9ApeSpheref.c
-shared	SetCenter__9ApeSphereRC5AVec3	SetCenter__9ApeSphereRC5AVec3	function	28	31	0	31	FE.REL:0x0DDE88	
+shared	SetCenter__9ApeSphereRC5AVec3	SetCenter__9ApeSphereRC5AVec3	function	28	31	31	31	FE.REL:0x0DDE88	src/levels/shared/SetCenter__9ApeSphereRC5AVec3.c
 shared	SetPass2ALPHA__14AglRenderStateUi	SetPass2ALPHA__14AglRenderStateUi	function	8	31	31	31	FE.REL:0x0DDEA8	src/levels/shared/SetPass2ALPHA__14AglRenderStateUi.c
 shared	GetPass2ALPHA__C14AglRenderState	GetPass2ALPHA__C14AglRenderState	function	8	31	31	31	FE.REL:0x0DDEB0	src/levels/shared/GetPass2ALPHA__C14AglRenderState.c
 shared	SetBlendMode__18AglRenderStateBaseQ218AglRenderStateBase9BlendMode	SetBlendMode__18AglRenderStateBaseQ218AglRenderStateBase9BlendMode	function	52	31	0	31	FE.REL:0x0DDEB8	
@@ -15639,7 +15639,7 @@ shared	GadgetBot_PostReset__FP8MobyType	GadgetBot_PostReset__FP8MobyType	functio
 shared	GadgetBot_UpdateFollowLogic__FP4MobyPfP4VEC3	GadgetBot_UpdateFollowLogic__FP4MobyPfP4VEC3	function	1032	4	0	4	LEVEL4.REL:0x0E6498	
 shared	OnPlayerLeave__14GadgetBotState	OnPlayerLeave__14GadgetBotState	function	40	4	0	4	LEVEL4.REL:0x0E68A0	
 shared	OnPlayerPossess__14GadgetBotState	OnPlayerPossess__14GadgetBotState	function	20	4	4	4	LEVEL4.REL:0x0E68C8	src/levels/shared/OnPlayerPossess__14GadgetBotState.c
-shared	CanActivate__13GadgetBotWait	CanActivate__13GadgetBotWait	function	28	4	0	4	LEVEL4.REL:0x0E68E0	
+shared	CanActivate__13GadgetBotWait	CanActivate__13GadgetBotWait	function	28	4	4	4	LEVEL4.REL:0x0E68E0	src/levels/shared/CanActivate__13GadgetBotWait.c
 shared	Begin__12GBP_OnGround	Begin__12GBP_OnGround	function	40	4	0	4	LEVEL4.REL:0x0E6900	
 shared	Setup__12GBP_OnGround	Setup__12GBP_OnGround	function	8	4	4	4	LEVEL4.REL:0x0E6928	src/levels/shared/Setup__12GBP_OnGround.c
 shared	Update__12GBP_OnGroundf	Update__12GBP_OnGroundf	function	100	4	0	4	LEVEL4.REL:0x0E6930	
@@ -15682,7 +15682,7 @@ shared	CanActivate__15GadgetBotFollow	CanActivate__15GadgetBotFollow	function	24
 shared	Begin__15GadgetBotFollow	Begin__15GadgetBotFollow	function	156	4	0	4	LEVEL4.REL:0x0E9B78	
 shared	Update__15GadgetBotFollowf	Update__15GadgetBotFollowf	function	268	4	0	4	LEVEL4.REL:0x0E9C18	
 shared	End__15GadgetBotFollow	End__15GadgetBotFollow	function	48	4	0	4	LEVEL4.REL:0x0E9D28	
-shared	CanActivate__19GadgetBotAggressive	CanActivate__19GadgetBotAggressive	function	28	4	0	4	LEVEL4.REL:0x0E9D58	
+shared	CanActivate__19GadgetBotAggressive	CanActivate__19GadgetBotAggressive	function	28	4	4	4	LEVEL4.REL:0x0E9D58	src/levels/shared/CanActivate__19GadgetBotAggressive.c
 shared	Begin__19GadgetBotAggressive	Begin__19GadgetBotAggressive	function	80	4	0	4	LEVEL4.REL:0x0E9D78	
 shared	Update__19GadgetBotAggressivef	Update__19GadgetBotAggressivef	function	968	4	0	4	LEVEL4.REL:0x0E9DC8	
 shared	GetDesiredState__19GadgetBotAggressive	GetDesiredState__19GadgetBotAggressive	function	68	4	0	4	LEVEL4.REL:0x0EA190	
@@ -17884,11 +17884,11 @@ shared	ExpatBits_TypeInit__FP8MobyType	ExpatBits_TypeInit__FP8MobyType	function	
 10_carnival	CanActivate__28ExpatGuardState_CatchKingpin	CanActivate__28ExpatGuardState_CatchKingpin	function	48	1	0	1	LEVEL10.REL:0x0D55D8	
 10_carnival	Begin__28ExpatGuardState_CatchKingpin	Begin__28ExpatGuardState_CatchKingpin	function	132	1	0	1	LEVEL10.REL:0x0D5608	
 10_carnival	Update__28ExpatGuardState_CatchKingpinf	Update__28ExpatGuardState_CatchKingpinf	function	344	1	0	1	LEVEL10.REL:0x0D5690	
-10_carnival	CanActivate__26ExpatGuardState_Suspicious	CanActivate__26ExpatGuardState_Suspicious	function	28	1	0	1	LEVEL10.REL:0x0D57E8	
+10_carnival	CanActivate__26ExpatGuardState_Suspicious	CanActivate__26ExpatGuardState_Suspicious	function	28	1	1	1	LEVEL10.REL:0x0D57E8	src/levels/10_carnival/CanActivate__26ExpatGuardState_Suspicious.c
 10_carnival	Begin__26ExpatGuardState_Suspicious	Begin__26ExpatGuardState_Suspicious	function	56	1	0	1	LEVEL10.REL:0x0D5808	
 10_carnival	Update__26ExpatGuardState_Suspiciousf	Update__26ExpatGuardState_Suspiciousf	function	200	1	0	1	LEVEL10.REL:0x0D5840	
 10_carnival	ChangeSubstate__26ExpatGuardState_SuspiciousUi	ChangeSubstate__26ExpatGuardState_SuspiciousUi	function	300	1	0	1	LEVEL10.REL:0x0D5908	
-10_carnival	CanActivate__24ExpatGuardState_Engaging	CanActivate__24ExpatGuardState_Engaging	function	28	1	0	1	LEVEL10.REL:0x0D5A38	
+10_carnival	CanActivate__24ExpatGuardState_Engaging	CanActivate__24ExpatGuardState_Engaging	function	28	1	1	1	LEVEL10.REL:0x0D5A38	src/levels/10_carnival/CanActivate__24ExpatGuardState_Engaging.c
 10_carnival	Begin__24ExpatGuardState_Engaging	Begin__24ExpatGuardState_Engaging	function	520	1	0	1	LEVEL10.REL:0x0D5A58	
 10_carnival	Update__24ExpatGuardState_Engagingf	Update__24ExpatGuardState_Engagingf	function	120	1	0	1	LEVEL10.REL:0x0D5C60	
 10_carnival	func_L10_0D5CD8	func_L10_0D5CD8	function	36	1	0	1	LEVEL10.REL:0x0D5CD8	
@@ -20159,7 +20159,7 @@ shared	isnan	isnan	function	56	2	0	2	LEVEL14.REL:0x2544C0
 16_lab	Update__24AmoeboidSmall_Suspiciousf	Update__24AmoeboidSmall_Suspiciousf	function	772	1	0	1	LEVEL16.REL:0x0C1210	
 16_lab	CanActivate__24AmoeboidSmall_Suspicious	CanActivate__24AmoeboidSmall_Suspicious	function	28	1	0	1	LEVEL16.REL:0x0C1518	
 16_lab	Update__22AmoeboidSmall_Kamikazef	Update__22AmoeboidSmall_Kamikazef	function	260	1	0	1	LEVEL16.REL:0x0C1538	
-16_lab	CanActivate__22AmoeboidSmall_Kamikaze	CanActivate__22AmoeboidSmall_Kamikaze	function	28	1	0	1	LEVEL16.REL:0x0C1640	
+16_lab	CanActivate__22AmoeboidSmall_Kamikaze	CanActivate__22AmoeboidSmall_Kamikaze	function	28	1	1	1	LEVEL16.REL:0x0C1640	src/levels/16_lab/CanActivate__22AmoeboidSmall_Kamikaze.c
 16_lab	CanActivate__23AmoeboidSmall_Suspended	CanActivate__23AmoeboidSmall_Suspended	function	28	1	0	1	LEVEL16.REL:0x0C1660	
 16_lab	Begin__23AmoeboidSmall_Suspended	Begin__23AmoeboidSmall_Suspended	function	88	1	0	1	LEVEL16.REL:0x0C1680	
 16_lab	Update__23AmoeboidSmall_Suspendedf	Update__23AmoeboidSmall_Suspendedf	function	444	1	0	1	LEVEL16.REL:0x0C16D8	
@@ -20255,7 +20255,7 @@ shared	CanActivate__20BoltThief_ReturnHome	CanActivate__20BoltThief_ReturnHome	f
 shared	Begin__20BoltThief_ReturnHome	Begin__20BoltThief_ReturnHome	function	44	3	0	3	LEVEL16.REL:0x0CA7F0	
 shared	Update__20BoltThief_ReturnHomef	Update__20BoltThief_ReturnHomef	function	416	3	0	3	LEVEL16.REL:0x0CA820	
 shared	ChangeSubstate__20BoltThief_ReturnHomeUi	ChangeSubstate__20BoltThief_ReturnHomeUi	function	272	3	0	3	LEVEL16.REL:0x0CA9C0	
-shared	CanActivate__23BoltThief_CapturedClank	CanActivate__23BoltThief_CapturedClank	function	28	3	0	3	LEVEL16.REL:0x0CAAD0	
+shared	CanActivate__23BoltThief_CapturedClank	CanActivate__23BoltThief_CapturedClank	function	28	3	3	3	LEVEL16.REL:0x0CAAD0	src/levels/shared/CanActivate__23BoltThief_CapturedClank.c
 shared	Begin__23BoltThief_CapturedClank	Begin__23BoltThief_CapturedClank	function	116	3	0	3	LEVEL16.REL:0x0CAAF0	
 shared	Update__23BoltThief_CapturedClankf	Update__23BoltThief_CapturedClankf	function	136	3	0	3	LEVEL16.REL:0x0CAB68	
 shared	CanActivate__18BoltThief_BoltBomb	CanActivate__18BoltThief_BoltBomb	function	72	3	0	3	LEVEL16.REL:0x0CABF0	
@@ -20335,7 +20335,7 @@ shared	DoorHinge_InitType__FP8MobyType	DoorHinge_InitType__FP8MobyType	function	
 16_lab	FireProjectile__10Drone_FirePC4VEC3P4VEC3	FireProjectile__10Drone_FirePC4VEC3P4VEC3	function	1068	1	0	1	LEVEL16.REL:0x0E1510	
 16_lab	CanActivate__10Drone_Fire	CanActivate__10Drone_Fire	function	72	1	0	1	LEVEL16.REL:0x0E1940	
 16_lab	GetDesiredState__10Drone_Fire	GetDesiredState__10Drone_Fire	function	60	1	0	1	LEVEL16.REL:0x0E1988	
-16_lab	CanActivate__21DroneStrafeController	CanActivate__21DroneStrafeController	function	28	1	0	1	LEVEL16.REL:0x0E19C8	
+16_lab	CanActivate__21DroneStrafeController	CanActivate__21DroneStrafeController	function	28	1	1	1	LEVEL16.REL:0x0E19C8	src/levels/16_lab/CanActivate__21DroneStrafeController.c
 16_lab	IsShotClear__21DroneStrafeController	IsShotClear__21DroneStrafeController	function	260	1	0	1	LEVEL16.REL:0x0E19E8	
 16_lab	Begin__23DroneStrafeBetweenShots	Begin__23DroneStrafeBetweenShots	function	104	1	0	1	LEVEL16.REL:0x0E1AF0	
 16_lab	Update__23DroneStrafeBetweenShotsf	Update__23DroneStrafeBetweenShotsf	function	64	1	0	1	LEVEL16.REL:0x0E1B58	
@@ -21240,7 +21240,7 @@ shared	TieRotator_Update__FP4Mobyf	TieRotator_Update__FP4Mobyf	function	1624	3	0
 18_qwark	FireProjectile__9OperaSpew	FireProjectile__9OperaSpew	function	968	1	0	1	LEVEL18.REL:0x0F3498	
 18_qwark	End__9OperaSpew	End__9OperaSpew	function	84	1	0	1	LEVEL18.REL:0x0F3860	
 18_qwark	Timestep__9OperaSpewf	Timestep__9OperaSpewf	function	116	1	0	1	LEVEL18.REL:0x0F38B8	
-18_qwark	CanActivate__15OperaAlienDeath	CanActivate__15OperaAlienDeath	function	28	1	0	1	LEVEL18.REL:0x0F3930	
+18_qwark	CanActivate__15OperaAlienDeath	CanActivate__15OperaAlienDeath	function	28	1	1	1	LEVEL18.REL:0x0F3930	src/levels/18_qwark/CanActivate__15OperaAlienDeath.c
 18_qwark	Begin__15OperaAlienDeath	Begin__15OperaAlienDeath	function	204	1	0	1	LEVEL18.REL:0x0F3950	
 18_qwark	Update__15OperaAlienDeathf	Update__15OperaAlienDeathf	function	112	1	0	1	LEVEL18.REL:0x0F3A20	
 18_qwark	HandleDamage__15OperaAlienDeathf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__15OperaAlienDeathf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	204	1	0	1	LEVEL18.REL:0x0F3A90	
@@ -21639,7 +21639,7 @@ shared	HandleDamage__26StaticMidge_FallIntoCombatf14MobyDamageType18MobyDamageSt
 shared	Update__26StaticMidge_FallIntoCombatf	Update__26StaticMidge_FallIntoCombatf	function	552	2	0	2	LEVEL19.REL:0x111DA8	
 shared	HandleDamage__17StaticMidge_Deathf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__17StaticMidge_Deathf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	64	2	0	2	LEVEL19.REL:0x111FD0	
 shared	Update__17StaticMidge_Deathf	Update__17StaticMidge_Deathf	function	64	2	0	2	LEVEL19.REL:0x112010	
-shared	CanActivate__25StaticMidge_CapturedClank	CanActivate__25StaticMidge_CapturedClank	function	28	2	0	2	LEVEL19.REL:0x112050	
+shared	CanActivate__25StaticMidge_CapturedClank	CanActivate__25StaticMidge_CapturedClank	function	28	2	2	2	LEVEL19.REL:0x112050	src/levels/shared/CanActivate__25StaticMidge_CapturedClank.c
 shared	Begin__25StaticMidge_CapturedClank	Begin__25StaticMidge_CapturedClank	function	100	2	0	2	LEVEL19.REL:0x112070	
 shared	Update__25StaticMidge_CapturedClankf	Update__25StaticMidge_CapturedClankf	function	88	2	0	2	LEVEL19.REL:0x1120D8	
 shared	GetDesiredState__19StaticMidge_Respawn	GetDesiredState__19StaticMidge_Respawn	function	64	2	0	2	LEVEL19.REL:0x112130	
@@ -24488,7 +24488,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 29_base	Expat_FixLinks__FP4Moby	Expat_FixLinks__FP4Moby	function	68	1	0	1	LEVEL29.REL:0x0DDFB0	
 29_base	Expat_MoveIntoFrustum__FP4Moby	Expat_MoveIntoFrustum__FP4Moby	function	284	1	0	1	LEVEL29.REL:0x0DDFF8	
 29_base	Expat_GetEffectMan__FP4Moby	Expat_GetEffectMan__FP4Moby	function	12	1	1	1	LEVEL29.REL:0x0DE118	src/levels/29_base/Expat_GetEffectMan__FP4Moby.c
-29_base	CanActivate__19ExpatState_Engaging	CanActivate__19ExpatState_Engaging	function	28	1	0	1	LEVEL29.REL:0x0DE128	
+29_base	CanActivate__19ExpatState_Engaging	CanActivate__19ExpatState_Engaging	function	28	1	1	1	LEVEL29.REL:0x0DE128	src/levels/29_base/CanActivate__19ExpatState_Engaging.c
 29_base	Begin__19ExpatState_Engaging	Begin__19ExpatState_Engaging	function	152	1	0	1	LEVEL29.REL:0x0DE148	
 29_base	Update__19ExpatState_Engagingf	Update__19ExpatState_Engagingf	function	140	1	0	1	LEVEL29.REL:0x0DE1E0	
 29_base	func_L29_0DE26C	func_L29_0DE26C	function	36	1	0	1	LEVEL29.REL:0x0DE26C	
