@@ -12595,7 +12595,7 @@ shared	Begin__14Lvl01TankMelee	Begin__14Lvl01TankMelee	function	76	2	0	2	LEVEL1.
 shared	__16Lvl01TankContent	__16Lvl01TankContent	function	660	2	0	2	LEVEL1.REL:0x238BF8	
 shared	GetEnemyStateMachine__16Lvl01TankContent	GetEnemyStateMachine__16Lvl01TankContent	function	8	2	2	2	LEVEL1.REL:0x238E90	src/levels/shared/GetEnemyStateMachine__16Lvl01TankContent.c
 shared	GetTangleVineTrapScale__C16Lvl01TankContent	GetTangleVineTrapScale__C16Lvl01TankContent	function	16	2	2	2	LEVEL1.REL:0x238E98	src/levels/shared/GetTangleVineTrapScale__C16Lvl01TankContent.c
-shared	SetCollisionFilter__16Lvl01TankContentii	SetCollisionFilter__16Lvl01TankContentii	function	28	2	0	2	LEVEL1.REL:0x238EA8	
+shared	SetCollisionFilter__16Lvl01TankContentii	SetCollisionFilter__16Lvl01TankContentii	function	28	2	2	2	LEVEL1.REL:0x238EA8	src/levels/shared/SetCollisionFilter__16Lvl01TankContentii.c
 shared	CanActivate__16Lvl07Camera_Idle	CanActivate__16Lvl07Camera_Idle	function	8	3	3	3	LEVEL1.REL:0x238EC8	src/levels/shared/CanActivate__16Lvl07Camera_Idle.c
 shared	CanBeEaten__C16Lvl07Camera_Idle	CanBeEaten__C16Lvl07Camera_Idle	function	8	3	3	3	LEVEL1.REL:0x238ED0	src/levels/shared/CanBeEaten__C16Lvl07Camera_Idle.c
 shared	GetTransientDataSize__22Lvl07Camera_Suspicious	GetTransientDataSize__22Lvl07Camera_Suspicious	function	8	3	3	3	LEVEL1.REL:0x238ED8	src/levels/shared/GetTransientDataSize__22Lvl07Camera_Suspicious.c
@@ -12674,7 +12674,7 @@ shared	Update__19AlertControllerWaitf	Update__19AlertControllerWaitf	function	56
 01_museum	Update__15AlertIdleSearchf	Update__15AlertIdleSearchf	function	92	1	0	1	LEVEL1.REL:0x239C30	
 shared	Begin__15Lvl01TankGetHit	Begin__15Lvl01TankGetHit	function	92	2	0	2	LEVEL1.REL:0x239C90	
 shared	GetEnemyStateMachine__18Lvl07CameraContent	GetEnemyStateMachine__18Lvl07CameraContent	function	8	3	3	3	LEVEL1.REL:0x239CF0	src/levels/shared/GetEnemyStateMachine__18Lvl07CameraContent.c
-shared	SetCollisionFilter__18Lvl07CameraContentii	SetCollisionFilter__18Lvl07CameraContentii	function	28	3	0	3	LEVEL1.REL:0x239CF8	
+shared	SetCollisionFilter__18Lvl07CameraContentii	SetCollisionFilter__18Lvl07CameraContentii	function	28	3	3	3	LEVEL1.REL:0x239CF8	src/levels/shared/SetCollisionFilter__18Lvl07CameraContentii.c
 01_museum	DestroyMoby__13SensorDogTrap	DestroyMoby__13SensorDogTrap	function	116	1	0	1	LEVEL1.REL:0x239D18	
 shared	Init__20ContagiousChargeType	Init__20ContagiousChargeType	function	164	19	0	19	LEVEL1.REL:0x239D90	
 shared	Update__20ContagiousChargeType	Update__20ContagiousChargeType	function	248	19	0	19	LEVEL1.REL:0x239E38	
@@ -15298,7 +15298,7 @@ shared	KickoffMoby__25ArenaMaceGladiatorContentP4MobyN21Pv	KickoffMoby__25ArenaM
 shared	GetTransientDataSize__22ReaperBeast_SuperVomit	GetTransientDataSize__22ReaperBeast_SuperVomit	function	8	4	4	4	LEVEL3.REL:0x262530	src/levels/shared/GetTransientDataSize__22ReaperBeast_SuperVomit.c
 shared	ResetTimer__17ReaperBeast_Taunt	ResetTimer__17ReaperBeast_Taunt	function	8	4	4	4	LEVEL3.REL:0x262538	src/levels/shared/ResetTimer__17ReaperBeast_Taunt.c
 shared	GetArenaStateMachine__23ArenaReaperBeastContent	GetArenaStateMachine__23ArenaReaperBeastContent	function	8	4	4	4	LEVEL3.REL:0x262540	src/levels/shared/GetArenaStateMachine__23ArenaReaperBeastContent.c
-shared	SetCollisionFilter__23ArenaReaperBeastContentii	SetCollisionFilter__23ArenaReaperBeastContentii	function	28	4	0	4	LEVEL3.REL:0x262548	
+shared	SetCollisionFilter__23ArenaReaperBeastContentii	SetCollisionFilter__23ArenaReaperBeastContentii	function	28	4	4	4	LEVEL3.REL:0x262548	src/levels/shared/SetCollisionFilter__23ArenaReaperBeastContentii.c
 shared	KickoffMoby__23ArenaReaperBeastContentP4MobyN21Pv	KickoffMoby__23ArenaReaperBeastContentP4MobyN21Pv	function	40	4	0	4	LEVEL3.REL:0x262568	
 shared	__10MobyPoison	__10MobyPoison	function	32	5	0	5	LEVEL3.REL:0x262590	
 shared	Active__10MobyPoison	Active__10MobyPoison	function	12	5	5	5	LEVEL3.REL:0x2625B0	src/levels/shared/Active__10MobyPoison.c
@@ -15312,7 +15312,7 @@ shared	GetTransientDataSize__23Tyranoid_LaunchFromTube	GetTransientDataSize__23T
 shared	CanActivate__23Tyranoid_LaunchFromTube	CanActivate__23Tyranoid_LaunchFromTube	function	8	5	5	5	LEVEL3.REL:0x262648	src/levels/shared/CanActivate__23Tyranoid_LaunchFromTube.c
 shared	GetTransientDataSize__24Tyranoid_SuperRollAttack	GetTransientDataSize__24Tyranoid_SuperRollAttack	function	8	5	5	5	LEVEL3.REL:0x262650	src/levels/shared/GetTransientDataSize__24Tyranoid_SuperRollAttack.c
 shared	GetArenaStateMachine__20ArenaTyranoidContent	GetArenaStateMachine__20ArenaTyranoidContent	function	8	5	5	5	LEVEL3.REL:0x262658	src/levels/shared/GetArenaStateMachine__20ArenaTyranoidContent.c
-shared	SetCollisionFilter__20ArenaTyranoidContentii	SetCollisionFilter__20ArenaTyranoidContentii	function	28	5	0	5	LEVEL3.REL:0x262660	
+shared	SetCollisionFilter__20ArenaTyranoidContentii	SetCollisionFilter__20ArenaTyranoidContentii	function	28	5	5	5	LEVEL3.REL:0x262660	src/levels/shared/SetCollisionFilter__20ArenaTyranoidContentii.c
 shared	KickoffMoby__20ArenaTyranoidContentP4MobyN21Pv	KickoffMoby__20ArenaTyranoidContentP4MobyN21Pv	function	40	5	0	5	LEVEL3.REL:0x262680	
 shared	IsSwarmer__20ArenaTyranoidContent	IsSwarmer__20ArenaTyranoidContent	function	8	5	5	5	LEVEL3.REL:0x2626A8	src/levels/shared/IsSwarmer__20ArenaTyranoidContent.c
 shared	GetTransientDataSize__12Piggy_Wander	GetTransientDataSize__12Piggy_Wander	function	8	5	5	5	LEVEL3.REL:0x262AE0	src/levels/shared/GetTransientDataSize__12Piggy_Wander.c
@@ -16085,7 +16085,7 @@ shared	Puddle_Update__FP4Mobyf	Puddle_Update__FP4Mobyf	function	8	2	2	2	LEVEL4.R
 04_skyscrapers	IsFacingTarget__15NinjaGoToTarget	IsFacingTarget__15NinjaGoToTarget	function	272	1	0	1	LEVEL4.REL:0x114F90	
 04_skyscrapers	Update__11NinjaDefendf	Update__11NinjaDefendf	function	180	1	0	1	LEVEL4.REL:0x1150A0	
 04_skyscrapers	Begin__11NinjaDefend	Begin__11NinjaDefend	function	80	1	0	1	LEVEL4.REL:0x115158	
-04_skyscrapers	End__11NinjaDefend	End__11NinjaDefend	function	28	1	0	1	LEVEL4.REL:0x1151A8	
+04_skyscrapers	End__11NinjaDefend	End__11NinjaDefend	function	28	1	1	1	LEVEL4.REL:0x1151A8	src/levels/04_skyscrapers/End__11NinjaDefend.c
 04_skyscrapers	GetDesiredState__11NinjaDefend	GetDesiredState__11NinjaDefend	function	324	1	0	1	LEVEL4.REL:0x1151C8	
 04_skyscrapers	Update__14NinjaClimbRooff	Update__14NinjaClimbRooff	function	256	1	0	1	LEVEL4.REL:0x115310	
 04_skyscrapers	Begin__14NinjaClimbRoof	Begin__14NinjaClimbRoof	function	160	1	0	1	LEVEL4.REL:0x115410	
@@ -16123,7 +16123,7 @@ shared	Puddle_Update__FP4Mobyf	Puddle_Update__FP4Mobyf	function	8	2	2	2	LEVEL4.R
 04_skyscrapers	OnHit__11NinjaAttack	OnHit__11NinjaAttack	function	44	1	0	1	LEVEL4.REL:0x116790	
 04_skyscrapers	Begin__13NinjaHideIdle	Begin__13NinjaHideIdle	function	44	1	0	1	LEVEL4.REL:0x1167C0	
 04_skyscrapers	GetDesiredState__13NinjaHideIdle	GetDesiredState__13NinjaHideIdle	function	1184	1	0	1	LEVEL4.REL:0x1167F0	
-04_skyscrapers	End__13NinjaHideIdle	End__13NinjaHideIdle	function	28	1	0	1	LEVEL4.REL:0x116C90	
+04_skyscrapers	End__13NinjaHideIdle	End__13NinjaHideIdle	function	28	1	1	1	LEVEL4.REL:0x116C90	src/levels/04_skyscrapers/End__13NinjaHideIdle.c
 04_skyscrapers	HandleDamage__17NinjaBigKnockbackf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__17NinjaBigKnockbackf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	68	1	0	1	LEVEL4.REL:0x116CB0	
 04_skyscrapers	RobotNinja_GetEffectMan__FP4Moby	RobotNinja_GetEffectMan__FP4Moby	function	12	1	1	1	LEVEL4.REL:0x116CF8	src/levels/04_skyscrapers/RobotNinja_GetEffectMan__FP4Moby.c
 04_skyscrapers	RobotNinja_GetExtraContentSize__Fv	RobotNinja_GetExtraContentSize__Fv	function	324	1	0	1	LEVEL4.REL:0x116D08	
@@ -18415,12 +18415,12 @@ shared	__final_insertion_sort__H2ZPP21BackgroundPersonActorZPFP21BackgroundPerso
 10_carnival	GetDesiredState__30BasicGetHitWithGetDesiredState	GetDesiredState__30BasicGetHitWithGetDesiredState	function	64	1	0	1	LEVEL10.REL:0x23B228	
 10_carnival	GetEnemyStateMachine__17ExpatGuardContent	GetEnemyStateMachine__17ExpatGuardContent	function	8	1	1	1	LEVEL10.REL:0x23B268	src/levels/10_carnival/GetEnemyStateMachine__17ExpatGuardContent.c
 10_carnival	GetCuffLinkBombConfig__C17ExpatGuardContent	GetCuffLinkBombConfig__C17ExpatGuardContent	function	12	1	1	1	LEVEL10.REL:0x23B270	src/levels/10_carnival/GetCuffLinkBombConfig__C17ExpatGuardContent.c
-10_carnival	SetCollisionFilter__17ExpatGuardContentii	SetCollisionFilter__17ExpatGuardContentii	function	28	1	0	1	LEVEL10.REL:0x23B280	
+10_carnival	SetCollisionFilter__17ExpatGuardContentii	SetCollisionFilter__17ExpatGuardContentii	function	28	1	1	1	LEVEL10.REL:0x23B280	src/levels/10_carnival/SetCollisionFilter__17ExpatGuardContentii.c
 10_carnival	GetEnemyStateMachine__23HenchbotCarnivalContent	GetEnemyStateMachine__23HenchbotCarnivalContent	function	8	1	1	1	LEVEL10.REL:0x23B2A0	src/levels/10_carnival/GetEnemyStateMachine__23HenchbotCarnivalContent.c
 10_carnival	GetCuffLinkBombConfig__C23HenchbotCarnivalContent	GetCuffLinkBombConfig__C23HenchbotCarnivalContent	function	12	1	1	1	LEVEL10.REL:0x23B2A8	src/levels/10_carnival/GetCuffLinkBombConfig__C23HenchbotCarnivalContent.c
-10_carnival	SetCollisionFilter__23HenchbotCarnivalContentii	SetCollisionFilter__23HenchbotCarnivalContentii	function	28	1	0	1	LEVEL10.REL:0x23B2B8	
+10_carnival	SetCollisionFilter__23HenchbotCarnivalContentii	SetCollisionFilter__23HenchbotCarnivalContentii	function	28	1	1	1	LEVEL10.REL:0x23B2B8	src/levels/10_carnival/SetCollisionFilter__23HenchbotCarnivalContentii.c
 10_carnival	GetEnemyStateMachine__14KingpinContent	GetEnemyStateMachine__14KingpinContent	function	8	1	1	1	LEVEL10.REL:0x23B2D8	src/levels/10_carnival/GetEnemyStateMachine__14KingpinContent.c
-10_carnival	SetCollisionFilter__14KingpinContentii	SetCollisionFilter__14KingpinContentii	function	28	1	0	1	LEVEL10.REL:0x23B2E0	
+10_carnival	SetCollisionFilter__14KingpinContentii	SetCollisionFilter__14KingpinContentii	function	28	1	1	1	LEVEL10.REL:0x23B2E0	src/levels/10_carnival/SetCollisionFilter__14KingpinContentii.c
 11_gondola	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cpp0laaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors.cpp0laaaa	function	32	1	1	1	LEVEL11.REL:0x009DB0	src/levels/11_gondola/_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cpp0laaaa.c
 11_gondola	SAC_EndProfiling__Fv_L11	SAC_EndProfiling__Fv	function	456	1	0	1	LEVEL11.REL:0x023380	
 11_gondola	main_GameStart__Fi_L11	main_GameStart__Fi	function	1544	1	0	1	LEVEL11.REL:0x023728	
@@ -18560,7 +18560,7 @@ shared	CLANK_MissionFailedScreenColor__Ff_L11	CLANK_MissionFailedScreenColor__Ff
 11_gondola	Update__17ExpatGondola_Idlef	Update__17ExpatGondola_Idlef	function	88	1	0	1	LEVEL11.REL:0x0D1608	
 11_gondola	GetDesiredState__22ExpatGondola_OnCarrier	GetDesiredState__22ExpatGondola_OnCarrier	function	56	1	0	1	LEVEL11.REL:0x0D1660	
 11_gondola	Begin__22ExpatGondola_OnCarrier	Begin__22ExpatGondola_OnCarrier	function	68	1	0	1	LEVEL11.REL:0x0D1698	
-11_gondola	End__22ExpatGondola_OnCarrier	End__22ExpatGondola_OnCarrier	function	28	1	0	1	LEVEL11.REL:0x0D16E0	
+11_gondola	End__22ExpatGondola_OnCarrier	End__22ExpatGondola_OnCarrier	function	28	1	1	1	LEVEL11.REL:0x0D16E0	src/levels/11_gondola/End__22ExpatGondola_OnCarrier.c
 11_gondola	Update__22ExpatGondola_OnCarrierf	Update__22ExpatGondola_OnCarrierf	function	696	1	0	1	LEVEL11.REL:0x0D1700	
 11_gondola	StartHang__22ExpatGondola_OnCarrierP4MobyP4VEC3f	StartHang__22ExpatGondola_OnCarrierP4MobyP4VEC3f	function	132	1	0	1	LEVEL11.REL:0x0D19B8	
 11_gondola	PostAnimCallback__22ExpatGondola_OnCarrierP4Moby	PostAnimCallback__22ExpatGondola_OnCarrierP4Moby	function	212	1	0	1	LEVEL11.REL:0x0D1A40	
@@ -18681,7 +18681,7 @@ shared	GadgetTarget_GetTargetData__FUi	GadgetTarget_GetTargetData__FUi	function	
 11_gondola	HenchbotGondola_GetExtraContentSize__Fv	HenchbotGondola_GetExtraContentSize__Fv	function	180	1	0	1	LEVEL11.REL:0x0DFC08	
 11_gondola	GetDesiredState__25HenchbotGondola_OnCarrier	GetDesiredState__25HenchbotGondola_OnCarrier	function	56	1	0	1	LEVEL11.REL:0x0DFCC0	
 11_gondola	Begin__25HenchbotGondola_OnCarrier	Begin__25HenchbotGondola_OnCarrier	function	68	1	0	1	LEVEL11.REL:0x0DFCF8	
-11_gondola	End__25HenchbotGondola_OnCarrier	End__25HenchbotGondola_OnCarrier	function	28	1	0	1	LEVEL11.REL:0x0DFD40	
+11_gondola	End__25HenchbotGondola_OnCarrier	End__25HenchbotGondola_OnCarrier	function	28	1	1	1	LEVEL11.REL:0x0DFD40	src/levels/11_gondola/End__25HenchbotGondola_OnCarrier.c
 11_gondola	Update__25HenchbotGondola_OnCarrierf	Update__25HenchbotGondola_OnCarrierf	function	664	1	0	1	LEVEL11.REL:0x0DFD60	
 11_gondola	StartHang__25HenchbotGondola_OnCarrierP4MobyP4VEC3f	StartHang__25HenchbotGondola_OnCarrierP4MobyP4VEC3f	function	132	1	0	1	LEVEL11.REL:0x0DFFF8	
 11_gondola	PostAnimCallback__25HenchbotGondola_OnCarrierP4Moby	PostAnimCallback__25HenchbotGondola_OnCarrierP4Moby	function	212	1	0	1	LEVEL11.REL:0x0E0080	
@@ -19264,11 +19264,11 @@ shared	__5QWARK	__5QWARK	function	464	3	0	3	LEVEL11.REL:0x2522D8
 11_gondola	GetEnemyStateMachine__22JackOfAllTradesContent	GetEnemyStateMachine__22JackOfAllTradesContent	function	8	1	1	1	LEVEL11.REL:0x252590	src/levels/11_gondola/GetEnemyStateMachine__22JackOfAllTradesContent.c
 11_gondola	GetEnemyStateMachine__19ExpatGondolaContent	GetEnemyStateMachine__19ExpatGondolaContent	function	8	1	1	1	LEVEL11.REL:0x252860	src/levels/11_gondola/GetEnemyStateMachine__19ExpatGondolaContent.c
 11_gondola	GetCuffLinkBombConfig__C19ExpatGondolaContent	GetCuffLinkBombConfig__C19ExpatGondolaContent	function	12	1	1	1	LEVEL11.REL:0x252868	src/levels/11_gondola/GetCuffLinkBombConfig__C19ExpatGondolaContent.c
-11_gondola	SetCollisionFilter__19ExpatGondolaContentii	SetCollisionFilter__19ExpatGondolaContentii	function	28	1	0	1	LEVEL11.REL:0x252878	
+11_gondola	SetCollisionFilter__19ExpatGondolaContentii	SetCollisionFilter__19ExpatGondolaContentii	function	28	1	1	1	LEVEL11.REL:0x252878	src/levels/11_gondola/SetCollisionFilter__19ExpatGondolaContentii.c
 11_gondola	GetTangleVineTrapScale__C22HenchbotGondolaContent	GetTangleVineTrapScale__C22HenchbotGondolaContent	function	16	1	1	1	LEVEL11.REL:0x252898	src/levels/11_gondola/GetTangleVineTrapScale__C22HenchbotGondolaContent.c
 11_gondola	GetCuffLinkBombConfig__C22HenchbotGondolaContent	GetCuffLinkBombConfig__C22HenchbotGondolaContent	function	12	1	1	1	LEVEL11.REL:0x2528A8	src/levels/11_gondola/GetCuffLinkBombConfig__C22HenchbotGondolaContent.c
 11_gondola	GetEnemyStateMachine__22HenchbotGondolaContent	GetEnemyStateMachine__22HenchbotGondolaContent	function	8	1	1	1	LEVEL11.REL:0x2528B8	src/levels/11_gondola/GetEnemyStateMachine__22HenchbotGondolaContent.c
-11_gondola	SetCollisionFilter__22HenchbotGondolaContentii	SetCollisionFilter__22HenchbotGondolaContentii	function	28	1	0	1	LEVEL11.REL:0x2528C0	
+11_gondola	SetCollisionFilter__22HenchbotGondolaContentii	SetCollisionFilter__22HenchbotGondolaContentii	function	28	1	1	1	LEVEL11.REL:0x2528C0	src/levels/11_gondola/SetCollisionFilter__22HenchbotGondolaContentii.c
 11_gondola	GetEnemyStateMachine__19HenchbotJackContent	GetEnemyStateMachine__19HenchbotJackContent	function	8	1	1	1	LEVEL11.REL:0x2528E0	src/levels/11_gondola/GetEnemyStateMachine__19HenchbotJackContent.c
 13_casino	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cppw9aaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors.cppw9aaaa	function	32	1	1	1	LEVEL13.REL:0x009DB0	src/levels/13_casino/_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cppw9aaaa.c
 13_casino	SAC_EndProfiling__Fv_L13	SAC_EndProfiling__Fv	function	456	1	0	1	LEVEL13.REL:0x023380	
@@ -20040,7 +20040,7 @@ shared	isnan	isnan	function	56	2	0	2	LEVEL14.REL:0x2544C0
 15_highstakes	GetDesiredState__17ArenaGBEnterTable	GetDesiredState__17ArenaGBEnterTable	function	48	1	0	1	LEVEL15.REL:0x227230	
 15_highstakes	GetTransientDataSize__17ArenaGBEnterTable	GetTransientDataSize__17ArenaGBEnterTable	function	8	1	1	1	LEVEL15.REL:0x227260	src/levels/15_highstakes/GetTransientDataSize__17ArenaGBEnterTable.c
 15_highstakes	GetTransientDataSize__28HenchbotHighStakes_BiteClank	GetTransientDataSize__28HenchbotHighStakes_BiteClank	function	8	1	1	1	LEVEL15.REL:0x227268	src/levels/15_highstakes/GetTransientDataSize__28HenchbotHighStakes_BiteClank.c
-15_highstakes	SetCollisionFilter__25HenchbotHighStakesContentii	SetCollisionFilter__25HenchbotHighStakesContentii	function	28	1	0	1	LEVEL15.REL:0x227270	
+15_highstakes	SetCollisionFilter__25HenchbotHighStakesContentii	SetCollisionFilter__25HenchbotHighStakesContentii	function	28	1	1	1	LEVEL15.REL:0x227270	src/levels/15_highstakes/SetCollisionFilter__25HenchbotHighStakesContentii.c
 15_highstakes	GetEnemyStateMachine__25HenchbotHighStakesContent	GetEnemyStateMachine__25HenchbotHighStakesContent	function	8	1	1	1	LEVEL15.REL:0x227290	src/levels/15_highstakes/GetEnemyStateMachine__25HenchbotHighStakesContent.c
 15_highstakes	__9IceShards	__9IceShards	function	36	1	0	1	LEVEL15.REL:0x227298	
 15_highstakes	Active__9IceShards	Active__9IceShards	function	12	1	1	1	LEVEL15.REL:0x2272C0	src/levels/15_highstakes/Active__9IceShards.c
@@ -20542,7 +20542,7 @@ shared	CanBeEaten__C18BoltThief_JumpDown	CanBeEaten__C18BoltThief_JumpDown	funct
 shared	CanBeHypnotized__C18BoltThief_JumpDown	CanBeHypnotized__C18BoltThief_JumpDown	function	8	3	3	3	LEVEL16.REL:0x243778	src/levels/shared/CanBeHypnotized__C18BoltThief_JumpDown.c
 shared	GetEnemyStateMachine__16BoltThiefContent	GetEnemyStateMachine__16BoltThiefContent	function	8	3	3	3	LEVEL16.REL:0x243780	src/levels/shared/GetEnemyStateMachine__16BoltThiefContent.c
 shared	GetCuffLinkBombConfig__C16BoltThiefContent	GetCuffLinkBombConfig__C16BoltThiefContent	function	12	3	3	3	LEVEL16.REL:0x243788	src/levels/shared/GetCuffLinkBombConfig__C16BoltThiefContent.c
-shared	SetCollisionFilter__16BoltThiefContentii	SetCollisionFilter__16BoltThiefContentii	function	28	3	0	3	LEVEL16.REL:0x243798	
+shared	SetCollisionFilter__16BoltThiefContentii	SetCollisionFilter__16BoltThiefContentii	function	28	3	3	3	LEVEL16.REL:0x243798	src/levels/shared/SetCollisionFilter__16BoltThiefContentii.c
 shared	Reflect__20BoltThiefBombContentP4MobyPC4VEC3N22	Reflect__20BoltThiefBombContentP4MobyPC4VEC3N22	function	40	3	0	3	LEVEL16.REL:0x2437B8	
 shared	Vaporize__20BoltThiefBombContentP4Moby	Vaporize__20BoltThiefBombContentP4Moby	function	92	3	0	3	LEVEL16.REL:0x2437E0	
 16_lab	Init__16StrafeControllerPC12StrafeConfigP8NavigateP13EnemyBehaviorN23	Init__16StrafeControllerPC12StrafeConfigP8NavigateP13EnemyBehaviorN23	function	24	1	0	1	LEVEL16.REL:0x243900	
@@ -20580,7 +20580,7 @@ shared	Vaporize__20BoltThiefBombContentP4Moby	Vaporize__20BoltThiefBombContentP4
 16_lab	CanBeEaten__C15DroneHypnotized	CanBeEaten__C15DroneHypnotized	function	8	1	1	1	LEVEL16.REL:0x2443A8	src/levels/16_lab/CanBeEaten__C15DroneHypnotized.c
 16_lab	CanBeHypnotized__C15DroneHypnotized	CanBeHypnotized__C15DroneHypnotized	function	8	1	1	1	LEVEL16.REL:0x2443B0	src/levels/16_lab/CanBeHypnotized__C15DroneHypnotized.c
 16_lab	GetEnemyStateMachine__12DroneContent	GetEnemyStateMachine__12DroneContent	function	8	1	1	1	LEVEL16.REL:0x2443B8	src/levels/16_lab/GetEnemyStateMachine__12DroneContent.c
-16_lab	SetCollisionFilter__12DroneContentii	SetCollisionFilter__12DroneContentii	function	28	1	0	1	LEVEL16.REL:0x2443C0	
+16_lab	SetCollisionFilter__12DroneContentii	SetCollisionFilter__12DroneContentii	function	28	1	1	1	LEVEL16.REL:0x2443C0	src/levels/16_lab/SetCollisionFilter__12DroneContentii.c
 17_race	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cppDdbaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors.cppDdbaaa	function	32	1	1	1	LEVEL17.REL:0x009DB0	src/levels/17_race/_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cppDdbaaa.c
 17_race	SAC_EndProfiling__Fv_L17	SAC_EndProfiling__Fv	function	456	1	0	1	LEVEL17.REL:0x023380	
 17_race	main_GameStart__Fi_L17	main_GameStart__Fi	function	1296	1	0	1	LEVEL17.REL:0x023728	
@@ -21714,7 +21714,7 @@ shared	CanBeEaten__C20Doppleganger_Respawn	CanBeEaten__C20Doppleganger_Respawn	f
 shared	CanBeHypnotized__C20Doppleganger_Respawn	CanBeHypnotized__C20Doppleganger_Respawn	function	8	2	2	2	LEVEL19.REL:0x244BB0	src/levels/shared/CanBeHypnotized__C20Doppleganger_Respawn.c
 shared	GetEnemyStateMachine__19DopplegangerContent	GetEnemyStateMachine__19DopplegangerContent	function	8	2	2	2	LEVEL19.REL:0x244BB8	src/levels/shared/GetEnemyStateMachine__19DopplegangerContent.c
 shared	GetCuffLinkBombConfig__C19DopplegangerContent	GetCuffLinkBombConfig__C19DopplegangerContent	function	12	2	2	2	LEVEL19.REL:0x244BC0	src/levels/shared/GetCuffLinkBombConfig__C19DopplegangerContent.c
-shared	SetCollisionFilter__19DopplegangerContentii	SetCollisionFilter__19DopplegangerContentii	function	28	2	0	2	LEVEL19.REL:0x244BD0	
+shared	SetCollisionFilter__19DopplegangerContentii	SetCollisionFilter__19DopplegangerContentii	function	28	2	2	2	LEVEL19.REL:0x244BD0	src/levels/shared/SetCollisionFilter__19DopplegangerContentii.c
 shared	Reflect__25DopplegangerMortarContentP4MobyPC4VEC3N22	Reflect__25DopplegangerMortarContentP4MobyPC4VEC3N22	function	40	2	0	2	LEVEL19.REL:0x244BF0	
 shared	Vaporize__25DopplegangerMortarContentP4Moby	Vaporize__25DopplegangerMortarContentP4Moby	function	28	2	0	2	LEVEL19.REL:0x244C18	
 19_foundry	Spawn__16MidgeSpawnerPoofP4MobyT1	Spawn__16MidgeSpawnerPoofP4MobyT1	function	48	1	0	1	LEVEL19.REL:0x245240	
@@ -21752,7 +21752,7 @@ shared	CanActivate__16StaticMidge_Hack	CanActivate__16StaticMidge_Hack	function	
 shared	GetTangleVineTrapScale__C18StaticMidgeContent	GetTangleVineTrapScale__C18StaticMidgeContent	function	16	2	2	2	LEVEL19.REL:0x245A10	src/levels/shared/GetTangleVineTrapScale__C18StaticMidgeContent.c
 shared	GetEnemyStateMachine__18StaticMidgeContent	GetEnemyStateMachine__18StaticMidgeContent	function	8	2	2	2	LEVEL19.REL:0x245A20	src/levels/shared/GetEnemyStateMachine__18StaticMidgeContent.c
 shared	GetCuffLinkBombConfig__C18StaticMidgeContent	GetCuffLinkBombConfig__C18StaticMidgeContent	function	12	2	2	2	LEVEL19.REL:0x245A28	src/levels/shared/GetCuffLinkBombConfig__C18StaticMidgeContent.c
-shared	SetCollisionFilter__18StaticMidgeContentii	SetCollisionFilter__18StaticMidgeContentii	function	28	2	0	2	LEVEL19.REL:0x245A38	
+shared	SetCollisionFilter__18StaticMidgeContentii	SetCollisionFilter__18StaticMidgeContentii	function	28	2	2	2	LEVEL19.REL:0x245A38	src/levels/shared/SetCollisionFilter__18StaticMidgeContentii.c
 shared	Init__15StaticTrailType	Init__15StaticTrailType	function	256	2	0	2	LEVEL19.REL:0x2469C8	
 shared	Update__15StaticTrailType	Update__15StaticTrailType	function	224	2	0	2	LEVEL19.REL:0x246AC8	
 shared	Reset__15StaticTrailType	Reset__15StaticTrailType	function	8	2	2	2	LEVEL19.REL:0x246BA8	src/levels/shared/Reset__15StaticTrailType.c
@@ -23760,7 +23760,7 @@ shared	TieSlider_Update__FP4Mobyf	TieSlider_Update__FP4Mobyf	function	632	2	0	2	
 25_escapeyard	CanActivate__12A5GuardChase	CanActivate__12A5GuardChase	function	168	1	0	1	LEVEL25.REL:0x266ED8	
 25_escapeyard	Update__12A5GuardChasef	Update__12A5GuardChasef	function	644	1	0	1	LEVEL25.REL:0x266F80	
 25_escapeyard	GetArenaStateMachine__18Arena5GuardContent	GetArenaStateMachine__18Arena5GuardContent	function	8	1	1	1	LEVEL25.REL:0x267208	src/levels/25_escapeyard/GetArenaStateMachine__18Arena5GuardContent.c
-25_escapeyard	SetCollisionFilter__18Arena5GuardContentii	SetCollisionFilter__18Arena5GuardContentii	function	28	1	0	1	LEVEL25.REL:0x267210	
+25_escapeyard	SetCollisionFilter__18Arena5GuardContentii	SetCollisionFilter__18Arena5GuardContentii	function	28	1	1	1	LEVEL25.REL:0x267210	src/levels/25_escapeyard/SetCollisionFilter__18Arena5GuardContentii.c
 25_escapeyard	KickoffMoby__18Arena5GuardContentP4MobyN21Pv	KickoffMoby__18Arena5GuardContentP4MobyN21Pv	function	8	1	1	1	LEVEL25.REL:0x267230	src/levels/25_escapeyard/KickoffMoby__18Arena5GuardContentP4MobyN21Pv.c
 25_escapeyard	IsSwarmer__18Arena5GuardContent	IsSwarmer__18Arena5GuardContent	function	8	1	1	1	LEVEL25.REL:0x267238	src/levels/25_escapeyard/IsSwarmer__18Arena5GuardContent.c
 26_damrace	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cppGlbaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors.cppGlbaaa	function	32	1	1	1	LEVEL26.REL:0x009DB0	src/levels/26_damrace/_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cppGlbaaa.c
@@ -24009,7 +24009,7 @@ shared	CylinderBendy_Draw__FUiPC4VEC3N21P20CylinderBendy_ConfigT1_L26	CylinderBe
 27_qwarkdam	Update__7CPEnterf	Update__7CPEnterf	function	1880	1	0	1	LEVEL27.REL:0x0BED90	
 27_qwarkdam	GetDesiredState__7CPEnter	GetDesiredState__7CPEnter	function	120	1	0	1	LEVEL27.REL:0x0BF4E8	
 27_qwarkdam	ModifyJointsCallback__7CPEnterP4Moby	ModifyJointsCallback__7CPEnterP4Moby	function	80	1	0	1	LEVEL27.REL:0x0BF560	
-27_qwarkdam	End__7CPEnter	End__7CPEnter	function	28	1	0	1	LEVEL27.REL:0x0BF5B0	
+27_qwarkdam	End__7CPEnter	End__7CPEnter	function	28	1	1	1	LEVEL27.REL:0x0BF5B0	src/levels/27_qwarkdam/End__7CPEnter.c
 27_qwarkdam	Begin__7CPChase	Begin__7CPChase	function	224	1	0	1	LEVEL27.REL:0x0BF5D0	
 27_qwarkdam	Update__7CPChasef	Update__7CPChasef	function	1276	1	0	1	LEVEL27.REL:0x0BF6B0	
 27_qwarkdam	GetDesiredState__7CPChase	GetDesiredState__7CPChase	function	124	1	0	1	LEVEL27.REL:0x0BFBB0	
@@ -24684,7 +24684,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 29_base	__15SpiderBot_Death	__15SpiderBot_Death	function	36	1	0	1	LEVEL29.REL:0x24BD70	
 29_base	GetEnemyStateMachine__12ExpatContent	GetEnemyStateMachine__12ExpatContent	function	8	1	1	1	LEVEL29.REL:0x24C280	src/levels/29_base/GetEnemyStateMachine__12ExpatContent.c
 29_base	GetCuffLinkBombConfig__C12ExpatContent	GetCuffLinkBombConfig__C12ExpatContent	function	12	1	1	1	LEVEL29.REL:0x24C288	src/levels/29_base/GetCuffLinkBombConfig__C12ExpatContent.c
-29_base	SetCollisionFilter__12ExpatContentii	SetCollisionFilter__12ExpatContentii	function	28	1	0	1	LEVEL29.REL:0x24C298	
+29_base	SetCollisionFilter__12ExpatContentii	SetCollisionFilter__12ExpatContentii	function	28	1	1	1	LEVEL29.REL:0x24C298	src/levels/29_base/SetCollisionFilter__12ExpatContentii.c
 30_boss	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cpp9Zaaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors.cpp9Zaaaa	function	32	1	1	1	LEVEL30.REL:0x009DB0	src/levels/30_boss/_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Behaviors__All_Behaviors_cpp9Zaaaa.c
 30_boss	SAC_EndProfiling__Fv_L30	SAC_EndProfiling__Fv	function	456	1	0	1	LEVEL30.REL:0x023380	
 30_boss	main_GameStart__Fi_L30	main_GameStart__Fi	function	1296	1	0	1	LEVEL30.REL:0x023730	
@@ -24894,7 +24894,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	Update__7Mountedf	Update__7Mountedf	function	8	1	1	1	LEVEL30.REL:0x0E0F98	src/levels/30_boss/Update__7Mountedf.c
 30_boss	PostAnimCallback__7MountedP4Moby	PostAnimCallback__7MountedP4Moby	function	180	1	0	1	LEVEL30.REL:0x0E0FA0	
 30_boss	GetDesiredState__7Mounted	GetDesiredState__7Mounted	function	168	1	0	1	LEVEL30.REL:0x0E1058	
-30_boss	End__7Mounted	End__7Mounted	function	28	1	0	1	LEVEL30.REL:0x0E1100	
+30_boss	End__7Mounted	End__7Mounted	function	28	1	1	1	LEVEL30.REL:0x0E1100	src/levels/30_boss/End__7Mounted.c
 30_boss	Start__10JumpToSuit	Start__10JumpToSuit	function	132	1	0	1	LEVEL30.REL:0x0E1120	
 30_boss	Begin__10JumpToSuit	Begin__10JumpToSuit	function	28	1	1	1	LEVEL30.REL:0x0E11A8	src/levels/30_boss/Begin__10JumpToSuit.c
 30_boss	Update__10JumpToSuitf	Update__10JumpToSuitf	function	8	1	1	1	LEVEL30.REL:0x0E11C8	src/levels/30_boss/Update__10JumpToSuitf.c
