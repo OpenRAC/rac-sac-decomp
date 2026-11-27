@@ -127902,3 +127902,11 @@ LEVEL5.REL	0x001D60F0	16	src/levels/shared/__as__5AVec3RC5AVec3.c
 LEVEL7.REL	0x0022DBD8	16	src/levels/shared/__as__5AVec3RC5AVec3.c
 LEVEL8.REL	0x001C2FA0	16	src/levels/shared/__as__5AVec3RC5AVec3.c
 LEVEL9.REL	0x00265C30	16	src/levels/shared/__as__5AVec3RC5AVec3.c
+LEVEL7.REL	0x000C8CD8	16	src/levels/07_countess/Countess_EnableAnimSounds__Fb_L07.c
+LEVEL9.REL	0x0025E3A8	16	src/levels/09_cafeteria/GetFXFrameIndex__C14DrawObjManager_L09.c
+LEVEL30.REL	0x000E5AE8	16	src/levels/30_boss/KlunkKingpin_SetSuitActivating__FP4Mobyb_L30.c
+LEVEL30.REL	0x000E5AD8	16	src/levels/30_boss/KlunkKingpin_SetSuitActive__FP4Mobyb_L30.c
+LEVEL30.REL	0x000EEFF0	16	src/levels/30_boss/Nefarious_IsOutOfChamber__FP4Moby_L30.c
+LEVEL30.REL	0x000EDEC0	16	src/levels/30_boss/Nefarious_SetSuitActivating__FP4Mobyb_L30.c
+LEVEL30.REL	0x000F5230	16	src/levels/30_boss/RoboRatchet_SetSuitActivating__FP4Mobyb_L30.c
+LEVEL30.REL	0x000F5220	16	src/levels/30_boss/RoboRatchet_SetSuitActive__FP4Mobyb_L30.c
