@@ -540,7 +540,7 @@ func_00116820	function	0x00116820	8	1	src/boot/func_00116820.c
 func_00116828	function	0x00116828	816	0	
 func_00116B58	function	0x00116B58	476	0	
 func_00116D38	function	0x00116D38	484	0	
-func_00116F20	function	0x00116F20	96	0	
+__muldi3	function	0x00116F20	96	1	src/boot/func_00116F20.c
 func_00116F80	function	0x00116F80	24	0	
 func_00116F98	function	0x00116F98	16	0	
 func_00116FA8	function	0x00116FA8	16	1	src/boot/func_00116FA8.c

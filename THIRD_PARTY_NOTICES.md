@@ -60,6 +60,9 @@ library that the EE-GCC 2.9 toolchain linked into the game, and follow the
 form of GCC's own sources: `fp-bit.c` (`dptofp.c`, `dptoli.c`, `dptoul.c`,
 `fpadd.c`, `fpcmp.c`, `fpdiv.c`, `fpmul.c`, `fpsub.c` and `__negdf2.c`),
 `libgcc2.c` (`__floatdisf.c`) and `crtstuff.c` (`__do_global_dtors.c`).
+`__muldi3.c` (here and in `src/boot/`) is the `L_muldi3` module of
+`libgcc2.c` with the parts of `longlong.h` it uses, including the `__mips__`
+`umul_ppmm` primitive unchanged, as ported from `OpenRAC/rac5-sm-decomp`.
 Each source serves every module that links the routine. Those GCC files are
 Copyright Free Software Foundation, Inc., licensed under the GNU General
 Public License version 2 or later with the libgcc linking exception; that

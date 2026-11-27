@@ -2320,7 +2320,7 @@ shared	fptoui	fptoui	function	152	31	31	31	FE.REL:0x06A908	src/levels/shared/fpt
 shared	__negsf2	__negsf2	function	56	31	0	31	FE.REL:0x06A9A0	
 shared	__make_fp	__make_fp	function	44	31	31	31	FE.REL:0x06A9D8	src/levels/shared/__make_fp.c
 shared	fptodp	fptodp	function	64	31	0	31	FE.REL:0x06AA08	
-shared	__muldi3	__muldi3	function	96	31	0	31	FE.REL:0x06AA48	
+shared	__muldi3	__muldi3	function	96	31	31	31	FE.REL:0x06AA48	src/levels/shared/__muldi3.c
 shared	Initialize__3Agl	Initialize__3Agl	function	180	31	0	31	FE.REL:0x06AAA8	
 shared	Shutdown__3Agl	Shutdown__3Agl	function	96	31	0	31	FE.REL:0x06AB60	
 shared	Update__3Agl	Update__3Agl	function	48	31	0	31	FE.REL:0x06ABC0	

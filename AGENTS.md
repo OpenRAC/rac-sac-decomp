@@ -48,6 +48,13 @@ does **not** adopt their compilers, their formats or their boundaries.
    raw instruction words, no artificial assembly barriers, and no edits to
    compiler output. A file-scope assembler-name label on a declaration is
    allowed solely to name a reference symbol; it must emit no instructions.
+   Public runtime-library target primitives (GCC's original `longlong.h`
+   multiplication primitive, the `__mips__` `umul_ppmm`) may be retained with
+   their upstream provenance and licence, as in OpenRAC/rac1-decomp,
+   OpenRAC/rac2-decomp and OpenRAC/rac5-sm-decomp; `tools/c_source_policy.py`
+   accepts each reviewed primitive only in its exact upstream form, in the
+   source and in its preprocessed text. A primitive is not a match: its
+   compiled bytes are checked at every linked place.
 9. **Authored form, not steered codegen.** When the compiled bytes do not
    match, the answer is the *source*, not the compiler's mood. Recover the
    authentic form of the routine: where the values live, how many are live at
