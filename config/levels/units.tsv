@@ -4942,7 +4942,7 @@ shared	GetSafeZoneLeftX__C14DrawObjManager	GetSafeZoneLeftX__C14DrawObjManager	f
 shared	GetSafeZoneTopY__C14DrawObjManager	GetSafeZoneTopY__C14DrawObjManager	function	84	31	0	31	FE.REL:0x0DDFD0	
 shared	GetSafeZoneWidth__C14DrawObjManager	GetSafeZoneWidth__C14DrawObjManager	function	104	31	0	31	FE.REL:0x0DE028	
 shared	GetSafeZoneHeight__C14DrawObjManager	GetSafeZoneHeight__C14DrawObjManager	function	104	31	0	31	FE.REL:0x0DE090	
-shared	GetVert__C7DrawObji	GetVert__C7DrawObji	function	16	31	0	31	FE.REL:0x0DE0F8	
+shared	GetVert__C7DrawObji	GetVert__C7DrawObji	function	16	31	31	31	FE.REL:0x0DE0F8	src/levels/shared/GetVert__C7DrawObji.c
 shared	AllocateMtx__14DrawObjManagerRC8MATRIX43_FE	AllocateMtx__14DrawObjManagerRC8MATRIX43	function	908	17	0	17	FE.REL:0x0DE108	
 shared	ForceAllocateMtx__14DrawObjManagerPP4AMtx_FE	ForceAllocateMtx__14DrawObjManagerPP4AMtx	function	132	17	0	17	FE.REL:0x0DE498	
 shared	compare__t10ApeTBinMap2ZUiZP15SOUND_SoundBankPCvT1	compare__t10ApeTBinMap2ZUiZP15SOUND_SoundBankPCvT1	function	40	31	0	31	FE.REL:0x0DE520	
@@ -5094,7 +5094,7 @@ shared	Append__t9ApeTArray1ZP16AglMaskContainerRCP16AglMaskContainer	Append__t9A
 shared	Delete__t9ApeTArray1ZP16AglMaskContaineri	Delete__t9ApeTArray1ZP16AglMaskContaineri	function	60	31	0	31	FE.REL:0x0E1298	
 shared	Free__t12ApeTFreeList1Z10AglVtxDeclPv	Free__t12ApeTFreeList1Z10AglVtxDeclPv	function	28	31	31	31	FE.REL:0x0E12D8	src/levels/shared/Free__t12ApeTFreeList1Z10AglVtxDeclPv.c
 shared	Printf_NoIndent__6ApeLogPCce	Printf_NoIndent__6ApeLogPCce	function	56	31	0	31	FE.REL:0x0E12F8	
-shared	__as__5AVec3RC5AVec3	__as__5AVec3RC5AVec3	function	16	31	0	31	FE.REL:0x0E1330	
+shared	__as__5AVec3RC5AVec3	__as__5AVec3RC5AVec3	function	16	31	31	31	FE.REL:0x0E1330	src/levels/shared/__as__5AVec3RC5AVec3.c
 shared	__ml__FRC5AVec3f	__ml__FRC5AVec3f	function	28	31	0	31	FE.REL:0x0E1340	
 shared	Mul__5AVec4f	Mul__5AVec4f	function	56	31	0	31	FE.REL:0x0E1360	
 shared	__as__5AVec4RC5AVec3	__as__5AVec4RC5AVec3	function	44	31	0	31	FE.REL:0x0E1398	
@@ -5150,7 +5150,7 @@ shared	GetNameHash__C11AglTopology	GetNameHash__C11AglTopology	function	8	31	31	
 shared	GetBSphere__C11AglTopology	GetBSphere__C11AglTopology	function	8	31	31	31	FE.REL:0x0E1DD0	src/levels/shared/GetBSphere__C11AglTopology.c
 shared	IsShadowCaster__C11AglTopology	IsShadowCaster__C11AglTopology	function	20	31	0	31	FE.REL:0x0E1DD8	
 shared	UseDiscShadow__C11AglTopology	UseDiscShadow__C11AglTopology	function	20	31	0	31	FE.REL:0x0E1DF0	
-shared	GetMesh__C11AglTopologyUi	GetMesh__C11AglTopologyUi	function	16	31	0	31	FE.REL:0x0E1E08	
+shared	GetMesh__C11AglTopologyUi	GetMesh__C11AglTopologyUi	function	16	31	31	31	FE.REL:0x0E1E08	src/levels/shared/GetMesh__C11AglTopologyUi.c
 shared	GetMaterial__C11AglTopologyUi	GetMaterial__C11AglTopologyUi	function	40	31	0	31	FE.REL:0x0E1E18	
 shared	GetWidth__C14AglTextureBase	GetWidth__C14AglTextureBase	function	8	31	31	31	FE.REL:0x0E1E40	src/levels/shared/GetWidth__C14AglTextureBase.c
 shared	GetHeight__C14AglTextureBase	GetHeight__C14AglTextureBase	function	8	31	31	31	FE.REL:0x0E1E48	src/levels/shared/GetHeight__C14AglTextureBase.c
@@ -5189,7 +5189,7 @@ shared	GetNameHash__15AglMaterialBase	GetNameHash__15AglMaterialBase	function	8	
 shared	GetName__C15AglMaterialBase	GetName__C15AglMaterialBase	function	60	31	0	31	FE.REL:0x0E2308	
 shared	GetShaderProfile__C15AglMaterialBase	GetShaderProfile__C15AglMaterialBase	function	8	31	31	31	FE.REL:0x0E2348	src/levels/shared/GetShaderProfile__C15AglMaterialBase.c
 shared	GetShaderName__C15AglMaterialBase	GetShaderName__C15AglMaterialBase	function	12	31	31	31	FE.REL:0x0E2350	src/levels/shared/GetShaderName__C15AglMaterialBase.c
-shared	GetTexture__15AglMaterialBasei	GetTexture__15AglMaterialBasei	function	16	31	0	31	FE.REL:0x0E2360	
+shared	GetTexture__15AglMaterialBasei	GetTexture__15AglMaterialBasei	function	16	31	31	31	FE.REL:0x0E2360	src/levels/shared/GetTexture__15AglMaterialBasei.c
 shared	GetNumTexture__C15AglMaterialBase	GetNumTexture__C15AglMaterialBase	function	8	31	31	31	FE.REL:0x0E2370	src/levels/shared/GetNumTexture__C15AglMaterialBase.c
 shared	SetDiffuseColor__15AglMaterialBaseRC5AVec4	SetDiffuseColor__15AglMaterialBaseRC5AVec4	function	40	31	0	31	FE.REL:0x0E2378	
 shared	GetDiffuseColor__C15AglMaterialBase	GetDiffuseColor__C15AglMaterialBase	function	8	31	31	31	FE.REL:0x0E23A0	src/levels/shared/GetDiffuseColor__C15AglMaterialBase.c
@@ -5198,7 +5198,7 @@ shared	GetSpecularColor__C15AglMaterialBase	GetSpecularColor__C15AglMaterialBase
 shared	SetSpecularPower__15AglMaterialBasef	SetSpecularPower__15AglMaterialBasef	function	8	31	31	31	FE.REL:0x0E23D8	src/levels/shared/SetSpecularPower__15AglMaterialBasef.c
 shared	GetSpecularPower__C15AglMaterialBase	GetSpecularPower__C15AglMaterialBase	function	8	31	31	31	FE.REL:0x0E23E0	src/levels/shared/GetSpecularPower__C15AglMaterialBase.c
 shared	SetLightEnable__15AglMaterialBaseb	SetLightEnable__15AglMaterialBaseb	function	44	31	0	31	FE.REL:0x0E23E8	
-shared	GetLightEnable__C15AglMaterialBase	GetLightEnable__C15AglMaterialBase	function	16	31	0	31	FE.REL:0x0E2418	
+shared	GetLightEnable__C15AglMaterialBase	GetLightEnable__C15AglMaterialBase	function	16	31	31	31	FE.REL:0x0E2418	src/levels/shared/GetLightEnable__C15AglMaterialBase.c
 shared	SetFogEnable__15AglMaterialBaseb	SetFogEnable__15AglMaterialBaseb	function	44	31	0	31	FE.REL:0x0E2428	
 shared	GetFogEnable__C15AglMaterialBase	GetFogEnable__C15AglMaterialBase	function	20	31	0	31	FE.REL:0x0E2458	
 shared	SetVisibility__15AglMaterialBaseb	SetVisibility__15AglMaterialBaseb	function	44	31	0	31	FE.REL:0x0E2470	
@@ -5574,7 +5574,7 @@ shared	__28ApePointMassLengthConstraintP17ApePointMassPointT1f	__28ApePointMassL
 shared	_$_27ApePointMassPointConstraint	_$_27ApePointMassPointConstraint	function	48	31	0	31	FE.REL:0x0E94C0	
 shared	__27ApePointMassPointConstraintP17ApePointMassPointRC5AVec3f	__27ApePointMassPointConstraintP17ApePointMassPointRC5AVec3f	function	56	31	0	31	FE.REL:0x0E94F0	
 shared	_$_33ApePointMassFreezePointConstraint	_$_33ApePointMassFreezePointConstraint	function	48	31	0	31	FE.REL:0x0E9528	
-shared	Initialize__33ApePointMassFreezePointConstraint	Initialize__33ApePointMassFreezePointConstraint	function	16	31	0	31	FE.REL:0x0E9558	
+shared	Initialize__33ApePointMassFreezePointConstraint	Initialize__33ApePointMassFreezePointConstraint	function	16	31	31	31	FE.REL:0x0E9558	src/levels/shared/Initialize__33ApePointMassFreezePointConstraint.c
 shared	_$_17ApePointMassJoint	_$_17ApePointMassJoint	function	48	31	0	31	FE.REL:0x0E9568	
 shared	_$_21ApePointMassBoneJoint	_$_21ApePointMassBoneJoint	function	48	31	0	31	FE.REL:0x0E9598	
 shared	GetParentBone__21ApePointMassBoneJoint	GetParentBone__21ApePointMassBoneJoint	function	8	31	31	31	FE.REL:0x0E95C8	src/levels/shared/GetParentBone__21ApePointMassBoneJoint.c
@@ -5756,7 +5756,7 @@ shared	Free__t12ApeTFreeList1Z11ApeSkeletonPv	Free__t12ApeTFreeList1Z11ApeSkelet
 shared	Alloc__t12ApeTFreeList1Z11ApeSkeleton	Alloc__t12ApeTFreeList1Z11ApeSkeleton	function	28	31	31	31	FE.REL:0x0EB880	src/levels/shared/Alloc__t12ApeTFreeList1Z11ApeSkeleton.c
 shared	ResetLoading__6ApePVS	ResetLoading__6ApePVS	function	12	31	31	31	FE.REL:0x0EB8A0	src/levels/shared/ResetLoading__6ApePVS.c
 shared	GetRegionBase__C6ApePVS	GetRegionBase__C6ApePVS	function	8	31	31	31	FE.REL:0x0EB8B0	src/levels/shared/GetRegionBase__C6ApePVS.c
-shared	NextRegionSet__6ApePVS	NextRegionSet__6ApePVS	function	16	31	0	31	FE.REL:0x0EB8B8	
+shared	NextRegionSet__6ApePVS	NextRegionSet__6ApePVS	function	16	31	31	31	FE.REL:0x0EB8B8	src/levels/shared/NextRegionSet__6ApePVS.c
 shared	GetRegionSet__6ApePVS	GetRegionSet__6ApePVS	function	8	31	31	31	FE.REL:0x0EB8C8	src/levels/shared/GetRegionSet__6ApePVS.c
 shared	IsVisible__6ApePVSRCUi	IsVisible__6ApePVSRCUi	function	40	31	0	31	FE.REL:0x0EB8D0	
 shared	ClearDirty__6ApeObj	ClearDirty__6ApeObj	function	32	31	0	31	FE.REL:0x0EB8F8	
@@ -5819,7 +5819,7 @@ shared	GetSortLayer__C11ApeInstance	GetSortLayer__C11ApeInstance	function	8	31	3
 shared	GetLightGroup__C11ApeInstance	GetLightGroup__C11ApeInstance	function	8	31	31	31	FE.REL:0x0EBF38	src/levels/shared/GetLightGroup__C11ApeInstance.c
 shared	GetMeshVisMask__C11ApeInstance	GetMeshVisMask__C11ApeInstance	function	8	31	31	31	FE.REL:0x0EBF40	src/levels/shared/GetMeshVisMask__C11ApeInstance.c
 shared	SetMeshVisMask__11ApeInstanceUi	SetMeshVisMask__11ApeInstanceUi	function	8	31	31	31	FE.REL:0x0EBF48	src/levels/shared/SetMeshVisMask__11ApeInstanceUi.c
-shared	GetFogGroup__C11ApeInstance	GetFogGroup__C11ApeInstance	function	16	31	0	31	FE.REL:0x0EBF50	
+shared	GetFogGroup__C11ApeInstance	GetFogGroup__C11ApeInstance	function	16	31	31	31	FE.REL:0x0EBF50	src/levels/shared/GetFogGroup__C11ApeInstance.c
 shared	SetFogGroup__11ApeInstanceUi	SetFogGroup__11ApeInstanceUi	function	56	31	0	31	FE.REL:0x0EBF60	
 shared	SetDef__11ApeInstanceP11ApeIDefBase	SetDef__11ApeInstanceP11ApeIDefBase	function	28	31	31	31	FE.REL:0x0EBF98	src/levels/shared/SetDef__11ApeInstanceP11ApeIDefBase.c
 shared	SetPhysics__11ApeInstanceP14ApePhysicsInst	SetPhysics__11ApeInstanceP14ApePhysicsInst	function	8	31	31	31	FE.REL:0x0EBFB8	src/levels/shared/SetPhysics__11ApeInstanceP14ApePhysicsInst.c
@@ -5855,9 +5855,9 @@ shared	AddLOD__10ApeGeomDefP11AglTopologyf	AddLOD__10ApeGeomDefP11AglTopologyf	f
 shared	SetSkeleton__10ApeGeomDefP14ApeSkeletonDef	SetSkeleton__10ApeGeomDefP14ApeSkeletonDef	function	28	31	0	31	FE.REL:0x0EC5C0	
 shared	GetSkeleton__10ApeGeomDef	GetSkeleton__10ApeGeomDef	function	8	31	31	31	FE.REL:0x0EC5E0	src/levels/shared/GetSkeleton__10ApeGeomDef.c
 shared	GetNumLOD__10ApeGeomDef	GetNumLOD__10ApeGeomDef	function	8	31	31	31	FE.REL:0x0EC5E8	src/levels/shared/GetNumLOD__10ApeGeomDef.c
-shared	GetLOD__10ApeGeomDefUi	GetLOD__10ApeGeomDefUi	function	16	31	0	31	FE.REL:0x0EC5F0	
+shared	GetLOD__10ApeGeomDefUi	GetLOD__10ApeGeomDefUi	function	16	31	31	31	FE.REL:0x0EC5F0	src/levels/shared/GetLOD__10ApeGeomDefUi.c
 shared	GetLastLOD__10ApeGeomDef	GetLastLOD__10ApeGeomDef	function	20	31	0	31	FE.REL:0x0EC600	
-shared	GetTopology__10ApeGeomDefUi	GetTopology__10ApeGeomDefUi	function	16	31	0	31	FE.REL:0x0EC618	
+shared	GetTopology__10ApeGeomDefUi	GetTopology__10ApeGeomDefUi	function	16	31	31	31	FE.REL:0x0EC618	src/levels/shared/GetTopology__10ApeGeomDefUi.c
 shared	GetNumMesh__10ApeGeomDefUi	GetNumMesh__10ApeGeomDefUi	function	20	31	0	31	FE.REL:0x0EC628	
 shared	GetMesh__10ApeGeomDefUiUi	GetMesh__10ApeGeomDefUiUi	function	28	31	0	31	FE.REL:0x0EC640	
 shared	GetMaterial__10ApeGeomDefUiUi	GetMaterial__10ApeGeomDefUiUi	function	48	31	0	31	FE.REL:0x0EC660	
@@ -5914,7 +5914,7 @@ shared	__18ApeEmitterInstance	__18ApeEmitterInstance	function	56	31	0	31	FE.REL:
 shared	GetDef__C18ApeEmitterInstance	GetDef__C18ApeEmitterInstance	function	8	31	31	31	FE.REL:0x0ECE40	src/levels/shared/GetDef__C18ApeEmitterInstance.c
 shared	__20ApeCollisionInstance	__20ApeCollisionInstance	function	224	31	0	31	FE.REL:0x0ECE48	
 shared	_$_20ApeCollisionInstance	_$_20ApeCollisionInstance	function	40	31	0	31	FE.REL:0x0ECF28	
-shared	GetNameHash__20ApeCollisionInstance	GetNameHash__20ApeCollisionInstance	function	16	31	0	31	FE.REL:0x0ECF50	
+shared	GetNameHash__20ApeCollisionInstance	GetNameHash__20ApeCollisionInstance	function	16	31	31	31	FE.REL:0x0ECF50	src/levels/shared/GetNameHash__20ApeCollisionInstance.c
 shared	GetDef__C20ApeCollisionInstance	GetDef__C20ApeCollisionInstance	function	8	31	31	31	FE.REL:0x0ECF60	src/levels/shared/GetDef__C20ApeCollisionInstance.c
 shared	SetPhysicsData__20ApeCollisionInstancePv	SetPhysicsData__20ApeCollisionInstancePv	function	8	31	31	31	FE.REL:0x0ECF68	src/levels/shared/SetPhysicsData__20ApeCollisionInstancePv.c
 shared	GetPhysicsData__20ApeCollisionInstance	GetPhysicsData__20ApeCollisionInstance	function	8	31	31	31	FE.REL:0x0ECF70	src/levels/shared/GetPhysicsData__20ApeCollisionInstance.c
@@ -7358,8 +7358,8 @@ shared	RENDEREFFECT_SaveScreenEffectsState__Fv	RENDEREFFECT_SaveScreenEffectsSta
 shared	RENDEREFFECT_DisableScreenEffects__Fv	RENDEREFFECT_DisableScreenEffects__Fv	function	8	30	30	30	LEVEL1.REL:0x063898	src/levels/shared/RENDEREFFECT_DisableScreenEffects__Fv.c
 shared	RENDEREFFECT_RestoreScreenEffectsState__Fv	RENDEREFFECT_RestoreScreenEffectsState__Fv	function	8	30	30	30	LEVEL1.REL:0x0638A0	src/levels/shared/RENDEREFFECT_RestoreScreenEffectsState__Fv.c
 shared	SHRUB_DrawShrubs__FP14ScePspFVector3UlRC6Sphere16SHRUB_RenderType	SHRUB_DrawShrubs__FP14ScePspFVector3UlRC6Sphere16SHRUB_RenderType	function	8	30	30	30	LEVEL1.REL:0x0638A8	src/levels/shared/SHRUB_DrawShrubs__FP14ScePspFVector3UlRC6Sphere16SHRUB_RenderType.c
-shared	SHRUB_DisableCollision__FP5Shrub	SHRUB_DisableCollision__FP5Shrub	function	16	30	0	30	LEVEL1.REL:0x0638B0	
-shared	SHRUB_EnableCollision__FP5Shrub	SHRUB_EnableCollision__FP5Shrub	function	16	30	0	30	LEVEL1.REL:0x0638C0	
+shared	SHRUB_DisableCollision__FP5Shrub	SHRUB_DisableCollision__FP5Shrub	function	16	30	30	30	LEVEL1.REL:0x0638B0	src/levels/shared/SHRUB_DisableCollision__FP5Shrub.c
+shared	SHRUB_EnableCollision__FP5Shrub	SHRUB_EnableCollision__FP5Shrub	function	16	30	30	30	LEVEL1.REL:0x0638C0	src/levels/shared/SHRUB_EnableCollision__FP5Shrub.c
 shared	SHRUB_GetCollisionAABB__FP4VEC3T0PC5Shrub	SHRUB_GetCollisionAABB__FP4VEC3T0PC5Shrub	function	392	30	0	30	LEVEL1.REL:0x0638D0	
 shared	SHRUB_GetCollisionMotionBound__FP4VEC3T0PC5Shrub	SHRUB_GetCollisionMotionBound__FP4VEC3T0PC5Shrub	function	28	30	30	30	LEVEL1.REL:0x063A58	src/levels/shared/SHRUB_GetCollisionMotionBound__FP4VEC3T0PC5Shrub.c
 shared	SHRUB_MergeCollisionMotionBound__FP4VEC3T0PC5Shrub	SHRUB_MergeCollisionMotionBound__FP4VEC3T0PC5Shrub	function	304	30	0	30	LEVEL1.REL:0x063A78	
@@ -18465,7 +18465,7 @@ shared	UTIL_DrawTexturedRect__FiiUiUiiiiiUi_L11	UTIL_DrawTexturedRect__FiiUiUiii
 shared	__14DrawObjManager_L11	__14DrawObjManager	function	1956	2	0	2	LEVEL11.REL:0x06BA40	
 shared	_$_14DrawObjManager_L11	_$_14DrawObjManager	function	860	2	0	2	LEVEL11.REL:0x06C1E8	
 shared	OnLevelLoad__14DrawObjManager_L11	OnLevelLoad__14DrawObjManager	function	52	2	0	2	LEVEL11.REL:0x06C548	
-shared	OnLevelUnLoad__14DrawObjManager_L11	OnLevelUnLoad__14DrawObjManager	function	16	2	0	2	LEVEL11.REL:0x06C580	
+shared	OnLevelUnLoad__14DrawObjManager_L11	OnLevelUnLoad__14DrawObjManager	function	16	2	2	2	LEVEL11.REL:0x06C580	src/levels/shared/OnLevelUnLoad__14DrawObjManager_L11.c
 shared	DrawAll3DDrawObj__14DrawObjManager_L11	DrawAll3DDrawObj__14DrawObjManager	function	772	2	0	2	LEVEL11.REL:0x06C590	
 shared	DrawAll2DDrawObj__14DrawObjManager_L11	DrawAll2DDrawObj__14DrawObjManager	function	1460	2	0	2	LEVEL11.REL:0x06C898	
 shared	Allocate3DDrawObj__14DrawObjManagerRiPC21DrawObj3DCreateParams_L11	Allocate3DDrawObj__14DrawObjManagerRiPC21DrawObj3DCreateParams	function	740	2	0	2	LEVEL11.REL:0x06CE58	
@@ -21373,7 +21373,7 @@ shared	Begin__24Doppleganger_GetHitMinor	Begin__24Doppleganger_GetHitMinor	funct
 shared	End__24Doppleganger_GetHitMinor	End__24Doppleganger_GetHitMinor	function	136	2	0	2	LEVEL19.REL:0x0D8370	
 shared	Update__24Doppleganger_GetHitMinorf	Update__24Doppleganger_GetHitMinorf	function	300	2	0	2	LEVEL19.REL:0x0D83F8	
 shared	HandleDamage__24Doppleganger_GetHitMinorf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	HandleDamage__24Doppleganger_GetHitMinorf14MobyDamageType18MobyDamageStrengthPC4VEC4T4P4Moby	function	124	2	0	2	LEVEL19.REL:0x0D8528	
-shared	DGInit__24Doppleganger_GetHitMajorb18MobyDamageStrengthUi	DGInit__24Doppleganger_GetHitMajorb18MobyDamageStrengthUi	function	16	2	0	2	LEVEL19.REL:0x0D85A8	
+shared	DGInit__24Doppleganger_GetHitMajorb18MobyDamageStrengthUi	DGInit__24Doppleganger_GetHitMajorb18MobyDamageStrengthUi	function	16	2	2	2	LEVEL19.REL:0x0D85A8	src/levels/shared/DGInit__24Doppleganger_GetHitMajorb18MobyDamageStrengthUi.c
 shared	CanActivate__24Doppleganger_GetHitMajor	CanActivate__24Doppleganger_GetHitMajor	function	60	2	0	2	LEVEL19.REL:0x0D85B8	
 shared	Begin__24Doppleganger_GetHitMajor	Begin__24Doppleganger_GetHitMajor	function	60	2	0	2	LEVEL19.REL:0x0D85F8	
 shared	Update__24Doppleganger_GetHitMajorf	Update__24Doppleganger_GetHitMajorf	function	300	2	0	2	LEVEL19.REL:0x0D8638	
@@ -23362,7 +23362,7 @@ shared	GCSSOUND_Reset__Fv	GCSSOUND_Reset__Fv	function	28	2	2	2	LEVEL24.REL:0x0F0
 shared	GCSSOUND_Update__Fv	GCSSOUND_Update__Fv	function	28	2	2	2	LEVEL24.REL:0x0F0FC8	src/levels/shared/GCSSOUND_Update__Fv.c
 shared	GCSSOUND_PlayInternal__F17GCSSOUND_SourceIDPC4VEC3P15GCSSOUND_Handleffff	GCSSOUND_PlayInternal__F17GCSSOUND_SourceIDPC4VEC3P15GCSSOUND_Handleffff	function	512	2	0	2	LEVEL24.REL:0x0F0FE8	
 shared	GCSSOUND_PlayInternal__F17GCSSOUND_SourceIDPC4VEC3P15GCSSOUND_Handle	GCSSOUND_PlayInternal__F17GCSSOUND_SourceIDPC4VEC3P15GCSSOUND_Handle	function	60	2	0	2	LEVEL24.REL:0x0F11E8	
-shared	GCSSOUND_CreateHandle__FP15GCSSOUND_Handle	GCSSOUND_CreateHandle__FP15GCSSOUND_Handle	function	16	2	0	2	LEVEL24.REL:0x0F1228	
+shared	GCSSOUND_CreateHandle__FP15GCSSOUND_Handle	GCSSOUND_CreateHandle__FP15GCSSOUND_Handle	function	16	2	2	2	LEVEL24.REL:0x0F1228	src/levels/shared/GCSSOUND_CreateHandle__FP15GCSSOUND_Handle.c
 shared	GCSSOUND_DestroyHandle__FP15GCSSOUND_Handle	GCSSOUND_DestroyHandle__FP15GCSSOUND_Handle	function	16	2	0	2	LEVEL24.REL:0x0F1238	
 shared	GCSSOUND_ResetHandle__FP15GCSSOUND_Handle	GCSSOUND_ResetHandle__FP15GCSSOUND_Handle	function	28	2	2	2	LEVEL24.REL:0x0F1248	src/levels/shared/GCSSOUND_ResetHandle__FP15GCSSOUND_Handle.c
 shared	GCSSOUND_EmitterResetAll__Fv	GCSSOUND_EmitterResetAll__Fv	function	12	2	2	2	LEVEL24.REL:0x0F1268	src/levels/shared/GCSSOUND_EmitterResetAll__Fv.c
@@ -23410,7 +23410,7 @@ shared	GCSWORLD_IntersectTieWithRayCallback__FPfP4VEC3PC17GCSWORLD_ColliderPC4VE
 shared	GCSWORLD_IntersectTieWithCapsuleCallback__FPfT0P4VEC3T2PC17GCSWORLD_ColliderPC4VEC3T5ff	GCSWORLD_IntersectTieWithCapsuleCallback__FPfT0P4VEC3T2PC17GCSWORLD_ColliderPC4VEC3T5ff	function	356	2	0	2	LEVEL24.REL:0x0F54E8	
 shared	GCSWORLD_IntersectTieWithSweptSphereCallback__FPfP4VEC3T1PC17GCSWORLD_ColliderPC4VEC3T4ff	GCSWORLD_IntersectTieWithSweptSphereCallback__FPfP4VEC3T1PC17GCSWORLD_ColliderPC4VEC3T4ff	function	352	2	0	2	LEVEL24.REL:0x0F5650	
 shared	GCSWORLD_RefreshTies__Fv	GCSWORLD_RefreshTies__Fv	function	120	2	0	2	LEVEL24.REL:0x0F57B0	
-shared	GCSWORLD_CompareTieInstancesByMaterial__FPCvT0	GCSWORLD_CompareTieInstancesByMaterial__FPCvT0	function	16	2	0	2	LEVEL24.REL:0x0F5828	
+shared	GCSWORLD_CompareTieInstancesByMaterial__FPCvT0	GCSWORLD_CompareTieInstancesByMaterial__FPCvT0	function	16	2	2	2	LEVEL24.REL:0x0F5828	src/levels/shared/GCSWORLD_CompareTieInstancesByMaterial__FPCvT0.c
 shared	GCSWORLD_CreateSectors__Fv	GCSWORLD_CreateSectors__Fv	function	1876	2	0	2	LEVEL24.REL:0x0F5838	
 shared	GCSWORLD_LoadTies__Fv	GCSWORLD_LoadTies__Fv	function	1684	2	0	2	LEVEL24.REL:0x0F5F90	
 shared	GCSWORLD_ResetTies__FPC4VEC3	GCSWORLD_ResetTies__FPC4VEC3	function	184	2	0	2	LEVEL24.REL:0x0F6628	
