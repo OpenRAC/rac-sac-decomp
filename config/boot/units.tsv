@@ -2593,7 +2593,7 @@ func_0016BCE0	function	0x0016BCE0	392	0
 func_0016BE68	function	0x0016BE68	372	0	
 func_0016BFE0	function	0x0016BFE0	72	0	
 func_0016C028	function	0x0016C028	328	0	
-func_0016C170	function	0x0016C170	16	0	
+func_0016C170	function	0x0016C170	16	1	src/boot/func_0016C170.c
 func_0016C180	function	0x0016C180	44	0	
 func_0016C1B0	function	0x0016C1B0	12	1	src/boot/func_0016C1B0.c
 func_0016C1C0	function	0x0016C1C0	8	1	src/boot/func_0016C1C0.c
