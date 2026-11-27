@@ -680,7 +680,7 @@ func_0011D680	function	0x0011D680	12	1	src/boot/func_0011D680.c
 func_0011D690	function	0x0011D690	68	0	
 func_0011D6D8	function	0x0011D6D8	12	1	src/boot/func_0011D6D8.c
 func_0011D6E8	function	0x0011D6E8	288	0	
-func_0011D808	function	0x0011D808	16	0	
+func_0011D808	function	0x0011D808	16	1	src/boot/func_0011D808.c
 func_0011D818	function	0x0011D818	56	0	
 func_0011D850	function	0x0011D850	20	0	
 func_0011D868	function	0x0011D868	148	0	
@@ -1468,7 +1468,7 @@ func_0013D360	function	0x0013D360	252	0
 func_0013D460	function	0x0013D460	260	0	
 func_0013D568	function	0x0013D568	744	0	
 func_0013D850	function	0x0013D850	552	0	
-func_0013DA78	function	0x0013DA78	16	0	
+func_0013DA78	function	0x0013DA78	16	1	src/boot/func_0013DA78.c
 func_0013DA88	function	0x0013DA88	128	0	
 func_0013DB08	function	0x0013DB08	104	0	
 func_0013DB70	function	0x0013DB70	40	0	
@@ -1799,7 +1799,7 @@ func_00149450	function	0x00149450	32	0
 func_00149470	function	0x00149470	40	0	
 func_00149498	function	0x00149498	44	0	
 func_001494C8	function	0x001494C8	32	0	
-func_001494E8	function	0x001494E8	16	0	
+func_001494E8	function	0x001494E8	16	1	src/boot/func_001494E8.c
 func_001494F8	function	0x001494F8	44	0	
 func_00149528	function	0x00149528	96	0	
 func_00149588	function	0x00149588	8	1	src/boot/func_00149588.c
@@ -2200,7 +2200,7 @@ func_0015C148	function	0x0015C148	8	1	src/boot/func_0015C148.c
 func_0015C150	function	0x0015C150	8	1	src/boot/func_0015C150.c
 func_0015C158	function	0x0015C158	8	1	src/boot/func_0015C158.c
 func_0015C160	function	0x0015C160	28	0	
-func_0015C180	function	0x0015C180	16	0	
+func_0015C180	function	0x0015C180	16	1	src/boot/func_0015C180.c
 func_0015C190	function	0x0015C190	32	0	
 func_0015C1B0	function	0x0015C1B0	40	0	
 func_0015C1D8	function	0x0015C1D8	8	1	src/boot/func_0015C1D8.c
@@ -2215,7 +2215,7 @@ func_0015C608	function	0x0015C608	8	1	src/boot/func_0015C608.c
 func_0015C610	function	0x0015C610	60	0	
 func_0015C650	function	0x0015C650	60	0	
 func_0015C690	function	0x0015C690	8	1	src/boot/func_0015C690.c
-func_0015C698	function	0x0015C698	16	0	
+func_0015C698	function	0x0015C698	16	1	src/boot/func_0015C698.c
 func_0015C6A8	function	0x0015C6A8	8	1	src/boot/func_0015C6A8.c
 func_0015C6B0	function	0x0015C6B0	8	1	src/boot/func_0015C6B0.c
 func_0015C6B8	function	0x0015C6B8	40	0	
@@ -2501,7 +2501,7 @@ func_00168CF8	function	0x00168CF8	48	0
 func_00168D28	function	0x00168D28	48	0	
 func_00168D58	function	0x00168D58	36	0	
 func_00168D80	function	0x00168D80	8	1	src/boot/func_00168D80.c
-func_00168D88	function	0x00168D88	16	0	
+func_00168D88	function	0x00168D88	16	1	src/boot/func_00168D88.c
 func_00168D98	function	0x00168D98	8	1	src/boot/func_00168D98.c
 func_00168DA0	function	0x00168DA0	140	0	
 func_00168E30	function	0x00168E30	40	0	
@@ -2548,7 +2548,7 @@ func_00169B40	function	0x00169B40	136	0
 func_00169BC8	function	0x00169BC8	28	0	
 func_00169BE8	function	0x00169BE8	72	0	
 func_00169C30	function	0x00169C30	128	0	
-func_00169CB0	function	0x00169CB0	16	0	
+func_00169CB0	function	0x00169CB0	16	1	src/boot/func_00169CB0.c
 func_00169CC0	function	0x00169CC0	8	1	src/boot/func_00169CC0.c
 func_00169CC8	function	0x00169CC8	56	0	
 func_00169D00	function	0x00169D00	28	0	
@@ -2636,7 +2636,7 @@ func_0016D0C8	function	0x0016D0C8	472	0
 func_0016D2A0	function	0x0016D2A0	468	0	
 func_0016D478	function	0x0016D478	180	0	
 func_0016D530	function	0x0016D530	12	1	src/boot/func_0016D530.c
-func_0016D540	function	0x0016D540	16	0	
+func_0016D540	function	0x0016D540	16	1	src/boot/func_0016D540.c
 func_0016D550	function	0x0016D550	88	0	
 func_0016D5A8	function	0x0016D5A8	324	0	
 func_0016D6F0	function	0x0016D6F0	72	0	
@@ -2867,8 +2867,8 @@ func_00175EA8	function	0x00175EA8	288	0
 func_00175FC8	function	0x00175FC8	372	0	
 func_00176140	function	0x00176140	92	0	
 func_001761A0	function	0x001761A0	12	1	src/boot/func_001761A0.c
-func_001761B0	function	0x001761B0	16	0	
-func_001761C0	function	0x001761C0	16	0	
+func_001761B0	function	0x001761B0	16	1	src/boot/func_001761B0.c
+func_001761C0	function	0x001761C0	16	1	src/boot/func_001761C0.c
 func_001761D0	function	0x001761D0	32	0	
 func_001761F0	function	0x001761F0	160	0	
 func_00176290	function	0x00176290	136	0	
@@ -2941,7 +2941,7 @@ func_001782E8	function	0x001782E8	80	0
 func_00178338	function	0x00178338	384	0	
 func_001784B8	function	0x001784B8	92	0	
 func_00178518	function	0x00178518	16	0	
-func_00178528	function	0x00178528	16	0	
+func_00178528	function	0x00178528	16	1	src/boot/func_00178528.c
 func_00178538	function	0x00178538	88	0	
 func_00178590	function	0x00178590	20	0	
 func_001785A8	function	0x001785A8	116	0	
@@ -3245,7 +3245,7 @@ func_00187B5C	function	0x00187B5C	80	0
 __malloc_lock	function	0x00187BB0	96	1	src/boot/func_00187BB0.c
 __malloc_unlock	function	0x00187C10	64	1	src/boot/func_00187C10.c
 func_00187C50	function	0x00187C50	2524	0	
-func_00188630	function	0x00188630	16	0	
+func_00188630	function	0x00188630	16	1	src/boot/func_00188630.c
 rand	function	0x00188640	48	1	src/boot/func_00188640.c
 func_00188670	function	0x00188670	96	0	
 func_001886D0	function	0x001886D0	112	0	

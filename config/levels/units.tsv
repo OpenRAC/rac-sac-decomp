@@ -16926,7 +16926,7 @@ shared	AcidFountain_GetFormInfo__FP4Moby	AcidFountain_GetFormInfo__FP4Moby	funct
 07_countess	Countess_RestartAnimTranslator__FP4Moby	Countess_RestartAnimTranslator__FP4Moby	function	56	1	0	1	LEVEL7.REL:0x0C8BB0	
 07_countess	Countess_SetInFrontOfClank__Fv_L07	Countess_SetInFrontOfClank__Fv	function	148	1	0	1	LEVEL7.REL:0x0C8BE8	
 07_countess	Countess_TurnOnSaliva__Fv_L07	Countess_TurnOnSaliva__Fv	function	88	1	0	1	LEVEL7.REL:0x0C8C80	
-07_countess	Countess_EnableAnimSounds__Fb_L07	Countess_EnableAnimSounds__Fb	function	16	1	0	1	LEVEL7.REL:0x0C8CD8	
+07_countess	Countess_EnableAnimSounds__Fb_L07	Countess_EnableAnimSounds__Fb	function	16	1	1	1	LEVEL7.REL:0x0C8CD8	src/levels/07_countess/Countess_EnableAnimSounds__Fb_L07.c
 07_countess	Countess_SetTextureSet__Fi_L07	Countess_SetTextureSet__Fi	function	24	1	0	1	LEVEL7.REL:0x0C8CE8	
 07_countess	Countess_GetEffectMan__FP4Moby	Countess_GetEffectMan__FP4Moby	function	8	1	1	1	LEVEL7.REL:0x0C8D00	src/levels/07_countess/Countess_GetEffectMan__FP4Moby.c
 07_countess	Countess_PostAnimCallback__FP4Moby	Countess_PostAnimCallback__FP4Moby	function	484	1	0	1	LEVEL7.REL:0x0C8D08	
@@ -17801,7 +17801,7 @@ shared	BoltCrankCam_Update__FP4Mobyf	BoltCrankCam_Update__FP4Mobyf	function	648	
 09_cafeteria	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Player__All_Player_cppXdbaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Player__All_Player.cppXdbaaa	function	32	1	1	1	LEVEL9.REL:0x1AD698	src/levels/09_cafeteria/_GLOBAL_$I$c__dev_projects_SAC_Src_Core_Player__All_Player_cppXdbaaa.c
 09_cafeteria	_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared_cppY1aaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared.cppY1aaaa	function	32	1	1	1	LEVEL9.REL:0x1E2F80	src/levels/09_cafeteria/_GLOBAL_$I$c__dev_projects_SAC_Src_Shared__All_Shared_cppY1aaaa.c
 09_cafeteria	_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems_cppXHaaaa	_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems.cppXHaaaa	function	32	1	1	1	LEVEL9.REL:0x1E77B8	src/levels/09_cafeteria/_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems_cppXHaaaa.c
-09_cafeteria	GetFXFrameIndex__C14DrawObjManager_L09	GetFXFrameIndex__C14DrawObjManager	function	16	1	0	1	LEVEL9.REL:0x25E3A8	
+09_cafeteria	GetFXFrameIndex__C14DrawObjManager_L09	GetFXFrameIndex__C14DrawObjManager	function	16	1	1	1	LEVEL9.REL:0x25E3A8	src/levels/09_cafeteria/GetFXFrameIndex__C14DrawObjManager_L09.c
 09_cafeteria	GetArenaStateMachine__17ArenaEnemyContent	GetArenaStateMachine__17ArenaEnemyContent	function	8	1	1	1	LEVEL9.REL:0x25FFB8	src/levels/09_cafeteria/GetArenaStateMachine__17ArenaEnemyContent.c
 09_cafeteria	KickoffMoby__17Arena2CartContentP4MobyN21Pv	KickoffMoby__17Arena2CartContentP4MobyN21Pv	function	40	1	0	1	LEVEL9.REL:0x260138	
 09_cafeteria	__15ArenaCartSiphon	__15ArenaCartSiphon	function	32	1	0	1	LEVEL9.REL:0x260160	
@@ -24955,8 +24955,8 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	KlunkGadgetbotAttack_Run__FP4Moby	KlunkGadgetbotAttack_Run__FP4Moby	function	620	1	0	1	LEVEL30.REL:0x0E5390	
 30_boss	KlunkGadgetbotAttack_Attack__FP4Moby	KlunkGadgetbotAttack_Attack__FP4Moby	function	200	1	0	1	LEVEL30.REL:0x0E5600	
 30_boss	KlunkKingpin_Init__FP4Moby	KlunkKingpin_Init__FP4Moby	function	1036	1	0	1	LEVEL30.REL:0x0E56C8	
-30_boss	KlunkKingpin_SetSuitActive__FP4Mobyb_L30	KlunkKingpin_SetSuitActive__FP4Mobyb	function	16	1	0	1	LEVEL30.REL:0x0E5AD8	
-30_boss	KlunkKingpin_SetSuitActivating__FP4Mobyb_L30	KlunkKingpin_SetSuitActivating__FP4Mobyb	function	16	1	0	1	LEVEL30.REL:0x0E5AE8	
+30_boss	KlunkKingpin_SetSuitActive__FP4Mobyb_L30	KlunkKingpin_SetSuitActive__FP4Mobyb	function	16	1	1	1	LEVEL30.REL:0x0E5AD8	src/levels/30_boss/KlunkKingpin_SetSuitActive__FP4Mobyb_L30.c
+30_boss	KlunkKingpin_SetSuitActivating__FP4Mobyb_L30	KlunkKingpin_SetSuitActivating__FP4Mobyb	function	16	1	1	1	LEVEL30.REL:0x0E5AE8	src/levels/30_boss/KlunkKingpin_SetSuitActivating__FP4Mobyb_L30.c
 30_boss	KlunkKingpin_Term__FP4Moby	KlunkKingpin_Term__FP4Moby	function	180	1	0	1	LEVEL30.REL:0x0E5AF8	
 30_boss	KlunkKingpin_CircleStrafe__FP4MobyP4VEC3	KlunkKingpin_CircleStrafe__FP4MobyP4VEC3	function	820	1	0	1	LEVEL30.REL:0x0E5BB0	
 30_boss	KlunkKingpin_Update__FP4Mobyf	KlunkKingpin_Update__FP4Mobyf	function	848	1	0	1	LEVEL30.REL:0x0E5EE8	
@@ -24995,7 +24995,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	GetDesiredState__8SuitWait	GetDesiredState__8SuitWait	function	68	1	0	1	LEVEL30.REL:0x0E8018	
 30_boss	KlunkKingpin_GetEffectMan__FP4Moby	KlunkKingpin_GetEffectMan__FP4Moby	function	12	1	1	1	LEVEL30.REL:0x0E8060	src/levels/30_boss/KlunkKingpin_GetEffectMan__FP4Moby.c
 30_boss	Nefarious_SetSuitActive__FP4Mobyb_L30	Nefarious_SetSuitActive__FP4Mobyb	function	20	1	0	1	LEVEL30.REL:0x0EDEA8	
-30_boss	Nefarious_SetSuitActivating__FP4Mobyb_L30	Nefarious_SetSuitActivating__FP4Mobyb	function	16	1	0	1	LEVEL30.REL:0x0EDEC0	
+30_boss	Nefarious_SetSuitActivating__FP4Mobyb_L30	Nefarious_SetSuitActivating__FP4Mobyb	function	16	1	1	1	LEVEL30.REL:0x0EDEC0	src/levels/30_boss/Nefarious_SetSuitActivating__FP4Mobyb_L30.c
 30_boss	Nefarious_Init__FP4Moby	Nefarious_Init__FP4Moby	function	1020	1	0	1	LEVEL30.REL:0x0EDED0	
 30_boss	Nefarious_Term__FP4Moby	Nefarious_Term__FP4Moby	function	180	1	0	1	LEVEL30.REL:0x0EE2D0	
 30_boss	Nefarious_Update__FP4Mobyf	Nefarious_Update__FP4Mobyf	function	640	1	0	1	LEVEL30.REL:0x0EE388	
@@ -25003,7 +25003,7 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	Nefarious_IsPosInsideTriangle__FP4MobyPC4VEC3T0N20	Nefarious_IsPosInsideTriangle__FP4MobyPC4VEC3T0N20	function	460	1	0	1	LEVEL30.REL:0x0EEBD8	
 30_boss	Nefarious_CheckSameSide__FPC4VEC2N30	Nefarious_CheckSameSide__FPC4VEC2N30	function	528	1	0	1	LEVEL30.REL:0x0EEDA8	
 30_boss	Nefarious_NotifyRepairComplete__FP4Moby_L30	Nefarious_NotifyRepairComplete__FP4Moby	function	56	1	0	1	LEVEL30.REL:0x0EEFB8	
-30_boss	Nefarious_IsOutOfChamber__FP4Moby_L30	Nefarious_IsOutOfChamber__FP4Moby	function	16	1	0	1	LEVEL30.REL:0x0EEFF0	
+30_boss	Nefarious_IsOutOfChamber__FP4Moby_L30	Nefarious_IsOutOfChamber__FP4Moby	function	16	1	1	1	LEVEL30.REL:0x0EEFF0	src/levels/30_boss/Nefarious_IsOutOfChamber__FP4Moby_L30.c
 30_boss	Nefarious_GetTorsoDir__FP4MobyP4VEC2_L30	Nefarious_GetTorsoDir__FP4MobyP4VEC2	function	20	1	0	1	LEVEL30.REL:0x0EF000	
 30_boss	Nefarious_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	Nefarious_Damage__FP4Mobyf14MobyDamageType18MobyDamageStrengthPC4VEC4T4T0	function	352	1	0	1	LEVEL30.REL:0x0EF018	
 30_boss	Nefarious_ClearBullets__Fv_L30	Nefarious_ClearBullets__Fv	function	32	1	1	1	LEVEL30.REL:0x0EF178	src/levels/30_boss/Nefarious_ClearBullets__Fv_L30.c
@@ -25048,8 +25048,8 @@ shared	WaterSpout_EmitQuad__FP24WaterSpoutCirclesEmitterPC20WaterSpoutQuadConfig
 30_boss	NefariousBomb_Charging__FP4Moby	NefariousBomb_Charging__FP4Moby	function	64	1	0	1	LEVEL30.REL:0x0F1F10	
 30_boss	NefariousBomb_Detonating__FP4Moby	NefariousBomb_Detonating__FP4Moby	function	8	1	1	1	LEVEL30.REL:0x0F1F50	src/levels/30_boss/NefariousBomb_Detonating__FP4Moby.c
 30_boss	NefariousBomb_InitType__FP8MobyType	NefariousBomb_InitType__FP8MobyType	function	12	1	1	1	LEVEL30.REL:0x0F1F58	src/levels/30_boss/NefariousBomb_InitType__FP8MobyType.c
-30_boss	RoboRatchet_SetSuitActive__FP4Mobyb_L30	RoboRatchet_SetSuitActive__FP4Mobyb	function	16	1	0	1	LEVEL30.REL:0x0F5220	
-30_boss	RoboRatchet_SetSuitActivating__FP4Mobyb_L30	RoboRatchet_SetSuitActivating__FP4Mobyb	function	16	1	0	1	LEVEL30.REL:0x0F5230	
+30_boss	RoboRatchet_SetSuitActive__FP4Mobyb_L30	RoboRatchet_SetSuitActive__FP4Mobyb	function	16	1	1	1	LEVEL30.REL:0x0F5220	src/levels/30_boss/RoboRatchet_SetSuitActive__FP4Mobyb_L30.c
+30_boss	RoboRatchet_SetSuitActivating__FP4Mobyb_L30	RoboRatchet_SetSuitActivating__FP4Mobyb	function	16	1	1	1	LEVEL30.REL:0x0F5230	src/levels/30_boss/RoboRatchet_SetSuitActivating__FP4Mobyb_L30.c
 30_boss	RoboRatchet_Init__FP4Moby	RoboRatchet_Init__FP4Moby	function	1072	1	0	1	LEVEL30.REL:0x0F5240	
 30_boss	RoboRatchet_Term__FP4Moby	RoboRatchet_Term__FP4Moby	function	204	1	0	1	LEVEL30.REL:0x0F5670	
 30_boss	RoboRatchet_NotifyRepairComplete__FP4Moby_L30	RoboRatchet_NotifyRepairComplete__FP4Moby	function	40	1	0	1	LEVEL30.REL:0x0F5740	
