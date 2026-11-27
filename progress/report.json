@@ -1,6 +1,6 @@
 {
  "version": 2,
- "measures": {"fuzzy_match_percent":3.013369427655742,"total_code":"8002736","matched_code":"241152","matched_code_percent":3.013369427655742,"total_functions":29196,"matched_functions":7957,"matched_functions_percent":27.253733388135363,"complete_code":"0","complete_code_percent":0.0,"total_units":29216,"complete_units":0},
+ "measures": {"fuzzy_match_percent":3.0135693592791264,"total_code":"8002736","matched_code":"241168","matched_code_percent":3.0135693592791264,"total_functions":29196,"matched_functions":7958,"matched_functions_percent":27.25715851486505,"complete_code":"0","complete_code_percent":0.0,"total_units":29216,"complete_units":0},
  "units": [
   {"name":"boot/func_00100008","measures":{"total_code":"8","total_functions":1},"metadata":{"progress_categories":["boot"]}},
   {"name":"boot/func_00100010","measures":{"total_code":"568","total_functions":1},"metadata":{"progress_categories":["boot"]}},
@@ -2942,7 +2942,7 @@
   {"name":"boot/func_001782E8","measures":{"total_code":"80","total_functions":1},"metadata":{"progress_categories":["boot"]}},
   {"name":"boot/func_00178338","measures":{"total_code":"384","total_functions":1},"metadata":{"progress_categories":["boot"]}},
   {"name":"boot/func_001784B8","measures":{"total_code":"92","total_functions":1},"metadata":{"progress_categories":["boot"]}},
-  {"name":"boot/func_00178518","measures":{"total_code":"16","total_functions":1},"metadata":{"progress_categories":["boot"]}},
+  {"name":"boot/func_00178518","measures":{"total_code":"16","fuzzy_match_percent":100.0,"matched_code":"16","matched_code_percent":100.0,"total_functions":1,"matched_functions":1,"matched_functions_percent":100.0},"functions":[{"name":"func_00178518","size":"16","fuzzy_match_percent":100.0}],"metadata":{"progress_categories":["boot"],"source_path":"src/boot/func_00178518.c"}},
   {"name":"boot/func_00178528","measures":{"total_code":"16","fuzzy_match_percent":100.0,"matched_code":"16","matched_code_percent":100.0,"total_functions":1,"matched_functions":1,"matched_functions_percent":100.0},"functions":[{"name":"func_00178528","size":"16","fuzzy_match_percent":100.0}],"metadata":{"progress_categories":["boot"],"source_path":"src/boot/func_00178528.c"}},
   {"name":"boot/func_00178538","measures":{"total_code":"88","total_functions":1},"metadata":{"progress_categories":["boot"]}},
   {"name":"boot/func_00178590","measures":{"total_code":"20","total_functions":1},"metadata":{"progress_categories":["boot"]}},
@@ -29220,7 +29220,7 @@
   {"name":"levels/32_credits/_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems_cpp9bbaaa","measures":{"total_code":"32","fuzzy_match_percent":100.0,"matched_code":"32","matched_code_percent":100.0,"total_functions":1,"matched_functions":1,"matched_functions_percent":100.0},"functions":[{"name":"_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems.cpp9bbaaa","size":"32","fuzzy_match_percent":100.0}],"metadata":{"progress_categories":["32_credits"],"source_path":"src/levels/32_credits/_GLOBAL_$I$c__dev_projects_SAC_Src_Systems__All_Systems_cpp9bbaaa.c"}}
  ],
  "categories": [
-  {"id":"boot","name":"Boot executable (SCUS_976.23)","measures":{"fuzzy_match_percent":5.535990459686586,"total_code":"644004","matched_code":"35652","matched_code_percent":5.535990459686586,"total_functions":3819,"matched_functions":570,"matched_functions_percent":14.925373134328359,"complete_code":"0","complete_code_percent":0.0,"total_units":3833,"complete_units":0}},
+  {"id":"boot","name":"Boot executable (SCUS_976.23)","measures":{"fuzzy_match_percent":5.538474916304867,"total_code":"644004","matched_code":"35668","matched_code_percent":5.538474916304867,"total_functions":3819,"matched_functions":571,"matched_functions_percent":14.951557999476302,"complete_code":"0","complete_code_percent":0.0,"total_units":3833,"complete_units":0}},
   {"id":"levels","name":"Level modules (each function counted once)","measures":{"fuzzy_match_percent":2.792600681747888,"total_code":"7358732","matched_code":"205500","matched_code_percent":2.792600681747888,"total_functions":25377,"matched_functions":7387,"matched_functions_percent":29.109035741025338,"complete_code":"0","complete_code_percent":0.0,"total_units":25383,"complete_units":0}},
   {"id":"fe_frontend","name":"Frontend (FE.REL): functions of this module only","measures":{"fuzzy_match_percent":2.1132540008206813,"total_code":"38992","matched_code":"824","matched_code_percent":2.1132540008206813,"total_functions":225,"matched_functions":51,"matched_functions_percent":22.666666666666668,"complete_code":"0","complete_code_percent":0.0,"total_units":225,"complete_units":0}},
   {"id":"level1_museum","name":"Level 1: Boltaire Museum (LEVEL1.REL): functions of this module only","measures":{"fuzzy_match_percent":1.129862700228833,"total_code":"83904","matched_code":"948","matched_code_percent":1.129862700228833,"total_functions":199,"matched_functions":65,"matched_functions_percent":32.663316582914575,"complete_code":"0","complete_code_percent":0.0,"total_units":199,"complete_units":0}},
