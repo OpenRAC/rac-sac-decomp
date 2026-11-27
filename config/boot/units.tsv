@@ -736,7 +736,7 @@ func_00122018	function	0x00122018	8	1	src/boot/func_00122018.c
 func_00122020	function	0x00122020	8	1	src/boot/func_00122020.c
 func_00122028	function	0x00122028	8	1	src/boot/func_00122028.c
 func_00122030	function	0x00122030	8	1	src/boot/func_00122030.c
-func_00122038	function	0x00122038	8	0	
+func_00122038	function	0x00122038	8	1	src/boot/func_00122038.c
 func_00122040	function	0x00122040	464	0	
 func_00122210	function	0x00122210	496	0	
 func_00122400	function	0x00122400	844	0	
@@ -2044,7 +2044,7 @@ func_00152570	function	0x00152570	40	0
 func_00152598	function	0x00152598	160	0	
 func_00152638	function	0x00152638	28	0	
 func_00152658	function	0x00152658	8	1	src/boot/func_00152658.c
-func_00152660	function	0x00152660	8	0	
+func_00152660	function	0x00152660	8	1	src/boot/func_00152660.c
 func_00152668	function	0x00152668	132	0	
 func_001526F0	function	0x001526F0	72	0	
 func_00152738	function	0x00152738	60	0	
@@ -2884,7 +2884,7 @@ func_00176448	function	0x00176448	140	0
 func_001764D8	function	0x001764D8	104	0	
 func_00176540	function	0x00176540	108	0	
 sceGsResetGraph	function	0x001765B0	400	1	src/boot/func_001765B0.c
-func_00176740	function	0x00176740	12	0	
+func_00176740	function	0x00176740	12	1	src/boot/func_00176740.c
 func_00176750	function	0x00176750	664	0	
 func_001769E8	function	0x001769E8	92	0	
 func_00176A48	function	0x00176A48	148	0	
@@ -3140,7 +3140,7 @@ func_00184410	function	0x00184410	152	0
 sceCdMmode	function	0x001844A8	208	1	src/boot/func_001844A8.c
 func_00184578	function	0x00184578	36	0	
 func_001845A0	function	0x001845A0	188	0	
-func_00184660	function	0x00184660	12	0	
+func_00184660	function	0x00184660	12	1	src/boot/func_00184660.c
 func_00184670	function	0x00184670	148	0	
 func_00184704	function	0x00184704	172	0	
 func_001847B0	function	0x001847B0	252	0	
@@ -3342,7 +3342,7 @@ func_0018DB48	function	0x0018DB48	556	0
 func_0018DD78	function	0x0018DD78	52	0	
 _tolower	function	0x0018DDB0	32	1	src/boot/func_0018DDB0.c
 func_0018DDD0	function	0x0018DDD0	464	0	
-func_0018DFA0	function	0x0018DFA0	12	0	
+func_0018DFA0	function	0x0018DFA0	12	1	src/boot/func_0018DFA0.c
 func_0018DFB0	function	0x0018DFB0	44	0	
 func_0018DFE0	function	0x0018DFE0	36	0	
 func_0018E008	function	0x0018E008	236	0	
@@ -3517,7 +3517,7 @@ func_001911A0	function	0x001911A0	16	0
 func_001911B0	function	0x001911B0	16	0	
 func_001911C0	function	0x001911C0	16	0	
 func_001911D0	function	0x001911D0	16	0	
-func_001911E0	function	0x001911E0	12	0	
+func_001911E0	function	0x001911E0	12	1	src/boot/func_001911E0.c
 func_001911F0	function	0x001911F0	144	1	src/boot/func_001911F0.c
 func_00191280	function	0x00191280	164	0	
 func_00191328	function	0x00191328	124	0	
@@ -3594,7 +3594,7 @@ scePrintf	function	0x00193810	128	1	src/boot/func_00193810.c
 func_00193890	function	0x00193890	172	0	
 sceSifGetSreg	function	0x00193940	24	1	src/boot/func_00193940.c
 func_00193958	function	0x00193958	28	0	
-func_00193978	function	0x00193978	12	0	
+func_00193978	function	0x00193978	12	1	src/boot/func_00193978.c
 func_00193988	function	0x00193988	200	0	
 sceSifSetDma	function	0x00193A50	136	1	src/boot/func_00193A50.c
 isceSifSetDma	function	0x00193AD8	56	1	src/boot/func_00193AD8.c
