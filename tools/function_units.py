@@ -186,7 +186,7 @@ def records(path: Path) -> list[dict[str, str]]:
 
 
 def digest(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else ""
+    return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest() if path.is_file() else ""
 
 
 FILE_STEM_LIMIT = 120
