@@ -4,8 +4,24 @@
 > milestone. Everything else in the private workspace is disposable; this file
 > is not.
 
-Last update: **2026-11-14** (one source per function, linked at every
-placement; every function counted once in the progress report).
+Last update: **2026-11-27** (S055–S062 local integration and targeted gates).
+
+The S055–S062 wave now has 112 C sources at 2,030 level placements: 88 sources
+had already been staged, and 24 were integrated after this wave was resumed.
+Each final source was independently recompiled at every placement, with
+1,290/1,290 placements for S057–S062 and 740/740 for S055–S056. The targeted
+placement gate accepts all 2,030 bounds and detects no overlap. The targeted
+module gate reassembles the 31 affected modules, replaces those placements,
+recovers the retail bytes in every module, and reproduces the pinned USA disc
+SHA-256. This is a scoped gate for this wave; it does not recheck every older
+C source or claim that all candidate bodies have been translated.
+
+Eight candidates are retained in `nonmatching/levels/`: seven reported as
+parked and one 24-byte interval whose proposed source defines an adjacent
+function. The latter needs a boundary review and earns no C credit. The
+current generated unit tables report 7,626/25,377 level functions and
+586/3,819 boot functions with accepted C. The private reports for each lot
+retain the first differences and reopening conditions.
 
 ## 1. Where things are
 
@@ -461,8 +477,8 @@ first, and this is what that means.
 
 ## 4. What is next
 
-1. **Close the coverage.**  The unit tables say what is left: 24 967 level
-   functions and 3 554 boot functions have no accepted C yet
+1. **Close the coverage.**  The current unit tables leave 17,751 level
+   functions and 3,233 boot functions without accepted C
    (`tools/function_units.py`).  One source serves every placement of its
    function, so a new match covers all of its copies at once.  The
    complete-program gate passes when that number is zero.
