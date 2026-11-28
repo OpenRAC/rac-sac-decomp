@@ -1,0 +1,22 @@
+/* GiantQwarkBlaster_RequestMegaBlasterStop__FP4Moby -- 16 bytes.
+ *
+ * One source for every placement of this function in the level modules;
+ * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Stores one constant through a pointer.
+ */
+
+typedef struct Node {
+    char pad[0x85];
+    unsigned char value;
+} Node;
+
+typedef struct State {
+    char pad[0x58];
+    Node *field;
+} State;
+
+void GiantQwarkBlaster_RequestMegaBlasterStop__FP4Moby(State *self)
+{
+    self->field->value = 1;
+}

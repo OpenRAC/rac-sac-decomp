@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import struct
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -36,6 +37,14 @@ def piece(module: str, start: int, size: int, name: str = "", masked: str = "m",
 
 
 class LevelNamesTest(unittest.TestCase):
+    def test_table_digest_is_independent_of_checkout_line_endings(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "table.tsv"
+            path.write_bytes(b"module\toffset\nFE.REL\t0x100\n")
+            expected = fu.digest(path)
+            path.write_bytes(b"module\toffset\r\nFE.REL\t0x100\r\n")
+            self.assertEqual(fu.digest(path), expected)
+
     def test_directories_and_tags(self) -> None:
         self.assertEqual(module_dir("FE.REL"), "frontend")
         self.assertEqual(module_dir("LEVEL1.REL"), "01_museum")

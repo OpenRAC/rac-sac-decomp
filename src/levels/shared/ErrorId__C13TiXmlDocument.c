@@ -1,0 +1,17 @@
+/* ErrorId__C13TiXmlDocument -- 16 bytes.
+ *
+ * One source for every placement of this function in the level modules;
+ * the placements are listed in config/levels/bodies.tsv.
+ *
+ * Returns selected bits of the word at offset 0x24.
+ */
+
+typedef struct State {
+    char pad[0x24];
+    unsigned field;
+} State;
+
+int ErrorId__C13TiXmlDocument(State *self)
+{
+    return (self->field >> 2) & 255;
+}
