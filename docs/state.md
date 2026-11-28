@@ -19,9 +19,14 @@ C source or claim that all candidate bodies have been translated.
 Eight candidates are retained in `nonmatching/levels/`: seven reported as
 parked and one 24-byte interval whose proposed source defines an adjacent
 function. The latter needs a boundary review and earns no C credit. The
-current generated unit tables report 7,626/25,377 level functions and
+current generated unit tables report 7,628/25,377 level functions and
 586/3,819 boot functions with accepted C. The private reports for each lot
 retain the first differences and reopening conditions.
+
+The two shared functions from the rac5 twin review, `PAUSEMODE_GetScaleFX__Fv`
+and `GetAABBFromPyramid__FP4VEC3T0PC4VEC3N42`, are linked at all 31 level
+placements each. Their sources were recompiled on this branch after bringing
+in `main`; the 31 affected modules and the pinned USA disc hash are unchanged.
 
 ## 1. Where things are
 
@@ -477,7 +482,7 @@ first, and this is what that means.
 
 ## 4. What is next
 
-1. **Close the coverage.**  The current unit tables leave 17,751 level
+1. **Close the coverage.**  The current unit tables leave 17,749 level
    functions and 3,233 boot functions without accepted C
    (`tools/function_units.py`).  One source serves every placement of its
    function, so a new match covers all of its copies at once.  The
