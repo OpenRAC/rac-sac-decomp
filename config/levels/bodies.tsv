@@ -692,6 +692,7 @@ FE.REL	0x06A4F8	352	src/levels/shared/fpdiv.c
 FE.REL	0x06A770	76	src/levels/shared/fpcmp.c
 FE.REL	0x06A908	152	src/levels/shared/fptoui.c
 FE.REL	0x06A9D8	44	src/levels/shared/__make_fp.c
+FE.REL	0x06AA48	96	src/levels/shared/__muldi3.c
 FE.REL	0x06AC58	28	src/levels/shared/Render__3Agl.c
 FE.REL	0x06AD38	28	src/levels/shared/WaitVSync__3Agl.c
 FE.REL	0x06AFB8	64	src/levels/shared/Serialize__14AglTextureBaseRQ33IFF7Texture6Header.c
@@ -4267,6 +4268,7 @@ LEVEL1.REL	0x1C0E38	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL1.REL	0x1C0E40	816	src/levels/shared/func_FE_0D6650.c
 LEVEL1.REL	0x1C1170	476	src/levels/shared/__throw.c
 LEVEL1.REL	0x1C1350	484	src/levels/shared/__rethrow.c
+LEVEL1.REL	0x1C1538	96	src/levels/shared/__muldi3.c
 LEVEL1.REL	0x1C1598	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL1.REL	0x1C15E0	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL1.REL	0x1C1630	252	src/levels/shared/func_FE_0D6DE0.c
@@ -7967,6 +7969,7 @@ LEVEL2.REL	0x1696D0	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL2.REL	0x1696D8	816	src/levels/shared/func_FE_0D6650.c
 LEVEL2.REL	0x169A08	476	src/levels/shared/__throw.c
 LEVEL2.REL	0x169BE8	484	src/levels/shared/__rethrow.c
+LEVEL2.REL	0x169DD0	96	src/levels/shared/__muldi3.c
 LEVEL2.REL	0x169E30	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL2.REL	0x169E78	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL2.REL	0x169EC8	252	src/levels/shared/func_FE_0D6DE0.c
@@ -11575,6 +11578,7 @@ LEVEL3.REL	0x1EBAB8	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL3.REL	0x1EBAC0	816	src/levels/shared/func_FE_0D6650.c
 LEVEL3.REL	0x1EBDF0	476	src/levels/shared/__throw.c
 LEVEL3.REL	0x1EBFD0	484	src/levels/shared/__rethrow.c
+LEVEL3.REL	0x1EC1B8	96	src/levels/shared/__muldi3.c
 LEVEL3.REL	0x1EC218	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL3.REL	0x1EC260	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL3.REL	0x1EC2B0	252	src/levels/shared/func_FE_0D6DE0.c
@@ -15225,6 +15229,7 @@ LEVEL4.REL	0x1DE6D0	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL4.REL	0x1DE6D8	816	src/levels/shared/func_FE_0D6650.c
 LEVEL4.REL	0x1DEA08	476	src/levels/shared/__throw.c
 LEVEL4.REL	0x1DEBE8	484	src/levels/shared/__rethrow.c
+LEVEL4.REL	0x1DEDD0	96	src/levels/shared/__muldi3.c
 LEVEL4.REL	0x1DEE30	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL4.REL	0x1DEE78	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL4.REL	0x1DEEC8	252	src/levels/shared/func_FE_0D6DE0.c
@@ -18911,6 +18916,7 @@ LEVEL5.REL	0x15A4C8	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL5.REL	0x15A4D0	816	src/levels/shared/func_FE_0D6650.c
 LEVEL5.REL	0x15A800	476	src/levels/shared/__throw.c
 LEVEL5.REL	0x15A9E0	484	src/levels/shared/__rethrow.c
+LEVEL5.REL	0x15ABC8	96	src/levels/shared/__muldi3.c
 LEVEL5.REL	0x15AC28	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL5.REL	0x15AC70	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL5.REL	0x15ACC0	252	src/levels/shared/func_FE_0D6DE0.c
@@ -22542,6 +22548,7 @@ LEVEL7.REL	0x1B13B8	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL7.REL	0x1B13C0	816	src/levels/shared/func_FE_0D6650.c
 LEVEL7.REL	0x1B16F0	476	src/levels/shared/__throw.c
 LEVEL7.REL	0x1B18D0	484	src/levels/shared/__rethrow.c
+LEVEL7.REL	0x1B1AB8	96	src/levels/shared/__muldi3.c
 LEVEL7.REL	0x1B1B18	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL7.REL	0x1B1B60	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL7.REL	0x1B1BB0	252	src/levels/shared/func_FE_0D6DE0.c
@@ -26138,6 +26145,7 @@ LEVEL8.REL	0x14A138	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL8.REL	0x14A140	816	src/levels/shared/func_FE_0D6650.c
 LEVEL8.REL	0x14A470	476	src/levels/shared/__throw.c
 LEVEL8.REL	0x14A650	484	src/levels/shared/__rethrow.c
+LEVEL8.REL	0x14A838	96	src/levels/shared/__muldi3.c
 LEVEL8.REL	0x14A898	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL8.REL	0x14A8E0	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL8.REL	0x14A930	252	src/levels/shared/func_FE_0D6DE0.c
@@ -29688,6 +29696,7 @@ LEVEL9.REL	0x1E9B30	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL9.REL	0x1E9B38	816	src/levels/shared/func_FE_0D6650.c
 LEVEL9.REL	0x1E9E68	476	src/levels/shared/__throw.c
 LEVEL9.REL	0x1EA048	484	src/levels/shared/__rethrow.c
+LEVEL9.REL	0x1EA230	96	src/levels/shared/__muldi3.c
 LEVEL9.REL	0x1EA290	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL9.REL	0x1EA2D8	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL9.REL	0x1EA328	252	src/levels/shared/func_FE_0D6DE0.c
@@ -33429,6 +33438,7 @@ LEVEL10.REL	0x1C1B48	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL10.REL	0x1C1B50	816	src/levels/shared/func_FE_0D6650.c
 LEVEL10.REL	0x1C1E80	476	src/levels/shared/__throw.c
 LEVEL10.REL	0x1C2060	484	src/levels/shared/__rethrow.c
+LEVEL10.REL	0x1C2248	96	src/levels/shared/__muldi3.c
 LEVEL10.REL	0x1C22A8	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL10.REL	0x1C22F0	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL10.REL	0x1C2340	252	src/levels/shared/func_FE_0D6DE0.c
@@ -37216,6 +37226,7 @@ LEVEL11.REL	0x1DA188	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL11.REL	0x1DA190	816	src/levels/shared/func_FE_0D6650.c
 LEVEL11.REL	0x1DA4C0	476	src/levels/shared/__throw.c
 LEVEL11.REL	0x1DA6A0	484	src/levels/shared/__rethrow.c
+LEVEL11.REL	0x1DA888	96	src/levels/shared/__muldi3.c
 LEVEL11.REL	0x1DA8E8	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL11.REL	0x1DA930	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL11.REL	0x1DA980	252	src/levels/shared/func_FE_0D6DE0.c
@@ -40986,6 +40997,7 @@ LEVEL13.REL	0x1B4A30	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL13.REL	0x1B4A38	816	src/levels/shared/func_FE_0D6650.c
 LEVEL13.REL	0x1B4D68	476	src/levels/shared/__throw.c
 LEVEL13.REL	0x1B4F48	484	src/levels/shared/__rethrow.c
+LEVEL13.REL	0x1B5130	96	src/levels/shared/__muldi3.c
 LEVEL13.REL	0x1B5190	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL13.REL	0x1B51D8	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL13.REL	0x1B5228	252	src/levels/shared/func_FE_0D6DE0.c
@@ -44663,6 +44675,7 @@ LEVEL14.REL	0x1EB2A8	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL14.REL	0x1EB2B0	816	src/levels/shared/func_FE_0D6650.c
 LEVEL14.REL	0x1EB5E0	476	src/levels/shared/__throw.c
 LEVEL14.REL	0x1EB7C0	484	src/levels/shared/__rethrow.c
+LEVEL14.REL	0x1EB9A8	96	src/levels/shared/__muldi3.c
 LEVEL14.REL	0x1EBA08	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL14.REL	0x1EBA50	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL14.REL	0x1EBAA0	252	src/levels/shared/func_FE_0D6DE0.c
@@ -48239,6 +48252,7 @@ LEVEL15.REL	0x1AE910	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL15.REL	0x1AE918	816	src/levels/shared/func_FE_0D6650.c
 LEVEL15.REL	0x1AEC48	476	src/levels/shared/__throw.c
 LEVEL15.REL	0x1AEE28	484	src/levels/shared/__rethrow.c
+LEVEL15.REL	0x1AF010	96	src/levels/shared/__muldi3.c
 LEVEL15.REL	0x1AF070	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL15.REL	0x1AF0B8	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL15.REL	0x1AF108	252	src/levels/shared/func_FE_0D6DE0.c
@@ -51994,6 +52008,7 @@ LEVEL16.REL	0x1CBDA0	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL16.REL	0x1CBDA8	816	src/levels/shared/func_FE_0D6650.c
 LEVEL16.REL	0x1CC0D8	476	src/levels/shared/__throw.c
 LEVEL16.REL	0x1CC2B8	484	src/levels/shared/__rethrow.c
+LEVEL16.REL	0x1CC4A0	96	src/levels/shared/__muldi3.c
 LEVEL16.REL	0x1CC500	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL16.REL	0x1CC548	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL16.REL	0x1CC598	252	src/levels/shared/func_FE_0D6DE0.c
@@ -55665,6 +55680,7 @@ LEVEL17.REL	0x152F50	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL17.REL	0x152F58	816	src/levels/shared/func_FE_0D6650.c
 LEVEL17.REL	0x153288	476	src/levels/shared/__throw.c
 LEVEL17.REL	0x153468	484	src/levels/shared/__rethrow.c
+LEVEL17.REL	0x153650	96	src/levels/shared/__muldi3.c
 LEVEL17.REL	0x1536B0	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL17.REL	0x1536F8	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL17.REL	0x153748	252	src/levels/shared/func_FE_0D6DE0.c
@@ -59198,6 +59214,7 @@ LEVEL18.REL	0x16C090	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL18.REL	0x16C098	816	src/levels/shared/func_FE_0D6650.c
 LEVEL18.REL	0x16C3C8	476	src/levels/shared/__throw.c
 LEVEL18.REL	0x16C5A8	484	src/levels/shared/__rethrow.c
+LEVEL18.REL	0x16C790	96	src/levels/shared/__muldi3.c
 LEVEL18.REL	0x16C7F0	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL18.REL	0x16C838	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL18.REL	0x16C888	252	src/levels/shared/func_FE_0D6DE0.c
@@ -62891,6 +62908,7 @@ LEVEL19.REL	0x1CCF40	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL19.REL	0x1CCF48	816	src/levels/shared/func_FE_0D6650.c
 LEVEL19.REL	0x1CD278	476	src/levels/shared/__throw.c
 LEVEL19.REL	0x1CD458	484	src/levels/shared/__rethrow.c
+LEVEL19.REL	0x1CD640	96	src/levels/shared/__muldi3.c
 LEVEL19.REL	0x1CD6A0	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL19.REL	0x1CD6E8	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL19.REL	0x1CD738	252	src/levels/shared/func_FE_0D6DE0.c
@@ -66550,6 +66568,7 @@ LEVEL20.REL	0x15F300	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL20.REL	0x15F308	816	src/levels/shared/func_FE_0D6650.c
 LEVEL20.REL	0x15F638	476	src/levels/shared/__throw.c
 LEVEL20.REL	0x15F818	484	src/levels/shared/__rethrow.c
+LEVEL20.REL	0x15FA00	96	src/levels/shared/__muldi3.c
 LEVEL20.REL	0x15FA60	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL20.REL	0x15FAA8	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL20.REL	0x15FAF8	252	src/levels/shared/func_FE_0D6DE0.c
@@ -70195,6 +70214,7 @@ LEVEL21.REL	0x1E4220	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL21.REL	0x1E4228	816	src/levels/shared/func_FE_0D6650.c
 LEVEL21.REL	0x1E4558	476	src/levels/shared/__throw.c
 LEVEL21.REL	0x1E4738	484	src/levels/shared/__rethrow.c
+LEVEL21.REL	0x1E4920	96	src/levels/shared/__muldi3.c
 LEVEL21.REL	0x1E4980	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL21.REL	0x1E49C8	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL21.REL	0x1E4A18	252	src/levels/shared/func_FE_0D6DE0.c
@@ -73858,6 +73878,7 @@ LEVEL22.REL	0x1D1DE0	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL22.REL	0x1D1DE8	816	src/levels/shared/func_FE_0D6650.c
 LEVEL22.REL	0x1D2118	476	src/levels/shared/__throw.c
 LEVEL22.REL	0x1D22F8	484	src/levels/shared/__rethrow.c
+LEVEL22.REL	0x1D24E0	96	src/levels/shared/__muldi3.c
 LEVEL22.REL	0x1D2540	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL22.REL	0x1D2588	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL22.REL	0x1D25D8	252	src/levels/shared/func_FE_0D6DE0.c
@@ -77551,6 +77572,7 @@ LEVEL23.REL	0x1654E8	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL23.REL	0x1654F0	816	src/levels/shared/func_FE_0D6650.c
 LEVEL23.REL	0x165820	476	src/levels/shared/__throw.c
 LEVEL23.REL	0x165A00	484	src/levels/shared/__rethrow.c
+LEVEL23.REL	0x165BE8	96	src/levels/shared/__muldi3.c
 LEVEL23.REL	0x165C48	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL23.REL	0x165C90	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL23.REL	0x165CE0	252	src/levels/shared/func_FE_0D6DE0.c
@@ -81478,6 +81500,7 @@ LEVEL24.REL	0x17A6F0	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL24.REL	0x17A6F8	816	src/levels/shared/func_FE_0D6650.c
 LEVEL24.REL	0x17AA28	476	src/levels/shared/__throw.c
 LEVEL24.REL	0x17AC08	484	src/levels/shared/__rethrow.c
+LEVEL24.REL	0x17ADF0	96	src/levels/shared/__muldi3.c
 LEVEL24.REL	0x17AE50	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL24.REL	0x17AE98	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL24.REL	0x17AEE8	252	src/levels/shared/func_FE_0D6DE0.c
@@ -85036,6 +85059,7 @@ LEVEL25.REL	0x1EFAA8	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL25.REL	0x1EFAB0	816	src/levels/shared/func_FE_0D6650.c
 LEVEL25.REL	0x1EFDE0	476	src/levels/shared/__throw.c
 LEVEL25.REL	0x1EFFC0	484	src/levels/shared/__rethrow.c
+LEVEL25.REL	0x1F01A8	96	src/levels/shared/__muldi3.c
 LEVEL25.REL	0x1F0208	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL25.REL	0x1F0250	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL25.REL	0x1F02A0	252	src/levels/shared/func_FE_0D6DE0.c
@@ -88603,6 +88627,7 @@ LEVEL26.REL	0x15C0E8	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL26.REL	0x15C0F0	816	src/levels/shared/func_FE_0D6650.c
 LEVEL26.REL	0x15C420	476	src/levels/shared/__throw.c
 LEVEL26.REL	0x15C600	484	src/levels/shared/__rethrow.c
+LEVEL26.REL	0x15C7E8	96	src/levels/shared/__muldi3.c
 LEVEL26.REL	0x15C848	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL26.REL	0x15C890	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL26.REL	0x15C8E0	252	src/levels/shared/func_FE_0D6DE0.c
@@ -92090,6 +92115,7 @@ LEVEL27.REL	0x162730	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL27.REL	0x162738	816	src/levels/shared/func_FE_0D6650.c
 LEVEL27.REL	0x162A68	476	src/levels/shared/__throw.c
 LEVEL27.REL	0x162C48	484	src/levels/shared/__rethrow.c
+LEVEL27.REL	0x162E30	96	src/levels/shared/__muldi3.c
 LEVEL27.REL	0x162E90	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL27.REL	0x162ED8	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL27.REL	0x162F28	252	src/levels/shared/func_FE_0D6DE0.c
@@ -95670,6 +95696,7 @@ LEVEL28.REL	0x15D890	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL28.REL	0x15D898	816	src/levels/shared/func_FE_0D6650.c
 LEVEL28.REL	0x15DBC8	476	src/levels/shared/__throw.c
 LEVEL28.REL	0x15DDA8	484	src/levels/shared/__rethrow.c
+LEVEL28.REL	0x15DF90	96	src/levels/shared/__muldi3.c
 LEVEL28.REL	0x15DFF0	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL28.REL	0x15E038	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL28.REL	0x15E088	252	src/levels/shared/func_FE_0D6DE0.c
@@ -99389,6 +99416,7 @@ LEVEL29.REL	0x1D3520	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL29.REL	0x1D3528	816	src/levels/shared/func_FE_0D6650.c
 LEVEL29.REL	0x1D3858	476	src/levels/shared/__throw.c
 LEVEL29.REL	0x1D3A38	484	src/levels/shared/__rethrow.c
+LEVEL29.REL	0x1D3C20	96	src/levels/shared/__muldi3.c
 LEVEL29.REL	0x1D3C80	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL29.REL	0x1D3CC8	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL29.REL	0x1D3D18	252	src/levels/shared/func_FE_0D6DE0.c
@@ -103110,6 +103138,7 @@ LEVEL30.REL	0x1B3650	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL30.REL	0x1B3658	816	src/levels/shared/func_FE_0D6650.c
 LEVEL30.REL	0x1B3988	476	src/levels/shared/__throw.c
 LEVEL30.REL	0x1B3B68	484	src/levels/shared/__rethrow.c
+LEVEL30.REL	0x1B3D50	96	src/levels/shared/__muldi3.c
 LEVEL30.REL	0x1B3DB0	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL30.REL	0x1B3DF8	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL30.REL	0x1B3E48	252	src/levels/shared/func_FE_0D6DE0.c
@@ -106877,6 +106906,7 @@ LEVEL31.REL	0x19ECE8	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL31.REL	0x19ECF0	816	src/levels/shared/func_FE_0D6650.c
 LEVEL31.REL	0x19F020	476	src/levels/shared/__throw.c
 LEVEL31.REL	0x19F200	484	src/levels/shared/__rethrow.c
+LEVEL31.REL	0x19F3E8	96	src/levels/shared/__muldi3.c
 LEVEL31.REL	0x19F448	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL31.REL	0x19F490	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL31.REL	0x19F4E0	252	src/levels/shared/func_FE_0D6DE0.c
@@ -110814,6 +110844,7 @@ LEVEL32.REL	0x177C00	8	src/levels/shared/__unwinding_cleanup.c
 LEVEL32.REL	0x177C08	816	src/levels/shared/func_FE_0D6650.c
 LEVEL32.REL	0x177F38	476	src/levels/shared/__throw.c
 LEVEL32.REL	0x178118	484	src/levels/shared/__rethrow.c
+LEVEL32.REL	0x178300	96	src/levels/shared/__muldi3.c
 LEVEL32.REL	0x178360	68	src/levels/shared/func_FE_0D6D48.c
 LEVEL32.REL	0x1783A8	80	src/levels/shared/func_FE_0D6D90.c
 LEVEL32.REL	0x1783F8	252	src/levels/shared/func_FE_0D6DE0.c

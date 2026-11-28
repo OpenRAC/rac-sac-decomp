@@ -19,14 +19,21 @@ C source or claim that all candidate bodies have been translated.
 Eight candidates are retained in `nonmatching/levels/`: seven reported as
 parked and one 24-byte interval whose proposed source defines an adjacent
 function. The latter needs a boundary review and earns no C credit. The
-current generated unit tables report 7,628/25,377 level functions and
-586/3,819 boot functions with accepted C. The private reports for each lot
+current generated unit tables report 7,629/25,377 level functions and
+587/3,819 boot functions with accepted C. The private reports for each lot
 retain the first differences and reopening conditions.
 
 The two shared functions from the rac5 twin review, `PAUSEMODE_GetScaleFX__Fv`
 and `GetAABBFromPyramid__FP4VEC3T0PC4VEC3N42`, are linked at all 31 level
 placements each. Their sources were recompiled on this branch after bringing
 in `main`; the 31 affected modules and the pinned USA disc hash are unchanged.
+
+GCC's public `__muldi3` source now serves 31 level placements and its distinct
+boot copy. The reviewed `longlong.h` multiplication primitive is the narrow
+runtime-library exception described in `AGENTS.md`; the source and its
+preprocessed form are checked by `tools/c_source_policy.py`. The 31 level
+placements and the boot body retain their exact linked bytes. The rebuilt boot
+and all affected modules match the pinned USA programs, as does the disc hash.
 
 ## 1. Where things are
 
@@ -482,8 +489,8 @@ first, and this is what that means.
 
 ## 4. What is next
 
-1. **Close the coverage.**  The current unit tables leave 17,749 level
-   functions and 3,233 boot functions without accepted C
+1. **Close the coverage.**  The current unit tables leave 17,748 level
+   functions and 3,232 boot functions without accepted C
    (`tools/function_units.py`).  One source serves every placement of its
    function, so a new match covers all of its copies at once.  The
    complete-program gate passes when that number is zero.

@@ -136,6 +136,45 @@ class PolicyTest(unittest.TestCase):
         source = "/* asm(\"nop\"); */\nint f(void) { return 0; }\n"
         self.assertEqual(policy_errors(source), [])
 
+    # GCC longlong.h's __mips__ umul_ppmm, as upstream writes it.
+    UMUL_PPMM = (
+        '#define umul_ppmm(w1, w0, u, v) \\\n'
+        '  __asm__ ("multu %2,%3"\t\t\t\t\t\t\\\n'
+        '\t   : "=l" ((USItype) (w0)),\t\t\t\t\t\\\n'
+        '\t     "=h" ((USItype) (w1))\t\t\t\t\t\\\n'
+        '\t   : "d" ((USItype) (u)),\t\t\t\t\t\\\n'
+        '\t     "d" ((USItype) (v)))\n'
+        '#define UMUL_TIME 10\n')
+
+    def test_upstream_runtime_primitive_is_allowed_in_source_and_expansion(self) -> None:
+        expanded = ('UDItype f(USItype u, USItype v) { DIunion w; '
+                    '__asm__ ("multu %2,%3" : "=l" ((USItype) (w.s.low)), '
+                    '"=h" ((USItype) (w.s.high)) : "d" ((USItype) (u)), '
+                    '"d" ((USItype) (v))); return w.ll; }\n')
+        self.assertEqual(policy_errors(self.UMUL_PPMM), [])
+        self.assertEqual(policy_errors(expanded), [])
+
+    def test_rejects_every_other_form_of_the_runtime_primitive(self) -> None:
+        operands = ': "=l" (lo), "=h" (hi) : "d" (a), "d" (b)'
+        for statement in (
+            f'__asm__ __volatile__ ("multu %2,%3" {operands});',
+            f'__asm__ ("mult %2,%3" {operands});',
+            f'__asm__ ("multu %2,%3\\n\\tnop" {operands});',
+            f'__asm__ ("multu %2,%3" {operands} : "memory");',
+            '__asm__ ("multu %2,%3" : "=h" (hi), "=l" (lo) : "d" (a), "d" (b));',
+            '__asm__ ("multu %2,%3" : "=l" (lo), "=h" (hi) : "d" (a), "r" (b));',
+            '__asm__ ("multu %2,%3" : "=l" (lo), "=h" (hi) : "d" (a));',
+            '__asm__ ("multu %2,%3" : "=l" (lo), "=h" (hi) : "d" (a), "d" ("b"));',
+            '__asm__ ("multu %2,%3" : "=l" (lo), "=h" (hi) : '
+            '"d" (({ __asm__ ("nop"); a; })), "d" (b));',
+        ):
+            with self.subTest(statement=statement):
+                self.assertTrue(policy_errors(f'void f(void) {{ {statement} }}'))
+        # The primitive does not excuse other assembly beside it.
+        self.assertTrue(policy_errors(
+            f'void f(void) {{ __asm__ ("multu %2,%3" {operands}); __asm__ ("nop"); }}'))
+        self.assertTrue(policy_errors(self.UMUL_PPMM.replace('"multu', '"nop\\n\\tmultu')))
+
 
 class LotTableTest(unittest.TestCase):
     def test_init_and_check(self) -> None:
